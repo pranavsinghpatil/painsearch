@@ -1,0 +1,106 @@
+{
+  "query": "takes hours",
+  "count": 10,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "Too much like the real Terraria source code.",
+      "url": "https://github.com/radian-software/TerrariaClone/issues/2",
+      "repo": "radian-software/TerrariaClone",
+      "reactions": 303,
+      "comments": 21,
+      "created": "2017-07-23T16:53:58Z",
+      "body_snippet": "I was a Terraria modder and a member of the tConfig and tAPI dev teams. (I also made another modding API for 1.3, but it didn't take off.), and I can say you didn't only try to clone the game, but also the code quality of Terraria:\r\n\r\n> Blocks and items, among many other things, are represented by magic numbers instead of enums.\r\n\r\nTerraria does the exact same thing.\r\n\r\n> There are 417 lines of block comments at the top of `TerraFrame.java` that serve as manual translation tables.\r\n\r\nWe (Terraria modders) had no such thing, so the table must be made manually (or rather, we used some code to generate it). Some methods exist (such as `Item.SetDefaults`) to give an Item's fields (not properties, but raw fields) the desired values. (There are no subclasses or anything, and no Item/... definition lookup tables/... .) It is an infinite sea of `if (type == foo) { init(); } ...`. Note that it uses `if` without `else` or `return`, drastically slowing it down, but it got changed to a `switch` in 1.2. (More on `SetDefaults` later.) In 1.2, a `Terraria.ID` namespace was added containing (static) classes containing constants for easy Item/... -> numerical ID lookup as well.\r\n\r\nTerraria entities"
+    },
+    {
+      "source": "github-issues",
+      "title": "ImageOptim2",
+      "url": "https://github.com/ImageOptim/ImageOptim/issues/354",
+      "repo": "ImageOptim/ImageOptim",
+      "reactions": 177,
+      "comments": 36,
+      "created": "2021-10-01T18:05:35Z",
+      "body_snippet": "An update of what's happening with ImageOptim:\r\n\r\nThe existing project consists of multiple external executables (for various 3rd party tools), internal framework (forced by Apple's sandboxing requirements), and plug-in (for Apple Mail). This seems to be more than Xcode can handle, and it's causing a constant source of pain with broken Xcode builds, invalid Apple Code Signing signatures, inefficient and fragile archiving, etc. Apple's new Notarization requirements are even harder to satisfy and the errors it reports are Kafkaesque. \r\n\r\nThe net effect is that Xcode builds are broken more often than not. Making an ImageOptim release that takes hours of debugging, testing, and solving vague unhelpful errors reported by Apple's tooling and OS. This is not fun.\r\n\r\nSecond, ImageOptim's codebase is old. The project is 14 years old! When I started it multicore CPUs were a novelty, and many modern macOS APIs didn't exist yet. I've retrofitted what I could, but the architecture of the application is in some places messier than I'd like. AppKit/Cocoa is not thread-safe, and Objective-C is unhelpful for ensuring thread safety. In fact, small mistakes lead to very hard to track crashes. This is"
+    },
+    {
+      "source": "github-issues",
+      "title": "Numeric Range Types (Feature Update)",
+      "url": "https://github.com/microsoft/TypeScript/issues/54925",
+      "repo": "microsoft/TypeScript",
+      "reactions": 156,
+      "comments": 22,
+      "created": "2023-07-07T22:38:58Z",
+      "body_snippet": "# Feature Update: Numeric Ranges\r\n\r\nThis is a [Feature Update](https://github.com/microsoft/TypeScript/issues/54923) for #15480.\r\n\r\n## What's the Proposal?\r\n\r\nThe general idea is that you'd be able to write a type which represents a range of numbers, e.g. `0..15` to represent an integer in the range `[0, 15]`, or `0...1` to represent a real number in the range `[0, 1)`, or even characters as well, e.g. `\"a\"..\"d\"` would be `\"a\" | \"b\" | \"c\" | \"d\"`\r\n\r\n## Scenarios\r\n\r\nListed scenarios in the original thread\r\n\r\n * Terminal colors, integer 0-15 inclusive\r\n * RGB color components, integer 0-255 inclusive\r\n * 32-bit unsigned ints, integer 0-2^32-1 inclusive\r\n * `Math.random()` result, floating point 0 (inclusive) to 1 (exclusive)\r\n * `\"b\" | \"c\" | \"d\"` (no scenario given)\r\n * Probabilities, floating point 0 (inclusive) to 1 (inclusive)\r\n * Any non-negative integer\r\n * Seconds/minutes/hours/days/months\r\n * Correctly bounding `UInt8` and friends\r\n * Some API that takes an integer between 5 and 30\r\n * Opacity, floating point 0 (inclusive) to 1 (inclusive)\r\n * Status code ranges (e.g. 200-399 is success, 400-600 is error)\r\n * Latitude/longitude, floating point -90 to 90, -180 to 180, inclusive/"
+    },
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "Garbage-collection is too slow. Please consider rewrite in Rust.",
+      "url": "https://github.com/god/man/issues/64",
+      "repo": "god/man",
+      "reactions": 102,
+      "comments": 4,
+      "created": "2021-12-19T14:29:53Z",
+      "body_snippet": "Takes an average of 8 hours for garbage-collecting is unbearable. Many attempts of trying to shorten the garbage collection period result in problems in some components. Please rewrite in Rust so we can handle real-time tasks."
+    },
+    {
+      "source": "github-issues",
+      "title": "Alternative sorting/aggregation methods",
+      "url": "https://github.com/mastodon/mastodon/issues/3782",
+      "repo": "mastodon/mastodon",
+      "reactions": 104,
+      "comments": 37,
+      "created": "2017-06-15T20:07:39Z",
+      "body_snippet": "Twitter switched from newest-post-highest aggregation to a more complex, but hidden, system, which tends to give a nicer and more interesting timeline. There should be an option to enable a similar system.\r\n\r\nFrom what I can gather, the system is somewhat similar to Reddit's system. It takes the time and a logarithm of the number of likes as well as the number of followers boosting it, then it adds these numbers multiplied by respective coefficients and sorts them based on that. It sorts posts in epochs, that is packages of posts from a given day (or 6 hours or something like that), then serves the sorted packages such that the newest package comes first.\r\n\r\n* * * *\r\n\r\n- [x] I searched or browsed the repo’s other issues to ensure this is not a duplicate.\r\n- [ ] This bug happens on a [tagged release](https://github.com/tootsuite/mastodon/releases) and not on `master` (If you're a user, don't worry about this).\r\n"
+    },
+    {
+      "source": "github-issues",
+      "title": "Valve must reduce harmful flicker/PWM on the Steam Deck's OLED display so users don't experience eye strain, migraines, and blurred vision while playing",
+      "url": "https://github.com/ValveSoftware/SteamOS/issues/1392",
+      "repo": "ValveSoftware/SteamOS",
+      "reactions": 103,
+      "comments": 65,
+      "created": "2024-02-21T00:26:10Z",
+      "body_snippet": "**Your system information**\r\n\r\n* Steam client version: 1702079146\r\n* SteamOS version: 3.5.7\r\n* Opted into Steam client beta?: No\r\n* Opted into SteamOS beta?:  No\r\n* Have you checked for updates in Settings > System?: Yes\r\n\r\n**Please describe your issue in as much detail as possible:**\r\n\r\nConstant flicker of the screen because of PWM dimming of the screen leads to dry eyes, nausea and blurry vision to those sensitive to PWM.\r\n\r\nSteam OS could introduce software measures (DC dimming) to limit the flickering and to reduce the physical effects to those affected. See detailed description of the issue below.\r\n\r\n**Steps for reproducing this issue:**\r\n1. Use Steam Deck at 100% brightness\r\n2. Use for random amount of time\r\n3. Eyes get dry and vision gets blurry, some report headaches.\r\n4. Only gets worse with decreasing brightness of the screen, mainly below 45% brightness where the flickering is more aggressive, however PWM flickering is very aggressive in Steam Deck OLED at all brightness levels as you will see in my tests\r\n\r\n**Detailed description of the issue**\r\n\r\nI am posting here my evidence, which has been conducted in a scientific and objective manner, thanks to reliable instruments"
+    },
+    {
+      "source": "github-issues",
+      "title": "Yarn cache will fill your PC when used with local (file:) packages",
+      "url": "https://github.com/yarnpkg/yarn/issues/6037",
+      "repo": "yarnpkg/yarn",
+      "reactions": 103,
+      "comments": 55,
+      "created": "2018-06-26T10:58:16Z",
+      "body_snippet": "<!-- *Before creating an issue please make sure you are using the latest version of yarn.* -->\r\n\r\n**Do you want to request a *feature* or report a *bug*?**\r\nBug\r\n<!-- Is the feature a substantial feature request? Please use https://github.com/yarnpkg/rfcs -->\r\n\r\n**What is the current behavior?**\r\nWhenever a local package is rebuild, yarn creates a new hash version in the cache, which is good, since in prior versions, the old version was just used irrespective of making a new version of the package.\r\nBut, this eventually fills your hard-drive. Today I found out my yarn cache was around 156 GB and it took me 1,5 hour to delete it! About 300-600 copies of each package (4500 cached folder in total). That is not very smart\r\n\r\n**If the current behavior is a bug, please provide the steps to reproduce.**\r\n1. Create a local package\r\n2. Install it in another project using yarn\r\n3. Make a new version of the package\r\n4. Install it in another project using yarn\r\n5. Check your yarn cache - you now have two versions of the package including all its dependencies in your cache.\r\nEventually your hard drive will be full, and you'll find out when there is no room left and it takes you hours to delete "
+    },
+    {
+      "source": "github-issues",
+      "title": "[BUG] Claude Code frequently loses track of which directory it is in",
+      "url": "https://github.com/anthropics/claude-code/issues/1669",
+      "repo": "anthropics/claude-code",
+      "reactions": 86,
+      "comments": 50,
+      "created": "2025-06-05T18:24:59Z",
+      "body_snippet": "Claude Code frequently assumes it is in a different directory than the one it is in. A command will fail, and sometimes it takes several rounds of its own troubleshooting before it realizes the problem and changes to the correct directory. This is not only annoying, it's dangerous -- it caused me to lose 60 hours of wrangling with Claude Code when a git hard reset was executed in the wrong directory (#1668).\n\nPlease prepend to every prompt something like \"You are currently in this working directory: ...\" or whatever is necessary to get it to understand where it is starting from."
+    },
+    {
+      "source": "github-issues",
+      "title": "Slowing the rate of skill gain",
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/issues/67580",
+      "repo": "CleverRaven/Cataclysm-DDA",
+      "reactions": 78,
+      "comments": 92,
+      "created": "2023-08-10T17:07:10Z",
+      "body_snippet": "### Is your feature request related to a problem? Please describe.\r\n\r\nSkill gain in this game is presently broken. This is likely to be controversial in some circles, but we know it's true. For example, it takes 3 minutes in game to advance to skill level 1 from untrained, and in general early skill levels are gated somewhat by the time it takes to obtain practice recipes and crafting books and things, but the experience gain itself is trivially quick. This causes a large number of knock-on effects:\r\n\r\n- Rapid level-ups mean that it is hard to reward players for missions. Any reasonable physical reward is something they can probably obtain and craft themselves. If it is hard to reach high levels of tailoring, for example, then an NPC who can repair your gear becomes valuable and can be used as a mission target.\r\n- Rapid level-ups mean that NPC followers are superfluous. However, if it takes a long time to learn a major skill, then NPC followers can fill in your skill gaps and form the backbone of a good team.\r\n- Combat skill rising to exponential heights contributes heavily to stagnation of the mid-late game as there's little left to do to get better. In turn this leads to monster "
+    }
+  ]
+}

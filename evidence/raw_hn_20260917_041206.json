@@ -1,0 +1,171 @@
+{
+  "query": "manually checking",
+  "count": 15,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Manually checking emails for YC response",
+      "url": "https://news.ycombinator.com/item?id=9356572",
+      "hn_id": "9356572",
+      "points": 2,
+      "comments": 2,
+      "author": "injiiinc",
+      "created": "2015-04-10T19:24:58Z",
+      "text_snippet": "Anyone else manually hitting check for new messages for that YC invite, because you know that 15min mail sync time isn&#x27;t fast enough :)"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: qckfx – Stop manually checking if your AI agent broke your iOS app",
+      "url": "https://news.ycombinator.com/item?id=46541792",
+      "hn_id": "46541792",
+      "points": 2,
+      "comments": 0,
+      "author": "chw9e",
+      "created": "2026-01-08T14:59:03Z",
+      "text_snippet": "AI coding agents can build iOS UI, but they can&#x27;t verify it. They can update a screen, but the UI might drift or break, and nobody catches it until a human checks.<p>qckfx gives your agent a baseline. Record a simulator session once. Every tap, scroll, and network response gets captured. On replay, each screen is compared against the original.<p>With our MCP, your agent triggers the tests and gets back visual diffs of exactly what changed. Updating the baselines is one click.<p>Under the hood:<p>- Full network replay (HTTP &amp; WebSocket)<p>- Initial disk &amp; keychain state captured during recording and restored on every run<p>- Precise scroll positioning (built from scratch; XCUITest only exposes this on macOS and iPad)<p>- No AI in the loop at runtime, fast execution<p>No SDK or code changes needed. Nothing to commit to git. Just download the app and go.<p>Everything runs locally. Your data stays on your machine.<p><a href=\"https:&#x2F;&#x2F;qckfx.com\" rel=\"nofollow\">https:&#"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Engineering.fyi – Search across tech engineering blogs in one place",
+      "url": "https://engineering.fyi/",
+      "hn_id": "44855157",
+      "points": 470,
+      "comments": 126,
+      "author": "indiehackerman",
+      "created": "2025-08-10T13:44:05Z",
+      "text_snippet": "I built a search engine for engineering blogs because I was tired of manually checking individual company blogs to find real-world production examples.<p>The problem: When learning a new technology, the best insights often come from how companies like Google, Meta, or Stripe actually implement it in production. But these gems are scattered across dozens of separate engineering blogs with no way to search across them.<p>What I built: Engineering.fyi indexes engineering blogs from ~15 companies (Google, Meta, OpenAI, Anthropic, Stripe, Uber, etc.) and makes them searchable in one place. You can filter by topic, difficulty level, and whether articles include code samples.<p>Technical details:\n- Built with Next.js, SQLite, DrizzleORM\n- Custom scrapers for each blog (they&#x27;re all frustratingly different)\n- Basic tagging system using content matching (still improving this)<p>Current status: Core search is working. Adding new blogs weekly as I index them.<p>Next features (based on early f"
+    },
+    {
+      "source": "hn",
+      "title": "Backblaze restore for Personal Backup is awful",
+      "url": "https://news.ycombinator.com/item?id=29533753",
+      "hn_id": "29533753",
+      "points": 203,
+      "comments": 230,
+      "author": "cloogshicer",
+      "created": "2021-12-12T21:23:31Z",
+      "text_snippet": "I&#x27;ve been using Backblaze for a few years for my home computer. You know how everyone keeps telling you, a backup is only a true backup once you&#x27;ve done at least one restore? Now I know why (silly me).<p>I just got a &quot;Safety Freeze&quot; error [1] - essentially some inconsistency with my backup. Backblaze will not tell me the actual cause of this inconsistency. It&#x27;s possible that some data might be missing - Backblaze doesn&#x27;t tell me though.<p>The only official solution is to <i>manually check all files</i> (millions in my case). I also can&#x27;t download a full backup since Backblaze only allows downloads of up to 500GB at once. So my only option is to do a full hard drive restore, costing $189 + customs in Europe, so at the end probably closer to 300€. But even then I won&#x27;t know if&#x2F;which of my data was corrupted.<p>What bugs me is that the Backblaze desktop software should be able to resolve this - it should be possible to do a hash of all the file"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: DidMySettingsChange – A tool that checks changed windows settings",
+      "url": "https://github.com/nolesapex/DidMySettingsChange",
+      "hn_id": "45485986",
+      "points": 51,
+      "comments": 14,
+      "author": "nolesapex",
+      "created": "2025-10-05T22:49:27Z",
+      "text_snippet": "Microsoft has been under heavy scrutiny with how they manage Windows over the years, particularly concerning privacy and telemetry settings. Many users find that after disabling certain settings, these settings are mysteriously re-enabled after updates or without any apparent reason. DidMySettingsChange is a Python script designed to help users keep track of their Windows privacy and telemetry settings, ensuring that they stay in control of their privacy without the hassle of manually checking each setting.\nFeatures<p><pre><code>    Comprehensive Checks: Automatically scans all known Windows privacy and telemetry settings.\n    Change Detection: Alerts users if any settings have been changed from their preferred state.\n    Customizable Configuration: Allows users to specify which settings to monitor.\n    Easy to Use: Simple command-line interface that provides clear and concise output.\n    Logs and Reports: Generates detailed logs and reports for auditing and troubleshooting.</code></pr"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: RSS Reader that doesn't suck?",
+      "url": "https://news.ycombinator.com/item?id=2182528",
+      "hn_id": "2182528",
+      "points": 9,
+      "comments": 22,
+      "author": "guynamedloren",
+      "created": "2011-02-05T05:28:31Z",
+      "text_snippet": "So apparently I'm a bit late with the whole RSS thing.  I've always had a general idea of what they were, but I've never really looked into them before.  I thought RSS was only delivered through e-mail =)  I had no idea RSS readers existed up until a few minutes ago, when I was setting up RSS for my blog and discovered Google Reader through Feedburner.  Conceptually, they are awesome.  Visually, they are the ugliest things I have ever seen.  Google Reader is messy and cluttered... and apparently it's the best one there is.<p>They make a lot of sense and I could see myself using one instead of manually checking my favorite blogs.  I googled around for a few minutes and couldn't find anything decent.  I figured the iPad would probably have something nice, and I was right.  Every single one of the RSS readers for iPad look awesome - especially Reeder.  Too bad I don't have an iPad.  Are there any web-based RSS reader apps like the iPad apps?  If not, I might just have to hack something to"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: I built a festival tracker that matches lineups to your music library",
+      "url": "https://apps.apple.com/us/app/festiveo-music-festivals/id6755355854",
+      "hn_id": "46934190",
+      "points": 9,
+      "comments": 2,
+      "author": "kirilldn",
+      "created": "2026-02-08T13:53:16Z",
+      "text_snippet": "Hi HN,<p>I built this app because I was tired of manually checking festival lineups against my music library every summer. I wanted a way to instantly see which festivals had the highest &#x27;match&#x27; density for my specific taste.<p>Why I built this:<p>I missed one of my favorite artists at a festival last year simply because I didn&#x27;t recognize their name on a crowded poster. I realized that with Apple Music&#x2F;Spotify APIs, this discovery process should be automated.<p>Key Features:<p>Library Matching:\nIt scans your library and ranks upcoming festivals by how many artists you actually follow.<p>Apple Sync: \nSeamlessly imports your top artists and creates custom schedules.<p>Offline-First:\nSince festival cell service is notoriously terrible, I focused on a robust local caching system so your schedule and maps work without a signal.<p>Technical Details:<p>Stack:\nReact Native, MongoDB, AWS.<p>Data:\nI built a custom aggregator that scrapes and normalizes lineup data from vario"
+    },
+    {
+      "source": "hn",
+      "title": "AI hallucinate. Do you ever double check the output?",
+      "url": "https://news.ycombinator.com/item?id=46734069",
+      "hn_id": "46734069",
+      "points": 8,
+      "comments": 21,
+      "author": "jackota",
+      "created": "2026-01-23T16:01:44Z",
+      "text_snippet": "Been building AI workflows and then randomly hallucinate and do something stupid so I end up manually checking everything anyway to approve the AI generated content (messages, emails, invoices,ecc.), which defeats the whole point.<p>Anyone else? How did you manage it?"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: I made a personal news agent that follows anything you care about",
+      "url": "https://apps.apple.com/us/app/a01-your-personal-news-agent/id6745206011",
+      "hn_id": "44929255",
+      "points": 7,
+      "comments": 3,
+      "author": "vincentyyy",
+      "created": "2025-08-17T06:02:33Z",
+      "text_snippet": "Hi HN!<p>I just launched A01 on the App Store! A01 is a personal news agent that follows exactly what you tell it to, without the algorithmic noise.<p>I built it because I often had to jump between different sites and platforms to stay updated. When topics get really niche, there’s no single platform to rely on, and I’d often get distracted by unrelated content along the way.<p>How A01 works:\n- Ingests 2,000+ RSS feeds hourly (The Verge, NYT, Nature, IEEE, arXiv, etc.)\n- Creates embeddings using Voyage\n- Vector search matches your custom prompts against new content every hour\n- Delivers only what matches your interests<p>From TestFlight to App Store:\nWe started with 300 TestFlight users who helped us refine the matching algorithms. Based on their feedback, we improved the semantic matching, covered more sources, and are now ready for broader release on the App Store.<p>Current status:\nThe product isn&#x27;t perfect yet, but the core concept works well enough that I wanted to share it w"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How \"illegal\" is the application I am building?",
+      "url": "https://news.ycombinator.com/item?id=5462582",
+      "hn_id": "5462582",
+      "points": 6,
+      "comments": 5,
+      "author": "theschnabler",
+      "created": "2013-03-29T19:33:22Z",
+      "text_snippet": "I am currently building an iPhone app that links popular fashion on Instagram with retailers and stores.<p>Content \"creation\" is done manually by checking Instagram's popular feed (using the Instagram API) and copy/pasting popular images of fashion items into a database (including the stores links where you can buy them).<p>Obviously I'm worried about copyright issues. I'm not storing any images (only the links), but I don't think that makes any difference. My app credits the respective Instagram user as the owner of the picture - but again, I don't think that makes any difference. Is this \"fair use\" of the data, and if not - what's the point for Instagram having an API? Can anyone spare some legal knowledge?"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you stay up to date with scientific papers on a particular topic?",
+      "url": "https://news.ycombinator.com/item?id=6711453",
+      "hn_id": "6711453",
+      "points": 5,
+      "comments": 3,
+      "author": "gabemart",
+      "created": "2013-11-11T13:30:26Z",
+      "text_snippet": "If you have a particular area of interest or expertise, how do you stay up to date with research on that topic outside of the journals you regularly read?<p>For example, if you were studying the effects of sulforaphane on cancer, how would you find out about research on sulforaphane published in journals around the world, short of manually checking?"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How to consume HN?",
+      "url": "https://news.ycombinator.com/item?id=17918036",
+      "hn_id": "17918036",
+      "points": 5,
+      "comments": 2,
+      "author": "jimijazz",
+      "created": "2018-09-05T14:02:58Z",
+      "text_snippet": "Hi All, I&#x27;ve been a passive reader of HN for several years now. After becoming increasingly lured to engage and interact with the community over this time, I finally registered on the site today to ask my first question:<p>What ways do members use to stay up to date with new threads, subscribe to topics, and receive notifications, other than manually checking the site several times a day (which I currently do)? Are there feeds, configurations or APIs that I can hook into?"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Easily reduce GitHub Actions costs with Ubuntu-slim migration",
+      "url": "https://github.com/fchimpan/gh-slimify",
+      "hn_id": "45858051",
+      "points": 5,
+      "comments": 0,
+      "author": "r4mimu",
+      "created": "2025-11-08T16:49:14Z",
+      "text_snippet": "Hi, HN!<p>I&#x27;ve been running GitHub Actions workflows for a while, and when GitHub announced ubuntu-slim runners as a cheaper alternative to ubuntu-latest, I wanted to migrate. (Blog: <a href=\"https:&#x2F;&#x2F;github.blog&#x2F;changelog&#x2F;2025-10-28-1-vcpu-linux-runner-now-available-in-github-actions-in-public-preview&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;github.blog&#x2F;changelog&#x2F;2025-10-28-1-vcpu-linux-runner...</a>)<p>But manually checking which workflows can safely migrate is tedious—you need to check for Docker usage, services, containers, execution times, and missing commands.<p>So I built gh-slimify, a GitHub CLI extension that automates this. It scans your workflows, detects migration candidates, checks for incompatible patterns, identifies missing commands, and can safely update workflows with one command.<p>Try it:\n  gh extension install fchimpan&#x2F;gh-slimify\n  gh slimfy                    # Scan workflows\n  gh slimfy fix                # Update safe jobs o"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you monitor and retry failed webhooks in production?",
+      "url": "https://news.ycombinator.com/item?id=47105306",
+      "hn_id": "47105306",
+      "points": 4,
+      "comments": 6,
+      "author": "GoatPerfect",
+      "created": "2026-02-21T22:03:50Z",
+      "text_snippet": "I’ve been working on a project where webhooks are a core part of the system, and I realized how fragile they can be in practice.<p>Transient network errors, timeouts, downstream issues — things fail more often than expected.<p>I’m curious how others are handling this in production.<p>Are you building custom retry logic?<p>Using a queue?<p>Relying on provider retries?<p>Just logging and manually checking failures?<p>Do you monitor webhook delivery rates or alert on repeated failures?<p>Would love to hear what setups people are using and what’s worked (or not worked) for you."
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do I know when someone replies to a comment?",
+      "url": "https://news.ycombinator.com/item?id=6448573",
+      "hn_id": "6448573",
+      "points": 4,
+      "comments": 4,
+      "author": "erikt",
+      "created": "2013-09-26T02:33:12Z",
+      "text_snippet": "On Reddit there is an envelop which turns orange but on Hacker News I don&#x27;t see any of that. Do I have to just keep checking manually?"
+    }
+  ]
+}
