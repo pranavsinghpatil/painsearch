@@ -1,13 +1,12 @@
 # Nebius x NVIDIA Hackathon — Pain-Point Discovery System
-No invented ideas. Evidence first.
+No invented ideas. Evidence first. Revised flow 2026-09-17: portfolio over pipeline.
 
-## Hard constraints (gate every candidate)
+## Hard constraints (gate late, not early)
 - One micro-problem or tightly connected set.
 - No LLM wrappers, agent-layerisation, or "chat with your data".
-- Not solvable by prompting ChatGPT / LLM / OpenClaw.
-- No added agents/tools to fake sophistication.
-- NVIDIA model must enable a *central* capability, not just UI.
-- Nebius must enable meaningful inference / deployment / scaling.
+- Not solved by prompting ChatGPT / OpenClaw alone — but that alone proves nothing; deterministic software / better data / conventional algo may be the right answer.
+- NVIDIA open model must enable a central capability (step 6 gate, not a reason to preserve weak problems).
+- Nebius must enable meaningful inference / deployment / scaling (step 6 gate).
 
 ## Tracks (from devpost)
 1. Coding and Agentic Engineering — agents that write/run/test in Token Factory Sandboxes
@@ -18,26 +17,25 @@ No invented ideas. Evidence first.
 ## Judging
 Technological Implementation / Design / Potential Impact / Quality of Idea
 
-## 3-day sprint
-Day 1: Collect 20-30 raw complaints (this system)
-Day 2: Cluster into 5-8 patterns
-Day 3: Deep-research 2-3 with Discovery Test
+## Revised flow (7 steps, 2026-09-17)
+1. **Collect raw** — PAUSED at 120 hits. Preserve links + context. No more broad queries until portfolio gaps demand them.
+2. **Extract patterns** — cluster by user x task x failure x consequence, not keywords. See `evidence/portfolio.md` P1-P6.
+3. **Verify pain** — independent reports, workarounds, frequency, consequence. Mark weak/disputed evidence (P3).
+4. **Map existing solutions** — test conventional tools first. Record exact residual gap.
+5. **Test residual gap** — reproduce + measure (counts, false-negatives, cost). Does it matter enough to someone?
+6. **Hackathon feasibility gate** — only now: open-model necessity, Nebius relevance, buildability, track/judging fit.
+7. **Prototype vs best baseline** — compare against best existing tool, not against doing nothing.
 
 ## How to run
 ```bash
-cd hackathon-discovery
-python src/collect.py --query "takes me hours to" --limit 20
-python src/collect.py --source hn --query "tedious workflow" --limit 20
-python src/collect.py --source github --query "takes hours" --limit 20
+python src/collect.py --source hn --query "takes me hours to" --limit 20
 # outputs to evidence/raw_*.json + evidence/cards/
 ```
 
 ## Rules
-- Respect ToS: use official APIs only (HN Algolia, GitHub API, Lobsters API). No Reddit mass-scrape. Reddit = manual + JSON limited.
+- Respect ToS: official APIs only (HN Algolia, GitHub API, Lobsters). No Reddit mass-scrape.
 - Save source URL + quote + date for every card. No paraphrase-only.
-- First deliverable is NOT an idea. It's 20-30 evidence cards.
+- Deliverable is NOT an idea. It's the portfolio with answered falsifiable Qs.
 
-## Your next task (do this, paste output)
-1. Run: `python src/collect.py --source hn --query "tedious but necessary" --limit 10`
-2. Open `evidence/raw_hn_*.json`, pick 3 complaints, fill 3 cards from `evidence_card_template.md`
-3. Paste the 3 card files back here for clustering.
+## Status
+- 120 raw hits mined. 3 cards done. 6-pattern portfolio written. Next: answer P4/P5/P6 falsifiable Qs, then baseline P2.
