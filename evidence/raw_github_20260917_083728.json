@@ -1,0 +1,206 @@
+{
+  "query": "data mismatch manual",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "Codegen collaboration with Apollo Codegen and GraphQL Code Generator",
+      "url": "https://github.com/apollographql/apollo-tooling/issues/2053",
+      "repo": "apollographql/apollo-tooling",
+      "reactions": 212,
+      "comments": 31,
+      "created": "2020-07-27T13:08:27Z",
+      "body_snippet": "Hello Apollo team and Apollo Codegen users!\r\n\r\nI’m Dotan and I’ve created a library called [graphql-code-generator](https://graphql-code-generator.com/), which we maintain for the past 4 years that aims to solve some of the same issues as Apollo Codegen.\r\n\r\nWhile working with a very large codebase of one of our new clients that was using Apollo Codegen, we’ve seen that the support for Apollo Codegen and it’s issues has slowed down in recent years, (looking at the history of the [apollo-codegen-core](https://github.com/apollographql/apollo-tooling/commits/master?before=4139557d6c573d760a7fef21f087859c3f3d6637+35&path%5B%5D=packages&path%5B%5D=apollo-codegen-core), [apollo-codegen-flow](https://github.com/apollographql/apollo-tooling/commits/master/packages/apollo-codegen-flow) and the [apollo-codegen-typescript](https://github.com/apollographql/apollo-tooling/commits/master/packages/apollo-codegen-typescript) libraries, it looks like the last meaningful workload was made around August 2018) and we wanted to offer our help!\r\n\r\nOn the following issue I will try to describe everything I can about the 2 codegens, in order to collaborate together on two possible paths:\r\n1. Integrate grap"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE]: SSH-based remote server connections to OpenCode Desktop",
+      "url": "https://github.com/anomalyco/opencode/issues/7790",
+      "repo": "anomalyco/opencode",
+      "reactions": 114,
+      "comments": 19,
+      "created": "2026-01-11T12:36:20Z",
+      "body_snippet": "### Feature hasn't been suggested before.\n\n- [x] I have verified this feature I'm about to request hasn't been suggested before.\n\n### Describe the enhancement you want to request\n\n## Summary\nAdd first-class SSH connectivity to the OpenCode desktop app so users can connect to a remote opencode server through a secure SSH local port-forward. The desktop app continues to speak HTTP/WebSocket to the server via 127.0.0.1:<localPort>; SSH is transport only.\n\n### Goals\n\t•\tEstablish SSH local port-forwards using the system ssh binary (no embedded SSH libs).\n\t•\tDiscover a running remote OpenCode server via a standardized health endpoint over the forwarded port.\n\t•\tOptionally bootstrap a server via a single remote command execution (no interactive shell workflow).\n\t•\tProvide clear connection states, diagnostics, and typed error surfaces.\n\n### Non-goals\n\t•\tRemote filesystem access beyond the OpenCode server API.\n\t•\tTerminal multiplexing / interactive shell access.\n\t•\tSSH key generation/management/storage.\n\t•\tSSH config modification/management.\n\t•\tRemote extension execution.\n\t•\tAny custom SSH protocol implementation.\n\n### Proposed UX\n\t•\t“Add Connection” wizard for creating a Connection Profile"
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal: Device Support",
+      "url": "https://github.com/moby/swarmkit/issues/2682",
+      "repo": "moby/swarmkit",
+      "reactions": 113,
+      "comments": 61,
+      "created": "2018-07-02T22:00:47Z",
+      "body_snippet": "This is a rough overview of a proposed design for device support in Swarm. This is a possible implementation of #1244. The objective is to implement, in a way sensible to the cluster, support for devices. **Please note** that this is not yet on the road map; this is an early-stage proposal.\r\n\r\n### For community members, even if you don't or haven't contributed directly to swarmkit:\r\n\r\nDoes this meet or exceed the community's needs for device support? Is the UI flexible, ergonomic, and easy to use? Feel free to leave a comment explaining what is good and bad about this proposal.\r\n\r\n# Overview\r\nDevices will be added as a first-class feature of swarm. The user will be able to define device classes, to which devices belong to. The user will be able to register devices on specific nodes, indicating to what class the device belongs to and what path the device is located at. The user can then specify device classes that a task needs to execute, and the swarmkit scheduler will assign a device to the task and place the task on the node with that device.\r\n\r\n## Goals\r\nThe goal of this proposal is to implement the most basic device-aware scheduling system, to swarmkit to fully support devices "
+    },
+    {
+      "source": "github-issues",
+      "title": "Generic deepmerge() function",
+      "url": "https://github.com/hashicorp/terraform/issues/35955",
+      "repo": "hashicorp/terraform",
+      "reactions": 44,
+      "comments": 3,
+      "created": "2024-11-05T17:07:06Z",
+      "body_snippet": "### Terraform Version\r\n\r\n```shell\r\n1.9.8\r\n```\r\n\r\n\r\n### Use Cases\r\n\r\nMerging of files read via jsondecode and yamldecode, merge of nested maps and objects tree typically used for configuration or lookups.\r\n\r\nThis request was previously submitted by @scholli as #31815 and rejected by @apparentlymart\r\n\r\nThe rejection of this ticket came as surprise and brought sadness to all concerned in the community. The reason given was that as there are multiple ways to offer a deep merge, terraform should not provide any at all, and custom providers should be developed by anyone who has need of deep merge functionality.\r\n\r\nWhile I understand the desire to encourage community-driven development, I respectfully disagree with the reasons provided for rejecting this request and ask that it be reconsidered.\r\n\r\nThere are numerous scenarios where even a basic deep merge routine would significantly reduce code complexity. Consider the following example:\r\n\r\n```\r\nlocals {\r\n  rest_api_body_source = yamldecode(file(local.api_body_source))\r\n\r\n  rest_api_components_securityschemes_authorizer = var.b2c == null ? {} : {\r\n    authorizer = {\r\n      in   = \"header\"\r\n      name = \"Authorization\"\r\n      type = \"apiKe"
+    },
+    {
+      "source": "github-issues",
+      "title": "TanStack Query Integration with Auto-generated Hooks",
+      "url": "https://github.com/elysiajs/eden/issues/216",
+      "repo": "elysiajs/eden",
+      "reactions": 28,
+      "comments": 3,
+      "created": "2025-10-14T09:04:22Z",
+      "body_snippet": "### What is the problem this feature would solve?\n\nElysia and Eden provide a fantastic, type-safe full-stack experience. However, when integrating with a powerful frontend data-fetching library like TanStack Query, developers currently face a manual and repetitive process. \n\nTo use TanStack Query with an Eden client today, we must: \n1. Manually define and maintain queryKey arrays for each endpoint.\n2. Write custom fetcher functions that wrap the Eden client methods.\n3. Manually type the data, error, and variables for each useQuery or useMutation hook.\n     \nThis process introduces boilerplate, is prone to human error (e.g., mismatched query keys), and undermines the \"auto-magic\" type safety that makes Elysia/Eden so compelling. If the backend API changes, we have to manually update the types and logic on the frontend, which can lead to bugs. \n\n### What is the feature you are proposing to solve the problem?\n\nImagine if Eden could automatically generate a set of pre-typed, ready-to-use TanStack Query hooks directly from the Elysia server schema. This would provide a truly \"native\" and seamless developer experience. \n\nThe goal would be to generate a client that exports hooks like `use"
+    },
+    {
+      "source": "github-issues",
+      "title": "Improving the developer experience with regard to default string globalization",
+      "url": "https://github.com/dotnet/runtime/issues/43956",
+      "repo": "dotnet/runtime",
+      "reactions": 28,
+      "comments": 34,
+      "created": "2020-10-28T17:46:18Z",
+      "body_snippet": "## Improving the developer experience with regard to default string globalization\r\n\r\n> Note: This is a companion document to https://github.com/dotnet/docs/issues/21249, which discusses the behaviors as they currently exist. It's assumed the reader is generally familiar with that document.\r\n\r\n### Summary\r\n\r\nSince .NET 5 standardized on using ICU instead of NLS for globalization across all supported platforms (see [breaking change notice](https://docs.microsoft.com/dotnet/core/compatibility/globalization#globalization-apis-use-icu-libraries-on-windows)), we've received a few reports of `string` and globalization APIs not behaving as expected.\r\n\r\nThese reports generally fall into one of two buckets:\r\n\r\n1. The developer wasn't intending to make their code globalization-aware, and the switch to ICU exposed an unintentional dependency in the developer's code which led to an unwanted behavioral change. See: https://github.com/dotnet/runtime/issues/43736, https://github.com/dotnet/runtime/issues/42234, https://github.com/dotnet/runtime/issues/40922, https://github.com/dotnet/runtime/issues/40258, https://github.com/dotnet/runtime/issues/36177, https://github.com/dotnet/runtime/issues/3399"
+    },
+    {
+      "source": "github-issues",
+      "title": "[MODEL] Complex engineering behavior regression across sessions; request RCA and auditability guarantees",
+      "url": "https://github.com/anthropics/claude-code/issues/50513",
+      "repo": "anthropics/claude-code",
+      "reactions": 28,
+      "comments": 9,
+      "created": "2026-04-18T20:07:42Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Amodel) for similar behavior reports\n- [x] This report does NOT contain sensitive information (API keys, passwords, etc.)\n\n### Type of Behavior Issue\n\nOther unexpected behavior\n\n### What You Asked Claude to Do\n\nThis is an aggregate model-behavior report, not a single proprietary-session bug report.\n\nThe representative task class is complex engineering work in an existing codebase: investigate a bug or implementation issue, preserve the actual engineering objective, read the relevant code before editing, identify the likely root cause, make a causally justified fix, and provide evidence before claiming completion.\n\nA representative sanitized version of the task shape is:\n\n> Investigate and fix the root cause of a non-trivial bug in an existing codebase. Do not patch only the visible symptom. Before editing, read the relevant call path, tests, configuration, and surrounding code. Preserve existing behavior unless explicitly asked to change it. After the fix, explain the likely root cause, what mechanism changed, what checks were run, a"
+    },
+    {
+      "source": "github-issues",
+      "title": "Detect Rust errors",
+      "url": "https://github.com/intellij-rust/intellij-rust/issues/886",
+      "repo": "intellij-rust/intellij-rust",
+      "reactions": 24,
+      "comments": 8,
+      "created": "2017-01-03T16:23:35Z",
+      "body_snippet": "Here's the list of the Rust compiler errors that the compiler can emit according to https://doc.rust-lang.org/error-index.html. All old errors (i.e. marked with `Note: this error code is no longer emitted by the compiler.` note) are excluded from this list. Since some errors can become outdated during compiler evolution, any corrections and additions are very welcome.\r\n\r\nSome of these errors could only be detected in a limited number of cases so far, but it's still enough for them to be helpful.\r\n\r\nI think this list could be treated as a meta issue from which anyone could grab tasks to accomplish. I will surely do that.\r\n\r\nI would also suggest that the error annotations should provide the very same highlight range and error text (with the error code at the end) as rustc produces.\r\n\r\n- [x] [E0004](https://doc.rust-lang.org/error-index.html#E0004): Not all possible patterns are covered in `match` expression\r\n\r\n    Quick fixes:\r\n    - [x] Add remaining patterns\r\n    - [x] Add `_` pattern\r\n    \r\n- [ ] [E0005](https://doc.rust-lang.org/error-index.html#E0005): Patterns used to bind names must be irrefutable, that is, they must guarantee that a name will be extracted in all cases.\r\n- [ ]"
+    },
+    {
+      "source": "github-issues",
+      "title": "Support Storybook",
+      "url": "https://github.com/oven-sh/bun/issues/3794",
+      "repo": "oven-sh/bun",
+      "reactions": 23,
+      "comments": 18,
+      "created": "2023-07-24T19:53:02Z",
+      "body_snippet": "Storybook - [Website](https://storybook.js.org/) - [GitHub](https://github.com/storybookjs/storybook)\r\n\r\n### What version of Bun is running?\r\n\r\n0.7.0\r\n\r\n### What platform is your computer?\r\n\r\nDarwin 22.5.0 arm64 arm\r\n\r\n### What steps can reproduce the bug?\r\n\r\nFirst create the Vite project.\r\n\r\n* `bun x create-vite@latest`\r\n\r\n```\r\n✔ Project name: … vite-project\r\n✔ Select a framework: › Solid\r\n✔ Select a variant: › TypeScript\r\n```\r\n\r\n\r\n* `cd vite-project`\r\n* `bun i`\r\n* `bun --bun run dev` (Check that the Vite + Solid project runs as expected)\r\n\r\nSecond init the storybook:\r\n* `bun --bun x storybook@latest init`\r\n\r\n### What is the expected behavior?\r\n\r\nThis is the case if ran just as `bun x storybook@latest init` without the `--bun` flag.\r\n\r\n```\r\n\r\n➜ bun --bun x storybook@latest init       \r\n\r\n storybook init - the simplest way to add a Storybook to your project. \r\n\r\n • Detecting project type. ✓\r\n • Preparing to install dependencies. ✓\r\n\r\n\r\n\r\nup to date, audited 942 packages in 1s\r\n\r\n176 packages are looking for funding\r\n  run `npm fund` for details\r\n\r\n2 moderate severity vulnerabilities\r\n\r\nTo address all issues, run:\r\n  npm audit fix\r\n\r\nRun `npm audit` for details.\r\n. ✓\r\n • Detected Vi"
+    },
+    {
+      "source": "github-issues",
+      "title": "proposal: bytecode-only script execution via vm module (sourceless mode)",
+      "url": "https://github.com/nodejs/node/issues/62670",
+      "repo": "nodejs/node",
+      "reactions": 22,
+      "comments": 4,
+      "created": "2026-04-10T10:53:35Z",
+      "body_snippet": "## Summary\n\nAdd an opt-in `sourceless` mode to `vm.Script`, `vm.compileFunction()`, and `vm.SourceTextModule` that allows executing V8 bytecode without requiring the original JavaScript source code. This enables deployment scenarios where only pre-compiled bytecode is shipped, reducing bundle sizes and improving startup performance for packaged applications.\n\nThe feature would be gated behind `--experimental-vm-sourceless` and exposed as a `sourceless` option across the `vm` module APIs.\n\n## Motivation\n\n### The problem today\n\nSeveral real-world deployment scenarios benefit from shipping pre-compiled V8 bytecode instead of (or alongside) source code:\n\n1. **Single Executable Applications (SEA):** Node.js already supports embedding V8 code cache in SEAs via `useCodeCache: true`. However, the source must still be embedded alongside the bytecode, doubling the payload size for no runtime benefit when the code cache is valid.\n\n2. **Edge/IoT deployments:** Devices with constrained storage and slow I/O benefit from shipping only bytecode — smaller binaries, no parse overhead, faster cold starts.\n\n3. **Startup performance at scale:** Bundlers like `esbuild` and `ncc` already solve single-art"
+    },
+    {
+      "source": "github-issues",
+      "title": "aws_vpc_block_public_access_options stuck in 'default-state', causing Terraform apply failures and tainted resource",
+      "url": "https://github.com/hashicorp/terraform-provider-aws/issues/44897",
+      "repo": "hashicorp/terraform-provider-aws",
+      "reactions": 21,
+      "comments": 1,
+      "created": "2025-10-31T23:15:22Z",
+      "body_snippet": "### Terraform and AWS Provider Version\n\n```console\nhashicorp/aws v5.89.0\n```\n\n### Affected Resource(s) or Data Source(s)\n\naws_vpc_block_public_access_options\n\n### Expected Behavior\n\nThe resource `aws_vpc_block_public_access_options` should transition from `default-state` or `update-in-progress` to `update-complete `within the timeout period, allowing `terraform apply` to complete successfully without marking the resource as tainted.\n\n### Actual Behavior\n\nThe resource remains in `default-state` and does not reach `update-complete` state, resulting in Terraform timing out after 2 minutes (or configured timeout), marking the resource as tainted. Subsequent `terraform apply` attempts require destroying and recreating the resource repeatedly.\n\n### Relevant Error/Panic Output\n\n```console\nError: waiting for VPC Block Public Access Options (us-east-1) create\n\n  with aws_vpc_block_public_access_options.vpc_public_block[0],\n  on main.tf line 6, in resource \"aws_vpc_block_public_access_options\" \"vpc_public_block\":\n   6: resource \"aws_vpc_block_public_access_options\" \"vpc_public_block\" {\n\ntimeout while waiting for state to become 'update-complete' (last state: 'update-in-progress', timeout: 45"
+    },
+    {
+      "source": "github-issues",
+      "title": "💡 [Feature Request] - Offline POS and Sync with ERPNext",
+      "url": "https://github.com/frappe/books/issues/1174",
+      "repo": "frappe/books",
+      "reactions": 19,
+      "comments": 1,
+      "created": "2025-04-04T14:12:10Z",
+      "body_snippet": "### Summary\n\nWe propose adding the ability for **Frappe Books POS and Inventory** to seamlessly connect with and sync back data to the **ERPNext** master instance. This would allow users to perform sales transactions, manage inventory, and track customers in an offline mode within the POS system, with data syncing back to the ERPNext server once the internet connection is restored.\n\n#### Features:\n1. **Offline POS Functionality**: \n   - The ability to process sales transactions (invoices, payments, etc.) in offline mode.\n   - Offline management of products, stock levels, and pricing.\n   - Keep track of customers and sales history locally.\n\n2. **Data Syncing**:\n   - Automatically sync sales, customer data, inventory updates, and other relevant information back to the master **ERPNext** instance when the connection is restored.\n   - Syncing should be done in the background, with error handling for conflicts (e.g., duplicate entries or stock mismatches).\n\n3. **Inventory Sync**:\n   - Sync stock levels and movements between the POS and ERPNext to ensure consistency in real-time.\n   - Ability to perform stock adjustments offline, which will sync back once online.\n\n4. **Customer Data**:\n "
+    },
+    {
+      "source": "github-issues",
+      "title": "[RFC] Memory format (aka layout aka NHWC) support",
+      "url": "https://github.com/pytorch/pytorch/issues/19092",
+      "repo": "pytorch/pytorch",
+      "reactions": 18,
+      "comments": 74,
+      "created": "2019-04-10T00:44:37Z",
+      "body_snippet": "## Problem statement\r\n\r\nCNN operators utilize canonical order of tensor dimensions and assign them semantic meaning. For the 2D case in PyTorch today an input to torch.nn.Conv2d has to be a 4d tensor in NCHW order - <batch, channels, width, height>.\r\n\r\nFor performance reasons, it's often beneficial to reorder dimensions differently so that memory accessed by particular operations is laid out contiguously and locality is better utilized. Most common option is moving dimensions towards the end - NHWC. There can be even more complex memory formats that tile one dimension into blocks, e.g. <N, C/16, H, W, C16>.\r\n\r\nExample libraries utilizing it include:\r\n\r\n* cudnn has faster performance on Volta in NHWC  \r\n* fbgemm and qnnpack don't support NCHW.  \r\n* libxsmm does support NCHW but the performance penalty is something like 50% (IIRC).  \r\n\r\nThe challenge is that transforming the dimension order itself is expensive, so in cases when multiple CNNs operations are performed in a row (e.g. `conv(relu(conv)))`) it's beneficial **to transform to the different memory format once,** carry out operations and reorder them back.\r\n\r\nThus it's important to make PyTorch aware of different dimensions or"
+    },
+    {
+      "source": "github-issues",
+      "title": "Priorities & Operating Contexts",
+      "url": "https://github.com/prisma/orm/issues/25843",
+      "repo": "prisma/orm",
+      "reactions": 16,
+      "comments": 3,
+      "created": "2024-12-12T14:28:40Z",
+      "body_snippet": "Prisma is used in a variety of environments, frameworks, and workflows, serving developers with diverse needs and goals. This document defines what an **operating context** is, outlines our prioritization framework, and sets clear expectations for support across different environments.\n\nBy focusing on specific operating contexts, we aim to prioritize development, ensure compatibility where it matters most, and communicate transparently with our community.\n\n## **What is an Operating Context?**\n\nAn **operating context** refers to an environment or framework where Prisma is used. These include databases, runtimes, frameworks, deployment platforms, and more.\n\nNot all operating contexts are directly supported by the Prisma ORM codebase. Some are supported through separate packages, and others may be maintained externally. \n\nRegardless of where the support resides, the operating contexts we recognize influence our design decisions, how we respond to bug reports, and how we evaluate feature requests.\n\nExamples of Prisma operating contexts include:\n\n- **Database Contexts**: The types of databases Prisma can connect to\n- **Execution Contexts**: The runtime environments where Prisma operates"
+    },
+    {
+      "source": "github-issues",
+      "title": "Copilot CLI session file cannot be opened in VS Code Copilot Chat: Invalid 'ephemeral' value literal",
+      "url": "https://github.com/github/copilot-cli/issues/2000",
+      "repo": "github/copilot-cli",
+      "reactions": 15,
+      "comments": 0,
+      "created": "2026-03-12T13:15:11Z",
+      "body_snippet": "### Describe the bug\n\n### Bug Summary\n\nWhen opening a chat session exported/generated by GitHub Copilot CLI in VS Code Copilot Chat extension, the following error occurs and the session cannot be loaded:\n\n```\nFailed to initialize chat session copilotcli:/<session-id>: Session file is corrupted (line 6: ephemeral: Invalid literal value, expected true)\n```\n\nVS Code Copilot Chat cannot open the CLI session. The session file is stored at:\n```\n~/.copilot/session-state/<session-id>/events.jsonl\n```\n\n### Minimal Repro Session File (events.jsonl excerpt)\n\n```jsonl\n{\"type\":\"session.start\",\"data\":{\"sessionId\":\"<session-id>\",\"version\":1,\"producer\":\"copilot-agent\",\"copilotVersion\":\"1.0.4\",\"startTime\":\"2026-03-12T12:36:24.489Z\",\"context\":{\"cwd\":\"/path/to/project\",\"gitRoot\":\"/path/to/project\",\"branch\":\"main\",\"headCommit\":\"<commit-sha>\",\"repository\":\"<repo-name>\",\"hostType\":\"github\",\"baseCommit\":\"<commit-sha>\"},\"alreadyInUse\":false},\"id\":\"<uuid-1>\",\"timestamp\":\"2026-03-12T12:36:24.540Z\",\"parentId\":null}\n{\"type\":\"user.message\",\"data\":{\"content\":\"hi\",\"transformedContent\":\"<current_datetime>2026-03-12T12:36:30.132Z</current_datetime>\\n\\nhi\\n\\n<reminder>\\n<sql_tables>No tables currently exist. Defaul"
+    },
+    {
+      "source": "github-issues",
+      "title": "Flowbite's handling of Turbo is using the wrong strategy",
+      "url": "https://github.com/themesberg/flowbite/issues/796",
+      "repo": "themesberg/flowbite",
+      "reactions": 15,
+      "comments": 39,
+      "created": "2024-02-05T10:52:45Z",
+      "body_snippet": "**tl;dr:** The current approach for integrating Turbo with Flowbite is using a mismatched strategy. As far as I can tell, it will only ever work for a certain subset of Turbo-enabled web applications. Events don't work for every case and should be replaced with `MutationObserver`.\r\n\r\n--- \r\n## Details\r\n\r\nSorry for the long wall of text, but I believe this is necessary to understand the problem.\r\n\r\nI spend some hours over the weekend to make Flowbite work with Turbo, but had no actual success. As soon as I used more than just the page cache feature, simple visits or most-of-the-page Turbo frames, I encountered dead ends.\r\n\r\nThe unpublished fix in https://github.com/themesberg/flowbite/pull/760 did help at first, but it then revealed a huge conceptual problem, which I think cannot be tackled with the current approach.\r\n\r\nLet me explain 😃  Most previous issues regarding Turbo were about missing initialization on frame navigations or after stream actions, or about broken re-initialization: https://github.com/themesberg/flowbite/issues/450, https://github.com/themesberg/flowbite/pull/760, https://github.com/themesberg/flowbite/issues/698, https://github.com/themesberg/flowbite/issues/697"
+    },
+    {
+      "source": "github-issues",
+      "title": "The Fragility of Beads in Gas Town",
+      "url": "https://github.com/gastownhall/gastown/issues/764",
+      "repo": "gastownhall/gastown",
+      "reactions": 15,
+      "comments": 4,
+      "created": "2026-01-18T17:07:35Z",
+      "body_snippet": "## Executive Summary\n\nGas Town uses beads as operational state infrastructure, not just issue tracking. This creates a fragility problem: beads was designed as a git-backed issue tracker, but gastown relies on it for critical runtime state (roles, molecules, convoys, merge requests, events, routing). When beads state is corrupted, lost, or out of sync, gastown agents fail in ways that are difficult to diagnose and recover from.\n\n**The core tension:**\n\nWhen an issue tracker loses a ticket, it's annoying. When operational infrastructure loses state, the factory explodes.\n\n---\n\n## How Gas Town Depends on Beads\n\n**Two-Level Architecture:**\n- **Town-level** (`~/gt/.beads/` with `hq-*` prefix): Mayor, Deacon roles and coordination\n- **Rig-level** (`<rig>/mayor/rig/.beads/` with project prefixes): Witness, Refinery, Polecats\n\n**Operational State Stored in Beads:**\n\n| State Type | Prefix/Location | If Lost/Corrupted |\n|------------|-----------------|-------------------|\n| Role beads | `hq-*-role` | Agents lose identity, won't start |\n| Molecules | town/rig level | Workflow state lost, agents stuck |\n| Wisps | ephemeral (no JSONL) | In-flight work lost on restart |\n| Convoys | `hq-cv-*` | W"
+    },
+    {
+      "source": "github-issues",
+      "title": "[NEW] Introduce First-Class Durability Support in Valkey",
+      "url": "https://github.com/valkey-io/valkey/issues/1355",
+      "repo": "valkey-io/valkey",
+      "reactions": 15,
+      "comments": 17,
+      "created": "2024-11-26T01:47:34Z",
+      "body_snippet": "# Problem Statement #\r\n\r\nValkey offers several options for users seeking to ensure data durability, but each has notable limitations.\r\n\r\nA commonly used approach is the `WAIT` command, which ensures that changes are replicated to a specified number of replicas before confirming success to the client. However, this places the burden of managing durability on the application, introducing complexity and increasing the risk of errors.\r\n\r\nAnother option is to use Append-Only File (AOF) with `ALWAYS` fsync, while avoiding replicas altogether. This ensures that writes are persisted to disk before being acknowledged to the client. However, AOF is not a true write-ahead log (WAL). For instance, in cases where writes or fsync operations fail, the changes might still be appended to the AOF file even though the client was informed of a failure. This creates a mismatch between the client’s perception and the actual system state, leading to what can be described as durability inconsistency. Moreover, this approach provides durability guarantees only on a single node.\r\n\r\nSimilarly, the `WAITAOF` command, which ensures data is written to the AOF file before acknowledgment, shares the same challeng"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] Native Prompt Optimization for Self-Improving Agents",
+      "url": "https://github.com/strands-agents/harness-sdk/issues/609",
+      "repo": "strands-agents/harness-sdk",
+      "reactions": 14,
+      "comments": 2,
+      "created": "2025-08-05T02:12:26Z",
+      "body_snippet": "### Problem Statement\n\nEnable **meta-prompting** for Strands agents - the ability to automatically optimize prompts based on execution patterns. This is critical for scenarios involving long-running agent trajectories where manual prompt tuning can't keep pace with evolving requirements. By learning from outcomes across multiple interactions, agents can achieve just-in-time optimization, adapting their instructions to match actual usage patterns rather than anticipated ones.\n\nCurrently, Strands agents use static prompts that require manual tuning when deployed to production. While agents can reason at runtime (CoT/ReAct), it can be difficult for them to learn instructions over time and perform actual just in time scaling.\n\n**Key distinction from existing Strands Agents capabilities:**\n- **CoT/ReAct (current)**: Runtime reasoning for individual queries (\"How do I solve THIS task?\")\n- **Prompt Optimization (proposed)**: Learning better instructions from patterns (\"What instructions lead to better outcomes?\")\n\n**Pain points:**\n- Agents can't easily learn from successful/failed interactions\n- Performance degrades on edge cases without manual intervention  \n- Each team must manually tun"
+    },
+    {
+      "source": "github-issues",
+      "title": "Allow admins to change table references for saved GUI questions between Databases",
+      "url": "https://github.com/metabase/metabase/issues/29781",
+      "repo": "metabase/metabase",
+      "reactions": 14,
+      "comments": 13,
+      "created": "2023-04-04T01:04:18Z",
+      "body_snippet": "**Is your feature request related to a problem? Please describe.**\n\n* Improving data infrastructure requires refactoring of data warehouses, databases, tables, and views.\n* Currently making these changes cause a downstream negative effect in Metabase that requires rebuilding existing questions if the changes are in tables/views that have been widely used.\n\n**Describe the solution you'd like**\n\n1. Select a `database_old` and a `database_new` (default to the same database)\n2. Select from a list of questions in the `database_old`\n3. See a list of tables in the referenced by the selected questions and select which tables to map to in the `database_new`\n4. For each table referenced in the selected questions, select which columns from `table_old` map to which columns in `table_new`\n5. Apply the replacement with the ability to revert the change (like any other question edit that can be reverted)\n\n* May be helpful to have a warning or step about checking that permissions need to match for the questions to continue to work the same for users who are not admins. (Would not recommend changing permissions with this process though).\n* Future improvements could include suggested matching (match "
+    }
+  ]
+}

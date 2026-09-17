@@ -1,0 +1,116 @@
+{
+  "query": "data mismatch manual",
+  "count": 10,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Show HN: Write JSON processor queries (jq) in natural language",
+      "url": "https://github.com/AgentOps-AI/Jaiqu",
+      "hn_id": "39881753",
+      "points": 38,
+      "comments": 0,
+      "author": "Areibman",
+      "created": "2024-03-31T05:42:17Z",
+      "text_snippet": "Hey HN! Jaiqu is an AI agent for creating repeatable JSON transforms using jq query language syntax.<p>Jaiqu translates complex JSON structures into repeatable jq queries. jq is a command line utility built for fast, reliable JSON queries. Jaiqu takes advantage of the LLMs for both constructing jq queries as well as using feedback to fix errors&#x2F;invalid results if those queries are incorrect.<p>Writing code to parse JSON is super annoying. It usually involves manually reading huge JSON balls, parsing the keys in a language of your choice, and pulling the data manually. Also, you&#x27;re likely to run into key mismatches (i.e. source data might have &quot;customer_id&quot; as a key but my table is &quot;user_id&quot;), so you would have to write the translation dictionaries by hand.<p>This struck me as a task that was analogous to the many AI &quot;natural language to SQL&quot; editors out there. However, there were a lot of consistency issues where the LLMs would not produce functi"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: DAGWorks – ML platform for data science teams",
+      "url": "https://news.ycombinator.com/item?id=35056903",
+      "hn_id": "35056903",
+      "points": 182,
+      "comments": 65,
+      "author": "krawczstef",
+      "created": "2023-03-07T16:04:36Z",
+      "text_snippet": "Hey HN! We’re Stefan and Elijah, co-founders of DAGWorks (<a href=\"https:&#x2F;&#x2F;&#x2F;www.dagworks.io\" rel=\"nofollow\">https:&#x2F;&#x2F;&#x2F;www.dagworks.io</a>). We’re on a mission to eliminate the insane inefficiency of building and maintaining ML pipelines in production.<p>DAGWorks is based on Hamilton, an open-source project that we created and recently forked (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;dagworks-inc&#x2F;hamilton\">https:&#x2F;&#x2F;github.com&#x2F;dagworks-inc&#x2F;hamilton</a>). Hamilton is a set of high-level conventions for Python functions that can be automatically converted into working ETL pipelines. To that, we&#x27;re adding a closed-source offering that goes a step further, plugging these functions into a wide array of production ML stacks.<p>ML pipelines consist of computational steps (code + data) that produce a working statistical model that a business can use. A typical pipeline might be (1) pull raw data (Extract), (2) transform that data into i"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Hightouch (YC S19) – Sync data from data warehouses to SaaS tools",
+      "url": "https://news.ycombinator.com/item?id=29188544",
+      "hn_id": "29188544",
+      "points": 132,
+      "comments": 47,
+      "author": "kashishg",
+      "created": "2021-11-11T15:02:50Z",
+      "text_snippet": "Hey HN! Kashish, Tejas, and Josh here. We’re building Hightouch (<a href=\"https:&#x2F;&#x2F;www.hightouch.io&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.hightouch.io&#x2F;</a>), a reverse ETL platform— that is, software that gets your data back out of your data warehouse and into the SaaS tools that people at your company are familiar with (like Salesforce). We enable you to Bring Your Own (BYO) database so that all your SaaS tools run off of the same dataset. You specify what data you want and where, and we take care of the rest.<p>We were exposed to the data integration space as early engineers at Segment. Segment and other CDPs (Customer Data Platforms) were built on an older model that hits a wall once you reach a certain level of complexity. You don’t have access to your own data, there isn’t a great way to express business logic, and you don’t have flexibility to transform data to your needs.<p>Cloud-based data warehouses like Snowflake and tools like dbt solved part of this prob"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: InspectMind (YC W24) – AI agent for reviewing construction drawings",
+      "url": "https://news.ycombinator.com/item?id=46219386",
+      "hn_id": "46219386",
+      "points": 59,
+      "comments": 56,
+      "author": "aakashprasad91",
+      "created": "2025-12-10T16:05:03Z",
+      "text_snippet": "Hi HN, we&#x27;re Aakash and Shuangling of InspectMind (<a href=\"https:&#x2F;&#x2F;www.inspectmind.ai&#x2F;\">https:&#x2F;&#x2F;www.inspectmind.ai&#x2F;</a>), an AI “plan checker” that finds issues in construction drawings, details, and specs.<p>Construction drawings quietly go out with lots of errors: dimension conflicts, co-ordination gaps, material mismatches,  missing details and more. These errors turn into delays and hundreds of thousands of dollars of rework during construction. InspectMind reviews the full drawing set of a construction project in minutes. It cross-checks architecture, engineering, and specifications to catch issues that cause rework before building begins.<p>Here’s a video with some examples: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Mvn1FyHRlLQ\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Mvn1FyHRlLQ</a>.<p>Before this, I (Aakash) built an engineering firm that worked on ~10,000 buildings across the US. One thing that always frus"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: VaultSandbox – Test your real MailGun/SES/etc. integration",
+      "url": "https://vaultsandbox.com/",
+      "hn_id": "46512203",
+      "points": 58,
+      "comments": 14,
+      "author": "vaultsandbox",
+      "created": "2026-01-06T13:50:48Z",
+      "text_snippet": "I&#x27;ve spent the last few months working on something I wish I&#x27;d had years ago.\nI kept running into the same issue: CI green, production mail broken. TLS handshake failures, DKIM alignment mismatches, SPF soft-fails ... the stuff that only surfaces when real mail servers are involved.\nMost test tools (Mailpit, MailHog) are catch-alls. They confirm &quot;an email was sent&quot; but don&#x27;t validate the protocol. They also aren&#x27;t designed for network-exposed environments: no auth, unprotected Web UI, easy to enumerate messages.<p>VaultSandbox is my attempt at fixing that.\nIt&#x27;s a self-hosted SMTP gateway (AGPLv3) that validates SPF, DKIM, DMARC, and rDNS on every incoming message. You keep your production email provider (Postmark, SendGrid, SES) in tests and you just change the recipient domain. No mocking, no config changes.\nThere are client SDKs (Node, Python, Go, Java, .NET), plus a Web UI and a CLI for manual testing.<p>Some technical details:<p>Deterministic Test"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Toolbase – Build reliable AI teammates by example, not instruction",
+      "url": "https://news.ycombinator.com/item?id=43871499",
+      "hn_id": "43871499",
+      "points": 2,
+      "comments": 1,
+      "author": "David1238",
+      "created": "2025-05-02T15:58:20Z",
+      "text_snippet": "Hey HN, we’re David and Ethan, co-founders of Toolbase.<p>Toolbase is an AI agent and workflow builder that helps you quickly create production-grade AI automations — batteries included.<p>Try it without registering here: <a href=\"https:&#x2F;&#x2F;gettoolbase.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;gettoolbase.com&#x2F;</a><p>------- The dev cycle in Toolbase -------<p>1. Define a rough goal.<p>2. Connect any API or MCP server (we have thousands, or bring your own).<p>3. Teach the AI what valid input and output examples look like (these later become your unit tests!).<p>4. Let Toolbase generate the perfect prompt, code, workflow, or agent.<p>5. Deploy your project as an API, MCP server, or chat interface!<p>Coding optional. Sharing encouraged.<p>Note: If you’re familiar with Cursor&#x2F;Windsurf and the core concepts behind frameworks like Mastra (which Toolbase runs on), you already know how to use Toolbase. You retain the flexibility of coding but avoid boilerplate and plumbing "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Satd – a Bitcoin full node in Rust",
+      "url": "https://github.com/epochbtc/satd",
+      "hn_id": "48555262",
+      "points": 2,
+      "comments": 0,
+      "author": "epochbtc",
+      "created": "2026-06-16T13:47:26Z",
+      "text_snippet": "I&#x27;m Ben, and I&#x27;ve written a modern, independent implementation of the Bitcoin protocol in Rust. The primary problem I wanted to tackle was monoculture:\nthe Bitcoin network and community has been based on a single C++ implementation for 15 years, a descendant of the original Satoshi-authored codebase.\nThis codebase and the small Core committee are a single-point-of-failure, and is a potentially attractive target for those who would seek to damage or disrupt the network.<p>On top of that, while the Core team has done a great job at stewarding and improving the codebase, it can&#x27;t help but be a big, complex\ntree of largely legacy C++. I wanted something modern, easier to maintain and with <i>batteries included</i>:<p>- Native TLS (including mTLS) out of the box<p>- Built-in (optional) API services for Electrum (based on electrs) and Esplora (no sidecars or separate services needed to run a wallet backend)<p>- Atomic indices with a single RocksDB data store (address index can"
+    },
+    {
+      "source": "hn",
+      "title": "ClipE96: We Left the Clipboard Unguarded for 40 Years",
+      "url": "https://news.ycombinator.com/item?id=46051434",
+      "hn_id": "46051434",
+      "points": 2,
+      "comments": 0,
+      "author": "DaaaaveATX",
+      "created": "2025-11-25T22:12:17Z",
+      "text_snippet": "In 1984, Apple shipped copy and paste. It was a miracle of usability—and architecturally broken from day one.<p>Press Ctrl+C and the entire payload—bytes, formatting, metadata, embedded objects—dumps into a system buffer that any application can read. No auth. No logging. No revocation.<p>The clipboard is a broadcast channel disguised as a convenience.<p><i>The catastrophe:</i> The clipboard is now the #1 data exfiltration vector in enterprise. 77% of knowledge workers paste corporate data into AI tools. Every paste bypasses your CASB, EDR, SIEM, and DLP. Your security stack guards the front door while users walk data out the side.<p><i>The waste:</i> 40 billion copy operations&#x2F;day × ~100KB average = 4 exabytes of daily churn. RAM pressure, cloud sync, VM duplication—all unnecessary. Annualized: 83B kWh, 33M tons CO₂, $10B in energy costs. We&#x27;re burning a small nation&#x27;s power grid because nobody questioned whether copying a sentence needed to ship a document.<p><i>The se"
+    },
+    {
+      "source": "hn",
+      "title": "How do you catch schema drift and security gaps in Firestore?",
+      "url": "https://news.ycombinator.com/item?id=47179989",
+      "hn_id": "47179989",
+      "points": 1,
+      "comments": 1,
+      "author": "Madia120",
+      "created": "2026-02-27T12:56:58Z",
+      "text_snippet": "Schema drift happens when:<p><pre><code>    User documents start with { name: &quot;John&quot;, email: &quot;john@...&quot; }\n\n    Later, someone adds { name: &quot;Jane&quot;, email: &quot;jane@...&quot;, profile: {...} }\n\n    Even later: { name: &quot;Bob&quot;, email: &quot;bob@...&quot;, profile: &quot;basic&quot; }\n</code></pre>\nNow profile is sometimes an object, sometimes a string, sometimes missing entirely.<p>When this breaks:<p>javascript&#x2F;&#x2F; This works for some docs, fails for others\nuser.profile.avatar &#x2F;&#x2F; TypeError: Cannot read property &#x27;avatar&#x27; of undefined<p>Security gaps emerge because:<p><pre><code>    You write rules assuming a consistent schema: allow read: if resource.data.profile.role == &quot;admin&quot;\n\n    But when profile is a string or missing, this rule behaves unexpectedly (usually throwing evaluation errors and blocking access for legitimate users, or worse, leaving loopholes if rules are overly permissive).\n\n    Collections get "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Auto-Compare GA4/Amplitude Data Against Log Definitions",
+      "url": "https://chromewebstore.google.com/detail/analytics-data-qa/icopicdkpapbeojapnaplmffgjjhgnjo",
+      "hn_id": "45888107",
+      "points": 1,
+      "comments": 0,
+      "author": "asbebe",
+      "created": "2025-11-11T15:08:20Z",
+      "text_snippet": "Hello Hacker News,<p>I&#x27;m Mack and I&#x27;m sharing a Chrome Extension I built to solve a huge bottleneck in data implementation: manually verifying if collected analytics data (GA4, Amplitude, etc.) matches the predefined log specifications. This QA process is time-consuming and prone to errors for developers, product managers, and data analysts alike.<p>Introducing Analytics Data QA\nAnalytics Data QA is a Chrome DevTools extension that automatically validates your collected events against your uploaded log definition files. It turns hours of manual checking into seconds of automated verification.<p>Key Features\nAutomated Log Validation: Instantly alerts you if an event parameter is missing, mismatched, or if the event structure deviates from your standards.<p>Visual Event Tracking: Organizes events by page and automatically captures a screenshot of the page where the events occurred, providing critical context for QA.<p>Recording &amp; Diagnosis: Records the user actions that led"
+    }
+  ]
+}

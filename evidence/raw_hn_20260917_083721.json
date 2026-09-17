@@ -1,0 +1,28 @@
+{
+  "query": "reconcile data from multiple systems",
+  "count": 2,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Show HN: Hacienda-CLI – CLI to reconcile Spanish tax returns with the tax agency",
+      "url": "https://github.com/jatorre/hacienda-cli",
+      "hn_id": "47768365",
+      "points": 2,
+      "comments": 1,
+      "author": "jatorre",
+      "created": "2026-04-14T17:12:57Z",
+      "text_snippet": "I built a CLI to programmatically interact with Spain&#x27;s tax agency (AEAT) for income tax filing (Modelo 100). It authenticates via Cl@ve using Playwright, downloads your tax data, validates XML against the official XSD, and uploads it to AEAT&#x27;s EDFI system for reconciliation.\nThe problem: AI agents can do a good job organizing financial data from multiple brokers, banks and crypto exchanges, but there was no way to programmatically check that against what the tax agency already knows about you. This CLI bridges that gap.\nIt does NOT file or submit anything. The user is always responsible for manual review and submission.<p>Maybe a bit specific for the spanish community, but if you always wish there was a CLI to do your taxes here is an unofficial one."
+    },
+    {
+      "source": "hn",
+      "title": "Orchestrating 5000 Workers Without Distributed Locks: Rediscovering TDMA",
+      "url": "https://news.ycombinator.com/item?id=46386053",
+      "hn_id": "46386053",
+      "points": 3,
+      "comments": 4,
+      "author": "Horos",
+      "created": "2025-12-25T18:14:12Z",
+      "text_snippet": "I needed to orchestrate 500-5000 batch workers (ML training, ETL) using Go and SQLite. Every tutorial said: use etcd, Consul, or ZooKeeper.<p>But why do these processes need to talk to each other at all?<p>THE INSIGHT<p>What if orchestrators never run simultaneously?<p>Runner-0 executes at T=0s, 10s, 20s...\nRunner-1 executes at T=2s, 12s, 22s...\nRunner-2 executes at T=4s, 14s, 24s...\nRunner-3 executes at T=6s, 16s, 26s...\nRunner-4 executes at T=8s, 18s, 28s...<p>Time-Division Multiple Access (TDMA). Same pattern GSM uses for radio.<p>GO IMPLEMENTATION<p>type Runner struct {\n    ID, TotalRunners int\n    CycleTime time.Duration\n}<p>func (r <i>Runner) Start() {\n    slot := r.CycleTime &#x2F; time.Duration(r.TotalRunners)\n    offset := time.Duration(r.ID) </i> slot<p><pre><code>    for {\n        time.Sleep(time.Until(computeNextSlot(offset)))\n        r.reconcile() &#x2F;&#x2F; Check workers, start if needed\n    }</code></pre>\n}<p>Each runner gets 2s in a 10s cycle. No overlap = zero coordi"
+    }
+  ]
+}

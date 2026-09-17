@@ -1,0 +1,226 @@
+{
+  "query": "missed alerts",
+  "count": 20,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Show HN: Preq – Community powered detection of hidden reliability problems",
+      "url": "https://github.com/prequel-dev/preq",
+      "hn_id": "44712902",
+      "points": 2,
+      "comments": 0,
+      "author": "meehanto",
+      "created": "2025-07-28T17:11:59Z",
+      "text_snippet": "Hey HN,<p>We’re excited to share preq (&quot;preek&quot;), an Apache‑2 licensed, community‑powered tool that scans your logs and configs to flag issues before they become incidents. It’s driven by Common Reliability Enumerations (CREs)—a growing library of community‑curated rules that describe real‑world failure patterns.<p>The project was inspired by the frustrations we experienced monitoring applications at leading companies:<p>* slow, manually incident investigations<p>* noisy telemetry and alerts<p>* missed warning signs that caused incidents<p>We believe engineering teams should be able to detect open source bugs, misconfigurations, and developer anti-patterns without hours of manual effort<p>We recently open-sourced preq which features:<p>* Auto‑updating rules: always stay in sync with the latest CREs from <a href=\"https:&#x2F;&#x2F;github.com&#x2F;prequel-dev&#x2F;cre\">https:&#x2F;&#x2F;github.com&#x2F;prequel-dev&#x2F;cre</a><p>* Lightweight &amp; cross‑platform: runs on Linux,"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Desktop app to never miss GitHub security alerts",
+      "url": "https://github.com/stephanebouget/github-security-alerts",
+      "hn_id": "46311654",
+      "points": 1,
+      "comments": 0,
+      "author": "stephanebouget",
+      "created": "2025-12-18T12:02:51Z",
+      "text_snippet": "Hi HN,<p>I manage a lot of GitHub repositories and kept missing security alert notifications.\nBetween emails, GitHub UI, and multiple orgs, important alerts were easy to overlook.<p>So I built GitHub Security Alerts: a free, open-source desktop app that centralizes GitHub depndabots alerts from all my repositories in one place.<p>The goal is simple: one view, no missed alerts.<p>Tech details:\n- Desktop app built with Tauri + JavaScript\n- Uses the GitHub API\n- Works across multiple repositories and organizations<p>This is an early version and I’d really appreciate feedback, criticism,\nand ideas for improvement."
+    },
+    {
+      "source": "hn",
+      "title": "Forgot to Sign Up for Minor League Hockey Alerts? You Missed Some Drama",
+      "url": "https://www.nytimes.com/2019/07/11/us/ahl-app-payment-request-hack.html",
+      "hn_id": "20416959",
+      "points": 1,
+      "comments": 0,
+      "author": "bgc",
+      "created": "2019-07-11T23:53:12Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Heroku Will Delete 8m Row Database with 7 Days' Notice",
+      "url": "https://news.ycombinator.com/item?id=30080563",
+      "hn_id": "30080563",
+      "points": 1,
+      "comments": 0,
+      "author": "nomilk",
+      "created": "2022-01-26T01:36:51Z",
+      "text_snippet": "Just a heads up so others can avoid similar: Heroku gives 7 days&#x27; notice before deleting databases on their Hobby Basic tier once it exceeds &gt;10GB or &gt;10m rows. [1]<p>Hobby Basic tier is meant for &quot;Small side projects and proof-of-concepts&quot; [2]. It&#x27;s possible for a startup to spend a lot of time in this tier because it spans from tiny (10k rows, to quite large 10m rows). Many startups reach $m valuations with smaller databases.<p>What happened to:<p>&gt; Anything that can go wrong will go wrong.<p>If your db admin&#x27;s takes a week&#x27;s holidays, they could return and find the database missing.<p>An unexpected grown surge could push your db past its limits earlier than anticipated and an alert email could easily be missed.<p>Heroku&#x27;s own infrastructure could go down at an inopportune time, preventing maintenance. For example heroku&#x27;s <i>database metrics page</i> is currently not displaying database metrics for some databases - including for this "
+    },
+    {
+      "source": "hn",
+      "title": "Lost $300 due to an API key leak from \"vibe coding\" – Learn from my mistake",
+      "url": "https://news.ycombinator.com/item?id=45241001",
+      "hn_id": "45241001",
+      "points": 8,
+      "comments": 14,
+      "author": "liulanggoukk",
+      "created": "2025-09-14T16:16:00Z",
+      "text_snippet": "I just learned an expensive lesson and wanted to share it here so others don’t make the same mistake.<p>I recently lost $300 because of an API key leak. It started with a surprise $200 charge from Google Cloud, and when I looked into it, I found another $100 charge from the day before. Both were for Gemini API usage that I never intentionally set up.<p>After digging, I discovered the issue: I had hard-coded an API key in a script that was part of a feature I ended up deprecating. The file was only in the codebase for two days, but that was enough for the key to leak. Google actually sent me alerts about unusual activity, but I missed them because they went to a less-frequently-checked email account.<p>Here’s what I learned:<p>Never hardcode API keys - Use environment variables or a .env file, even for temporary code.<p>Set up billing alerts - Google Cloud (and other providers) let you set up alerts for unexpected charges.<p>Check all linked emails - Don’t ignore notifications, even if "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Smart Pull Request Alerts → Faster Code Reviews",
+      "url": "https://pullnotifier.com/",
+      "hn_id": "43352061",
+      "points": 13,
+      "comments": 4,
+      "author": "gabriel-manta",
+      "created": "2025-03-13T10:58:19Z",
+      "text_snippet": "Like many devs, we lived in Slack hell—random notifications, chaotic threads and PRs always getting missed!<p>We tried everything: Slack bots, GitHub settings, follow-up msgs—nothing worked.<p>So we built PullNotifier.<p>PullNotifier ensures that every PR gets the attention it deserves. It makes sure the right people see them at the right time—without spamming everyone (so you don&#x27;t have to send those awkward PR request msgs).<p>What makes it different?<p>One notification per PR: No more drowning in redundant messages.<p>Smart routing: PRs go only to the relevant channels or reviewers.<p>Instant visibility: No more &quot;Oh, I missed this PR&quot; excuses.<p>Lightweight &amp; easy setup: Connect in seconds, no config headaches.<p>It currently powers over 500 orgs and is loved by 10,000+ engineers<p>See G2 reviews here: <a href=\"https:&#x2F;&#x2F;www.g2.com&#x2F;products&#x2F;pullnotifier\" rel=\"nofollow\">https:&#x2F;&#x2F;www.g2.com&#x2F;products&#x2F;pullnotifier</a><p>If you&#x27"
+    },
+    {
+      "source": "hn",
+      "title": "Google Calendar failing to send email alerts?",
+      "url": "https://news.ycombinator.com/item?id=2660917",
+      "hn_id": "2660917",
+      "points": 2,
+      "comments": 1,
+      "author": "arturadib",
+      "created": "2011-06-16T12:19:35Z",
+      "text_snippet": "I've missed a few appointments now because of that. Is this happening to anyone else?<p>I wonder if it's related to the # of mins prior to the event, which sometimes I'll set to 1-2 mins."
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Fastest way to get alerts of tweets when X is banned in my country",
+      "url": "https://news.ycombinator.com/item?id=43412637",
+      "hn_id": "43412637",
+      "points": 1,
+      "comments": 5,
+      "author": "sodiumtech",
+      "created": "2025-03-19T14:40:59Z",
+      "text_snippet": "What do you guys use to get alerts of tweets from influencers? is there any app or whatsapp&#x2F;telegram&#x2F;discord channel. I personally want to use it to get alerts on crypto related news.<p>Just missed the XRP opportunity after its CEO posted a message that SEC is ending case against Ripple and then XRP rallied.<p>EDIT : X&#x2F;Twitter is blocked in Pakistan so cant use the notification feature."
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Existing metrics trend alert solution?",
+      "url": "https://news.ycombinator.com/item?id=29464986",
+      "hn_id": "29464986",
+      "points": 1,
+      "comments": 1,
+      "author": "terry_y_comb",
+      "created": "2021-12-06T20:14:20Z",
+      "text_snippet": "I have been using excel + data from sql queries to spot upward or downward trends on business metrics (e.g. daily, week over week, month of month, actives, revenue, etc...) everyday.<p>It comes to a point that it&#x27;s prone error, missed oversight, or not catching it fast enough.<p>While IT &amp; Reporting team may eventually have an trend spotting &#x2F; alert solution, I wonder whether there are quick and dirty solution with existing frameworks, R packages, or some form of automation that I can install on my mac that would raise alerts on metrics that are in trouble based on rules that I set.<p>Of course, any cs101 student can create such program. But I wonder whether such a solution already exists that one can run quickly on their own machine before running it on a broader IT infrastructure.<p>Any comment will be appreciated!"
+    },
+    {
+      "source": "hn",
+      "title": "Alert HN: Check your gmail auto-forwards, mine have been broken for a month.",
+      "url": "https://news.ycombinator.com/item?id=5515123",
+      "hn_id": "5515123",
+      "points": 1,
+      "comments": 0,
+      "author": "pkamb",
+      "created": "2013-04-08T22:35:53Z",
+      "text_snippet": "Last year I had a problem where emails marked as \"Spam\" in Gmail were not being forwarded to my main inbox.<p>Someone had the same problem and submitted it to Hacker News:<p>http://iamnotaprogrammer.com/Dont-Forward-Google-Apps-to-Gmail.html<p>https://news.ycombinator.com/item?id=4621571<p>In that topic, rather than use Forwarding, someone suggested a negative Filter. If an email does not contain a random set of charters, filter it out and forward it.<p>I've been using, also suggested in that topic:<p><pre><code>    -{\"X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*\"}\n</code></pre>\nOn or around Febuary 22nd, 2013, these filters stopped working. I have not received (in my main inbox) any emails from the alias gmail accounts. They've been sitting in the secondary inbox.<p>This is occurring in at least two forwarding gmail accounts, both starting around Feb 22. I did not touch the Filter or Forwarding settings of either.<p>This is extremely frustrating, as I missed se"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: I built a fast RSS reader in Zig",
+      "url": "https://github.com/superstarryeyes/hys",
+      "hn_id": "46293564",
+      "points": 90,
+      "comments": 32,
+      "author": "superstarryeyes",
+      "created": "2025-12-16T19:55:56Z",
+      "text_snippet": "Well, I certainly tried. I had to, because it has a certain quirk inspired by &quot;digital minimalism.&quot;<p>The quirk is that it only allows you to fetch new articles once per day (or X days).<p>Why? Let me explain...<p>I want my internet content to be like a boring newspaper. You get it in the morning, and you read the whole thing while sipping your morning coffee, and then you&#x27;re done! No more new information for today. No pings, no alerts, peace, quiet, zen, etc.<p>But with that, I needed it to be able to fetch all articles from my hundreds of feeds in one sitting. This is where Zig and curl optimisations come in. I tried to do all the tricks in the book. If I missed something, let me know!<p>First off, I&#x27;m using curl multi for the network layer. The cool thing is it automatically does HTTP&#x2F;2 multiplexing, which means if your feeds are hosted on the same CDN it reuses the same connection. I&#x27;ve got it configured to handle 50 connections total with up to 6 per "
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: What tools should I use to manage secrets from env files?",
+      "url": "https://news.ycombinator.com/item?id=41629168",
+      "hn_id": "41629168",
+      "points": 85,
+      "comments": 79,
+      "author": "TheBigDuck234",
+      "created": "2024-09-23T18:36:12Z",
+      "text_snippet": "My cofounder accidentally exposed a bunch of our API keys and we didn&#x27;t know until we got a billing alert. I&#x27;ve wanted to use a secrets manager before and have asked a few friends what they use for advice, but I want to see what I may have missed."
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Assertly – scriptable monitoring for infosec, IT, compliance, DevOps",
+      "url": "https://www.assertly.com",
+      "hn_id": "41456371",
+      "points": 53,
+      "comments": 11,
+      "author": "JakaJancar",
+      "created": "2024-09-05T13:20:04Z",
+      "text_snippet": "Hey HN!<p>Jaka here, solo founder of Assertly (<a href=\"https:&#x2F;&#x2F;www.assertly.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.assertly.com</a>). Assertly is a monitoring tool for continuous infosec, IT, compliance and DevOps regression testing. It enables teams to automate periodic checks using JavaScript.<p>Before Assertly, I was the CTO of Celtra (<a href=\"https:&#x2F;&#x2F;celtra.com\" rel=\"nofollow\">https:&#x2F;&#x2F;celtra.com</a>), a B2B SaaS company, for over 10 years, from “git init” to 250 people and the company’s sale to private equity. I was primarily responsible for product strategy, engineering, QA, DevOps, but also for IT and InfoSec.<p>I found that ensuring security, integrity, privacy, and compliance in peripheral and internal IT systems was often harder than for our core product. While for the latter we would write tests and rely on our CI&#x2F;CD pipeline, for other systems, things would be written up in policies where adherence is hoped for but rarely verified. If "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: we open sourced our startup's help desk as django-knowledge.",
+      "url": "https://news.ycombinator.com/item?id=3621929",
+      "hn_id": "3621929",
+      "points": 26,
+      "comments": 5,
+      "author": "bryanh",
+      "created": "2012-02-22T18:38:56Z",
+      "text_snippet": "We had a lot of reasons we wanted to build our own help desk, the least of which (and easiest to mention) is that a three seat license to the top tier desk systems are well over $100/mo. Plus they were slowing us down quite a bit.<p>Right now its only dependency is Django, it supports email alert for updates, has bundled style, a permission like public/private/internal status, optional anonymous questions/responses, categories, searching, and a few more I've missed.<p>What I'd like to do is: extend tests, class based views, parse incoming emails as questions &#38; response (this is important for help desks), better mod tools and internationalization.<p>Anyways, see the GitHub repo: https://github.com/zapier/django-knowledge, the docs: http://django-knowledge.readthedocs.org/en/latest/index.html or check out a live demo at Zapier: https://zapier.com/support/<p>We've also registered django-knowledge.org. If anyone has thoughts on a good, cheap lightweight host, let me know."
+    },
+    {
+      "source": "hn",
+      "title": "AI published a bogus CVE for my project",
+      "url": "https://news.ycombinator.com/item?id=43435855",
+      "hn_id": "43435855",
+      "points": 20,
+      "comments": 4,
+      "author": "mrocklin",
+      "created": "2025-03-21T14:04:35Z",
+      "text_snippet": "I help maintain Dask, an OSS project in the Python data space.  Dask helps users run arbitrary Python code on distributed clusters of computers.<p>Yesterday, I and several users got a CVE alert (https:&#x2F;&#x2F;www.cve.org&#x2F;CVERecord?id=CVE-2024-10096) that there was an exploit allowing users with access to a Dask scheduler to run arbitrary code on that server using a backdoor with pickle.<p>Obviously, the creators of this CVE missed the easily accessible `client.run_on_scheduler(my_function)` API, which makes this much easier for a would-be hacker.  Is this a backdoor?  Maybe, but the front door is wide open inviting all to enter.<p>I did some research into the creator of the CVE, a project call &quot;Protect AI&quot; (Dask is often used in AI workloads).  It looks like they acquired an AI bug bounty company, Huntr (https:&#x2F;&#x2F;protectai.com&#x2F;newsroom&#x2F;protect-ai-acquires-huntr), which reported the &quot;bug&quot; several months ago.  Even though this was spam, Das"
+    },
+    {
+      "source": "hn",
+      "title": "Cloudflare's new Rate-limiting. Beware",
+      "url": "https://news.ycombinator.com/item?id=15327861",
+      "hn_id": "15327861",
+      "points": 19,
+      "comments": 10,
+      "author": "gopi_ar",
+      "created": "2017-09-25T03:27:36Z",
+      "text_snippet": "Early this month, our devops engineer went on leave. On the same day, usage spiked on our opensource API. Disabled tokens were making 1000s of rps causing heavy load. Not wanting to disturb our devops engineer, we tried IP blocking in CF, which didn&#x27;t help because requests were coming in from 100s of IPs (probably app users).<p>We then saw - on the same page - CF&#x27;s new rate-limiter. It seemed great, and I think it said &#x27;1 free rule&#x27;. We quickly set it up to rate limit to a few rps. This also <i>did not</i> work, because there were multiple tokens making requests from 100s of IPs. We finally ended up filtering those tokens out on NGINX.<p>Fast forward to yesterday when we got the bill. I don&#x27;t usually open them because it&#x27;s always $40&#x2F;month. This time we added their LBs (they don&#x27;t support session stickiness, so again, beware) so I was curious about the charge.<p>$876.<p>$90 for the LB, fine. But the clincher? $721 for the &#x27;rate-limiter&#x27;"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Zingle – an AI code reviewer for data teams (SQL/dbt/Airflow/Spark)",
+      "url": "https://news.ycombinator.com/item?id=45931748",
+      "hn_id": "45931748",
+      "points": 9,
+      "comments": 7,
+      "author": "UvrajSB",
+      "created": "2025-11-14T20:24:05Z",
+      "text_snippet": "Hi HN, we’re Anant and Atishay, the co-founders of Zingle, an AI code reviewer for data teams.<p>It automatically checks SQL, dbt, Airflow, and Spark code changes in github PRs for cost regressions, logic issues, data-quality gaps, and downstream breakages before they merge into the production.<p>Here&#x27;s a demo - <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;dS0NnBjG2p4\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;dS0NnBjG2p4</a><p>You can try it on top 100 PRs for free at: <a href=\"https:&#x2F;&#x2F;getzingle.com\" rel=\"nofollow\">https:&#x2F;&#x2F;getzingle.com</a><p>We built this after managing 60+ dbt PRs per week for an enterprise client. Senior data engineers had very limited time to review PRs, and with AI-assisted coding the amount of code being written each day grew a lot. This left teams choosing between two costly outcomes: let PRs through with minimal review and risk warehouse cost spikes or broken pipelines, or slow everything down with long review cycles.<p>Both outcomes "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Searchlight – Open-source Postgres client for macOS",
+      "url": "https://github.com/ravelantunes/Searchlight",
+      "hn_id": "42770126",
+      "points": 9,
+      "comments": 0,
+      "author": "ravelantunes",
+      "created": "2025-01-20T16:20:44Z",
+      "text_snippet": "Hi HN,<p>Over the past year, I’ve been building a native MacOS Postgres client for my personal use. While there are plenty of existing clients, I built this because:\n- No open-source Postgres client matched the smooth UX of tools like Sequel Pro&#x2F;SequelAce (for MySQL).\n- I missed the satisfaction of long-term product ownership and iteration—recent work has me jumping between projects.\n- I’ve been using Postgres more lately and wanted to get hands-on to deepen my knowledge.<p>I also wanted a playground to experiment with client features that would help me on day-to-day. Some I have implemented already:\n- Hover over a foreign key column to see the linked record in a popover.\n- Autocomplete lookup for foreign key records when inserting&#x2F;editing rows.\n- High-level stats pop-up when hovering over a column.\n- Contextual “sugar” features (e.g., UUID fields include a button to generate a UUID while editing).\n- On update&#x2F;insert failures, it tries to highlight the issue on the probl"
+    },
+    {
+      "source": "hn",
+      "title": "Wife sent $57k to fake Elon Musk – technical security couldn't stop it",
+      "url": "https://news.ycombinator.com/item?id=45037474",
+      "hn_id": "45037474",
+      "points": 8,
+      "comments": 3,
+      "author": "AvocadoPanic",
+      "created": "2025-08-27T09:58:25Z",
+      "text_snippet": "# My wife lost $57k to romance scammers despite our home network security<p>I&#x27;m sharing this as a cautionary tale at the intersection of online radicalization, romance scams, and the limits of technical security. Despite maintaining robust home network security, my wife (MD&#x2F;PhD) fell victim to scams totaling $57,553.83.<p>## Timeline<p>*Dec 2023*: Wife creates Twitter account, becomes involved in &quot;white wellbeing&quot; extremist communities<p>*Early 2025*: &quot;Elon Musk&quot; begins emailing her, validating her activism<p>*May 2025*: Invited to eloncommunitycenter.com after email grooming. First romance scam begins<p>*May-June 2025*: $55,000 sent via bank transfers. Intimate images exchanged. Communication moved to Teams&#x2F;SimpleX&#x2F;Session<p>*July 2025*: Second scam - $2,553.83 in Bitcoin to meet &quot;Elon Musk.&quot; When caught, claimed she knew it was fake but sent money because &quot;they were nice to me&quot;<p>*Aug 2025*: Left home for 8 days. Returned bu"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Managed 83(b) Elections from Clerky (YC S11)",
+      "url": "https://news.ycombinator.com/item?id=32899749",
+      "hn_id": "32899749",
+      "points": 8,
+      "comments": 3,
+      "author": "swampthing",
+      "created": "2022-09-19T15:34:16Z",
+      "text_snippet": "Hi HN! I&#x27;m Darby, one of the founders of Clerky (<a href=\"https:&#x2F;&#x2F;www.clerky.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.clerky.com</a>). We build software to help startups and their attorneys get legal paperwork done.  We&#x27;re one of the most popular ways for startups to get formation paperwork done and issue safes for seed financings.  Prior to starting Clerky, my co-founder Chris and I were both engineers-turned-startup-attorneys at a law firm called Orrick, which has one of the top startup law practices in the U.S. and internationally.<p>We just announced a new add-on for 83(b) elections and I thought some people here might be interested in the nitty gritty of the decisions that went into it.  If you&#x27;ve never heard of an 83(b) election before, I&#x27;ve included a brief explanation at the bottom here.  Unfortunately, the nature of a tax election is that it isn&#x27;t really something you can try out for yourself on a whim, but if you think you might ever start "
+    }
+  ]
+}

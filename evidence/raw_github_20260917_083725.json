@@ -1,0 +1,206 @@
+{
+  "query": "silent breaking changes",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "[RFC] Apache MXNet 2.0 Roadmap",
+      "url": "https://github.com/apache/mxnet/issues/16167",
+      "repo": "apache/mxnet",
+      "reactions": 71,
+      "comments": 36,
+      "created": "2019-09-13T21:46:25Z",
+      "body_snippet": "# Overview\r\n\r\nStatus: https://github.com/apache/incubator-mxnet/projects/18\r\nThe status for each project will be updated by the contributor who's driving it. If you have more projects that you intend to drive please first discuss here.\r\n\r\nThe purpose of this RFC is to organize and present the roadmap towards 2.0. As 2.0 will be a major release, changes that would break backward compatibility are permissible.\r\n\r\nThe proposed changes in this RFC are either collected from past roadmap discussions such as #9686, or are based on various common issues from the past. This RFC organizes these changes into self-contained projects to facilitate clear definition of project, captures the risks and status quo to the best of our knowledge. To help navigate, the projects are further divided into several high-level areas. Some of the listed projects are already in progress, and are included to provide a clear overview.\r\n\r\nThe objectives of Apache MXNet 2.0 include:\r\n- Improve expressiveness and usability of user-facing API.\r\n- Improve expressiveness and usability of the technical stack for lower development cost and maintainability.\r\n\r\nIn terms of frontend, this roadmap focuses mostly on Python-fr"
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal: Adding nullable reference type features to nullable value types (16.3, Core 3)",
+      "url": "https://github.com/dotnet/csharplang/issues/1865",
+      "repo": "dotnet/csharplang",
+      "reactions": 60,
+      "comments": 37,
+      "created": "2018-09-17T21:10:48Z",
+      "body_snippet": "# Augmenting Nullable Value Types\r\n\r\nThe upcoming nullable reference types (NRTs) feature builds on the existing nullable *value* types (NVTs) for syntax and intuition, but differs in several ways.\r\n\r\nOne big difference is that NVTs have a different runtime representation that their nonnullable counterparts, whereas NRTs are indistinguishable from nonnullable ones at the runtime level, and are only differentiated at compile time, in source and metadata. This is a fundamental difference that is a result of deliberate design decisions, and can't really be remedied.\r\n\r\nHowever, some of the novel aspects of NRTs might be \"backported\" to NVTs, diminishing the feature gap between them, and providing useful expressiveness.\r\n\r\n# Tracking null state for NVTs\r\n\r\nA key feature of NRTs is that we track null state for variables of reference type through a flow analysis, so that we can warn at points of dereference if the variable might be null:\r\n\r\n``` c#\r\nvoid M(Person? p)\r\n{\r\n    WriteLine(p.Name); // warning: p might be null\r\n    if (p != null) { WriteLine(p.Name); } // No warning\r\n    WriteLine(p?.Name ?? \"\"); // No warning\r\n    if (p == null) return; WriteLine(p.Name); // No warning\r\n}\r\n```"
+    },
+    {
+      "source": "github-issues",
+      "title": "🧐 Breaking changes for fabric 6.0",
+      "url": "https://github.com/fabricjs/fabric.js/issues/8299",
+      "repo": "fabricjs/fabric.js",
+      "reactions": 58,
+      "comments": 188,
+      "created": "2022-09-18T23:15:30Z",
+      "body_snippet": "## b.0.0-beta16\r\nThis list is in progress and is meant to be an easy go to place to add things and find them when the time comes to write a document on what has changed.\r\nThis will be a list of descriptive items, extended as needed to capture behavior changes.\r\nApart from what is described here **MANY** bugs have been fixed in the process.\r\n\r\n\r\n### Generic concepts\r\n- **Imports** we moved from `import { fabric } from 'fabric'` to `import { Canvas, Rect, util } from 'fabric'` or `import * as fabric from 'fabric'`. To avoid packaging issues node has its own entrypoint `import { StaticCanvas } from 'fabric/node'`. This means there is no fabric namespace/object anymore.\r\n  - Introduced `classRegistry` to bridge the absence of a namespace \r\n  - Introduced the `env` concept, `getEnv` to allow node/browser specific values/logic. That has made importing fabric in **SSR** possible and will allow **offscreen support** in the future.\r\n  - renamed the following #9172:\r\n    - `fabric.Object` => `FabricObject`\r\n    - `fabric.Text` => `FabricText`\r\n    - `fabric.Image` => `FabricImage`\r\n  - Node's `registerFont` has been removed, use `registerFont` exposed by [node canvas](https://github.com/Auto"
+    },
+    {
+      "source": "github-issues",
+      "title": "A Pragmatic, Not-Really-Typed Errors Proposal",
+      "url": "https://github.com/microsoft/TypeScript/issues/57943",
+      "repo": "microsoft/TypeScript",
+      "reactions": 54,
+      "comments": 17,
+      "created": "2024-03-26T06:45:03Z",
+      "body_snippet": "### ✅ Viability Checklist\r\n\r\n- [X] This wouldn't be a breaking change in existing TypeScript/JavaScript code\r\n- [X] This wouldn't change the runtime behavior of existing JavaScript code\r\n- [X] This could be implemented without emitting different JS based on the types of the expressions\r\n- [X] This isn't a runtime feature (e.g. library functionality, non-ECMAScript syntax with JavaScript output, new syntax sugar for JS, etc.)\r\n- [X] This isn't a request to add a new utility type: https://github.com/microsoft/TypeScript/wiki/No-New-Utility-Types\r\n- [X] This feature would agree with the rest of our Design Goals: https://github.com/Microsoft/TypeScript/wiki/TypeScript-Design-Goals\r\n\r\n### ⭐ Suggestion\r\n\r\nI know that typed errors have been [discussed extensively](https://github.com/microsoft/TypeScript/issues/13219) and rejected — for [very good reasons](https://github.com/microsoft/TypeScript/issues/13219#issuecomment-1515037604). I don't disagree with any of those reasons. After reading issue [#13219](https://github.com/microsoft/TypeScript/issues/13219) in its entirety, though, I believe I have a proposal that would improve TypeScript’s error handling without introducing any of the dr"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] skills/, agents/, commands/ should traverse parent directories like CLAUDE.md does",
+      "url": "https://github.com/anthropics/claude-code/issues/26489",
+      "repo": "anthropics/claude-code",
+      "reactions": 49,
+      "comments": 16,
+      "created": "2026-02-18T04:36:04Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\n# [Feature Request] Consistent Parent Directory Traversal for Skills, Agents, and Commands\n\n## Summary\nCLAUDE.md and settings.json correctly traverse parent directories when Claude Code is launched from a subdirectory. However, skills/, agents/, and commands/ do not—they currently only resolve from the immediate project's .claude/ folder. This asymmetry forces manual symlinking or duplication in monorepo and devcontainer patterns.\n\n## Use Case: Centralized Pipeline\nI maintain a centralized Claude Code pipeline for a devcontainer with multiple repositories under a shared root. The intent is to define logic once at /src/.claude/ and have all child repos inherit them automatically.\n\n### Workspace Structure\n```text\n/src/                           ← non-git workspace root\n├── .claude/\n│   ├── settings.json           ← hooks, permissions (shared)\n│   ├── skills/                 ← writing-plans, codex-review\n│  "
+    },
+    {
+      "source": "github-issues",
+      "title": "[RFC] Versioning",
+      "url": "https://github.com/vercel-labs/skills/issues/11",
+      "repo": "vercel-labs/skills",
+      "reactions": 27,
+      "comments": 5,
+      "created": "2026-01-15T20:29:02Z",
+      "body_snippet": "# RFC: Version Pinning for add-skill\n\nAdd support for installing specific versions of skills via git tags, commits, or branches.\n\n## Problem\n\n- No way to pin a skill to a specific version\n- Setups are non-reproducible across machines/team members\n- If a skill author pushes a breaking change, your setup breaks silently\n- No way to audit what version is installed or roll back\n\n## Proposal\n\n### Syntax\n\n```bash\nnpx add-skill owner/repo@v1.0.0      # tag\nnpx add-skill owner/repo@abc1234     # commit sha\nnpx add-skill owner/repo@main        # explicit branch\nnpx add-skill owner/repo             # latest semver tag, or HEAD if no tags\n```\n\nUsing `@` to match npm/Go conventions (and avoid shell interpretation issues with `#`).\n\n### Implementation\n\n1. **Parse ref** - Extract `@ref` suffix from input\n2. **Resolve version** - If no ref specified, use `git ls-remote --tags` to find latest semver tag, fallback to default branch\n3. **Download** - Use GitHub/GitLab tarball URLs (e.g. `https://github.com/owner/repo/archive/refs/tags/v1.0.0.tar.gz`)\n4. **Track** - Write installed version info to `skill-lock.json`\n\n### skill-lock.json\n\nStore alongside installed skills to track what's installed:\n\n```"
+    },
+    {
+      "source": "github-issues",
+      "title": "Provide explicit access to the default values of parameters",
+      "url": "https://github.com/dart-lang/language/issues/2269",
+      "repo": "dart-lang/language",
+      "reactions": 22,
+      "comments": 21,
+      "created": "2022-06-01T12:57:15Z",
+      "body_snippet": "This issue proposes that Dart should have explicit syntax denoting the default values of parameters, such that it is possible to write forwarding functions and similar constructs with good generality and maintainability properties. The core idea is that the most relevant default value in a given context is denoted by the reserved word `default`, and more general forms are available to denote the default value of an arbitrary formal parameter in scope. The proposal is a non-breaking change.\r\n\r\n### Motivation\r\n\r\nIt is inconvenient to write a forwarding function in Dart when the forwardee accepts one or more optional parameters. Here is a safe way to do it:\r\n\r\n```dart\r\n// Copying the default value.\r\nvoid f1([int? j = 42]) {}\r\nvoid forwardToF1([int? j = 42]) => f1(j);\r\n```\r\n\r\nThis does work: In order to get the same behavior for an invocation of `forwardToF1` as the one we get from an invocation of `f1`, we should be able to call them in at least the following ways, and it should not matter which function we're calling, and that is indeed true:\r\n\r\n```dart\r\nvoid main() {\r\n  f1();     forwardToF1();     // 1. Passing 42.\r\n  f1(1);    forwardToF1(1);    // 2. Passing 1.\r\n  f1(42);   forwa"
+    },
+    {
+      "source": "github-issues",
+      "title": "v5 Breaking Changes Proposals / Discussion",
+      "url": "https://github.com/stenciljs/core/issues/6584",
+      "repo": "stenciljs/core",
+      "reactions": 19,
+      "comments": 35,
+      "created": "2026-02-04T11:12:38Z",
+      "body_snippet": "(_please note - this is a live document. I'm adding more things as I work on them_)\n\nOver the past couple of months I've been working hard getting Stencil core into a better place; squashing lots of long-standing, annoying bugs (this is continuing) plus adding long .... long requested features that Stencil should have had earlier (`extends`, Mixin, `@Prop` get / set, runtime custom `@Decorators` to name a few).\n\nAs I look to v5 I'm looking at consolidation, organisation and deprecation - this will include breaking changes. \n\nStencil has always been pretty stable when it comes to it's API. \nWhilst this is nice from a upgrade POV it has come at the cost of technical debt - Stencil recently had it's 10th birthday 🎂 - 10 years worth of technical debt!\n\nIn this issue I want to publicly make known what is currently just in my head (or actively being worked on) and let's discuss it here. \n\n## BREAKING CHANGE - Integrated testing removal\n\nBack in the days of 2016, setting up testing for front-end things was hard. The original authors wanted a first class, seamless testing experience which involved a hard-coupling with a custom Jest runner and environment, in combination with a custom Puppe"
+    },
+    {
+      "source": "github-issues",
+      "title": "Claude Code changed default model to 1M context without notifying Pro users",
+      "url": "https://github.com/anthropics/claude-code/issues/62199",
+      "repo": "anthropics/claude-code",
+      "reactions": 19,
+      "comments": 33,
+      "created": "2026-05-25T10:55:09Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet\n- [x] This is a single bug report (please file separate reports for different bugs)\n- [x] I am using the latest version of Claude Code\n\n### What's Wrong?\n\n**Bug Report / Feature Regression: Claude Code changed default model to 1M context without notifying Pro users**\n\n**Plan:** Pro ($20/month)\n**Platform:** Windows / VSCode\n\n**What happened:**\nClaude Code silently changed its default model to one requiring 1M context (Opus 4.6/4.7 or Sonnet 4.6 with 1M), which requires Usage Credits on Pro plans. This was done without any prior notification or email to affected users.\n\n**What I expected:**\nEither:\n- Keep the previous default model that worked within the Pro plan limits, or\n- Notify users in advance that this breaking change was coming so we could prepare.\n\n**Impact:**\nMy entire workflow in VSCode stopped working overnight. I lost hours trying to debug the issue, applying workarounds (environment variables, settings.json), and ultimately had to downgrade to a smaller context model — losing funct"
+    },
+    {
+      "source": "github-issues",
+      "title": "zig build test caching may lead to suppressed defects",
+      "url": "https://github.com/ziglang/zig/issues/15635",
+      "repo": "ziglang/zig",
+      "reactions": 19,
+      "comments": 3,
+      "created": "2023-05-09T23:12:38Z",
+      "body_snippet": "### Zig Version\n\n0.11.0-dev.3031+f40539e5d\n\n### Steps to Reproduce and Observed Behavior\n\nThe way the zig build test caching system works could lead to \"tested\" code defects getting missed. If zig thinks there was no change to the tests, it won't output any information. If someone isn't abnormally vigilant it could lead to tests going missing, where zig reports they were successfully executed. For the two example files/tests\r\n\r\nA test is added, and tested\r\n```zig\r\ntest \"main.zig\" {\r\n    std.testing.refAllDecls(@This());\r\n}\r\n```\r\n```zig\r\ntest \"src/other.zig\" {\r\n    std.debug.assert(true);\r\n}\r\n```\r\n\r\nuser runs `zig build test -fsummary` and is told the build and test was successful.\r\n```shell\r\nBuild Summary: 3/3 steps succeeded\r\ntest cached\r\n└─ run test cached\r\n   └─ zig test Debug native success 3s MaxRSS:244M\r\n```\r\n\r\nThe user then makes a mistake, and somehow comments out some part of the testing env, perhaps during a refactor, or simply carelessness because they're working on a different file, and don't care about these tests.\r\n```zig\r\ntest \"main.zig\" {\r\n    //std.testing.refAllDecls(@This());\r\n}\r\n```\r\n```zig\r\ntest \"src/other.zig\" {\r\n    std.debug.assert(true);\r\n}\r\n```\r\n\r\nThey eve"
+    },
+    {
+      "source": "github-issues",
+      "title": "Reverse Proxy: OR logic for access control rules and reusable auth/policy profiles",
+      "url": "https://github.com/netbirdio/netbird/issues/5862",
+      "repo": "netbirdio/netbird",
+      "reactions": 17,
+      "comments": 13,
+      "created": "2026-04-12T12:49:39Z",
+      "body_snippet": "**Is your feature request related to a problem? Please describe.**\n\nI'm self-hosting NetBird as a replacement for Cloudflare's tunnels and security features. When configuring access control on exposed services, I need to allow traffic from specific countries (e.g. France, Belgium) OR from trusted internal CIDR ranges (e.g. the IP of an exit node).\n\nFrom what I experienced, access control rules of different types (Country and CIDR Block) are evaluated with AND logic: a connection must satisfy all configured \"Allow Only\" rules to be permitted. This makes it impossible to express \"allow if from France OR Belgium OR from my VPN range\" — adding a CIDR allowlist silently overrides country rules blocking all IPs outside that CIDR regardless of their country.\n\nCloudflare achieves this through Security Rules with explicit boolean operators ((ip.geoip.country eq \"FR\") or\n(ip.geoip.country eq \"BE\") or (ip.src in {100.64.0.0/10})).\n\n**Describe the solution you'd like**\n\nTwo related improvements:\n\n1. OR logic between access control rules\nAllow rules of different types (Country, CIDR Block) to be combined with OR logic, not just AND. A possible UI approach would be to group rules into logical bl"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Bug] v0.51.0 breaks for browser based imports",
+      "url": "https://github.com/microsoft/monaco-editor/issues/4654",
+      "repo": "microsoft/monaco-editor",
+      "reactions": 17,
+      "comments": 13,
+      "created": "2024-08-26T18:50:40Z",
+      "body_snippet": "### Reproducible in vscode.dev or in VS Code Desktop?\n\n- [X] Not reproducible in [vscode.dev](https://vscode.dev) or VS Code Desktop\n\n### Reproducible in the monaco editor playground?\n\n- [ ] Not reproducible in [the monaco editor playground](https://microsoft.github.io/monaco-editor/playground.html)\n\n### Monaco Editor Playground Link\n\n_No response_\n\n### Monaco Editor Playground Code\n\n_No response_\n\n### Reproduction Steps\n\nupgrade from v0.50.0 to v0.51.0\n\n### Actual (Problematic) Behavior\n\nv0.50.0 was including the script: `editor/editor.main.nls.js`.\r\n\r\nthis silently got removed in v0.51.0 without getting mentioned inside the release log:\r\nhttps://github.com/microsoft/monaco-editor/commit/e52ff427290808dff6809b3f77866ae7a62a119b\r\n\r\nafter removing the script as well inside the Neo.mjs env, i encountered several errors and warnings:\r\n![Screenshot 2024-08-26 at 20 41 32](https://github.com/user-attachments/assets/998c8faf-43f9-4eea-bebc-248624cf9c5f)\r\n\n\n### Expected Behavior\n\nthere should be no undocumented breaking changes in minor versions.\n\n### Additional Context\n\ncross-reference ticket:\r\nhttps://github.com/neomjs/neo/issues/5822"
+    },
+    {
+      "source": "github-issues",
+      "title": "feat(compression): integrate headroom-ai for tool output compression",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/39691",
+      "repo": "NousResearch/hermes-agent",
+      "reactions": 17,
+      "comments": 12,
+      "created": "2026-06-05T08:56:53Z",
+      "body_snippet": "## Problem or Use Case\n\nHermes Agent's current context compression system (`context_compressor.py`, `conversation_compression.py`) works at the conversation level — it summarizes the entire context window via LLM calls when the session approaches its token limit. This approach has several known issues:\n\n- **Premature compression triggers** due to token estimation inaccuracies (#23902, #14690)\n- **Compression can increase prompt size** instead of reducing it (#23767)\n- **Silent data loss** when summary generation fails (#25585, #10719)\n- **Anti-thrashing protection permanently disables compression** with no recovery (#14690)\n- **Preflight guard bypasses token threshold** for sessions with few but huge messages (#27405)\n\nThese are fundamentally hard to solve at the conversation-summary level because the compressor operates on already-assembled context.\n\n**Headroom-ai** (`headroom-ai` on PyPI, [github.com/chopratejas/headroom](https://github.com/chopratejas/headroom), 13K+ stars) takes a different approach: it compresses **individual tool outputs before they enter the context**, using specialized compressors per content type (logs, grep results, JSON, code). This is complementary to t"
+    },
+    {
+      "source": "github-issues",
+      "title": "Tracking issue for grenade/c4 bugs",
+      "url": "https://github.com/rehlds/ReGameDLL_CS/issues/185",
+      "repo": "rehlds/ReGameDLL_CS",
+      "reactions": 17,
+      "comments": 4,
+      "created": "2017-09-27T18:29:47Z",
+      "body_snippet": "Main source: ValveSoftware/halflife#278\r\n\r\n- :white_check_mark: - bug was fixed\r\n- :question: - bug is pending for confirmation\r\n- :grey_question: - bugfix necessity is questionable \r\n- :exclamation::exclamation::exclamation: - bug was confirmed, but not yet fixed\r\n\r\n| № | Description | Status |\r\n| :---: | :-------------------| :------: |\r\n| 1 | He/C4 doesn't damage outside water. | :grey_question:  |\r\n| 2 | Flashes don't work if player has different state of being in water or no, unless partially in water | :question: |\r\n| 3 | C4 fails to explode when underwater | :white_check_mark: (#179) |\r\n| 4 | C4 can explode and be defused at the same time | :white_check_mark: (#179) |\r\n| 5 | When defuser gets killed while defusing, progress bar is still going for spectators | :white_check_mark: (#188) | \r\n| 6 | When defuser gets killed while defusing, progress bar doesn't always go away for him |:white_check_mark: (#188) |\r\n| 7 | When planter changes weapons. progress bar doesn't go away | :white_check_mark: (#179) |\r\n| 8 | Player can make silent defuses via flashlight, or pressing use key again as fast as possible, or stabbing with a knife | :white_check_mark: (#179) |\r\n| 9 | Player can kni"
+    },
+    {
+      "source": "github-issues",
+      "title": "Support or Migration Guide for Multiple Senders for Cloud Messaging",
+      "url": "https://github.com/firebase/firebase-android-sdk/issues/4316",
+      "repo": "firebase/firebase-android-sdk",
+      "reactions": 16,
+      "comments": 25,
+      "created": "2022-11-14T11:20:50Z",
+      "body_snippet": "<!-- DO NOT DELETE \r\nvalidate_template=false\r\ntemplate_path=.github/ISSUE_TEMPLATE/fr.md\r\n-->\r\n\r\n## What feature would you like to see?\r\n\r\nPreviously, Cloud Messaging project supported the use of multiple app servers configured with different Firebase projects according to [documentation](https://firebase.google.com/docs/cloud-messaging/concept-options#receiving-messages-from-multiple-senders) (where this documentation is silently removed in October 2022 after the functionality was actually removed 1.5 year earlier at firebase-messaging:22.0.0). \r\n\r\n> Receiving messages from multiple senders\r\n> FCM allows multiple parties to send messages to the same client app. For example, suppose the client app is an article aggregator with multiple contributors, and each of them should be able to send a message when they publish a new article. This message might contain a URL so that the client app can download the article. Instead of having to centralize all sending activity in one location, FCM gives you the ability to let each of these contributors send its own messages.\r\n> \r\n> To enable this feature, make sure you have each sender's sender ID. When requesting registration, the client app fe"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature] Multi-Role Auto-Routing via Gateway Hooks",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/5143",
+      "repo": "NousResearch/hermes-agent",
+      "reactions": 16,
+      "comments": 11,
+      "created": "2026-04-04T23:45:04Z",
+      "body_snippet": "> [!NOTE]\n> **UPDATE (May 2026):** We have significantly reworked this proposal (v2) to align with the new v0.14.0 architecture, dropping the old flawed approaches and replacing them with a much cleaner contextual classifier and misroute recovery mechanism. See the new v2 proposal below. The original v1 proposal is hidden under the spoiler for historical context.\n\n<details><summary><b>Historical (v1 Proposal from April)</b></summary>\n\n## Motivation\n\nUsers increasingly treat their AI agent as a **unified personal assistant** across many life domains — health tracking, software development, financial planning, language learning, etc. Today, Hermes handles all of these through a single shared session with one personality. This works, but it means:\n\n- A conversation about nutrition pollutes the context window when you switch to coding\n- There's no way to give the agent domain-specific expertise per topic\n- Users must manually manage sessions (`/title`, `/resume`) to separate concerns\n\n**Multi-Role Auto-Routing** solves this by letting users define named \"roles\" (nutritionist, developer, finance advisor) with dedicated sessions and system prompts. A lightweight classifier (Gemini Flash,"
+    },
+    {
+      "source": "github-issues",
+      "title": "Warn when undentation of operators causes ambiguity when following a match or if-else block",
+      "url": "https://github.com/fsharp/fslang-suggestions/issues/806",
+      "repo": "fsharp/fslang-suggestions",
+      "reactions": 16,
+      "comments": 8,
+      "created": "2019-11-15T14:43:26Z",
+      "body_snippet": "# Warn for undentation ambiguities caused by operators\r\n\r\nNote: this is _undentation_, or _indentation-relaxation_, not _indentation_.\r\n\r\nI propose we raise a warning when undentation relaxation for operators will lead to ambiguities. This warning can be raised when the parser detects that after undenting an operator for the width of the operator, would make it belong to the previous block instead of the last statement. The warning could be:\r\n\r\n> Warning FS9999: Operator undentation ambiguity detected for operator \"&lt;%%>\" causes it to belong to the previous line, instead of the previous block. To avoid this warning, indent the operator to the same indentation level as the previous line, or outdent it to have it belong to the block instead.\r\n\r\n**Rationale**\r\n\r\nThe issue discussed here is notoriously hard to spot in a code base. I've been bitten by it numerous times over the cause of many years F# programming, and I am presently unsure whether my code silently has bugs caused by the indentation-relaxation rules for operators.\r\n\r\nIt is well established that F# is a whitespace-sensitive language, where generally related statements must start at the same indentation level.\r\n\r\nFor oper"
+    },
+    {
+      "source": "github-issues",
+      "title": "The Fragility of Beads in Gas Town",
+      "url": "https://github.com/gastownhall/gastown/issues/764",
+      "repo": "gastownhall/gastown",
+      "reactions": 15,
+      "comments": 4,
+      "created": "2026-01-18T17:07:35Z",
+      "body_snippet": "## Executive Summary\n\nGas Town uses beads as operational state infrastructure, not just issue tracking. This creates a fragility problem: beads was designed as a git-backed issue tracker, but gastown relies on it for critical runtime state (roles, molecules, convoys, merge requests, events, routing). When beads state is corrupted, lost, or out of sync, gastown agents fail in ways that are difficult to diagnose and recover from.\n\n**The core tension:**\n\nWhen an issue tracker loses a ticket, it's annoying. When operational infrastructure loses state, the factory explodes.\n\n---\n\n## How Gas Town Depends on Beads\n\n**Two-Level Architecture:**\n- **Town-level** (`~/gt/.beads/` with `hq-*` prefix): Mayor, Deacon roles and coordination\n- **Rig-level** (`<rig>/mayor/rig/.beads/` with project prefixes): Witness, Refinery, Polecats\n\n**Operational State Stored in Beads:**\n\n| State Type | Prefix/Location | If Lost/Corrupted |\n|------------|-----------------|-------------------|\n| Role beads | `hq-*-role` | Agents lose identity, won't start |\n| Molecules | town/rig level | Workflow state lost, agents stuck |\n| Wisps | ephemeral (no JSONL) | In-flight work lost on restart |\n| Convoys | `hq-cv-*` | W"
+    },
+    {
+      "source": "github-issues",
+      "title": "Bring project back to life",
+      "url": "https://github.com/SamVerschueren/listr/issues/143",
+      "repo": "SamVerschueren/listr",
+      "reactions": 14,
+      "comments": 13,
+      "created": "2020-04-16T23:09:53Z",
+      "body_snippet": "I've couldn't help but notice this project is not in good shape, the builds are failing and many helpful PRs are not being merged. This is a very helpful and widely used project, and usually a must have for CLIs.\r\n\r\nI'm willing to invest time into bringing this project back to life and have it well maintained.\r\n\r\nHere are some things that I think should be done:\r\n\r\n- [ ] Rewrite in TypeScript, for typechecking, better DX and for listr to have its own type definitions.\r\n- [x] ~~Use jest instead of ava~~\r\n- [ ] Update dependencies and review any unnecessary ones\r\n- [x] Fix failing builds\r\n- [ ] Update docs #134 \r\n- [ ] Make listr a monorepo and include in it the satellite modules [listr-update-renderer](https://github.com/SamVerschueren/listr-update-renderer), [listr-silent-renderer](https://github.com/SamVerschueren/listr-silent-renderer), [listr-verbose-renderer](https://github.com/SamVerschueren/listr-verbose-renderer) and maybe , [listr-input](https://github.com/SamVerschueren/listr-input) although it is not a direct dependency\r\n- [ ] #125 , #127: Move rxjs to peerDependencies \r\n- [ ] Merge good PRs to prevent forking: #113 #114 #116 \r\n\r\nI don't think any breaking changes are nee"
+    }
+  ]
+}

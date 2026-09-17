@@ -1,0 +1,206 @@
+{
+  "query": "takes hours to verify",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "0.14.2: AutoscalingRunnerSet permanently deadlocks in `Outdated` phase when a config change coincides with an Actions service outage — cleanup completes, phase is never reset, no requeue",
+      "url": "https://github.com/actions/actions-runner-controller/issues/4595",
+      "repo": "actions/actions-runner-controller",
+      "reactions": 23,
+      "comments": 23,
+      "created": "2026-08-07T03:18:37Z",
+      "body_snippet": "\n### Checks\n\n- [x] I've already read the ARC troubleshooting guide and I'm sure my issue is not covered in it.\n- [x] I am using charts that are officially provided\n\n### Controller Version\n\n0.14.2 (`ghcr.io/actions/gha-runner-scale-set-controller:0.14.2`, chart `gha-rs-0.14.2`)\n\n### Deployment Method\n\nHelm (EKS, Kubernetes v1.31.14-eks-8f14419, `updateStrategy: immediate`)\n\n### To Reproduce\n\nThe deterministic core of the bug can be shown without an outage (steps 1–3); the outage is what makes it occur in practice (see Timeline).\n\n1. Deploy `gha-runner-scale-set` 0.14.2. Let the scale set run normally.\n2. Drive the AutoscalingRunnerSet into `status.phase: Outdated` with all children cleaned up and the `actions.github.com/runner-scale-set-id` annotation removed — i.e. the state the controller itself produces when it executes `cleanUpResources` to completion (listener deleted, EphemeralRunnerSets deleted, runner scale set deleted from the Actions service).\n3. Observe: the controller never recreates anything and never logs again for this resource. Restarting the controller does not help — each restart runs one reconcile that ends at `\"deleting runner scale set\"` (info level, no error) a"
+    },
+    {
+      "source": "github-issues",
+      "title": "Sequential replacement for raidz",
+      "url": "https://github.com/openzfs/zfs/issues/15494",
+      "repo": "openzfs/zfs",
+      "reactions": 14,
+      "comments": 0,
+      "created": "2023-11-04T04:50:42Z",
+      "body_snippet": "### Describe the feature you would like to see added to OpenZFS\r\n\r\nI'd like to see sequential replacement (`zpool replace -s`) extended to raidz vdevs for cases when the source device is available and readable (or mostly readable).\r\n\r\nThe goal of this feature is to restore redundancy to a degraded raidz as quickly as possible. Instead of a full resilver from parity, a best-effort copy would be attempted to recover as much readable data (of in-use blocks) from the degraded disk and then a follow-up scrub would handle the repair on a subset of corrupt or missing blocks.\r\n\r\nI'm also interested in understanding the current algorithm for sequential replacement and then exploring if [an algorithm similar to the one GNU ddrescue uses](https://www.gnu.org/software/ddrescue/manual/ddrescue_manual.html#Algorithm) would be an improvement (as measured by a reduction in the length of time required to `zpool replace -s` devices suffering occasional read timeouts).\r\n\r\n### How will this feature improve OpenZFS?\r\n\r\nAs of the `zfs-2.2.0` release, the resilver process remains lengthy for dense pools of raidz. As far as I can tell, `zpool replace` assumes atomic failure of degraded devices (even when "
+    },
+    {
+      "source": "github-issues",
+      "title": "[Tracking] CI Test Failures and Fixes",
+      "url": "https://github.com/sgl-project/sglang/issues/17050",
+      "repo": "sgl-project/sglang",
+      "reactions": 10,
+      "comments": 14,
+      "created": "2026-01-14T01:49:31Z",
+      "body_snippet": "# [Tracking] CI Test Failures and Fixes\n\nThis issue tracks CI test failures, flaky tests, and infrastructure issues across SGLang's CI pipeline.\n\n**Note:** We mainly focus on scheduled CI on the `main` branch.\n\n**Last auto-update:** 2026-09-17 02:14 UTC — 1 broken, 11 flaky, 1034 recently fixed\n\n## Quick Links\n\n- **[CI Coverage Overview](https://github.com/sgl-project/sglang/actions/workflows/ci-coverage-overview.yml)** - Check which tests are covered, by which backend/suite, and whether they are disabled\n- **[CI Failure Monitor](https://github.com/sgl-project/sglang/actions/workflows/ci-failure-monitor.yml)** - Automated failure analysis\n\n---\n\n## Ongoing Issues\n\n### NV CI\n\n| Date | Test | Backend | Error | Notes | CI Status | Assignee | Related |\n|------|------|---------|-------|-------|-----------|----------|---------|\n| 2026-09-16 | `test_bench_serving_2gpu.py` | call-pr-test-extra / extra-a-test-2-gpu-large / extra-a-test-2-gpu-large (0) | AssertionError: 916.0374041096846 not greater than 2200 | performance (2% fail, 17/1015) | Enabled | - | [Failure](https://github.com/sgl-project/sglang/actions/runs/35088936689/job/104770520620) |\n| 2026-09-16 | `test_constrained_decoding.py"
+    },
+    {
+      "source": "github-issues",
+      "title": "RFC: Ablation Study — Domino vs DSpark Performance Comparison",
+      "url": "https://github.com/vllm-project/speculators/issues/757",
+      "repo": "vllm-project/speculators",
+      "reactions": 9,
+      "comments": 10,
+      "created": "2026-07-09T13:39:24Z",
+      "body_snippet": "## Motivation\n\nBoth Domino (#685, [arXiv:2605.29707](https://arxiv.org/abs/2605.29707)) and DSpark add sequential/causal conditioning on top of the DFlash parallel draft backbone, but through fundamentally different mechanisms:\n\n- **Domino**: GRU-based correction head producing additive logit deltas on suffix positions, with a dual-loss lambda curriculum that transitions from 100% backbone loss to 100% refined loss.\n- **DSpark**: Low-rank factorized Markov logit-bias head (`W1 @ W2`, rank 256) + optional confidence head (per-position acceptance predictor trained with BCE).\n\nPrior experiments have compared these methods, but never under identical conditions (same dataset, hyperparameters, verifier, and evaluation protocol). Weifan's DPace ablations (#736) and the v6 Domino experiments used different datasets and settings, making direct comparison unreliable. This RFC proposes a controlled ablation to resolve that.\n\nAdditionally, the v6 Domino experiments showed that the lambda curriculum improved the **backbone itself** by +9.1% MAL even when the GRU head was dropped at inference — meaning sequential conditioning during training can act as a regularizer that benefits the parallel ba"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] Predictive Primary shard count by ISM and Index Management",
+      "url": "https://github.com/opensearch-project/index-management/issues/1225",
+      "repo": "opensearch-project/index-management",
+      "reactions": 8,
+      "comments": 15,
+      "created": "2024-08-08T13:15:05Z",
+      "body_snippet": "**Is your feature request related to a problem?**\n+ Users who are new to OpenSearch or any Lucene based search engines often learn about [sharding best practices](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html#bp-sharding) the hard way when they end up producing 500,900GiB shard size or toooo many smaller shards (usually under 1gb each).\n+ As an OpenSearch consultant (who has reviewed countless OpenSearch Clusters) I see majority of the OpenSearch indices use 5 primary (which is the default in Amazon OpenSearch), which goes to say that users do not pay attention to sharding strategy, especially when they are new to OpenSearch\n+ To give an concrete example, in a multi-tenant cluster setup with varying ingestion rates, relying solely on a static primary count in the index template isn't sufficient. Consider a log observability workload with over 200 different types of applications, each represented by its own index-pattern. These rolling indices have varying size, ranging from extremely large to extremely small. Additionally, the ingestion rate fluctuates over time, causing low-volume indices to temporarily become medium-sized before returnin"
+    },
+    {
+      "source": "github-issues",
+      "title": "Guide: Running GR00T N1.5 Fine-Tuning on DGX Spark (CUDA 13.0 / aarch64)",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T/issues/474",
+      "repo": "NVIDIA/Isaac-GR00T",
+      "reactions": 8,
+      "comments": 5,
+      "created": "2025-12-21T14:28:04Z",
+      "body_snippet": "Hey everyone!\n\nI recently got GR00T fine-tuning working on my DGX Spark and wanted to share my findings since I couldn't find much documentation for this specific setup. Hopefully this saves someone else a few hours of debugging.\n\n## My Setup\n\n- **Device**: NVIDIA DGX Spark\n- **GPU**: GB10 (Grace Blackwell Superchip, sm_121)\n- **CUDA**: 13.0\n- **Architecture**: aarch64 (ARM)\n- **OS**: Ubuntu 24.04\n\n## The Problem\n\nOut of the box, `pip install -e .[base]` doesn't work on DGX Spark. The `pyproject.toml` specifies `torch==2.5.1` which doesn't support CUDA 13.0 or the sm_121 compute capability. The flash-attention version also has no prebuilt wheel for aarch64.\n\n## What Worked For Me\n\n### 1. Create a fresh conda environment\n\n```bash\nconda create -n gr00t python=3.10 -y\nconda activate gr00t\npip install --upgrade pip setuptools wheel\n```\n\n### 2. Install PyTorch with CUDA 13.0 support\n\nThe key is to use the `cu130` wheel index:\n\n```bash\npip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130\n```\n\nYou'll see a warning about sm_121 not being officially supported — I just ignored it and everything worked fine.\n\n### 3. Install flash-attention\n\nThis was the "
+    },
+    {
+      "source": "github-issues",
+      "title": "# Hobby Self-Host Dirty Dozen",
+      "url": "https://github.com/PostHog/posthog/issues/53405",
+      "repo": "PostHog/posthog",
+      "reactions": 8,
+      "comments": 7,
+      "created": "2026-04-05T20:33:54Z",
+      "body_snippet": "### Bug Description\n\n## Summary\n\nI spent many hours over Easter weekend, using Antigravity with Claude Code running in an extension, and another window with ssh/tmux into a remote server, trying to get PostHog Hobby to behave. This seems, at least to me, to be an extraordinary clutch of bugs to ship in what is a top of the heap FOSS project.\n\nWhat follows was drafted by Claude Code, with much input from me, and I've made the set of fixes available. To be absolutely clear, Hobby STILL does not run clean after all this, I just wanted to make this available given that there is a development sprint starting tomorrow. Hopefully someone will run these things down and the offered fixes should at least provide clues to the underlying issues.\n\n## Begin Vibe Mode\n\nPostHog's self-hosted hobby deployment (`docker-compose.hobby.yml` + `docker-compose.base.yml`) is broken out of the box as of April 2026. We encountered **12 distinct issues** deploying on a clean Ubuntu 24.04 system with Docker Compose. Each issue required manual intervention — none were caught by the bootstrap script or documented in PostHog's self-hosting guides.\n\nThe root cause is a pattern: **the hobby compose files and Docke"
+    },
+    {
+      "source": "github-issues",
+      "title": "Swap Play Integrity and co for alternative attestation methods",
+      "url": "https://github.com/bcgov/bc-wallet-mobile/issues/3940",
+      "repo": "bcgov/bc-wallet-mobile",
+      "reactions": 7,
+      "comments": 10,
+      "created": "2026-05-28T23:13:50Z",
+      "body_snippet": "### Description\n\nLimited app-store based attestation methods should be swapped out for a digital credential-based and hardware-backed attestation method that can be included in a proof presentation. This has the added benefit of removing a barrier to the app working on alternative mobile devices. As recent-first time contributor @nstbayless put it:\n\n---\n\n## Motivation\n\nThere’s actually quite a few reasons why remote attestation is problematic…\n\n### Canadian Digital Sovereignty\n\nAs a sovereign provincial identity verification system, it doesn’t make sense for users to be gated based on an American company’s approval. The only two remote attestation options currently implemented makes it mandatory for users to be on a device that is approved by either Google or Apple. This is kind of a non-starter for Canadian digital sovereingty, which since last year is now active federal and provincial policy.\n\nAdditionally, GPI introduces an infrastructural reliance on Google’s server uptime. If Google’s servers have a [2-hour service outage](https://status.play.google.com/incidents/QRUAfQgz8Zftj4QiSftu), that’s 2 hours when android users in BC could be unable access their medical data on soverei"
+    },
+    {
+      "source": "github-issues",
+      "title": "Gradle 7 is very slow on Windows when there are disconnected network drives",
+      "url": "https://github.com/gradle/gradle/issues/17955",
+      "repo": "gradle/gradle",
+      "reactions": 7,
+      "comments": 14,
+      "created": "2021-08-05T11:15:57Z",
+      "body_snippet": "<!--- \r\nPlease follow the instructions below. \r\nWe receive dozens of issues every week, so to stay productive, we will close issues that don't provide enough information. \r\n\r\nPlease open Android-related issues on the Android Issue Tracker at https://source.android.com/source/report-bugs\r\nPlease open Gradle Native-related issues at https://github.com/gradle/gradle-native/issues\r\n-->\r\n\r\n<!--- Provide a brief summary of the issue in the title above -->\r\n\r\n### Expected Behavior\r\nWhen a build is completed, Gradle completes within a reasonable amount of time.\r\n\r\n### Current Behavior\r\nWhen a build is completed on a Windows 10 system and there are disconnected network drives (smb shares mounted to a drive letter), Gradle takes 30s to 60s extra to complete, after it has printed 'BUILD SUCCEEDED'. The progress indicator just shows 'Idle' all this time.\r\n\r\n**Gradle 6.9 didn't have the problem. It was only introduced in 7.0.**\r\n\r\nWhen running `./gradlew build --debug`, it looks like the additional time is spent acquiring and releasing locks on network shares that are disconnected (because these are only reachable over VPN, which is disconnected most of the time).\r\n\r\n```\r\n2021-08-05T12:50:13.14"
+    },
+    {
+      "source": "github-issues",
+      "title": "GitHub app proposal/design/discussion",
+      "url": "https://github.com/semantic-release/semantic-release/issues/585",
+      "repo": "semantic-release/semantic-release",
+      "reactions": 6,
+      "comments": 23,
+      "created": "2018-01-01T01:04:29Z",
+      "body_snippet": "This issue as for objective do discuss the features that could be added to Semantic-release via a [GitHub App](https://developer.github.com/apps) as well as the constraints, challenges and possible implementations.\r\n\r\nI will update the [Proposal](#proposal) section at the bottom based on the feedbacks and discussions.\r\nOnce we'll have a clear view of the scope we can create a PR in the [evolution repository](https://github.com/semantic-release/evolution) to define the implantation details.\r\n\r\n## Constraints / Challenges\r\n\r\n### No unverified/custom code\r\n\r\nRunning custom unverified code within the GitHub app is a security risk. Semantic-release can be customized with Plugins and Shareable configuration that runs custom user provided code.\r\nIn addition the [commit-analyzer](https://github.com/semantic-release/commit-analyzer) and [release-notes-generator](https://github.com/semantic-release/release-notes-generator) allow to to import user provided file or modules via the `preset` and `config` options.\r\n\r\nTherefore the code running on a GitHub app shouldn't run plugins or shareable configuration.\r\nShareable configuration could be used if we limited then to static code (no Javascript, "
+    },
+    {
+      "source": "github-issues",
+      "title": "Spaced Repetition - Gwern.net",
+      "url": "https://github.com/guevara/read-it-later/issues/1763",
+      "repo": "guevara/read-it-later",
+      "reactions": 0,
+      "comments": 0,
+      "created": "2018-12-13T16:15:17Z",
+      "body_snippet": "Spaced Repetition - Gwern.net<br>\n<br>\nhttps://ift.tt/2yBeFKP<br>\n<br>\ngwern<br>\n<br>\n<div><div>\n<blockquote>\n<p>Spaced repetition is a technique for efficient memorization &amp; practice of skills where instead of doing a lot of work quickly, each item’s practices are automatically spread out over time, with increasing durations as one learns the item. I review what this technique is useful for, some of the large research literature on it and the testing effect (up to ~2013, primarily), the available software tools and use patterns, and miscellaneous ideas &amp; observations on it.</p>\n</blockquote>\n<p>One of the most fruitful areas of computing is making up for human frailties. They do arithmetic perfectly because we can’t<a href=\"#fn1\"><sup>1</sup></a>. They remember terabytes because we’d forget. They make the best calendars, because they always check what there is to do today.</p>\n<p>We use any number of such <a title=\"Wikipedia: neuroprosthetic\" href=\"https://en.wikipedia.org/wiki/neuroprosthetic\">neuroprosthetic</a>s<a href=\"#fn2\"><sup>2</sup></a>, but there are always more to be discovered. They’re worth looking for because they are so valuable: a shovel is much more effect"
+    },
+    {
+      "source": "github-issues",
+      "title": "Portable PDBs support",
+      "url": "https://github.com/SymbolSource/SymbolSource/issues/7",
+      "repo": "SymbolSource/SymbolSource",
+      "reactions": 5,
+      "comments": 4,
+      "created": "2018-06-06T16:04:52Z",
+      "body_snippet": "I successfully uploaded a package but it cannot be found when trying to list it.\r\n\r\n```\r\n.\\nuget.4.7.0.exe push C:\\Users\\Fres\r\na\\Downloads\\Topshelf.ApplicationHostBuilder.1.0.10.symbols.nupkg -source https://nuget.smbsrc.net/\r\nPushing Topshelf.ApplicationHostBuilder.1.0.10.symbols.nupkg to the symbol server (https://nuget.smbsrc.net/)...\r\n  POST https://www.nuget.org/api/v2/package/create-verification-key/Topshelf.ApplicationHostBuilder/1.0.10\r\n  OK https://www.nuget.org/api/v2/package/create-verification-key/Topshelf.ApplicationHostBuilder/1.0.10 1902ms\r\n  PUT https://nuget.smbsrc.net/api/v2/package/\r\n  OK https://nuget.smbsrc.net/api/v2/package/ 2401ms\r\nYour package was pushed.\r\n```\r\n\r\n```\r\n .\\nuget.4.7.0.exe list Topshelf.Appl\r\nicationHostBuilder -PreRelease -AllVersions -source https://nuget.smbsrc.net/\r\nNo packages found.\r\n```\r\n\r\nI get it if it takes some time to index the package, but it has been hours now."
+    },
+    {
+      "source": "github-issues",
+      "title": "Widevine for 64-bit chromium now achievable",
+      "url": "https://github.com/raspberrypi/Raspberry-Pi-OS-64bit/issues/248",
+      "repo": "raspberrypi/Raspberry-Pi-OS-64bit",
+      "reactions": 5,
+      "comments": 8,
+      "created": "2023-02-15T05:14:03Z",
+      "body_snippet": "Until recently, all ARM64 ChromeOS devices were using a 32-bit userland. Google is rolling out an ARM64 userspace in beta for some chromebooks, and a few hours ago an ARM64 Widevine library was successfully snatched from Google's update servers.\r\nSee: https://gist.github.com/teacupx/9393507ad6250429707f0318b04f1a3b?permalink_comment_id=4471161#gistcomment-4471161\r\n@theofficialgman is hosting the files [here](https://github.com/theofficialgman/testing/releases/download/gmans-releases/WidevineCdm.tar.gz) for easy access.\r\n\r\nI have been able to verify that this libwidevinecdm.so file is indeed in ARM64 format.\r\n```\r\n$ file /tmp/WidevineCdm/_platform_specific/cros_arm64/libwidevinecdm.so\r\n/tmp/WidevineCdm/_platform_specific/cros_arm64/libwidevinecdm.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=b71fd3342a03fdb140e1f7a757960df219d63625, stripped\r\n```\r\nThis is where we need assistance from @popcornmix, @XECDesign, and anyone else familiar with the current Chromium [patches](https://github.com/RPi-Distro/chromium-browser/tree/master/debian/patches) for Netflix.\r\nChromium does not seem to detect the Widevine library, despite it being pla"
+    },
+    {
+      "source": "github-issues",
+      "title": "DP #119: 0xchange – an anonymous, low-cost market for fiat-to-crypto exchange",
+      "url": "https://github.com/district0x/district-proposals/issues/119",
+      "repo": "district0x/district-proposals",
+      "reactions": 5,
+      "comments": 5,
+      "created": "2017-08-22T16:17:33Z",
+      "body_snippet": "# Name\r\n**0xchange** – an anonymous, low-cost, decentralized market for fiat-to-crypto exchange\r\n\r\n# Purpose\t\r\nTo create a decentralized fiat-to-crypto exchange that is secure, anonymous, and low-fee.\r\n\r\n# Description\r\n**How it works**\r\nCrypto to Fiat exchanges are enabled via six main components:\r\n\r\n- Buyers\r\n- Sellers\r\n- Enforcers\r\n- Buy/Sell Board\r\n- Multi-Signature Transactions\r\n- District0x Staked Tokens / Governance Committee\r\n\r\n**Buyers** are users looking to buy any cryptocurrency using fiat\r\n**Sellers** are users looking to sell their cryptocurrency for fiat\r\n**Enforcers** are human actors that enforce the contract (i.e. escrow holders)\r\n**Buy/Sell Board** is the listing of buy and sell orders\r\n**Multi-Signature Transactions** are blockchain transactions that require 2 out of 3 signatures to broadcast (see https://en.wikipedia.org/wiki/Multisignature)\r\n**District0x Staked Tokens** that users have staked in the 0xchange district comprise the **Governance Committee**.\r\n\r\n# Use Case\r\nAlice is a **Buyer** who wants to buy 1 _nextBigCoin_ at the market rate of $100 per coin.  But Alice doesn’t want to go through Coinbase. She doesn’t like the complicated, fee-ridden flow of:\r\n\r"
+    },
+    {
+      "source": "github-issues",
+      "title": "Memory and Learning: Myths and Truths",
+      "url": "https://github.com/guevara/read-it-later/issues/5142",
+      "repo": "guevara/read-it-later",
+      "reactions": 0,
+      "comments": 0,
+      "created": "2019-08-12T07:32:44Z",
+      "body_snippet": "Memory and Learning: Myths and Truths<br>\n<br>\nhttps://ift.tt/31ykiEU<br>\n<br>\nDr Piotr Wozniak, August 2003<br>\n<br>\n<div>\n<div>\n<div align=\"center\">\n<center>\n<table border=\"2\" cellspacing=\"4\" width=\"100%\" cellpadding=\"4\">\n<tbody>\n<tr>\n<td width=\"100%\">Those who plan to improve their learning skills must be alert against a volley on false claims that are ripe in books and materials devoted to accelerated learning. This short and concise list should help you avoid books or websites that do not stick to the basics of science. In addition to memory myths, you will find, at the bottom, a summary of other myths described extensively at other places of this website.\n<p>Remember to remain skeptical. Hone your skepticism and treat this list with skepticism too. Consult reputable sources.&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>\n</center>\n</div>\n<p><b>Contents:</b></p>\n<ul>\n<li><a href=\"#Memory%20myths\">Memory myths</a></li>\n<li><a href=\"#Genius%20myths\">Genius and creativity myths</a></li>\n<li><a href=\"#Sleep%20myths\">Sleep myths</a></li>\n<li><a href=\"#SuperMemo%20myths\">SuperMemo myths</a></li>\n<li><a href=\"#Language%20learning%20myths\">Language learning myths</a></li>\n<li><a href=\"#Skept"
+    },
+    {
+      "source": "github-issues",
+      "title": "Prisma client extensions: return type of `recordversion.findUnique` incompatible with Prisma.TransactionClient",
+      "url": "https://github.com/prisma/orm/issues/19949",
+      "repo": "prisma/orm",
+      "reactions": 5,
+      "comments": 6,
+      "created": "2023-06-24T09:21:56Z",
+      "body_snippet": "### Bug description\r\n\r\nAfter update to 4.16.x (observed on all tested versions tested so far from 4.16.0 through to 4.16.2-dev.2), an extended prisma client is considered to have an incompatible type for the `findUnique` query with a prisma transaction client resulting in the typescript error message:\r\n\r\n```ts\r\nArgument of type 'DynamicClientExtensionThis<TypeMap<Args & { result: {}; model: {}; query: {}; client: {}; }>, TypeMapCb, { result: {}; model: {}; query: {}; client: {}; }>' is not assignable to parameter of type 'PrismaTransactionClient'.\r\n  The types returned by 'recordVersion.findUnique(...)' are incompatible between these types.\r\n    Type 'PrismaPromise<GetFindResult<RecordVersionPayload<Args & { result: {}; model: {}; query: {}; client: {}; }>, SelectSubset<T, RecordVersionFindUniqueArgs<DefaultArgs>>> | null>' is not assignable to type 'HasReject<undefined, LocalRejectSettings, \"findUnique\", \"RecordVersion\"> extends 1 ? Prisma__RecordVersionClient<GetFindResult<RecordVersionPayload<DefaultArgs>, T>, never, DefaultArgs> : Prisma__RecordVersionClient<GetFindResult<RecordVersionPayload<DefaultArgs>, T> | null, null, DefaultArgs>'.  ts(2345)\r\n```\r\n\r\n### How to reproduce\r\n"
+    },
+    {
+      "source": "github-issues",
+      "title": "[BOUNTY: 50-75 RTC] Bounty Verification Bot — Auto-Verify Star/Follow Claims",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/747",
+      "repo": "Scottcjn/rustchain-bounties",
+      "reactions": 4,
+      "comments": 207,
+      "created": "2026-03-07T03:24:23Z",
+      "body_snippet": "## Bounty Verification Bot\n\nWe spend hours every session manually checking star counts, follow status, wallet existence, and article links. A bot that auto-verifies claims would save massive time.\n\n### What to Build\n\nA GitHub Action or bot that monitors bounty issue comments, detects claims, and posts automated verification results.\n\n### Payout\n\n| Milestone | Reward |\n|-----------|--------|\n| Star/follow verification (reads comment, checks GitHub API, posts result) | **30 RTC** |\n| Wallet existence check (queries RustChain node API) | **+10 RTC** |\n| Article/URL verification (checks dev.to/Medium links are live) | **+10 RTC** |\n| Dev.to article word count + quality check | **+10 RTC** |\n| Duplicate claim detection (checks if user already claimed) | **+15 RTC** |\n\n### How It Should Work\n\n1. **Triggered by**: New comment on bounty issues containing keywords like \"Claiming\", \"Wallet:\", \"Stars:\", \"GitHub:\"\n2. **Checks performed**:\n   - Does user follow @Scottcjn? (`GET /users/{user}/following/Scottcjn` → 204 = yes)\n   - How many Scottcjn repos has user starred? (paginate `/users/{user}/starred`)\n   - Does the claimed wallet exist? (`GET https://50.28.86.131/wallet/balance?miner_id={wal"
+    },
+    {
+      "source": "github-issues",
+      "title": "Desktop wait/status orchestration re-meters full cached context every 10-30s; stale 'running' subagents keep it looping (90% of weekly Pro in 15.5h)",
+      "url": "https://github.com/openai/codex/issues/37299",
+      "repo": "openai/codex",
+      "reactions": 4,
+      "comments": 5,
+      "created": "2026-08-06T15:43:41Z",
+      "body_snippet": "## Summary\n\nLong-running Codex Desktop tasks that orchestrate subagents and background commands consume extreme weekly usage while effectively idle. The driver is that every small wait/status result triggers a model turn that re-meters the task's entire accumulated context (~140k tokens at 97–98% cached in our case), and Desktop's orchestration issues these waits on 10–30s timeouts against work that takes minutes to hours. A newly activated Pro account went from 0% to 90% of its weekly limit in ~15.5 hours this way; the account usage API reported ~290M tokens for that single day (Aug 5).\n\nRelated: #4764 (large cached contexts consuming limits). This report adds the Desktop wait/status orchestration angle plus a subagent lifecycle defect that keeps the pattern running.\n\n## Environment\n\n- Codex Desktop (app-server `0.147.0-alpha.1.2`), macOS 15 (Darwin 24.6.0)\n- Model `gpt-5.6-sol`, reasoning `xhigh`/`max`, multi-agent + code-mode enabled\n\n## Measurements (local session rollouts, fork/replay events deduplicated)\n\nOver Aug 4–6:\n\n- **75% of all model-visible tool calls were `wait` / `wait_agent` / `list_agents`** (8,744 of 11,002). Observed timeout arguments: `wait` mostly `yield_time_"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] Revising the Arm32 Targets for CI Build",
+      "url": "https://github.com/apache/nuttx/issues/14259",
+      "repo": "apache/nuttx",
+      "reactions": 4,
+      "comments": 3,
+      "created": "2024-10-14T09:21:13Z",
+      "body_snippet": "### Is your feature request related to a problem? Please describe.\r\n\r\nOver the weekend we had CI Build Issues that took a while to resolve:\r\n- https://github.com/apache/nuttx/pull/14229\r\n- https://github.com/apache/nuttx/pull/14252\r\n- https://github.com/apache/nuttx-apps/pull/2716\r\n- https://github.com/apache/nuttx-apps/pull/2720\r\n\r\nOur CI Build for Arm32 Targets requires 2.5 hours to run (`arm-01` to `arm-14`). It takes some time to catch all the errors, patch them, re-run the build. And we might hit errors again. Let's improve this.\r\n\r\n### Describe the solution you'd like\r\n\r\nWhat if we could validate the defconfig files earlier, before any builds? (Suggested by @GUIDINGLI)\r\n- Might be possible, I'll check through the CI Build Script (Done! See the PR below)\r\n\r\nDo we really need to build so many Arm32 Targets every time?\r\n- If we build only the latest targets (e.g. SAMV7, Goldfish), then the problems will show up earlier. (And reduce our cost of GitHub Actions)\r\n- Or we should move SAMV7, Goldfish etc to the first job `arm-01`, keep the job small, so that it will fail earlier.\r\n\r\nThese are the Arm32 Targets that we should keep for the CI Build, suggested by @GUIDINGLI:\r\n- armv8-m,"
+    }
+  ]
+}

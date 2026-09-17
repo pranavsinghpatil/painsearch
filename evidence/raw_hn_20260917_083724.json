@@ -1,0 +1,50 @@
+{
+  "query": "silent breaking changes",
+  "count": 4,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Rust – memcpy is backwards (silent breaking change)",
+      "url": "http://internals.rust-lang.org/t/memcpy-is-backwards/1797",
+      "hn_id": "9335563",
+      "points": 10,
+      "comments": 1,
+      "author": "rcconf",
+      "created": "2015-04-07T17:20:42Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you handle breaking changes from third-party APIs in production?",
+      "url": "https://news.ycombinator.com/item?id=47538731",
+      "hn_id": "47538731",
+      "points": 1,
+      "comments": 0,
+      "author": "kriish2205",
+      "created": "2026-03-27T03:12:09Z",
+      "text_snippet": "Recently worked on a project where our team used 10+ third-party APIs. Twice this year we got hit by silent breaking changes and found out only when users complained.<p>Curious how others handle this and whether a tool that monitors API contract changes and surfaces relevant changelog updates automatically would have saved you time.<p>- How do you currently stay ahead of breaking changes?\n- Have you built internal tooling for this?\n- Would this be a painkiller or a vitamin for your team?"
+    },
+    {
+      "source": "hn",
+      "title": "Silent Backwards Compatibility Breaking Changes in PyTorch",
+      "url": "https://blog.ezyang.com/2026/03/silent-bc-breaking-changes/",
+      "hn_id": "47236923",
+      "points": 4,
+      "comments": 1,
+      "author": "matt_d",
+      "created": "2026-03-03T18:50:50Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Classic Video Poker v2",
+      "url": "https://www.classicvideopoker.com/classicvideopokerv2/",
+      "hn_id": "47470194",
+      "points": 6,
+      "comments": 9,
+      "author": "appstorelottery",
+      "created": "2026-03-21T19:06:51Z",
+      "text_snippet": "Classic Video Poker (CVP) is a lightweight, browser-based retro video poker game which originally hit the front page of HN on Oct 4, 2023: <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=37763098\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=37763098</a><p>I&#x27;ve finally managed to release version 2. The delay was mostly due to fear of upsetting the user base with breaking changes.<p>Version 2 includes:<p>- Frictionless accounts: added registration so you can save progress but no personal info or email.<p>- Deep play stats: Track lifetime RTP (Return to player), max win&#x2F;loss streaks, winning hand counts and more.<p>- Leaderboards &amp; Cash out: Cash out wins above the free play level, feeding into leaderboards for bank balance, RTP% (after 50 hands of play), and leaderboards that reward grinders<p>- Mobile stability - I&#x27;ve completely rewritten the communications routines both on server&#x2F;client side. Mobile can be flaky, so the client handles silent"
+    }
+  ]
+}

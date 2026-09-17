@@ -1,0 +1,226 @@
+{
+  "query": "false positives",
+  "count": 20,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Half of women will get a false positive 3D mammogram, study finds",
+      "url": "https://www.axios.com/half-of-women-will-get-a-false-positive-3d-mammogram-study-finds-5caf02eb-e5d8-4216-82b1-ac83f36523b2.html",
+      "hn_id": "30803165",
+      "points": 256,
+      "comments": 158,
+      "author": "samizdis",
+      "created": "2022-03-25T15:15:45Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "We tested Europe’s new lie detector for travelers and triggered a false positive",
+      "url": "https://theintercept.com/2019/07/26/europe-border-control-ai-lie-detector/",
+      "hn_id": "21358288",
+      "points": 226,
+      "comments": 114,
+      "author": "rchaudhary",
+      "created": "2019-10-25T19:17:56Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "The false positive rate of AI detectors and its effect on freelance writers",
+      "url": "https://authory.com/blog/how-ai-detectors-are-destroying-livelihoods",
+      "hn_id": "38101219",
+      "points": 218,
+      "comments": 165,
+      "author": "eh-eric",
+      "created": "2023-11-01T17:00:13Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "GPTZero Case Study – Exploring False Positives",
+      "url": "https://gonzoknows.com/posts/GPTZero-Case-Study/",
+      "hn_id": "34858307",
+      "points": 181,
+      "comments": 113,
+      "author": "sungage",
+      "created": "2023-02-19T15:22:39Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Hospitals are reporting new mothers for neglect from poppyseed false positives",
+      "url": "https://reason.com/2023/03/23/hospitals-are-still-reporting-new-mothers-for-neglect-based-on-drug-tests-triggered-by-poppy-seeds/",
+      "hn_id": "35305079",
+      "points": 180,
+      "comments": 140,
+      "author": "fortran77",
+      "created": "2023-03-25T17:45:14Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Mozilla says 271 vulnerabilities found by Mythos and \"almost no false positives\"",
+      "url": "https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/",
+      "hn_id": "48053816",
+      "points": 125,
+      "comments": 4,
+      "author": "epistasis",
+      "created": "2026-05-07T19:36:45Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Samsung blames security software false positive for StarLogger issue.",
+      "url": "http://www.tgdaily.com/security-features/55096-samsung-denies-preinstalling-spyware",
+      "hn_id": "2390907",
+      "points": 118,
+      "comments": 52,
+      "author": "nickolai",
+      "created": "2011-03-31T09:42:06Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Fatalities vs. False Positives: The Lessons from the Tesla and Uber Crashes",
+      "url": "https://hackaday.com/2018/06/18/fatalities-vs-false-positives-the-lessons-from-the-tesla-and-uber-crashes/",
+      "hn_id": "17338950",
+      "points": 116,
+      "comments": 150,
+      "author": "szczys",
+      "created": "2018-06-18T15:29:04Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Risk of false positives in fMRI of post-mortem Atlantic salmon (2010) [pdf]",
+      "url": "https://www.dropbox.com/s/o7gb13j26v9f4dp/Bennett-Salmon-2010.pdf?dl=0",
+      "hn_id": "15598429",
+      "points": 113,
+      "comments": 41,
+      "author": "zitterbewegung",
+      "created": "2017-11-01T02:19:42Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Avoiding and reducing microplastic false positives from dry glove contact",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2026/ay/d5ay01801c",
+      "hn_id": "48129934",
+      "points": 104,
+      "comments": 43,
+      "author": "efavdb",
+      "created": "2026-05-14T01:13:02Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "MS Security Essentials reporting false positives in the Bitcoin blockchain",
+      "url": "https://answers.microsoft.com/en-us/protect/forum/mse-protect_updating/microsoft-security-essentials-reporting-false/0240ed8e-5a27-4843-a939-0279c8110e1c",
+      "hn_id": "7753589",
+      "points": 100,
+      "comments": 77,
+      "author": "zorked",
+      "created": "2014-05-16T03:34:02Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Innocent woman arrested in false-positive in facial recognition system in Brazil",
+      "url": "https://news.ycombinator.com/item?id=20415371",
+      "hn_id": "20415371",
+      "points": 93,
+      "comments": 43,
+      "author": "gota",
+      "created": "2019-07-11T20:17:36Z",
+      "text_snippet": "An innocent woman was arrested today (while working in an informal job without any personally identifiable documentation) in Rio de Janeiro. The automated facial recognition systems (FRS) identified her as another woman, wanted for murder - it turns out the actual criminal is _already in jail_ and the police organization operating the FRS wasn&#x27;t informed about it yet due to delays between the systems.<p>This is the second day of operation of the system, according to the press. However, a restricted version of the same FRS was used for 15 days during the Carnaval festivities with no alarming failures and reportedly resulted in a few arrests.<p>It has now been deployed in 25 locations in Copacabana. (Anedoctally, I live here and can&#x27;t tell you where they are - the equipment, cameras, etc. must be well hidden, or I&#x27;m terrible at spotting them).<p>Source, in Portuguese: \n&quot;Facial recognition fails in its second day and innocent woman confused with criminal is arrested&qu"
+    },
+    {
+      "source": "hn",
+      "title": "Cost of False Positives",
+      "url": "http://laughingmeme.org/2011/07/23/cost-of-false-positives/",
+      "hn_id": "2798285",
+      "points": 92,
+      "comments": 7,
+      "author": "mcfunley",
+      "created": "2011-07-24T00:38:58Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Interpreting A/B test results: false positives and statistical significance",
+      "url": "https://netflixtechblog.com/interpreting-a-b-test-results-false-positives-and-statistical-significance-c1522d0db27a?gi=7da28da1b4a6",
+      "hn_id": "29042562",
+      "points": 76,
+      "comments": 21,
+      "author": "ciprian_craciun",
+      "created": "2021-10-29T19:25:36Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Potential false-positive rate among the 'asymptomatic infected individuals'",
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/32133832",
+      "hn_id": "22566923",
+      "points": 67,
+      "comments": 70,
+      "author": "trampi",
+      "created": "2020-03-13T13:05:38Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Facial recognition false positives lead to license revocations in Massachusetts ",
+      "url": "http://www.boston.com/news/local/massachusetts/articles/2011/07/17/man_sues_registry_after_license_mistakenly_revoked/",
+      "hn_id": "2773906",
+      "points": 65,
+      "comments": 34,
+      "author": "ilamont",
+      "created": "2011-07-17T18:58:08Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Alarming number of spam false positives in Gmail",
+      "url": "http://journal.dedasys.com/2015/03/12/alarming-number-of-spam-false-positives-in-gmail/",
+      "hn_id": "9190119",
+      "points": 54,
+      "comments": 65,
+      "author": "davidw",
+      "created": "2015-03-12T11:35:03Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "American arrested after Canadian airport drug tests gave false positives",
+      "url": "https://www.washingtonpost.com/nation/2023/06/27/toronto-airport-cocaine-shampoo-charge/",
+      "hn_id": "36491244",
+      "points": 51,
+      "comments": 31,
+      "author": "greesil",
+      "created": "2023-06-27T10:56:22Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "High-accuracy thrust measurements of the EMDrive, elimination of false-positives",
+      "url": "https://link.springer.com/article/10.1007/s12567-021-00385-1",
+      "hn_id": "28280117",
+      "points": 51,
+      "comments": 20,
+      "author": "rbanffy",
+      "created": "2021-08-23T18:38:45Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Self-Correcting False Positives/Negatives: Exonerate the Innocent",
+      "url": "http://jeffjonas.typepad.com/jeff_jonas/2012/05/self-correcting-false-positivesnegatives-exonerate-the-innocent.html",
+      "hn_id": "3966071",
+      "points": 39,
+      "comments": 0,
+      "author": "dwynings",
+      "created": "2012-05-13T04:49:17Z",
+      "text_snippet": ""
+    }
+  ]
+}

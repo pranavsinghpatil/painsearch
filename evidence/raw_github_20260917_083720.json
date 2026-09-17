@@ -1,0 +1,206 @@
+{
+  "query": "alert fatigue false positives",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "Alerts should follow best practices, be actionable, have realistic thresholds, a relevant description and clear resolution path",
+      "url": "https://github.com/canonical/grafana-agent-operator/issues/289",
+      "repo": "canonical/grafana-agent-operator",
+      "reactions": 6,
+      "comments": 3,
+      "created": "2025-05-26T04:52:21Z",
+      "body_snippet": "### Enhancement Proposal\n\nSome alerts in Grafana Agent charm are not a symptom of an actual issue in the systems and services being monitored, but only indicate some systems metrics have an unexpected value from a very specific perspective that might not match the actual use case for the system.\n\nThis is not a good practice to define such alerts, even as warnings (as the thresholds are not configurable), as they only lead to alert fatigue and are rarely actionable, having no clear path to resolution.\n\nAlerts should be based on metrics related to an actual degraded end-user experience or system/service failure. Failing to do so will overload an operational team with alerts that will only get disregarded as noise over time, distracting operators from actual problems that require their attention.\n\nCould you please remove these alerts? (list is not exhaustive, more might not be relevant to actual problems):\n- HostMemory\n- HostMemoryFull\n- HostSwapFull\n- ProcessesIncresingWarning\n- HostSystemdFailedScopes\n- HostLoggedInUsers\n- RaidDisksSpare\n- RaidDeviceInactive\n- RaidDeviceRecovering (disk recovering should hardly alert ops teams, unless we have no alert for disk failure)\n\nThese alerts"
+    },
+    {
+      "source": "github-issues",
+      "title": "[6.1] Cron run \"failed\" notifications fire during hot reload and during retries, causing alert fatigue",
+      "url": "https://github.com/openclaw/openclaw/issues/90595",
+      "repo": "openclaw/openclaw",
+      "reactions": 2,
+      "comments": 6,
+      "created": "2026-06-05T08:26:06Z",
+      "body_snippet": "## 1. Environment\n\n- OpenClaw version: 2026.6.1 (latest stable on npm dist-tag `latest`)\n- Upgraded from: 2026.5.12 (5.12) where this issue did not exist\n- Provider: an anthropic-messages-compatible LLM endpoint (M2.7 + M3 model endpoints, both via `minimax` provider alias)\n- Channel: Feishu (1 bot account)\n- Cron workload: ~30 cron jobs (5-minute to daily schedules), 2 isolated lane worker pool\n\n## 2. Summary\n\nAfter upgrading from OpenClaw 5.12 to 6.1, cron run failure notifications became noisy. Investigation shows that **most \"failed\" notifications are false positives** — the actual isolated session is still running and completes minutes later, posting a second \"completed\" notification in the same scheduling window.\n\nThe pattern is consistent with **three 5.26-introduced mechanisms that did not exist in 5.12**:\n\n1. **`cron.retry`** — default `maxAttempts: 3`, `backoffMs: [30000, 60000, 300000]`, `retryOn: [rate_limit, overloaded, network, timeout, server_error]`. In 5.12 there was no retry, a single fail was final.\n2. **`auth.cooldowns`** — default `authPermanentBackoffMinutes: 10` after a transient failure. 5.12 had no cooldown concept.\n3. **Config hot reload on mtime change** "
+    },
+    {
+      "source": "github-issues",
+      "title": "False positive: CVE-2024-3566 (Windows-only) incorrectly reported on Linux-based containers",
+      "url": "https://github.com/DependencyTrack/dependency-track/issues/5165",
+      "repo": "DependencyTrack/dependency-track",
+      "reactions": 2,
+      "comments": 0,
+      "created": "2025-08-01T08:29:12Z",
+      "body_snippet": "### Current Behavior\n\nDependency-Track reports [CVE-2024-3566](https://nvd.nist.gov/vuln/detail/CVE-2024-3566) as affecting PHP components (e.g., `php@8.2.18`) used in Linux-based Docker containers (such as Alpine Linux).\n\nHowever, this CVE is **specific to Windows environments**, due to its reliance on backslash (`\\`) path traversal behavior, which is **not valid or exploitable on POSIX systems** like Linux.\n\nThe NVD explicitly includes the following CPE constraint:\n`Running on/with`\n`cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*`\n\nDespite this, Dependency-Track applies the CVE to any project/component using a matching PHP version, **regardless of the actual operating system**, which leads to false positives for environments that will never be affected.\n\nThis appears to be caused by the fact that **Dependency-Track does not evaluate CPE platform constraints (like the OS)** when matching CVEs with components.\n\n#### Example from SBOM\n\nThis is an excerpt from the CycloneDX SBOM being analyzed, showing the affected PHP component in an Alpine-based container:\n\n```xml\n<component type=\"library\" bom-ref=\"pkg:apk/alpine/php@8.2.18-r0?arch=x86_64&distro=alpine-3.20.6\">\n  <name>php</name>\n  <v"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Agent Idea]: SecOps Alert Triage Agent — Intelligent Security Alert Correlation, False Positive Suppression & Escalation",
+      "url": "https://github.com/aden-hive/hive/issues/5866",
+      "repo": "aden-hive/hive",
+      "reactions": 1,
+      "comments": 1,
+      "created": "2026-03-05T17:02:11Z",
+      "body_snippet": "## Summary\n\nAn agent that ingests security alerts from monitoring tools (Datadog, Wiz, Snyk, PagerDuty, or webhook), correlates related events, suppresses known false positives, classifies real threats by severity, enriches each alert with contextual intelligence, and escalates to the on-call engineer with a complete, actionable incident brief — cutting Mean Time to Respond (MTTR) dramatically.\n\n## Problem Statement\n\nSecurity teams are drowning in alert noise. The average enterprise receives **thousands of security alerts per day**, yet over 40% are false positives. Engineers spend most of their on-call time triaging noise instead of responding to real threats. Alert fatigue leads to missed incidents. Hiring senior SecOps engineers to triage alerts 24/7 is expensive and doesn’t scale. **Torq built a $20M ARR business** on exactly this problem — no-code/low-code security automation for SecOps teams. Security is also the **#1 gating factor for enterprise AI adoption decisions**, meaning this agent type builds institutional trust in the Hive framework.\n\n## Proposed Agent Workflow\n\n1. **Alert Intake Node** — receives security alerts via webhook or polling from configured sources (Datad"
+    },
+    {
+      "source": "github-issues",
+      "title": "Combined filtering in alerts and widgets",
+      "url": "https://github.com/getsentry/sentry/issues/113528",
+      "repo": "getsentry/sentry",
+      "reactions": 1,
+      "comments": 4,
+      "created": "2026-04-21T12:09:12Z",
+      "body_snippet": "### Problem Statement\n\nManual filter management creates unnecessary risk and inefficiency in dashboard and alert maintenance.\n\nCurrently, updating filters across multiple dashboard components and alerts is a manual, fragmented process. When teams need to modify filter criteria, they must remember to update each individual widget and alert separately. This scattered approach leads to:\n\n- Inconsistent data views when some components get updated while others are overlooked\n- Unreliable alerting due to outdated filter configurations in both dashboard alerts and standalone monitoring rules\n- Alert fatigue from false positives caused by mismatched filter settings\n- Wasted time spent tracking down and manually updating multiple widgets and alerts\n- Increased maintenance burden that grows with dashboard complexity and alert volume\n\nThe result? Teams lose confidence in both their dashboards and alerting systems, spending more time managing their monitoring tools than actually monitoring their systems effectively.\n\n### Solution Brainstorm\n\n#### Shared Filter Functionality\nCreate filters once and use them everywhere! Generate custom filters that can be seamlessly shared across multiple widget"
+    },
+    {
+      "source": "github-issues",
+      "title": "Ability to mark a vulnerability as only impacting certain release artifacts",
+      "url": "https://github.com/google/osv.dev/issues/792",
+      "repo": "google/osv.dev",
+      "reactions": 1,
+      "comments": 7,
+      "created": "2022-10-31T01:52:48Z",
+      "body_snippet": "Hi, @woodruffw suggested I file this here, since the Python vulnerability data uses the osv schema.\r\n\r\nI'm one of the maintainers of the popular python `cryptography` package. We ship both source (\"sdist\") and binary (\"wheel\") artifacts for all of our releases.\r\n\r\nOur binary wheels include a statically linked copy of OpenSSL. This copy may be impacted by upstream OpenSSL security issues.\r\n\r\nWe'd like to mark our package as impacted by these, so users are aware. _However_, our source packages are _not_ impacted by these, since they don't include a copy of OpenSSL -- they link against the system OpenSSL. If we simply mark a vulnerability as impacting our package, it'll generate false positives for any source users, contributing to alert fatigue.\r\n\r\nWe'd therefore like some sort of additional metadata to specify that only some artifacts are impacted by a given vulnerability."
+    },
+    {
+      "source": "github-issues",
+      "title": "feat: foreign advert detection — alert when out-of-region nodes appear in local mesh",
+      "url": "https://github.com/Kpa-clawbot/CoreScope/issues/730",
+      "repo": "Kpa-clawbot/CoreScope",
+      "reactions": 1,
+      "comments": 3,
+      "created": "2026-04-13T06:39:00Z",
+      "body_snippet": "## Problem\n\nWhen two regional MeshCore meshes get **bridged** (intentionally or accidentally), observers in one region start seeing adverts from nodes with GPS coordinates in a completely different region. Today, the ingestor **silently drops** these out-of-region adverts via `NodePassesGeoFilter()` ([main.go L311](cmd/ingestor/main.go#L311)). This means:\n\n1. **No visibility** — operators don't know bridging is happening\n2. **Data loss** — foreign adverts are discarded, not logged\n3. **No forensics** — can't determine when bridging started, which nodes are entry points, or whether it's intentional\n\nOperators need to know when this is happening and which nodes are the bridge entry points.\n\n## Current Behavior\n\n- `internal/geofilter/` provides `PassesFilter()` — polygon + buffer zone check\n- Ingestor calls `NodePassesGeoFilter()` on every ADVERT with GPS\n- If the node is outside the configured region → **silent `return`**, no log, no counter, no record\n- Nodes without GPS (`0,0`) pass through (correct — can't classify them)\n\n## Proposed Feature\n\n### M1: Detect and log foreign adverts\n\n**Scope:** Ingestor + API. No frontend changes.\n\nAt ingest time, when an ADVERT has GPS and **fails*"
+    },
+    {
+      "source": "github-issues",
+      "title": "CRITICAL: Synthetic Chaos Exception Causing Multiple Alert Incidents",
+      "url": "https://github.com/harrykimpel/O11yParty-Buzzer/issues/101",
+      "repo": "harrykimpel/O11yParty-Buzzer",
+      "reactions": 1,
+      "comments": 0,
+      "created": "2026-05-13T23:45:24Z",
+      "body_snippet": "## 🚨 Critical Issue Summary\n\n**Application:** O11yParty-Buzzer  \n**Entity GUID:** NzcyNDE2MXxBUE18QVBQTElDQVRJT058MTAwODM3OTY1Mw  \n**Account:** Developer Relations (7724161)  \n**Severity:** CRITICAL  \n**Status:** 3 Active Incidents  \n**Detection Time:** 2026-05-13 23:26:57 UTC\n\n---\n\n## 📊 Active Incidents\n\n### 1. **Errors Detected Alert** (Issue ID: d2f7b2e4-42e2-418f-bc38-7bf37536e7cf)\n- **Condition:** O11yPart - Errors Detected\n- **Threshold:** Error count > 1.0\n- **Status:** ACTIVATED (Critical)\n- **Activated:** 2026-05-13 23:36:30 UTC\n- **Incident ID:** 64d79a83-d9eb-4ebd-be48-b228bcdea087\n\n### 2. **Response Duration Alert** (Issue ID: 13b03c6f-7d52-4d6b-aa27-986ef8cb81b6)\n- **Condition:** Response duration\n- **Threshold:** Response time > 30,000 ms (30 seconds)\n- **Status:** ACTIVATED (Critical)\n- **Activated:** 2026-05-13 23:29:19 UTC\n- **Incident ID:** a8035398-78c0-4bc3-a65b-43320bb492db\n\n### 3. **Error Rate Alert** (Issue ID: 4848f5b1-9529-4994-b361-b2cc287f7627)\n- **Condition:** Recommended Alerts query on error rate\n- **Threshold:** Error rate > 1.0%\n- **Status:** ACTIVATED (Critical)\n- **Activated:** 2026-05-13 23:26:57 UTC\n- **Incident ID:** d342364f-1717-497f-a2ce-8ff7"
+    },
+    {
+      "source": "github-issues",
+      "title": "CRITICAL: Synthetic Chaos Exception Mode Causing Production Alerts - Error Rate & Response Time Degradation",
+      "url": "https://github.com/harrykimpel/O11yParty-Buzzer/issues/131",
+      "repo": "harrykimpel/O11yParty-Buzzer",
+      "reactions": 1,
+      "comments": 0,
+      "created": "2026-05-14T12:14:00Z",
+      "body_snippet": "## 🚨 Critical Issue Summary\n\n**Application:** O11yParty-Buzzer  \n**Environment:** Production (ECS Fargate - .NET)  \n**Severity:** CRITICAL  \n**Status:** Active - 3 Critical Alerts Triggered  \n**Account ID:** 7724161 (Developer Relations)  \n**Entity GUID:** `NzcyNDE2MXxBUE18QVBQTElDQVRJT058MTAwODM3OTY1Mw`\n\n---\n\n## 📊 Active Incidents\n\n### 1. **Errors Detected Alert** \n- **Issue ID:** `c3cd7ee8-35b0-4e2a-97d4-bde190963673`\n- **Incident ID:** `8c6bfdd4-6b5f-49b9-a6e7-c65ff66eec7f`\n- **Activated:** 2026-05-14 12:11:54 UTC\n- **Condition:** Error count > 1.0\n- **Policy:** O11yParty\n- **NRQL Query:** `from Transaction SELECT count(*) where error and appName = 'O11yParty-Buzzer'`\n\n### 2. **Response Duration Alert**\n- **Issue ID:** `13b03c6f-7d52-4d6b-aa27-986ef8cb81b6`\n- **Incident ID:** `a8035398-78c0-4bc3-a65b-43320bb492db`\n- **Activated:** 2026-05-13 23:29:19 UTC\n- **Condition:** Response time > 30,000ms (30 seconds)\n- **Current Average:** 81,563ms (81.5 seconds) - **171% above threshold**\n- **Policy:** O11yParty\n\n### 3. **Error Rate Alert**\n- **Issue ID:** `4848f5b1-9529-4994-b361-b2cc287f7627`\n- **Incident ID:** `d342364f-1717-497f-a2ce-8ff7c4409215`\n- **Activated:** 2026-05-13 23:26:5"
+    },
+    {
+      "source": "github-issues",
+      "title": "🚨 CRITICAL: Multiple Active Alerts - Synthetic Chaos Testing Causing Production Errors",
+      "url": "https://github.com/harrykimpel/O11yParty-Buzzer/issues/17",
+      "repo": "harrykimpel/O11yParty-Buzzer",
+      "reactions": 1,
+      "comments": 0,
+      "created": "2026-05-04T19:15:14Z",
+      "body_snippet": "## 🔴 Alert Summary\n\n**Status:** CRITICAL  \n**Account:** Developer Relations (7724161)  \n**Application:** O11yParty-Buzzer  \n**Entity GUID:** `NzcyNDE2MXxBUE18QVBQTElDQVRJT058MTAwODM3OTY1Mw`  \n**Alert Policy:** O11yParty (ID: 7439699)  \n**Analysis Period:** Last 2 hours  \n**Detected:** May 4, 2026\n\n---\n\n## 🚨 Active Incidents (3 CRITICAL)\n\n### 1. **Span Errors Alert**\n- **Issue ID:** `20dd8ad1-0dfe-4099-9f87-ee955dfed996`\n- **Incident ID:** `debd373c-3b88-4d53-9b48-ff8449bd57fc`\n- **Activated:** 2026-05-04 19:12:41 UTC\n- **Condition:** Query result > 0.0 on 'Span errors'\n- **Target:** `System.TimeoutException` - Synthetic failure: request timed out after 35s\n- **Link:** https://aiops.service.newrelic.com/accounts/7724161/incidents/debd373c-3b88-4d53-9b48-ff8449bd57fc/redirect\n\n### 2. **Error Rate Alert**\n- **Issue ID:** `b741d007-b8b1-442b-bb06-3bddca41b955`\n- **Incident ID:** `2abf3284-20c7-44bd-b4aa-7b38c5b09bef`\n- **Activated:** 2026-05-04 18:53:10 UTC\n- **Condition:** Error rate > 1.0% on 'Recommended Alerts query on error rate'\n- **Target:** O11yParty-Buzzer application\n- **Link:** https://aiops.service.newrelic.com/accounts/7724161/incidents/2abf3284-20c7-44bd-b4aa-7b38c5b09bef"
+    },
+    {
+      "source": "github-issues",
+      "title": "Reduce False Positives in Drowsiness Detection",
+      "url": "https://github.com/SumanyuDeshpande/DICE/issues/9",
+      "repo": "SumanyuDeshpande/DICE",
+      "reactions": 0,
+      "comments": 0,
+      "created": "2026-07-20T17:54:29Z",
+      "body_snippet": "## Summary\n\nDICE includes a computer vision-based drowsiness detection system designed to monitor user alertness through facial landmarks and eye state analysis.\n\nWhile the current implementation is functional, it may occasionally generate false positives or incorrect drowsiness alerts under certain real-world conditions.\n\nThis issue aims to improve the reliability, robustness, and overall accuracy of the drowsiness detection pipeline.\n\n---\n\n## Current Behavior\n\nThe existing system can incorrectly classify users as drowsy in situations such as:\n\n- Normal blinking.\n- Looking down at the keyboard.\n- Looking away from the screen.\n- Poor lighting conditions.\n- Users wearing glasses.\n- Temporary face occlusions.\n- Variations in camera angle or distance.\n\nThese false detections reduce the overall user experience and may cause unnecessary interruptions.\n\n---\n\n## Expected Behavior\n\nThe drowsiness detection system should distinguish genuine signs of fatigue from normal user behavior.\n\nThe assistant should:\n\n- Reduce false positive alerts.\n- Remain reliable under varying lighting conditions.\n- Handle different camera positions and user distances.\n- Continue functioning for users with glasses"
+    },
+    {
+      "source": "github-issues",
+      "title": "Evil Twin false positives",
+      "url": "https://github.com/SniffCheck/SniffCheck/issues/1",
+      "repo": "SniffCheck/SniffCheck",
+      "reactions": 0,
+      "comments": 3,
+      "created": "2026-06-22T18:46:53Z",
+      "body_snippet": "\n# What \n\nSniffCheck is flagging normal Wi-Fi networks as evil twins.\n\nCurrent logic: Same SSID + multiple BSSID/vendor = Evil Twin Suspect\n\nBut the same SSID with more than one BSSID/vendor could be normal. Mesh systems, extenders, ISP routers, and office APs all do this.\n\nSo SniffCheck is being too aggressive. \n\n## Why it matters\n\nWe know SniffCheck is not going to catch someone who really knows what they are doing every time.\n\nThat is not the point.\n\nThe hope is that SniffCheck can still help someone avoid getting got by a script kiddy running a basic evil twin setup.\n\nFor that to work, the warning needs to be trusted.\n\nIf normal Wi-Fi networks keep getting flagged, users will ignore the alert when it actually matters.\n\n## Example\n\n**SCAN**\n```text\nSSID: RandomPeicesOfPaper\nVendor 1: TP-Link Systems Inc.\nVendor 2: TP-Link Systems Inc\n```\n\n**RESULT**\n```text\nvendor_mismatch\ntwin_detected\n```\n\n## Plan\n\nWe are going to keep reworking the Evil Twin detection logic. We obviously don't want it to be super noisy because then its alert fatigue and the off handed time it actually flags a true suspect the user won't pay attention. Fingers crossed we will have something to push out later t"
+    },
+    {
+      "source": "github-issues",
+      "title": "DL3064 - False positives in sensitive variable check due to simple substring matching (e.g. GOPRIVATE)",
+      "url": "https://github.com/hadolint/hadolint/issues/1245",
+      "repo": "hadolint/hadolint",
+      "reactions": 0,
+      "comments": 1,
+      "created": "2026-08-17T11:01:16Z",
+      "body_snippet": "## Problem\nref. https://github.com/hadolint/hadolint/pull/1188\n\nThe current implementation of `DL3064` relies on naive substring matching (`suspiciousSubstrings`). This causes high-volume false positives for standard ecosystem variables, public identifiers, and harmless build metadata.\n\nHere are a few examples.\n- `GOPRIVATE` (Go module proxy pattern, not a credential).\n- `AWS_WEB_IDENTITY_TOKEN_FILE` (Standard variable for AWS EKS IRSA authentication).\n- `TRAVIS_OS_NAME` (build OS), `TRAVIS_SUDO` (boolean flag), and `FACEBOOK_APP_ID` (public client identifier).\n\n## Security & Workflow Impact\n\n1. Penalty for Following Security Best Practices\n   A primary container security practice is referencing secret file paths (`_FILE`, `_PATH`) via environment variables rather than hardcoding raw credentials into image layers. Flagging variables like `AUTH_TOKEN_FILE` or `AWS_WEB_IDENTITY_TOKEN_FILE` directly penalizes users who follow recommended secret-handling patterns.\n\n2. Risk of Alert Fatigue\n   When a linter repeatedly flags harmless metadata and standard tool configurations, developers experience alert fatigue. This inevitably leads to disabling `DL3064` globally or abusing `# hadolint "
+    },
+    {
+      "source": "github-issues",
+      "title": "Measure and publish the false-positive rate on normal traffic",
+      "url": "https://github.com/abhay528/INTRUSION-DETECTION-SYSTEM/issues/3",
+      "repo": "abhay528/INTRUSION-DETECTION-SYSTEM",
+      "reactions": 0,
+      "comments": 0,
+      "created": "2026-08-21T16:56:49Z",
+      "body_snippet": "## Why\n\nThis is the highest-value missing number in the whole project, and almost no student IDS project has it.\n\nML-based intrusion detection does not fail in the real world because accuracy is too low. It fails because of alert fatigue: a 0.5% false-positive rate on a busy link is thousands of junk alerts a day, so operators mute it. `CONFIDENCE_THRESHOLD` currently defaults to 0.85 and `ANOMALY_THRESHOLD` to 0.7 with no stated justification for either.\n\n## Tasks\n\n- [ ] Capture roughly an hour of ordinary traffic on your own machine with no attacks running\n- [ ] Run detection over it and count alerts. Every alert is by definition a false positive\n- [ ] Report false positives per hour at the default thresholds\n- [ ] Sweep the confidence threshold and plot a precision-recall curve\n- [ ] Pick a threshold based on that curve and document the tradeoff you accepted\n\n## Acceptance criteria\n\n- A stated figure of the form \"N false positives/hour at threshold T\"\n- A committed precision-recall curve\n- One paragraph in the README explaining why the chosen threshold is the right operating point, and what it costs you in missed detections\n\nThis single number, with the reasoning behind it, is a"
+    },
+    {
+      "source": "github-issues",
+      "title": "Bug: Log anomaly detection produces too many false positives, alert fatigue",
+      "url": "https://github.com/kumariluckyraj/LogWatch-AI/issues/29",
+      "repo": "kumariluckyraj/LogWatch-AI",
+      "reactions": 0,
+      "comments": 2,
+      "created": "2026-06-09T03:55:25Z",
+      "body_snippet": "## Problem Statement\n90% of alerts false positive:\n- Alert fatigue\n- Real issues missed\n- Alerts ignored\n\n**Business Impact:** Ineffective monitoring\n**Technical Impact:** Poor ML model\n\n## Root Cause Analysis\nML model poorly trained. Threshold too sensitive.\n\n## Solution Overview\n1. Tuning: tune sensitivity\n2. Feedback: learn from false positives\n3. Thresholds: adjust thresholds\n4. Grouping: group related alerts\n5. Context: use context for decisions\n\n## Type of Change\n- Bug fix: Alert accuracy\n\n## Testing Done\n- FPR test: < 5%\n- Detection test: catches real issues\n- Feedback test: learns\n\n## Related Issue\nRelates to monitoring\n\n## Suggested Labels\nbug, alerts, ml, gssoc26"
+    },
+    {
+      "source": "github-issues",
+      "title": "session-guard: routing check false-positives on ANTHROPIC_MODEL=opus (benign model selection)",
+      "url": "https://github.com/fl-sean03/agent-fleet/issues/2",
+      "repo": "fl-sean03/agent-fleet",
+      "reactions": 0,
+      "comments": 0,
+      "created": "2026-08-21T00:35:37Z",
+      "body_snippet": "## Summary\n\nThe `session-guard` **routing guard** raises a `ROUTING OVERRIDE` alert whenever a fleet agent's live process has `ANTHROPIC_MODEL` set — regardless of its value. But `ANTHROPIC_MODEL` merely *selects* a model; a value like `opus` (or any `claude-*` id) is the fleet's normal Anthropic path, not a reroute. The result is a persistent **false positive**: on a normally-configured Opus fleet, the guard fires `ROUTING OVERRIDE on 'main': ... ANTHROPIC_MODEL=opus` on **every sweep**, indefinitely.\n\n## Impact\n\nAlert fatigue, and the bad kind — the guard exists to catch a genuine security event (an agent silently rerouted off Anthropic, per the 2026-07-15 incident), but by crying wolf every ~15 min for days it trains the operator to ignore the very channel a real reroute would arrive on. In one run it fired dozens of times across several days while the config was completely benign.\n\n## Root cause\n\n`bin/session-guard`, live-process routing check (~line 101):\n\n```sh\nfor var in ANTHROPIC_BASE_URL ANTHROPIC_MODEL ANTHROPIC_AUTH_TOKEN ANTHROPIC_API_KEY; do\n  val=$(... \"$var\" ...)\n  [ -n \"$val\" ] || continue\n  ... alert_main \"routing-$ws\" \"ROUTING OVERRIDE ... $var=$val ...\"\ndone\n```\n"
+    },
+    {
+      "source": "github-issues",
+      "title": "[False Positive] sim-test-alert fired on order-svc — alert threshold is Requests > 0",
+      "url": "https://github.com/dm-chelupati/banco-solaris/issues/34",
+      "repo": "dm-chelupati/banco-solaris",
+      "reactions": 0,
+      "comments": 0,
+      "created": "2026-09-01T08:12:23Z",
+      "body_snippet": "## Incident Summary\n\n**Alert**: `sim-test-alert` (Sev3) fired at 2026-09-01T08:07:50 UTC on `order-svc-7defkiyvn3r44`\n**Result**: **FALSE POSITIVE** — all services healthy, zero errors\n\n## Alert Rule Analysis\n\nThe alert rule `sim-test-alert` is configured with:\n- **Metric**: `Requests` (microsoft.app/containerapps)\n- **Operator**: GreaterThan\n- **Threshold**: `0.0`\n- **Aggregation**: Total\n- **Description**: \"test\"\n\nThis means **any single request** to the container app will trigger this Sev3 alert. This is clearly a test/simulation rule that should be reconfigured or disabled.\n\n## Evidence: All Services Healthy\n\n### App Insights Telemetry (1-hour window)\n- **Total requests**: 8 (4 at 08:00, 4 at 08:05 UTC)\n- **Failed requests**: 0\n- **Exceptions**: 0\n- All requests returned HTTP 200 successfully\n\n### Container App Console Logs\n- Only healthy `info` level logs showing HTTP 200 responses on `GET /orders`\n- Response times: sub-millisecond (0.71ms)\n- No error, timeout, or exception entries\n\n### Service Status\n| Service | Revision | Status |\n|---|---|---|\n| order-svc-7defkiyvn3r44 | --0000021 | Running |\n| gateway-7defkiyvn3r44 | --0000035 | Running |\n| payment-svc-7defkiyvn3r44 | --00"
+    },
+    {
+      "source": "github-issues",
+      "title": "[usecase][technology] Security Alert Triage Agent",
+      "url": "https://github.com/ajeetchouksey/ajch_platform/issues/373",
+      "repo": "ajeetchouksey/ajch_platform",
+      "reactions": 0,
+      "comments": 0,
+      "created": "2026-08-10T14:32:01Z",
+      "body_snippet": "## Parent Issue\r\nCloses part of #339 — Use Case Library (Q2)\r\n\r\n## Use Case File\r\n`security-triage-agent.json` → public/content/usecases/cases/\r\n\r\n## Vertical\r\ntechnology\r\n\r\n## Agentic Pattern\r\nTrigger → Extract → Validate → Route + HITL\r\n\r\n## Problem Statement\r\nSOC analysts manually triage 500-2,000 SIEM alerts/day. Over 90% are false positives, causing alert fatigue and missed real threats buried in noise.\r\n\r\n## Solution Overview\r\nAgent ingests SIEM alerts, enriches with threat intel (IP reputation, CVE lookup, user behaviour baseline), computes severity score. Low-severity false positives are auto-suppressed with rationale. Medium → analyst queue with enriched context. High/Critical → immediate SOC lead notification + incident creation. Response SLA enforced.\r\n\r\n## Acceptance Criteria\r\n- [ ] SIEM alert ingestion (Sentinel / Splunk — mock acceptable)\n- [ ] Threat intel enrichment: IP reputation, CVE, user baseline\n- [ ] Severity scoring: critical / high / medium / low / false-positive\n- [ ] Auto-suppression of confirmed false positives with audit log\n- [ ] Analyst HITL queue for medium severity\n- [ ] SLA enforcement: critical alerts escalate if unacknowledged > 15 min\n- [ ] Case "
+    },
+    {
+      "source": "github-issues",
+      "title": "Track operational metrics, not only ROC-AUC",
+      "url": "https://github.com/realqijun/network_anomaly_detector/issues/4",
+      "repo": "realqijun/network_anomaly_detector",
+      "reactions": 0,
+      "comments": 0,
+      "created": "2026-09-02T15:45:07Z",
+      "body_snippet": "## Summary\nThe current evaluation story still over-emphasizes headline metrics like ROC-AUC, even though the practical problem is alert fatigue from false positives.\n\n## Why this matters\nFor anomaly detection, a decent ROC-AUC can still produce an unusable alert stream. The project already notes that thousands of false positives make the tool hard to use in practice.\n\n## Proposed changes\n- Add evaluation outputs for:\n  - precision-recall AUC\n  - false positives per hour on benign-only captures\n  - recall at a fixed false-positive budget\n  - top-K precision for analyst triage / CTF workflows\n- Choose thresholds from operational constraints rather than ROC-optimal cutoffs alone.\n- Record these metrics in the exported model bundle manifest.\n- Update README results reporting to emphasize operational metrics over a single AUC number.\n\n## Acceptance criteria\n- Training/evaluation pipeline reports PR-AUC and at least one false-positive-budget metric.\n- Threshold selection is configurable by an operational target, not only by ROC heuristics.\n- Model bundle metadata includes the chosen threshold policy and supporting metrics.\n- README explains why these metrics matter more than ROC-AUC for "
+    },
+    {
+      "source": "github-issues",
+      "title": "test : add unit tests for workZoneService real-time work zone alerts",
+      "url": "https://github.com/KanishJebaMathewM/Truxify/issues/10684",
+      "repo": "KanishJebaMathewM/Truxify",
+      "reactions": 0,
+      "comments": 4,
+      "created": "2026-08-12T03:35:31Z",
+      "body_snippet": "Summary of What Needs to be Done:\nThe `workZoneService` at `backend/api/src/services/workZoneService.js` provides real-time work zone and construction alerts but has no unit tests covering the work zone query, filtering, and alert generation logic.\n\nChanges that Need to be Done:\n- Create `backend/api/test/unit/workZoneService.test.js`\n- Test work zone query by geographic bounds\n- Test work zone filtering by type (construction, accident, closure)\n- Test alert generation for active work zones\n- Test caching behavior\n\nImpact that it would Provide:\n- Ensures drivers receive accurate work zone alerts\n- Prevents alert fatigue from false positives\n- Supports reliable route planning around work zones\n\nNote: Please assign this issue to the `tmdeveloper007` account."
+    }
+  ]
+}

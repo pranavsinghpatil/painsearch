@@ -1,0 +1,226 @@
+{
+  "query": "manually reviewing",
+  "count": 20,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Google Starts Manually Reviewing Chrome Extension and Apps",
+      "url": "http://browsernative.com/chrome-extension-safety-review-for-threat-2152/",
+      "hn_id": "10081661",
+      "points": 5,
+      "comments": 1,
+      "author": "twapi",
+      "created": "2015-08-18T19:43:49Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Nvidia Is Manually Reviewing RTX 3080 Orders to Stop Scalpers",
+      "url": "https://www.pcmag.com/news/nvidia-is-manually-reviewing-rtx-3080-orders-to-stop-scalpers",
+      "hn_id": "24508638",
+      "points": 2,
+      "comments": 1,
+      "author": "drewrem11",
+      "created": "2020-09-17T19:05:18Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: What do you use for content moderation of UGC?",
+      "url": "https://news.ycombinator.com/item?id=42830018",
+      "hn_id": "42830018",
+      "points": 36,
+      "comments": 42,
+      "author": "jhunter1016",
+      "created": "2025-01-26T13:35:31Z",
+      "text_snippet": "My co-founder and I started a static site hosting platform. From our past experience in user-generated content, we knew we needed moderation. So, we wrote a very simple script that checks for common phishing attempts and alerts us.<p>However, this simple script does not catch some of the more advance phishing sites and it doesn&#x27;t catch other types of content that we can&#x27;t support on our platform like porn.<p>Curious if anyone has tips and tricks for content moderation? We&#x27;re still going to be manually reviewing sites because we haven&#x27;t reached a scale that makes that impossible. But automation is nice."
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Rate my startup: KeyError - hosted Python error tracking",
+      "url": "https://news.ycombinator.com/item?id=2356884",
+      "hn_id": "2356884",
+      "points": 8,
+      "comments": 3,
+      "author": "lamby",
+      "created": "2011-03-22T22:44:26Z",
+      "text_snippet": "Hi HN, I'm looking for feedback (and beta members) for my first startup, KeyError.<p>KeyError is a hosted service to manage tracebacks from your Python applications. The pain point it is solving is multiple developers manually reviewing and collating error emails (which has race conditions, is tedious and is generally a poor use of their time).<p>The product is obviously similar in concept to Sentry (by Disqus) except that you don't need to host it yourself and it supports multiple projects.<p>I'm currently using it at Playfire where it's proved really useful, particularly in cases where we've had buggy releases and it's difficult to concentrate on what (and who!) will fix issues and also to know when they are really resolved.<p>Regarding integration, only Django is supported at the moment. The Nagios integration can alert you if your application suddenly misbehaves in the middle of the night (which has been rather useful already).<p>Thanks in advance.<p>https://keyerror.com/"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Is Opus 4.5 scaring the crap out of you as well?",
+      "url": "https://news.ycombinator.com/item?id=46177352",
+      "hn_id": "46177352",
+      "points": 7,
+      "comments": 2,
+      "author": "consumer451",
+      "created": "2025-12-06T22:57:24Z",
+      "text_snippet": "Opus 4.5 follows instructions, understands all my tool calls, it understands context, it has a very recent cutoff date... ummm...<p>I can now one-shot, or two-shot, slightly significant features. I still review all commits line by line, but I find far fewer issues using my angentic dev tools of choice. Am I nuts, or is this like a Sonnet 3.5 level step change?<p>Of course, anything truly significant requires creating docs, manually reviewing and editing them, then finally implementing, which still has many issues, but the difference in the last few months is blowing my mind and scaring me.<p>Also, once structured outputs come out of Beta and are available on Azure, I will replace almost every single LLM API call in my own apps with Opus 4.5. Gemini for search grounding, Opus 4.5 for everything else?"
+    },
+    {
+      "source": "hn",
+      "title": "I looked at 1000s of RAG queries to figure out the problem with semantic search",
+      "url": "https://news.ycombinator.com/item?id=42299349",
+      "hn_id": "42299349",
+      "points": 6,
+      "comments": 3,
+      "author": "npip99",
+      "created": "2024-12-02T19:12:31Z",
+      "text_snippet": "The vast majority of AI systems in production rely on basic semantic search to provide context. A single retrieval call into a vector database powers most Retrieval-Augmented Generation systems today. If you’ve tried using models like these, you know exactly how limited they are in truly understanding your data.<p>I looked into thousands of datapoints of actual user queries to clearly classify and determine exactly where and when semantic search starts to break down and provide missing or hallucinated results.<p>I pattern matched dozens of failure modes. Here are three of them. If you want to hear more you can reach me at pipitone@zeroentropy.dev<p>1. Negated Semantic Queries: “Which electric vehicle articles do not include any reference to Elon Musk?”<p>Both keyword and semantic searches will immediately retrieve specifically the electric vehicle articles that include a reference to Elon Musk.<p>2. Multi-Hop Queries “If the acquiring company fails to hold a shareholder’s meeting, what"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Terminal-Wrench, a dataset of 331 realistic hackable environments",
+      "url": "https://github.com/few-sh/terminal-wrench",
+      "hn_id": "47773298",
+      "points": 6,
+      "comments": 2,
+      "author": "neversupervised",
+      "created": "2026-04-15T00:42:30Z",
+      "text_snippet": "I want to share a new dataset of 331 reward-hackable environments. These are real environments used in Terminal Bench and adjacent benchmarks. I first got interested in this because, as a reviewer of Terminal Bench, I noticed a lot of our tasks were hackable. I also noticed that many contributors to the benchmark do so because it provides credibility when selling environments to labs. Hence, TBench tasks are, in my opinion, held to a higher quality standard than those being used today for RL. No one is spending hours manually reviewing the $1B in tasks being purchased by major labs. As far as I understand, while everyone knows environments are hackable, nobody has released hundreds of &quot;realistic&quot; environments."
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: HumHire, a marketplace for AI-free creativity",
+      "url": "https://humhire.com",
+      "hn_id": "36876961",
+      "points": 4,
+      "comments": 0,
+      "author": "zebomon",
+      "created": "2023-07-26T13:02:54Z",
+      "text_snippet": "Hi HN!<p>My name is Billy Gardner McIntyre. I’m a developer and writer, and for the last eight years, I’ve earned my living as a freelance writer on Fiverr, where I’m “Top Rated” and “Pro verified” and where I’ve worked with thousands of entrepreneurs and businesses owners from around the world. There are some articles out there about me if you’d like to read more about the small business I’ve built on Fiverr.<p>Today, I’m announcing that I’ve built my own platform for freelancers – focusing on enabling creative professionals to provide evidence (in the form of videos, streams, and more methods to come) that they’ve done something without generative AI. These methods will also be available outside the context of the marketplace - for bloggers, schools, working creatives, and anyone else who wants to use them.<p>My platform is called HumHire – like “human hire,” get it? I got the idea for it about a year and a half ago and started to record myself writing, because I was playing around w"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Awaken Tax – The first tax software built for Web3",
+      "url": "https://awaken.tax/",
+      "hn_id": "35063242",
+      "points": 3,
+      "comments": 1,
+      "author": "dogwood",
+      "created": "2023-03-08T00:00:31Z",
+      "text_snippet": "Hi HN! I’m excited to introduce Awaken - the first tax software built for web3.<p>Last year, I paid thousands of dollars for several crypto tax products, only to spend days manually reviewing transactions to make sure they were labeled correctly. I tried CoinTracker, Koinly, ZenLedger, and TokenTax - none of them worked.<p>Those platforms would’ve been fine a few years ago, when all I did was buy and sell Bitcoin, Ethereum, and various tokens on exchanges. But now I’m doing blockchain transactions like staking NFTs, providing liquidity, bridging, lending, etc. that are way more complex, and those crypto tax products built 4–5 years ago can’t handle them. (It’s pretty wild, considering how much funding those companies have raised.)<p>Several of my friends went through similarly negative experiences, so we decided to build a better solution. It took us over 8 months of grinding and working with a bunch of crypto CPAs to develop an MVP.<p>Here’s how it works: We collaborate with numerous "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: OmoiOS–190K lines of Python to stop babysitting AI agents (Apache 2.0)",
+      "url": "https://github.com/kivo360/OmoiOS",
+      "hn_id": "47263360",
+      "points": 2,
+      "comments": 2,
+      "author": "kanddle",
+      "created": "2026-03-05T16:07:21Z",
+      "text_snippet": "AI coding agents generate decent code. The problem is everything around the code - checking progress, catching drift, deciding if it&#x27;s actually done. I spent months trying to make autonomous agents work. The bottleneck was always me.<p>Attempt 1 - Claude&#x2F;GPT directly: works for small stuff, but you re-explain context endlessly.<p>Attempt 2 - Copilot&#x2F;Cursor: great autocomplete, still doing 95% of the thinking.<p>Attempt 3 - continuous agents: keeps working without prompting, but &quot;no errors&quot; doesn&#x27;t mean &quot;feature works.&quot;<p>Attempt 4 - parallel agents: faster wall-clock, but now you&#x27;re manually reviewing even more output.<p>The common failure: nobody verifies whether the output satisfies the goal. That somebody was always me. So I automated that job.<p>OmoiOS is a spec-driven orchestration system. You describe a feature, and it:<p>1. Runs a multi-phase spec pipeline (Explore &gt; Requirements &gt; Design &gt; Tasks) with LLM evaluators scoring "
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: What AI systems have you adopted across your work and personal life?",
+      "url": "https://news.ycombinator.com/item?id=46493939",
+      "hn_id": "46493939",
+      "points": 1,
+      "comments": 8,
+      "author": "alexjray",
+      "created": "2026-01-05T00:31:09Z",
+      "text_snippet": "I am incredibly curious what AI systems you have been adopting across your work and personal life?<p>It&#x27;s obvious that the generation of work artifacts is largely going to be done via AI but I am finding it very hard to give up that generative control to AI.<p>For example I am still manually reviewing every line of code AI produces because half the time I need it to be reworked&#x2F;regenerated because of gaps (context, pattern clarity, usage details etc..).<p>So my question to you all is; what systems and processes are you using to optimize your AI generative output and quality?"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How to defend against SSL visibility appliances?",
+      "url": "https://news.ycombinator.com/item?id=8694865",
+      "hn_id": "8694865",
+      "points": 1,
+      "comments": 2,
+      "author": "BCharlie",
+      "created": "2014-12-03T17:04:54Z",
+      "text_snippet": "Recently on Tor Talk, there was a discussion of SSL visibility appliances (https:&#x2F;&#x2F;www.bluecoat.com&#x2F;products&#x2F;ssl-visibility-appliance). They are able to strip out SSL transparently (good article here: http:&#x2F;&#x2F;www.zdnet.com&#x2F;how-the-nsa-and-your-boss-can-intercept-and-break-ssl-7000016573&#x2F;).<p>Are there any effective means to audit trusted CA&#x27;s in browsers, so that none of these vendors are in the list? Manually reviewing every CA obviously isn&#x27;t an option.<p>Does anyone have any good plugin suggestions, or defensive techniques?"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: AI-Powered Support Ticket Analysis",
+      "url": "https://www.owlify.org",
+      "hn_id": "41912665",
+      "points": 1,
+      "comments": 0,
+      "author": "lexiestle",
+      "created": "2024-10-22T09:37:10Z",
+      "text_snippet": "Hey<p>I built Owlify — an AI-powered Customer Support Analysis Tool that leverages GPT-4o and GPT-o1 to revolutionize quality assurance in customer service.<p>Why build this?<p>In the tech industry, it&#x27;s common knowledge that customer support teams handle massive volumes of tickets daily. Manually reviewing these interactions is not only time-consuming but often leads to inconsistent evaluations and missed opportunities for improvement. There&#x27;s a wealth of insights hidden in these support tickets—patterns, recurring issues, customer sentiments—that could drive significant enhancements in products and services if properly analyzed.<p>What does Owlify do?<p>- Analyzes 100% of your support tickets: No more random sampling—get insights from all your customer interactions.<p>- Uncovers hidden trends: Identifies patterns, frequent issues, and areas where your support could improve.<p>- Ensures consistent quality: Provides uniform evaluations across all tickets, helping maintain hig"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Frameworks for Testing and Optimising Prompts?",
+      "url": "https://news.ycombinator.com/item?id=36653800",
+      "hn_id": "36653800",
+      "points": 1,
+      "comments": 0,
+      "author": "rcushen",
+      "created": "2023-07-09T12:08:46Z",
+      "text_snippet": "Does anyone have any frameworks or approaches they can recommend for testing and optimising LLM prompt variants? So far I am just looping through variations and manually reviewing the quality of responses, but this doesn&#x27;t feel very scientific."
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: I made ShipOrPay.com a Stop procrastination tool I build in my weekends",
+      "url": "https://shiporpay.com/",
+      "hn_id": "44389030",
+      "points": 1,
+      "comments": 0,
+      "author": "bjorndunkel",
+      "created": "2025-06-26T16:42:40Z",
+      "text_snippet": "Heya HN,<p>For years, like many of you, I&#x27;ve struggled with the classic side project dilemma: great ideas, initial excitement, then the slow, inevitable creep of procrastination. It&#x27;s easy to just... not ship. I wanted a concrete way to create external pressure and align my own financial interest with actually delivering, so I built ShipOrPay.<p>We&#x27;re doing a soft launch today, primarily to get it into the hands of other builders and gather feedback.<p>How ShipOrPay works:<p>Set Your Goal &amp; Stake Your Funds: You define your project and its deadline, then commit a self-determined amount of money into escrow via Stripe. This isn&#x27;t just a promise; it&#x27;s a financial commitment to yourself.\nBring in Your Accountability Partner: You provide the email of a friend, mentor, or supervisor. They&#x27;ll receive a notification and must actively confirm their role as your project&#x27;s reviewer.\nDeliver On Time, Keep Your Money: Successfully complete your project by the"
+    },
+    {
+      "source": "hn",
+      "title": "I created an AI HR startup to automate reviewing 1000s of CV's manually",
+      "url": "https://simplehr.app/",
+      "hn_id": "40775887",
+      "points": 2,
+      "comments": 1,
+      "author": "merodia",
+      "created": "2024-06-24T13:35:29Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "We built an AI-powered voice tool to boost sales",
+      "url": "https://news.ycombinator.com/item?id=43928374",
+      "hn_id": "43928374",
+      "points": 2,
+      "comments": 1,
+      "author": "Artjoker",
+      "created": "2025-05-08T17:05:48Z",
+      "text_snippet": "Sales teams often struggle with limited visibility into their calls, reviewing only 5-10% manually, which leads to missed opportunities. We built an AI-powered voice analytics tool that transcribes, indexes, and analyzes 100% of calls, turning them into actionable insights. In one case, this helped a SaaS client grow sales by 120% in 12 months.<p>What the tool does<p>We aimed to provide non-intrusive, automated QA at scale. So the key features include:\n - 100% call transcription: using ASR for accurate, fast transcriptions.\n - Searchable database: indexed transcripts for easy keyword and phrase tracking.\n - Customizable reports: automated manager reports, grouped by agent or team.\n - CRM integration: syncs data to tools like Salesforce and Zoho.<p>Limitations: currently lacks real-time alerts, sentiment analysis, and emotion scoring (planned for future updates).<p>Architecture overview\n - Audio capture: integrated VoIP or manual uploads.\n - ASR pipeline: transcribes calls via cloud-bas"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: InspectMind (YC W24) – AI agent for reviewing construction drawings",
+      "url": "https://news.ycombinator.com/item?id=46219386",
+      "hn_id": "46219386",
+      "points": 59,
+      "comments": 56,
+      "author": "aakashprasad91",
+      "created": "2025-12-10T16:05:03Z",
+      "text_snippet": "Hi HN, we&#x27;re Aakash and Shuangling of InspectMind (<a href=\"https:&#x2F;&#x2F;www.inspectmind.ai&#x2F;\">https:&#x2F;&#x2F;www.inspectmind.ai&#x2F;</a>), an AI “plan checker” that finds issues in construction drawings, details, and specs.<p>Construction drawings quietly go out with lots of errors: dimension conflicts, co-ordination gaps, material mismatches,  missing details and more. These errors turn into delays and hundreds of thousands of dollars of rework during construction. InspectMind reviews the full drawing set of a construction project in minutes. It cross-checks architecture, engineering, and specifications to catch issues that cause rework before building begins.<p>Here’s a video with some examples: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Mvn1FyHRlLQ\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Mvn1FyHRlLQ</a>.<p>Before this, I (Aakash) built an engineering firm that worked on ~10,000 buildings across the US. One thing that always frus"
+    },
+    {
+      "source": "hn",
+      "title": "Tell HN: \"Upload your resume and then type it out” is hurting your company",
+      "url": "https://news.ycombinator.com/item?id=30291081",
+      "hn_id": "30291081",
+      "points": 184,
+      "comments": 94,
+      "author": "valar_m",
+      "created": "2022-02-10T19:19:08Z",
+      "text_snippet": "I understand why it exists - text is easier to query than reading a resume, but it&#x27;s a terrible and outdated design pattern that needs to go. But good news: there are better ways!<p>Some possible solutions and suggestions:<p>-Use a list of checkbox options for candidates to click skills&#x2F;requirements that you want for the role. If you need SQL, JS, Python, and you believe a CS degree is necessary, then let candidates click which ones they have. No more messing with text! Bonus: You could add some kind of percentage of skills match metric when reviewing applicants (you should still review resumes, however).<p>Bonus #2: You can autofill the job posting with a list of desired skills instead of needing to type them out - just select which ones you need when creating the posting.<p>-You don&#x27;t need user-entered text fields for keyword matching. Extracting text from PDFs and Word Docs is trivial. If your text extract fails or misses a min word count threshold, just trigger a sec"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Promptless (YC W25) – Automatic updates for customer-facing docs",
+      "url": "https://news.ycombinator.com/item?id=43092522",
+      "hn_id": "43092522",
+      "points": 107,
+      "comments": 61,
+      "author": "prithvi2206",
+      "created": "2025-02-18T17:30:39Z",
+      "text_snippet": "Hi HN! I’m Prithvi, and my co-founder Frances and I built Promptless (<a href=\"https:&#x2F;&#x2F;gopromptless.ai\">https:&#x2F;&#x2F;gopromptless.ai</a>), an AI teammate that proactively updates docs while you ship software.<p>There’s a demo video at <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;pmslSl8dOgE\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;pmslSl8dOgE</a>, and also a “Live Demo on Your Own Docs” at <a href=\"https:&#x2F;&#x2F;gopromptless.ai&#x2F;demo\">https:&#x2F;&#x2F;gopromptless.ai&#x2F;demo</a> where you can plug in the URL to any existing docs site and simulate a &quot;trigger event&quot; to see what Promptless would have suggested. We also opened up the full product with automatic triggers for a free trial for HN this week (if you sign up at <a href=\"https:&#x2F;&#x2F;gopromptless.ai&#x2F;hn\">https:&#x2F;&#x2F;gopromptless.ai&#x2F;hn</a>).<p>We built Promptless because we wished we had it, both as doc authors and doc consumers. On the authoring side, I used to run engine"
+    }
+  ]
+}

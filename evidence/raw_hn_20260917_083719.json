@@ -1,0 +1,28 @@
+{
+  "query": "alert fatigue false positives",
+  "count": 2,
+  "results": [
+    {
+      "source": "hn",
+      "title": "SoCs face alert fatigue, false positives, decreased visibility, burnout",
+      "url": "https://www.scmagazine.com/perspective/strategy/socs-face-alert-fatigue-false-positives-decreased-visibility-and-employee-burnout",
+      "hn_id": "36349820",
+      "points": 1,
+      "comments": 0,
+      "author": "LinuxBender",
+      "created": "2023-06-16T01:39:49Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Metaplane (YC W20) – Datadog for Data",
+      "url": "https://news.ycombinator.com/item?id=29226864",
+      "hn_id": "29226864",
+      "points": 163,
+      "comments": 67,
+      "author": "kzh_",
+      "created": "2021-11-15T13:05:56Z",
+      "text_snippet": "Hey HN! We’re Kevin, Guru, and Peter from Metaplane (<a href=\"https:&#x2F;&#x2F;metaplane.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;metaplane.dev</a>). Metaplane is a data observability tool that continuously monitors your data stack, alerts you when something goes wrong, and provides relevant metadata to help you debug.<p>Data teams are often the last to know about data-related issues. They commonly find out only when an executive messages them about a broken dashboard. This is comparable to finding out about your servers being down only when your end users report it! In software engineering, this problem is solved with observability tools like Datadog and SignalFx. These monitor your system over time by tracking metrics (like CPU, memory usage or any arbitrary value), and sending alerts when they hit thresholds or are anomalous.<p>Metaplane solves this problem for data teams. We continuously monitor our users’ data warehouse tables and columns, testing for things like row counts, freshne"
+    }
+  ]
+}

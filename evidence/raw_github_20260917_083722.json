@@ -1,0 +1,206 @@
+{
+  "query": "reconcile data from multiple systems",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "LeRobot Community Roadmap 0.7.0 Release",
+      "url": "https://github.com/huggingface/lerobot/issues/3832",
+      "repo": "huggingface/lerobot",
+      "reactions": 22,
+      "comments": 5,
+      "created": "2026-06-17T15:28:54Z",
+      "body_snippet": "## **LeRobot Community Roadmap 0.7.0**\n\nWelcome to the LeRobot Community Roadmap for v0.7.0! This document outlines what the core LeRobot team is actively working on and highlights the most impactful areas where the community can jump in to help.\n\nHow to read and use this roadmap:\n\n* Team vs. Community: Items prefixed with [Team] are actively being tackled by the internal team. Unmarked items are prime opportunities for community contributions.\n\n* High-Impact Contributions: The open community tasks are not just entry-level issues—they are significant, high-impact features. While the core team will eventually address them if needed, your contributions speed up our collective progress tremendously!\n\n* Reference Links & Existing PRs: Any linked PRs or issues are provided for context and do not necessarily represent the definitive final implementation. If a task already has an open PR, jumping in to review, test, and validate it provides immense value to the project.\n\n* Flexibility: The robotics AI field moves incredibly fast. We reserve the flexibility to pivot and change directions as the landscape evolves.\n\n* Priority: The items listed below are not in any specific order of priority"
+    },
+    {
+      "source": "github-issues",
+      "title": "Roadmap",
+      "url": "https://github.com/elsa-workflows/elsa-core/issues/3232",
+      "repo": "elsa-workflows/elsa-core",
+      "reactions": 18,
+      "comments": 51,
+      "created": "2022-08-01T11:39:38Z",
+      "body_snippet": "# Elsa Roadmap\n\nLast refreshed: 2026-09-16 (post-3.8.2 operational patches and BPMN authoring status)\n\nThis roadmap is a product direction document, not a fixed release calendar. Elsa is developed through a mix of core maintainer work, customer-funded work, and community contributions, so sequencing can change when real-world demand changes. The intent is stable: make Elsa the most productive, dependable, and extensible workflow platform for the .NET ecosystem.\n\nThis version is grounded in the current `elsa-core`, `elsa-studio`, and `elsa-extensions` repositories, including source code, open issues, open pull requests, releases, and discussions where available.\n\n## North Star\n\nElsa should feel like the natural workflow engine for .NET teams:\n\n- productive enough for application developers to model real business processes quickly\n- dependable enough for production operations, rolling deploys, multi-tenant systems, and distributed workloads\n- open enough to embed, customize, extend, and automate without fighting the framework\n- powerful enough to connect systems, run long-lived processes, expose human tasks, and observe what is happening\n\n## Capability Checklist\n\nLegend: `[x]` shippe"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add direct integration with ClusterProfile object",
+      "url": "https://github.com/argoproj/argo-cd/issues/24282",
+      "repo": "argoproj/argo-cd",
+      "reactions": 15,
+      "comments": 11,
+      "created": "2025-08-26T19:45:17Z",
+      "body_snippet": "# Summary\n\nThe [ClusterProfile API](https://multicluster.sigs.k8s.io/concepts/cluster-profile-api/) from [SIG-Multicluster](https://multicluster.sigs.k8s.io/) defines an object designed for storing cluster information for use in multicluster APIs. The ClusterProfile object can be added to Argo CD to simplify and standardize storing cluster information.\n\n# Motivation\n\nThe ClusterProfile object is intended represent a cluster for high-level management of multiple clusters (see [KEP](https://github.com/kubernetes/enhancements/blob/master/keps/sig-multicluster/4322-cluster-inventory/README.md)). Their fields are explicitly defined or standardized (unlike key/value pairs the data field for a Secret), and they are automatically created and reconciled to the current cluster state by a ClusterManager (e.g. [OCM ClusterProfileController](https://github.com/open-cluster-management-io/ocm/blob/98835ad8a13851f3f32a47e2797c6198763db958/pkg/registration/hub/clusterprofile/controller.go#L63), [GKE Fleet ClusterProfileSyncer](https://github.com/GoogleCloudPlatform/gke-fleet-management/tree/main/fleet-clusterprofile-syncer)). With this change, using ClusterProfiles with Argo would no longer require"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEAT] shared concurrency groups across tasks and workflows",
+      "url": "https://github.com/hatchet-dev/hatchet/issues/4237",
+      "repo": "hatchet-dev/hatchet",
+      "reactions": 8,
+      "comments": 0,
+      "created": "2026-06-18T22:55:59Z",
+      "body_snippet": "**Is your feature request related to a problem? Please describe.**\nCurrently, Hatchet concurrency keys appear to be scoped to a specific task/workflow concurrency strategy. This works well when the concurrency limit only needs to apply to a single task or workflow definition. However, there are cases where multiple independent tasks or workflows need to coordinate access to the same external mutable resource. \n\nExample:\n* ImportOrdersWorkflow mutates data for account_id=123\n* SyncCustomerWorkflow also mutates data for account_id=123\n* ReconcileAccountWorkflow also mutates data for account_id=123\n\nThese workflows may be independent from a DAG perspective, but they should not run the critical mutation steps concurrently for the same account_id.\n\nToday, if each workflow defines:\n```\nConcurrencyExpression(\n    expression=\"input.account_id\",\n    max_runs=1,\n    limit_strategy=ConcurrencyLimitStrategy.GROUP_ROUND_ROBIN,\n)\n```\nthe concurrency limit is still tied to each workflow/task concurrency definition rather than acting as a shared lock across all workflows using the same rendered key.\n\n**Describe the solution you'd like**\nI would like Hatchet to support shared concurrency groups acr"
+    },
+    {
+      "source": "github-issues",
+      "title": "[LFX 2026 Term 3] Support Generic xPU Topology-Aware Scheduling",
+      "url": "https://github.com/volcano-sh/volcano/issues/5751",
+      "repo": "volcano-sh/volcano",
+      "reactions": 7,
+      "comments": 11,
+      "created": "2026-07-27T09:40:50Z",
+      "body_snippet": "### What is the problem you're trying to solve\n\nVolcano currently schedules accelerator resources mainly by their aggregate quantity on a Node. This is not sufficient for communication-intensive workloads because the same number of free xPUs can provide very different communication performance depending on their physical interconnect topology.\n\nFor example, a Huawei 16-NPU server may contain two independent 8-NPU HCCS domains. If six devices are free in one domain and two are free in the other, the Node has eight free NPUs in total but cannot satisfy an 8-NPU request that requires one connected domain. A similar problem can occur on GPU systems containing separate NVLink-connected groups or NVSwitch fabrics. Other xPU interconnects, such as MetaX sGPU and MetaXLink, have similar scheduling requirements.\n\nThe topology boundary may also extend beyond one Kubernetes Node. Systems such as GB200 NVL72 connect GPUs from multiple compute trays through NVLink switch trays into one rack-scale NVLink fabric. In contrast, an ordinary multi-node GPU cluster may have NVLink only inside each Node and use InfiniBand or RoCE between Nodes. The scheduler must distinguish these cases and place a gan"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add Nautobot as an IPAM provider",
+      "url": "https://github.com/F5Networks/f5-ipam-controller/issues/179",
+      "repo": "F5Networks/f5-ipam-controller",
+      "reactions": 5,
+      "comments": 0,
+      "created": "2026-05-24T21:09:59Z",
+      "body_snippet": "#### Title\n\nAdd Nautobot as an IPAM provider using Nautobot prefix selectors\n\n#### Description\n\nI would like to request native Nautobot support as an IPAM provider in f5-ipam-controller.\n\nToday, f5-ipam-controller supports the built-in f5-ip-provider model and Infoblox as an external IPAM backend. Nautobot is also commonly used as a network source of truth and IPAM system, so it would be useful to support Nautobot as another provider option.\n\nThe proposed design is to add Nautobot as an optional native provider in the controller source code and expose the required configuration through the Helm chart.\n\nThe important point is that f5-ipam-controller should not primarily hardcode IP ranges for Nautobot. Instead, f5-ipam-controller should map an ipamLabel to a Nautobot prefix selector. Nautobot should remain authoritative for the actual prefixes, IP address state, and allocation lifecycle.\n\nThis would allow Kubernetes resources managed by F5 CIS and f5-ipam-controller to allocate VIPs from Nautobot-managed prefixes in a controlled, idempotent, and auditable way.\n\n#### Actual Problem\n\nIn environments where Nautobot is already the authoritative IPAM/source-of-truth system, f5-ipam-contr"
+    },
+    {
+      "source": "github-issues",
+      "title": "Reconcile iMdl tile format with 3D Tiles spec",
+      "url": "https://github.com/iTwin/itwinjs-core/issues/7311",
+      "repo": "iTwin/itwinjs-core",
+      "reactions": 4,
+      "comments": 8,
+      "created": "2024-10-31T15:33:37Z",
+      "body_snippet": "# Problem\n\n[3D Tiles](https://github.com/CesiumGS/3d-tiles) is an open standard developed to solve the problem of efficiently streaming massive geospatial models over the internet for rendering. It encodes the content of each tile using another open standard, [glTF](https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/README.md). Both standards have been widely and enthusiastically embraced across several industries.\n\nBentley Systems is no exception: we use 3D Tiles to encode and stream photogrammetry meshes, point clouds, and subsurface models. However, our engineering content - represented as [iModels](https://www.itwinjs.org/learning/imodels/) - is **not** visualized using 3D Tiles. Instead, we use a 3D Tiles-inspired format of our own, called [\"iMdl\"](https://github.com/iTwin/itwinjs-core/blob/master/core/frontend/src/common/imdl/ImdlSchema.ts). Several factors motivated the invention of a non-standard format, but they generally fall into two buckets:\n- Encoding data needed to enable specific rendering features; and\n- Optimizing the size and layout of the tiles for efficient decoding and rendering.\n\nOur users want to enable integrations of iModel content into workfl"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature]: Prevent double-counting workout calories when syncing with Health",
+      "url": "https://github.com/CodeWithCJ/SparkyFitness/issues/2353",
+      "repo": "CodeWithCJ/SparkyFitness",
+      "reactions": 3,
+      "comments": 0,
+      "created": "2026-09-02T06:37:30Z",
+      "body_snippet": "### Are you willing to submit a PR?\n\nNone\n\n### What problem does this solve?\n\nI use SparkyFitness to track my strength workouts in detail using workouts/workout templates, including the individual exercises, sets, repetitions, rest timers, etc.\n\nAt the same time, I track the entire workout with my Galaxy Watch. In my case, I usually record the whole session as a generic \"Other workout\". This is synced to Health and subsequently imported into SparkyFitness.\n\nBoth calorie estimates seem reasonably accurate on their own. The problem is that they represent the same physical workout and therefore the calories are effectively counted twice.\n\nFor example:\n\n- SparkyFitness estimates 475 kcal for the completed workout.\n- My Galaxy Watch / Health records 425 kcal for the same workout.\n- After syncing, both values contribute to the calorie total.\n- The result is effectively 900 kcal for a workout that was only performed once.\n\nI would still like to track the workout inside SparkyFitness because its detailed exercise/set/rep tracking is very useful. At the same time, I would prefer to use my watch/Health as the primary source for calories burned.\n\nCurrently, I don't see a way to tell SparkyFit"
+    },
+    {
+      "source": "github-issues",
+      "title": "[ENHANCEMENT] OEP-0003 add proposal for accelerator aware runtime selection",
+      "url": "https://github.com/ome-projects/ome/issues/204",
+      "repo": "ome-projects/ome",
+      "reactions": 3,
+      "comments": 0,
+      "created": "2025-07-23T03:33:09Z",
+      "body_snippet": "# OEP-0003: Accelerator-Aware Runtime Selection for Heterogeneous GPU Environments\n\n<!--\nThis OEP proposes a new accelerator abstraction layer for OME to better handle\nheterogeneous GPU environments and reduce runtime proliferation while maintaining\ncompatibility with existing Kubernetes ecosystem tools like Kueue.\n-->\n\n<!-- toc -->\n- [Summary](#summary)\n- [Motivation](#motivation)\n  - [Goals](#goals)\n  - [Non-Goals](#non-goals)\n- [Proposal](#proposal)\n  - [User Stories](#user-stories)\n    - [Story 1: ML Practitioner Deploying Models](#story-1-ml-practitioner-deploying-models)\n    - [Story 2: Platform Engineer Managing Multiple GPU Types](#story-2-platform-engineer-managing-multiple-gpu-types)\n    - [Story 3: Heavy Kueue User](#story-3-heavy-kueue-user)\n  - [Notes/Constraints/Caveats](#notesconstraintscaveats)\n  - [Risks and Mitigations](#risks-and-mitigations)\n- [Design Details](#design-details)\n  - [API Specifications](#api-specifications)\n    - [AcceleratorClass](#acceleratorclass)\n    - [InferenceService Extensions](#inferenceservice-extensions)\n    - [ServingRuntime Extensions](#servingruntime-extensions)\n  - [Kueue Integration](#kueue-integration)\n  - [Override Hierarchy](#ov"
+    },
+    {
+      "source": "github-issues",
+      "title": "The Cook and the Chef: Musk's Secret Sauce",
+      "url": "https://github.com/guevara/read-it-later/issues/1224",
+      "repo": "guevara/read-it-later",
+      "reactions": 0,
+      "comments": 1,
+      "created": "2018-10-26T00:57:02Z",
+      "body_snippet": "The Cook and the Chef: Musk's Secret Sauce<br>\n<br>\nhttps://ift.tt/2sSxbYA<br>\n<br>\nAbout Tim Urban View all posts by Tim Urban &rarr;<br>\n<br>\n<div>\n<div>\n<p><i>This is the last part of a four-part series on Elon Musk&rsquo;s companies. For an explanation of why this series is happening and how Musk is involved,</i> <i><a href=\"https://waitbutwhy.com/2015/05/elon-musk-the-worlds-raddest-man.html\" target=\"_blank\" rel=\"noopener noreferrer\">start with Part 1</a>.</i><a href=\"https://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html#footnote-1-4367\" id=\"note-1-4367\" rel=\"footnote\" name=\"note-1-4367\">1</a><a href=\"https://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html#footnote2-1-4367\" id=\"note2-1-4367\" rel=\"footnote2\" name=\"note2-1-4367\">1</a> <strong><sup><span>&larr;</span> also click these</sup></strong></p>\n<p>Three quick notes:</p>\n<p>1) <strong>PDF and ebook options:</strong> We made a fancy PDF of this post for printing and offline viewing (see a preview <a href=\"https://28oa9i1t08037ue3m1l0i861-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/the-cook-and-the-chef_preview.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>), and a"
+    },
+    {
+      "source": "github-issues",
+      "title": "New Book",
+      "url": "https://github.com/badbeaver88/game/issues/20",
+      "repo": "badbeaver88/game",
+      "reactions": 2,
+      "comments": 7,
+      "created": "2026-06-10T10:46:04Z",
+      "body_snippet": "You are to rewrite the following draft section of a novel into a polished, publication-quality manuscript. Write to a new file: physician.md\n\nObjective\nTransform this draft (not yet a whole book) into a cohesive, professionally written medical techno-thriller with strong characterisation, consistent continuity, and immersive narrative flow.\n\nRequirements\n\nConsistency and continuity\nEnsure all character names, events, and sequences are consistent throughout.\nCorrect any logical errors or continuity issues.\nMaintain a clear, coherent chronological flow.\n2. Novel-quality writing\n\nRewrite in professional literary prose suitable for publication.\nUse correct grammar, punctuation, and paragraph structure.\nMake dialogue natural, realistic, and emotionally grounded.\nRemove repetition, awkward phrasing, or exposition clutter.\n3. Characterisation\nMake characters feel psychologically real and distinct:\n\nElara Voss: mid-30s, highly intelligent, composed but under increasing psychological strain.\nMarek Sollow: slightly younger than Elara, emotionally complex, potentially central to a larger unfolding mystery.\nInvestigator Kane Mercer: older, experienced, pragmatic, skeptical of AI systems, old-s"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Claude Slop] HTLC Event-based ChannelManager reconstruction change",
+      "url": "https://github.com/lightningdevkit/rust-lightning/issues/4482",
+      "repo": "lightningdevkit/rust-lightning",
+      "reactions": 2,
+      "comments": 1,
+      "created": "2026-03-12T20:51:49Z",
+      "body_snippet": "This is the claude output of the following prompt:\n\nwrite a design doc for a new approach to resolving HTLCs and payments.\n\nCurrently, the resolution of HTLCs (and decisions on when HTLCs can be forwarded) is the responsibility of `Channel` objects (a part of `ChannelManager`) until the channel is closed, and then the `ChannelMonitor` thereafter. This leads to some complexity around race conditions for HTLCs right around channel closure. Additionally, there is lots of complexity reconstructing the state of all HTLCs in the `ChannelManager` deserialization/loading logic.\n\nInstead, we want to do all resolution in `ChannelMonitor`s (in response to `ChannelMonitorUpdate`s) and pass them back to `ChannelManager` in the form of `MonitorEvent`s (similar to how HTLCs are resolved after channels are closed). In order to have reliable resolution, we'll need to keep `MonitorEvent`s around in the `ChannelMonitor` until the `ChannelManager` has finished processing them - adding a new `MonitorEvent` resolution path through a new method (rather than via `ChannelMonitorUpdate`s).  This should remove the need for the RAA-blocking updates entirely - on restart instead of examining the set of HTLCs i"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Harness] False completion and non-converging financial audit after ~8h / 3 quota resets (GPT-6 Astra)",
+      "url": "https://github.com/openai/codex/issues/44974",
+      "repo": "openai/codex",
+      "reactions": 1,
+      "comments": 1,
+      "created": "2026-09-12T04:59:14Z",
+      "body_snippet": "## What issue are you seeing?\n\n**Severe task-completion and orchestration failure: a financial reconciliation task became a prolonged sequence of migrations, scripts, tests, status reports, and renewed investigations, while the requested business outcome remained incomplete.** The agent repeatedly conflated a working application and passing technical checks with completion of the reconciliation.\n\nThe user reports approximately **8 hours of cumulative work and 3 resets of their weekly usage allowance**, using **GPT-6 Astra at High, Xhigh, and Ultra, with Ultra in the final attempt**. Those duration, allowance, and configuration details are the user's report; billing consumption and the actual serving configuration across every attempt have not been independently verified. No monetary charge or token total is claimed here.\n\nThis issue is filed at the user's explicit request as a **harness/task-completion failure**. The observable failure is documented below. Whether the underlying cause belongs to model behavior, compaction/context handling, orchestration, goal tracking, or their interaction requires maintainer investigation; this report does not claim access to internal telemetry pr"
+    },
+    {
+      "source": "github-issues",
+      "title": "DPU Mode Management — Discovery, Inventory, and Configuration Flow",
+      "url": "https://github.com/ironcore-dev/metal-maintenance-operator/issues/188",
+      "repo": "ironcore-dev/metal-maintenance-operator",
+      "reactions": 1,
+      "comments": 1,
+      "created": "2026-08-20T07:29:36Z",
+      "body_snippet": "# Proposal: DPU Mode Management — Discovery, Inventory, and Configuration Flow\n\n## Background\n\nChanging DPU modes manually or via semi-automated scripts is not scalable across a substantial number of DPU interfaces. A fully integrated management solution is required. Since our servers are already managed with metal-api, the natural approach is to add a new controller and the required resources there.\n\nThis document covers the full flow: from inventory-driven object creation, to metal-maintenance-operator reconciling desired DPU configuration.\n\n## New API Group: `dpu.metal.ironcore.dev`\n\nThe DPU has two distinct facets that map to two separate object trees:\n\n- **DMC** — the DPU management controller (mode, firmware, settings). Analogous to `BMC`.\n- **DPUServer** — the full Arm system running inside the DPU (PXE boot, OS, BIOS). Analogous to `Server`.\n\n### DMC objects\n\n**`DMC`** — the DPU management interface endpoint\n```yaml\napiVersion: dpu.metal.ironcore.dev/v1alpha1\nkind: DMC\nmetadata:\n  name: node006-bb111-dpu0\n  labels:\n    dpu.metal.ironcore.dev/model: BlueField-3\n    # dpu.metal.ironcore.dev/server is set later by MMO once the Server object exists\nspec:\n  address: 192.168.10.4"
+    },
+    {
+      "source": "github-issues",
+      "title": "Tab syncing automatically sorted into folders",
+      "url": "https://github.com/zen-browser/desktop/issues/15319",
+      "repo": "zen-browser/desktop",
+      "reactions": 1,
+      "comments": 2,
+      "created": "2026-09-09T18:52:09Z",
+      "body_snippet": "### Preliminary Checks\n\n- [x] I have read and understood the important section above.\n- [x] I have searched existing issues and avoided creating duplicates.\n- [x] I am not filing an enhancement request.\n- [x] I have checked that this issue cannot be reproduced on Mozilla Firefox.\n- [x] I have checked that this issue can be reproduced once I removed all my Mods and Custom CSS.\n\n### What happened?\n\nI updated Zen to 1.22b and enabled sync on my windows and linux devices. When I open a tab and move it to a pinned space with folders above it, the actual synced tab goes into the folder on the other device instead of opening outside the folder like it should. I would also like to have the option to sync all tabs and not just the pinned tabs and folders. \n\n### Expected behavior\n\nThe tab list should match exactly betwen my devices\n\n### Actual behavior\n\nThe opened tab is sorted into a folder above it. \n\n### Steps to reproduce\n\nHave 5 folders in my pinned area with multiple tabs inside them, open a new tab, browse to a webpage and drag the tab to my pinned area at the bottom. \n\n### Screenshots and videos\n\n_No response_\n\n### Version\n\n1.22b\n\n### What platform are you seeing the problem on?\n\nWin"
+    },
+    {
+      "source": "github-issues",
+      "title": "Data Loss Occurring When Sending Metrics Through Vector",
+      "url": "https://github.com/vectordotdev/vector/issues/24454",
+      "repo": "vectordotdev/vector",
+      "reactions": 1,
+      "comments": 1,
+      "created": "2026-01-07T00:44:32Z",
+      "body_snippet": "### A note for the community\n\n<!-- Please keep this note for the community -->\n* Please vote on this issue by adding a 👍 [reaction](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) to the original issue to help the community and maintainers prioritize this request\n* If you are interested in working on this issue or have submitted a pull request, please leave a comment\n<!-- Thank you for keeping this note for the community -->\n\n### Description\n\nWe are attempting utilize the Vector Aggregator to perform transforms, like dropping unused tags, on our metrics before sending them to Datadog SaaS. We have been trying to setup our metrics pipeline with the following architecture in our Kubernetes environment: `dogstatsD client -> datadog agent -> vector aggregator -> datadog saas`. The Datadog Agent is a daemonset, while the Vector Aggregator is a deployment configured to scale between 3 to 10 replicas using a Horizontal Pod Autoscaler.\n\n### Problem\n\nWe setup a test app (code shared below) that emits metrics using modifiable parameters and noticed that the Vector Aggregator has been dropping metrics silently. This poses a major risk as our company met"
+    },
+    {
+      "source": "github-issues",
+      "title": "Symphony Software Factory Platform",
+      "url": "https://github.com/gannonh/kata-symphony/issues/616",
+      "repo": "gannonh/kata-symphony",
+      "reactions": 1,
+      "comments": 4,
+      "created": "2026-08-04T19:34:19Z",
+      "body_snippet": "## Status\n\nApproved\n\nEpic for the Symphony software factory platform. Horizon A slices A1, A2, and A3 are shipped. A4 is verified in #615. A5 is planned as draft delivery slices #617 and #618. A6 and A7 are unspecced.\n\n_Migrated from `docs/specs/symphony-software-factory-platform-prd.md` on 2026-08-04. This issue is now the canonical spec._\n_Source key: `pbvg-source:docs/specs/symphony-software-factory-platform-prd.md`_\n\nDate: 2026-07-16 (updated 2026-08-04)\n\nRelated: [ADR-0001](https://github.com/gannonh/kata-symphony/blob/main/docs/adrs/0001-a1-triage-durability-and-isolation.md), [ADR-0002](https://github.com/gannonh/kata-symphony/blob/main/docs/adrs/0002-triage-process-recovery-identity.md), [ADR-0003](https://github.com/gannonh/kata-symphony/blob/main/docs/adrs/0003-a2-spec-stage-artifacts-and-gates.md), [ADR-0004](https://github.com/gannonh/kata-symphony/blob/main/docs/adrs/0004-a3-implementation-durability-and-bundles.md), [ADR-0005](https://github.com/gannonh/kata-symphony/blob/main/docs/adrs/0005-a4-review-publication-fencing.md). Pre-migration spec files are under [`docs/specs/archive/`](https://github.com/gannonh/kata-symphony/tree/main/docs/specs/archive).\n\n## Sub-issue"
+    },
+    {
+      "source": "github-issues",
+      "title": "Real-world autonomous business deployment: 105 operational challenges and improvement opportunities",
+      "url": "https://github.com/openclaw/openclaw/issues/147704",
+      "repo": "openclaw/openclaw",
+      "reactions": 1,
+      "comments": 2,
+      "created": "2026-09-14T01:54:20Z",
+      "body_snippet": "### Summary\n\nI have been using OpenClaw to build a serious multi-agent autonomous business with separate CEO/orchestration, CFO, Amazon Seller, real-estate, markets research, security, independent audit, and software-engineering agents.\nI have invested substantial time implementing least privilege, agent isolation, independent verification, secrets management, rollback, management-by-exception, business integrations, and safe autonomy.\nMy primary concern is not that OpenClaw lacks capability. It is the amount of Owner intervention and systems-engineering work required to turn those capabilities into reliable autonomous business operations.\nI documented 105 specific challenges encountered during the actual implementation, including agent capability mismatches, browser and terminal limitations, Gmail and Amazon integration difficulties, update/runtime problems, memory degradation, approval friction, mobile administration, agent readiness, recovery, and excessive Owner burden.\nI have also included proposed improvements for each issue.\nThis is intended as constructive product feedback from a real-world attempt to use OpenClaw as the operating platform for an autonomous business. I woul"
+    },
+    {
+      "source": "github-issues",
+      "title": "Parity debugging post-mortem: 253 failures remain at 1e-6 tolerance (root cause unknown)",
+      "url": "https://github.com/cardil/OpenBallistics/issues/2",
+      "repo": "cardil/OpenBallistics",
+      "reactions": 1,
+      "comments": 1,
+      "created": "2026-08-10T14:42:10Z",
+      "body_snippet": "# OpenBallistics Parity Debugging: Post-Mortem Report\n\n## Problem Statement\n\nOpenBallistics is a Kotlin Multiplatform ballistic calculator targeting **1e-6 numerical parity** with py-ballisticcalc v2.2.10 on all trajectory outputs: velocity, time-of-flight (TOF), drop, windage, zero angle, and stability coefficient. \"1e-6 parity\" means absolute differences ≤1e-6 in the native units of each field (m/s, s, m, m, rad, dimensionless).\n\nThe difficulty arises because py-ballisticcalc integrates its RK4 solver **internally in imperial units** (feet, fps, ft/s²) and converts to metric only at output boundaries, using slightly rounded conversion constants (e.g., `FPS_PER_MPS = 3.2808399` rather than the exact `1/0.3048`). Kotlin integrates natively in metric. While agents repeatedly attributed the remaining errors to \"floating-point rounding differences between unit systems,\" this explanation is mathematically impossible at the observed magnitude (see Contradiction 3). The actual root cause of the remaining 253 test failures is an unidentified algorithmic or constant mismatch.\n\n---\n\n## Timeline\n\n| Session | Focus | Outcome |\n|---|---|---|\n| Sprint 2 (Session 1) | Engine construction, fixtur"
+    },
+    {
+      "source": "github-issues",
+      "title": "Support lifecycle hooks",
+      "url": "https://github.com/GoogleCloudPlatform/scion/issues/213",
+      "repo": "GoogleCloudPlatform/scion",
+      "reactions": 1,
+      "comments": 1,
+      "created": "2026-05-05T12:11:57Z",
+      "body_snippet": "# Configurable Lifecycle Hooks for Scion\n\n## Status\n**Draft** | May 2026\n\n## Problem\n\nScion's current lifecycle hook system is powerful but internal: it handles container-level events (pre-start, post-start, pre-stop, session-end) via shell scripts and Go handler functions, all executing inside the agent's container. There is no mechanism for template authors to declaratively attach custom actions to agent lifecycle events — particularly actions that call external APIs, send webhooks, or run scripts with structured configuration.\n\nThis gap matters because organizations need to integrate Scion agents into broader infrastructure:\n\n- **Service registries**: Register agents on startup and deregister on shutdown (e.g., Google Cloud Agent Registry, Consul, internal catalogs).\n- **Observability**: Notify external monitoring systems when agents transition states.\n- **Access management**: Provision or revoke credentials, service accounts, or IAM bindings tied to an agent's lifetime.\n- **Audit**: Record lifecycle events to compliance systems outside the Scion Hub.\n- **Orchestration**: Trigger downstream workflows when agents complete tasks or reach error states.\n\nToday, achieving any of thes"
+    }
+  ]
+}

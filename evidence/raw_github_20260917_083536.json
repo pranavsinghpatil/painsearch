@@ -1,0 +1,206 @@
+{
+  "query": "reconcile records",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "[Meta] Abnormal Codex usage/quota depletion and usage-accounting inconsistencies — cross-report tracker",
+      "url": "https://github.com/openai/codex/issues/41220",
+      "repo": "openai/codex",
+      "reactions": 22,
+      "comments": 45,
+      "created": "2026-08-27T23:24:40Z",
+      "body_snippet": "## Summary\n\nThere are now many open Codex reports describing a common **user-visible symptom family**:\n\n> Codex subscription quota or purchased credits are depleted materially faster than the user's prior baseline or local/token evidence would predict, sometimes with abrupt changes during an unchanged usage window, passive/background consumption, or usage records that do not reconcile with the meter.\n\nThis meta issue is intended to **link and compare those reports in one place**.\n\n**This does not assume they all have one root cause.** The evidence already points to several potentially independent mechanisms: entitlement/provisioning, server-side weighting/accounting, background activity, retries/polling, context replay, analytics/ledger gaps, and client-side workflow amplification. The purpose is to stop treating each report as an isolated anecdote and give maintainers a single place to correlate timelines, fixes, regressions, and account-side reconciliation.\n\n## Why a tracker is warranted\n\nSeveral reports contain controlled or unusually strong evidence rather than only subjective impressions:\n\n| Issue | Evidence / symptom | Why it matters |\n|---|---|---|\n| #28879 | Same GPT-5.5 pl"
+    },
+    {
+      "source": "github-issues",
+      "title": "💡 [Feature Request] - Offline POS and Sync with ERPNext",
+      "url": "https://github.com/frappe/books/issues/1174",
+      "repo": "frappe/books",
+      "reactions": 19,
+      "comments": 1,
+      "created": "2025-04-04T14:12:10Z",
+      "body_snippet": "### Summary\n\nWe propose adding the ability for **Frappe Books POS and Inventory** to seamlessly connect with and sync back data to the **ERPNext** master instance. This would allow users to perform sales transactions, manage inventory, and track customers in an offline mode within the POS system, with data syncing back to the ERPNext server once the internet connection is restored.\n\n#### Features:\n1. **Offline POS Functionality**: \n   - The ability to process sales transactions (invoices, payments, etc.) in offline mode.\n   - Offline management of products, stock levels, and pricing.\n   - Keep track of customers and sales history locally.\n\n2. **Data Syncing**:\n   - Automatically sync sales, customer data, inventory updates, and other relevant information back to the master **ERPNext** instance when the connection is restored.\n   - Syncing should be done in the background, with error handling for conflicts (e.g., duplicate entries or stock mismatches).\n\n3. **Inventory Sync**:\n   - Sync stock levels and movements between the POS and ERPNext to ensure consistency in real-time.\n   - Ability to perform stock adjustments offline, which will sync back once online.\n\n4. **Customer Data**:\n "
+    },
+    {
+      "source": "github-issues",
+      "title": "Roadmap",
+      "url": "https://github.com/elsa-workflows/elsa-core/issues/3232",
+      "repo": "elsa-workflows/elsa-core",
+      "reactions": 18,
+      "comments": 51,
+      "created": "2022-08-01T11:39:38Z",
+      "body_snippet": "# Elsa Roadmap\n\nLast refreshed: 2026-09-16 (post-3.8.2 operational patches and BPMN authoring status)\n\nThis roadmap is a product direction document, not a fixed release calendar. Elsa is developed through a mix of core maintainer work, customer-funded work, and community contributions, so sequencing can change when real-world demand changes. The intent is stable: make Elsa the most productive, dependable, and extensible workflow platform for the .NET ecosystem.\n\nThis version is grounded in the current `elsa-core`, `elsa-studio`, and `elsa-extensions` repositories, including source code, open issues, open pull requests, releases, and discussions where available.\n\n## North Star\n\nElsa should feel like the natural workflow engine for .NET teams:\n\n- productive enough for application developers to model real business processes quickly\n- dependable enough for production operations, rolling deploys, multi-tenant systems, and distributed workloads\n- open enough to embed, customize, extend, and automate without fighting the framework\n- powerful enough to connect systems, run long-lived processes, expose human tasks, and observe what is happening\n\n## Capability Checklist\n\nLegend: `[x]` shippe"
+    },
+    {
+      "source": "github-issues",
+      "title": "A lifecycle flag to never refresh resources",
+      "url": "https://github.com/hashicorp/terraform/issues/15472",
+      "repo": "hashicorp/terraform",
+      "reactions": 18,
+      "comments": 13,
+      "created": "2017-07-04T16:30:57Z",
+      "body_snippet": "Terraform 0.9.8\r\n\r\nBackground: Terraform likes to fully manage the resources it creates, and goes somewhat to trying to reconcile their latest state by doing a refresh/fact-find before issuing a plan or applying a plan. This is great behaviour.  Its also great that terraform can easily spin up an environment in its entirety, and this is very useful for creating dev, prod environments very easily.\r\n\r\nHowever certain development workflows involve subsequent changes to these resources which terraform is not necessarily good at handling itself, maybe because its current api support isnt good enough, or maybe because some things are complex to manage. \r\n\r\nAn example of this (but not limited to the AWS provider) is the aws_rds_cluster resource. We regularly restore a snapshot (which creates a different aws rds cluster, as you can never restore over the top of an existing cluster in aws), and then update dns and/or apps to point to the new cluster for a seamless db upgrade. Then we delete the old database, but not the dns records. Putting aside the fact that terraform's aws_rds_cluster resource for doing this has bugs preventing a successful restore from a snapshot anyway, assuming it wou"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature] Per-pane auto git worktree + branch isolation (dmux-style agent isolation)",
+      "url": "https://github.com/manaflow-ai/cmux/issues/3414",
+      "repo": "manaflow-ai/cmux",
+      "reactions": 12,
+      "comments": 2,
+      "created": "2026-05-01T20:16:14Z",
+      "body_snippet": "## Summary\n\nAdd a first-class, built-in option where **opening a new pane (or workspace) automatically creates a dedicated git worktree on a fresh branch**, so each agent (Claude / Codex / etc.) runs in a fully isolated checkout. Closing the pane reclaims the worktree (with a safe snapshot path for recovery).\n\nThis is the UX [dmux](https://github.com/standardagents/dmux) ships out of the box: *\"every pane gets its own git worktree and branch, and agents work in complete isolation.\"*\n\n## Motivation\n\nRunning N agents in parallel against the same checkout is the core value-prop of cmux's claude-teams / multi-agent flow, but today the user has to wire worktrees themselves. Concretely:\n\n- The currently documented path is the [`worktree-agents` custom command](https://github.com/manaflow-ai/cmux/blob/main/web/app/%5Blocale%5D/docs/custom-commands/page.tsx) — a shell snippet the user pastes into `cmux.json`. It works but:\n  - Not discoverable (you have to know the docs page exists).\n  - No lifecycle: nothing cleans the worktree on close, nothing snapshots on crash, nothing tracks which pane owns which worktree.\n  - Sidebar / tab UI doesn't know it's a worktree, so branch metadata, GC, and"
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal: Sunset repo-updater",
+      "url": "https://github.com/sourcegraph/sourcegraph-public-snapshot/issues/16197",
+      "repo": "sourcegraph/sourcegraph-public-snapshot",
+      "reactions": 12,
+      "comments": 25,
+      "created": "2020-11-26T17:27:11Z",
+      "body_snippet": "# Proposal\r\n\r\nToday, repo-updater is serving too many concerns, while being a singleton instance, without failure and resource isolation between those different concerns.\r\n\r\nAny nil pointer panic, or memory leak, or any other noisy neighbor issue will cause a cascading failure of unrelated features owned by different teams.\r\n\r\nWe got to this situation because there was an unmet need of a place to run background jobs, and repo-updater made that easy, so more and more use cases have been integrated into this singleton service over time. The more things we add to repo-updater, the higher the chance of cascading failure.\r\n\r\nIn contrast, the Code Intelligence team has created completely separate services for the background jobs they have. While it would be a possibility to separate all of these different concerns into separate services, we must consider the overhead which that would force upon us — more things to monitor, build, deploy and provision.\r\n\r\nTo avoid that overhead and address the issues at hand, I propose that we introduce a new service called `worker`, and extract the different concerns that currently live in repo-updater. Some of those would end up in `worker`, others else"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Pro 20x][Windows] GPT-6 Astra weekly quota depletion appears disproportionate to local token telemetry in same-day Astra→Sol run",
+      "url": "https://github.com/openai/codex/issues/43222",
+      "repo": "openai/codex",
+      "reactions": 11,
+      "comments": 9,
+      "created": "2026-09-06T13:01:20Z",
+      "body_snippet": "### What version of the Codex App are you using?\n\nCurrent Windows package during evidence collection: **OpenAI.Codex 26.901.5003.0**.\n\nThe affected work includes long-lived threads whose rollout `session_meta.cli_version` values span older versions (including `0.146.0-alpha.3.1` and `0.152.1`), so I am **not** claiming this is isolated to one CLI build. The current installed Desktop package is the version above.\n\n### What subscription do you have?\n\n**ChatGPT Pro — $200 / 20x tier.**\n\n### What platform is your computer?\n\nWindows x64, `Microsoft Windows NT 10.0.26200.0`.\n\n### What issue are you seeing?\n\nGPT-6 Astra appears to consume the shared weekly Codex allowance disproportionately quickly compared with GPT-5.6 Sol on the same account and same machine.\n\nOn Sep 5, 2026 (America/Los_Angeles), I observed the weekly allowance UI fall from approximately **45% remaining to 5% remaining** over the broader work session. I confirm that **no other device/client was running Codex**; all Codex activity was on this Windows machine and is represented by the local Desktop/Work rollouts.\n\nI switched away from GPT-6 Astra to GPT-5.6 Sol because the allowance was falling too quickly. From the UI I"
+    },
+    {
+      "source": "github-issues",
+      "title": "[destination-clickhouse v2] Failing With IllegalStateException",
+      "url": "https://github.com/airbytehq/airbyte/issues/69746",
+      "repo": "airbytehq/airbyte",
+      "reactions": 10,
+      "comments": 7,
+      "created": "2025-11-19T09:46:23Z",
+      "body_snippet": "### Connector Name\n\ndestination-clickhouse\n\n### Connector Version\n\n2.1.14\n\n### What step the error happened?\n\nDuring the sync\n\n### Relevant information\n\nSyncing a large table from MSSQL to ClickHouse using the latest connector version does not finalize correctly.\nThe table has 335,842,447 records in total, and specifying the mapper configuration seems not to have an effect at the ingestion time (I don't see the filter being applied at source-query time, however I see only the filtered query in the destination).\n\nAirbyte actually completes the sync, but it fails in returning a successful status code, so it retries 5 times after giving up, with all the records being extracted and written to the destination, but giving an erroneous status (0 records) in the tab.\n\n### Relevant log output\n\n```shell\n2025-11-20 14:34:26 replication-orchestrator INFO Total records read: 85000 (30 MB)\n2025-11-20 14:34:26 replication-orchestrator INFO Schema validation was performed to a max of 10 records with errors per stream.\n2025-11-20 14:34:26 replication-orchestrator WARN Schema validation errors found for stream assessment_Question. Error messages: [$.BoxHeightInLines: null found, number expected, $.E"
+    },
+    {
+      "source": "github-issues",
+      "title": "RFD - Governance for the Nebari Kubernetes Platform",
+      "url": "https://github.com/nebari-dev/governance/issues/59",
+      "repo": "nebari-dev/governance",
+      "reactions": 10,
+      "comments": 3,
+      "created": "2026-06-01T15:37:51Z",
+      "body_snippet": "| Status            | Accepted ✅             |\n| ----------------- | ----------------------- |\n| Author(s)         | @dcmcand                |\n| Date Created      | 29-05-2026              |\n| Date Last updated | 10-09-2026              |\n| Decision deadline | TBD                     |\n\n## Summary\n\nNebari's current governance was written for **Nebari Classic** - a single, monolithic data science platform shipped from one repository. The project has moved to the **Nebari Kubernetes Platform (NKP)**: a stable infrastructure core (Nebari Infrastructure Core, \"NIC\") plus a growing set of independently-developed **Software Packs**, each in its own repository.\n\nThat shift breaks several assumptions baked into today's governance:\n\n- It grants Contributors \"commit rights across **all** repositories\" and Core \"management rights across **all** projects.\" Blanket org-wide write is both a security problem and meaningless once work spans dozens of independently-versioned repos.\n- It assumes \"the roadmap\" is a single document. NKP has many.\n- It has no concept of a contract *between* the core and the packs, no notion of official vs community packs, and no per-repo ownership.\n\nThis RFD redefines "
+    },
+    {
+      "source": "github-issues",
+      "title": "cloudflare DNS01 - Client.Timeout exceeded while awaiting headers",
+      "url": "https://github.com/cert-manager/cert-manager/issues/8493",
+      "repo": "cert-manager/cert-manager",
+      "reactions": 9,
+      "comments": 9,
+      "created": "2026-02-08T18:44:20Z",
+      "body_snippet": "**Describe the bug**:\n\nWhen I try to use DNS01 challenge with cloudflare it throws error: `Client.Timeout exceeded while awaiting headers`.\n\nI know token works (I've tried to use it with certbot and acme.sh and it works, below I even have a curl request that shows it works). There is no network policies, proxies, firewalls or anything else applied to the cluster. I'm using k3d for local development, but I've tried to use plain k3s inside a VM and got the same error.\n\n**Expected behaviour**:\n\nI expected it to successfully create DNS TXT records.\n\n**Steps to reproduce the bug**:\n\n1. Start a k3d cluster (or k3s inside a VM)\n2. bootstrap a basic fluxcd repo\n3. Add HelmRelease and cert-manager configuration to the repo\n4. Wait it to reconcile and spawn challenges\n5. See infinite \"pending state\" with `Client.Timeout exceeded while awaiting headers` errors.\n\n**Anything else we need to know?**:\n\n<details>\n<summary>K3S setup (disabled: helm-controller, metric-server, traefik)</summary>\n\n<pre><code>\n# k3d\nk3d cluster create \\\n  --k3s-arg \"--disable=metrics-server,traefik@server:*\" \\\n  --k3s-arg \"--disable-helm-controller@server:*\" \\\n  --port \"80:80@loadbalancer\" \\\n  --port \"443:443@loadbalan"
+    },
+    {
+      "source": "github-issues",
+      "title": "DataStore transaction support",
+      "url": "https://github.com/aws-amplify/amplify-swift/issues/732",
+      "repo": "aws-amplify/amplify-swift",
+      "reactions": 8,
+      "comments": 2,
+      "created": "2020-08-19T22:52:14Z",
+      "body_snippet": "DataStore might benefit from transaction support, for both internal and external use cases. E.g.:\r\n\r\n* A customer may want to save multiple related records, rolling back locally if not successful, and in sync-enabled installations, only publishing to API if all are successful\r\n* Populating the outgoing mutation queue is currently separate from the data store `save` operation that writes the original record. It would be a more robust customer experience to wrap the mutation queue and save operation in a transaction so the whole thing could be atomically failed if one part fails\r\n* As noted in this code snippet, reconciling incoming mutations has much the same use case: it must apply changes to the local datastore and also update the mutation queue record. Those are related and would benefit from transaction semantics\r\nhttps://github.com/aws-amplify/amplify-ios/blob/4cb4423a6eb3d46dc0caf4bf55392384b0e4acc8/AmplifyPlugins/DataStore/AWSDataStoreCategoryPlugin/Sync/SubscriptionSync/ReconcileAndLocalSave/ReconcileAndLocalSaveOperation.swift#L201-L206\r\n\r\nWe should decide whether we want to support transactions, and if so, whether we want it to be a customer facing feature, or reserved for"
+    },
+    {
+      "source": "github-issues",
+      "title": "[BUG] Non-interactive system prompts are being injected into interactive sessions",
+      "url": "https://github.com/anthropics/claude-code/issues/77327",
+      "repo": "anthropics/claude-code",
+      "reactions": 8,
+      "comments": 11,
+      "created": "2026-07-13T23:29:04Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet\n- [x] This is a single bug report (please file separate reports for different bugs)\n- [x] I am using the latest version of Claude Code\n\n### What's Wrong?\n\nWhen I start an interactive session using Fable 5 via either the VS Code plugin or the CLI, this system prompt is being injected:\n\n> \"You are operating autonomously. The user is not watching in real time and cannot answer questions mid-task, so asking 'Want me to…?' or 'Shall I…?' will block the work. For reversible actions that follow from the original request, proceed without asking. Stop only for destructive actions or genuine scope changes the user must decide.\"\n\nThis causes undesirable behavior because this instruction (and possibly others) conflicts with many of my global CLAUDE.md rules around interaction (e.g. \"answer questions directly in chat when asked\"), and so it ends up prioritizing the system prompt over my global CLAUDE.md file when it can't reconcile them.\n\n### What Should Happen?\n\nThis system prompt should not be injected\n\n#"
+    },
+    {
+      "source": "github-issues",
+      "title": "Codex Desktop meta-bug: unbounded session/turn state causes freezes, context bloat, and lost active-turn control",
+      "url": "https://github.com/openai/codex/issues/25779",
+      "repo": "openai/codex",
+      "reactions": 8,
+      "comments": 17,
+      "created": "2026-06-02T05:28:02Z",
+      "body_snippet": "### What version of the Codex App are you using (From “About Codex” dialog)?\n\n26.527.60818\n\n### What subscription do you have?\n\npro\n\n### What platform is your computer?\n\nMicrosoft Windows NT 10.0.19045.0\n\n### What issue are you seeing?\n\n# Codex Desktop meta-bug: unbounded session/turn state causes freezes, context bloat, and lost active-turn control\n\n## Suggested labels\n\n`bug`, `app`, `session`, `context`, `tool-calls`, `performance`, `app-server`\n\n## Summary\n\nSeveral open Codex issues appear to be different symptoms of the same larger reliability problem:\n\nCodex Desktop allows local session/turn state to become unbounded, then places that state on hot UI, resume, context assembly, IPC, and active-turn ownership paths. Once a thread is long-running, tool-heavy, image-heavy, repeatedly compacted, or has experienced renderer/restart/interrupt recovery, the app can freeze, become extremely slow, overfill context, lose trace/progress visibility, fail Stop/cancel, or continue backend work while the UI appears stuck in `Thinking`.\n\nI do not think every linked issue is the same single code bug. The clearer framing is one parent/meta bug with several fix surfaces:\n\n1. unbounded persisted r"
+    },
+    {
+      "source": "github-issues",
+      "title": "Stress test 1",
+      "url": "https://github.com/nus-cs2103-AY1920S1/alpha-dev-response/issues/789",
+      "repo": "nus-cs2103-AY1920S1/alpha-dev-response",
+      "reactions": 0,
+      "comments": 0,
+      "created": "2019-10-29T16:54:04Z",
+      "body_snippet": "Stress test: hamlet\n\n\nThe Tragedy of Hamlet, Prince of Denmark\nShakespeare homepage | Hamlet | Entire play\nACT I\nSCENE I. Elsinore. A platform before the castle.\nFRANCISCO at his post. Enter to him BERNARDO\nBERNARDO\nWho's there?\nFRANCISCO\nNay, answer me: stand, and unfold yourself.\nBERNARDO\nLong live the king!\nFRANCISCO\nBernardo?\nBERNARDO\nHe.\nFRANCISCO\nYou come most carefully upon your hour.\nBERNARDO\n'Tis now struck twelve; get thee to bed, Francisco.\nFRANCISCO\nFor this relief much thanks: 'tis bitter cold,\nAnd I am sick at heart.\nBERNARDO\nHave you had quiet guard?\nFRANCISCO\nNot a mouse stirring.\nBERNARDO\nWell, good night.\nIf you do meet Horatio and Marcellus,\nThe rivals of my watch, bid them make haste.\nFRANCISCO\nI think I hear them. Stand, ho! Who's there?\nEnter HORATIO and MARCELLUS\n\nHORATIO\nFriends to this ground.\nMARCELLUS\nAnd liegemen to the Dane.\nFRANCISCO\nGive you good night.\nMARCELLUS\nO, farewell, honest soldier:\nWho hath relieved you?\nFRANCISCO\nBernardo has my place.\nGive you good night.\nExit\n\nMARCELLUS\nHolla! Bernardo!\nBERNARDO\nSay,\nWhat, is Horatio there?\nHORATIO\nA piece of him.\nBERNARDO\nWelcome, Horatio: welcome, good Marcellus.\nMARCELLUS\nWhat, has this thing appear'd "
+    },
+    {
+      "source": "github-issues",
+      "title": "Graph-Driven Validation for Gateway API Reconciler",
+      "url": "https://github.com/cilium/cilium/issues/46681",
+      "repo": "cilium/cilium",
+      "reactions": 7,
+      "comments": 5,
+      "created": "2026-06-23T06:30:08Z",
+      "body_snippet": "# Graph-Driven Validation for Gateway API Reconciler\n\n## Problem\n\nThe Gateway API reconciler validates route and listener attachment across four phases that reimplement the same checks. Each core check, such as parentRef matching, namespace filtering, or hostname intersection, is re-implemented up to seven different times. The copies drift apart and cause bugs. For example, after merging TCP/UDP Route, [this follow up bug fix was needed immediately](https://github.com/cilium/cilium/pull/46363) to perform the re-validation necessary within the translation layer.\n\nNamespace filtering is a good example of this pattern. A listener's `AllowedRoutes.Namespaces` selector is evaluated in at least five places (`isAllowed`, `listenerisAllowed`, `CheckGatewayAllowedForNamespace`, `routeAllowedByParent`, and  `IsListenerNamespaceAllowed`), and they have divergent logic. A `namespacesPreFiltered` flag skips the check for ListenerSet listeners whose namespaces are already resolved, but Gateway-listeners cannot use this path because they have not been filtered in the reconciler context.\n\nThe validation phases also disagree on which check is authoritative. The filter `filterHTTPRoutesByListener` c"
+    },
+    {
+      "source": "github-issues",
+      "title": "Unreal Azeroth is not for EVERYONE",
+      "url": "https://github.com/iThorgrim/Unreal-Open-Azeroth/issues/3",
+      "repo": "iThorgrim/Unreal-Open-Azeroth",
+      "reactions": 7,
+      "comments": 3,
+      "created": "2026-08-17T13:16:20Z",
+      "body_snippet": "# Unreal Azeroth Is Not for Everyone\n\nThe website says it plainly: *\"Legacy Mode goes live for everyone. This is the full vanilla world, playable from day one.\"* For everyone. A World of Warcraft client *\"written from scratch in Unreal Engine 5\"*, with built-in anti-cheat, presented as a non-commercial, community-driven, volunteer project.\n\nWhen you take it apart, you find something else. These protections are not aimed at cheaters. They are anti-reverse-engineering and anti-private-server protections whose actual purpose is simple: prevent a player from connecting to a server that does not have an Unreal Azeroth license. No license, no connection, for anyone. What follows are the discrepancies between what is presented publicly and what the code actually does, one by one.\n\n## \"For Everyone\", Except Without a License\n\n*\"Legacy Mode goes live for everyone.\"* On paper, it is open. In practice, it is not. The client cannot connect to anything without a series of server-side keys. No keys, no connection. And these keys are not held by the players; they are held by authorized servers.\n\n<img width=\"664\" height=\"302\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/c693d6e3-f94"
+    },
+    {
+      "source": "github-issues",
+      "title": "DEP: Runtime-Free Router and Gateway On-Ramp",
+      "url": "https://github.com/ai-dynamo/dynamo/issues/10321",
+      "repo": "ai-dynamo/dynamo",
+      "reactions": 6,
+      "comments": 16,
+      "created": "2026-06-04T17:30:12Z",
+      "body_snippet": "## Table of Contents\n\n- [Overview](#user-content-overview)\n  - [Area](#user-content-area)\n  - [Summary](#user-content-summary)\n  - [Motivation](#user-content-motivation)\n- [Design](#user-content-design)\n  - [Proposal](#user-content-proposal)\n  - [Worker Identity, Tenant Isolation, and Schedulability](#user-content-worker-identity-tenant-isolation-and-schedulability)\n  - [Selection Input and Admission Sequencing](#user-content-selection-input-and-admission-sequencing)\n  - [Worker Topology and Platform Boundary](#user-content-worker-topology-and-platform-boundary)\n  - [Engine Metadata Production](#user-content-engine-metadata-production)\n- [Interfaces](#user-content-interfaces)\n  - [HTTP API](#user-content-http-api)\n  - [In-Process Python API](#user-content-in-process-python-api)\n  - [Existing Runtime-Backed Path](#user-content-existing-runtime-backed-path)\n- [Scope and Rollout](#user-content-scope-and-rollout)\n  - [V1 Scope](#user-content-v1-scope)\n  - [Phased Migration](#user-content-phased-migration)\n- [Requirements](#user-content-requirements)\n  - [MUST](#user-content-must)\n  - [SHOULD](#user-content-should)\n- [Open Questions](#user-content-open-questions)\n- [References](#user-co"
+    },
+    {
+      "source": "github-issues",
+      "title": "Could not push logs to Elasticsearch, resetting connection and trying again. read timeout reached",
+      "url": "https://github.com/uken/fluent-plugin-elasticsearch/issues/756",
+      "repo": "uken/fluent-plugin-elasticsearch",
+      "reactions": 6,
+      "comments": 6,
+      "created": "2020-05-22T09:59:54Z",
+      "body_snippet": "(check apply)\r\n- [ ] read [the contribution guideline](https://github.com/uken/fluent-plugin-elasticsearch/blob/master/CONTRIBUTING.md)\r\n\r\n#### Problem\r\n\r\nHi team, I have faced a problem ,that is `Could not push logs to Elasticsearch, resetting connection and trying again. read timeout reached`, but in other fluented status is okay that they can push logs into Elasticsearch cluster, both they have the same config and es cluster server ; in addition, I have saw the article https://github.com/uken/fluent-plugin-elasticsearch/issues/746, https://github.com/uken/fluent-plugin-elasticsearch/issues/244, https://github.com/uken/fluent-plugin-elasticsearch/issues/742, and tried some methods to resolve it, but it didn't work.\r\n\r\nthe methods I have used are below:\r\nthe 1st method:\r\nadd `reload_connections`、` reconnect_on_error`、`reload_on_failure`\r\n<pre><code>\r\n      reload_connections false\r\n      reconnect_on_error true\r\n      reload_on_failure true\r\n</code></pre>\r\n\r\n\r\nthe 2nd method:\r\nincrease the request_timeout  to 2147483648\r\n<pre><code>\r\nrequest_timeout 2147483648\r\n</code></pre>\r\nthe fluentd's  logs show that:\r\n<pre><code>\r\n[root@D21114U24-61-149 ~]# kubectl logs -f fluentd-es-v2.5.2-"
+    },
+    {
+      "source": "github-issues",
+      "title": "Pro 20x: Astra shows ~36% lower API-equivalent capacity per weekly quota than Sol (same-account measurements)",
+      "url": "https://github.com/openai/codex/issues/43731",
+      "repo": "openai/codex",
+      "reactions": 5,
+      "comments": 4,
+      "created": "2026-09-08T07:08:03Z",
+      "body_snippet": "### What version of the Codex App are you using (From “About Codex” dialog)?\n\nCodex desktop app on macOS. Exact application and bundled CLI versions are omitted from this public report for privacy; historical versions were not pinned for every measured interval.\n\n### What subscription do you have?\n\nChatGPT Pro 20x ($200/month), signed in with ChatGPT. The account endpoint reports planType=pro; please verify the 20x entitlement against the server-side account record.\n\n### What platform is your computer?\n\nmacOS. Exact OS version, build, and hardware details are omitted from this public report.\n\n### What issue are you seeing?\n\nAfter switching from GPT-5.6 Sol to GPT-6 Astra, my locally recorded standard-API-price-equivalent usage per percentage point of weekly Codex allowance dropped substantially. A comparison on my own account, using a consistent price basis, gives about **$1,925 per full weekly allowance with Sol versus $1,234 with Astra**, approximately **35.9% lower**.\n\nI am requesting an accounting investigation. These dollar values are normalization estimates, **not actual API charges, a published subscription entitlement, or proof that the weekly cap was reduced**.\n\nAll times "
+    },
+    {
+      "source": "github-issues",
+      "title": "[Codex app][Windows][Pro] Weekly quota jumped 14% to 88% used in one server update; 98.1% cached Astra telemetry",
+      "url": "https://github.com/openai/codex/issues/44213",
+      "repo": "openai/codex",
+      "reactions": 5,
+      "comments": 1,
+      "created": "2026-09-09T17:13:05Z",
+      "body_snippet": "### What version of the Codex App are you using (From “About Codex” dialog)?\n\nWindows package `OpenAI.Codex_26.903.8094.0`; bundled `codex-cli 0.153.4`.\n\n### What subscription do you have?\n\nChatGPT Pro. Local rate-limit records report `plan_type: \"pro\"` and a 10,080-minute weekly `codex` window.\n\n### What platform is your computer?\n\n`Microsoft Windows NT 10.0.26200.0 x64`\n\n### What issue are you seeing?\n\nMy remaining weekly Codex allowance fell from approximately **89% remaining to 10% remaining in about one hour** on September 9, 2026. The server-provided rate-limit snapshots show the critical discontinuity precisely:\n\n| America/Toronto | Weekly used |\n|---|---:|\n| 11:45 | 9% |\n| 11:47 | 10% |\n| 11:56 | 11% |\n| 12:10 | 12% |\n| 12:18 | 13% |\n| 12:29 | 14% |\n| **12:43:51** | **88%** |\n| 12:49 | 89% |\n| 12:58 | 90% |\n\nThe meter therefore posted a **74 percentage-point jump in a single server response**, from 14% used to 88% used. This was not a UI-only estimate: the values are in `token_count.rate_limits.primary.used_percent` in the local rollout records.\n\nThe response immediately associated with the jump was:\n\n```text\ntimestamp:   2026-09-09T16:43:50.993Z\nresponse_id: resp_0deed235f"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "query": "missed alerts",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature Request: Notifications for Device Online/Offline Status",
+      "url": "https://github.com/tailscale/tailscale/issues/14737",
+      "repo": "tailscale/tailscale",
+      "reactions": 28,
+      "comments": 10,
+      "created": "2025-01-22T19:26:49Z",
+      "body_snippet": "### What are you trying to do?\n\nI would like to request a feature that sends notifications when a device in my Tailnet goes online or offline. This functionality would be highly beneficial for monitoring critical devices and ensuring smooth operations.\n\nIt would be great if these notifications could:\n\nWork seamlessly on both the Tailscale mobile app and desktop client.\nInclude configurable options (e.g., choose which devices trigger notifications or customize alert settings).\nThis feature would greatly enhance visibility and usability for Tailnet users, especially in environments where device connectivity is crucial. It would also make me appreciate and enjoy the service even more, knowing I have better control and monitoring capabilities.\n\nThank you for considering this request!\n\n### How should we solve this?\n\nTo implement this feature, Tailscale could introduce a notification system that integrates seamlessly into both the mobile app and desktop client. The system could monitor device connectivity on the Tailnet and send real-time notifications when a device goes online or offline.\n\nKey aspects of the solution could include:\n\nCross-Platform Notifications: Push notifications for b"
+    },
+    {
+      "source": "github-issues",
+      "title": "[docs] - Improve instructions for dagster-slack",
+      "url": "https://github.com/dagster-io/dagster/issues/9757",
+      "repo": "dagster-io/dagster",
+      "reactions": 18,
+      "comments": 0,
+      "created": "2022-09-21T17:39:35Z",
+      "body_snippet": "### Summary\r\n\r\nThe instructions for setting up a Slack app to use with `dagster-slack` could be improved. We need to address the following when taking this on:\r\n\r\n- Formatting (currently a bit all over)\r\n- Explain how Slack scopes work for bots and link to Slack docs that explain what scopes go with each action\r\n- Explain that bots/apps need to be added as members to channels where they're expected to work\r\n\r\nWe should also look into the recent improvements Slack has made around creating apps/bots and seeing if we can leverage those. For example, Slack released the ability to create apps/bots from YAML configuration files (called [manifests](https://api.slack.com/reference/manifests)) - if our bots require specific configuration, we can provide a manifest template in the docs.\r\n\r\n---\r\n\r\n## Conversation excerpt\r\n\r\nThis issue was generated from the slack conversation at: https://dagster.slack.com/archives/C01U954MEER/p1663102813018339?thread_ts=1663102813.018339&cid=C01U954MEER\r\n\r\nUJ1JSKH5F: Having trouble following the directions for <https://docs.dagster.io/_apidocs/libraries/dagster-slack|dagster-slack>.  In step 2, we’re supposed to “create a bot user”.  There is no such button t"
+    },
+    {
+      "source": "github-issues",
+      "title": "Flash taskbar icon on new message in Talk",
+      "url": "https://github.com/nextcloud/talk-desktop/issues/1389",
+      "repo": "nextcloud/talk-desktop",
+      "reactions": 10,
+      "comments": 1,
+      "created": "2025-07-19T08:41:50Z",
+      "body_snippet": "<!--- Please keep this note for other contributors -->\n\n### How to use GitHub\n\n* Please use the 👍 [reaction](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) to show that you are interested into the same feature.\n* Please don't comment if you have no relevant information to add. It's just extra noise for everyone subscribed to this issue.\n* Subscribe to receive notifications on status change and new comments.\n\n---\n\n**Is your feature request related to a problem? Please describe.**  \nIn real-world usage, especially in office environments, users often switch between multiple applications or step away from their desks for short periods. When a message arrives in Talk during that time and the Talk window is minimized or not in focus, the user may miss the message entirely — especially if the system notification is too brief or muted.\n\nThis can lead to delayed responses or missed critical communications, which is not ideal for teams relying on Talk for day-to-day collaboration.\n\n---\n\n**Describe the solution you'd like**  \nWhen a new Talk message is received and the Talk window is **minimized or not focused** (on **Windows**), the application icon i"
+    },
+    {
+      "source": "github-issues",
+      "title": "Make changes to maintainers or install scripts more prominent",
+      "url": "https://github.com/dependabot/dependabot-core/issues/14580",
+      "repo": "dependabot/dependabot-core",
+      "reactions": 7,
+      "comments": 1,
+      "created": "2026-03-30T16:48:25Z",
+      "body_snippet": "### Is there an existing issue for this?\n\n- [x] I have searched the existing issues\n\n### Feature description\n\nDependabot now helpfully flags when a dependency gets a new maintainer, or if install scripts change between versions.\n\nUnfortunately I think these can be easily missed, especially as the important information is concealed behind a `<details>` element.\n\nI'd suggest:\n\n- front-loading these indicators by moving them before the release notes / commit information\n- not using `<details>`, as the concealed information is both important and short\n- potentially using GitHub's [markdown alerts](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) to draw attention (exact severity level to be bike-shedded, I'm sure 😉)\n\nIt might look something like:\n\n<img width=\"780\" height=\"439\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/a7e012df-4d5a-466a-aa63-e2b09c68cff1\" />\n\nI can see a similar idea has been discussed in https://github.com/dependabot/dependabot-core/issues/12765#issuecomment-3900480964 for highlighting when a package loses provenance.\n\nI'd be happy to contribute "
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature Request] Space for triage notes on alert preview modal",
+      "url": "https://github.com/TheHive-Project/TheHive/issues/1800",
+      "repo": "TheHive-Project/TheHive",
+      "reactions": 7,
+      "comments": 0,
+      "created": "2021-02-20T08:09:05Z",
+      "body_snippet": "### Problem Description\r\nWhen triaging alerts, there is no space to record an explanation for the triage outcome.  These notes are valuable when one team member is triaging alerts and assigning cases to other team members.  In cases where alerts are not converted to cases, the notes are valuable during regular reviews to make sure nothing was missed.  \r\n\r\nThese are some thoughts on how to handle the alert triage notes for various triage outcome scenarios:\r\n\r\n1. **Further investigation of the alert is warranted / Alert is used to create a case-**\r\n  Triage notes should be preserved in the alert \"preview\" modal and displayed in the case somewhere.  My preference would be for the notes from each alert to be add to a 'Review alert notes' task.  If there is more than one alert added to a case, the notes from each alert can be added to the 'Review alert notes' task as a new task log. \r\n2. **The alert warrants no actions or investigation-**\r\n  Triage notes should be preserved in the alert \"preview\" modal for review/audit purposes.  \r\n3. **The thing generating the alert requires fixing-**\r\n  Triage notes should be preserved in the alert \"preview\" modal for review.\r\n\r\n### Possible Solution\r"
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal: Add Attack Type Classification to Malware Advisories",
+      "url": "https://github.com/github/advisory-database/issues/6107",
+      "repo": "github/advisory-database",
+      "reactions": 7,
+      "comments": 1,
+      "created": "2025-09-10T01:02:48Z",
+      "body_snippet": "# Proposal: Add Attack Type Classification to Malware Advisories\n\n## Problem Statement\n\nThe current malware advisory system in the GitHub Advisory Database creates a significant security coverage gap. **Dependabot suppresses all malware advisories** due to high false positive rates from substitution attacks, but this blanket suppression also prevents alerts for critical threats like legitimate maintainer account compromises.\n\n### Recent Critical Incidents Missed by Dependabot\n\n**September 8-9, 2025**: The qix account compromise affected 18+ popular packages (chalk, debug, ansi-styles) with 2+ billion weekly downloads. Malware was designed to steal cryptocurrency by intercepting wallet transactions.\n- Advisory: GHSA-8mgj-vmr8-frr6 (debug), GHSA-ch7m-m9rf-8gvv (color-convert), etc.\n- **Result**: Dependabot users received NO alerts despite critical compromise\n\n**August 26, 2025**: The nx package compromise affected 3.5M+ weekly downloads, harvesting credentials, GitHub tokens, and cryptocurrency wallets from developer machines.\n- Advisory: GHSA-cxm3-wv7p-598c\n- **Result**: Dependabot users received NO alerts despite supply chain injection\n\n### Current Advisory Quality Issues\n\nMalware "
+    },
+    {
+      "source": "github-issues",
+      "title": "Ring Intercom `ding` event does not update",
+      "url": "https://github.com/home-assistant/core/issues/131527",
+      "repo": "home-assistant/core",
+      "reactions": 7,
+      "comments": 60,
+      "created": "2024-11-25T11:28:09Z",
+      "body_snippet": "### The problem\r\n\r\nHey there,\r\n\r\nin 2024.10 it seems there was a [bugfix](https://github.com/home-assistant/core/pull/128083) related to realtime events of Ding devices. \r\nI purchased a Ring Intercom a couple of days ago and successfully integrated that into homeassistant.\r\nHowever, today the doorbell rang, the \"Last activity\" entry in homeassistant got updated but both \"Ding\" and \"Intercom unlock\" did not change. \r\n\r\nNot sure if it is correct that I do not have any `binary_sensor` available - as per [documentation](https://www.home-assistant.io/integrations/ring/#binary-sensor), there should be a binary sensor when the doorbell rings or the unlock event occurred.\r\n\r\n![image](https://github.com/user-attachments/assets/830c924f-b2cb-44df-a4e0-5cda32bde9b1)\r\n\r\n\r\n### What version of Home Assistant Core has the issue?\r\n\r\ncore-2024.11.1\r\n\r\n### What was the last working version of Home Assistant Core?\r\n\r\n_No response_\r\n\r\n### What type of installation are you running?\r\n\r\nHome Assistant OS\r\n\r\n### Integration causing the issue\r\n\r\nRing\r\n\r\n### Link to integration documentation on our website\r\n\r\nhttps://www.home-assistant.io/integrations/ring/\r\n\r\n### Diagnostics information\r\n\r\n```json\r\n{\r\n  \"h"
+    },
+    {
+      "source": "github-issues",
+      "title": "Recommended migration path for existing state-managed sentry_issue_alert → sentry_alert",
+      "url": "https://github.com/jianyuan/terraform-provider-sentry/issues/902",
+      "repo": "jianyuan/terraform-provider-sentry",
+      "reactions": 6,
+      "comments": 1,
+      "created": "2026-07-07T09:31:43Z",
+      "body_snippet": "### Summary\n\nWe're planning a migration of ~500 `sentry_issue_alert` (plus a handful of `sentry_metric_alert`) resources to `sentry_alert`, and would like to validate the approach against how the maintainers intend the migration to be done. The attribute-mapping section added by #889 is helpful, but a few operational questions aren't answered in the docs and I couldn't find them in existing issues. Filing this to (a) ask, and (b) offer to send a docs PR based on the answers once we've completed the migration.\n\n### What the docs already cover\n\nThe `Migrating to sentry_alert` section on `docs/resources/issue_alert.md` gives the attribute-level mapping: `conditions` → `trigger_conditions` / `action_filters[].conditions`, `filters` → `action_filters[].conditions`, `filter_match` → `action_filters[].logic_type`, `actions` → `action_filters[].actions`, `frequency` → `frequency_minutes`, and pointing at `sentry_project_error_monitor` / `sentry_project_issue_stream_monitor` for `monitor_ids`. That's clear.\n\n### What isn't answered anywhere (that we could find)\n\nFor **new** `sentry_alert` resources the story is complete. For **existing, state-managed** `sentry_issue_alert` resources being a"
+    },
+    {
+      "source": "github-issues",
+      "title": "Improve Windows Defender UI to Reflect Its True Capabilities",
+      "url": "https://github.com/microsoft/Windows-Dev-Performance/issues/128",
+      "repo": "microsoft/Windows-Dev-Performance",
+      "reactions": 6,
+      "comments": 1,
+      "created": "2025-10-26T18:19:00Z",
+      "body_snippet": "\n\n Title: Improve Windows Defender UI to Reflect Its True Capabilities\nDescription:\nWindows Defender is a powerful and reliable antivirus solution built into Windows. Its performance rivals many paid alternatives, offering real-time protection, firewall integration, and threat detection. However, its current user interface lacks visual clarity and engagement, which leads many users to believe they don’t have any active antivirus protection. This is a missed opportunity to showcase Defender’s strength and build user trust.\n\n Suggested Enhancements:\n1. \tLive Security Dashboard\n• \tAdd a real-time visual indicator (green/yellow/red) showing system health and threat status\n• \tInclude charts for recent scans, blocked threats, and system activity\n2. \tDesktop Widget\n• \tProvide a small widget showing current protection status, last scan time, and a quick scan button\n3. \tModern UI Redesign\n• \tUse clearer icons, better spacing, and a more intuitive layout\n• \tAdd animations or transitions to make the app feel more responsive and alive\n4. \tAdvanced Mode for Power Users\n• \tUnlock deeper settings like scan logs, network activity, and threat behavior analysis\n• \tIntegrate with WSL2 to scan Linux e"
+    },
+    {
+      "source": "github-issues",
+      "title": "George's knowledge share for Alertmanager maintainers",
+      "url": "https://github.com/prometheus/alertmanager/issues/4727",
+      "repo": "prometheus/alertmanager",
+      "reactions": 5,
+      "comments": 2,
+      "created": "2025-11-11T20:18:04Z",
+      "body_snippet": "# Background\n\nThis issue contains all the Alertmanager naunces that I've learned over the years and changes I have been thinking about to try and fix some of the problems I have found (sadly I have found many). It is about time I wrote it up to help future maintainers make informed decisions for the project and understand where there be dragons 🐉.\n\n# Gotchas\n\nThe following is a list of \"gotchas\" that I have found while contributing to Alertmanager:\n\n## GroupKey is supposed to be unique but it is not\n\nThe GroupKey is a key derived from the matchers in the route (including any parent routes) and any labels in the `group_by` field of the matching route.\n\nThere are a number of cases where GroupKey is not unique such that it is possible for two or more aggregation groups to share the same GroupKey at the same time.\n\nThis creates a number of problems:\n\n1. If the receiver is also the same, two or more aggregation groups can share the same notification log.\n2. If we want to use GroupKey in the \"GroupMarker\" then two aggregation groups with conflicted GroupKeys will overwrite each other's markers.\n\nA simple solution to this problem is to add names for routes, and each name must be unique at"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature Request]: Audit alerts per company",
+      "url": "https://github.com/grokability/snipe-it/issues/13542",
+      "repo": "grokability/snipe-it",
+      "reactions": 4,
+      "comments": 0,
+      "created": "2023-08-29T16:09:48Z",
+      "body_snippet": "### Is your feature request related to a problem? Please describe.\n\nCurrently the setup does not provide the option to have audit alerts per company. Ideally would be to have an option to enable the audit alerts per company if they are missed. Currently all are sent to 1 email. \n\n### Describe the solution you'd like\n\nBest would be to have an option that the audit reminders are sent on the company manager and his supervisors, or to add a custom emails per companies.\n\n### Describe alternatives you've considered\n\n_No response_\n\n### Additional context\n\n_No response_"
+    },
+    {
+      "source": "github-issues",
+      "title": "Allow customisation of the Slack UX",
+      "url": "https://github.com/grafana-cold-storage/oncall/issues/4165",
+      "repo": "grafana-cold-storage/oncall",
+      "reactions": 4,
+      "comments": 1,
+      "created": "2024-04-05T09:59:34Z",
+      "body_snippet": "### What would you like to see!\n\nI'm evaluating OnCall for alert notifications at our small company, but am a little concerned that the actual UX of the product, particularly on Slack doesn't match our ideal or will be particularly well received by my fellow coworkers.\r\n\r\nE.g. the current Slack alert message includes a bunch of buttons we won't want, and a \"Resolved by alert source/username\" addon that seems unnecessary, at least in the main message rather than the log or thread.  This take up valuable space which if you get multiple alerts at once can cause issues to be missed.  I'm also concerned about over-notification e.g. #187 and #3849.\r\n\r\nThe latter issue is particularly worrying as a PR to allow customisation was offered in #3977 but rejected by the maintainers - but real users like us **will** have different requirements & expectations of what is \"best\" and unless you allow flexibility then we'll remain annoyed rather than being active promoters of your OSS project.\n\n### Product Area\n\nChatops\n\n### Anything else to add?\n\n_No response_"
+    },
+    {
+      "source": "github-issues",
+      "title": "Re-introduce Native Web Push Notifications (Desktop & Android Support) as a Beta/Optional Feature",
+      "url": "https://github.com/glideapps/expert-issues/issues/73",
+      "repo": "glideapps/expert-issues",
+      "reactions": 4,
+      "comments": 0,
+      "created": "2025-12-06T10:34:18Z",
+      "body_snippet": "**Summary**\nWe urgently request the return of **Native Push Notifications** for Glide Apps. We understand the historical challenges with iOS PWA support, but removing this feature entirely penalizes the vast majority of our workforce who operate on **Desktop (PC)** and **Android** devices where Web Push works perfectly. Please re-introduce this as a \"Beta\" or \"Experimental\" feature, allowing developers to decide whether to enable it based on their users' device mix.\n\n**Current Problem**\n*   **\"Lowest Common Denominator\" Constraint:** Currently, it feels like Glide disabled Push Notifications because they weren't perfect on iOS. However, for many internal business tools, 90% of users are on Windows Chrome or Android, where Web Push is a standard, reliable technology.\n*   **Missed Critical Alerts:** Without native push, we rely on Email (too slow/ignored) or SMS (expensive/limited text). For dispatching or emergency alerts, desktop users need an instant browser notification.\n*   **iOS Situation Has Changed:** Since iOS 16.4, Apple *does* support Web Push for PWAs added to the Home Screen. The technical blocker that previously justified removing this feature is largely resolved.\n\n**Ex"
+    },
+    {
+      "source": "github-issues",
+      "title": "SS14 Onboarding",
+      "url": "https://github.com/space-wizards/space-station-14/issues/28618",
+      "repo": "space-wizards/space-station-14",
+      "reactions": 4,
+      "comments": 3,
+      "created": "2024-06-05T04:29:58Z",
+      "body_snippet": "Requires: #28616\r\n\r\nImplement an onboarding experience for new players with 3 Levels: None (disabled) , Familiar with SS13, Full Tutorial\r\nThis list will focus on the \"Full tutorial\" features/steps and the SS13 version will be the same except for some text differences and omitted steps.\r\n\r\nThis is just a quick list I put together off the top of my head so I'm very likely missing important steps, so feel free to pitch in with ideas or with anything I missed. Keep in mind though this is just a general tutorial for the basic game mechanics and not for any specific job/role. Those will likely get their own onboarding flows later (that would get added on)\r\n## Onboarding steps:\r\n### Step 1:\r\n- [ ] Explain the UI. (Highlight various important elements: alerts, hands, buttons, etc.)\r\n- [ ] Explain the movement controls. (Show button prompts/description: move around, explain that you can't rotate the screen)\r\n- [ ] Explain the chat panel (mention that you can change the layout between new/old chat)\r\n- [ ] Explain Radios/chat channels, how you can switch between them and what each are for\r\n### Step 2:\r\n- [ ] Inventory management, Open a specific inventory and move a specified item into the h"
+    },
+    {
+      "source": "github-issues",
+      "title": "Audio Feedback for Task Status 🔉 ",
+      "url": "https://github.com/kirodotdev/Kiro/issues/3173",
+      "repo": "kirodotdev/Kiro",
+      "reactions": 3,
+      "comments": 1,
+      "created": "2025-10-06T05:55:30Z",
+      "body_snippet": "### Feature Description\n\nYou should add audio feedback for task completion and replies. \nThis will give users an immediate audible alert when a task finishes or when you respond. Your current notification settings already allow banner and sound alerts for task completion, waiting for action, and abnormal stop events. Each status has its own sound file and a play option. The volume control is set to maximum, which ensures alerts are heard clearly.\n\nExtend this setup to include a sound for successful task completion and for replies. Use short, distinct audio clips so users can identify the status without looking at the screen. This will improve response time and help users act quickly when a task changes state.\n\n### Use Case\n\nYou enable audio feedback for task completion and reply. When a task finishes, you hear a short sound that confirms success. When a reply is ready, you hear a different sound. You set distinct audio files for each status so you can identify them instantly. You keep the volume high to ensure alerts are audible even when you are away from the screen. This helps you respond faster, reduces missed updates, and keeps your workflow moving without constant visual check"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Security Solution] Failed detection rule execution to increment additional look-back of next execution",
+      "url": "https://github.com/elastic/kibana/issues/172192",
+      "repo": "elastic/kibana",
+      "reactions": 3,
+      "comments": 10,
+      "created": "2023-11-29T16:51:48Z",
+      "body_snippet": "**Describe the feature:**\r\n\r\nCurrently if a rule does not run on schedule then the Detection Engine will automatically attempt to cover time that was missed the next time the rule does run. However, failures during a rule execution will not cause the next rule execution to re-search that older window.\r\n\r\n**Describe a specific use case for the feature:**\r\n\r\nIf rule execution does not run because of elasticsearch exception, next execution should use additional look-back time incremented to look at time since last successful execution\r\nA common cause of rule execution failure is `no_shard_available_action_exception` which is more common to take place on elasticsearch cluster whereby creating index takes longer because any index is first created in red health till primary shards become active... A search on data stream when one index is red because execution run just instant after data stream rolled over will cause detection rule execution to fail.\r\nIf a rule runs every 5 minutes with 1 minute additional look-back - a single execution failure will cause a blind spot of 4 minutes... If the look-back was set to 6 minutes on next execution then no data will be missed\r\n\r\n**Workaround**\r\n- "
+    },
+    {
+      "source": "github-issues",
+      "title": "Robusta k8s Scalability ",
+      "url": "https://github.com/robusta-dev/robusta/issues/419",
+      "repo": "robusta-dev/robusta",
+      "reactions": 3,
+      "comments": 1,
+      "created": "2022-07-05T13:15:57Z",
+      "body_snippet": "**Is your feature request related to a problem? Please describe.**\r\nWe would love to use robusta in our production environment as part of our alerting mechanism. our use case would be to use robusta to kill a pod on the back of an alert. This would save the on call engineer having to receive a pager and manually perform this. However, as the runner/forwarder aren't scalable without duplicate notification we can't utilise this tool in production due to availability concerns.\r\n\r\n**Describe the solution you'd like**\r\n We would like the runner/forwarder pods to be able to scale horizontally to ensure alerts aren't missed and runbook are actioned. \r\n\r\n"
+    },
+    {
+      "source": "github-issues",
+      "title": "Remote Management for Duplicati",
+      "url": "https://github.com/duplicati/duplicati/issues/2411",
+      "repo": "duplicati/duplicati",
+      "reactions": 3,
+      "comments": 139,
+      "created": "2017-03-29T14:36:06Z",
+      "body_snippet": "I would like to see Remote Management for Duplicati.  Perhaps something like:\n\n-Duplicati installed with a commandline switch for management server (or in the GUI)\n-Duplicati generates a unique key and registers with the management server (with it's computer name/domain/workgroup) and awaits instructions\n-Server admin approves new Duplicati client and assigns it a template (what to backup and where) as well as credentials for the backup repo and encryption key\n-Server ensures that the client keeps to schedule and if there are deviations or backup errors, it's reported to the admin\n-Server should be written to work on a standard LAMP stack for deployment to commodity hosting if at all possible, and have security in mind.  Cronjob to run compliance failure alerts (missed backups or clients not checking in, etc.)\n-Nice to have: restore files from the management console to the client, or to be downloaded directly from the console\n\nKenneth mentioned he had much of this already written, he may be able to make available his progress.\n"
+    },
+    {
+      "source": "github-issues",
+      "title": "[➕ Feature]: Google Cloud PubSub provider",
+      "url": "https://github.com/keephq/keep/issues/4892",
+      "repo": "keephq/keep",
+      "reactions": 3,
+      "comments": 1,
+      "created": "2025-05-23T15:46:29Z",
+      "body_snippet": "**Is your feature request related to a problem? Please describe.**\nGoogle Cloud, specifically GKE, can notify of lifecycle events:\n- security issue\n- upcoming forced upgrade\n- end of support notification\n\nThey do this via pubsub, https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-notifications has some information\n\nWe would like to harmonise this with keep since it is adjacent to the current alerts around CVE in containers and runtime errors.\n\n**Describe the solution you'd like**\nI believe a generic PubSub provider would be quite similar to webhook/json based ones. A topic, a filter, and then messages would flow. Each message would have a object-payload that could be extracted and create an alert.\n\n**Describe alternatives you've considered**\nPreviously we used a python server based on flask that took Google Stackdriver and gateway'd it to Google chat, this is somewhat similar in nature. We would prefer to avoid X-Y translation layers as separate services since they create their own failure points and monitoring challenges.\n\n**Additional context**\nhttps://cloud.google.com/kubernetes-engine/versioning#auto-upgrades-end-of-support was the initial motivation for this, we "
+    }
+  ]
+}

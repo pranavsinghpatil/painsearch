@@ -1,0 +1,182 @@
+{
+  "query": "reconcile records",
+  "count": 16,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Ask HN: Any Chain Restaurant experience with Grubhub, DD, UberE Accounting?",
+      "url": "https://news.ycombinator.com/item?id=42147125",
+      "hn_id": "42147125",
+      "points": 1,
+      "comments": 0,
+      "author": "xtiansimon",
+      "created": "2024-11-15T14:14:57Z",
+      "text_snippet": "Any managers&#x2F;bookkeeper&#x2F;accountants with experience at a Chain Restaurants who have revenue from third-party services such as Grubhub, DoorDash, UberEats?<p>How do you reconcile their records with your records to make sure you&#x27;re getting paid?"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Graphiti – LLM-Powered Temporal Knowledge Graphs",
+      "url": "https://github.com/getzep/graphiti",
+      "hn_id": "41445445",
+      "points": 142,
+      "comments": 21,
+      "author": "roseway4",
+      "created": "2024-09-04T13:21:19Z",
+      "text_snippet": "Hey HN! We&#x27;re Paul, Preston, and Daniel from Zep. We&#x27;ve just open-sourced Graphiti, a Python library for building temporal Knowledge Graphs using LLMs.<p>Graphiti helps you create and query graphs that evolve over time. Knowledge Graphs have been explored extensively for information retrieval. What makes Graphiti unique is its ability to build a knowledge graph while handling changing relationships and maintaining historical context.<p>At Zep, we build a memory layer for LLM applications. Developers use Zep to recall relevant user information from past conversations without including the entire chat history in a prompt.  Accurate context is crucial for LLM applications. If an AI agent doesn&#x27;t remember that you&#x27;ve changed jobs or confuses the chronology of events, its responses can be jarring or irrelevant, or worse, inaccurate.<p>Before Graphiti, our approach to storing and retrieving user “memory” was, in effect, a specialized RAG pipeline. An LLM extracted “facts”"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Syncing data to your customer’s Google Sheets",
+      "url": "https://news.ycombinator.com/item?id=34548663",
+      "hn_id": "34548663",
+      "points": 103,
+      "comments": 33,
+      "author": "ctc24",
+      "created": "2023-01-27T17:15:36Z",
+      "text_snippet": "Hey HN! Charles here from Prequel (<a href=\"https:&#x2F;&#x2F;prequel.co\">https:&#x2F;&#x2F;prequel.co</a>). We just launched the ability to sync data from your own app&#x2F;db&#x2F;data warehouse to any of your customer’s Google Sheets, CSV, or Excel – and I wanted to share a bit more about how we built the Google Sheets integration. If you’re curious, see here for a quick GIF demo of our Google Sheets destination: <a href=\"https:&#x2F;&#x2F;storage.googleapis.com&#x2F;hn_asset&#x2F;Prequel_GoogleSheetsDemo.webp\" rel=\"nofollow\">https:&#x2F;&#x2F;storage.googleapis.com&#x2F;hn_asset&#x2F;Prequel_GoogleSheets...</a>.<p>Quick background on us: we make it easy to integrate with and sync data to data warehouses. Problem is, there are plenty of folks who want access to their data, but don’t have or don’t know how to use a data warehouse. For example, FP&amp;A teams, customer success teams, etc.<p>To get around that, we added some non-db destinations to Prequel: Google Sheets, CSV, and Excel"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Tansive – AI Agents that won't accidentally restart your prod database",
+      "url": "https://github.com/tansive/tansive",
+      "hn_id": "44499658",
+      "points": 3,
+      "comments": 0,
+      "author": "anand-tan",
+      "created": "2025-07-08T13:14:18Z",
+      "text_snippet": "While experimenting with LLM-driven agents to automate DevOps tasks, I realized how easily a bad prompt could mess up a cluster so badly you’d have to redeploy everything.<p>That&#x27;s when I started building Tansive, an open-source platform to help teams securely integrate AI agents into real workflows.<p>I&#x27;ve been impressed with what AI agents can do, especially in routine tasks where the human toil is real and probability of human error is higher.  But there are problems taking them to production.<p>For example:<p>- How do you prevent an agent from accidentally restarting production pods?<p>- How do you audit what it actually did when something goes wrong?<p>- When a workflow achieves an undesirable outcome, was it a bug in the tool, an incorrect prompt, a runaway agent, or a prompt injection attack?<p>- How do you verifiably make sure the agent didn&#x27;t access Alice&#x27;s records when responding to Bob&#x27;s health question?<p>- How do you integrate agents with existing "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Fullbleed – Rust HTML/CSS-to-PDF with Deterministic Output+Python CLI",
+      "url": "https://news.ycombinator.com/item?id=47055927",
+      "hn_id": "47055927",
+      "points": 2,
+      "comments": 0,
+      "author": "krflol",
+      "created": "2026-02-18T01:35:45Z",
+      "text_snippet": "Hi HN,<p>I&#x27;ve been building fullbleed for a while and just shipped v0.2.5. It&#x27;s a PDF generation engine written in Rust, distributed as a Python wheel.<p>The short version: HTML&#x2F;CSS in, PDF out. No headless browser. No cloud. No Chromium. Works fully offline.\n*Why fullbleed:<p>Full Bleed is a term that means printed on the edge, or end to end of a page. Thats what I wanted, a full end to end solution that didn&#x27;t require sys dependencies and unlike browsers, I could ACTUALLY do a print layout full bleed. \nSome other reasons:\n-Deterministic, fixed point as the base measurement (.000035mm~) so that things are where I want them to be\n-Composition and authoring, so I can put templates and the variable data in the same place without 200 lines of glue code\n-vendored assets- Tired of handling system fonts etc\n-HTML&#x2F;CSS layout engine so that I could take advantage of the most commonly used document description convention, but still abstract away from it.\n-Agent-first de"
+    },
+    {
+      "source": "hn",
+      "title": "A 3-Layer Cognitive Architecture with Append-Only Provenance and Ethics Gating",
+      "url": "https://news.ycombinator.com/item?id=46556624",
+      "hn_id": "46556624",
+      "points": 2,
+      "comments": 0,
+      "author": "myers092",
+      "created": "2026-01-09T17:46:56Z",
+      "text_snippet": "I spent the last 18 months building Primordia while working full-time managing a Waffle House. Most of the coding happened early in the morning before shifts. This is a solo-built system and it is now live.<p>The technical question I kept running into was simple to state, but difficult to execute:<p>What happens if you design an AI system as a long-running cognitive process, with memory, audit trails, and hard safety boundaries, instead of a stateless prompt&#x2F;response loop?<p>Most AI systems today optimize for short-term fluency. They work well in the moment, then reset. Primordia is an experiment in persistent cognition. Memory compounds over time. Reasoning can be inspected. Outputs are structurally constrained, which has tradeoffs, but avoids filtering after a response is already generated.<p>One clarification up front, because this always comes up. When I use the word “consciousness,” I mean it in a computational sense only: selective attention, integrated state, and metacognit"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: What is the mechanism of ensuring best policy in democracy?",
+      "url": "https://news.ycombinator.com/item?id=16000348",
+      "hn_id": "16000348",
+      "points": 1,
+      "comments": 1,
+      "author": "teher_shark",
+      "created": "2017-12-24T17:25:05Z",
+      "text_snippet": "I have this argument with my friends the other day, where we are debating on the methodology of creating affordable housing, providing adequate healthcare, solving income inequality.<p>Although our discussions are quite interesting, we end up realizing that some of our propose solution would never work in a democracy. And this is simply because people vote for their own interest, regardless if the interest is short term or long term.<p>Take the following two example<p>Net neutrality and increase tax to upgrade or maintain infrastructure.<p>Net neutrality has popular support and is suppose to have long term positive impact on society, while increasing tax to maintain infrastructure arguably will have no popular support even though it will provide long term positive impact on society.<p>So how do we reconcile policies that have long term positive impact on society yet are unpopluar?<p>The obvious answer is scientific method. If the policy maker would record, monitor and perform control e"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Did that MCP Server leak your database?",
+      "url": "https://github.com/tansive/tansive",
+      "hn_id": "44504537",
+      "points": 1,
+      "comments": 0,
+      "author": "anand-tan",
+      "created": "2025-07-08T22:17:34Z",
+      "text_snippet": "Tansive is an open-source platform to help teams securely integrate AI agents into real workflows.<p>I posted Tansive this morning on Show HN to no response. So here I shamelessly ride on recent story since that&#x27;s the reason I built Tansive.<p>I&#x27;ve been impressed with what AI agents can do, especially in routine tasks where the human toil is real and probability of human error is higher.  But there are problems taking them to production.<p>For example:<p>- How do you prevent an agent or tools from leaking your data?<p>- How do you audit what an agent actually did when something goes wrong?<p>- When a workflow achieves an undesirable outcome, was it a bug in the tool, an incorrect prompt, a runaway agent, or a prompt injection attack?<p>- How do you verifiably make sure the agent didn&#x27;t access Alice&#x27;s records when responding to Bob&#x27;s health question?<p>- How do you integrate agents with existing security policies and compliance requirements?<p>While DevOps scena"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: An interactive network graph of every Stanley Cup champion",
+      "url": "https://puckstory.com/",
+      "hn_id": "48991873",
+      "points": 1,
+      "comments": 0,
+      "author": "cansofgrease",
+      "created": "2026-07-21T13:12:38Z",
+      "text_snippet": "I built a network of all 1306 players and 110 rosters engraved on the Cup since 1915.<p>Surprisingly there&#x27;s no islands, every team has somehow had at least one player who&#x27;s won it again, there&#x27;s several close calls where the connection almost broke. A few times where a winner starts off as an island and then gets connected later on. Most recently St. Louis almost got marooned in 2019. Same thing happened before in &#x27;89, &#x27;80&#x27;, &#x27;74, etc.<p>You can six degrees of Kevin Bacon anybody; just search a name and click 6-degree icon next to it to choose another. It takes 9 handshakes to go from the first cup to the last.<p>You can move between eras or set a specific range, search and select any player, team, or connection, recolour by dynasty, switch between a network view and a year-by-year timeline, filter by multi-Cup winners or player positions.<p>Nodes are draggable, selections can be isolated and cut as subgraphs, reset, or resized. Copy pastable urls to "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Loom – A Markdown knowledge graph for better coding-agent execution",
+      "url": "https://github.com/z3z1ma/agent-loom",
+      "hn_id": "47936461",
+      "points": 1,
+      "comments": 0,
+      "author": "z3z1ma",
+      "created": "2026-04-28T16:14:28Z",
+      "text_snippet": "Hi HN, I built Loom because I wanted less agent tooling, not more.<p>My coding-agent workflow had outgrown PLAN.md. One file kept turning into the partial spec, research log, task queue, evidence log, review notes, handoff summary, and feature doc. And stratifying it typically ends up in disparate scratch files with no canonicity.<p>One solution is to add more surfaces: a spec tool, an issue tool, a memory system, a review prompt, a planning plugin, a workflow package. But that brings two problems: There is a lack of genuine cohesion, no emergent knowledge graph. And some tools try to do too much and take over your workflow.<p>I wanted one repo-native work record&#x2F;grammar with enough structure for the agent to organize itself.<p>That became Loom.<p>If you want to stop reading and try it, the repo has install paths for Claude Code, OpenCode, Codex, Cursor, and Gemini CLI as well as more detailed write up in the README:<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;z3z1ma&#x2F;agent-l"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Unfucked - version all changes (by any tool) - local-first/source avail",
+      "url": "https://www.unfudged.io/",
+      "hn_id": "47172238",
+      "points": 137,
+      "comments": 91,
+      "author": "cyrusradfar",
+      "created": "2026-02-26T21:30:19Z",
+      "text_snippet": "I built <i>unf</i> after I pasted a prompt into the wrong agent terminal and it overwrote hours of hand-edits across a handful of files. Git couldn&#x27;t help because I hadn&#x27;t finished&#x2F;committed my in progress work. I wanted something that recorded every save automatically so I could rewind to any point in time. I wanted to make it difficult for an agent to permanently screw anything up, even with an errant <i>rm -rf</i><p><i>unf</i> is a background daemon that watches directories you choose (via CLI) and snapshots every text file on save. It stores file contents in an object store, tracks metadata in SQLite, and gives you a CLI to query and restore any version. The install includes a UI, as well to explore the history through time.<p>The tool skips binaries and respects `.gitignore` if one exists. The interface borrows from git so it should feel familiar: <i>unf log</i>, <i>unf diff</i>, <i>unf restore</i>.<p>I say &quot;UN-EF&quot; vs U.N.F, but that&#x27;s for y&#x27;all "
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: last.fm for classical fans?",
+      "url": "https://news.ycombinator.com/item?id=660757",
+      "hn_id": "660757",
+      "points": 3,
+      "comments": 1,
+      "author": "ms",
+      "created": "2009-06-16T19:40:32Z",
+      "text_snippet": "As a fan of both last.fm and classical music I've found that the two really don't mix well. There can be far too much relevant metadata about a given classical track (performer(s), composer, work, movement, conductor, recording date, etc.) to fit into last.fm's Artist/Album/Title system and the various attempts to reconcile the two leave a lot to be desired. Does anyone know of a last.fm type service/community that is geared towards classical music? I'm mainly interested in being able to scrobble my tracks, browse my listening history and use that to discover other things I might be interested in.<p>If such a site existed, would you make use of it? What features would you like to see?"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: VisiGrid CLI – Git-diff for financial reconciliation",
+      "url": "https://visigrid.app",
+      "hn_id": "46873757",
+      "points": 1,
+      "comments": 1,
+      "author": "rdoneill",
+      "created": "2026-02-03T17:09:53Z",
+      "text_snippet": "Most financial reconciliation fails silently.<p>A stale Excel filter. A CSV export with reordered rows. A tolerance mismatch that looks “close enough” until it isn’t. By the time a number looks wrong, the mistake is already baked into downstream reports.<p>VisiGrid CLI is a local-first tool that treats reconciliation like Git diff: deterministic, auditable, and safe to run in CI.<p>The recurring failure mode in financial models isn’t bad math — it’s undetected drift. Spreadsheets rarely fail loudly. This tool is designed to make drift explicit.<p>The core primitive visigrid-cli diff answers one question reliably:<p>What matches, what differs, and what’s missing — with numeric tolerance handled explicitly.<p>Think Git diff, but for datasets:<p>- Schema-aware row matching (--key)\n- Tolerance-aware numeric comparison\n- Deterministic output (no hidden state or background recalculation)\n- CI-grade exit codes<p><pre><code>  * 0 = reconciled\n  * 1 = material drift detected\n</code></pre>\nExamp"
+    },
+    {
+      "source": "hn",
+      "title": "I killed a worker mid-payment to test \"exactly-once\" execution",
+      "url": "https://news.ycombinator.com/item?id=46268620",
+      "hn_id": "46268620",
+      "points": 1,
+      "comments": 0,
+      "author": "yousef06",
+      "created": "2025-12-15T00:07:05Z",
+      "text_snippet": "https:&#x2F;&#x2F;github.com&#x2F;abokhalill&#x2F;pulse\nDistributed systems often claim “exactly-once” execution. In practice, this is usually implemented as at-least-once delivery + retries + idempotency keys.<p>This works for deterministic code. It breaks for irreversible side effects (AI agents, LLM calls, physical infrastructure).<p>I wanted to see what actually happens if a worker crashes after a payment is made but before it acknowledges completion. So I built a minimal execution kernel with one rule: User code is never replayed by the infrastructure.<p>The kernel uses:<p>Leases (Fencing Tokens &#x2F; Epochs)<p>A reconciler that recovers crashed tasks<p>Strict state transitions (No silent retries)<p>I ran this experiment:<p>A worker claims a task to process a $99.99 payment<p>The worker records the payment (irreversible side effect)<p>I kill -9 the worker before it sends completion to the DB<p>The lease expires, the reconciler detects the zombie task<p>A new worker claims the tas"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Mighty – let AI agents use private data safely",
+      "url": "https://www.mightynetwork.ai/",
+      "hn_id": "44377516",
+      "points": 1,
+      "comments": 0,
+      "author": "jodoking",
+      "created": "2025-06-25T14:06:33Z",
+      "text_snippet": "Hey HN — I’m Johnny, co-founder of Mighty (<a href=\"https:&#x2F;&#x2F;mightynetwork.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;mightynetwork.ai</a>).<p>The problem\nAI agents can think, but the moment they need your data they hit a wall — security teams won’t let PII, payroll, or customer records leak out. OAuth exists for humans, not code running on its own.<p>Our take (super-hero style)\n • Headquarters — an end-to-end–encrypted data vault (client-side 256-bit) where you park anything private.\n • Sidekick — a tiny Python SDK that handles key exchange, token refresh, and per-resource checks. Drop it in like a trusty side-kick and your agent suddenly has clearance.\n • Confidential Compute — the “secret lair” where workloads run so we never see your plaintext.<p>Together they give you a 1-click “Sign in with Google”-style flow for autonomous code. Today we support OAuth 2.0; SAML &amp; full SSO are on the road-map.<p>What you can build right now\n • A finance bot that reconciles bank transaction"
+    },
+    {
+      "source": "hn",
+      "title": "Tell HN: We need an accounting system for cognitive debt",
+      "url": "https://news.ycombinator.com/item?id=48760460",
+      "hn_id": "48760460",
+      "points": 2,
+      "comments": 0,
+      "author": "mikaelaast",
+      "created": "2026-07-02T12:30:56Z",
+      "text_snippet": "The term “cognitive debt” is gaining ground [1]. We can now produce code faster than we can understand it. The bottleneck is real, and so is the feeling of being choked.\nThe situation is not new. We have always had code no one quite dares to touch. Agentic coding makes it much worse.\nYou probably know the feeling. Everything can look fine. The code compiles. The tests are green. The pull request looks reasonable. The diff gives off a vague “probably fine” vibe. But does anyone actually understand what was added?\nCongratulations: you have taken on cognitive debt.<p>Programming is about building knowledge. That used to be simpler. Until recently, the code itself was proof of understanding. That era is over.\nNow understanding has to be traced to something far more elusive: human mental models. Those are harder to track.\nI have previously described a kind of “mind palace”: an abstract model of a system where I can wander around, open and close doors, knock down a wall, add a new wing, and "
+    }
+  ]
+}

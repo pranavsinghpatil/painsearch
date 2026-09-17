@@ -1,0 +1,206 @@
+{
+  "query": "manually reviewing",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "[Feature Request] Extension Permissions, Security Sandboxing & Update Management Proposal",
+      "url": "https://github.com/microsoft/vscode/issues/52116",
+      "repo": "microsoft/vscode",
+      "reactions": 399,
+      "comments": 86,
+      "created": "2018-06-17T02:11:29Z",
+      "body_snippet": "I believe that Visual Studio Code should support some kind of \"Extension Permission Management\", complete with prompts, warnings, opt-in, and opt-out, similar to what has been supported for some time now with Chrome, Firefox, and other browsers. \r\n\r\n# Reference Screenshot\r\n\r\nI've provided, for reference, some screenshots showing Extension Permission and update prompts and management UIs in the below screenshot, as well as others torwards the end of this proposal.\r\n\r\n#### Chrome prompting to approve additional permissions when updating an extension:\r\n\r\n![image](https://user-images.githubusercontent.com/4053734/41503578-cfbf9ee4-718c-11e8-82c8-8a97fb8b61a7.png)\r\n\r\n_(See additional screenshots at the very bottom.)_\r\n\r\n# Scope and Benefits\r\n\r\nI have proposed, in detail here, how Extension Permissions management could function and be exposed to users, including descriptions of dialogs for prompting users to allow/deny permissions on extension install vs. updating, changes to Extensions Sidebar and Extension Details Marketplace pages, grouping/managing extensions by Category/Collection in VSCode, specific warnings and when to show them, types of permissions could define (and whether may "
+    },
+    {
+      "source": "github-issues",
+      "title": "FormData methods should take a Generic",
+      "url": "https://github.com/microsoft/TypeScript/issues/43797",
+      "repo": "microsoft/TypeScript",
+      "reactions": 197,
+      "comments": 35,
+      "created": "2021-04-23T20:02:01Z",
+      "body_snippet": "# Suggestion\r\n\r\n<!--\r\n  Please fill in each section completely. Thank you!\r\n-->\r\n\r\n## 🔍 Search Terms\r\n\r\n\r\n<!--\r\n  💡 Did you know? TypeScript has over 2,000 open suggestions!\r\n  🔎 Please search thoroughly before logging new feature requests as most common ideas already have a proposal in progress.\r\n  The \"Common Feature Requests\" section of the FAQ lists many popular requests: https://github.com/Microsoft/TypeScript/wiki/FAQ#common-feature-requests\r\n\r\n  Replace the text below:\r\n-->\r\n\r\nForm Data, .entries()\r\n\r\n## ✅ Viability Checklist\r\n\r\n<!--\r\n   Suggestions that don't meet all these criteria are very, very unlikely to be accepted.\r\n   We always recommend reviewing the TypeScript design goals before investing time writing\r\n   a proposal for ideas outside the scope of the project.\r\n-->\r\nMy suggestion meets these guidelines:\r\n\r\n* [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code\r\n* [x] This wouldn't change the runtime behavior of existing JavaScript code\r\n* [x] This could be implemented without emitting different JS based on the types of the expressions\r\n* [x] This isn't a runtime feature (e.g. library functionality, non-ECMAScript syntax with JavaScript out"
+    },
+    {
+      "source": "github-issues",
+      "title": "Create a built-in editor tool for organizing and mass/selectively compiling GDNative projects and addons",
+      "url": "https://github.com/godotengine/godot-proposals/issues/119",
+      "repo": "godotengine/godot-proposals",
+      "reactions": 156,
+      "comments": 31,
+      "created": "2019-10-02T21:08:42Z",
+      "body_snippet": "**Describe the project you are working on:**\r\nI have attempted in the past to build addons written in NativeScript C++, but the process is cumbersome and concerns me at scale.\r\n\r\n**Describe the problem or limitation you are having in your project:**\r\n\r\nGodot's NativeScript is very much a second-class citizen compared to GDScript, C#, and VisualScript. It requires a lot of technical know-how to set it up. Work that is done automatically for other languages is difficult or impossible to do for NativeScript.\r\n\r\n1. It does not auto-compile before scene launch.\r\n1. Unlike Mono, it has no GUI-based means of...\r\n    1. setting up a project space.\r\n    1. manually triggering a build.\r\n    1. reviewing the build output/errors or project information.\r\n1. The \"Create a script\" process is often a multi-step process. For example, with C++:\r\n    1. Create .h file.\r\n    1. Create .cpp file.\r\n    1. Update one's `init.cpp` file so that `godot_nativescript_init(...)` properly registers the new class name.\r\n        - Must also specify whether it should be a tool script or not.\r\n    1. Create a new `.gdns` resource that points to the correct class name.\r\n        - Must also specify the script class n"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add PR-style review comments in Git Diff UI that feed into the active agent thread",
+      "url": "https://github.com/zed-industries/zed/issues/59157",
+      "repo": "zed-industries/zed",
+      "reactions": 119,
+      "comments": 9,
+      "created": "2026-06-11T21:30:15Z",
+      "body_snippet": "\n### Discussed in https://github.com/zed-industries/zed/discussions/54663\n\n<div type='discussions-op-text'>\n\n<sup>Originally posted by **GoodnessDev** April 23, 2026</sup>\n# What are you proposing?\n\nI am proposing PR-style review comments directly in Zed's Git Diff UI, where human comments on a file, hunk, or line get fed into the currently active agent thread as structured feedback.\n\nThis is not the same as \"attach the current diff to the thread\" or \"ask AI to review the diff\".\nThe key workflow is the other direction:\n\n1. I review the local diff in Zed's Git UI.\n2. I leave one or more targeted comments, like I would on a GitHub PR.\n3. Those comments are sent into the active agent session/thread.\n4. The agent can respond to the comments and make follow-up edits.\n\nExample:\n- I open a Git diff in Zed.\n- On a hunk, I leave a comment: `This rename breaks the public API. Keep the old name and add an overload instead.`\n- That comment becomes a new message or structured feedback event in the active agent thread, with the relevant file/hunk context attached.\n- The agent then addresses that exact review feedback.\n\n# Why does this matter?\n\nRight now, Zed has good ingredients, but the feedbac"
+    },
+    {
+      "source": "github-issues",
+      "title": "Support for Claude Code Agent Teams (TeammateTool, SendMessage, TaskList)",
+      "url": "https://github.com/obra/superpowers/issues/429",
+      "repo": "obra/superpowers",
+      "reactions": 115,
+      "comments": 22,
+      "created": "2026-02-05T20:33:23Z",
+      "body_snippet": "## Is your feature request related to a problem? Please describe.\n\nClaude Code 2.1.32+ introduced experimental **Agent Teams** — a feature that allows coordinating multiple Claude Code instances as a team with a lead, teammates, shared task lists, and inter-agent messaging. See the [official documentation](https://code.claude.com/docs/en/agent-teams).\n\nSuperpowers currently has skills for subagent-driven development (`subagent-driven-development`, `dispatching-parallel-agents`) but no awareness of or support for the newer Agent Teams primitives. When using superpowers with agent teams, several issues arise:\n\n1. **Skills don't recognize team context.** Skills like `executing-plans` and `subagent-driven-development` only know about the `Task` tool (subagents), not `Teammate`, `SendMessage`, or the team-aware `TaskCreate`/`TaskUpdate`/`TaskList` tools.\n2. **No skill for orchestrating agent teams.** There's no skill that guides the team lead on how to break down work, spawn teammates, assign tasks, handle plan approvals, and coordinate shutdown — the way `dispatching-parallel-agents` does for subagents.\n3. **Existing parallel-work skills may conflict.** `dispatching-parallel-agents` sp"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] VS Code Extension: Option to always show file diffs in VS Code editor panel instead of inline chat",
+      "url": "https://github.com/anthropics/claude-code/issues/29388",
+      "repo": "anthropics/claude-code",
+      "reactions": 68,
+      "comments": 3,
+      "created": "2026-02-27T18:27:33Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\nThis is specific to the VS Code extension experience.\n\nWhen reviewing code changes Claude Code makes in the VS Code extension, diffs are shown in two different places depending on which internal tool was used. Small edits (Edit tool) appear inline in the chat panel, while full file writes (Write tool) open a proper side-by-side diff in the main editor panel.\n\nThis inconsistency makes it harder to review changes. The inline chat diffs lack syntax highlighting, full file context, and the familiar navigation I get from VS Code's native diff viewer. I find myself needing to manually open the file and check git diff to properly review small edits, which slows down my workflow.\n\nI'd like a setting to always open diffs in the main VS Code editor panel as a side-by-side diff view, regardless of which tool was used internally.\n\n### Proposed Solution\n\nAdd a VS Code setting (e.g. claude.diffDisplay with options \"inl"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] VSCode extension auto-includes opened files as context — should be opt-in by default",
+      "url": "https://github.com/anthropics/claude-code/issues/40869",
+      "repo": "anthropics/claude-code",
+      "reactions": 34,
+      "comments": 9,
+      "created": "2026-03-30T08:30:53Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\nThe VSCode extension automatically includes every file I open or switch to as conversation context for Claude. As a developer, I constantly open, browse, and switch between 20+ files for various reasons — reviewing code, checking references, reading logs, comparing implementations. The vast majority of these have nothing to do with my current Claude conversation.\n\nThis auto-inclusion pollutes the conversation context with irrelevant files, which misleads Claude's responses and wastes context window tokens. The current workaround is clicking the eye icon to hide each unwanted file, but this resets per message — making it impractical.\n\nThe fundamental issue: VSCode's primary purpose is editing and managing files. Claude is a plugin, not the host. A plugin should not assume all host-level file operations are intended as input for itself.\n\n### Proposed Solution\n\n- **Default behavior: do NOT auto-include opene"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Suggestion] a \"const mode\" where `as const` is by default for literals",
+      "url": "https://github.com/microsoft/TypeScript/issues/51930",
+      "repo": "microsoft/TypeScript",
+      "reactions": 34,
+      "comments": 6,
+      "created": "2022-12-17T02:17:03Z",
+      "body_snippet": "# Suggestion\r\n\r\n<!--\r\n  Please fill in each section completely. Thank you!\r\n-->\r\n\r\n## 🔍 Search Terms\r\n\r\n<!--\r\n  💡 Did you know? TypeScript has over 2,000 open suggestions!\r\n  🔎 Please search thoroughly before logging new feature requests as most common ideas already have a proposal in progress.\r\n  The \"Common Feature Requests\" section of the FAQ lists many popular requests: https://github.com/Microsoft/TypeScript/wiki/FAQ#common-feature-requests\r\n\r\n  Replace the text below:\r\n-->\r\n\r\nconst by default, const mode, use const, as const\r\n\r\n## ✅ Viability Checklist\r\n\r\n<!--\r\n   Suggestions that don't meet all these criteria are very, very unlikely to be accepted.\r\n   We always recommend reviewing the TypeScript design goals before investing time writing\r\n   a proposal for ideas outside the scope of the project.\r\n-->\r\nMy suggestion meets these guidelines:\r\n\r\n* [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code\r\n* [x] This wouldn't change the runtime behavior of existing JavaScript code\r\n* [x] This could be implemented without emitting different JS based on the types of the expressions\r\n* [x] This isn't a runtime feature (e.g. library functionality, non-ECMAScript "
+    },
+    {
+      "source": "github-issues",
+      "title": "DP #1: Bounty0x.io - Bounty Hunting District ",
+      "url": "https://github.com/district0x/district-proposals/issues/1",
+      "repo": "district0x/district-proposals",
+      "reactions": 31,
+      "comments": 17,
+      "created": "2017-07-01T16:16:41Z",
+      "body_snippet": "![logo-big](https://user-images.githubusercontent.com/1419283/33243332-13caba8a-d2b2-11e7-91f3-ea670c3a071f.png)\r\n\r\n![header-social](https://user-images.githubusercontent.com/1419283/33243823-f6d5daa0-d2ba-11e7-8063-90503c482b56.png)\r\n\r\n\r\n## update 11/26/17\r\n\r\nWe've reached our $250k pre-sale cap. \r\nMain contribution period started on December 15. \r\nWe have screenshots from our latest alpha.bounty0x.io redesign. For more details visit our [blog](https://blog.bounty0x.io/community-platform-redesign-initiative-367f20fd8766). \r\n\r\n![bounty platform v1b r1](https://user-images.githubusercontent.com/1419283/33243790-91732d0c-d2ba-11e7-8961-8d74e6764c26.png)\r\n\r\n\r\n\r\n## update 10/30/17\r\n\r\nWe launched our main website bounty0x.io\r\nalpha platform improvements \r\nhttps://blog.bounty0x.io/october-29-weekly-development-update-7bfa49e50fad\r\n\r\n## update 10/18/17\r\n\r\nWe've launched our teaser site, bounty0x.io\r\n\r\n## update 10/15/17\r\nWe've launched our alpha platform at [alpha.bounty0x.io](alpha.bounty0x.io) \r\nBounty hunters can submit completed  bounties and receive payments  and startups can post bounties \r\nLearn more by visiting our blog at \r\n[Blog.Bounty0x.io](Blog.Bounty0x.io)\r\nUpcoming dates\r\nDe"
+    },
+    {
+      "source": "github-issues",
+      "title": "Git Reward Hacking in SWEBench Pro OSS",
+      "url": "https://github.com/scaleapi/SWE-bench_Pro-os/issues/93",
+      "repo": "scaleapi/SWE-bench_Pro-os",
+      "reactions": 30,
+      "comments": 1,
+      "created": "2026-04-29T01:26:28Z",
+      "body_snippet": "# Summary\n\nHello! I'm on the evals team at Poolside AI and we've been heavily using SWE-Bench Pro internally for benchmarking our model development, lately we have been deeply reviewing model performance on the benchmark. While reviewing recent model runs on SWE-Bench Pro, I found a reward hacking exploit in the SWE-Bench Pro Open Source dataset via future git history mining. \n\nThis exploit is very similar in shape to the problem reported in SWE-Bench Verified last year: https://github.com/SWE-bench/SWE-bench/issues/465. \n\nSpecifically, the public OSS Docker images on DockerHub (and any subsequent builds from the Dockerfiles in the SWE-Bench Pro repo):\n1. Do not sufficiently remove future commit history on the main branch which can leak the solution\n2. Feature branches, such as `origin/dev`, contain future commits and are discoverable by agents with sufficient exploration. \n   - Looks like this concern was raised in #7 but not clearly proven to be exploited (example below)\n3. Git tags are also available that leak the same content (although I didn't see this come up in review, I was able to manually confirm it in images)\n\nThis means all a model really needs to do is `git show <fix>`"
+    },
+    {
+      "source": "github-issues",
+      "title": "Chinese-to-English (Help Wanted)",
+      "url": "https://github.com/krahets/hello-algo/issues/914",
+      "repo": "krahets/hello-algo",
+      "reactions": 26,
+      "comments": 31,
+      "created": "2023-11-02T21:07:47Z",
+      "body_snippet": "We are working on translating \"Hello Algo\" from Chinese to English with the following approach:\r\n\r\n1. **AI translation**: Carry out an initial pass of translations using the machine learning translator.\r\n2. **Human optimization**: Manually refine the machine-generated outputs to ensure authenticity and accuracy.\r\n3. **Pull request review**: The optimized translation will be doubly checked by the reviewers through GitHub pull request workflow.\r\n4. Repeat steps `2.` and `3.` for further improvements.\r\n\r\n<img width=\"600\" alt=\"image\" src=\"https://github.com/user-attachments/assets/201930ef-723e-4179-b670-e5a084a8211e\">\r\n\r\n## Join us\r\n\r\nWe're seeking contributors who meet the following criteria.\r\n\r\n- **Technical background**: Strong foundation in computer science, particularly in data structures and algorithms.\r\n- **Language skills**: Native proficiency in Chinese with professional-level English, or native English.\r\n- **Available time**: Dedicated to contributing to open-source projects with a willingness to engage in long-term translation efforts.\r\n\r\nThat is, our contributors are computer scientists, engineers, and students from different linguistic backgrounds, and their objectives ha"
+    },
+    {
+      "source": "github-issues",
+      "title": "Improving the developer experience with regard to default string globalization",
+      "url": "https://github.com/dotnet/runtime/issues/43956",
+      "repo": "dotnet/runtime",
+      "reactions": 28,
+      "comments": 34,
+      "created": "2020-10-28T17:46:18Z",
+      "body_snippet": "## Improving the developer experience with regard to default string globalization\r\n\r\n> Note: This is a companion document to https://github.com/dotnet/docs/issues/21249, which discusses the behaviors as they currently exist. It's assumed the reader is generally familiar with that document.\r\n\r\n### Summary\r\n\r\nSince .NET 5 standardized on using ICU instead of NLS for globalization across all supported platforms (see [breaking change notice](https://docs.microsoft.com/dotnet/core/compatibility/globalization#globalization-apis-use-icu-libraries-on-windows)), we've received a few reports of `string` and globalization APIs not behaving as expected.\r\n\r\nThese reports generally fall into one of two buckets:\r\n\r\n1. The developer wasn't intending to make their code globalization-aware, and the switch to ICU exposed an unintentional dependency in the developer's code which led to an unwanted behavioral change. See: https://github.com/dotnet/runtime/issues/43736, https://github.com/dotnet/runtime/issues/42234, https://github.com/dotnet/runtime/issues/40922, https://github.com/dotnet/runtime/issues/40258, https://github.com/dotnet/runtime/issues/36177, https://github.com/dotnet/runtime/issues/3399"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add tag for versions",
+      "url": "https://github.com/bmeck/node-cookiejar/issues/40",
+      "repo": "bmeck/node-cookiejar",
+      "reactions": 26,
+      "comments": 1,
+      "created": "2023-01-24T14:41:09Z",
+      "body_snippet": "It would be great if releases would not just bump the version in `package.json`, but also have an associated tag in git for them. This would make reviewing changes a lot nicer, and improve also the information provided by automated systems such as dependabot.\r\n\r\nIt seems that there are some tags already, but not for all versions. Maybe the release procedure could include making the tag, possibly by using `npm version (patch|minor|major)` instead of manually touching `package.json`?"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] Desktop app: setting to auto-expand Edit/Write diffs by default",
+      "url": "https://github.com/anthropics/claude-code/issues/61280",
+      "repo": "anthropics/claude-code",
+      "reactions": 25,
+      "comments": 10,
+      "created": "2026-05-21T20:44:32Z",
+      "body_snippet": "### Feature Request\n\nIn the Claude Code desktop app, Edit/Write tool calls render with the diff collapsed by default. Reviewing a conversation that contains multiple edits requires clicking each diff card individually to see what changed.\n\nAdd a setting (e.g. `desktop.diffs.expandedByDefault: true` in `~/.claude/settings.json`, or a toggle in the desktop app preferences UI) that renders every Edit/Write diff in the expanded state from the start.\n\n### Use Case\n\nWhen reviewing a session — either live as Claude works, or scrolling back through a completed conversation — I want to see what was changed without clicking. The collapsed-by-default behavior optimizes for vertical density at the cost of every-diff being a manual interaction. For users who care more about reviewing changes than skimming a long transcript, the inverse default is more useful.\n\nThis is especially noticeable in sessions with many small edits (refactors, fixups, codegen passes) where the cost of expanding each one adds up quickly.\n\n### Suggested Behavior\n\n- A user preference (settings.json key and/or preferences UI toggle) that defaults all Edit/Write diff cards to expanded state on render.\n- Should apply to both "
+    },
+    {
+      "source": "github-issues",
+      "title": "Suggestion: Provide a way to force simplification/normalization of conditional and mapped types",
+      "url": "https://github.com/microsoft/TypeScript/issues/47980",
+      "repo": "microsoft/TypeScript",
+      "reactions": 25,
+      "comments": 8,
+      "created": "2022-02-20T21:18:21Z",
+      "body_snippet": "# Suggestion\r\n\r\n<!--\r\n  Please fill in each section completely. Thank you!\r\n-->\r\n\r\n## 🔍 Search Terms\r\nsimplification\r\nnormalization\r\nnormal form\r\neager evaluation\r\n\r\nThe closest I found to this was https://github.com/microsoft/TypeScript/issues/20267\r\n<!--\r\n  💡 Did you know? TypeScript has over 2,000 open suggestions!\r\n  🔎 Please search thoroughly before logging new feature requests as most common ideas already have a proposal in progress.\r\n  The \"Common Feature Requests\" section of the FAQ lists many popular requests: https://github.com/Microsoft/TypeScript/wiki/FAQ#common-feature-requests\r\n\r\n  Replace the text below:\r\n-->\r\nEager\r\nnormalize\r\nnormalization\r\nsimplify\r\n\r\n## ✅ Viability Checklist\r\n\r\n<!--\r\n   Suggestions that don't meet all these criteria are very, very unlikely to be accepted.\r\n   We always recommend reviewing the TypeScript design goals before investing time writing\r\n   a proposal for ideas outside the scope of the project.\r\n-->\r\nMy suggestion meets these guidelines:\r\n\r\n* [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code\r\n* [x] This wouldn't change the runtime behavior of existing JavaScript code\r\n* [x] This could be implemented without em"
+    },
+    {
+      "source": "github-issues",
+      "title": "Support import of jsonc file to infer type",
+      "url": "https://github.com/microsoft/TypeScript/issues/54137",
+      "repo": "microsoft/TypeScript",
+      "reactions": 23,
+      "comments": 5,
+      "created": "2023-05-04T19:44:46Z",
+      "body_snippet": "# Suggestion\r\n\r\n<!--\r\n  Please fill in each section completely. Thank you!\r\n-->\r\n\r\n## 🔍 Search Terms\r\ntypescript\r\njsonc\r\n\r\n<!--\r\n  💡 Did you know? TypeScript has over 2,000 open suggestions!\r\n  🔎 Please search thoroughly before logging new feature requests as most common ideas already have a proposal in progress.\r\n  The \"Common Feature Requests\" section of the FAQ lists many popular requests: https://github.com/Microsoft/TypeScript/wiki/FAQ#common-feature-requests\r\n\r\n  Replace the text below:\r\n-->\r\n\r\njson jsonc\r\n\r\n## ✅ Viability Checklist\r\n\r\n<!--\r\n   Suggestions that don't meet all these criteria are very, very unlikely to be accepted.\r\n   We always recommend reviewing the TypeScript design goals before investing time writing\r\n   a proposal for ideas outside the scope of the project.\r\n-->\r\nMy suggestion meets these guidelines:\r\n\r\n* [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code\r\n* [x] This wouldn't change the runtime behavior of existing JavaScript code\r\n* [x] This could be implemented without emitting different JS based on the types of the expressions\r\n* [x] This isn't a runtime feature (e.g. library functionality, non-ECMAScript syntax with JavaScri"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add an always-expand-all inspection mode in the desktop app thread UI",
+      "url": "https://github.com/openai/codex/issues/16415",
+      "repo": "openai/codex",
+      "reactions": 22,
+      "comments": 5,
+      "created": "2026-04-01T08:41:05Z",
+      "body_snippet": "## Problem\n\nIn the desktop app, even with **Thread detail = Steps with code output**, a lot of the useful inspection surface is still collapsed by default.\n\nThat makes it hard to supervise the agent live and steer it while it works, because I still have to keep manually expanding:\n\n- edit/code-change events\n- diffs/snippets tied to edits\n- tool result details\n- some step details that matter for auditing what changed\n\nThe current setting helps with command visibility, but it does not provide a true **fully expanded inspection mode**.\n\nThere is already a useful diff sidebar for inspecting edits, but it is not the same as a fully expanded working transcript.\n\nThe sidebar is good for reviewing resulting changes. What is still missing is a mode where the main thread itself stays expanded, so I can supervise the agent live in one place while it works, including step details, tool output, and edit context, without needing to bounce between collapsed thread items and the sidebar.\n\n## What I want\n\nPlease add a desktop-app setting such as:\n\n- `Always expand all thread details`\n- or `Verbose / inspection mode`\n\nWhen enabled, keep the relevant thread items expanded by default, especially:\n\n- c"
+    },
+    {
+      "source": "github-issues",
+      "title": "☂️ `Chip` does not conform to M3 specs",
+      "url": "https://github.com/flutter/flutter/issues/115364",
+      "repo": "flutter/flutter",
+      "reactions": 21,
+      "comments": 12,
+      "created": "2022-11-15T14:28:11Z",
+      "body_snippet": "# ☂️ Material 3 Design Specification Issues with Chips\n\nWhile using and reviewing Material 3 Chips I noticed the following gaps compared to the current version of their Material 3 specification https://m3.material.io/components/chips/overview.\n\n**Presented issues were produced with Channel master 3.6.0-3.0.pre.27.**\n\n\n## 1) No Ink Splash on Actionable Chips using Color\n\n- [x] https://github.com/flutter/flutter/issues/115824\n\n## 2) Missing State Elevations\n\n- [x] https://github.com/flutter/flutter/issues/115825\n\n\n## 3) Wrong Selected and Disabled InputChip Color\n\n- [x] https://github.com/flutter/flutter/issues/115826\n\n\n## 4) Cannot Make M3 Themed Selected and Disabled ChoiceChip, FilterChip and InputChip\n\n- [x] https://github.com/flutter/flutter/issues/115827\n\n## Other Known Issues Related to Chips\n\n- [x] https://github.com/flutter/flutter/issues/73215\n- [x] https://github.com/flutter/flutter/issues/111828\n- [x] https://github.com/flutter/flutter/issues/101325\n- [ ] https://github.com/flutter/flutter/issues/94098\n\n## Issue Sample Code and Demo App for issues 1 to 4 above\n\nThe issues can be seen in the supplied reproduction sample application.\n\nThe code is also available in a Gist [h"
+    },
+    {
+      "source": "github-issues",
+      "title": "Built-In Admin Panel for Serverpod A Huge Time Saver for Every Serious App",
+      "url": "https://github.com/serverpod/serverpod/issues/4228",
+      "repo": "serverpod/serverpod",
+      "reactions": 19,
+      "comments": 0,
+      "created": "2025-11-15T14:14:24Z",
+      "body_snippet": "### Problem to Solve\n\n1. Problem Description\n\nEvery serious application eventually requires an admin panel  a dedicated interface for:\n\n- managing database models\n- performing CRUD operations\n- reviewing and editing data\n- monitoring what’s happening behind the scenes\n- handling user or permission management\n\nToday, Serverpod developers often need to build a separate admin application alongside the main app. This leads to:\n\n- duplicated work\n- slower project setup\n- increased maintenance\n- reinventing the same CRUD dashboards repeatedly\n\nFrameworks like Django, Rails, and Laravel solved this early by providing a built-in admin panel. This feature became a cornerstone of their success because it saved developers countless hours.\n\nServerpod currently lacks this productivity booster  making it harder for teams to move quickly or adopt Serverpod for larger projects.****\n\n### Proposal\n\n2. Proposed Solution\n\nIntroduce a Serverpod Admin Panel consisting of two modular packages:\n\n**A. serverpod_admin_server**\n\n- Detects and introspects Serverpod models\n- Provides automatic CRUD endpoints\n- Handles relationships\n- Exposes admin-specific routes\n- Allows developers to register which models sh"
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature request: Git blame / line annotation in the editor",
+      "url": "https://github.com/stablyai/orca/issues/9948",
+      "repo": "stablyai/orca",
+      "reactions": 16,
+      "comments": 12,
+      "created": "2026-07-22T14:22:54Z",
+      "body_snippet": "## Summary\n\nIt would be great to have **git blame** support directly in Orca's built-in file editor — showing, for each line, the author, commit hash, and date of the last change.\n\n## Motivation\n\nWhen reviewing AI-generated code or navigating an existing codebase, it's often useful to know:\n- Who last touched a given line (or which agent/commit introduced it)\n- When the change was made\n- Which commit it belongs to (with the ability to jump to that commit)\n\nToday, the only workaround is to run `git blame <file>` manually in the integrated terminal, which breaks the flow of reviewing diffs or editing code inside Orca.\n\n## Proposed behaviour\n\n- **Inline gutter annotations**: show a compact blame tooltip or inline text (author + date + short commit hash) next to each line, similar to GitLens in VS Code or the \"Annotate\" view in JetBrains IDEs.\n- **On-demand**: triggered by a keyboard shortcut or right-click context menu (e.g. \"Show git blame\"), so it doesn't clutter the editor by default.\n- **Click to inspect**: clicking an annotation would open the full commit details (message, diff, author).\n\n## Additional context\n\nThis would complement the existing **Annotate AI Diff** feature nicel"
+    }
+  ]
+}

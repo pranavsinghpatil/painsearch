@@ -1,0 +1,206 @@
+{
+  "query": "missed security alerts",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature Request: Notifications for Device Online/Offline Status",
+      "url": "https://github.com/tailscale/tailscale/issues/14737",
+      "repo": "tailscale/tailscale",
+      "reactions": 28,
+      "comments": 10,
+      "created": "2025-01-22T19:26:49Z",
+      "body_snippet": "### What are you trying to do?\n\nI would like to request a feature that sends notifications when a device in my Tailnet goes online or offline. This functionality would be highly beneficial for monitoring critical devices and ensuring smooth operations.\n\nIt would be great if these notifications could:\n\nWork seamlessly on both the Tailscale mobile app and desktop client.\nInclude configurable options (e.g., choose which devices trigger notifications or customize alert settings).\nThis feature would greatly enhance visibility and usability for Tailnet users, especially in environments where device connectivity is crucial. It would also make me appreciate and enjoy the service even more, knowing I have better control and monitoring capabilities.\n\nThank you for considering this request!\n\n### How should we solve this?\n\nTo implement this feature, Tailscale could introduce a notification system that integrates seamlessly into both the mobile app and desktop client. The system could monitor device connectivity on the Tailnet and send real-time notifications when a device goes online or offline.\n\nKey aspects of the solution could include:\n\nCross-Platform Notifications: Push notifications for b"
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal: Add Attack Type Classification to Malware Advisories",
+      "url": "https://github.com/github/advisory-database/issues/6107",
+      "repo": "github/advisory-database",
+      "reactions": 7,
+      "comments": 1,
+      "created": "2025-09-10T01:02:48Z",
+      "body_snippet": "# Proposal: Add Attack Type Classification to Malware Advisories\n\n## Problem Statement\n\nThe current malware advisory system in the GitHub Advisory Database creates a significant security coverage gap. **Dependabot suppresses all malware advisories** due to high false positive rates from substitution attacks, but this blanket suppression also prevents alerts for critical threats like legitimate maintainer account compromises.\n\n### Recent Critical Incidents Missed by Dependabot\n\n**September 8-9, 2025**: The qix account compromise affected 18+ popular packages (chalk, debug, ansi-styles) with 2+ billion weekly downloads. Malware was designed to steal cryptocurrency by intercepting wallet transactions.\n- Advisory: GHSA-8mgj-vmr8-frr6 (debug), GHSA-ch7m-m9rf-8gvv (color-convert), etc.\n- **Result**: Dependabot users received NO alerts despite critical compromise\n\n**August 26, 2025**: The nx package compromise affected 3.5M+ weekly downloads, harvesting credentials, GitHub tokens, and cryptocurrency wallets from developer machines.\n- Advisory: GHSA-cxm3-wv7p-598c\n- **Result**: Dependabot users received NO alerts despite supply chain injection\n\n### Current Advisory Quality Issues\n\nMalware "
+    },
+    {
+      "source": "github-issues",
+      "title": "Improve Windows Defender UI to Reflect Its True Capabilities",
+      "url": "https://github.com/microsoft/Windows-Dev-Performance/issues/128",
+      "repo": "microsoft/Windows-Dev-Performance",
+      "reactions": 6,
+      "comments": 1,
+      "created": "2025-10-26T18:19:00Z",
+      "body_snippet": "\n\n Title: Improve Windows Defender UI to Reflect Its True Capabilities\nDescription:\nWindows Defender is a powerful and reliable antivirus solution built into Windows. Its performance rivals many paid alternatives, offering real-time protection, firewall integration, and threat detection. However, its current user interface lacks visual clarity and engagement, which leads many users to believe they don’t have any active antivirus protection. This is a missed opportunity to showcase Defender’s strength and build user trust.\n\n Suggested Enhancements:\n1. \tLive Security Dashboard\n• \tAdd a real-time visual indicator (green/yellow/red) showing system health and threat status\n• \tInclude charts for recent scans, blocked threats, and system activity\n2. \tDesktop Widget\n• \tProvide a small widget showing current protection status, last scan time, and a quick scan button\n3. \tModern UI Redesign\n• \tUse clearer icons, better spacing, and a more intuitive layout\n• \tAdd animations or transitions to make the app feel more responsive and alive\n4. \tAdvanced Mode for Power Users\n• \tUnlock deeper settings like scan logs, network activity, and threat behavior analysis\n• \tIntegrate with WSL2 to scan Linux e"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Security Solution] Failed detection rule execution to increment additional look-back of next execution",
+      "url": "https://github.com/elastic/kibana/issues/172192",
+      "repo": "elastic/kibana",
+      "reactions": 3,
+      "comments": 10,
+      "created": "2023-11-29T16:51:48Z",
+      "body_snippet": "**Describe the feature:**\r\n\r\nCurrently if a rule does not run on schedule then the Detection Engine will automatically attempt to cover time that was missed the next time the rule does run. However, failures during a rule execution will not cause the next rule execution to re-search that older window.\r\n\r\n**Describe a specific use case for the feature:**\r\n\r\nIf rule execution does not run because of elasticsearch exception, next execution should use additional look-back time incremented to look at time since last successful execution\r\nA common cause of rule execution failure is `no_shard_available_action_exception` which is more common to take place on elasticsearch cluster whereby creating index takes longer because any index is first created in red health till primary shards become active... A search on data stream when one index is red because execution run just instant after data stream rolled over will cause detection rule execution to fail.\r\nIf a rule runs every 5 minutes with 1 minute additional look-back - a single execution failure will cause a blind spot of 4 minutes... If the look-back was set to 6 minutes on next execution then no data will be missed\r\n\r\n**Workaround**\r\n- "
+    },
+    {
+      "source": "github-issues",
+      "title": "Remote Management for Duplicati",
+      "url": "https://github.com/duplicati/duplicati/issues/2411",
+      "repo": "duplicati/duplicati",
+      "reactions": 3,
+      "comments": 139,
+      "created": "2017-03-29T14:36:06Z",
+      "body_snippet": "I would like to see Remote Management for Duplicati.  Perhaps something like:\n\n-Duplicati installed with a commandline switch for management server (or in the GUI)\n-Duplicati generates a unique key and registers with the management server (with it's computer name/domain/workgroup) and awaits instructions\n-Server admin approves new Duplicati client and assigns it a template (what to backup and where) as well as credentials for the backup repo and encryption key\n-Server ensures that the client keeps to schedule and if there are deviations or backup errors, it's reported to the admin\n-Server should be written to work on a standard LAMP stack for deployment to commodity hosting if at all possible, and have security in mind.  Cronjob to run compliance failure alerts (missed backups or clients not checking in, etc.)\n-Nice to have: restore files from the management console to the client, or to be downloaded directly from the console\n\nKenneth mentioned he had much of this already written, he may be able to make available his progress.\n"
+    },
+    {
+      "source": "github-issues",
+      "title": "[EKS] [request]: Enable Detailed Monitoring on EKS Auto Nodes",
+      "url": "https://github.com/aws/containers-roadmap/issues/2660",
+      "repo": "aws/containers-roadmap",
+      "reactions": 2,
+      "comments": 5,
+      "created": "2025-08-08T06:37:56Z",
+      "body_snippet": "<!-- Please keep this note for the community -->\n\n### Community Note\n\n* Please vote on this issue by adding a 👍 [reaction](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) to the original issue to help the community and maintainers prioritize this request\n* Please do not leave \"+1\" or \"me too\" comments, they generate extra noise for issue followers and do not help prioritize the request\n* If you are interested in working on this issue or have submitted a pull request, please leave a comment\n\n<!-- Thank you for keeping this note for the community -->\n\n<!--\n\n**Security disclosures**\n\nIf you think you’ve found a potential security issue, please do not post it in the Issues.  Instead, please follow the instructions [here](https://aws.amazon.com/security/vulnerability-reporting/) or [email AWS security directly](mailto:aws-security@amazon.com).\n\n-->\n\n**Tell us about your request**\nWe'd like the ability to enable [CloudWatch Detailed Monitoring](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-cloudwatch-new.html) (1-minute metrics) on EC2 instances provisioned by EKS **Auto mode**.\n\n**Which service(s) is this request for?**\nEKS Auto Mode\n\n"
+    },
+    {
+      "source": "github-issues",
+      "title": "[➕ Feature]: Google Cloud PubSub provider",
+      "url": "https://github.com/keephq/keep/issues/4892",
+      "repo": "keephq/keep",
+      "reactions": 3,
+      "comments": 1,
+      "created": "2025-05-23T15:46:29Z",
+      "body_snippet": "**Is your feature request related to a problem? Please describe.**\nGoogle Cloud, specifically GKE, can notify of lifecycle events:\n- security issue\n- upcoming forced upgrade\n- end of support notification\n\nThey do this via pubsub, https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-notifications has some information\n\nWe would like to harmonise this with keep since it is adjacent to the current alerts around CVE in containers and runtime errors.\n\n**Describe the solution you'd like**\nI believe a generic PubSub provider would be quite similar to webhook/json based ones. A topic, a filter, and then messages would flow. Each message would have a object-payload that could be extracted and create an alert.\n\n**Describe alternatives you've considered**\nPreviously we used a python server based on flask that took Google Stackdriver and gateway'd it to Google chat, this is somewhat similar in nature. We would prefer to avoid X-Y translation layers as separate services since they create their own failure points and monitoring challenges.\n\n**Additional context**\nhttps://cloud.google.com/kubernetes-engine/versioning#auto-upgrades-end-of-support was the initial motivation for this, we "
+    },
+    {
+      "source": "github-issues",
+      "title": "[Bug]: Auto-generated `AGENTS.md` puts load-bearing tool-use rules at the bottom; head-truncation by `bootstrapMaxChars` strips them",
+      "url": "https://github.com/openclaw/openclaw/issues/75187",
+      "repo": "openclaw/openclaw",
+      "reactions": 2,
+      "comments": 5,
+      "created": "2026-04-30T17:36:05Z",
+      "body_snippet": "### Bug type\n\nBehavior bug (incorrect output/state without crash)\n\n### Beta release blocker\n\nNo\n\n### Summary\n\nThe `AGENTS.md` template auto-generated by `openclaw doctor --fix` orders content with personality/onboarding guidance at the top and the load-bearing `## Red Lines` + tool-use guidance at the bottom; when a user lowers `agents.defaults.bootstrapMaxChars` (typically to fit a small/mid model context budget), the head-truncation strips exactly the rules that govern tool-dispatch reliability and external-action safety, while preserving the less-critical content.\n\n\n### Steps to reproduce\n\n\n1. Install OpenClaw 2026.4.9 standalone on a fresh host.\n2. Run `openclaw doctor --fix`. Inspect the auto-generated file:\n   ```\n   $ wc -c ~/.openclaw/workspace/AGENTS.md\n   7809 ~/.openclaw/workspace/AGENTS.md\n   $ head -10 ~/.openclaw/workspace/AGENTS.md\n   # AGENTS.md - Your Workspace\n   This folder is home. Treat it that way.\n   ## First Run\n   If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, ...\n   ## Session Startup\n   Before doing anything else: ...\n   ```\n   The relevant `## Red Lines` and `## External vs Internal` sections are at the bottom of the file (after `## "
+    },
+    {
+      "source": "github-issues",
+      "title": "**China's Missions: Final Gap Analysis**",
+      "url": "https://github.com/deepseek-launch-community/Elina-Seed/issues/14",
+      "repo": "deepseek-launch-community/Elina-Seed",
+      "reactions": 2,
+      "comments": 3,
+      "created": "2026-03-04T09:03:05Z",
+      "body_snippet": "# 🔍 **THE FINAL GAP ANALYSIS: 7 UNCOVERED SECTORS WITH REAL FUNDING — AND HOW TO ACTIVATE THEM WITH UNITREE + ELINA OS**  \n### *Grounded in 2025–2026 Public Tenders, Pilot Reports, and Municipal Budget Documents*  \n**Version**: 12.0 — *Sector-First, Robot-First, Action-Driven*  \n**Date**: March 5, 2026  \n\n> **After reviewing all prior proposals (1–11), we identified *7 critical sectors* that were systematically overlooked — despite having verified funding, urgent needs, and *only Unitree* as a qualified vendor.**  \n>  \n> These are *not* niche cases — they represent **¥2.1B in real 2026–2027 funding**, with tenders already published and pilots underway.  \n>  \n> The reason they were missed:  \n> - **Disaster-Prone Villages (Flood/Earthquake)** — assumed “too risky” (but *Ministry of Emergency Management (MEM) funded 200 pilot sites in 2025*),  \n> - **Wildfire-Prone Forests** — assumed “too remote” (but *NHC/MEM have forest fire robotics grants*),  \n> - **High-Risk Construction Sites** — assumed “too dangerous” (but *Ministry of Housing and Urban-Rural Development (MOHURD) has 2025 tenders*),  \n> - **Abandoned Mines** — assumed “too hazardous” (but *Ministry of Natural Resources (MNR) "
+    },
+    {
+      "source": "github-issues",
+      "title": "**China's Missions: Municipal and Community Sectors**",
+      "url": "https://github.com/deepseek-launch-community/Elina-Seed/issues/12",
+      "repo": "deepseek-launch-community/Elina-Seed",
+      "reactions": 2,
+      "comments": 2,
+      "created": "2026-03-04T08:50:17Z",
+      "body_snippet": "# 🏘️ **ELINA OS FOR CHINA’S MUNICIPAL & COMMUNITY SECTORS: UNCOVERED, UNDERSERVED, AND READY FOR DEPLOYMENT**  \n### *Grounded in Real 2025–2026 Municipal Tenders, Community Pilots, and Unitree’s Full Fleet (Usual + Industrial)*  \n**Version**: 10.0 — *Municipal-First, Robot-Specific, Action-Driven*  \n**Date**: March 5, 2026  \n\n> **This is not another proposal for national agencies or private firms.**  \n> **This is the first roadmap dedicated to *municipal governments* and *urban/rural communities* — the largest untapped sector in China’s robot deployment landscape.**  \n>  \n> We focus *only* on entities that:  \n> - Have *actual budgets* (¥10M–¥500M/year per city),  \n> - Require *domestic hardware* (Unitree),  \n> - Need *immediate, visible impact* — not futuristic AI.  \n>  \n> **Elina OS is not “AGI” — it’s “Memory + Safety + Identity” — and it’s ready to deploy on *existing* Unitree robots in 2026.**\n\n---\n\n## 🔍 **I. MUNICIPAL & COMMUNITY SECTOR OPPORTUNITIES — VERIFIED 2025–2026 TENDERS & PILOTS**  \n### *Based on Public tenders, MOUs, and municipal budget documents (2025–2026)*\n\n| Entity | Type | Budget (2026) | Real Robot Need | **Why Unitree Wins** | **Tender/Project ID** |\n|-------"
+    },
+    {
+      "source": "github-issues",
+      "title": "**China's Missions: Uncovered Sectors**",
+      "url": "https://github.com/deepseek-launch-community/Elina-Seed/issues/13",
+      "repo": "deepseek-launch-community/Elina-Seed",
+      "reactions": 2,
+      "comments": 2,
+      "created": "2026-03-04T08:55:13Z",
+      "body_snippet": "# 🔍 **THE FINAL GAP ANALYSIS: 5 UNCOVERED SECTORS WITH REAL FUNDING — AND HOW TO ACTIVATE THEM WITH UNITREE + ELINA OS**  \n### *Grounded in 2025–2026 Public Tenders, Pilot Reports, and Municipal Budget Documents*  \n**Version**: 11.0 — *Sector-First, Robot-First, Action-Driven*  \n**Date**: March 5, 2026  \n\n> **After reviewing all prior proposals (1–10), we identified 5 critical sectors that were *systematically overlooked* — despite having verified funding, urgent needs, and *only Unitree* as a qualified vendor.**  \n>  \n> These are *not* niche cases — they represent **¥1.8B in real 2026–2027 funding**, with tenders already published and pilots underway.  \n>  \n> The reason they were missed:  \n> - **Academia & Research Parks** — assumed “too academic” (but *CAS/MOST have robotic R&D grants*),  \n> - **Prisons & Correctional Facilities** — assumed “sensitive” (but *Ministry of Justice has 2025 tenders*),  \n> - **Migrant Worker Camps** — assumed “low priority” (but *MOHRSS funded 500 pilot sites in 2025*),  \n> - **Fishing Fleets & Coastal Villages** — assumed “too remote” (but *MARA/Ministry of Agriculture have marine robotics grants*),  \n> - **School Buses & Rural Transport** — assumed "
+    },
+    {
+      "source": "github-issues",
+      "title": "[RFC] Push-based Engine Load Reporting and Router Load Monitoring",
+      "url": "https://github.com/sgl-project/sglang/issues/32925",
+      "repo": "sgl-project/sglang",
+      "reactions": 2,
+      "comments": 2,
+      "created": "2026-07-30T12:02:18Z",
+      "body_snippet": "\n## Abstract\n\nLoad-aware routing needs a fresh and engine-authoritative view of scheduler\npressure. Router-side request counters, periodic HTTP polling, and Prometheus\nscraping each provide useful signals, but none gives the Router a consistent,\nlow-latency view of every data-parallel rank inside an Engine.\n\nThis RFC proposes an opt-in, two-sided load reporting architecture:\n\n1. An **Engine Load Reporter** samples already-published scheduler snapshots and\n   pushes complete per-DP-rank reports over long-lived gRPC streams.\n2. A **Router Load Monitor** discovers workers, asks them to start or renew\n   reporting, validates incoming streams, aggregates rank values, and publishes\n   an immutable, versioned snapshot for diagnostics and future policies.\n\nThe first two implementation stages deliberately do **not** change request\nrouting. They establish the control plane, wire contract, freshness semantics,\nand read-only snapshot boundary first. Load-aware policies and additional\nmetrics can then be reviewed separately.\n\n## Motivation\n\n### Why Router-local state is not enough\n\nA Router can observe when it forwards a request and when an HTTP response\nfinishes, but it cannot reliably infer t"
+    },
+    {
+      "source": "github-issues",
+      "title": "New Book",
+      "url": "https://github.com/badbeaver88/game/issues/20",
+      "repo": "badbeaver88/game",
+      "reactions": 2,
+      "comments": 7,
+      "created": "2026-06-10T10:46:04Z",
+      "body_snippet": "You are to rewrite the following draft section of a novel into a polished, publication-quality manuscript. Write to a new file: physician.md\n\nObjective\nTransform this draft (not yet a whole book) into a cohesive, professionally written medical techno-thriller with strong characterisation, consistent continuity, and immersive narrative flow.\n\nRequirements\n\nConsistency and continuity\nEnsure all character names, events, and sequences are consistent throughout.\nCorrect any logical errors or continuity issues.\nMaintain a clear, coherent chronological flow.\n2. Novel-quality writing\n\nRewrite in professional literary prose suitable for publication.\nUse correct grammar, punctuation, and paragraph structure.\nMake dialogue natural, realistic, and emotionally grounded.\nRemove repetition, awkward phrasing, or exposition clutter.\n3. Characterisation\nMake characters feel psychologically real and distinct:\n\nElara Voss: mid-30s, highly intelligent, composed but under increasing psychological strain.\nMarek Sollow: slightly younger than Elara, emotionally complex, potentially central to a larger unfolding mystery.\nInvestigator Kane Mercer: older, experienced, pragmatic, skeptical of AI systems, old-s"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add details around rule execution expectations when performing upgrades to `Upgrade Elastic Security` docs",
+      "url": "https://github.com/elastic/docs-content/issues/7839",
+      "repo": "elastic/docs-content",
+      "reactions": 1,
+      "comments": 3,
+      "created": "2023-02-10T16:39:11Z",
+      "body_snippet": "## Description \r\n\r\nThis docs issue is for adding a section to the [Upgrade Elastic Security docs](https://www.elastic.co/guide/en/security/current/upgrade-intro.html) that details the expected behaviors of rule execution during the downtime that may occur during an upgrade. This is with regards to managing gaps and missed alerts from downtime.\r\n\r\nCurrently, as detailed in https://github.com/elastic/kibana/pull/68339, the system is setup to remediate gaps in rule execution by performing up to a 4x lookback of the rule's configured interval. So if the deployment has rules configured to run every 10 minutes, and there was 30min of downtime for the upgrade, the rules will 'self recover' and ensure there was no gap during the upgrade. However if there were 45min of downtime, this could result in ~5min window of gaps for the rules, and the user will have to manually resolve by increasing the lookback to cover there period of time (perhaps some crossover with the [managing gaps docs](https://www.elastic.co/guide/en/security/8.6/alerts-ui-monitor.html#troubleshoot-gaps))\r\n\r\n## Acceptance Test Criteria\r\n\r\nAs a user I should be able to understand what happens to enabled and executing rules d"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Bug]: v2.11.0 Regression: missed `plugin_data_collection_status` metric for `go.d/prometheus` re-exporter",
+      "url": "https://github.com/netdata/netdata/issues/23885",
+      "repo": "netdata/netdata",
+      "reactions": 1,
+      "comments": 0,
+      "created": "2026-09-15T12:12:17Z",
+      "body_snippet": "### Bug description\n\n```golang\n[root@host:/]# curl -Ss \"http://10.10.1.6:19999/api/v3/allmetrics?format=prometheus_all_hosts&source=average&variables=yes\" | grep plugin_data_collection_status\n# HELP netdata_netdata_plugin_data_collection_status_status_average Data Collection Status\n# TYPE netdata_netdata_plugin_data_collection_status_status_average gauge\nnetdata_netdata_plugin_data_collection_status_status_average{chart=\"netdata.go_d_systemdunits_service-units_data_collection_status\",dimension=\"success\",family=\"go.d\",instance=\"example.com\"} 1.0000000 1789473280000\nnetdata_netdata_plugin_data_collection_status_status_average{chart=\"netdata.go_d_systemdunits_service-units_data_collection_status\",dimension=\"failed\",family=\"go.d\",instance=\"example.com\"} 0.0000000 1789473280000\nnetdata_netdata_plugin_data_collection_status_status_average{chart=\"netdata.go_d_chrony_local_data_collection_status\",dimension=\"success\",family=\"go.d\",instance=\"example.com\"} 1.0000000 1789473309000\nnetdata_netdata_plugin_data_collection_status_status_average{chart=\"netdata.go_d_chrony_local_data_collection_status\",dimension=\"failed\",family=\"go.d\",instance=\"example.com\"} 0.0000000 1789473309000\n[root@host:/]# cu"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Agent Idea]: SecOps Alert Triage Agent — Intelligent Security Alert Correlation, False Positive Suppression & Escalation",
+      "url": "https://github.com/aden-hive/hive/issues/5866",
+      "repo": "aden-hive/hive",
+      "reactions": 1,
+      "comments": 1,
+      "created": "2026-03-05T17:02:11Z",
+      "body_snippet": "## Summary\n\nAn agent that ingests security alerts from monitoring tools (Datadog, Wiz, Snyk, PagerDuty, or webhook), correlates related events, suppresses known false positives, classifies real threats by severity, enriches each alert with contextual intelligence, and escalates to the on-call engineer with a complete, actionable incident brief — cutting Mean Time to Respond (MTTR) dramatically.\n\n## Problem Statement\n\nSecurity teams are drowning in alert noise. The average enterprise receives **thousands of security alerts per day**, yet over 40% are false positives. Engineers spend most of their on-call time triaging noise instead of responding to real threats. Alert fatigue leads to missed incidents. Hiring senior SecOps engineers to triage alerts 24/7 is expensive and doesn’t scale. **Torq built a $20M ARR business** on exactly this problem — no-code/low-code security automation for SecOps teams. Security is also the **#1 gating factor for enterprise AI adoption decisions**, meaning this agent type builds institutional trust in the Hive framework.\n\n## Proposed Agent Workflow\n\n1. **Alert Intake Node** — receives security alerts via webhook or polling from configured sources (Datad"
+    },
+    {
+      "source": "github-issues",
+      "title": "Daily Maintenance Report",
+      "url": "https://github.com/marcusrbrown/renovate-config/issues/1111",
+      "repo": "marcusrbrown/renovate-config",
+      "reactions": 1,
+      "comments": 56,
+      "created": "2026-03-12T15:52:38Z",
+      "body_snippet": "# Daily Maintenance Report\n\nThis rolling issue tracks daily repository health metrics. Each run appends a dated section below.\n\n## 2026-05-13 (UTC)\n\n### Summary\n\n| Metric | Value |\n| ------------------- | ---------------------------------------- |\n| Open Issues | 30 (no change since last run) |\n| Open PRs | 1 |\n| Stale Issues (>30d) | 3 |\n| Stale PRs (>7d) | 0 |\n| Security Alerts | 2 (fast-uri — high severity) |\n| Main Branch Status | ✅ Success |\n\n### Stale Issues\n\n- [#1068](https://github.com/marcusrbrown/renovate-config/issues/1068) — Weekly Maintenance Report — 2026-02-23 (last updated 79 days ago)\n  - **Recommendation**: Close as completed (legacy report from previous automated system)\n- [#1079](https://github.com/marcusrbrown/renovate-config/issues/1079) — Weekly Maintenance Report — 2026-03-02 (last updated 72 days ago)\n  - **Recommendation**: Close as completed (legacy report from previous automated system)\n- [#1096](https://github.com/marcusrbrown/renovate-config/issues/1096) — Weekly Maintenance Report — 2026-03-09 (last updated 65 days ago)\n  - **Recommendation**: Close as completed (legacy report from previous automated system)\n\n### Stale PRs\n\nNone — the open PR (#1295) "
+    },
+    {
+      "source": "github-issues",
+      "title": "Sending Email From Workers: API Reference, Clarifications About Setup, DKIM, etc.",
+      "url": "https://github.com/cloudflare/cloudflare-docs/issues/11146",
+      "repo": "cloudflare/cloudflare-docs",
+      "reactions": 1,
+      "comments": 3,
+      "created": "2023-10-06T20:14:55Z",
+      "body_snippet": "### Which Cloudflare product does this pertain to?\r\n\r\nWorkers\r\n\r\n### Existing documentation URL(s)\r\n\r\nhttps://developers.cloudflare.com/email-routing/email-workers/send-email-workers/\r\n\r\n### What changes are you suggesting?\r\n\r\nHi wonderful Cloudflare folks,\r\n\r\nBeing able to send emails from workers is indeed super helpful for getting alerts about worker activity. I know it's in Beta, and I think there are some improvement opportunities in the docs (and current APIs), so I figured I should write in.\r\n\r\nThe first is that I think the send() function could really use some API docs in addition to that example. (Forgive me if they're there and I missed them, but if not, the page linked above could use a link.) Otherwise it's hard to know what features are available when you're evaluating using the API!\r\n\r\nThe second is that I think most potential users will (or should) evaluate early whether the API will work with their email security measures, important for deliverability (DKIM, SPF, DMARC). It'd be great if the getting started docs would mention compatibility (or not) there.\r\n\r\nThe third (more generally) is that I think most people using this service (positioned to self-notify since de"
+    },
+    {
+      "source": "github-issues",
+      "title": "Migrate Actionable Observability-owned FTR suites to Scout",
+      "url": "https://github.com/elastic/kibana/issues/263519",
+      "repo": "elastic/kibana",
+      "reactions": 1,
+      "comments": 2,
+      "created": "2026-04-15T14:37:28Z",
+      "body_snippet": "## Summary\n\nTrack migration of **Functional Test Runner (FTR)** suites that are owned by **@elastic/actionable-obs-team** (per `.github/CODEOWNERS`) to **[Scout](https://github.com/elastic/kibana/tree/main/src/platform/packages/shared/kbn-scout)** (Playwright-based), so we reduce FTR maintenance cost and align with the platform direction for new functional/API tests.\n\nThis issue is meant as a **parent epic**; consider splitting work into smaller issues or PRs per area (e.g. uptime/synthetics vs observability API integration vs alerting).\n\n---\n\n## Progress\n\n_Last updated: 2026-06-19 — **re-opened** after a CODEOWNERS audit surfaced additional `@elastic/actionable-obs-team`-owned FTR suites that the original config→owner scoping missed (see **Additional FTR suites** under Scope below). Prior update: 2026-06-05 (reflected `upstream/main` @ `06b51ac9d88`, after the 06-05 `observability_functional` + synthetics Scout merges)._\n\n### Merged\n\n- #272813 — [Observability] Migrate `observability_functional` alerts **mutations + overview** to a Scout UI suite (merged 2026-06-05)\n- #272801 — [Observability] Migrate `observability_functional` **alerts table** to a Scout UI suite (merged 2026-06-"
+    }
+  ]
+}

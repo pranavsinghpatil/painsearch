@@ -1,0 +1,206 @@
+{
+  "query": "false positives",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "Help, `npm audit` says I have a vulnerability in react-scripts!",
+      "url": "https://github.com/react/create-react-app/issues/11174",
+      "repo": "react/create-react-app",
+      "reactions": 1007,
+      "comments": 130,
+      "created": "2021-07-02T16:54:25Z",
+      "body_snippet": "### `npm audit` is broken for front-end tooling by design\r\n\r\nBad news, but it's true. See [here](https://overreacted.io/npm-audit-broken-by-design/) for a longer explanation.\r\n\r\n### If you think you found a real vulnerability in `react-scripts`\r\n\r\nIf you **know** that it affects CRA users because you **understand** what the vulnerability is, report it [here](https://github.com/facebook/create-react-app/blob/master/SECURITY.md) as soon as possible.\r\n\r\nIf you're **not sure** but your CI is failing or you're worried about what `npm audit` tells you, keep reading.\r\n\r\n**Do not** file new issues based on `npm audit` if you don't 100% understand the problem.\r\nThey will be closed (see why below). If you really need to discuss it, reply in this thread instead.\r\n\r\n### `npm audit` says there's a warning about vulnerabilities in my project\r\n\r\nOpen `package.json`. You will find this:\r\n\r\n```js\r\n  \"dependencies\": {\r\n    \"react\": \"^17.0.2\",\r\n    \"react-dom\": \"^17.0.2\",\r\n    \"react-scripts\": \"4.0.3\"\r\n  }\r\n```\r\n\r\nTake `react-scripts` and **move it to `devDependencies`** (if you don't have it, create it):\r\n\r\n```js\r\n  \"dependencies\": {\r\n    \"react\": \"^17.0.2\",\r\n    \"react-dom\": \"^17.0.2\"\r\n  },\r\n  \"dev"
+    },
+    {
+      "source": "github-issues",
+      "title": "Version 0.10 released - Next steps",
+      "url": "https://github.com/leela-zero/leela-zero/issues/591",
+      "repo": "leela-zero/leela-zero",
+      "reactions": 85,
+      "comments": 730,
+      "created": "2018-01-07T20:20:41Z",
+      "body_snippet": "Version 0.10 is released now. If no major bugs surface in the next few days the server will start enforcing this version.\r\n\r\nThere is this 1500+ post issue where most plans for the future were posted in the past. It's become rather problematic to read, especially on mobile, and mixed with a lot of theories (most not backed with any data or experiments 😉) so I'll post my plans and thoughts for the near future in this issue.\r\n\r\nIt looks like we're slowly reaching the maximum what 64x5 is capable of. I will let this run until about 2/3 of the training window is from the same network without improvement, and then drop the learning rate. I expect that's the last time we can do that and (maybe!) see some improvement.\r\n\r\nI have been training a 128x6 network starting from the bug-fixed data (i.e. starting around eebb910d) and gradually moving it up to present day. Once 64x5 has completely stalled, I will see if I can get the 128x6 to beat it. If that works out, we can just continue from there and effectively skip the first 6500 Elo and see how much higher we can get (and perhaps do the same with even bigger networks) from continuing the current run.\r\n\r\nIf that kind of bootstrapping turns o"
+    },
+    {
+      "source": "github-issues",
+      "title": "`as enum` assertion for object literals",
+      "url": "https://github.com/microsoft/TypeScript/issues/60790",
+      "repo": "microsoft/TypeScript",
+      "reactions": 82,
+      "comments": 8,
+      "created": "2024-12-17T16:29:54Z",
+      "body_snippet": "### 🔍 Search Terms\n\nenum, object literal, type-stripping\n\n### ✅ Viability Checklist\n\n- [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code\n- [x] This wouldn't change the runtime behavior of existing JavaScript code\n- [x] This could be implemented without emitting different JS based on the types of the expressions\n- [x] This isn't a runtime feature (e.g. library functionality, non-ECMAScript syntax with JavaScript output, new syntax sugar for JS, etc.)\n- [x] This isn't a request to add a new utility type: https://github.com/microsoft/TypeScript/wiki/No-New-Utility-Types\n- [x] This feature would agree with the rest of our Design Goals: https://github.com/Microsoft/TypeScript/wiki/TypeScript-Design-Goals\n\n### Context\n\nWhile TypeScript already allows declaring runtime enums values:\n\n```ts\nexport enum Compass {\n  N = \"N\",\n  S = \"S\",\n  E = \"E\",\n  W = \"W\",\n}\n```\n\nThis is not standard JavaScript, and does not work in Node.js unless [`--experimental-transform-types`](https://nodejs.org/api/cli.html#--experimental-transform-types) is passed.\n\nAn alternative \"pure JS\" pattern from the TypeScript handbook is:\n\n```ts\nexport const Compass = {\n  N: \"N\",\n  S: \"S\",\n  E: \"E"
+    },
+    {
+      "source": "github-issues",
+      "title": "Bug: eslint-react-hooks false positives on refs rule",
+      "url": "https://github.com/react/react/issues/34775",
+      "repo": "react/react",
+      "reactions": 74,
+      "comments": 25,
+      "created": "2025-10-08T14:59:23Z",
+      "body_snippet": "after updating eslint-react-hooks from v5 to v6, I'm getting false positives on the rule `eslint(react-hooks/refs)`\n\nevery `props.<something>` access in the code below is being flagged by this rule, when clearly it is not a ref access.\n\n```\nfunction FieldInternal(props: FieldBaseProps & { children?: React.ReactNode }) {\n  return (\n    <F.Root\n      name={props.name}\n      className=\"contents\"\n      validate={(value: unknown) => props.validate?.(value as string) ?? null}\n      validationMode={props.validationMode}\n    >\n      {props.label && <F.Label>{props.label}</F.Label>}\n      <div className={`gap-x-sm gap-2xs flex min-w-0 items-start ${props.grow ? \"grow\" : \"\"} ${!props.label ? \"col-span-2\" : \"\"}`}>\n        <div className={`gap-3xs w-md flex min-w-0 flex-col ${props.grow ? \"grow\" : \"\"}`}>\n          <F.Control\n            ref={props.ref}\n            placeholder={props.placeholder}\n            autoComplete={props.autoComplete}\n            autoFocus={props.autoFocus}\n            disabled={props.disabled}\n            className={`bg-bg-2 px-2xs py-2xs bevel-inset-bg-2 w-full min-w-0 outline-0 data-[disabled]:cursor-not-allowed ${props.disabled && \"cursor-not-allowed\"}`}\n          />"
+    },
+    {
+      "source": "github-issues",
+      "title": "Suppress Clang-Tidy warnings",
+      "url": "https://github.com/google/googletest/issues/2442",
+      "repo": "google/googletest",
+      "reactions": 76,
+      "comments": 11,
+      "created": "2019-09-03T13:53:58Z",
+      "body_snippet": "When we run clang-tidy on our source code, it finds hundreds of issues related to usages of gtest. We currently have to disable a few clang-tidy checks because of this. In the longer run, we want to enable these checks again. I believe the reported issues are false positives, so it would be beneficial for us if gtest would suppress these warnings.\r\n\r\nI found out (among others in https://github.com/google/googletest/issues/853) that gtest already contains 'NOLINT' comments to suppress clang-tidy warnings. I would like to point out a few additional places to add them (based on the code in version 1.8.1):\r\n\r\n- clang-tidy warning 'cert-err58-cpp' \r\n  - gtest_internal.h\r\n    - affects usages of TEST and TEST_F\r\n    - add nolint comment to the assignment on line 1319\r\n  - gtest-param-test.h\r\n    - affects usages of TEST_P and INSTANTIATE_TEST_CASE_P\r\n    - add nolint comment to the assignment on lines 1396/1397\r\n    - add nolint comment to the assignment on line 1421\r\n- clang-tidy warning 'cppcoreguidelines-avoid-goto'\r\n  - gtest-internal.h\r\n    - affects usages of EXPECT_NO_THROW and similar\r\n    - add nolint comment to lines 1231, 1237, 1250, 1268, 1294\r\n  - gtest-death-test-internal.h"
+    },
+    {
+      "source": "github-issues",
+      "title": "Rule categorization",
+      "url": "https://github.com/astral-sh/ruff/issues/1774",
+      "repo": "astral-sh/ruff",
+      "reactions": 75,
+      "comments": 18,
+      "created": "2023-01-10T21:11:14Z",
+      "body_snippet": "I think there are two perspectives ruff users may have:\r\n\r\n* using ruff as a replacement for an existing linter (such as pylint or flake8)\r\n* using ruff from the get-go\r\n\r\nThe README currently groups rules by their origin. Which I think is suboptimal for both cases. For the first case our README only lists the lints implemented by ruff but doesn't tell you which (or how many) lints ruff is missing. For the second case you don't actually care about where the lints are coming from, you just want to see them grouped by topic.\r\n\r\nSo I think we should steal a nice feature from Clippy which are [lint categories](https://github.com/rust-lang/rust-clippy#readme). Clippy has the following categories:\r\n\r\n* correctness: code that is outright wrong or useless\r\n* suspicious: code that is most likely wrong or useless\r\n* style: code that should be written in a more idiomatic way\r\n* complexity: code that does something simple but in a complex way\r\n* perf: code that can be written to run faster\r\n* pedantic: lints which are rather strict or have occasional false positives\r\n* nursery: new lints that are still under development\r\n* cargo: lints for the cargo manifest\r\n\r\nWe could simply use the same cat"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature Request] Support trustPolicy to reject packages with provenance downgrade at install time",
+      "url": "https://github.com/npm/cli/issues/9242",
+      "repo": "npm/cli",
+      "reactions": 66,
+      "comments": 1,
+      "created": "2026-04-15T22:30:40Z",
+      "body_snippet": "## Summary\n\nAdd a configuration option (e.g. `trust-policy=no-downgrade` in `.npmrc`) that prevents npm from installing a package version whose trust level (trusted publisher → provenance → none) is lower than what previous versions of that package established. This is the single most impactful client-side mitigation against account-takeover supply chain attacks.\n\n## Motivation\n\nOn March 31, 2026, **axios** — a package with 60M+ weekly downloads — was compromised when an attacker gained access to the lead maintainer's machine via social engineering and published two malicious versions (`1.14.1` and `0.30.4`) directly from the compromised account. The malicious versions injected a dependency containing a cross-platform remote access trojan. They were live for ~3 hours before removal. Full post-mortem: [axios/axios#10636](https://github.com/axios/axios/issues/10636).\n\nThe critical detail: **axios had been publishing with provenance attestations prior to the attack, but the malicious versions were published manually from the attacker's machine — without provenance.** This is a clear, detectable trust downgrade. If npm had a mechanism to reject installs where provenance disappears afte"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] User Interrupt Hook",
+      "url": "https://github.com/anthropics/claude-code/issues/9516",
+      "repo": "anthropics/claude-code",
+      "reactions": 66,
+      "comments": 26,
+      "created": "2025-10-14T09:11:05Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\n\n## Summary\nAdd a new hook event that fires when the user manually interrupts Claude Code's response (e.g., by clicking Stop or pressing Ctrl+C).\n\n## Problem\nCurrently, Claude Code provides a `Stop` hook that fires when the agent finishes responding normally. However, according to the documentation:\n\n> \"Does not run if the stoppage occurred due to a user interrupt.\"\n\nThis creates a gap: there is **no way to detect when the user manually interrupts the agent**. This prevents implementing features that need to differentiate between:\n- Normal completion (agent finished its work)\n- User interrupt (user manually stopped the agent)\n\n### Proposed Solution\n\nAdd a new hook event: **`UserInterrupt`** (or `AgentInterrupted`, `Stop:Interrupted`, etc.)\n\nThis hook should fire when:\n- User clicks the Stop button during agent response\n- User presses keyboard interrupt (Ctrl+C or equivalent)\n- User manually cancels agent "
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature] Support trustPolicy to reject packages with provenance downgrade at install time",
+      "url": "https://github.com/yarnpkg/berry/issues/7101",
+      "repo": "yarnpkg/berry",
+      "reactions": 59,
+      "comments": 1,
+      "created": "2026-04-16T10:47:20Z",
+      "body_snippet": "## Summary\n\nAdd a configuration option (e.g. `trustPolicy: no-downgrade` in `.yarnrc.yml`) that prevents Yarn from installing a package version whose trust level (trusted publisher → provenance → none) is lower than what previous versions of that package established. This is the single most impactful client-side mitigation against account-takeover supply chain attacks.\n\n## Motivation\n\nOn March 31, 2026, **axios** — a package with 60M+ weekly downloads — was compromised when an attacker gained access to the lead maintainer's machine via social engineering and published two malicious versions (`1.14.1` and `0.30.4`) directly from the compromised account. The malicious versions injected a dependency containing a cross-platform remote access trojan. They were live for ~3 hours before removal. Full post-mortem: [axios/axios#10636](https://github.com/axios/axios/issues/10636).\n\nThe critical detail: **axios had been publishing with provenance attestations prior to the attack, but the malicious versions were published manually from the attacker's machine — without provenance.** This is a clear, detectable trust downgrade. If Yarn had a mechanism to reject installs where provenance disappea"
+    },
+    {
+      "source": "github-issues",
+      "title": "Tracking issue for sanitizer support",
+      "url": "https://github.com/rust-lang/rust/issues/39699",
+      "repo": "rust-lang/rust",
+      "reactions": 54,
+      "comments": 44,
+      "created": "2017-02-09T18:46:27Z",
+      "body_snippet": "<!-- homu-ignore:start -->\n*[View all comments](https://triagebot.infra.rust-lang.org/gh-comments/rust-lang/rust/issues/39699)*\n<!-- homu-ignore:end -->\n\nCurrently we have:\r\n\r\n- A rustc flag, `-Z sanitizer`, to sanitize rlibs (it adds an extra LLVM pass/attribute) and executables (it links to the sanitizer runtime). Added in #38699.\r\n\r\n- An attribute `#[no_sanitize]` to disable sanitization on specific functions. Also lints if those functions are marked as requesting inlining. Added in https://github.com/rust-lang/rust/pull/68164.\r\n  - `#[no_sanitize]` suppresses `#[inline]` hints. A lint is issued if combined with `#[inline(always)]`.\r\n\r\n- A few violations (false positives?) in the test runner\r\n  - [x] ThreadSanitizer detects a data race in the test runner (`rustc --test`) #39608\r\n  - [x] MemorySanitizer detects an use of unitialized value in the test runner (`rustc --test`) #39610\r\n\r\n- Known issues\r\n  - [x] Incremental compilation breaks sanitizers #39611\r\n\r\n- Unresolved questions:\r\n  - [ ] Should we call the attribute `#[no_sanitize]` or perhaps something like `#[sanitize(never)]` or some other variation? In particular, might we at some point want \"positive options\" like `#[sani"
+    },
+    {
+      "source": "github-issues",
+      "title": "Bug: `react-hooks/set-state-in-effect` overly strict?",
+      "url": "https://github.com/react/react/issues/34743",
+      "repo": "react/react",
+      "reactions": 52,
+      "comments": 40,
+      "created": "2025-10-05T16:33:14Z",
+      "body_snippet": "<!--\n  Please provide a clear and concise description of what the bug is. Include\n  screenshots if needed. Please test using the latest version of the relevant\n  React packages to make sure your issue has not already been fixed.\n-->\n\neslint-plugin-react-hooks version: 6.1.1\n\n## Steps To Reproduce\n\n1. Use common, valid patterns for setting state in an effect, from those in the wild and official docs (see patterns in section below)\n2. Problem reported by `eslint-plugin-react-hooks` 💥\n\n<!--\n  Your bug will get fixed much faster if we can run your code and it doesn't\n  have dependencies other than React. Issues without reproduction steps or\n  code examples may be immediately closed as not actionable.\n-->\n\nLink to code example: https://codesandbox.io/p/devbox/still-resonance-lzsl44?file=%2Fapp%2FComponent.tsx%3A10%2C49&workspaceId=ws_GfAuHrswXyA1DoeSwsjjjz\n\n<img width=\"1437\" height=\"857\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/d76a887f-9ede-4b96-9d5c-9fa47d486248\" />\n\n```bash\n$ pnpm eslint . --max-warnings 0\n\n/project/workspace/app/Component.tsx\n  7:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to"
+    },
+    {
+      "source": "github-issues",
+      "title": "ping reliable service to prevent false DOWN on internet connection loss",
+      "url": "https://github.com/louislam/uptime-kuma/issues/774",
+      "repo": "louislam/uptime-kuma",
+      "reactions": 44,
+      "comments": 27,
+      "created": "2021-10-22T11:47:17Z",
+      "body_snippet": "**Is it a duplicated question?**\r\nPlease search in Issues without filters: https://github.com/louislam/uptime-kuma/issues?q=\r\n\r\nHaven't found any duplicate. (I'm not ceratin on the terminology regarding this problem though, so please correct me if I'm wrong).\r\n\r\n**Is your feature request related to a problem? Please describe.**\r\nA clear and concise description of what the problem is. Ex. I'm always frustrated when [...]\r\n\r\nIt sometimes happens, that my internet connection goes down. In that case, Uptime Kuma reports all of my services as down, even though only my internet connection is down. This leads to a lot of messages and incorrect uptime stats in the dashboard.\r\n\r\n**Describe the solution you'd like**\r\nA clear and concise description of what you want to happen.\r\n\r\nI'd love some kind of 'health check' (not sure if that's the right term) in the settings, in which I ping a reliable service (e.g. Google or Cloudflare DNS). If that reliable service is down, Uptime Kuma would assume that my internet connection broke instead of all my services. It could then send only one message instead of tens/hundreds. It also could omit the data of the services from the logs or mark them differen"
+    },
+    {
+      "source": "github-issues",
+      "title": "🚀 Feature: Re-run a test multiple times: `this.repeat`",
+      "url": "https://github.com/mochajs/mocha/issues/2332",
+      "repo": "mochajs/mocha",
+      "reactions": 45,
+      "comments": 23,
+      "created": "2016-06-26T11:14:31Z",
+      "body_snippet": "`this.retries()` allows to run a test multiple times, but the test will pass on the first successful run.\n\nI'm suggesting to add `this.rerun()` for tests that might randomly succeed (false positives). It will run the test `n` times and will pass only if all of the reruns have passed successfully. It's useful when testing behavior that is probabilistic.\n\nAt the moment I'm running the test in a loop:\n\n``` javascript\nfor (var i = 1; i <= 100; i++) {\n  it('tests something #' + i, function(done) {\n    //\n  });\n}\n```\n\nThe problem with this approach is that it outputs 100 different tests and messes up the test counting.\n"
+    },
+    {
+      "source": "github-issues",
+      "title": "[ECR] [request]: Exclude kernel-related CVEs from container scan results",
+      "url": "https://github.com/aws/containers-roadmap/issues/2305",
+      "repo": "aws/containers-roadmap",
+      "reactions": 43,
+      "comments": 3,
+      "created": "2024-03-08T09:18:34Z",
+      "body_snippet": "<!-- Please keep this note for the community -->\r\n\r\n### Community Note\r\n\r\n* Please vote on this issue by adding a 👍 [reaction](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) to the original issue to help the community and maintainers prioritize this request\r\n* Please do not leave \"+1\" or \"me too\" comments, they generate extra noise for issue followers and do not help prioritize the request\r\n* If you are interested in working on this issue or have submitted a pull request, please leave a comment\r\n\r\n<!-- Thank you for keeping this note for the community -->\r\n\r\n<!--\r\n\r\n**Security disclosures**\r\n\r\nIf you think you’ve found a potential security issue, please do not post it in the Issues.  Instead, please follow the instructions [here](https://aws.amazon.com/security/vulnerability-reporting/) or [email AWS security directly](mailto:aws-security@amazon.com).\r\n\r\n-->\r\n\r\n**Tell us about your request**\r\nAlready mentioned at https://github.com/aws/containers-roadmap/issues/798#issuecomment-623847952 but not yet resolved. Currently, the AWS Inspector container scan results display Linux kernel vulnerabilities, even though the container is running on top "
+    },
+    {
+      "source": "github-issues",
+      "title": "☂️ eslint-plugin-import",
+      "url": "https://github.com/oxc-project/oxc/issues/1117",
+      "repo": "oxc-project/oxc",
+      "reactions": 42,
+      "comments": 52,
+      "created": "2023-10-30T17:10:01Z",
+      "body_snippet": "\n> [!WARNING]\n> This comment is maintained by CI. Do not edit this comment directly.\n> To update comment template, see https://github.com/oxc-project/oxc/tree/main/tasks/lint_rules\n\nThis is the tracking issue for `eslint-plugin-import`.\n\n\nThere are 45(+ 1 deprecated) rules.\n\n- 0/8 recommended rules are remaining as TODO\n  - All done! 🎉\n- 7/37 not recommended rules are remaining as TODO\n  - 3 of which have pending fixes\n\n\nTo get started, run the following command:\n\n```sh\njust new-import-rule <RULE_NAME>\n```\n\nThen implement the rule and get all the tests passing.\n\n\n## Recommended rules\n\n<details open>\n<summary>\n  ✅: 7, 🚫: 1, ⏳: 0 / total: 8\n</summary>\n\n| Status | Name | Rationale |\n| :----: | :--- | :-------- |\n| ✅ | [import/default](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/default.md) |  |\n| ✅ | [import/export](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/export.md) |  |\n| ✅ | [import/named](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/named.md) |  |\n| ✅ | [import/namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/namespace.md) |  |\n| ✅ | [import/no-duplicates"
+    },
+    {
+      "source": "github-issues",
+      "title": "Sidebar 'Running' and 'Needs Input' status indicators are flaky and unreliable",
+      "url": "https://github.com/manaflow-ai/cmux/issues/1027",
+      "repo": "manaflow-ai/cmux",
+      "reactions": 40,
+      "comments": 7,
+      "created": "2026-03-06T23:52:37Z",
+      "body_snippet": "## Bug\n\nThe sidebar status indicators (\"Running\" and \"Needs Input\") are unreliable:\n\n1. **Shows \"Running\" when not actually running** — the indicator stays lit even after the agent has stopped\n2. **Shows \"Needs Input\" when there's no input needed** — false positives\n3. **\"Needs Input\" doesn't show up when it should** — the agent is actually waiting for input but the sidebar doesn't reflect it\n\nThe behavior is intermittent/flaky — sometimes it works correctly, sometimes it doesn't.\n\n## Expected behavior\n\n- \"Running\" should only appear when the agent process is actively executing\n- \"Needs Input\" should reliably appear whenever the agent is blocked waiting for user input\n- Both indicators should clear promptly when the state changes\n\n## Actual behavior\n\nThe indicators appear to be out of sync with the actual terminal process state. The detection seems unreliable — sometimes correct, sometimes wrong in either direction."
+    },
+    {
+      "source": "github-issues",
+      "title": "Meta: Responsible AI Service response blocking",
+      "url": "https://github.com/microsoft/vscode/issues/253130",
+      "repo": "microsoft/vscode",
+      "reactions": 40,
+      "comments": 32,
+      "created": "2024-11-15T19:49:20Z",
+      "body_snippet": "This meta issue tracks scenarios where chat requests are incorrectly blocked by the Responsible AI Service, which is part of GitHub’s Copilot platform to detect and prevent the output of harmful content. [Learn more about responsible use].(https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/responsible-use-of-github-copilot-chat-in-your-ide).\n\nError message:\n> Sorry, the response was filtered by the Responsible AI Service. Please rephrase your prompt and try again. Learn more.\n\nIn case you experience repeated RAI-blocking in GitHub Copilot, please reach out to GitHub Support: https://support.github.com/\n\nGitHub Copilot is iterating and improving the RAI content filters to reduce false positives."
+    },
+    {
+      "source": "github-issues",
+      "title": "Provide Task Runner viewlet",
+      "url": "https://github.com/microsoft/vscode/issues/28235",
+      "repo": "microsoft/vscode",
+      "reactions": 40,
+      "comments": 46,
+      "created": "2017-06-08T13:14:54Z",
+      "body_snippet": "<!-- Do you have a question? Please ask it on http://stackoverflow.com/questions/tagged/vscode -->\r\n\r\nWe did a Task 2.0 deep dive today and this issue collects the combined feedback received. \r\n\r\n### Task Properties\r\n\r\n- echo should be true by default so that users get a better idea of the task executed\r\n- we should support flattening the JSON properties as we do with other settings (e.g `\"terminal.echo\": true` instead of `\"terminal\": { \"echo\": true }`\r\n- we should better separate task declaration from task customization. Currently both happens in the tasks array property and the differentiating element is the `customize` property.\r\n\r\n### Task Picker\r\n\r\nThe task picker should support a decription / detail message to better explain what the task does. We also discussed whether the task picker should support MRU which would automatically move the most used tasks up to the top without customization. If we provide a task panel (see below) such a MRU list could be useful there as well.\r\n\r\n### Task Customization\r\n\r\nThe task customization is currently instance based where the task instance is identified by a task id, which can be quite 'cryptic'. An alternative way would be to identify a "
+    },
+    {
+      "source": "github-issues",
+      "title": "Implement Detective Mining (Pool Software Change, No Protocol Change Required)",
+      "url": "https://github.com/monero-project/research-lab/issues/140",
+      "repo": "monero-project/research-lab",
+      "reactions": 38,
+      "comments": 72,
+      "created": "2025-08-19T08:04:00Z",
+      "body_snippet": "We should encourage pools to adopt the \"detective mining\" strategy from Lee and Kim, which leverages information pools already leak in their job messages to collapse a selfish miner's private lead. Crucially, this is deployable at the pool or Stratum-proxy level with no consensus or protocol changes.\n\nPaper: https://eprint.iacr.org/2019/486\n\nThanks to @AJ\\_\\_1337 on X for highlighting the paper.\n\n## One-paragraph explainer\n\nSelfish pools must distribute jobs that tell their workers which parent to mine on (eg. Qubic uses pool.qubic.li). Those jobs reveal the pool's private tip via the previous block hash. A detective miner subscribes to those jobs, detects when the leaked prevhash does not match the public tip, and immediately mines a \"counter\" child block on top of the selfish pool's hidden parent. Publishing that child forces the selfish pool to reveal its private block or lose it, repeatedly cutting off the attacker's lead and eroding their advantage. The original paper models and simulates this dynamic and shows the attacker's extra revenue disappears as detective adoption grows.\n\nPractically, if ~50% of the Monero hashrate (the largest pools) implement this, then the selfish m"
+    },
+    {
+      "source": "github-issues",
+      "title": "Bloom filter collisions",
+      "url": "https://github.com/shinigami-eyes/shinigami-eyes/issues/60",
+      "repo": "shinigami-eyes/shinigami-eyes",
+      "reactions": 38,
+      "comments": 5,
+      "created": "2021-09-07T12:17:40Z",
+      "body_snippet": "The bloom filters have apparently not been resized since release 1.0.17, and the collision rate is obviously increasing more and more as the bloom filters become more saturated, something massively exacerbated by the fact that your hashes are 32-bit. This is unacceptable, even excepting the obvious issues of oversight and integrity, you yourself have no meaningful control or insight into how some URLs are classified. In addition, there is no mechanism to address the fact that collisions necessarily persist so long as the hashes which form them do.\r\n\r\nBy way of example, the normalised URL `twitter.com/x0s1jpnq2sk2` is classified as both trans-friendly (since 1.0.17)  and transphobic (since 1.0.16).\r\n\r\nBloom filters are a wholly inappropriate mechanism for this task and this implementation is grotesquely irresponsible.\r\n\r\nMy strong recommendation is that you:\r\n* Use a more robust cryptographic hashing algorithm\r\n* Approximate the false positive rate and ensure that all users are adequately informed of the risk\r\n* Increase the size of the bloom filter to reduce the rate of false positives\r\n* Introduce a version-dependent salt before hashing (the version string would serve just fine, i"
+    }
+  ]
+}

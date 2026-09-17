@@ -1,0 +1,226 @@
+{
+  "query": "takes hours to verify",
+  "count": 20,
+  "results": [
+    {
+      "source": "hn",
+      "title": "A Bitcoin transaction that takes 5 hours to verify",
+      "url": "https://bitslog.wordpress.com/2017/01/08/a-bitcoin-transaction-that-takes-5-hours-to-verify/",
+      "hn_id": "13356726",
+      "points": 3,
+      "comments": 0,
+      "author": "petethomas",
+      "created": "2017-01-09T14:58:41Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: What are some advanced fact check strategies",
+      "url": "https://news.ycombinator.com/item?id=44742693",
+      "hn_id": "44742693",
+      "points": 2,
+      "comments": 2,
+      "author": "rudderdev",
+      "created": "2025-07-31T05:50:56Z",
+      "text_snippet": "I have been reading a lot of technology news lately  from diverse sources and observed some patterns that are easy to verify - outdated info presented as news, misleading title, etc. On the other hand, some news pieces look credible but when I start to verify it leads to a dead-end (or at least nothing that wouldn&#x27;t take hours to verify). Google&#x27;s fact-check tool seems to work only on old and popular news only.<p>The case in point right now, this article: https:&#x2F;&#x2F;techxplore.com&#x2F;news&#x2F;2025-07-vulnerability-packet-paralyze-smartphones.html<p>* I did not find any other reputed source linking back to this article.\n* The site has decent domain authority.\n* Searched the publishing institute (KAIST) website with google search (https:&#x2F;&#x2F;www.google.com&#x2F;search?q=LLFuzz+RCE+site:https:&#x2F;&#x2F;www.kaist.ac.kr&#x2F;) and did find the original article (likely the original source)<p>So far so good. But the concerns are<p>1. Is this enough fact-checking, "
+    },
+    {
+      "source": "hn",
+      "title": "Instant Parameter Selection for Modular Systems (b, p, t, r)",
+      "url": "https://news.ycombinator.com/item?id=45901294",
+      "hn_id": "45901294",
+      "points": 2,
+      "comments": 0,
+      "author": "Patternician",
+      "created": "2025-11-12T15:21:22Z",
+      "text_snippet": "If you’ve ever had to tune or verify modular parameters — for example in RNG design, PRBS&#x2F;scrambler alignment, signal sequence generation, or NTT setups — you know how time-consuming it can be to make sure conditions like\nb^A mod p^t = r<p>actually behave the way you need across multiple constraints.<p>Most teams rely on Hensel lifting, search loops, or heuristic checks that can take hours (or days) to verify — and still risk subtle misalignments.<p>I’ve developed a provably correct, closed-form method that computes the exact modulus gate M instantly, for any given (b, p, t, r) where b= base, p= prime, t= depth, r= residue. It’s not simulation or approximation — it’s a deterministic, math-verified result you can drop directly into a spec or test plan.<p>If you’d like, email me your constraints (b, p, t, r) or visit my site below. I’ll send back your local and combined M values with full factorization so you can verify or integrate immediately.<p>Email: cwstevens71@gmail.com Site: "
+    },
+    {
+      "source": "hn",
+      "title": "Instant Parameter Selection for Modular Systems (b, p, t, r)",
+      "url": "https://news.ycombinator.com/item?id=45919110",
+      "hn_id": "45919110",
+      "points": 1,
+      "comments": 0,
+      "author": "Patternician",
+      "created": "2025-11-13T19:06:36Z",
+      "text_snippet": "If you’ve ever had to tune or verify modular parameters — for example in RNG design, PRBS&#x2F;scrambler alignment, signal sequence generation, or NTT setups — you know how time-consuming it can be to make sure conditions like b^A mod p^t = r\nactually behave the way you need across multiple constraints.<p>Most teams rely on Hensel lifting, search loops, or heuristic checks that can take hours (or days) to verify — and still risk subtle misalignments.<p>I’ve developed a provably correct, closed-form method that computes the exact modulus gate M instantly, for any given (b, p, t, r) where b= base, p= prime, t= depth, r= residue. It’s not simulation or approximation — it’s a deterministic, math-verified result you can drop directly into a spec or test plan.<p>If you’d like, email me your constraints (b, p, t, r) or visit my site below. I’ll send back your local and combined M values with full factorization so you can verify or integrate immediately.<p>Email: cwstevens71@gmail.com Site: ht"
+    },
+    {
+      "source": "hn",
+      "title": "Instant Parameter Selection for Modular Systems (b, p, t, r)",
+      "url": "https://news.ycombinator.com/item?id=45892242",
+      "hn_id": "45892242",
+      "points": 1,
+      "comments": 0,
+      "author": "Patternician",
+      "created": "2025-11-11T20:16:22Z",
+      "text_snippet": "If you’ve ever had to tune or verify modular parameters — for example in RNG design, PRBS&#x2F;scrambler alignment, signal sequence generation, or NTT setups — you know how time-consuming it can be to make sure conditions like<p>b^A mod p^t = r<p>actually behave the way you need across multiple constraints.<p>Most teams rely on Hensel lifting, search loops, or heuristic checks that can take hours (or days) to verify — and still risk subtle misalignments.<p>I’ve developed a provably correct, closed-form method that computes the exact modulus gate M instantly, for any given (b, p, t, r) where b= base, p= prime, t= depth, r= residue.\nIt’s not simulation or approximation — it’s a deterministic, math-verified result you can drop directly into a spec or test plan.<p>If you’d like, email me your constraints (b, p, t, r) or visit my site below.\nI’ll send back your local and combined M values with full factorization so you can verify or integrate immediately.<p>Email: cwstevens71@gmail.com\n Sit"
+    },
+    {
+      "source": "hn",
+      "title": "Oh MySpace: Why I Hate Thee / Shady Reengagement Tactics",
+      "url": "http://naveedl.tumblr.com/post/3909963995/oh-myspace-why-i-hate-thee-shady-reengagement",
+      "hn_id": "2334628",
+      "points": 2,
+      "comments": 1,
+      "author": "naveedlalani",
+      "created": "2011-03-17T00:50:50Z",
+      "text_snippet": "I went to MySpace.com today to update my profile (I have pictures / messages on there from the college days that are not so appropriate…don’t ask). Having not used it for years, I had to reset my password. The captcha was so terrible (took at least 10 tries to get it right; I’m convinced I was entering the right letters), that it reminded me why I never got on in the first place for so long and triggered me to cancel my account.&#60;p&#62;The cancellation process seemed pretty straightforward. Go to your account settings, hit cancel account, tell them why your canceling, and they would send a confirmation email to verify your cancelation. I followed all of the steps, then MySpace told me it would take 48 hours to cancel the account (wtf??). Okay fine. Two minutes later, I open up my inbox, and I start receiving messages from women wanting me to go to MySpace to talk to them. I’m certain if I click and try to login to my account, I’ll have to go through cancelation process again. No mat"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: A database of 52k+ investors to raise your seed round",
+      "url": "https://news.ycombinator.com/item?id=20750920",
+      "hn_id": "20750920",
+      "points": 4,
+      "comments": 0,
+      "author": "juhaszhenderson",
+      "created": "2019-08-20T19:22:17Z",
+      "text_snippet": "Hey guys!<p>Investor Scout (https:&#x2F;&#x2F;investorscout.co) is a categorized database of over 52,000 angel investors, venture capitalists, and VC funds.<p>Stumbling through bottomless Google results, Twitter bios, AngelList &amp; LinkedIn profile, and Crunchbase pages to find the best investors to pitch your startup can take hundreds of hours to do effectively.<p>Investor Scout aggregates 52k+ investors, their emails, phone numbers, and hundreds of thousands of other data points in one place so you can quickly find the best investors to pitch your startup to + their direct email address so you can spend less time researching and more time actually booking calls, taking meetings, and CASHING CHECKS<p>For this update we’ve:<p>- Overhauled our dataset by adding thousands of new investors and spending a ton of money verifying their emails (to minimize bounce rate and save you time)<p>- Built out new bulk investor selection tools so you can select up to 50 investors at once instead of o"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Exa (YC S21) – The web as a database",
+      "url": "https://news.ycombinator.com/item?id=43906841",
+      "hn_id": "43906841",
+      "points": 412,
+      "comments": 133,
+      "author": "willbryk",
+      "created": "2025-05-06T16:18:42Z",
+      "text_snippet": "Hey HN! We’re Will and Jeff from Exa (<a href=\"https:&#x2F;&#x2F;exa.ai\">https:&#x2F;&#x2F;exa.ai</a>). We recently launched Exa Websets, an embeddings-powered search engine designed to return exactly what you’re asking for. You can get precise results for complex queries like “all startups working on open-source developer tools based in SF, founded 2021-2025”. \nDemo here - <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;Unt8hJmCxd4\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;Unt8hJmCxd4</a><p>We started working on Exa because we were frustrated that while LLM state-of-the-art is advancing every week, Google has gotten worse over time. The Internet used to feel like a magical information portal, but it doesn’t feel that way anymore when you’re constantly being pushed towards SEO-optimized clickbait.<p>Websets is a step in the opposite direction. For every search, we perform dozens of embedding searches over Exa’s vector database of the web to find good search candidates, then we run agent"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Exa (YC S21) – embeddings search agent with >20x recall than Google",
+      "url": "https://websets.exa.ai/",
+      "hn_id": "43175781",
+      "points": 28,
+      "comments": 4,
+      "author": "willbryk",
+      "created": "2025-02-25T18:51:54Z",
+      "text_snippet": "Hey HN! I&#x27;m Will, founder of Exa (YC21 - <a href=\"https:&#x2F;&#x2F;exa.ai\">https:&#x2F;&#x2F;exa.ai</a>). Today we&#x27;re opening up Websets, a search engine that finds massive lists of correct results given complex queries.<p>For example, you can search for:<p>- “software engineers in the Bay Area, with experience in startups and big tech, who know Rust and have published technical content”: <a href=\"https:&#x2F;&#x2F;websets.exa.ai&#x2F;cm7ax5bl8003276q689v0dde5\">https:&#x2F;&#x2F;websets.exa.ai&#x2F;cm7ax5bl8003276q689v0dde5</a><p>- “US based healthcare companies, with over 100 employees and a technical founder&quot;: <a href=\"https:&#x2F;&#x2F;websets.exa.ai&#x2F;cm6lc0dlk004ilecmzej76qx2\">https:&#x2F;&#x2F;websets.exa.ai&#x2F;cm6lc0dlk004ilecmzej76qx2</a><p>- &quot;research paper about ways to avoid the O(n^2) attention problem in transformers, where one of the first author&#x27;s first name starts with &quot;A&quot;,&quot;B&quot;, &quot;S&quot;, or&quot;T&quot;, and it was"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: High-performance Perforce file integrity verification",
+      "url": "https://github.com/fechols/P4Sweep",
+      "hn_id": "44433711",
+      "points": 2,
+      "comments": 1,
+      "author": "fechols",
+      "created": "2025-07-01T13:27:59Z",
+      "text_snippet": "While working remotely for a company making games with the Unreal engine, I ran into an issue with verifying builds on my home workstation: running &quot;p4 clean&quot; to verify the local copy of the repo was taking hours.<p>If my workstation blue-screened, or if there was any other reason to believe the files on disk might be corrupted or modified, I had to wait hours for the Perforce client to verify 400 GB of data each time.<p>So I created a tool called P4Sweep that does the same thing as &quot;p4 clean&quot; but 10x faster. And here&#x27;s why:<p>* It downloads all of the MD5 hashes for all files at once, rather than one-at-a-time like &quot;p4 clean&quot;.\n* It computes the MD5 hashes of all local files in parallel, based on the number of CPU cores available.<p>By eliminating the round-trip-latency of requesting the MD5 hash for each file over a VPN connection, plus the increased performance from hashing all files in parallel, we got a 10x performance improvement.<p>The result: P"
+    },
+    {
+      "source": "hn",
+      "title": "How I Hacked Hacker News (with arc security advisory)",
+      "url": "https://news.ycombinator.com/item?id=639976",
+      "hn_id": "639976",
+      "points": 928,
+      "comments": 78,
+      "author": "dfranke",
+      "created": "2009-06-03T16:27:07Z",
+      "text_snippet": "[Condensed version of this narrative: the news.yc code, prior to the\nthe release of arc3, contains a remotely-exploitable vulnerability\npermitting account theft. Anyone running a news installation who has\nnot yet upgraded to arc3 should do so.]<p>Hacker News login cookies are random eight-character strings, stored\nserver-side in a hash table mapping them to user names.  I discovered\na few weeks ago that these strings were rather less random than they\nwere meant to be, and, through a delightful combination of exploits,\ncould be predicted, enabling an attacker to steal accounts.<p>Here's the rand-string function from arc.arc, version 2.  It gets\ncalled with n=8 to generate login cookies, and n=10 for the \"fnids\"\nthat get used all over the site as hash keys identifying closures.<p><pre><code>  (def rand-string (n)\n    (with (cap (fn () (+ 65 (rand 26)))\n           sm  (fn () (+ 97 (rand 26)))\n           dig (fn () (+ 48 (rand 10))))\n      (coerce (map [coerce _ 'char]\n                   ("
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Datafold (YC S20) – Diff Tool for SQL Databases",
+      "url": "https://news.ycombinator.com/item?id=24071955",
+      "hn_id": "24071955",
+      "points": 189,
+      "comments": 76,
+      "author": "hichkaker",
+      "created": "2020-08-06T15:43:08Z",
+      "text_snippet": "Hi HN! My name is Gleb. I&#x27;m here with my co-founder Alex to tell you \nabout our company Datafold (<a href=\"https:&#x2F;&#x2F;datafold.com\" rel=\"nofollow\">https:&#x2F;&#x2F;datafold.com</a>). Datafold lets you diff\nlarge datasets for fast and powerful regression testing. We support\ndatabases such as PostgreSQL, Snowflake, BigQuery, and Redshift.<p>One of the biggest pain points in developing ETL pipelines – \nchains of jobs that move, clean, merge and aggregate analytical data – \nhas been regression testing: verifying how a change in source code (mostly,\nSQL) affects the produced data.<p>Early in my career, as an on-call data engineer at Lyft, I\naccidentally introduced a breaking code change while attempting to\nship a hotfix at 4AM to a SQL job that computed tables for core\nbusiness analytics. A seemingly small change in filtering logic ended\nup corrupting data for all downstream pipelines and breaking\ndashboards for the entire company. Apart from being a silly mistake,\nthis highlig"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Litebulb (YC W22) – Automating the coding interview",
+      "url": "https://www.litebulb.io",
+      "hn_id": "30591874",
+      "points": 139,
+      "comments": 190,
+      "author": "garyjlin",
+      "created": "2022-03-07T19:00:34Z",
+      "text_snippet": "Hi HN, I’m Gary from Litebulb (<a href=\"https:&#x2F;&#x2F;litebulb.io\" rel=\"nofollow\">https:&#x2F;&#x2F;litebulb.io</a>). We automate technical onsite interviews for remote teams. When I say “automate”, I should add “as much as possible”. Our software doesn’t decide who you should hire! But we set up dev environments for interviews, ask questions on real codebases, track candidates, run tests to verify correctness, and analyze the code submitted. On the roadmap are things like scheduling, tracking timing, and customizing questions.<p>I&#x27;ve been a software engineer at 11 companies and have gone through well over a hundred interviewing funnels. Tech interviews suck. Engineers grind LeetCode for months just so they can write the optimal quicksort solution in 15 minutes, but on the job you just import it from some library like you&#x27;re supposed to. My friends and I memorized half of HackerRank just to stack up job offers, but none of these recruiting teams actually knew whether or n"
+    },
+    {
+      "source": "hn",
+      "title": "Tell HN: Stripe shut down my 4-year business with no explanation",
+      "url": "https://news.ycombinator.com/item?id=28085706",
+      "hn_id": "28085706",
+      "points": 83,
+      "comments": 34,
+      "author": "buf",
+      "created": "2021-08-06T11:31:55Z",
+      "text_snippet": "I&#x27;m posting this as a warning to other startups who might be thinking of using Stripe to process payments.<p>I was employee #10 at Eventbrite, founding engineer at Reforge, Techstars alum, startup founder X 3. I can&#x27;t imagine treating my users like this and I am really upset with how Stripe is handling this situation.<p>The situation: I own an online SaaS company that processes $500k+ per year through both Stripe and Braintree. I&#x27;ve been using Stripe for years.<p>Today I received this email:<p>[b]&quot;Our systems recently identified charges that appear to be unauthorized by the customer, meaning that the owner of the card or bank account did not consent to these payments. This unfortunately means that we will no longer be able to accept payments for<p>Refunds on card payments will be issued in 5–7 business days, although they may take longer to appear on the cardholder&#x27;s statement. Please refer to your dashboard for a list of the charges to be refunded[1].&quot;[&#"
+    },
+    {
+      "source": "hn",
+      "title": "Udemy Took Down My Coding Course with No Advanced Warning For an ID Check",
+      "url": "https://news.ycombinator.com/item?id=10970495",
+      "hn_id": "10970495",
+      "points": 28,
+      "comments": 22,
+      "author": "RawData",
+      "created": "2016-01-25T22:29:44Z",
+      "text_snippet": "I got an email from Udemy this morning (I didn&#x27;t see it for four hours!) saying they had randomly taken down my coding course because of a spot identity check.<p>Wow am I pissed!<p>I guess the 300+ people who purchased the course this month are just screwed. And the like 1,500 others who bought it previously are just shit out of luck too.<p>This is insane!<p>Udemy has taken my course down and given me 24-48 hours to respond with my ID and a video saying I&#x27;m me, before they will put the course back up.<p>Couldn&#x27;t they have done that BEFORE taking down my course and screwing over all my paying students?  Horrible behavior from Udemy. They should be ashamed.<p>I&#x27;ve done nothing wrong. The course is mine, was created by me, and is a popular course with great reviews.<p>I don&#x27;t mind verifying my identity, but why not give me the chance to do that before you take down my course and screw over my paying students????<p>Here&#x27;s the email they sent me:\n&gt;&gt;Hello,"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you manage your IT/DevOps role?",
+      "url": "https://news.ycombinator.com/item?id=32932187",
+      "hn_id": "32932187",
+      "points": 15,
+      "comments": 8,
+      "author": "throw_devops_q",
+      "created": "2022-09-21T22:06:30Z",
+      "text_snippet": "Context: I&#x27;m senior mostly-solo IC for a mid-sized SaaS that does DevOps and IT-related tasks.<p>This role is similar to others I&#x27;ve had in the past. It&#x27;s great because there&#x27;s lots of flexibility and not much micromanagement.<p>It&#x27;s challenging because:<p>- I often need to learn and evaluate new products (e.g some SaaS we might want to use). On a related note it&#x27;s often difficult to get good (sometimes any) support for products we&#x27;re paying for, so I waste time debugging obscure issues or reading through confusing documentation<p>- I don&#x27;t really have anyone to delegate to. I could coordinate with managers to negotiate for engineers&#x27; time, but this would take almost as long as just doing some of the tasks myself, so I don&#x27;t do this<p>- Verification is difficult. Infrastructure doesn&#x27;t have as good testing facilities as &quot;regular&quot; software does, and even when it does that still takes some setup, which must be balanced agai"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Interval 1.0 – Build complete tools with just back end code",
+      "url": "https://interval.com/launch",
+      "hn_id": "35442355",
+      "points": 12,
+      "comments": 2,
+      "author": "alexarena",
+      "created": "2023-04-04T16:40:07Z",
+      "text_snippet": "Hey HN,<p>My name is Alex and I founded Interval [0]. We let you build complete internal tools with just backend code. Today we’re excited to launch our 1.0 release.<p>We built Interval for engineers who love writing code but hate building UIs. Because you build tools with Interval using just backend code (TypeScript&#x2F;Node or Python), you can focus on what you love – writing the code that makes your tools work – while Interval takes care of the UI, network communication, validation, etc.<p>Back in June, we shared an early preview of Interval on HN [1] and while our core approach hasn’t changed, we’ve learned a lot and expanded what Interval can do significantly.<p>A single line of Interval code can now (for example) render a table, prompt a user to verify their identity w&#x2F; 2FA, or ask them to upload a file.<p>Here’s an example of a line of Interval code that you might see in the wild:\n`const profilePicture = await io.input.file(‘Upload a new profile picture for the user’)`<p>W"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Can someone at Microsoft help with identity verification?",
+      "url": "https://news.ycombinator.com/item?id=42408467",
+      "hn_id": "42408467",
+      "points": 8,
+      "comments": 1,
+      "author": "Benjamin_Dobell",
+      "created": "2024-12-13T14:01:20Z",
+      "text_snippet": "Yes, it&#x27;s happening again. A regular person needs to ask for help on HN because a major tech company has broken processes and refuses to offer support.<p>I&#x27;m trying to sign up for Trusted Signing Accounts, so I can obtain certificates to sign Windows executables. There&#x27;s a plethora of reports online about how broken Azure&#x27;s processes surrounding this are. The business number field won&#x27;t even accept ABNs (Australian Business Numbers). The work-around is just to enter your ABN as a Tax Identifier and pray to whatever deity you may or may not believe in.<p>Next, you need to verify your identity. This process is especially broken. Microsoft DO NOT actually verify your identity. What they attempt to do is verify you own a domain. What that has to do with code signing, I&#x27;m not sure. However, they go out of their way to make this process nice and easy for fraudulent persons to exploit, but near impossible for regular people to adhere to. Specifically, they DON&#x"
+    },
+    {
+      "source": "hn",
+      "title": "Instagram appears to be issuing fake Community Standards violations",
+      "url": "https://news.ycombinator.com/item?id=44465796",
+      "hn_id": "44465796",
+      "points": 7,
+      "comments": 1,
+      "author": "casenmgreen",
+      "created": "2025-07-04T16:19:34Z",
+      "text_snippet": "I made an Instagram account.<p>Account verification by email.<p>I uploaded one photo, test photo of some fireworks.<p>About an hour late, the account is suspended.<p>Email states;<p><i>Your Instagram account has been suspended. This is because your account, or activity on it, doesn&#x27;t follow our Community Standards on account integrity.<p>If you think we made a mistake, you have until December 31, 2025 to appeal.<p>If you don’t take action, your account will be permanently disabled.</i><p>There&#x27;s a link to verify, which has only one way to verify, by providing a phone number.<p>Phone number is the gold standard for collating information from third parties and although I may be wrong, I suspect this is the real reason for suspension, as a device to obtain phone number.<p>The text &quot;Community Standards on account integrity&quot; is a link.<p>This goes to a page which forces you to accept all cookies.<p>On that page is generic information - there is no way to make the appeal "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Stillwind – High Resolution Electronic Component Search",
+      "url": "https://stillwind.ai",
+      "hn_id": "48494234",
+      "points": 7,
+      "comments": 0,
+      "author": "hannesfur",
+      "created": "2026-06-11T18:12:46Z",
+      "text_snippet": "We’ve spent the last couple of months building Stillwind Search, a search engine for electronic components that helps users find parts that fit even the most complex set of specifications.<p>After talking to the people that actually build PCBs we found out that finding the exact part you are looking for, is consuming enormous amounts of times, is very tedious and then often doesn’t yield the best results. So we tried to cut down this search time by just requiring a (broad) description of the specifications and we find the correct part in minutes, not hours.<p>This is possible through our own database of parts and their properties. We used LLMs to extract every parameter about a part into &gt;1k schemas, collectively covering more than 130k properties. This depth of properties could no longer be visualized, so the database is queried interactively by an AI agent (Sonnet 4.6) to find the needle in the haystack of parts. Before results are shown, we use another model to verify the data (t"
+    }
+  ]
+}
