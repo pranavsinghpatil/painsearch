@@ -13,7 +13,7 @@ Built for Nebius x NVIDIA Global AI Hackathon prep. The system enforces:
 - `search_queries.md` — pain-phrases x domains
 - `discovery_test.md` — kill-fast gate
 - `evidence_card_template.md` — evidence schema
-- `src/collect.py` — permitted-APIs collector (HN Algolia, Lobsters, GitHub). No Reddit mass-scrape.
+- `src/collect.py` — bounded adapters for HN, Lobsters feeds, GitHub Issues, and Reddit OAuth; every record carries provenance and a lineage key
 - `src/registry.py` — validate and safely update the reusable problem registry
 - `registry/schema/problem-registry-v1.json` — strict versioned registry contract
 - `registry/registry.json` — structured problems, evidence, provenance, investigations, and audit history
@@ -26,7 +26,10 @@ Built for Nebius x NVIDIA Global AI Hackathon prep. The system enforces:
 ## Quickstart
 ```bash
 python src/collect.py --source hn --query "manually checking" --limit 15
+python src/collect.py --source lobsters --query "manual review" --limit 20 --lobsters-feeds hottest,newest,active
 python src/collect.py --source github --query "manual workaround" --limit 20
+# Requires REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, REDDIT_USER_AGENT
+python src/collect.py --source reddit --subreddit sysadmin --subreddit devops --query "manual workaround" --limit 10 --comment-limit 5
 python src/registry.py validate
 python src/registry.py list
 python src/registry.py show P0002
