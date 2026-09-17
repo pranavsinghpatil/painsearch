@@ -1,0 +1,56 @@
+flowchart TD
+    A[Public signals\nHN / GitHub Issues / Lobsters / Future adapters] --> B[Source adapters]
+    B --> C[Ingestion & normalization]
+    C --> D[Raw evidence store\nURLs + source context + collection timestamp]
+    D --> E[Problem extraction]
+    E --> F[Candidate problem records]
+
+    F --> G{Evidence review}
+    G -->|Support| H[Evidence registry]
+    G -->|Counter-evidence| I[Counter-evidence registry]
+    G -->|Insufficient| J[Unresolved problem]
+
+    H --> K[Provenance validation\nPublished / collected / verified timestamps\nIndependence + corroboration]
+    I --> K
+    K --> L[Versioned problem registry]
+
+    L --> M{Registry contract valid?}
+    M -->|No| N[Reject update\nReport validation errors]
+    M -->|Yes| O[Inspectable registry API\nvalidate / list / show / export]
+
+    O --> P{Controlled investigation}
+    P --> Q[Existing solutions &\nconventional baseline]
+    P --> R[Falsifiable question]
+    P --> S[Reproduction / measurement]
+    Q --> T[Residual gap assessment]
+    R --> T
+    S --> T
+
+    T --> U{Decision}
+    U -->|Gap disproven| V[Rejected]
+    U -->|Evidence incomplete| W[Unresolved]
+    U -->|Gap survives| X[Validated problem]
+
+    V --> L
+    W --> L
+    X --> Y[Hackathon feasibility gate]
+    Y --> Y1[Open-model necessity]
+    Y --> Y2[Nebius inference / deployment / scaling]
+    Y --> Y3[Buildability + judging fit]
+    Y1 --> Z{Feasible?}
+    Y2 --> Z
+    Y3 --> Z
+    Z -->|No| V
+    Z -->|Yes| AA[Prototype against best baseline]
+
+    AA --> AB[User outcomes / experiment results]
+    AB --> AC[Feedback and assumptions]
+    AC --> L
+
+    L -. controlled status transition .-> AD[Audit history\nActor + reason + timestamp]
+    AD --> L
+
+    style L fill:#1f4b5f,color:#fff,stroke:#8fd3e8
+    style O fill:#285943,color:#fff,stroke:#9be7b0
+    style AA fill:#684b1c,color:#fff,stroke:#f4cf75
+    style N fill:#642f35,color:#fff,stroke:#f5a6ad
