@@ -1,0 +1,206 @@
+{
+  "query": "silent API change",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "Yarn's Future - v2 and beyond",
+      "url": "https://github.com/yarnpkg/yarn/issues/6953",
+      "repo": "yarnpkg/yarn",
+      "reactions": 1407,
+      "comments": 56,
+      "created": "2019-01-24T14:55:52Z",
+      "body_snippet": "Hi everyone,\r\n\r\nWhen the Yarn project started back in 2016, our landscape was very different from what it is now. Package locking was far from being a first class citizen in the Javascript ecosystem, and the time needed to run an install was ... well, it was what it was. Yarn's release shook the status quo and started a movement that ended up being beneficial to everyone, other package managers included. Now is the time to assess where we are, reinforce our strengths and patch our weaknesses.\r\n\r\nThis thread aims to expose our roadmap for the next major Yarn release, and let you know about significant changes that we plan to make regarding Yarn's design. The codename for these changes is Berry - that's how we'll refer to it during the next few months.\r\n\r\n## Roadmap\r\n\r\nThis section lists some of the work we have in progress. It's far from being a comprehensive list, but it gives a good idea of the kind of changes you can expect going forward:\r\n\r\n### Major changes\r\n\r\n* The lockfile (and configuration) format will become a strict subset of YAML. In the process, the lockfile information will be slightly changed to account for some long-awaited changes (such as [#5892](https://github.com"
+    },
+    {
+      "source": "github-issues",
+      "title": "proposal: arena:  new package providing memory arenas",
+      "url": "https://github.com/golang/go/issues/51317",
+      "repo": "golang/go",
+      "reactions": 691,
+      "comments": 392,
+      "created": "2022-02-22T16:11:10Z",
+      "body_snippet": "**Note, 2023-01-17**. This proposal is on hold indefinitely due to serious API concerns. The GOEXPERIMENT=arena code may be changed incompatibly or removed at any time, and we do not recommend its use in production.\r\n\r\n- - -\r\n\r\n# Proposal: arena: new package providing memory arenas\r\n\r\nAuthor(s): Dan Scales (with input from many others)\r\n\r\nLast updated: 2022-2-22\r\n\r\nDiscussion at https://golang.org/issue/51317\r\n\r\n## Abstract\r\n\r\nWe propose implementing memory arenas for Go. An arena is a way to allocate a set of memory objects all from a contiguous region of memory, with the advantage that the allocation of the objects from the arena is typically more efficient than general memory allocation, and more importantly, the objects in the arena can all be freed at once with minimal memory management or garbage collection overhead. Arenas are not typically implemented for garbage-collected languages, because their operation for explicitly freeing the memory of the arena is not safe and so does not fit with the garbage collection semantics. However, our proposed implementation uses dynamic checks to ensure that an arena free operation is safe. The implementation guarantees that, if an arena "
+    },
+    {
+      "source": "github-issues",
+      "title": "[Umbrella] Releasing Suspense",
+      "url": "https://github.com/react/react/issues/13206",
+      "repo": "react/react",
+      "reactions": 628,
+      "comments": 119,
+      "created": "2018-07-13T20:01:03Z",
+      "body_snippet": "Let's use this issue to track the remaining tasks for releasing Suspense to open source.\r\n\r\n**Last updated: March 24, 2022**\r\n\r\n**Blog post: [The Plan for React 18](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html)**\r\n\r\n## Completed: React 16\r\n\r\n- [x] Release `<Suspense>` with `React.lazy` for client-side lazy loading\r\n\r\n## Completed: [React 18 Alpha](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html)\r\n\r\n- [x] Implement concurrent rendering, which is a prerequisite to everything else.\r\n- [x] Fix [fundamental flaws](https://github.com/facebook/react/pull/18796) in the concurrency model that made the behavior difficult to understand and caused many bugs.\r\n- [x] Rewrite [how React traverses the tree](https://github.com/facebook/react/pull/19261) to unblock fixing Suspense quirks.\r\n- [x] Redesign how [React integrates with the scheduler](https://github.com/facebook/react/pull/19121) to simplify the model, fix bugs, and prepare for native browser scheduling.\r\n- [x] [Fix `<Suspense>` quirks](https://github.com/reactwg/react-18/discussions/7): Previously, effects would fire inside a suspended tree too early. For example, you would see an effect from a component "
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature Request] Extension Permissions, Security Sandboxing & Update Management Proposal",
+      "url": "https://github.com/microsoft/vscode/issues/52116",
+      "repo": "microsoft/vscode",
+      "reactions": 399,
+      "comments": 86,
+      "created": "2018-06-17T02:11:29Z",
+      "body_snippet": "I believe that Visual Studio Code should support some kind of \"Extension Permission Management\", complete with prompts, warnings, opt-in, and opt-out, similar to what has been supported for some time now with Chrome, Firefox, and other browsers. \r\n\r\n# Reference Screenshot\r\n\r\nI've provided, for reference, some screenshots showing Extension Permission and update prompts and management UIs in the below screenshot, as well as others torwards the end of this proposal.\r\n\r\n#### Chrome prompting to approve additional permissions when updating an extension:\r\n\r\n![image](https://user-images.githubusercontent.com/4053734/41503578-cfbf9ee4-718c-11e8-82c8-8a97fb8b61a7.png)\r\n\r\n_(See additional screenshots at the very bottom.)_\r\n\r\n# Scope and Benefits\r\n\r\nI have proposed, in detail here, how Extension Permissions management could function and be exposed to users, including descriptions of dialogs for prompting users to allow/deny permissions on extension install vs. updating, changes to Extensions Sidebar and Extension Details Marketplace pages, grouping/managing extensions by Category/Collection in VSCode, specific warnings and when to show them, types of permissions could define (and whether may "
+    },
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "proposal: spec: require return values to be explicitly used or ignored (Go 2)",
+      "url": "https://github.com/golang/go/issues/20803",
+      "repo": "golang/go",
+      "reactions": 149,
+      "comments": 41,
+      "created": "2017-06-26T20:01:26Z",
+      "body_snippet": "Today, if a Go function returns both a value and an error, the user must either assign the error to a variable\r\n```go\r\nv, err := computeTheThing()\r\n```\r\nor explicitly ignore it\r\n```go\r\nv, _ := computeTheThing()\r\n```\r\nHowever, errors that are the only return value (as from `io.Closer.Close` or  [`proto.Unmarshal`](https://godoc.org/github.com/golang/protobuf/proto#Unmarshal)) or paired with an often-unneeded return value (as from `io.Writer.Write`) are easy to accidentally forget, and not obvious in the code when forgotten.\r\n\r\n```go\r\ntx.Commit()  // Store the transaction in the database!\r\n```\r\n\r\nThe same problem can occur even when errors are not involved, as in functional-style APIs:\r\n```go\r\nt := time.Now()\r\nt.Add(10 * time.Second)  // Should be t = t.Add(…)\r\n```\r\n```go\r\nstrconv.AppendQuote(dst, \"suffix\")  // Should be dst = strconv.AppendQuote(…)\r\n```\r\n\r\nFor the few cases where the user really does intend to ignore the return-values, it's easy to make that explicit in the code:\r\n```go\r\n_, _ = fmt.Fprintln(&buf, v)  // Writes to a bytes.Buffer cannot fail.\r\n\r\ngo func() { _, _ = fmt.Fprintln(os.Stderr, findTheBug()) }()\r\n```\r\nAnd that transformation should be straightforward to appl"
+    },
+    {
+      "source": "github-issues",
+      "title": "Offline spell checker for VSCode",
+      "url": "https://github.com/microsoft/vscode/issues/20266",
+      "repo": "microsoft/vscode",
+      "reactions": 101,
+      "comments": 23,
+      "created": "2017-02-09T09:25:35Z",
+      "body_snippet": "Hello (first time contributing here)\r\n\r\nThere are few offline spell checkers among VSCode extensions, but they are based on seriously faulty JavaScript implementations of [Hunspell](http://hunspell.github.io/) spell checker.\r\n\r\n[Hunspell](http://hunspell.github.io/) is nowadays probably the most widespread standard for spell check layer. It is used on MacOS, Linux and in some software (e.g. LibreOffice) on Windows. It is also used by both Atom and Sublime Text. There is an enormous collection of polished dictionaries for Hunspell.\r\n\r\nThere exists some JavaScript implementations that refer to Hunspell's name but in fact they do not implement critical functionality - lexical parser. I have verified these three:\r\n\r\n[hunspell-spellchecker](https://github.com/GitbookIO/hunspell-spellchecker)\r\n[Typo.js](https://github.com/cfinke/Typo.js)\r\n[nspell](https://github.com/wooorm/nspell)\r\n\r\nAll three work more or less following a simple idea of loading the dictionary into memory (into a associative table, a.k.a. dictionary, object to be precise). They use the Hunspell's affixes (.aff file) to create ALL variants of the words found in the dictionary (.dic file) and then store them in the memory."
+    },
+    {
+      "source": "github-issues",
+      "title": "DeepSWE Audit: Pricing, provider routing, and effort-tuning concerns (solve-rate findings retracted)",
+      "url": "https://github.com/datacurve-ai/deep-swe/issues/21",
+      "repo": "datacurve-ai/deep-swe",
+      "reactions": 79,
+      "comments": 25,
+      "created": "2026-06-01T17:32:02Z",
+      "body_snippet": "# Update (2026-06-08)\n\nThe solve-rate claims in this issue were based on an incorrect test setup. We applied verifier test patches before running the agent, allowing the model to see the acceptance tests. After rerunning correctly, we were unable to reproduce the claimed 3/3 solves.\n\nSections discussing solve rates should be considered retracted.\n\nThe pricing, provider-routing, and effort-configuration concerns remain and are discussed below.\n---\n\nWe investigated the DeepSWE benchmark after noticing deepseek-v4-pro's reported results (8% solve rate, $4.22 avg cost) didn't match real-world experience. We found multiple issues that invalidate those numbers.\n\n---\n\n### TL;DR\n\n- **Cost inflated ~5×**: The benchmark bills all input tokens at the full cache-miss rate ($0.435/M). In reality, 78% of tokens in agent runs are cache hits, which DeepSeek charges at $0.003625/M (99.2% discount). A representative trial reported at $4.36 drops to ~$0.89 with proper cache pricing on the verifiable portion. An additional $0.41 in the reported cost is unexplained (could be reasoning tokens, OpenRouter markup, or both) — but the dominant error is the cache-pricing gap. The $4.22 leaderboard average is"
+    },
+    {
+      "source": "github-issues",
+      "title": "[RFC] Apache MXNet 2.0 Roadmap",
+      "url": "https://github.com/apache/mxnet/issues/16167",
+      "repo": "apache/mxnet",
+      "reactions": 71,
+      "comments": 36,
+      "created": "2019-09-13T21:46:25Z",
+      "body_snippet": "# Overview\r\n\r\nStatus: https://github.com/apache/incubator-mxnet/projects/18\r\nThe status for each project will be updated by the contributor who's driving it. If you have more projects that you intend to drive please first discuss here.\r\n\r\nThe purpose of this RFC is to organize and present the roadmap towards 2.0. As 2.0 will be a major release, changes that would break backward compatibility are permissible.\r\n\r\nThe proposed changes in this RFC are either collected from past roadmap discussions such as #9686, or are based on various common issues from the past. This RFC organizes these changes into self-contained projects to facilitate clear definition of project, captures the risks and status quo to the best of our knowledge. To help navigate, the projects are further divided into several high-level areas. Some of the listed projects are already in progress, and are included to provide a clear overview.\r\n\r\nThe objectives of Apache MXNet 2.0 include:\r\n- Improve expressiveness and usability of user-facing API.\r\n- Improve expressiveness and usability of the technical stack for lower development cost and maintainability.\r\n\r\nIn terms of frontend, this roadmap focuses mostly on Python-fr"
+    },
+    {
+      "source": "github-issues",
+      "title": "[NEW] Support for Active/Active replication",
+      "url": "https://github.com/valkey-io/valkey/issues/512",
+      "repo": "valkey-io/valkey",
+      "reactions": 67,
+      "comments": 80,
+      "created": "2024-05-17T14:44:15Z",
+      "body_snippet": "**Active Issues**: https://github.com/pes-innovation-lab/valkey/issues \n\n## Overview\n\n**What problem are we solving?**\nValkey today has a single writable primary per shard. Serving a globally distributed application therefore forces one of two painful choices: route every write across to one primary region while paying tens to hundreds of milliseconds of cross-region latency on the write path and losing all write availability when that region is unreachable or stand up an external replication pipeline (a message broker plus a custom sync service) that mirrors data between regions. The external pipeline adds operational surface, extra network hops, its own failure modes, and a lag/consistency model that lives outside Valkey and outside the commands users already know. Neither option lets an application in any region read and write its local Valkey at low latency while staying converged with its peers.\n\n**Who is the user?**\nOperators running Valkey behind globally distributed applications for use cases like multi-region session stores, user profiles, shopping carts, feature flags, counters, rate limiters, and edge caches. The users who need local read/write latency in every region an"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add LastDayOfMonth database function",
+      "url": "https://github.com/django/new-features/issues/38",
+      "repo": "django/new-features",
+      "reactions": 56,
+      "comments": 25,
+      "created": "2025-05-28T16:50:24Z",
+      "body_snippet": "### Code of Conduct\n\n- [x] I agree to follow Django's Code of Conduct\n\n### Feature Description\n\nAdd a built-in `LastDayOfMonth` database function that returns the last calendar day of the month for a given `DateField` or `DateTimeField` expression.\n\n### Problem\n\nToday developers must hand-roll backend-specific `Func` subclasses (or wrap raw SQL) to calculate “last day of month”.  That works but it’s verbose, copied across code-bases and easy to get subtly wrong (leap years, Oracle quirks, new DB versions).  A small built-in helper removes that friction and raises the quality bar.\n\nWhy a core helper is better than ad-hoc `Func` / `FuncWrapper`:\n\n* **One-liner, zero boiler-plate** – `LastDayOfMonth(\"start\")`.\n* **Cross-backend guarantee** – ORM ships the right SQL for PostgreSQL,   MySQL/MariaDB, SQLite and Oracle, covered by the test-suite.\n* **Official docs & IDE discoverability** – lives next to   `TruncMonth`, `ExtractDay`, etc.\n* **Clearer code reviews** – intent obvious without opening a helper   file; no naming drift (`MonthEnd`, `EndOfMonth`, …).\n* **Safer upgrades** – Django can warn if backend syntax changes,   while custom SQL might silently break.\n* **Negligible maintenan"
+    },
+    {
+      "source": "github-issues",
+      "title": "Pluggable JSON serialization/deserialization backend",
+      "url": "https://github.com/django/new-features/issues/187",
+      "repo": "django/new-features",
+      "reactions": 64,
+      "comments": 6,
+      "created": "2026-07-02T17:57:11Z",
+      "body_snippet": "### Code of Conduct\n\n- [x] I agree to follow Django's Code of Conduct\n\n### Feature Description\n\nMake Django's JSON serialization and deserialization pluggable, so a project can choose which JSON library Django uses internally, the same way it can already choose a password hasher (`PASSWORD_HASHERS` + `django[argon2]`) or a storage backend (`STORAGES`). The standard library `json` module stays the default; switching to another library (e.g. `orjson`, or any future one) is opt-in.\n\n### Problem\n\nDjango core calls `json.dumps` / `json.loads` directly in roughly 40 places (`http/response.py`, `core/serializers/json.py`, `core/signing.py`, `contrib/admin`, `contrib/messages`, `contrib/staticfiles`, `db/models/fields/json.py`, `forms/fields.py`, `utils/html.py`, `views/i18n.py`, `test/client.py`, and others). A handful are already customizable per-call (`JsonResponse(encoder=, json_dumps_params=)`, `JSONField(encoder=, decoder=)`, `serialize(cls=...)`, `SESSION_SERIALIZER`, `SERIALIZATION_MODULES`), but most are hardcoded to the stdlib `json` module.\n\nThe user-facing surfaces (`JsonResponse`, `json_script`, `JSONField`, `Client`, the serializers) are already pluggable per-call, and a thir"
+    },
+    {
+      "source": "github-issues",
+      "title": "README! The future and continued survival of AIMSICD",
+      "url": "https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/issues/926",
+      "repo": "CellularPrivacy/Android-IMSI-Catcher-Detector",
+      "reactions": 63,
+      "comments": 93,
+      "created": "2017-04-09T20:57:48Z",
+      "body_snippet": "It has come to my attention that apparently AIMSICD has become even more popular the less it works. \r\n\r\nI will say the following not out of disrespect for the many contributors and all the hard labor put into this app, to try to make it work, but as an honest recommendation to all developers here, still thinking this will happen. As it stands right now, it simply will not! And it hasn't worked for the last 2 years (when I left the project), and probably never will unless there is a radical change in matters. \r\n\r\nIt seem that no one at the [CellularPrivacy](https://github.com/CellularPrivacy) organization is able to maintain this? SecUpwN lost his account? ~~OpenCID is closing down.~~ The DB is totally broken and useless from all development aspects. The app is bloated with eye-candy, obscure and useless functions and libraries. The translation integration is bloating the commit history to the point its impossible to follow any valuable coding whatsoever. \r\n\r\nHowever, due to recent world political changes and the extremely easy access to SDR home-brew IMSI catchers and constant 2FA hacks using mobile network MiTM techniques. This app is indeed still needed, especially for a wider ha"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE]: Revert silent removal of Go privacy wording and provider attribution, and add telemetry + retention to privacy policy",
+      "url": "https://github.com/anomalyco/opencode/issues/39875",
+      "repo": "anomalyco/opencode",
+      "reactions": 60,
+      "comments": 6,
+      "created": "2026-07-31T13:14:32Z",
+      "body_snippet": "- [x] I have verified this feature I'm about to request hasn't been suggested before.\n\n(It builds on #39860, #39857, #24649, #14281, #35303. Those ask for narrower\nthings. None got a substantive response.)\n\n---\n\nHi folks. I'm a Go subscriber. Two commits in the last two weeks changed\nwhat OpenCode told me about my data, and neither change was announced,\ndocumented in a changelog, or paired with a privacy policy update. The\ndiffs are factual. The new copy is internally contradictory. The\nrelevant providers have a documented history of TOS violations that\nmakes the prior ZDR wording harder to defend quietly than it was when\nyou first published it.\n\n---\n\n**1. Bring back the per-model provider column on the Go marketing page and\nin `/zen/go/v1/models`.**\n\n@fwang, on 2026-07-16 you shipped `5121352` \"go: grok 4.5 and kimi k3\" and\ndeleted the `[{ name, provider }]` array in\n`packages/console/app/src/routes/go/index.tsx`. The page used to show e.g.\n`GLM-5.2 -> DeepInfra, Fireworks AI, Z.ai`. It's a plain `string[]` now.\nThe public API stopped returning a provider field at the same time. I\nran `curl https://opencode.ai/zen/go/v1/models | jq '.data[0]'` just now\nand got `{\"id\":\"minimax-m3\","
+    },
+    {
+      "source": "github-issues",
+      "title": "[BUG] Cowork (Windows): all Plan9 shares fail with \"Plan9 mount failed: invalid argument\" after Windows update KB5124008 (26200.9445) — uninstalling the KB fixes it",
+      "url": "https://github.com/anthropics/claude-code/issues/92984",
+      "repo": "anthropics/claude-code",
+      "reactions": 61,
+      "comments": 118,
+      "created": "2026-09-09T03:16:16Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet\n- [x] This is a single bug report (please file separate reports for different bugs)\n- [x] I am using the latest version of Claude Code\n\n### What's Wrong?\n\nAfter the September 2026 Windows 11 cumulative security update **KB5124008 (OS build 26200.9445)** was installed and the machine rebooted, the Cowork local sandbox (Claude Desktop, Windows) can no longer mount any host drive share.\n\nThe VM boots, vsock RPC works, and on the host side `HcsModifyComputeSystem` returns `hr=0x0` for every Plan9 share — but inside the guest every 9p mount fails with `invalid argument`. Every `device_bash` call then fails with:\n\n```\nsandbox-helper: no Plan9 drive shares mounted under /mnt/.virtiofs-root/shared\n```\n\n**Uninstalling KB5124008 and rebooting fully restores the sandbox.** Nothing else helped.\n\n### Environment\n- Claude Desktop **1.49585.0** (MSIX `Claude_1.49585.0.0_x64__pzs8sxrjxfjjc`), CoworkVMService running, VM bundle `2a762adfc2eea13eca0d113a2e6452ff00ae3f62`, SDK 2.1.260\n- Windows 11 Pro 24H2, build"
+    },
+    {
+      "source": "github-issues",
+      "title": "Allow silent/minimal/standard output when building",
+      "url": "https://github.com/vuejs/vue-cli/issues/3603",
+      "repo": "vuejs/vue-cli",
+      "reactions": 59,
+      "comments": 18,
+      "created": "2019-03-09T19:43:03Z",
+      "body_snippet": "### What problem does this feature solve?\r\n\r\nFirst: thank you guys so much for your time and effort on this project. It's **seriously** a life-saver.\r\n\r\nSo, I'm not sure if this is a feature request or _actually_ kind of a bug report... maybe a little of both. But I think whatever bug I'm experiencing would be made moot were this feature to exist.\r\n\r\nI'm looking for an option for \"minimal output\" from `vue-cli-service build [--watch]` which does not have a progress status line which is neither animated nor changed in-place.\r\n\r\nWhen running `vue-cli-service build --watch`, it does something funky with the standard output. First you see \"building for development\", then a progress status line which changes in place:\r\n\r\n```\r\n 34% building 204/220 modules 16 active ...e_modules/core-js/modules/_string-at.js\r\n```\r\n\r\n...before finally logging the build output, something like:\r\n\r\n```\r\n DONE  Compiled successfully in 10200ms1:42:48 PM\r\n\r\n  File            Size                          Gzipped\r\n\r\n  dist/blah.js    13645.43 KiB                  2565.83 KiB\r\n  dist/app.js     980.16 KiB                    235.21 KiB\r\n\r\n  Images and other types of assets omitted.\r\n\r\n  DONE  Build complete. Watc"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature] Support trustPolicy to reject packages with provenance downgrade at install time",
+      "url": "https://github.com/yarnpkg/berry/issues/7101",
+      "repo": "yarnpkg/berry",
+      "reactions": 59,
+      "comments": 1,
+      "created": "2026-04-16T10:47:20Z",
+      "body_snippet": "## Summary\n\nAdd a configuration option (e.g. `trustPolicy: no-downgrade` in `.yarnrc.yml`) that prevents Yarn from installing a package version whose trust level (trusted publisher → provenance → none) is lower than what previous versions of that package established. This is the single most impactful client-side mitigation against account-takeover supply chain attacks.\n\n## Motivation\n\nOn March 31, 2026, **axios** — a package with 60M+ weekly downloads — was compromised when an attacker gained access to the lead maintainer's machine via social engineering and published two malicious versions (`1.14.1` and `0.30.4`) directly from the compromised account. The malicious versions injected a dependency containing a cross-platform remote access trojan. They were live for ~3 hours before removal. Full post-mortem: [axios/axios#10636](https://github.com/axios/axios/issues/10636).\n\nThe critical detail: **axios had been publishing with provenance attestations prior to the attack, but the malicious versions were published manually from the attacker's machine — without provenance.** This is a clear, detectable trust downgrade. If Yarn had a mechanism to reject installs where provenance disappea"
+    },
+    {
+      "source": "github-issues",
+      "title": "🧐 Breaking changes for fabric 6.0",
+      "url": "https://github.com/fabricjs/fabric.js/issues/8299",
+      "repo": "fabricjs/fabric.js",
+      "reactions": 58,
+      "comments": 188,
+      "created": "2022-09-18T23:15:30Z",
+      "body_snippet": "## b.0.0-beta16\r\nThis list is in progress and is meant to be an easy go to place to add things and find them when the time comes to write a document on what has changed.\r\nThis will be a list of descriptive items, extended as needed to capture behavior changes.\r\nApart from what is described here **MANY** bugs have been fixed in the process.\r\n\r\n\r\n### Generic concepts\r\n- **Imports** we moved from `import { fabric } from 'fabric'` to `import { Canvas, Rect, util } from 'fabric'` or `import * as fabric from 'fabric'`. To avoid packaging issues node has its own entrypoint `import { StaticCanvas } from 'fabric/node'`. This means there is no fabric namespace/object anymore.\r\n  - Introduced `classRegistry` to bridge the absence of a namespace \r\n  - Introduced the `env` concept, `getEnv` to allow node/browser specific values/logic. That has made importing fabric in **SSR** possible and will allow **offscreen support** in the future.\r\n  - renamed the following #9172:\r\n    - `fabric.Object` => `FabricObject`\r\n    - `fabric.Text` => `FabricText`\r\n    - `fabric.Image` => `FabricImage`\r\n  - Node's `registerFont` has been removed, use `registerFont` exposed by [node canvas](https://github.com/Auto"
+    },
+    {
+      "source": "github-issues",
+      "title": "A Pragmatic, Not-Really-Typed Errors Proposal",
+      "url": "https://github.com/microsoft/TypeScript/issues/57943",
+      "repo": "microsoft/TypeScript",
+      "reactions": 54,
+      "comments": 17,
+      "created": "2024-03-26T06:45:03Z",
+      "body_snippet": "### ✅ Viability Checklist\r\n\r\n- [X] This wouldn't be a breaking change in existing TypeScript/JavaScript code\r\n- [X] This wouldn't change the runtime behavior of existing JavaScript code\r\n- [X] This could be implemented without emitting different JS based on the types of the expressions\r\n- [X] This isn't a runtime feature (e.g. library functionality, non-ECMAScript syntax with JavaScript output, new syntax sugar for JS, etc.)\r\n- [X] This isn't a request to add a new utility type: https://github.com/microsoft/TypeScript/wiki/No-New-Utility-Types\r\n- [X] This feature would agree with the rest of our Design Goals: https://github.com/Microsoft/TypeScript/wiki/TypeScript-Design-Goals\r\n\r\n### ⭐ Suggestion\r\n\r\nI know that typed errors have been [discussed extensively](https://github.com/microsoft/TypeScript/issues/13219) and rejected — for [very good reasons](https://github.com/microsoft/TypeScript/issues/13219#issuecomment-1515037604). I don't disagree with any of those reasons. After reading issue [#13219](https://github.com/microsoft/TypeScript/issues/13219) in its entirety, though, I believe I have a proposal that would improve TypeScript’s error handling without introducing any of the dr"
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal: Architecture & Codebase Structure v3",
+      "url": "https://github.com/odysseus-dev/odysseus/issues/605",
+      "repo": "odysseus-dev/odysseus",
+      "reactions": 51,
+      "comments": 102,
+      "created": "2026-06-01T15:44:12Z",
+      "body_snippet": "# Odysseus — Architecture & Implementation Document\n\n> **Status:** v3 — updated with community feedback from #605  \n> **Scope:** Backend reorganization, frontend rebuild, tooling standardization, contributor conventions  \n> **Principle:** No behavior changes in Phase 1. Structure first, features after.\n\n> [!WARNING]\n> **This version may be stale.** The proposals here are being broken down and formalised into individual ADRs — that is where active discussion is happening now. When the ADRs are finalised and accepted by @pewdiepie-archdaemon, this document will be updated to v4 to reflect the agreed decisions. Until then, treat the ADR PRs as the working source of truth.\n>\n> **Related PRs:** #987 (architecture foundation + ADR-001) · #1013 (ADRs 002–024, draft — stack, tooling, security, conventions) · #1023 (Python tooling implementation)\n>\n> **Everyone is welcome to participate** — leave a review comment on a specific ADR in #1013 if you see a gap or disagree with a decision. If you have an open issue covering the same ground as one of the ADRs, consider closing it and pointing people to #1013 to help keep the tracker manageable for a solo maintainer.\n\n---\n\n## Table of Contents\n\n1."
+    }
+  ]
+}

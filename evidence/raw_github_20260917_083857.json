@@ -1,0 +1,206 @@
+{
+  "query": "breaking change without warning",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "A proposal to improve ReactiveFormsModule",
+      "url": "https://github.com/angular/angular/issues/31963",
+      "repo": "angular/angular",
+      "reactions": 563,
+      "comments": 42,
+      "created": "2019-08-02T12:51:15Z",
+      "body_snippet": "# 🚀 feature request\r\n\r\n### Relevant Package\r\n\r\nThis Proposal is for @angular/forms\r\n\r\n### Description\r\n\r\nThe ReactiveFormsModule is pretty good, but it has a number of problems.\r\n\r\n1. The module is not strongly typed\r\n   - See issues #13721 #27389 #27665 #25824 #20040 #17000 #16999 #16933 relating to controls\r\n   - See issues #31801 #19340 #19329 relating to ControlValueAccessor\r\n2. It’s relatively complicated to display error messages, given how fundamental this task is. See #25824 #24981 #22319 #21011 #2240 #9121 #18114\r\n3. The methods for adding errors are inflexible. It is difficult to interface with async services to display errors (hence the need for different update strategies like on `blur` / on `submit`). In general, working with errors is more difficult than it should be.\r\n   - See #31105 #29275 #26683 #23484 #20371 #17090 #13920 #9119 #6895 #19851 #18871 #10530 #6170.\r\n4. Numerous annoyances with unfortunate API decisions.\r\n   - You can't bind a single form control to multiple inputs without ControlValueAccessor #14451\r\n   - Can't store arbitrary metadata on a control #19686\r\n   - Calling `reset()` doesn't actually reset the control to its initial value #20214 #19747 #15"
+    },
+    {
+      "source": "github-issues",
+      "title": "ecstatic's Past, Present and Future",
+      "url": "https://github.com/jfhbrook/node-ecstatic/issues/259",
+      "repo": "jfhbrook/node-ecstatic",
+      "reactions": 231,
+      "comments": 17,
+      "created": "2019-05-06T17:06:52Z",
+      "body_snippet": "TL;DR - [The most valuable thing ecstatic can do for the JavaScript ecosystem](https://github.com/request/request/issues/3142) is to self-destruct, never to cut a new release again.\r\n\r\n# 2009\r\n\r\nI once had a friend tell me that for many people, the second or maybe first thing that someone gets really into, usually in their early 20s, becomes a memory like what people have about punk rock in New York in the '80s. \"We were There and we were Doing It,\" these people would say.\r\n\r\nWe were of course talking about Node.js. In the neighborhood of 2009 I was in my early 20s, and in fact Node.js was about the second thing I really got into (after webcomics in the mid-aughts as a teen). We were certainly There - with perhaps 40 people in the #node.js irc room around then - and we were definitely Doing It - nobody had written any of the node libraries yet and the possibilities seemed infinite. [Someone ported Sinatra to Node.js](https://expressjs.com/), someone [hacked up a baby package manager on top of CouchDB](https://www.npmjs.com/), [a friend of mine](https://twitter.com/substack) wrote a huge mess of utility modules and me? I learned Node.js as a hobby while working on my engineering deg"
+    },
+    {
+      "source": "github-issues",
+      "title": "ESM support: soliciting feedback",
+      "url": "https://github.com/TypeStrong/ts-node/issues/1007",
+      "repo": "TypeStrong/ts-node",
+      "reactions": 220,
+      "comments": 430,
+      "created": "2020-04-12T05:50:33Z",
+      "body_snippet": "Please use this ticket to provide feedback on our native ESM support.  Your involvement is greatly appreciated to ensure the feature works on real-world projects.\r\n\r\n## Experimental warning\r\n\r\n[Node's loader hooks](https://nodejs.org/api/esm.html#esm_experimental_loaders) are **EXPERIMENTAL** and subject to change.  ts-node's ESM support is as stable as it can be, but it relies on APIs which node can *and will* break in new versions of node.\r\n\r\nWhen node breaks their APIs, it breaks loaders using their APIs.  You have been warned!\r\n\r\n## Third-party docs: \"Guide: ES Modules in NodeJS\"\r\n\r\nSomeone has been maintaining a great reference document explaining how to use ts-node's ESM loader.\r\n\r\n[Guide: ES Modules in NodeJS](https://docs.joshuatz.com/cheatsheets/node-and-npm/node-esm/)\r\n\r\n## First-party docs\r\n\r\nOur website explains the basics:\r\n\r\n[CommonJS vs native ECMAScript modules](https://typestrong.org/ts-node/docs/imports)\r\n[Options: esm](https://typestrong.org/ts-node/docs/options#esm)\r\n\r\n## Usage\r\n\r\n### Requirements\r\n\r\n* Set `\"module\": \"ESNext\"` or `\"ES2015\"` so that TypeScript emits import/export syntax.\r\n* Set `\"type\": \"module\"` in your `package.json`, which is required to tell "
+    },
+    {
+      "source": "github-issues",
+      "title": "[RFC]: Unified syntax for providers, without code-generation",
+      "url": "https://github.com/rrousselGit/riverpod/issues/4008",
+      "repo": "rrousselGit/riverpod",
+      "reactions": 215,
+      "comments": 202,
+      "created": "2025-03-15T01:02:58Z",
+      "body_snippet": "With the death of macros, I've been thinking a lot on the future of Riverpod.\n\nThere are two common complaints with Riverpod:\n- Too many options\n- or it requires codegen\n\nThose are two sides of the same coin. Many users aren't satisfied with the API.   \nThe API issue impacts other areas too. For example, documentations are in a bad state in large part because there are too many things to cover. \nWith that in mind, I've been experimenting on how to solve this issue over the years. And I think I'm ready to share a possible new syntax for Riverpod.\n\n\n## The problems\n\nBefore showing the new syntax, I'd like to list a few problems that we're trying to solve here. If you think one of them is missing, make sure to leave a comment! \n\n1) There are too many types of providers.  \nNo need to explain anything. We all know what this is about.\n\n2) `family`'s syntax without code-generation is bad.  \nWe are currently limited with a single required positional parameter. No optional ones. No default values. No named parameters. No generics.   \nCodegen fixes this. But codegen is slow.\n\n3) Updating a provider is needlessly complex.  \nWe currently have to write `ref.read(provider.notifier).method()`. We"
+    },
+    {
+      "source": "github-issues",
+      "title": "Migrate GDScript to the GDExtension mechanism and overhaul the implementation",
+      "url": "https://github.com/godotengine/godot-proposals/issues/14652",
+      "repo": "godotengine/godot-proposals",
+      "reactions": 181,
+      "comments": 59,
+      "created": "2026-04-13T05:29:14Z",
+      "body_snippet": "> [!WARNING]\n> * This proposal is **not** an official plan, but merely the author's personal vision.\n> * The concept described in this proposal entails major changes, some of which are breaking. Therefore, these changes are primarily targeted for Godot 5.0.\n\n> [!NOTE]\n> * \"GDScript 3.0\" is the unofficial name for the hypothetical next implementation of GDScript, by analogy with the unofficial term \"GDScript 2.0\".\n> * This proposal raises a complex and broad topic. The author aims to be specific within the limits of a high-level description.\n> * This proposal is based on this [document](https://gist.github.com/dalexeev/80ba4c4abda0637701a48095fb1604de), with some revisions and removal of redundant details.\n> * See also the following proposals. They are somewhat related, but this one suggests more extensive changes.\n>   * #3369\n>   * #7950\n\n## Problem or limitation\n\n### Motivation\n\n<details>\n<summary>Contents</summary>\n\n* GDScript was initially created as a very simple language, but over time its complexity and number of features increased. Users now expect GDScript to include many features common in general-purpose languages, such as interfaces/traits, nullable and union types, gene"
+    },
+    {
+      "source": "github-issues",
+      "title": "Design decision: why do we need the stale closure problem in the first place?",
+      "url": "https://github.com/react/react/issues/16956",
+      "repo": "react/react",
+      "reactions": 171,
+      "comments": 29,
+      "created": "2019-09-30T11:07:44Z",
+      "body_snippet": "Hi,\r\n\r\nI initially asked this on Twitter and @gaearon suggested me to open an issue instead.\r\nThe original thread is here: https://twitter.com/sebastienlorber/status/1178328607376232449?s=19\r\nMore easy to read here: https://threadreaderapp.com/thread/1178328607376232449.html\r\nBut will try to make this issue more clear and structured about my args and questions.\r\n\r\nDon't get me wrong, I really like hooks, but wonder if we can't have smarter abstractions and official patterns that make dealing with them more easy for authors and consumers.\r\n\r\n--------------------------------------\r\n\r\n## Workaround for the stale closure\r\n\r\nAfter using hooks for a while, and being familiar with the stale closure problem, I don't really understand why we need to handle closure dependencies, instead of just doing something like the following code, which always executes latest provided closure (capturing fresh variables)\r\n\r\n![image](https://user-images.githubusercontent.com/749374/65869094-f7d52600-e379-11e9-9634-1ab06b41e3ca.png)\r\n\r\nCoupling the dependencies of the closure and the conditions to trigger effect re-execution does not make much sense to me. For me it's perfectly valid to want to capture some"
+    },
+    {
+      "source": "github-issues",
+      "title": "Out-of-band type-checking for TypeScript and Template compilation",
+      "url": "https://github.com/angular/angular/issues/43131",
+      "repo": "angular/angular",
+      "reactions": 158,
+      "comments": 25,
+      "created": "2021-08-12T19:22:14Z",
+      "body_snippet": "*Note 1: the original title of this issue was \"Remove type-checking from the critical path of Angular builds (TypeScript and Template compilation)\", but through community discussion we found \"Out-of-band type-checking for TypeScript and Template compilation\" more fitting).*\r\n\r\n*Note 2: This proposal has its origin in [RFC: Exploration of use-cases for Angular JIT compilation mode](https://github.com/angular/angular/issues/43133) and aims to address the concerns around AOT builds being too slow compared to the JIT alternative.*\r\n\r\n*Note 3: 📺 Check out the [video recording of a community discussion about this proposal](https://youtu.be/FbJLC7GxAAs?t=3714) @ [angularnation.net](https://www.angularnation.net/)*\r\n\r\n## The problem\r\n\r\nCurrently, precious hundreds of milliseconds, but often more commonly many seconds, are being spent on type-checking code of Angular applications as developers edit the code using interactive workflows (like `ng serve`, `ng test --watch`, etc). Not only does this increase the latency, and decrease the number of iterations per minute, it also makes it impossible to see results of a change in the browser if the change doesn't pass the type-checking step. This "
+    },
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "Breaking API Change",
+      "url": "https://github.com/satori/go.uuid/issues/66",
+      "repo": "satori/go.uuid",
+      "reactions": 121,
+      "comments": 57,
+      "created": "2018-01-03T20:16:35Z",
+      "body_snippet": "https://github.com/satori/go.uuid/commit/0ef6afb2f6cdd6cdaeee3885a95099c63f18fc8c breaks the API that's been stable for years. Why is this important enough to change with no warning, despite the community standard to be avoiding breaking API changes without some kind of versioning system? The original issue indicates some sort of deprecation warning was considered, but seems to never have been implemented. If users are going to have to rug pulled out from under them with no warning, why should we use this library?"
+    },
+    {
+      "source": "github-issues",
+      "title": "Disallow returning futures from `async` functions.",
+      "url": "https://github.com/dart-lang/language/issues/870",
+      "repo": "dart-lang/language",
+      "reactions": 116,
+      "comments": 32,
+      "created": "2020-03-05T10:20:59Z",
+      "body_snippet": "In an `async` function with return type `Future<T>`, Dart currently allow you to return either a `T` or `Future<T>`.\r\n\r\nThat made (some) sense in Dart 1, where the type system wasn't particularly helpful and we didn't have type inference. Also, it was pretty much an accident of implementation because the return was implemented as completing a `Completer`, and `Completer.complete` accepted both a value and a future. If the `complete` method had only accepted a value, then I'm fairly sure the language wouldn't have allowed returning a future either.\r\n\r\nIn Dart 2, with its inference pushing context types into expressions, the `return` statement accepting a `FutureOr<T>` is more of a liability than an advantage (see, fx, https://github.com/dart-lang/sdk/issues/40856).\r\n\r\nI suggest that we change Dart to not accept a `Future<T>` in returns in an `async` function. \r\nThen the context type of the return expression becomes `T` (the \"future return type\" of the function).\r\n\r\nThe typing around returns gets significantly simpler. There is no flatten on the expression, and currently an `async` return needs to check whether the returned value is a `Future<T>`, and if so, await it.\r\nIf `T` is `Obj"
+    },
+    {
+      "source": "github-issues",
+      "title": "Unify Control and Container nodes, allow children to pick the behavior",
+      "url": "https://github.com/godotengine/godot-proposals/issues/14222",
+      "repo": "godotengine/godot-proposals",
+      "reactions": 102,
+      "comments": 12,
+      "created": "2026-02-13T12:53:19Z",
+      "body_snippet": "### Problem or limitation\n\n*I know the title may sound like this is yet another unfeasibly large rework, but trust me, it's a much smaller change than it looks. And it comes with great benefits for UI authoring in the engine. With my expertise, I wouldn't be making this proposal if I didn't believe it was realistic and respectful of what Godot already offers.*\n\nGodot provides two ways to create layouts with its UI system: **anchoring** and **containers**.\n\n**Anchors** are useful when you want to align nodes to a point of another control or create a proportional relationship. They do not work in situations where you need parent controls to account for size of their children, unless you script that behavior explicitly and manually. They also do not serve to quickly create typical layouts.\n\nThis is where **containers** come in and offer the exact opposite. They combine and arrange their children (unless marked as top-level) in a certain way, force transforms on them (setting position and size, resetting scale and rotation), and completely override anchoring behaviors for them. Containers offer some ways of aligning children, but these depend on the type of container and apply with res"
+    },
+    {
+      "source": "github-issues",
+      "title": "Make the C# tool script reloading process easier to work with",
+      "url": "https://github.com/godotengine/godot-proposals/issues/9001",
+      "repo": "godotengine/godot-proposals",
+      "reactions": 79,
+      "comments": 7,
+      "created": "2024-02-01T02:37:09Z",
+      "body_snippet": "### Describe the project you are working on\r\n\r\nA colony survival/resource management game in C# with a lot of custom tooling\r\n\r\n### Describe the problem or limitation you are having in your project\r\n\r\nThe way data is reloaded into C# tool scripts after an assembly reload (e.g. after a recompilation) currently causes a lot of small annoyances that need to be worked around. Also, the specifics of data reloading are not documented which makes the behavior hard to predict unless you read the Godot source code.\r\n\r\nI'll describe the problems I've experienced one by one.\r\n\r\n### 1. The parameter-less constructor of tool scripts is called after every compilation\r\n\r\nEvery time you recompile your project, already instantiated tool scripts' parameter-less constructor is called. This is ok if your script doesn't do anything in its constructor or just sets initial data that doesn't rely on anything. However, if your constructor has side-effects, e.g. like adding a child node, this becomes a problem.\r\n\r\n```csharp\r\n[Tool]\r\npublic partial class MyToolScript : Node\r\n{\r\n    public MyToolScript()\r\n    {\r\n        // This will be executed after every recompilation, probably not what you want/expect\r\n   "
+    },
+    {
+      "source": "github-issues",
+      "title": "[RFC] Apache MXNet 2.0 Roadmap",
+      "url": "https://github.com/apache/mxnet/issues/16167",
+      "repo": "apache/mxnet",
+      "reactions": 71,
+      "comments": 36,
+      "created": "2019-09-13T21:46:25Z",
+      "body_snippet": "# Overview\r\n\r\nStatus: https://github.com/apache/incubator-mxnet/projects/18\r\nThe status for each project will be updated by the contributor who's driving it. If you have more projects that you intend to drive please first discuss here.\r\n\r\nThe purpose of this RFC is to organize and present the roadmap towards 2.0. As 2.0 will be a major release, changes that would break backward compatibility are permissible.\r\n\r\nThe proposed changes in this RFC are either collected from past roadmap discussions such as #9686, or are based on various common issues from the past. This RFC organizes these changes into self-contained projects to facilitate clear definition of project, captures the risks and status quo to the best of our knowledge. To help navigate, the projects are further divided into several high-level areas. Some of the listed projects are already in progress, and are included to provide a clear overview.\r\n\r\nThe objectives of Apache MXNet 2.0 include:\r\n- Improve expressiveness and usability of user-facing API.\r\n- Improve expressiveness and usability of the technical stack for lower development cost and maintainability.\r\n\r\nIn terms of frontend, this roadmap focuses mostly on Python-fr"
+    },
+    {
+      "source": "github-issues",
+      "title": "Rework of 3D asset import workflow to improve usability",
+      "url": "https://github.com/godotengine/godot-proposals/issues/8756",
+      "repo": "godotengine/godot-proposals",
+      "reactions": 68,
+      "comments": 22,
+      "created": "2023-12-31T10:30:27Z",
+      "body_snippet": "### Describe the project you are working on\r\n\r\nGodot\r\n\r\n### Describe the problem or limitation you are having in your project\r\n\r\nThere are several problems users have with the 3D asset import workflow:\r\n\r\n* Inheriting lets you edit the asset, but you need a separate file instead of pushing changes back. Several users complain that they dislike this.\r\n* Editing the inherited asset has limitations:\r\n   * Materials can't really be replaced there (at much overriden). This is not ideal anyway as it would be better if its done in the import dialog, but many times this is the easiest workflow, specially if you simply want to do something like replace a material that comes with the file and use a visual shader based one.\r\n   * Imported animations can't be edited. To do this, you have to save them to files and Godot will do its best to keep changes you make. This workflow is quite awkward and unintuitive.\r\n   * Imported animation libraries can't be edited. \r\n\r\nAll these make the general experience of managing 3D assets in Godot significantly more awkward than it should be. Large part of the workflow has improved with the advanced import dialog in Godot 4.0, but this is still far from perfec"
+    },
+    {
+      "source": "github-issues",
+      "title": "GetX 5 Migrate Guide (Draft).",
+      "url": "https://github.com/jonataslaw/getx/issues/2966",
+      "repo": "jonataslaw/getx",
+      "reactions": 64,
+      "comments": 53,
+      "created": "2023-11-16T19:47:33Z",
+      "body_snippet": "This is a guide that aims to provide assistance with changes and break changes that occurred in version 5.\r\nYou can use this issue for immediate support if you experience any problems.\r\n\r\n## 1. Bindings\r\nWe are adding some scope to the bindings. This is important, because when we use Flutter web and navigate directly through the url to the address: /products/home for example, we expect the /products bings to be loaded. In version 4 this may generate unwanted red screens. In version 5, we have a parent and child relationship between GetPages, and between Bindings.\r\n\r\nYou will probably be able to make your code start without errors (just with a deprecated warning), but if you want to update your code to the new standard, just change the \"void\" function to a Bind List.\r\n\r\nPrevious:\r\n```dart\r\nclass Foo extends Bindings {\r\n  @override\r\n  void dependencies() {\r\n    Get.lazyPut(() => Bar());\r\n  }\r\n}\r\n\r\n```\r\n\r\nNow:\r\n```dart\r\nclass Foo extends Bindings {\r\n  @override\r\n  List<Bind> dependencies() => [\r\n    Bind.lazyPut(() => Bar());\r\n  ]\r\n}\r\n\r\n```\r\n\r\n\r\n## 2. Immutable state manager.\r\nAlthough not very well known, GetX has an immutable data manager. In version 5 it has a completely new look.\r"
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal: Adding nullable reference type features to nullable value types (16.3, Core 3)",
+      "url": "https://github.com/dotnet/csharplang/issues/1865",
+      "repo": "dotnet/csharplang",
+      "reactions": 60,
+      "comments": 37,
+      "created": "2018-09-17T21:10:48Z",
+      "body_snippet": "# Augmenting Nullable Value Types\r\n\r\nThe upcoming nullable reference types (NRTs) feature builds on the existing nullable *value* types (NVTs) for syntax and intuition, but differs in several ways.\r\n\r\nOne big difference is that NVTs have a different runtime representation that their nonnullable counterparts, whereas NRTs are indistinguishable from nonnullable ones at the runtime level, and are only differentiated at compile time, in source and metadata. This is a fundamental difference that is a result of deliberate design decisions, and can't really be remedied.\r\n\r\nHowever, some of the novel aspects of NRTs might be \"backported\" to NVTs, diminishing the feature gap between them, and providing useful expressiveness.\r\n\r\n# Tracking null state for NVTs\r\n\r\nA key feature of NRTs is that we track null state for variables of reference type through a flow analysis, so that we can warn at points of dereference if the variable might be null:\r\n\r\n``` c#\r\nvoid M(Person? p)\r\n{\r\n    WriteLine(p.Name); // warning: p might be null\r\n    if (p != null) { WriteLine(p.Name); } // No warning\r\n    WriteLine(p?.Name ?? \"\"); // No warning\r\n    if (p == null) return; WriteLine(p.Name); // No warning\r\n}\r\n```"
+    },
+    {
+      "source": "github-issues",
+      "title": "Implicit install breakage falls below usual project standards",
+      "url": "https://github.com/rust-lang/rustup/issues/4211",
+      "repo": "rust-lang/rustup",
+      "reactions": 56,
+      "comments": 24,
+      "created": "2025-03-03T19:09:32Z",
+      "body_snippet": "Hi folks, I just learned about the breaking change in https://github.com/rust-lang/rustup/pull/3985 as it was released today. I can understand why this change might be desirable, but I have concerns that the change was released without the kind of messaging or feedback mechanism that Rust users have come to expect from the project.\n\nRustup is an incredibly useful and valuable tool for Rust, forming the entry point of the vast majority of users' experience with Rust. Of course, that kind of importance means we must be careful. The kind of experience that Rust tries to prevent with its stability guarantee is \"this used to work and it doesn't anymore\". Each of these is frustrating to users and they are usually experienced \"in anger\". Each time we create them, we are taking out a loan against Rust's reputation with the expectation that Rust will get significantly better as a result of the change.\n\nI do see that there was care to add an error message prompting the user with the exact command to run - that is in line with what users expect from Rust, and is highly appreciated. At the same time, there were two steps not taken that I have considered standard for any breaking change on the "
+    },
+    {
+      "source": "github-issues",
+      "title": "Cognito UserPools - Hosted UI Customizations (including logo upload)",
+      "url": "https://github.com/aws/aws-cdk/issues/6953",
+      "repo": "aws/aws-cdk",
+      "reactions": 52,
+      "comments": 17,
+      "created": "2020-03-23T22:44:56Z",
+      "body_snippet": "As per the https://github.com/aws/aws-cdk/issues/6765 tracking issue, CDK doesn't yet have construct support for all Cognito things. We can use escape hatches, but it would be good to have native support to be able to apply Cognito UserPools Hosted UI Customisations (CSS, logo upload, etc)\r\n\r\n### Use Case\r\n\r\nTo apply Cognito UserPool Hosted UI customizations as part of my CDK stack, without having to resort to escape hatches/workarounds.\r\n\r\n### Proposed Solution\r\n\r\nImplement some new constructs that support the UI customisations. As Cloudformation doesn't currently support uploading the logo, this would probably be achieved by a custom resource that calls the AWS SDK or similar.\r\n\r\nThe following code snippets are my initial attempts to workaround this with the escape hatch, but while they seemed to deploy, I don't know that they actually worked in the end. In particular, I'm not sure the latter AWS SDK call was working particularly well for the image upload. Originally I intended to use the CloudFormation part for the CSS, and just do the logo via the SDK, but I chopped and changed the code a little in trying to get things working.\r\n\r\nYou require a domain set on the UserPool before"
+    },
+    {
+      "source": "github-issues",
+      "title": "Ensure forward-compatibility of callbacks",
+      "url": "https://github.com/microsoft/TypeScript/issues/42579",
+      "repo": "microsoft/TypeScript",
+      "reactions": 48,
+      "comments": 15,
+      "created": "2021-02-01T12:25:02Z",
+      "body_snippet": "# Suggestion\r\n\r\n<!--\r\n  Please fill in each section completely. Thank you!\r\n-->\r\n\r\n## 🔍 Search Terms\r\n\r\nstrict callback arguments, too many arguments warning, option\r\n\r\n## ✅ Viability Checklist\r\n\r\n<!--\r\n   Suggestions that don't meet all these criteria are very, very unlikely to be accepted.\r\n   We always recommend reviewing the TypeScript design goals before investing time writing\r\n   a proposal for ideas outside the scope of the project.\r\n-->\r\nMy suggestion meets these guidelines:\r\n\r\n* [x] This wouldn't be a breaking change in existing TypeScript/JavaScript code\r\n* [x] This wouldn't change the runtime behavior of existing JavaScript code\r\n* [x] This could be implemented without emitting different JS based on the types of the expressions\r\n* [x] This isn't a runtime feature (e.g. library functionality, non-ECMAScript syntax with JavaScript output, new syntax sugar for JS, etc.)\r\n* [x] This feature would agree with the rest of [TypeScript's Design Goals](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Design-Goals).\r\n\r\n\r\n## ⭐ Suggestion\r\n\r\n<!-- A summary of what you'd like to see added or changed -->\r\n\r\n**Edit:** My original suggestion was unworkable. This is a second attemp"
+    },
+    {
+      "source": "github-issues",
+      "title": "(acm): Ability to generate and import self-signed certificates to ACM",
+      "url": "https://github.com/aws/aws-cdk/issues/21115",
+      "repo": "aws/aws-cdk",
+      "reactions": 47,
+      "comments": 6,
+      "created": "2022-07-13T00:42:06Z",
+      "body_snippet": "### Describe the feature\n\nLike [the feature implemented on Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/acm_certificate#existing-certificate-body-import), we'd like to generate a self-signed certificate within CDK, and import it to ACM.\r\n\r\nThe API on Terraform is like below. We can basically follow this design.\r\n\r\n```tf\r\nresource \"tls_private_key\" \"example\" {\r\n  algorithm = \"RSA\"\r\n}\r\n\r\nresource \"tls_self_signed_cert\" \"example\" {\r\n  key_algorithm   = \"RSA\"\r\n  private_key_pem = tls_private_key.example.private_key_pem\r\n\r\n  subject {\r\n    common_name  = \"example.com\"\r\n    organization = \"ACME Examples, Inc\"\r\n  }\r\n\r\n  validity_period_hours = 12\r\n\r\n  allowed_uses = [\r\n    \"key_encipherment\",\r\n    \"digital_signature\",\r\n    \"server_auth\",\r\n  ]\r\n}\r\n\r\nresource \"aws_acm_certificate\" \"cert\" {\r\n  private_key      = tls_private_key.example.private_key_pem\r\n  certificate_body = tls_self_signed_cert.example.cert_pem\r\n}\r\n```\n\n### Use Case\n\nCurrently we cannot create an ACM certificate without 1. creating a Route 53 hosted zone or 2. creating a private certificate authority ([doc](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_certificatemanager"
+    }
+  ]
+}

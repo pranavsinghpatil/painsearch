@@ -1,0 +1,105 @@
+{
+  "query": "dependency changed without notice",
+  "count": 9,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Volatile Software",
+      "url": "https://news.ycombinator.com/item?id=3875836",
+      "hn_id": "3875836",
+      "points": 1,
+      "comments": 0,
+      "author": "NDT",
+      "created": "2012-04-22T19:46:16Z",
+      "text_snippet": "I want to use my fifteen minutes of fame on The Listserve to rant about\nsomething that's close to my heart: the stability of the software I use.<p>NOTE: This is written for people who create software.  If you don't do that you\nprobably won't find this very interesting.  Sorry!  Maybe you could read Text\nfrom Dog if you haven't seen it already?  Either way, have a nice\nmorning/afternoon/evening!<p>The Situation\n-------------<p>Every time I get a new computer, I go through the same song and dance:<p>1. Look at what programs and packages I have installed on the old computer.\n2. Install these programs on the new computer.\n3. Copy over my configuration files from the old computer to the new one.\n4. Spend the rest of my day fixing all the things that broke because I'm using\n   a newer version of program X.<p>Step 4 is always the most painful part of getting a new machine.  Always.<p>Without fail I spend several hours tweaking configuration files, adjusting my\nworkflow, and so on because I've"
+    },
+    {
+      "source": "hn",
+      "title": "Volatile Software",
+      "url": "https://news.ycombinator.com/item?id=3875540",
+      "hn_id": "3875540",
+      "points": 1,
+      "comments": 0,
+      "author": "eloisius",
+      "created": "2012-04-22T18:01:41Z",
+      "text_snippet": "The following message came from The Listserv (http://thelistserve.com/):<p>I want to use my fifteen minutes of fame on The Listserve to rant about\nsomething that's close to my heart: the stability of the software I use.<p>NOTE: This is written for people who create software.  If you don't do that you\nprobably won't find this very interesting.  Sorry!  Maybe you could read Text\nfrom Dog if you haven't seen it already?  Either way, have a nice\nmorning/afternoon/evening!<p>The Situation\n-------------<p>Every time I get a new computer, I go through the same song and dance:<p>1. Look at what programs and packages I have installed on the old computer.\n2. Install these programs on the new computer.\n3. Copy over my configuration files from the old computer to the new one.\n4. Spend the rest of my day fixing all the things that broke because I'm using\n   a newer version of program X.<p>Step 4 is always the most painful part of getting a new machine.  Always.<p>Without fail I spend several hours "
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you find out about language and framework updates?",
+      "url": "https://news.ycombinator.com/item?id=32332786",
+      "hn_id": "32332786",
+      "points": 2,
+      "comments": 0,
+      "author": "nineplay",
+      "created": "2022-08-03T15:08:00Z",
+      "text_snippet": "I&#x27;ve been looking at the status of my UI architect and I notice a number of things like &quot;update X to latest version&quot; and &quot;update Y for security enhancements&quot;<p>I realize how disconnected I am from changes in frameworks and dependencies.  HN is reliable for language releases like Go 1.19, but I don&#x27;t keep track of every language and dependency change and wouldn&#x27;t know where to look without manually visiting each and every repo."
+    },
+    {
+      "source": "hn",
+      "title": "Using someone's API? You don't have a business, THEY do.",
+      "url": "https://news.ycombinator.com/item?id=3088668",
+      "hn_id": "3088668",
+      "points": 7,
+      "comments": 10,
+      "author": "ecommando",
+      "created": "2011-10-08T19:07:25Z",
+      "text_snippet": "Using someone's API? You don't have a business, THEY do.<p>Whether you're using Adsense, Adwords, Twilio's APIs, Google Maps or Search API, or even Wikipedia's Suggest API to generate traffic and/or revenue, you don't have a business.<p>You have a website that provides traffic, and potentially revenue, to the provider, and they can terminate or redirect your business at any time, without notice.<p>Sure, you may have revenue right now, but if you don't re-invest those revenues to build your own dataset to support your requirements, your business WILL go away at some point, or the terms will change in such a way that makes your ability to generate revenue disappear.<p>No company will guarantee you that the API will be available forever, nor will they guarantee you that they won't deprecate the API, or even just your license, should they decide to compete with you in that space.<p>Sure, it's okay to build an app using an API provided by someone else, but if you plan on building a business"
+    },
+    {
+      "source": "hn",
+      "title": "Tell HN: Instagram suspended my friend's business without warning or recourse",
+      "url": "https://news.ycombinator.com/item?id=35427470",
+      "hn_id": "35427470",
+      "points": 7,
+      "comments": 0,
+      "author": "mabunday",
+      "created": "2023-04-03T17:07:45Z",
+      "text_snippet": "My friend Clio has spent the past few years building her own fashion brand in NYC. She painstakingly designs all of her clothes by hand, putting months of effort into single pieces.<p>Clio recently released her fall-winter 2023 collection. She has a website for her brand (https:&#x2F;&#x2F;cliogalea.com&#x2F;pages&#x2F;fw23-angel-fire-disco-club), but in NYC in the fashion industry most business is still conducted on Instagram. Her new collection was received with great interest and Clio was in the middle of corresponding with some important business connections when--without warning, notice, or reason given--Instagram suspended her brand&#x27;s account (https:&#x2F;&#x2F;www.instagram.com&#x2F;cliogalea&#x2F;). This has had the following impacts:<p>1. For the agents and representatives she was corresponding with, she now has no way to contact them - potentially compromising impactful business opportunities.\n2. For her current clientele who are awaiting orders or commissions and have a"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you keep track of actions to perform at next pull?",
+      "url": "https://news.ycombinator.com/item?id=42172553",
+      "hn_id": "42172553",
+      "points": 1,
+      "comments": 2,
+      "author": "gregoriol",
+      "created": "2024-11-18T14:29:37Z",
+      "text_snippet": "On some projects, when committing some kind of changes, the next time someone else on the team pulls the code, they will need to perform some actions to adapt to the changes. How do you keep track of those actions? do you document them? do you automate them?<p>Some examples are:\n* changes to package.json or composer.json or any other dependencies: the team-mate has to perform an npm&#x2F;composer&#x2F;... update on their machine\n* database migrations: the team-mate has to run the migration on their local database\n* vm or system configuration: the team-mate has to run some vagrant or docker or ansible or... commands<p>In some cases with these changes, the team-mate could continue to work without noticing that they need to perform some action, which is not good. In other cases, they will pull the code and have errors everywhere, and will need to figure out what has changed and which actions are needed.<p>I thought of a changelog obviously, but for code that is not released yet it does no"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Appteum – Serverless ready back end",
+      "url": "https://www.appteum.com//",
+      "hn_id": "35826763",
+      "points": 4,
+      "comments": 0,
+      "author": "Gns89",
+      "created": "2023-05-05T08:44:04Z",
+      "text_snippet": "Hey HN!\nWe are Nikolas and Giannis, founders of Appteum, and we are excited to announce Appteum.com to HN community.\nFor the last few months we&#x27;ve been building Appteum and can now share our public Beta with you. Appteum is a backend development platform that makes it easy for developers to configure serverless ready backends for their apps. You can configure your backend and then interact with your data using our Typescript SDK.<p>Why we built this:<p>- We couldn’t find a low code tool that provides the backend abstractions we needed but at the same time retain the flexibility of dropping down into code.<p>- Serverless&#x2F;Edge computing is affected by cold-starts which requires to control the size of your code dependencies and handle concurrent connection pooling with your database.<p>- We found current low-code tools like Bubble and Retool don’t offer a great experience for developers. We prefer using our own IDEs, version control etc.<p>- Sometimes, you need to use a service "
+    },
+    {
+      "source": "hn",
+      "title": "Why many projects fail before execution begins",
+      "url": "https://news.ycombinator.com/item?id=46452128",
+      "hn_id": "46452128",
+      "points": 3,
+      "comments": 1,
+      "author": "BenWebbProject",
+      "created": "2026-01-01T07:44:26Z",
+      "text_snippet": "Across different types of projects — infrastructure, digital systems, organisational change — I’ve noticed a recurring pattern: by the time execution starts, the outcome is often already constrained.<p>Not because of incompetence or bad intent, but because early decisions tend to harden faster than understanding does.<p>A few observations that seem to repeat:<p>Early schedules become social facts\nInitial timelines are usually created with limited information, but once shared upward they quickly stop being provisional. They become anchors for funding, reputation, and confidence. Later evidence is forced to fit the date, rather than the date adjusting to evidence.<p>Risk is recorded instead of managed\nRisk registers are often thorough and sincere, but the act of documenting risk can substitute for actually changing decisions. Addressing certain risks would require revisiting scope, sequence, or assumptions — which is often seen as destabilising rather than responsible.<p>Governance filte"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Any developers work without Administrator access to their computer?",
+      "url": "https://news.ycombinator.com/item?id=30685546",
+      "hn_id": "30685546",
+      "points": 2,
+      "comments": 1,
+      "author": "gwbas1c",
+      "created": "2022-03-15T14:13:56Z",
+      "text_snippet": "I&#x27;m a software developer for an infrastructure product. It isn&#x27;t critical infrastructure, but if we were hacked, people would be disrupted.<p>Recently, the CTO made an offhand comment that we might loose administrator (root) access to our development computers. According to the CTO, we would have to declare all the software we need and it would be installed for us by IT.<p>This struck me as odd, because it&#x27;s extremely difficult to develop software without administrator access on a development computer.<p>Is this a common practice (no administrator access) for other Hacker News developers?<p>A few more things:<p>We follow the pull request process: All code is reviewed on Github. Branches are protected so it&#x27;s difficult for a malicious party to slip something in.<p>3rd party dependencies are locked down and closely reviewed. Someone couldn&#x27;t slip in a change to a 3rd party dependency without us noticing.<p>We could, in theory, perform ops in a locked down environ"
+    }
+  ]
+}

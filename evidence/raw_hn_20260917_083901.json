@@ -1,0 +1,160 @@
+{
+  "query": "third party API breaking",
+  "count": 14,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you handle breaking changes from third-party APIs in production?",
+      "url": "https://news.ycombinator.com/item?id=47538731",
+      "hn_id": "47538731",
+      "points": 1,
+      "comments": 0,
+      "author": "kriish2205",
+      "created": "2026-03-27T03:12:09Z",
+      "text_snippet": "Recently worked on a project where our team used 10+ third-party APIs. Twice this year we got hit by silent breaking changes and found out only when users complained.<p>Curious how others handle this and whether a tool that monitors API contract changes and surfaces relevant changelog updates automatically would have saved you time.<p>- How do you currently stay ahead of breaking changes?\n- Have you built internal tooling for this?\n- Would this be a painkiller or a vitamin for your team?"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Repairo-I built CLI tool that detects breaking API changes and fixes it",
+      "url": "https://www.heyrepairo.in/",
+      "hn_id": "49254765",
+      "points": 1,
+      "comments": 0,
+      "author": "Adityasshinde23",
+      "created": "2026-08-11T07:58:41Z",
+      "text_snippet": "Guys check it out i have build this tool which detects breaking API changes when a vendor like striker or any companies does REPAIRO scans the codebase and fixes the code using AST parsing and pull a GitHub pull request.Its  Depandabot but for refactoring code third party API changes. Guys please check it out and sign up for the beta"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: hotglue (YC S21) – Easy user-facing SaaS integrations",
+      "url": "https://news.ycombinator.com/item?id=27918900",
+      "hn_id": "27918900",
+      "points": 144,
+      "comments": 61,
+      "author": "hsyyid",
+      "created": "2021-07-22T13:57:00Z",
+      "text_snippet": "Hi HN, we’re Hassan and David from hotglue (<a href=\"https:&#x2F;&#x2F;hotglue.xyz\" rel=\"nofollow\">https:&#x2F;&#x2F;hotglue.xyz</a>). We make it easier for developers to build user-facing integrations. In this context, an integration is a way for users to sync their data from their business apps, like Salesforce and Quickbooks, to another. For example, if I wanted to use an app like Mailchimp, I’d use their Salesforce integration to sync all my contacts over automatically.<p>We came across this problem while working for a startup that was struggling to scale the Salesforce integration they built in house. We needed a tool that would sync the customer data from Salesforce directly to our backend, but there were very few solutions available. After talking to other engineers who had dealt with user-facing integrations, we found many teams were frustrated by building their own integration solutions from scratch (not to mention maintaining them). This inspired us to build a tool that helps"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: I made a clipboard-triggered YouTube summarizer (no paste, 2 taps)",
+      "url": "https://apps.apple.com/us/app/esse-ai-video-summarizer/id6751778111",
+      "hn_id": "45606742",
+      "points": 2,
+      "comments": 1,
+      "author": "sanderbell",
+      "created": "2025-10-16T15:39:38Z",
+      "text_snippet": "How it works:<p>Copy a YouTube link → open app → it auto-detects from clipboard, pulls metadata + transcript, and generates a structured summary (key points + narrative) in seconds. No inputs, no pasting, no prompting. Supports 60+ languages for summaries, the video&#x27;s language doesn&#x27;t matter.<p>Why I built:<p>I had an endless queue of educational videos but no time to sit through rambling or clickbait. ChatGPT flow = copy → open → paste → prompt → pray it formats correctly. Existing summarizers felt feature-bloated or unreliable. I wanted something super minimalist: “clipboard → value” on repeat.<p>Decisions:<p>Stack\n — React Native 0.81 (New Arch) + TypeScript<p>Clipboard trick<p>— Monitors clipboard on app start&#x2F;resume — no manual paste<p>Caching<p>— Stores transcripts + summaries in AsyncStorage with metadata<p>— fast image library prevents repetitive refetching<p>APIs<p>— YouTube metadata<p>— Third-party transcript provider (exploring Whisper)<p>— OpenAI for summariz"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: I built a 3-tap YouTube summarizer for iOS",
+      "url": "https://apps.apple.com/us/app/esse-ai-video-summarizer/id6751778111",
+      "hn_id": "45656738",
+      "points": 1,
+      "comments": 0,
+      "author": "sanderbell",
+      "created": "2025-10-21T15:06:02Z",
+      "text_snippet": "How it works:\nCopy a YouTube link → open app → it auto-detects from clipboard, pulls metadata + transcript, and generates a structured summary (key points + narrative) in seconds. No inputs, no pasting, no prompting. Supports 60+ languages for summaries, the video&#x27;s language doesn&#x27;t matter.<p>Why I built:<p>I had an endless queue of educational videos but no time to sit through rambling or clickbait. ChatGPT flow = copy → open → paste → prompt → pray it formats correctly. Existing summarizers felt feature-bloated or unreliable. I wanted something super minimalist: “clipboard → value” on repeat.<p>Decisions:<p>Stack — React Native 0.81 (New Arch) + TypeScript<p>Clipboard trick<p>— Monitors clipboard on app start&#x2F;resume — no manual paste<p>Caching<p>— Stores transcripts + summaries in AsyncStorage with metadata<p>— fast image library prevents repetitive refetching<p>APIs<p>— YouTube metadata<p>— Third-party transcript provider (exploring Whisper)<p>— OpenAI for summarizati"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: I Built a QA Agent to Detect Broken Web App Flows – E2E Test/Regression",
+      "url": "https://alertdown.ai",
+      "hn_id": "42779844",
+      "points": 1,
+      "comments": 0,
+      "author": "superjose",
+      "created": "2025-01-21T13:26:01Z",
+      "text_snippet": "Hi everyone!<p>I’m Jose, the solo founder of AlertDown, an automated user flow monitoring tool for web apps. It notifies you when something breaks—before your users do.<p>Imagine end-to-end tests with real-time monitoring, catching regressions and silent failures without:<p>• Writing a single line of code\n • Installing any dependencies<p>Just add your URL, and AlertDown will:\n 1. Extract all possible user actions (clicks, inputs, dropdowns, etc.)\n 2. Automatically test each flow, branching out dynamically\n 3. Detect silent issues like:<p>• Missing dropdowns\n • Unresponsive buttons\n • Third-party API failures<p>Unlike tools like Sentry or Datadog, these errors often don’t show up as obvious failures, which can lead to lost revenue.<p>Why I built this:<p>While working at a cash-constrained startup (not mine), we lost $1,347 in revenue due to a misconfigured feature flag at step 7 of our onboarding. We didn’t realize it until 3 days later—after a user reported it. :(<p>I’ve seen this issu"
+    },
+    {
+      "source": "hn",
+      "title": "Twitter admits it’s breaking third-party apps",
+      "url": "https://www.engadget.com/twitter-third-party-app-developers-api-rules-193013123.html",
+      "hn_id": "34452355",
+      "points": 2,
+      "comments": 1,
+      "author": "tcmb",
+      "created": "2023-01-20T12:46:31Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Payload (YC S22) – Headless CMS for Developers",
+      "url": "https://news.ycombinator.com/item?id=32665325",
+      "hn_id": "32665325",
+      "points": 242,
+      "comments": 137,
+      "author": "sneek_",
+      "created": "2022-08-31T17:14:58Z",
+      "text_snippet": "Hey HN, my name is James and I founded Payload (<a href=\"https:&#x2F;&#x2F;payloadcms.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;payloadcms.com&#x2F;</a>) with two close colleagues, Dan and Elliot. We&#x27;re a dev-first headless CMS [1] that&#x27;s half app framework and half CMS—we&#x27;re closing the gap between the two. You can check out our demo here: <a href=\"https:&#x2F;&#x2F;demo.payloadcms.com\" rel=\"nofollow\">https:&#x2F;&#x2F;demo.payloadcms.com</a>.<p>Imagine you&#x27;re going to build a new SaaS app. Would you think of building it on a headless CMS? Probably not.  To devs, &quot;content management system&quot; is usually a swear word. If a team of engineers gets assigned a CMS project, it&#x27;s less than thrilling. Engineers want to avoid roadblocks, write code, and build things they&#x27;re proud of—but existing CMS&#x27;s get in the way of that left and right with their third-party integrations, point-and-click schema designers, code generation, etc.<p>Rather, you&#x27;"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Are 3rd party browsers banned by Apple App Store Guidelines?",
+      "url": "https://news.ycombinator.com/item?id=22780452",
+      "hn_id": "22780452",
+      "points": 5,
+      "comments": 11,
+      "author": "applenerdfan",
+      "created": "2020-04-04T18:43:07Z",
+      "text_snippet": "The guidelines say<p>Apple&#x27;s current say<p>&gt; ### 4.7 HTML5 Games, Bots, etc.\n&gt;\n&gt; Apps may contain or run code that is not embedded in the binary (e.g. HTML5-based games, bots, etc.), as long as code distribution isn’t the main purpose of the app, the code is not offered in a store or store-like interface, and provided that the software (1) is free or purchased using in-app purchase; (2) only uses capabilities available in a standard WebKit view (e.g. it must open and run natively in Safari without modifications or additional software); your app must use WebKit and JavaScript Core to run third-party software and should not attempt to extend or expose native platform APIs to third-party software; (3) is offered by developers that have joined the Apple Developer Program and signed the Apple Developer Program License Agreement; (4) does not provide access to real money gaming, lotteries, or charitable donations; (5) adheres to the terms of these App Review Guidelines (e.g. do"
+    },
+    {
+      "source": "hn",
+      "title": "Twitter API appears to be down, breaking Tweetbot and third-party clients",
+      "url": "https://9to5google.com/2023/01/12/twitter-api-appears-to-be-down-breaking-tweetbot-and-third-party-clients/",
+      "hn_id": "34364163",
+      "points": 25,
+      "comments": 1,
+      "author": "fomine3",
+      "created": "2023-01-13T05:05:31Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Tell HN: I built a push service for HTTP APIs and want beta testers",
+      "url": "https://news.ycombinator.com/item?id=3701703",
+      "hn_id": "3701703",
+      "points": 18,
+      "comments": 7,
+      "author": "jkarneges",
+      "created": "2012-03-14T03:53:17Z",
+      "text_snippet": "Hi folks, I'm Justin.  About 5 months ago I left my role as CTO at Livefyre to build Fanout, a publish-subscribe service for the web.  It can be used to push data in real-time to browsers and other clients.<p>What makes Fanout special is its versatility.  As an API/protocol guy, it occurred to me that existing cloud push solutions aren't well-suited for building APIs.  For example, if you want to create and offer a real-time API like Twitter, Yammer, Digg, etc, then you pretty much have to set up your own infrastructure.  Also, migrating to or between any of the existing solutions means having to update all client code to match.  That's a very heavy transition cost, especially if you have any third-party consumers.<p>I figured there were probably other developers out there considering the cloud for push but having similar concerns about API feasibility and transition cost, so I've spent the last few months developing a solution that I now feel is ready for some beta testers.<p>Why shou"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: unTamper – cryptographically verifiable audit logs for app events",
+      "url": "https://news.ycombinator.com/item?id=47427580",
+      "hn_id": "47427580",
+      "points": 2,
+      "comments": 3,
+      "author": "unTamper",
+      "created": "2026-03-18T16:13:20Z",
+      "text_snippet": "https:&#x2F;&#x2F;untamper.com<p>Built this after hitting the same gap on multiple projects: teams log critical events (admin actions, permission changes, PII access) but have no structural way to prove those records weren&#x27;t altered after the fact.<p>Immutable storage (S3 Object Lock, WORM) are common, but it only covers tampering after the write lands. It doesn&#x27;t protect against someone with DB write access, and it doesn&#x27;t give a third party, e.g. an auditor, a way to verify integrity without touching your infrastructure.<p>My approach: hash chaining. \nEach event is SHA-256 hashed against its canonical payload + the hash of the previous event. Any insertion, deletion, or modification breaks all subsequent hashes. Anyone with the public API can re-verify the chain independently.<p>A few decisions I&#x27;m happy to discuss:<p>- Canonicalization before hashing: JSON isn&#x27;t canonical by default. Ended up writing a strict sorted-key schema rather than fighting recursive "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Code Lantern– A self-hosted, local code-analysis and visualization tool",
+      "url": "https://github.com/Tjindl/code-lantern",
+      "hn_id": "47119159",
+      "points": 1,
+      "comments": 0,
+      "author": "tjindl",
+      "created": "2026-02-23T07:25:07Z",
+      "text_snippet": "Hi HN,<p>I&#x27;m excited to share a project I&#x27;ve been working on called Code Lantern. It&#x27;s a self-hosted tool designed to help you visually explore and understand codebases.<p>Whenever I jump into a new codebase (or return to one of my own after a few months), I often find myself spending hours just tracing function calls, mapping out dependencies, and trying to build a mental model of how everything fits together. I wanted a way to instantly generate a high-level architectural view, but I didn&#x27;t want to upload my code to a third-party server to get it.<p>So, I built Code Lantern. You run it via Docker, point it at any local project folder, and it generates:<p>Interactive Dependency Graphs: Visual maps of how files and functions connect, powered by Cytoscape.js.\nArchitecture Maps: Tree diagrams breaking down your file and function structures.\nComplexity Heatmaps: It uses AST to calculate cyclomatic complexity scores, helping you spot technical debt at a glance.\nAI Deep "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: SpecFact CLI: Reverse Engineer Legacy Python into Enforceable Contracts",
+      "url": "https://github.com/nold-ai/specfact-cli",
+      "hn_id": "46360060",
+      "points": 1,
+      "comments": 0,
+      "author": "noldai",
+      "created": "2025-12-22T22:42:49Z",
+      "text_snippet": "SpecFact CLI helps teams modernize legacy Python codebases by reverse engineering undocumented code into executable contracts with runtime enforcement.<p>What it does:\n- AST-based analysis extracts functions, classes, dependencies from legacy code\n- Generates runtime contracts (icontract + beartype) that prevent regressions\n- Symbolic execution (CrossHair) finds edge cases that LLMs miss\n- CI&#x2F;CD integration blocks breaking changes automatically<p>Why brownfield-first:\n- Works with undocumented code, no type hints required\n- Designed for legacy modernization, not adapted from greenfield\n- CLI-first: works offline, no account, zero vendor lock-in<p>Current status:\n- Contract extraction and runtime enforcement (production-ready)\n- Sidecar validation in research phase: We&#x27;re investigating how to run CrossHair against unmodified codebases without requiring decorators in source. This will enable symbolic execution on third-party&#x2F;legacy code without editing files. See <a href=\""
+    }
+  ]
+}

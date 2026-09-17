@@ -59,6 +59,26 @@
       "counter_evidence": ["ShutUp10, W10Privacy, Tripwire-style monitoring, and MDM baselines already address parts of the workflow."],
       "investigations": [{"id": "I0020", "question": "Are there three independent post-24H2 reports with a KB, setting path, and reproducible revert?", "status": "open", "method": "Search issue trackers and Windows forums for reproducible reports.", "next_action": "Park unless independent evidence supports a specific residual gap."}],
       "history": [{"at": "2026-09-17T07:26:44+05:30", "actor": "researcher", "event": "status_changed", "from_status": "candidate", "to_status": "unresolved", "reason": "Supporting and counter evidence conflict; independent reproduction is missing."}]
+    },
+    {
+      "id": "P0004",
+      "title": "Third-party API changes are discovered only after user-facing breakage",
+      "status": "investigating",
+      "tags": ["integrations", "api", "dependency-drift", "reliability"],
+      "statement": {
+        "user": "Teams maintaining many third-party production API integrations",
+        "task": "Keep integrations working as providers change APIs and behavior",
+        "failure": "At least one report describes silent breaking changes discovered only after users complained",
+        "consequence": "User-facing failures, reactive debugging, and uncertain integration health"
+      },
+      "evidence": [
+        {"id": "E0030", "kind": "report", "source_url": "https://news.ycombinator.com/item?id=47538731", "quote": "Recently worked on a project where our team used 10+ third-party APIs. Twice this year we got hit by silent breaking changes and found out only when users complained.", "supports": "A first-person report with a concrete integration count and frequency", "provenance": {"source_published_at": null, "collected_at": "2026-09-17T08:39:54+05:30", "verified_at": "2026-09-17T08:39:54+05:30", "independence_group": "third-party-api-hn-thread", "corroboration_status": "unassessed"}},
+        {"id": "E0031", "kind": "report", "source_url": "https://github.com/TypeStrong/ts-node/issues/1007", "quote": "When node breaks their APIs, it breaks loaders using their APIs.", "supports": "A downstream project documents real breakage from upstream API changes", "provenance": {"source_published_at": "2020-04-12", "collected_at": "2026-09-17T08:39:54+05:30", "verified_at": "2026-09-17T08:39:54+05:30", "independence_group": "ts-node-issue-1007", "corroboration_status": "independent"}},
+        {"id": "E0032", "kind": "counter_report", "source_url": "https://github.com/mapbox/mapbox-gl-js/issues/10162", "quote": "Old versions of GL JS (<v2) remain publicly available via NPM and our CDN endpoints.", "supports": "Explicit versioning and retained old versions can mitigate breaking changes", "provenance": {"source_published_at": "2020-12-08", "collected_at": "2026-09-17T08:39:54+05:30", "verified_at": "2026-09-17T08:39:54+05:30", "independence_group": "mapbox-issue-10162", "corroboration_status": "contradicts"}}
+      ],
+      "counter_evidence": ["Lockfiles, contract tests, semantic versioning, provider changelogs, synthetic integration tests, Pact, and Schemathesis may already address the residual gap."],
+      "investigations": [{"id": "I0030", "question": "Can a reproducible silent API change evade pinning, contract tests, and changelog monitoring?", "status": "open", "method": "Construct or collect one changed API fixture and run the conventional baselines before considering any model.", "next_action": "Measure which baseline detects the change, detection lead time, and maintenance cost."}],
+      "history": [{"at": "2026-09-17T08:39:54+05:30", "actor": "researcher", "event": "status_changed", "from_status": "candidate", "to_status": "investigating", "reason": "Concrete first-person report plus independent downstream breakage evidence; residual gap remains unmeasured."}]
     }
   ]
 }

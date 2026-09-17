@@ -1,0 +1,206 @@
+{
+  "query": "third party API breaking",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "v2.0 changes merged with updated TOS and license",
+      "url": "https://github.com/mapbox/mapbox-gl-js/issues/10162",
+      "repo": "mapbox/mapbox-gl-js",
+      "reactions": 228,
+      "comments": 67,
+      "created": "2020-12-08T16:33:53Z",
+      "body_snippet": "\r\n## v2.0 release changes merged with updated TOS and license\r\n\r\nWe just merged the v2.0 release changes to `main`,  including performance enhancements reducing map load time by 30%, 3D terrain rendering, new satellite imagery, a low level camera API, and a new sky layer type. See the [CHANGELOG](https://github.com/mapbox/mapbox-gl-js/blob/main/CHANGELOG.md#200) for the full list of changes.\r\n\r\nThe SDK bundle and source code are distributed in ways that make it easy for developers to include the library in their javascript build system and integrate with their tool chain. All new features and improvements will only be available in v2. Old versions of GL JS (<v2) remain publicly available via NPM and our CDN endpoints. Updates to the v1 releases will be made only for critical browser compatibility or security issues for a limited time. \r\n\r\nThe project source code is available here on Github for open collaboration with the community. Mapbox GL JS v2+ are  governed by the [Mapbox Terms of Service](https://www.mapbox.com/legal/tos) (this is a change from the old 3-clause BSD license). Developers can fork the public GL JS repository and make modifications to the code as long as abiding "
+    },
+    {
+      "source": "github-issues",
+      "title": "ESM support: soliciting feedback",
+      "url": "https://github.com/TypeStrong/ts-node/issues/1007",
+      "repo": "TypeStrong/ts-node",
+      "reactions": 220,
+      "comments": 430,
+      "created": "2020-04-12T05:50:33Z",
+      "body_snippet": "Please use this ticket to provide feedback on our native ESM support.  Your involvement is greatly appreciated to ensure the feature works on real-world projects.\r\n\r\n## Experimental warning\r\n\r\n[Node's loader hooks](https://nodejs.org/api/esm.html#esm_experimental_loaders) are **EXPERIMENTAL** and subject to change.  ts-node's ESM support is as stable as it can be, but it relies on APIs which node can *and will* break in new versions of node.\r\n\r\nWhen node breaks their APIs, it breaks loaders using their APIs.  You have been warned!\r\n\r\n## Third-party docs: \"Guide: ES Modules in NodeJS\"\r\n\r\nSomeone has been maintaining a great reference document explaining how to use ts-node's ESM loader.\r\n\r\n[Guide: ES Modules in NodeJS](https://docs.joshuatz.com/cheatsheets/node-and-npm/node-esm/)\r\n\r\n## First-party docs\r\n\r\nOur website explains the basics:\r\n\r\n[CommonJS vs native ECMAScript modules](https://typestrong.org/ts-node/docs/imports)\r\n[Options: esm](https://typestrong.org/ts-node/docs/options#esm)\r\n\r\n## Usage\r\n\r\n### Requirements\r\n\r\n* Set `\"module\": \"ESNext\"` or `\"ES2015\"` so that TypeScript emits import/export syntax.\r\n* Set `\"type\": \"module\"` in your `package.json`, which is required to tell "
+    },
+    {
+      "source": "github-issues",
+      "title": "Migrate GDScript to the GDExtension mechanism and overhaul the implementation",
+      "url": "https://github.com/godotengine/godot-proposals/issues/14652",
+      "repo": "godotengine/godot-proposals",
+      "reactions": 181,
+      "comments": 59,
+      "created": "2026-04-13T05:29:14Z",
+      "body_snippet": "> [!WARNING]\n> * This proposal is **not** an official plan, but merely the author's personal vision.\n> * The concept described in this proposal entails major changes, some of which are breaking. Therefore, these changes are primarily targeted for Godot 5.0.\n\n> [!NOTE]\n> * \"GDScript 3.0\" is the unofficial name for the hypothetical next implementation of GDScript, by analogy with the unofficial term \"GDScript 2.0\".\n> * This proposal raises a complex and broad topic. The author aims to be specific within the limits of a high-level description.\n> * This proposal is based on this [document](https://gist.github.com/dalexeev/80ba4c4abda0637701a48095fb1604de), with some revisions and removal of redundant details.\n> * See also the following proposals. They are somewhat related, but this one suggests more extensive changes.\n>   * #3369\n>   * #7950\n\n## Problem or limitation\n\n### Motivation\n\n<details>\n<summary>Contents</summary>\n\n* GDScript was initially created as a very simple language, but over time its complexity and number of features increased. Users now expect GDScript to include many features common in general-purpose languages, such as interfaces/traits, nullable and union types, gene"
+    },
+    {
+      "source": "github-issues",
+      "title": "Roadmap for Vue Material beta!",
+      "url": "https://github.com/vuematerial/vue-material/issues/1081",
+      "repo": "vuematerial/vue-material",
+      "reactions": 175,
+      "comments": 107,
+      "created": "2017-10-11T22:19:39Z",
+      "body_snippet": "# Roadmap for Vue Material beta!\r\n\r\nAs I told [couple months ago](https://github.com/vuematerial/vue-material/issues/921), I am developing a new Vue Material from scratch, with better support, an easy way to integrate and way more reliable. And this new version is just around the corner.\r\nI received a lot of issues and complains regarding support for SSR, validation, integration with 3rd party libs and many others. So I after ~6 months on this bad boy, more than 500 files, ~28k loc and ~800 commits I now announce that the beta is coming!\r\n\r\nThe release strategy will be like this:\r\n\r\n- The first beta will be released at the beginning of November, with all goodies and a closed API. At this moment the documentation will be pretty much done, but with some components delayed to next version.\r\n- After that, a migration guide will be developed to make the transition between the old version.\r\n- A cycle of beta versions will happen to solve the issues and small improvements until a stable arrives.\r\n- The current repository will be replaced with new one. I will give a small support for the 0.7.5 version to solve important issues only.\r\n- The stable version will be released with 1.0.0 number."
+    },
+    {
+      "source": "github-issues",
+      "title": "Vulkan-based GPU emulation implementation",
+      "url": "https://github.com/xenia-project/xenia/issues/2028",
+      "repo": "xenia-project/xenia",
+      "reactions": 159,
+      "comments": 10,
+      "created": "2022-05-30T20:03:53Z",
+      "body_snippet": "For GPU emulation on GNU/Linux and Android, as well as Windows 8, and Windows 7 until 12on7 is integrated into Xenia, it's necessary to use either OpenGL or Vulkan.\r\n\r\nOpenGL and OpenGL ES can be considered out of the question for various reasons, such as long GLSL compilation times, difficulties in caching and restoring combinations of shaders and states (state application may be deferred until a draw call) to prevent stuttering, extremely hacky multithreading making decoupling of GPU emulation and UI thread presentation nearly impossible. So, a Vulkan-based GPU emulation implementation is needed.\r\n\r\nThe quick route, running the Direct3D 12 backend on VKD3D, currently isn't functional due to what appears to be bugs in VKD3D (such as geometry stage linkage errors) and because of certain unimplemented features (like 32x32=64 integer multiplication in shaders that we use for integer division by a constant, in EDRAM tile addressing). We most definitely must not be trying to work around those issues in our code, as that will harm both Xenia (as hacks will be added to the code) and VKD3D, which will lose a test case for certain relatively obscure parts of Direct3D 12. At some point, tho"
+    },
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "Make `cargo outdated` part of cargo itself",
+      "url": "https://github.com/rust-lang/cargo/issues/4309",
+      "repo": "rust-lang/cargo",
+      "reactions": 132,
+      "comments": 46,
+      "created": "2017-07-20T18:30:53Z",
+      "body_snippet": "In Rust ecosystem, one main concern for library developers is to not have semver breaking updates to their package, because of the fear that majority of the dependent packages not getting the routing updates that would follow a breaking update.\r\n\r\nThere are two general solutions to this problem:\r\n\r\n1. The old-school back-porting of updates, so that dependents on any API version would get all the routine updates. This solution can easily become a huge maintenance cost on library developers and is not a common practice in the Rust community at the moment.\r\n\r\n2. Help owner of dependent packages to update their dependency versions and apply the changes needed, if any. This solution can be much less time consuming, and distributes the workload throughout the dependency chain. It also means that only the versions being used get the maintenance work needed, but not all theoretically-possible versions. So, in rustacean words: *you pay for what you use*.\r\n\r\nBased on this, I want to propose to add new features to help owners with keeping their dependencies up-to-date. Most of the functionality can be exposed via the `cargo update` command.\r\n\r\n## Proposed Features\r\n\r\n* **Warn on dependencies "
+    },
+    {
+      "source": "github-issues",
+      "title": "Add Quota Information Access to Claude Code CLI",
+      "url": "https://github.com/anthropics/claude-code/issues/13585",
+      "repo": "anthropics/claude-code",
+      "reactions": 123,
+      "comments": 27,
+      "created": "2025-12-10T18:54:33Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\n## Description\n\n### Problem\nClaude Desktop displays quota information (session %, weekly %) in the UI, but this data is not accessible to Claude Code CLI users or automation scripts. This forces users to manually check the desktop app and record values, preventing automated monitoring and workflow optimization.\n\n### Request\nExpose quota information via Claude Code CLI through one of these methods:\n1. **New `claude quota` command** (recommended)\n2. API endpoint that CLI can query\n3. Environment variables set by Claude Code\n4. Local configuration file that gets updated\n\n### Example Use Cases\n```bash\n# Get current quota\n$ claude quota\nSession: 78%\nWeekly (All): 17%\nWeekly (Sonnet): 5%\n\n# JSON for scripting\n$ claude quota --json\n{\"session\": 78, \"weekly_all\": 17, \"weekly_sonnet\": 5}\n\n# Enable/disable features based on quota\nif [ $(claude quota --session) -gt 80 ]; then\n  export ALWAYS_THINKING=false\nelse\n  exp"
+    },
+    {
+      "source": "github-issues",
+      "title": "Scenario: Add support for 3rd-party extensions",
+      "url": "https://github.com/microsoft/terminal/issues/4000",
+      "repo": "microsoft/terminal",
+      "reactions": 74,
+      "comments": 10,
+      "created": "2019-12-17T16:27:54Z",
+      "body_snippet": "Updated thread from #555\r\n\r\nNow that we have a better understanding of what work will be needed to support 3rd party extensions (\"plugins\"), this thread is the megathread to track all the work that's needed to support them.\r\n\r\nBefore any real work can begin here, we're waiting on some support from the Windows operating system that will be coming Soon<sup>TM</sup>. Fundamentally, third-party code extensions for packaged applications (like us) isn't supported currently.\r\n\r\nThis is _not_ work slated for 1.0. It may not even land in 2.0. This work will likely span multiple releases. Whenever this work does end up starting formally, we'll likely have a number of minor versions with prototypes of the extensibility model, with breaking changes up until the major version release of the Terminal. So if extensions are scheduled for 3.0, then 2.4 might _introduce_ bts of the extensibility model that are later broken in 2.5, 2.6, etc.\r\n\r\n## What should extensions be able to do?\r\n\r\n* Add their own profiles via Dynamic Profile Generators\r\n* Customize the rendering of the Terminal, with things like:\r\n  - custom shaders, font renderers\r\n  - custom formatting of the buffer (like hyperlinks)\r\n* Add "
+    },
+    {
+      "source": "github-issues",
+      "title": "[RFC] Apache MXNet 2.0 Roadmap",
+      "url": "https://github.com/apache/mxnet/issues/16167",
+      "repo": "apache/mxnet",
+      "reactions": 71,
+      "comments": 36,
+      "created": "2019-09-13T21:46:25Z",
+      "body_snippet": "# Overview\r\n\r\nStatus: https://github.com/apache/incubator-mxnet/projects/18\r\nThe status for each project will be updated by the contributor who's driving it. If you have more projects that you intend to drive please first discuss here.\r\n\r\nThe purpose of this RFC is to organize and present the roadmap towards 2.0. As 2.0 will be a major release, changes that would break backward compatibility are permissible.\r\n\r\nThe proposed changes in this RFC are either collected from past roadmap discussions such as #9686, or are based on various common issues from the past. This RFC organizes these changes into self-contained projects to facilitate clear definition of project, captures the risks and status quo to the best of our knowledge. To help navigate, the projects are further divided into several high-level areas. Some of the listed projects are already in progress, and are included to provide a clear overview.\r\n\r\nThe objectives of Apache MXNet 2.0 include:\r\n- Improve expressiveness and usability of user-facing API.\r\n- Improve expressiveness and usability of the technical stack for lower development cost and maintainability.\r\n\r\nIn terms of frontend, this roadmap focuses mostly on Python-fr"
+    },
+    {
+      "source": "github-issues",
+      "title": "Allow static builds to use Remote Functions",
+      "url": "https://github.com/sveltejs/kit/issues/14336",
+      "repo": "sveltejs/kit",
+      "reactions": 62,
+      "comments": 15,
+      "created": "2025-08-28T15:19:56Z",
+      "body_snippet": "### Describe the problem\n\nRemote functions `query`, `form`, and `command` are only available when shipping SvelteKit with a server, such as with serverless or Node.js adapters. Anyone shipping desktop applications cannot leverage Remote Functions today.\n\n### Describe the proposed solution\n\nProvide an opt-in configuration that allows static builds to consume `query`, `form`, and `command` functions client-side so long as they point to remote functions deployed elsewhere. As an idea, we could add a config option such as `kit.remoteFunctions.origin` for developers to set their remote server, such as `https://api.example.com` or an environment variable. Absence of this configuration should fail the build for any prerendered or static pages consuming the above remote function types.\n\nThis unlocks being able to maintain a single codebase that can use Remote Functions and conditionally deploy as a native (Capacitor, Electron, Tauri, Wails, etc) app with `adapter-static`, or a website using any server-like adapter such as `adapter-node`.\n\nThe challenge with ensuring compatibility between the native builds and their corresponding remote site is avoiding drift between breaking changes in rem"
+    },
+    {
+      "source": "github-issues",
+      "title": "Consider supporting Typescript",
+      "url": "https://github.com/ml5js/ml5-library/issues/253",
+      "repo": "ml5js/ml5-library",
+      "reactions": 59,
+      "comments": 30,
+      "created": "2018-12-30T02:02:30Z",
+      "body_snippet": "I want to open the discussion here around allowing models to be developed in typescript in ml5.  I feel like using Typescript would bring many advantages.\r\n\r\n* We are dealing often with new libraries to import that in general are made in typescript.  These libraries have a lot of unknowns; being able to have autosuggest for all of the possible library methods when we don't know the full api would make things much easier.\r\n* We would know right away when we have typos or use a tensorflow.js or third party method incorrectly, saving a lot of debug time.\r\n* When new developers come into contributing ml5, they can more quickly get accustomed to what all the methods are by just pressing a dot when typing in the IDE and having all the options appear right away.   If we encourage descriptions on the method signatures, these would show up too.  They'd also be less scared of mistyping something and breaking things because typescript lets you know right away if there was a mistake.\r\n* Typescript annotations make reading code a lot easier, especially when there are tons of different internal types going around.\r\n\r\nI know there is the argument that we want to make ml5 easy for people new to co"
+    },
+    {
+      "source": "github-issues",
+      "title": "[RFC] DataLoader architecture updates and TarDataset implementation",
+      "url": "https://github.com/pytorch/pytorch/issues/49440",
+      "repo": "pytorch/pytorch",
+      "reactions": 56,
+      "comments": 50,
+      "created": "2020-12-16T00:34:47Z",
+      "body_snippet": "# DataLoader architecture updates and TarDataset implementation\r\n# Problem statement\r\n\r\nThis proposal aims to construct a modular, user-friendly, and performant toolset to address the ambiguous activity referred to as “dataloading” within PyTorch, a simplification attributable to the indivisibility of the DataLoader abstraction prescribed today. In reality, “dataloading” is a diverse set of operations that should be supported by extensible building blocks, out of which the present abstractions, and far more could be easily built. Some typical needs which are scarcely supported in the present implementation include:\r\n\r\n\r\n- Lazy loading - Users want to point PyTorch to a remote data source (e.g. http, S3, GCP, Azure, Manifold, Hive) and iterate over the contents without downloading the entire dataset, ideally only downloading samples as-soon-needed. Further, If a user writes such code for a remote storage platform, there is no natural place to contribute it for public or private reuse.\r\n- Structured data, heterogeneous storage\r\n    - There are hundreds of ways to store a single structured dataset, each requiring a custom or highly configured DataLoader. Users want to take advantage o"
+    },
+    {
+      "source": "github-issues",
+      "title": "A Pragmatic, Not-Really-Typed Errors Proposal",
+      "url": "https://github.com/microsoft/TypeScript/issues/57943",
+      "repo": "microsoft/TypeScript",
+      "reactions": 54,
+      "comments": 17,
+      "created": "2024-03-26T06:45:03Z",
+      "body_snippet": "### ✅ Viability Checklist\r\n\r\n- [X] This wouldn't be a breaking change in existing TypeScript/JavaScript code\r\n- [X] This wouldn't change the runtime behavior of existing JavaScript code\r\n- [X] This could be implemented without emitting different JS based on the types of the expressions\r\n- [X] This isn't a runtime feature (e.g. library functionality, non-ECMAScript syntax with JavaScript output, new syntax sugar for JS, etc.)\r\n- [X] This isn't a request to add a new utility type: https://github.com/microsoft/TypeScript/wiki/No-New-Utility-Types\r\n- [X] This feature would agree with the rest of our Design Goals: https://github.com/Microsoft/TypeScript/wiki/TypeScript-Design-Goals\r\n\r\n### ⭐ Suggestion\r\n\r\nI know that typed errors have been [discussed extensively](https://github.com/microsoft/TypeScript/issues/13219) and rejected — for [very good reasons](https://github.com/microsoft/TypeScript/issues/13219#issuecomment-1515037604). I don't disagree with any of those reasons. After reading issue [#13219](https://github.com/microsoft/TypeScript/issues/13219) in its entirety, though, I believe I have a proposal that would improve TypeScript’s error handling without introducing any of the dr"
+    },
+    {
+      "source": "github-issues",
+      "title": "Request for feedback: dynamic fonts & texture updates (v1.92)",
+      "url": "https://github.com/ocornut/imgui/issues/8465",
+      "repo": "ocornut/imgui",
+      "reactions": 42,
+      "comments": 105,
+      "created": "2025-03-05T17:11:26Z",
+      "body_snippet": "### 2025/06/25: RELEASED [1.92.0](https://github.com/ocornut/imgui/releases/tag/v1.92.0). PLEASE STOP POSTING HERE. OPEN A NEW ISSUE INSTEAD!\n\n### See [docs/BACKENDS.md](https://github.com/ocornut/imgui/blob/master/docs/BACKENDS.md) for instruction to add support for `ImGuiBackendFlags_RendererHasTextures` in your custom backend.\n\n~~2025/06/11: merged to master, branch now deleted.~~\n~~2025/06/06: pushed enough changes that I am hopeful this could be merged this month. Feedback welcome.~~\n~~2025/03/19: pushed a \"big\" change reverting the renaming ImTextureID to ImTextureUserID from the March 5 version. This is simpler for end-user, both in terms of breaking changes and in term of understanding the design. The structure previously called ImTextureID in the March 5 version is now called ImTextureRef.~~\n~~2025/03/05: Pushed an experimental [features/dynamic_fonts](https://github.com/ocornut/imgui/tree/features/dynamic_fonts) branch.~~\n\n----\n\nI am looking for feedback / early adopters to try this as we will inevitably find bugs or use cases that are not well supported.\nThe API are not 100% stabilized but it is expected they stay relatively close.\n\nAs of today, I only recommend experien"
+    },
+    {
+      "source": "github-issues",
+      "title": "RFC Silverstripe User Interface (UI) Framework",
+      "url": "https://github.com/silverstripe/.github/issues/346",
+      "repo": "silverstripe/.github",
+      "reactions": 40,
+      "comments": 22,
+      "created": "2024-12-01T23:26:57Z",
+      "body_snippet": "**Proposer**: @blueo\r\n**Contributors**: @jakxnz  \r\n**Area**: Silverstripe CMS UI\r\n**Posted**: December 2nd, 2024\r\n**Status**: Open\r\n\r\n# What’s being recommended\r\nCreate first-class development patterns for Silverstripe CMS’s UI layer using a micro-frontend and API-first structure\r\n\r\n# <a id=\"wanna-skip-to-the-best-part\">Wanna skip to the best part?</a>\r\nThis is a reasonably long RFC. If you want to skip to what you’re interested in you can use these links:\r\n\r\n1. [Background](#user-content-background) (the bit with the rationale/all the text)\r\n   1. [Goals](#user-content-goals) \r\n   1. [Impacts and considerations](#user-content-impacts-and-considerations) \r\n   1. [Benefits](#user-content-benefits) \r\n1. [What a UI framework could look like](#user-content-what-a-ui-framework-could-look-like) (the bit with code examples and suggested changes)\r\n1. [Case study](#user-content-case-study) (AKA what it takes to implement UI today)\r\n1. [Other options considered](#user-content-other-options-considered) \r\n1. [FAQ](#user-content-faq)\r\n\r\n# <a id=\"background\">Background</a>\r\nThe CMS User Interface (UI) is the primary touch point for content authors and significantly contributes to their impressio"
+    },
+    {
+      "source": "github-issues",
+      "title": "Cross Platform: Add support for Anchor/Complementary Packages.",
+      "url": "https://github.com/NuGet/Home/issues/3114",
+      "repo": "NuGet/Home",
+      "reactions": 38,
+      "comments": 4,
+      "created": "2016-07-12T16:15:07Z",
+      "body_snippet": "The above is just a working title, I am not attached to any names.\n\nThe short version is that we would like NuGet to support a notion of an anchor package as well as complementary packages linked to the anchor which augment the view of the core package when they are published.   This is not a theoretical issue, this is currently preventing several of our libraries from supporting .NET Core, Linux/Unix, various existing gaming consoles, and secret platforms under development.\n\nLet me explain.\n\nOne of the challenges that we have with some of our .NET libraries is that they need native code to support them.  \n\nConsider our high performance 2D graphics library for .NET, [SkiaSharp](https://developer.xamarin.com/guides/cross-platform/drawing/).   It is powered by Google Chrome’s C++ engine, and it is surfaced as a beautifully bound C# API.   So we need to distribute both the native library, as well as the managed library for it.  \n\nThe managed part is very easy to deal with, we can build it anywhere, and package it anywhere.\n\nThe native library is very hard, because there are no standard solutions for cross-compiling C/C++ code from any host to any target, so what we have to do is build"
+    },
+    {
+      "source": "github-issues",
+      "title": "Desktop custom providers are unusable with existing chats and the model picker",
+      "url": "https://github.com/openai/codex/issues/29156",
+      "repo": "openai/codex",
+      "reactions": 37,
+      "comments": 12,
+      "created": "2026-06-20T00:50:46Z",
+      "body_snippet": "Related to #10867, but this is a more specific Desktop failure mode around custom providers, the model catalog, and existing chat history.\n\n## Summary\n\nCodex CLI/TUI can use custom model providers reasonably well via `model_providers` and profiles. Codex Desktop cannot do the same in a sane, safe way.\n\nThe current Desktop behavior makes third-party providers such as OpenRouter/LiteLLM/internal OpenAI-compatible gateways effectively unusable if the user wants all three of these at once:\n\n- use the Desktop GUI\n- select custom-provider models from the GUI model picker\n- keep access to existing Desktop chats/history\n\nI spent time trying to make Codex Desktop use OpenRouter models while preserving normal chats. Every available path either fails outright, hides/segregates chats, replaces the built-in catalog, or requires temporary mutation of `~/.codex/config.toml`.\n\n## Environment\n\n- macOS arm64\n- Codex CLI/App Server: `0.142.0-alpha.1`\n- Codex Desktop: `26.616.32156`\n- Provider tested: OpenRouter, Responses API-compatible\n- Example models tested:\n  - `moonshotai/kimi-k2.7-code`\n  - `deepseek/deepseek-v4-pro`\n  - `qwen/qwen3-coder-plus`\n  - `z-ai/glm-5.2`\n  - `minimax/minimax-m3`\n\n## Wh"
+    },
+    {
+      "source": "github-issues",
+      "title": "Extension (plugin) support",
+      "url": "https://github.com/qutebrowser/qutebrowser/issues/30",
+      "repo": "qutebrowser/qutebrowser",
+      "reactions": 37,
+      "comments": 85,
+      "created": "2014-10-01T11:42:14Z",
+      "body_snippet": "There should be support for writing plugins which are more complex than the simple (non-js) userscripts. Python plugins are the way to go.\r\n\r\n# FAQ\r\n\r\n**What's the current state of this issue?**\r\n\r\n~~September 2018: I'm working on this [as a student research project](https://lists.schokokeks.org/pipermail/qutebrowser-announce/2018-September/000051.html). The main focus is designing a clean plugin API which can then be used to move internal qutebrowser parts to \"plugins\". As soon as this work is done (late 2018), the next step is gradually opening up the plugin API to third-party plugins.~~\r\n\r\n~~March 2019: The research project went quite well ([paper](https://github.com/qutebrowser/qutebrowser-hsr-sa/releases/download/final/sa.pdf)), but also was quite academic - not that much time was actually spent on implementation. As a result, there's now an initial extension API used internally in qutebrowser, but it's far from finished and not open to third-party extensions yet.~~\r\n\r\n~~I likely won't have much time to continue working on extensions until my bachelor thesis is finished in mid-June (see the [announcement mail](https://lists.schokokeks.org/pipermail/qutebrowser-announce/2019-Ma"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Serializer][PropertyInfo][PropertyAccess] Refactoring plan for AbstractObjectNormalizer and related code",
+      "url": "https://github.com/symfony/symfony/issues/30818",
+      "repo": "symfony/symfony",
+      "reactions": 34,
+      "comments": 7,
+      "created": "2019-04-01T14:36:09Z",
+      "body_snippet": "Hello,\r\n\r\n`AbstractObjectNormalizer` has a long list of ongoing issues and pull request, we got a talk at Paris Symfony Live with @dunglas @fbourigault and @soyuka on how we want to move forward, here is a resume of our talk and what we would like to achieve for the future:\r\n\r\n## Current State and Context\r\n\r\nAt the origin this normalizer was done for API Platform and many other third party libraries / project, in order to have a normalizer that is able to normalize and denormalize any data object (specifically doctrine entities). `ObjectNormalizer`,  `PropertyNormalizer` and `GetSetMethodNormalizer` were already existing, but were having slightly different beahvior, that's why two abstract class were created `AbstractNormalizer` and `AbstractObjectNormalizer`\r\n\r\nOver time, lot of missing features in the ObjectNormalizer were added on both the AbstractObjectNormalizer and the AbstractNormalizer as we needed the same features there.\r\n\r\nThe main problem with the inheritance model is that it's very hard to customize some behavior without having to write a lot of code. For example, the current API Platform Normalizer has a lot of duplicated code as he extends the `AbstractObjectNormaliz"
+    }
+  ]
+}

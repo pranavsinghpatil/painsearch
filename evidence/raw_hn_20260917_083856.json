@@ -1,0 +1,226 @@
+{
+  "query": "breaking change without warning",
+  "count": 20,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Breaking change on GitHub Actions API without warning",
+      "url": "https://github.com/orgs/community/discussions/9752",
+      "hn_id": "46323904",
+      "points": 3,
+      "comments": 0,
+      "author": "kitallis",
+      "created": "2025-12-19T09:33:25Z",
+      "text_snippet": ""
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Help us solve API Terms of service warnings readability",
+      "url": "https://news.ycombinator.com/item?id=30642176",
+      "hn_id": "30642176",
+      "points": 1,
+      "comments": 0,
+      "author": "midhem",
+      "created": "2022-03-11T16:42:27Z",
+      "text_snippet": " Can we use this API safely in the long term is a difficult question to answer in the Digital world we live in. Most of the time, companies discover that their API access has been revoked when users complain their app does not work anymore.(Twitter story) Or sometime breaking change occurs without notice (remember Facebook APIs?). Sometimes it is the pricing options or other clauses that actually can break your app (remember Google Maps Pricing change?) because you did not read in depth the API Terms of service, so you did not prepare.<p>We intend to build a framework making API Terms of service easily shareable and understandable, under the form of a creative commons pattern composed by siple logos and warnings. Feedback welcome!"
+    },
+    {
+      "source": "hn",
+      "title": "Help us solve API Terms of Service warning readability for developers",
+      "url": "https://news.ycombinator.com/item?id=30642505",
+      "hn_id": "30642505",
+      "points": 1,
+      "comments": 1,
+      "author": "midhem",
+      "created": "2022-03-11T17:00:50Z",
+      "text_snippet": "Do you remember Twitter breaking hundred of thousands of application because of abrupt API toS change? Facebook breaking APIs without notice? Google changing Google Maps API freemium pricing killing thousands of map integrations? Linkedin killing API access to startup competing with them? If developers had read carefully API Term of Service, they would have known the danger.<p>Can I use this API safely in the long term is a difficult question to answer in the Digital world we live in. Most of the time, developers discover that their API access has been revoked when users complain their app does not work anymore.<p>On https:&#x2F;&#x2F;www.apitos.org&#x2F; we intend to build a framework making API Terms of service easily shareable and understandable, under the form of a creative commons pattern composed by simple logos and warnings. A quick survey is at your disposal to collect more feedback.  Open to debate about what is important for developers and ideas&#x2F;Feedback welcome!"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: What Happened to Docker 23?",
+      "url": "https://news.ycombinator.com/item?id=34693708",
+      "hn_id": "34693708",
+      "points": 3,
+      "comments": 8,
+      "author": "bionsystem",
+      "created": "2023-02-07T15:05:43Z",
+      "text_snippet": "Docker 23 installs by default now if you update your repository and run [apt|yum|dnf] [install|upgrade] docker-ce. However it breaks on builds (timeouts) and changes the location of config files (&#x2F;etc&#x2F;docker&#x2F;daemon.json isn&#x27;t used anymore), thus breaking our CI as well as making unusable our config management tools until we patch them.<p>The worst part is that the change occured on thursday, and there was no release notes when our CI started to break. So I was actually lucky to figure out that it was just that and forced version 20 everywhere before we would break everything. And today I found that some build timeout or fail in non-deterministic ways as well which seems to appear on some older versions as well according to google.<p>So I guess the lesson is, never use &quot;latest&quot; version of anything, anywhere, as they can&#x27;t be trusted ? Has anybody encountered this kind of issues ?<p>Edit : I just found out that googling &quot;docker 23 issues&quot; also"
+    },
+    {
+      "source": "hn",
+      "title": "Tell HN: On 4/1 Unauthed Docker Pulls will be limited 10 / HR",
+      "url": "https://news.ycombinator.com/item?id=43505722",
+      "hn_id": "43505722",
+      "points": 1,
+      "comments": 0,
+      "author": "sunils34",
+      "created": "2025-03-28T14:16:29Z",
+      "text_snippet": "Hi all, I figured this is pretty critical to share out. Docker recently announced in February that starting April 1st unauthenticated Docker Pulls from the Docker Hub registry will be limited to 10 per hour.  This is a pretty significant breaking change, especially for those that run Kubernetes in production.<p>Many Kubernetes clusters may host open source software with images pulled from docker hub without credentials, thus by default the pulls are unauthenticated.  And many of these clusters run behind a NAT.<p>I was very surprised to see this warning from Digital Ocean today and that there&#x27;s only a 3 day lead time to address this. Surfacing for visibility in case anyone else doesn&#x27;t regularly follow Docker Hub updates.<p>LINK: https:&#x2F;&#x2F;www.docker.com&#x2F;blog&#x2F;revisiting-docker-hub-policies-prioritizing-developer-experience&#x2F;"
+    },
+    {
+      "source": "hn",
+      "title": "\"Freedom of Speech\" Exists – But \"Freedom of Reach\" Is a Black Box",
+      "url": "https://news.ycombinator.com/item?id=46653122",
+      "hn_id": "46653122",
+      "points": 5,
+      "comments": 3,
+      "author": "Ayanonymous",
+      "created": "2026-01-16T22:33:54Z",
+      "text_snippet": "I posted a link to a long-form article on X (Twitter). Impressions: single digits.\nNothing was deleted. No warning. No ban.\nIt simply didn’t reach anyone.<p>At first glance this is easy to dismiss as “algorithm roulette.”\nBut the same <i>invisibility patterns</i> show up across platforms:<p>- YouTube political content gets quietly demonetized &#x2F; de-ranked\n- External links on social feeds often underperform (sometimes dramatically)\n- LLMs (ChatGPT&#x2F;Claude&#x2F;etc.) tend to sanitize or avoid politically sharp topics\n- Search results for some queries feel oddly thin, stale, or SEO-flooded<p>This makes me wonder if we’re drifting into a new mode of discourse control:\nnot classic “state censorship,” but <i>incentive-driven soft suppression</i>.<p>Habermas called the democratic discourse space the “public sphere.”\nA hidden assumption in that model was simple:\nif you publish, people can actually <i>see</i> it.\nThat assumption may be breaking.<p>A rough model (feel free to tear this a"
+    },
+    {
+      "source": "hn",
+      "title": "Shift from passive documentation to active enforcement",
+      "url": "https://news.ycombinator.com/item?id=47188281",
+      "hn_id": "47188281",
+      "points": 5,
+      "comments": 2,
+      "author": "iamalizaidi",
+      "created": "2026-02-28T00:35:16Z",
+      "text_snippet": "Hey everyone,<p>If you work on a scaling codebase, you know the struggle of keeping architectural context alive. Senior engineers make important decisions about how the code should be structured, but new hires often don&#x27;t know that context exists and end up accidentally breaking critical systems.<p>To fix this, I built Decision Guardian. It is an open-source tool (running as a GitHub Action or local CLI) that shifts teams from passive documentation to active enforcement.\nWhat it exactly does: Instead of hoping developers read an external wiki, you document your architectural decisions in a simple Markdown file in your repository (e.g., .decispher&#x2F;decisions.md). You map these decisions to specific files using glob patterns or advanced JSON rules (like regex or line-ranges).<p>When a developer opens a Pull Request that modifies those protected files, Decision Guardian automatically drops a structured comment directly into the code review, giving them the exact context and check"
+    },
+    {
+      "source": "hn",
+      "title": "Is it the end if Reddit ban you permanently?",
+      "url": "https://news.ycombinator.com/item?id=43737390",
+      "hn_id": "43737390",
+      "points": 3,
+      "comments": 5,
+      "author": "Aiz",
+      "created": "2025-04-19T16:18:21Z",
+      "text_snippet": "I got banned twice now on two separate accounts. Both times, the message they sent me in my inbox are:<p>Your account has been permanently banned for breaking the rules.<p>This account has been permanently banned due to multiple, repeated violations of Reddit&#x27;s Content Policy on your other account(s). For more information about what rules you broke and how to appeal, check your account inboxes.<p>This is ridiculous to me. My first account was over a few years old. I was barely on there. Made one post last year January, then decided I want to be active again back in February. Then I get hit with that. Not even a warning or a clear enough reason as to what rule I broke. I had only that one account then. Send a few appeals, and they were either rejected or ignored. So fast forward this month, April, I made another account. In order to ask for help, and to start over. I knew the possibility of getting banned again was there. But hope it doesn&#x27;t occurred again. But it did. Once ag"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: A PHP Superset Language",
+      "url": "https://news.ycombinator.com/item?id=43544037",
+      "hn_id": "43544037",
+      "points": 1,
+      "comments": 3,
+      "author": "anvius",
+      "created": "2025-04-01T08:02:12Z",
+      "text_snippet": "I&#x27;m developing a PHP transpiler and I&#x27;ve created a superset called Simple PHP Superset (SPS). The goal is not to replace PHP but to extend it—making the code easier to read and maintain while preserving full PHP compatibility. Our company’s codebase suffers from numerous issues, and I believe that SPS can help solve these by introducing modern improvements without breaking existing PHP libraries.<p>Here are the most features of SPS:<p>- Full Compatibility with PHP 8:<p>You can mix traditional PHP code (with braces, semicolons, etc.) with SPS syntax. In strict mode, warnings are emitted if you don’t follow the recommended style.<p>- Minimalist, Clean Syntax:<p><pre><code>  + Use `end` instead of braces to close blocks.  \n  + Instantiate classes by calling them like functions (no need for `new`).  \n  + Use `raise(...)` in place of `throw new`.\n</code></pre>\n- Private by Default:<p>All members (variables, functions, properties) are private by default. Use the keyword `pub` to ex"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Top 10 Timeless Software Books That ChangedLife as Software Engineer?",
+      "url": "https://news.ycombinator.com/item?id=38228850",
+      "hn_id": "38228850",
+      "points": 100,
+      "comments": 70,
+      "author": "burhanrashid52",
+      "created": "2023-11-11T09:48:18Z",
+      "text_snippet": "Few months month ago, Someone asked on Twitter “Do you read programming books? If yes, why?”.  You can read my answer in the tweet,<p>Here are mine, in order of how a developer starts their journey, from basic to scaling problems:<p>1. Code: The Hidden Language of Computers (Pure Basic: Starting with Binary)\n2. Working Effectively with Legacy Code (Dealing with an ugly codebase)\n3. Refactoring Improve the design of the existing codebase (Making changes safely without breaking the code)\n4. Test-Driven Development (TDD) (Once you’ve learned all the above, you always start writing tests first)\n5. Head First Design Principles (Terminology and concepts for maintainable and extendable design)\n6. Algorithms to Live By (Algorithms are fundamental ideas before we write any code)\n7. Git Pro (Software cannot run without a Version Control System (VCS). We use it every minute of our working day)\n8. Your Code as a Crime Scene (Finding problems in the code using code history)\n9. Data-Intensive Applic"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Best long-term and marketable web stack for freelance contract devs?",
+      "url": "https://news.ycombinator.com/item?id=21945200",
+      "hn_id": "21945200",
+      "points": 4,
+      "comments": 2,
+      "author": "kugelblitz",
+      "created": "2020-01-03T12:06:33Z",
+      "text_snippet": "I feel like I don&#x27;t get enough time to deep-dive into one specific programming language &#x2F; framework, since as a freelance I feel I need to learn 4 or 6 or 10 languages &#x2F; frameworks and need to keep up-to-date on all of them.<p>I want to invest the next years learning a few carefully selected languages &#x2F; frameworks in more depth, without worrying too much about breaking changes in the underlying software, so that (optionally) I can easily pick up other languages &#x2F; frameworks on-demand, since I understand the underlying concepts better.<p>Do you have any go-to web dev languages &#x2F; tools &#x2F; frameworks that you feel will be a good investment of your time in the long-term?<p>Here&#x27;s some stuff I like: Python &#x2F; Flask, PostgreSQL, AWS (incl. ElasticBeanstalk) &#x2F; Netlify,  Mithril.js, npm &#x2F; Makefile &#x2F; Parcel.js. (Currently I use a lot of PHP &#x2F; Laravel &#x2F; Symfony, Vue &#x2F; Angular in addition to the previously mentioned.) Still "
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How does one build large front end apps without a framework like React?",
+      "url": "https://news.ycombinator.com/item?id=45615193",
+      "hn_id": "45615193",
+      "points": 109,
+      "comments": 186,
+      "author": "thepianodan",
+      "created": "2025-10-17T10:50:55Z",
+      "text_snippet": "I had a mind-blown-moment when I learnt that Obsidian was built without any frontend JS framework. ( https:&#x2F;&#x2F;forum.obsidian.md&#x2F;t&#x2F;what-framework-did-the-developer-use-to-create-obsidian-desktop-application&#x2F;30724&#x2F;11 )<p>The benefits, I can see.<p><pre><code>    JS frameworks move really quickly, and when we&#x27;re working on a large, long-term project, it sucks when big breaking changes are introduced after only a couple of years. Sticking to slow-moving web standards (which are quite mature by now) increases the longevity of a project.\n\n    And the stability also means that more time is spent on delivering features, rather than on fixing compatibility issues.\n\n    There is also the benefit of independence. The project&#x27;s success is not tied to the framework&#x27;s success. And it also makes the project more secure, from supply chain attacks and such.\n\n    Because there is no &quot;abstraction layer&quot; of a framework, you also have greater control ov"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: PgDog – Shard Postgres without extensions",
+      "url": "https://github.com/pgdogdev/pgdog",
+      "hn_id": "44099187",
+      "points": 307,
+      "comments": 80,
+      "author": "levkk",
+      "created": "2025-05-26T16:55:49Z",
+      "text_snippet": "Hey HN! Lev here, author of PgDog (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;pgdogdev&#x2F;pgdog\">https:&#x2F;&#x2F;github.com&#x2F;pgdogdev&#x2F;pgdog</a>). I’m scaling our favorite database, PostgreSQL. PgDog is a new open source proxy, written in Rust, with first-class support for sharding — without changes to your app or needing database extensions.<p>Here’s a walkthrough of how it works: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=y6sebczWZ-c\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=y6sebczWZ-c</a><p>Running Postgres at scale is hard. Eventually, one primary isn’t enough at which point you need to split it up. Since there is currently no good tooling out there to do this, teams end up breaking their apps apart instead.<p>If you’re familiar with PgCat, my previous project, PgDog is its spiritual successor but with a fresh codebase and new goals. If not, PgCat is a pooler for Postgres also written in Rust.<p>So, what’s changed and why a new project"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Payload (YC S22) – Headless CMS for Developers",
+      "url": "https://news.ycombinator.com/item?id=32665325",
+      "hn_id": "32665325",
+      "points": 242,
+      "comments": 137,
+      "author": "sneek_",
+      "created": "2022-08-31T17:14:58Z",
+      "text_snippet": "Hey HN, my name is James and I founded Payload (<a href=\"https:&#x2F;&#x2F;payloadcms.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;payloadcms.com&#x2F;</a>) with two close colleagues, Dan and Elliot. We&#x27;re a dev-first headless CMS [1] that&#x27;s half app framework and half CMS—we&#x27;re closing the gap between the two. You can check out our demo here: <a href=\"https:&#x2F;&#x2F;demo.payloadcms.com\" rel=\"nofollow\">https:&#x2F;&#x2F;demo.payloadcms.com</a>.<p>Imagine you&#x27;re going to build a new SaaS app. Would you think of building it on a headless CMS? Probably not.  To devs, &quot;content management system&quot; is usually a swear word. If a team of engineers gets assigned a CMS project, it&#x27;s less than thrilling. Engineers want to avoid roadblocks, write code, and build things they&#x27;re proud of—but existing CMS&#x27;s get in the way of that left and right with their third-party integrations, point-and-click schema designers, code generation, etc.<p>Rather, you&#x27;"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: hotglue (YC S21) – Easy user-facing SaaS integrations",
+      "url": "https://news.ycombinator.com/item?id=27918900",
+      "hn_id": "27918900",
+      "points": 144,
+      "comments": 61,
+      "author": "hsyyid",
+      "created": "2021-07-22T13:57:00Z",
+      "text_snippet": "Hi HN, we’re Hassan and David from hotglue (<a href=\"https:&#x2F;&#x2F;hotglue.xyz\" rel=\"nofollow\">https:&#x2F;&#x2F;hotglue.xyz</a>). We make it easier for developers to build user-facing integrations. In this context, an integration is a way for users to sync their data from their business apps, like Salesforce and Quickbooks, to another. For example, if I wanted to use an app like Mailchimp, I’d use their Salesforce integration to sync all my contacts over automatically.<p>We came across this problem while working for a startup that was struggling to scale the Salesforce integration they built in house. We needed a tool that would sync the customer data from Salesforce directly to our backend, but there were very few solutions available. After talking to other engineers who had dealt with user-facing integrations, we found many teams were frustrated by building their own integration solutions from scratch (not to mention maintaining them). This inspired us to build a tool that helps"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Distr 2.0 – A year of learning how to ship to customer environments",
+      "url": "https://github.com/distr-sh/distr",
+      "hn_id": "46958742",
+      "points": 101,
+      "comments": 29,
+      "author": "louis_w_gk",
+      "created": "2026-02-10T12:19:23Z",
+      "text_snippet": "A year ago, we launched Distr here to help software vendors manage customer deployments remotely. We had agents that pulled updates, a hub with a GUI, and a lot of assumptions about what on-prem deployment needed.<p>It turned out things get messy when your software is running in places you can&#x27;t simply SSH into.<p>Over the last year, we’ve also helped modernize a lot of home-baked solutions: bash scripts that email when updates fail, Excel sheets nobody trusts to track customer versions, engineers driving to customer sites to fix things in person, debug sessions over email (“can you take a screenshot of the logs and send it to me?”), customers with access to internal AWS or GCP registries because there was no better option, and deployments two major versions behind that nobody wants to touch.<p>We waited a year before making our first breaking change, which led to a major SemVer update—but it was eventually necessary. We needed to completely rewrite how we manage customer organiza"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Touca – a better alternative to snapshot testing",
+      "url": "https://github.com/trytouca/trytouca",
+      "hn_id": "34959276",
+      "points": 63,
+      "comments": 15,
+      "author": "pejman_gh",
+      "created": "2023-02-27T17:29:48Z",
+      "text_snippet": "Hi everyone,<p>Almost 2 years ago, I left my full-time job at Canon to build tooling and infrastructure to help developers write high-level tests for complex software workflows that are not easy to unit test. I wanted to take ideas from visual regression testing, snapshot testing, and property-based testing and build a general-purpose regression testing system that developers can use to find the unintended side-effects of their day-to-day code changes during the development stage.<p>After two years of working ~70 hours per week and going through multiple iterations, we finally have a fully open-source (Apache-2.0) product that finally makes me and other members of our community happy: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;trytouca&#x2F;trytouca\">https:&#x2F;&#x2F;github.com&#x2F;trytouca&#x2F;trytouca</a><p>This week we released v2.0, a milestone version that is useful to small and large teams alike. This version comes with:<p>- An easy to self-host server that stores test results"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Open-source customizable AI voice dictation built on Pipecat",
+      "url": "https://github.com/kstonekuan/tambourine-voice",
+      "hn_id": "46264158",
+      "points": 27,
+      "comments": 16,
+      "author": "kstonekuan",
+      "created": "2025-12-14T16:21:35Z",
+      "text_snippet": "Tambourine is an open source, fully customizable voice dictation system that lets you control STT&#x2F;ASR, LLM formatting, and prompts for inserting clean text into any app.<p>I have been building this on the side for a few weeks. What motivated it was wanting a customizable version of Wispr Flow where I could fully control the models, formatting, and behavior of the system, rather than relying on a black box.<p>Tambourine is built directly on top of Pipecat and relies on its modular voice agent framework. The back end is a local Python server that uses Pipecat to stitch together STT and LLM models into a single pipeline. This modularity is what makes it easy to swap providers, experiment with different setups, and maintain fine-grained control over the voice AI.<p>I shared an early version with friends and recently presented it at my local Claude Code meetup. The response was overwhelmingly positive, and I was encouraged to share it more widely.<p>The desktop app is built with Tauri."
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Distr 2.0 – A year of learning how to ship to customer environments",
+      "url": "https://github.com/distr-sh/distr",
+      "hn_id": "46887466",
+      "points": 4,
+      "comments": 2,
+      "author": "louis_w_gk",
+      "created": "2026-02-04T16:01:46Z",
+      "text_snippet": "A year ago, we launched Distr here to help software vendors manage customer deployments remotely. We had agents that pulled updates, a hub with a GUI, and a lot of assumptions about what on-prem deployment needed.<p>It turned out things get messy when your software is running in places you can&#x27;t simply SSH into.<p>Over the last year, we’ve also helped modernize a lot of home-baked solutions: bash scripts that email when updates fail, Excel sheets nobody trusts to track customer versions, engineers driving to customer sites to fix things in person, debug sessions over email (“can you take a screenshot of the logs and send it to me?”), customers with access to internal AWS or GCP registries because there was no better option, and deployments two major versions behind that nobody wants to touch.<p>We waited a year before making our first breaking change, which led to a major SemVer update—but it was eventually necessary. We needed to completely rewrite how we manage customer organiza"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Proton – A pure Go GUI library with zero CGO and API immunity",
+      "url": "https://news.ycombinator.com/item?id=48905922",
+      "hn_id": "48905922",
+      "points": 3,
+      "comments": 1,
+      "author": "CzaxTanmay",
+      "created": "2026-07-14T12:41:45Z",
+      "text_snippet": "Hey HN,<p>I’ve been working on Proton, a lightweight GUI library for Go designed to offer a native desktop development experience without the usual headaches of external toolchains.<p>It is built on top of Gio, but it completely wraps the underlying rendering engine. The public API exposes no raw Gio types, which means your application code is insulated from any upstream breaking changes or internal rewrites.<p>Key features:<p>Zero CGO: You can cross-compile to Windows and macOS flawlessly from any machine without fighting external compiler toolchains.<p>Immediate Mode: Your draw function runs every frame. No state trees, no XML, and no setState boilerplate.<p>Batteries Included: Built-in support for 40+ themes, custom hex&#x2F;RGB colors, layout helpers (GrowRow, ResizeSplit), tables, overlays, and keyboard shortcuts.<p>Cross-Platform: The exact same codebase runs on Windows, macOS, and Android.<p>It is currently under active development (v0.2.x). I&#x27;d love to hear your thoughts o"
+    }
+  ]
+}

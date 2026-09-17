@@ -1,0 +1,149 @@
+{
+  "query": "silent API change",
+  "count": 13,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you maintain integrations once they're in production?",
+      "url": "https://news.ycombinator.com/item?id=46937877",
+      "hn_id": "46937877",
+      "points": 1,
+      "comments": 5,
+      "author": "ksvmkoundinya",
+      "created": "2026-02-08T19:54:09Z",
+      "text_snippet": "Hi HN — I’m exploring a product idea around integration reliability and would really appreciate feedback.<p>Many modern products depend on integrations across payments, analytics, messaging, auth, and cloud workflows. Setting these up is usually manageable, but maintaining them as systems evolve often becomes a hidden operational burden.<p>I’m experimenting with building *VibeInfra*, a platform focused on:<p>• One-click integration setup\n• Automated workflow and business-logic testing\n• Continuous monitoring for silent failures\n• Ongoing maintenance when APIs, schemas, or workflows change<p>The motivation came from repeatedly seeing issues like:<p>• Billing systems and product entitlements drifting out of sync\n• Analytics and attribution pipelines degrading over time\n• Webhooks or event pipelines failing without immediate visibility\n• Customer lifecycle messaging triggering incorrectly\n• Different services disagreeing on core business state (orders, subscriptions, users)<p>The goal is "
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you handle breaking changes from third-party APIs in production?",
+      "url": "https://news.ycombinator.com/item?id=47538731",
+      "hn_id": "47538731",
+      "points": 1,
+      "comments": 0,
+      "author": "kriish2205",
+      "created": "2026-03-27T03:12:09Z",
+      "text_snippet": "Recently worked on a project where our team used 10+ third-party APIs. Twice this year we got hit by silent breaking changes and found out only when users complained.<p>Curious how others handle this and whether a tool that monitors API contract changes and surfaces relevant changelog updates automatically would have saved you time.<p>- How do you currently stay ahead of breaking changes?\n- Have you built internal tooling for this?\n- Would this be a painkiller or a vitamin for your team?"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Notebooklm-Py – Unofficial Python API for Google NotebookLM",
+      "url": "https://github.com/teng-lin/notebooklm-py",
+      "hn_id": "46586875",
+      "points": 2,
+      "comments": 0,
+      "author": "teng-lin",
+      "created": "2026-01-12T11:10:49Z",
+      "text_snippet": "Hi HN,\nI’ve been using NotebookLM heavily, but the manual &quot;drag-and-drop&quot; workflow was a bottleneck. I wanted to build automated pipelines (like auto-generating podcasts from a folder of PDFs), but the lack of an official API made this impossible.\nThe Solution: By mapping the internal RPC endpoints used by the web frontend, I built a native Python client that interacts directly with the backend. This bypasses the overhead and brittleness of browser automation tools like Selenium.\nDemo:\nWatch Claude Code use the CLI to automate a workflow in the terminal: <a href=\"https:&#x2F;&#x2F;asciinema.org&#x2F;a&#x2F;767284\" rel=\"nofollow\">https:&#x2F;&#x2F;asciinema.org&#x2F;a&#x2F;767284</a>\nWhat you can do with it:\nDeep Research &amp; Content Automation: Automate the entire research loop. You can programmatically create a new notebook, import deep research on specific topics, and then trigger the generation of both an Audio Overview (podcast) and a Slide Deck, downloading the final a"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Have LLM API Updates or Deprecations Impacted You?",
+      "url": "https://news.ycombinator.com/item?id=37162466",
+      "hn_id": "37162466",
+      "points": 4,
+      "comments": 1,
+      "author": "fatso784",
+      "created": "2023-08-17T14:44:29Z",
+      "text_snippet": "Have you encountered issues around LLM model or API updates? Are you concerned about model updates or deprecations?<p>We&#x27;d love to hear about your experiences. We are academic researchers at Harvard CS investigating investigating user experiences with LLM APIs like OpenAI, particularly in light of recent or &#x27;silent&#x27; changes. For instance, the deprecation of Codex and certain updates to ChatGPT have posed challenges for some, making research irreproducible or affecting software projects. Hearing from those impacted will help us develop guidelines regarding model updates and deprecations, such that companies who provide LLM APIs can improve their rollout processes and avoid pitfalls in the future.<p>If you are interested and affected by model updates, please consider signing up for an virtual interview by filling out this form: https:&#x2F;&#x2F;forms.gle&#x2F;zDhm1A16kZie4dPJ8 We will pay you a $30 Amazon gift card for an hour of your time. Of course, if you prefer, you m"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How would you keep 2 APIs in sync?",
+      "url": "https://news.ycombinator.com/item?id=16771547",
+      "hn_id": "16771547",
+      "points": 3,
+      "comments": 2,
+      "author": "pbowyer",
+      "created": "2018-04-06T07:24:11Z",
+      "text_snippet": "Since Mulesoft&#x27;s acquisition I&#x27;ve been thinking how I would build something similar. A couple of projects I&#x27;m involved in have mentioned &quot;We need bi-directional sync between Salesforce and X, Y and Z&quot;, which has always been followed by &quot;but MuleSoft and PieSync cost serious $$$$$&quot;.<p>Have have&#x2F;would you build it? The resources I&#x27;ve found are about syncing files between two endpoints, or databases between mobile devices and the server (which is similar, but often encapsulated in the storage).<p>I already have a page of edge-cases where data would be incorrectly overwritten. E.g.:<p><pre><code>  09:00:00 Data polled from systems A and B (for these are &#x27;enterprise&#x27; systems without webhooks or notifications or changefeeds)\n  09:00:01 A record (which is in the polled batch) is changed in system A\n  09:00:07 The changes are written back to each system, OVERWRITING THE CHANGE IN SYSTEM A MADE AT 09:00:01</code></pre>\nWithout the ability t"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: GhostedWatch, an extension that detects silent removals on patriots.win",
+      "url": "https://ghostedwatch.com/",
+      "hn_id": "48831004",
+      "points": 3,
+      "comments": 0,
+      "author": "rhaksw",
+      "created": "2026-07-08T12:21:42Z",
+      "text_snippet": "Hi HN, I built Reveddit [1] a few years ago to let Reddit users know when their comments get secretly removed. I&#x27;ve now built GhostedWatch to do the same thing for the .win sites (patriots.win, scored.co, and a few other .win sites).<p>The problem is the same one. When a moderator removes your post or comment on these sites, you still see it. Everyone else sees &quot;removed by community filter.&quot; There&#x27;s no notification and no indication that anything changed. You&#x27;d never find out unless you logged out and checked, which almost nobody thinks to do.<p>GhostedWatch is a browser extension that monitors your posts and comments and tells you when one gets removed. It shows you what you posted, labels who removed it and how, and confirms what logged-out visitors actually see. You can also watch other people&#x27;s content and get notified when anything disappears.<p>Everything runs in the browser. No servers of mine, no analytics, no tracking. It reads your content throug"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: We built an OCR API to stop babysitting extraction pipelines",
+      "url": "https://news.ycombinator.com/item?id=46694351",
+      "hn_id": "46694351",
+      "points": 1,
+      "comments": 2,
+      "author": "tchop2020",
+      "created": "2026-01-20T17:01:22Z",
+      "text_snippet": "Hey HN — we built an OCR API for teams who are tired of constantly maintaining extraction pipelines.<p>If you’re running OCR in production, this is what it changes for you:\n- You don’t have to maintain custom orchestration code across multiple OCR models. We run a managed, multi-model consensus engine instead.\n- You don’t have to hand-tune prompts or schemas. The system auto-optimizes prompts and schemas against observed extraction failures.\n- You don’t get silent failures. Every field comes with explicit error flags so downstream systems know what to trust.\n- You don’t have to keep tweaking the pipeline as documents change. The extraction loop converges automatically toward higher accuracy over time.<p>Under the hood, we run extraction, analyze failure patterns, and adapt prompts and schemas without manual intervention. The result is fewer retries, fewer production surprises, and less ongoing maintenance.<p>It’s API-first and free to try with a single API call.<p>Docs: <a href=\"https:"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Perfect Bluetooth MIDI for Windows",
+      "url": "https://news.ycombinator.com/item?id=47972888",
+      "hn_id": "47972888",
+      "points": 105,
+      "comments": 40,
+      "author": "mayerwin",
+      "created": "2026-05-01T09:52:15Z",
+      "text_snippet": "Hi HN, I&#x27;m Erwin. I built a small free open-source utility that bridges Bluetooth LE MIDI keyboards into the new Windows MIDI Services stack so any DAW or Web MIDI app can use them as if they were wired.<p>I bought a Roland FP-90X piano partly because it had Bluetooth MIDI. On my Windows 11 PC, pairing succeeded, but my DAW couldn&#x27;t see the keyboard, and notes I sent from the PC never made the piano sing. After a regrettable number of evenings, I&#x27;d separated this into three independent bugs stacked on top of each other.<p>The first one is the famous one: Windows only natively exposes BLE-MIDI through the WinRT API, which almost no DAW polls. So even when pairing succeeds, MIDI apps still don&#x27;t see the device. The usual workaround is MIDIberry + loopMIDI, but I couldn&#x27;t get that combination to work reliably in my case, and I wanted a single-app solution. The new Windows MIDI Services stack ships with a feature called loopback endpoints: anything written to one c"
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Withfriends (YC W19) – Memberships for Small Businesses",
+      "url": "https://news.ycombinator.com/item?id=19810092",
+      "hn_id": "19810092",
+      "points": 74,
+      "comments": 40,
+      "author": "kunalgupta",
+      "created": "2019-05-02T17:13:39Z",
+      "text_snippet": "Hi HN!<p>We’re Joe, Martha, and Kunal; co-founders of Withfriends (<a href=\"https:&#x2F;&#x2F;withfriends.co\" rel=\"nofollow\">https:&#x2F;&#x2F;withfriends.co</a>).<p>Withfriends runs membership programs for small businesses. Bars, theaters, barbershops, can use Withfriends to convert their customers to become monthly-paying members. Members receive simple &amp; automated benefits, and small businesses earn additional revenue.<p>We’ve started by focusing on music venues and event organizers. All three of us come from a lifetime of organizing events, primarily in NYC. Joe and Kunal started a music venue and collective art space in Brooklyn, called The Silent Barn. Kunal started one of the first video game galleries, called Babycastles. Martha and Joe used to run a newsprint listing called Showpaper, which aggregated shows from hundreds of venues every week. We know that culture in cities is defined by the beloved small businesses around us, we know how cultural funding works and where it"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: How Are You-elderly fall detection app I built solo with AI in 6 months",
+      "url": "https://news.ycombinator.com/item?id=47819553",
+      "hn_id": "47819553",
+      "points": 4,
+      "comments": 10,
+      "author": "sminchev",
+      "created": "2026-04-18T21:11:18Z",
+      "text_snippet": "I am writing the post, because I want to show that with AI, really complex and meaningful projects can be done, if the proper tools were used the proper way.\nI needed a project that I can use, so that I see how far I can go with only AI usage. I needed something doable, but relatively complex.\nAnd then I remembered an idea  my wife shared with me, a few years ago: an app that monitors her grandfather&#x27;s behavior and sends a notification if he stops moving. at that time, AI integrations were not considered as an option, and static algorithms to model behavior (with adaptation) were complex and fragile. I am not that smart to implement such thing.<p>I started in December 2025. I read a lot, watched videos, I found a AI framework that I wanted to try: BMAD. The idea behind it felt known to me. Agile methodology, but with agents. What can go wrong!?\nI had all I need. A language that I don&#x27;t know, Android OS, that have changed a lot for the last 15 years , and AI models that I can "
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Managed MCP Sandbox Environments for RL Training on Tool Use",
+      "url": "https://news.ycombinator.com/item?id=46247531",
+      "hn_id": "46247531",
+      "points": 3,
+      "comments": 0,
+      "author": "wirehack",
+      "created": "2025-12-12T19:08:09Z",
+      "text_snippet": "Hi HN! We are Klavis AI (<a href=\"https:&#x2F;&#x2F;www.klavis.ai&#x2F;\">https:&#x2F;&#x2F;www.klavis.ai&#x2F;</a>) and we are launching a managed MCP Sandbox-as-a-Service for RL training on tool use.<p>If you want a model to learn tool use through RL, you need realistic environments where the model can take actions, you can observe the resulting state, and compute a reward. For SaaS tools, this means managing dozens of test accounts, handling OAuth and token refresh, seeding realistic data for each episode, resetting state between runs, and ensuring isolation when you&#x27;re running concurrent training sessions. Most research teams spend months building this plumbing per integration.<p>Klavis is a managed sandbox service that handles all of that. You call our API to get an isolated sandbox backed by a real service instance (not a mock), initialize it with whatever data state you need, let your model interact via MCP, then dump the final state to compute your reward. One more API call"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: MyRephra 2 – Free, system-wide AI paraphrasing utility for macOS",
+      "url": "https://www.idemfactor.com",
+      "hn_id": "44283915",
+      "points": 2,
+      "comments": 0,
+      "author": "goofywon",
+      "created": "2025-06-15T18:07:37Z",
+      "text_snippet": "Hi HN,<p>I&#x27;m the developer behind MyRephra. To be honest, I built this tool for myself, born from a deep frustration with the current state of AI writing assistants.<p>Like many of you, I live in my text editors, word pages, and web forms. I found that despite the boom in built-in AI, they were actively fighting my workflow:<p>* The Constant Context Switching: The biggest flow-killer. Why should I have to highlight, copy, open, find the tab, paste, click a button, wait, then copy and paste back? It&#x27;s a dozen steps for one thought.<p>* The Black Box Problem: Where is my text going? Is it being logged? Used for training? Most services are silent on this, making them a non-starter for any sensitive or corporate work.<p>* The &quot;One-Size-Fits-All&quot; Rigidity:  Pre-canned prompts just don&#x27;t cut it. My needs change constantly depending on whether I&#x27;m writing an email to a client, a Slack message to a colleague, or drafting documentation.<p>* The Unreliability: You k"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: TimeBasedLogger – Python Logger That Logs Based on Time",
+      "url": "https://github.com/prakashsellathurai/Timebased-logger",
+      "hn_id": "44667157",
+      "points": 1,
+      "comments": 0,
+      "author": "prakashqwerty",
+      "created": "2025-07-24T05:09:54Z",
+      "text_snippet": "What is TimeBasedLogger?\nTimeBasedLogger is a simple but production-grade Python logging library that changes how you manage your logs: instead of logging on every message, it lets you log only once per specified time interval. This can greatly reduce log spam in high-frequency systems, making logs more meaningful and easier to parse.<p>Inspiration &amp; Acknowledgement\nThis project was directly inspired by John Scolaro’s article, &quot;[Log by Time, not by Count](<a href=\"https:&#x2F;&#x2F;johnscolaro.xyz&#x2F;blog&#x2F;log-by-time-not-by-count\" rel=\"nofollow\">https:&#x2F;&#x2F;johnscolaro.xyz&#x2F;blog&#x2F;log-by-time-not-by-count</a>)&quot;. The blog post argues convincingly for a time-based logging approach, especially in systems that process large volumes of events rapidly. Its clear explanation and practical pseudocode examples helped shape the concept and motivation behind TimeBasedLogger. Big thanks to John Scolaro for articulating the challenges and benefits around logging st"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "query": "dependency changed without notice",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "Yarn's Future - v2 and beyond",
+      "url": "https://github.com/yarnpkg/yarn/issues/6953",
+      "repo": "yarnpkg/yarn",
+      "reactions": 1407,
+      "comments": 56,
+      "created": "2019-01-24T14:55:52Z",
+      "body_snippet": "Hi everyone,\r\n\r\nWhen the Yarn project started back in 2016, our landscape was very different from what it is now. Package locking was far from being a first class citizen in the Javascript ecosystem, and the time needed to run an install was ... well, it was what it was. Yarn's release shook the status quo and started a movement that ended up being beneficial to everyone, other package managers included. Now is the time to assess where we are, reinforce our strengths and patch our weaknesses.\r\n\r\nThis thread aims to expose our roadmap for the next major Yarn release, and let you know about significant changes that we plan to make regarding Yarn's design. The codename for these changes is Berry - that's how we'll refer to it during the next few months.\r\n\r\n## Roadmap\r\n\r\nThis section lists some of the work we have in progress. It's far from being a comprehensive list, but it gives a good idea of the kind of changes you can expect going forward:\r\n\r\n### Major changes\r\n\r\n* The lockfile (and configuration) format will become a strict subset of YAML. In the process, the lockfile information will be slightly changed to account for some long-awaited changes (such as [#5892](https://github.com"
+    },
+    {
+      "source": "github-issues",
+      "title": "A proposal to improve ReactiveFormsModule",
+      "url": "https://github.com/angular/angular/issues/31963",
+      "repo": "angular/angular",
+      "reactions": 563,
+      "comments": 42,
+      "created": "2019-08-02T12:51:15Z",
+      "body_snippet": "# 🚀 feature request\r\n\r\n### Relevant Package\r\n\r\nThis Proposal is for @angular/forms\r\n\r\n### Description\r\n\r\nThe ReactiveFormsModule is pretty good, but it has a number of problems.\r\n\r\n1. The module is not strongly typed\r\n   - See issues #13721 #27389 #27665 #25824 #20040 #17000 #16999 #16933 relating to controls\r\n   - See issues #31801 #19340 #19329 relating to ControlValueAccessor\r\n2. It’s relatively complicated to display error messages, given how fundamental this task is. See #25824 #24981 #22319 #21011 #2240 #9121 #18114\r\n3. The methods for adding errors are inflexible. It is difficult to interface with async services to display errors (hence the need for different update strategies like on `blur` / on `submit`). In general, working with errors is more difficult than it should be.\r\n   - See #31105 #29275 #26683 #23484 #20371 #17090 #13920 #9119 #6895 #19851 #18871 #10530 #6170.\r\n4. Numerous annoyances with unfortunate API decisions.\r\n   - You can't bind a single form control to multiple inputs without ControlValueAccessor #14451\r\n   - Can't store arbitrary metadata on a control #19686\r\n   - Calling `reset()` doesn't actually reset the control to its initial value #20214 #19747 #15"
+    },
+    {
+      "source": "github-issues",
+      "title": "Design decision: why do we need the stale closure problem in the first place?",
+      "url": "https://github.com/react/react/issues/16956",
+      "repo": "react/react",
+      "reactions": 171,
+      "comments": 29,
+      "created": "2019-09-30T11:07:44Z",
+      "body_snippet": "Hi,\r\n\r\nI initially asked this on Twitter and @gaearon suggested me to open an issue instead.\r\nThe original thread is here: https://twitter.com/sebastienlorber/status/1178328607376232449?s=19\r\nMore easy to read here: https://threadreaderapp.com/thread/1178328607376232449.html\r\nBut will try to make this issue more clear and structured about my args and questions.\r\n\r\nDon't get me wrong, I really like hooks, but wonder if we can't have smarter abstractions and official patterns that make dealing with them more easy for authors and consumers.\r\n\r\n--------------------------------------\r\n\r\n## Workaround for the stale closure\r\n\r\nAfter using hooks for a while, and being familiar with the stale closure problem, I don't really understand why we need to handle closure dependencies, instead of just doing something like the following code, which always executes latest provided closure (capturing fresh variables)\r\n\r\n![image](https://user-images.githubusercontent.com/749374/65869094-f7d52600-e379-11e9-9634-1ab06b41e3ca.png)\r\n\r\nCoupling the dependencies of the closure and the conditions to trigger effect re-execution does not make much sense to me. For me it's perfectly valid to want to capture some"
+    },
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "GPT-5.6 often serializes independent Code Mode calls; explicit batching reduced weighted usage by 27–45%",
+      "url": "https://github.com/openai/codex/issues/35050",
+      "repo": "openai/codex",
+      "reactions": 76,
+      "comments": 30,
+      "created": "2026-07-24T00:01:25Z",
+      "body_snippet": "### What version of the Codex App are you using (From “About Codex” dialog)?\n\n26.721.30844\n\n### What subscription do you have?\n\nChatGPT Pro for the personal-project tests; ChatGPT Business for the work-project tests.\n\n### What platform is your computer?\n\nMicrosoft Windows NT 10.0.26200.0 x64\n\n### What issue are you seeing?\n\nRelated to #32503, but this report adds controlled same-model benchmarks, credit-weighted usage measurements, quality comparisons, and a tested workaround across two unrelated codebases.\n\nI began investigating this independently after noticing an unusually high number of recent complaints about Codex usage depletion. I had not personally noticed an obvious long-term reduction in my limits, so I inspected my own `.codex` session logs rather than assume that allowances had been silently changed.\n\nOnly after reaching the batching hypothesis and completing my initial tests did I search for similar reports and find #32503. Its author had already identified essentially the same Code Mode parallelism problem from a long observational trace, including only 5 of 739 GPT-5.6 `exec` cells using `Promise.all`. The tests below appear to provide the controlled validation that"
+    },
+    {
+      "source": "github-issues",
+      "title": "💡PapaParse 6.0",
+      "url": "https://github.com/mholt/PapaParse/issues/748",
+      "repo": "mholt/PapaParse",
+      "reactions": 68,
+      "comments": 33,
+      "created": "2019-11-23T22:11:45Z",
+      "body_snippet": "Would love to get your feedback on my wishlist for Papaparse. We're going to dedicate some time for the team @ Flatfile before the end of year to move anything on this list we're agreed on to a next release.\r\n\r\n### 1. Migrate to ES7 + Typescript or Flow\r\nThis is something that, after a deep audit of the source code we feel is necessary to ensure long term reliability. In a data oriented library like this, type strength will allow for easier reasoning about the code, add stability and prevent unseen bugs. ES7 will allow for more readable code\r\n\r\n> Since not everybody understands TS or Flow deeply enough to have confidence to contribute. My recommendation is to keep the config permissive to allow for vanillaJS contributions and have core contributors add stronger typing before merging to master.\r\n\r\n### 2. Separate NodeJS build from Browser build\r\nThis will allow for a lighter package when using in the browser (vast majority based on cursory analysis), as well as open more freedom to invest in optimizations for each stack independently. These could either be distributed as different packages (eg. `@papaparse/core` and `@papaparse/node`) or a second build in the same package. (eg. (`im"
+    },
+    {
+      "source": "github-issues",
+      "title": "Moving towards version 1.0",
+      "url": "https://github.com/webview/webview/issues/168",
+      "repo": "webview/webview",
+      "reactions": 60,
+      "comments": 13,
+      "created": "2018-07-02T07:34:43Z",
+      "body_snippet": "Webview is almost one year old, and so far I have received a vast amount of positive feedback :tada: . But you may have noticed that the development has been slowed down - I have relocated and found a new job, so I'm now mostly a weekend contributor. But I'm pretty sure this project will remain successful if we carefully set the right goals.\r\n\r\nWebview is a small simple project, and size/simplicity is one of its biggest advantages. Small projects are easy to understand, easy to maintain, easy to contribute to.\r\n\r\nWith this in mind I have to make a decision that webview will remain small and never will become a full-featured alternative to Electron (but don't be disappointed too soon!). Webview should support extensions to let other developers adjust it to their needs. Probably not in the sense of DLL plugins, but in a way how https://suckless.org do it.\r\n\r\nLet's think about the scope of webview project. As I can tell from the feedback, the primary use case is making GUI apps with web technologies and native languages behind the UI (such as Go, Rust, C++, Python etc). To make a web UI we need a native OS window and a full sized child view in it, which is a webview. Next, we should p"
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal for minimizing/removing secrets from the Terraform state file",
+      "url": "https://github.com/hashicorp/terraform/issues/34860",
+      "repo": "hashicorp/terraform",
+      "reactions": 43,
+      "comments": 8,
+      "created": "2024-03-18T15:34:57Z",
+      "body_snippet": "# Proposal for minimizing/removing secrets from the Terraform state file\r\n\r\nWith the additional benefit of low privilege Terraform plans.\r\n\r\n# Background:\r\n\r\nTerraform is a game changer for infrastructure management, the ability to maintain everything as code is a godsend and our entire organization is using it to manage thousands of resources across 10 teams.\r\n\r\nDuring our 3 years of setting up this infrastructure, we've noticed one issue that has been hard to reconcile: The fact that Terraform is \"all powerful\" whilst it is the only acceptable way of changing our infra. These two concepts are constantly at odds with each other. But it doesn't have to be this way.\r\n\r\n`terraform apply` is really the dangerous operation. It affects the infra, it can delete crucial resources, it has \"write\" permissions. `terraform plan` however, does not do anything like that. It just does a bunch of GET requests, compares to the state, and proposes changes, it has \"read\" permissions.\r\n\r\nThis mean `terraform plan` should be runnable by any engineer at our company. They can make changes to the Terraform code on their git branch, run `terraform plan` locally, evaluate their changes, iterate, and eventu"
+    },
+    {
+      "source": "github-issues",
+      "title": "The Good, the Bad, and the Leaky: jemalloc, bumpalo, and mimalloc in meilisearch",
+      "url": "https://github.com/Kerollmops/blog/issues/24",
+      "repo": "Kerollmops/blog",
+      "reactions": 26,
+      "comments": 5,
+      "created": "2026-03-12T17:36:35Z",
+      "body_snippet": "<!-- How I dove into a spooky memory leak, found it, but discovered that the actual leak was more on mimalloc's side than on meilisearch's. I used jemalloc's powerful tooling and a bit of help from an LLM to dive into this hard-to-tackle issue. -->\n\nIt's been some time since a couple of open-source users reported that [meilisearch is leaking memory](https://github.com/meilisearch/meilisearch/issues/6112). I spent time reviewing the codebase to see where a leak could have hidden, but I never found anything suspicious enough. I was also very suspicious of those claims, as we are running multiple thousand meilisearch instances on our Cloud and have never had any leaking issues that caused instances to be killed by the OS...\n\n...actually, yes, [we had a leak in v1.25](https://github.com/meilisearch/meilisearch/releases/tag/v1.25.0), but it was related to an LMDB feature I was developing back then, and I talked about this [in another blog post](https://blog.kerollmops.com/patching-lmdb-how-we-made-meilisearch-s-vector-store-333-faster). This is fixed now, and it was entirely my fault to ~dive into a complex C codebase and~ deploy a spooky change without extensive testing.\n\nI also invest"
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature request: Implement accessibility features?",
+      "url": "https://github.com/ocornut/imgui/issues/8022",
+      "repo": "ocornut/imgui",
+      "reactions": 25,
+      "comments": 9,
+      "created": "2024-09-27T16:47:07Z",
+      "body_snippet": "### Version/Branch of Dear ImGui:\n\nnot applicable to current situation\n\n### Back-ends:\n\nnot applicable to current situation\n\n### Compiler, OS:\n\nnot applicable to current situation\n\n### Full config/build information:\n\nnot applicable to current situation\n\n### Details:\n\n**My Issue/Question:**\r\nImGui has no current implementation of accessibility for Asistive software, but there is a way for an implementation to have such support. \r\nXXX _(please provide as much context as possible)_\r\n\r\nhello there!\r\n\r\nThis issue, as the title states, is about the lack of accessibility support in imgui, especially since this will become increasingly important soon enough. This will also present a convenient solution to making imgui have accessibility support, for windows, linux and mac OS, all at once, with minimal effort on your part. But before we get to that, some background and terminology explanation is required, because last time this was discussed, #4122, people were confused, rightly, by most of what was talked about in there, so it's my turn to attempt to make it right\r\n\r\n## background\r\n\r\nFor a very long time now, I have been passionate about the chiptune scene. However, the only thing I could "
+    },
+    {
+      "source": "github-issues",
+      "title": "TIA: change detection misses all changes when the Pest project is a subdirectory of the git repository (monorepo)",
+      "url": "https://github.com/pestphp/pest/issues/1783",
+      "repo": "pestphp/pest",
+      "reactions": 24,
+      "comments": 2,
+      "created": "2026-07-29T07:36:38Z",
+      "body_snippet": "### What happened\n\nIn a monorepo where the Pest project lives in a subdirectory of the git repository (e.g. `backend/`), TIA never detects any PHP source change. In the worst case it **replays the previous results as passing without executing the tests affected by the change**.\n\n```\nrepo/                <- git root\n├── frontend/\n└── backend/         <- Laravel app, composer.json, pest runs here\n    ├── app/\n    └── tests/\n```\n\nReproduction:\n\n1. Record a baseline: `PEST_ALLOW_XDEBUG=1 XDEBUG_MODE=coverage vendor/bin/pest --tia` (from `backend/`, all green, graph written).\n2. Make a semantic change to `backend/app/Services/Billing/PartialInvoiceService.php` (e.g. add a `private const`).\n3. Run `vendor/bin/pest --tia` again.\n\n**Expected:** the tests covering that file are re-executed (in our suite: 40 tests across 4 files).\n**Actual:** `Tests: 1669 passed (…, 1669 replayed)` in ~3s — the change maps to zero tests and everything is replayed as unchanged.\n\nWith no coverage driver loaded the failure is the safe-but-slow variant instead: `WARN Detected PHP source changes but no coverage driver is available` followed by a full-suite run on every invocation.\n\n### Root cause\n\n`src/Plugins/Ti"
+    },
+    {
+      "source": "github-issues",
+      "title": "child_process stdout being truncated",
+      "url": "https://github.com/nodejs/node/issues/19218",
+      "repo": "nodejs/node",
+      "reactions": 22,
+      "comments": 35,
+      "created": "2018-03-08T05:12:03Z",
+      "body_snippet": "* **Version**: 9.7.1\r\n* **Platform**: Darwin miless-mbp.lan 17.4.0 Darwin Kernel Version 17.4.0: Sun Dec 17 09:19:54 PST 2017; root:xnu-4570.41.2~1/RELEASE_X86_64 x86_64\r\n* **Subsystem**:\r\n\r\nIt seems like `spawn()` and `exec()` is truncating `stdout`, even when `maxBuffer` is set. I've been trying to capture the output of `jest --help`, which the full output looks like the following:\r\n\r\n```\r\nUsage: jest [--config=<pathToConfigFile>] [TestPathPattern]\r\n\r\nOptions:\r\n  --help, -h                      Show help                            [boolean]\r\n  --all                           The opposite of `onlyChanged`. If\r\n                                  `onlyChanged` is set by default, running jest\r\n                                  with `--all` will force Jest to run all tests\r\n                                  instead of running only tests related to\r\n                                  changed files.\r\n  --automock                      Automock all files by default.       [boolean]\r\n  --bail, -b                      Exit the test suite immediately upon the first\r\n                                  failing test.                        [boolean]\r\n  --browser                       Respect the \""
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal for a new Sitemap concept",
+      "url": "https://github.com/eclipse-archived/smarthome/issues/5337",
+      "repo": "eclipse-archived/smarthome",
+      "reactions": 19,
+      "comments": 29,
+      "created": "2018-04-03T05:13:36Z",
+      "body_snippet": "This issue is a transfer of the [respective ESH forum topic](https://www.eclipse.org/forums/index.php/m/1784414/) to GitHub.\r\n\r\nThe idea is to propose a new Sitemap concept that would help overcome various problems seen on the current sitemap implementation:\r\n\r\n- It is represented on Xtext DSL, which is an unnecessary dependency for many scenarios\r\n- It is not editable via REST\r\n- Components cannot be easily reused or extended for different UIs\r\n\r\n# New or Renewed Concepts\r\n\r\n- **Atom:** the smallest composition unit of a sitemap. An atom cannot contain any other components, although it does have certain attributes that describe how that atom can be rendered. Atoms are usually grouped to form more complex components that users can interact with (e.g. a widget containing an icon, a label and a switch control, as typically seen on today's sitemaps).\r\n- **Container:** an ordered set of components that provides hierarchical structure to the sitemap. Containers may be visually rendered (e.g. as a frame on the current page, or as a subpage) or be completely seamless. The latter case is useful as a container may be used to specify attributes that are propagated to its child components, wi"
+    },
+    {
+      "source": "github-issues",
+      "title": "What even is this?",
+      "url": "https://github.com/aws/aws-lambda-base-images/issues/7",
+      "repo": "aws/aws-lambda-base-images",
+      "reactions": 18,
+      "comments": 5,
+      "created": "2021-01-27T14:47:31Z",
+      "body_snippet": "I've deleted the less kind words I initially wrote. Please can you read the comments below and look at addressing how you organise this repo.\r\n\r\n*Organising images by branch*\r\n\r\nThis is the first time I've ever seen a repo organised by branch per project. Effectively this is a monorepo organised by branch. The branch per image thing is confusing at a minimum, but the monorepo aspect presents more challenges. \r\n\r\nIf someone wants to fork it to contribute back or clone it to use as a base to make their own image. Due to this being a repo of base images, you end up forking/cloning all of them. It would be far better to have a repo per image as the majority of folks forking or cloning would only ever use 1 image.\r\n\r\nWhat is the process guideline for contributing back with this image?\r\n\r\n*Building the base image from tar files*\r\n\r\nYou build the base image from tar files, which are based on Lambda Layers from my understanding. This means for me to understand what is in the docker image I have to clone the repo locally and untar the images. If I want to contribute back do I need to then rebuild that tar and include it in the repo? Or do I find a repo with the layer? Does a separate repo w"
+    },
+    {
+      "source": "github-issues",
+      "title": "I can not restore dependencies from package-lock.json",
+      "url": "https://github.com/npm/npm/issues/17091",
+      "repo": "npm/npm",
+      "reactions": 17,
+      "comments": 26,
+      "created": "2017-06-08T13:09:27Z",
+      "body_snippet": "#### I'm opening this issue because:\r\n\r\n  - [ ] npm is crashing.\r\n  - [x] npm is producing an incorrect install.\r\n  - [x] npm is doing something I don't understand.\r\n  - [ ] Other (_see below for feature requests_):\r\n\r\n#### What's going wrong?\r\nI have a `package.json`. After install dependencies (`npm i`), a `package-lock.json` was generated.\r\nIf you use this file to restore the dependency tree then the tree will be broken\r\n\r\n#### How can the CLI team reproduce the problem?\r\nFirst clone my package.json without package-lock.json\r\n```\r\n$ git clone git@github.com:cawa-93/npm-issue.git\r\n$ cd npm-issue\r\n$ git checkout 80eb3bb5d81c8d69a3de9f87fe7d72f9cb6fd4a5\r\n```\r\nInstall dependency and check `keygrip` package\r\n```\r\n$ npm i && npm ls keygrip\r\nnpm notice created a lockfile as package-lock.json. You should commit this file.\r\nadded 1267 packages in 213.16s\r\nmadpost@1.0.0 /run/media/alex/LinWin/Develop/npm-issue\r\n└─┬ adonis-framework@3.0.13\r\n  └─┬ node-cookie@1.0.4\r\n    └── keygrip@1.0.1  (git://github.com/poppinss/keygrip.git#f7b41c2f305cfa7030d7da9e64af9790aa3be93a)\r\n```\r\nDelete all node_modules, install dependency from package-lock.json and check `keygrip` package again\r\n```\r\n$ rm -rf ./"
+    },
+    {
+      "source": "github-issues",
+      "title": "Reconsider providing a cleaner hook-based solution to derived state",
+      "url": "https://github.com/react/react/issues/33041",
+      "repo": "react/react",
+      "reactions": 14,
+      "comments": 17,
+      "created": "2025-04-28T10:52:44Z",
+      "body_snippet": "## Search terms\n\ngetDerivedStateFromProps, useState, useEffect, derived state\n\n## Previous issues\n\n- #14288\n- #14738\n- #14830\n- #15523\n- #16461\n- #17712\n\n## Essential reading\n\n- [1] [You Might Not Need an Effect > Adjusting some state when a prop changes](https://react.dev/learn/you-might-not-need-an-effect#adjusting-some-state-when-a-prop-changes)\n- [2] [You Probably Don't Need Derived State](https://legacy.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html) (from the legacy docs)\n\n## Abstract / TL;DR\n\nAdjusting state when some other state changes makes sense more often than the official docs would have you believe. The pattern suggested in [1] is extremely underrated, but also unnecessarily confusing. React should offer and promote a less obscure hook-based solution to the problem so as to avoid the suggested solution's complexity and prevent developers from misemploying `useEffect`.\n\n## Motivation\n\nHere is the right way to reset state when some other state changes, as suggested in [1]:\n\n```typescript\nconst [count, setCount] = useState(initialCount);\nconst [prevInitialCount, setPrevInitialCount] = useState(initialCount);\n\nif (initialCount !== prevInitialCount) "
+    },
+    {
+      "source": "github-issues",
+      "title": "New LizardFS Docker/Docker Swarm Plugin",
+      "url": "https://github.com/lizardfs/lizardfs/issues/711",
+      "repo": "lizardfs/lizardfs",
+      "reactions": 14,
+      "comments": 45,
+      "created": "2018-06-19T18:23:24Z",
+      "body_snippet": "Hello Everybody, I have recently developed a Docker plugin that allows you to create LizardFS Docker volumes! There are two different versions of the plugin: a Docker managed plugin that works well for individual Docker instances, and a version that can be deployed as a stack on Docker Swarm to create a self-contained storage solution for a Docker cluster.\r\n\r\nThe Docker plugin has been developed by me and my team at @kadimasolutions to create a distributed storage solution that can be deployed on Docker Swarm and provide shared volumes for the containers in the Docker Swarm cluster. As far as I have found it is **the only** solution that does so.\r\n\r\nWe will soon mirror the source code for the plugin to GitHub. In the meantime, you can test out the plugin using the Docker images that are on DockerHub. The plugin can be considered in beta and is, as far as I can tell, completely functional, but there may still be bugs or nuances that we have not yet found. Feedback is appreciated. :smiley: Updates to the image on DockerHub may be made without notice, I will try to mention any changes that I make here.\r\n\r\nIn addition, I will soon be attempting to get the Swarm deployment setup with th"
+    },
+    {
+      "source": "github-issues",
+      "title": "Project dependencies",
+      "url": "https://github.com/garden-io/garden/issues/1477",
+      "repo": "garden-io/garden",
+      "reactions": 13,
+      "comments": 3,
+      "created": "2020-01-05T16:49:57Z",
+      "body_snippet": "## Background\r\n\r\nOur current mechanism for importing other repositories as *remote sources* is handy in some cases but also fairly crude. Essentially it allows importing another repository as a new directory of sources, much like a submodule, which is then scanned for modules like any other directory. \r\n\r\nThe motivation for that feature was primarily \r\nA) to remove barriers for adopting Garden when projects are already spread across repositories, and \r\nB) to (at least half way) support having related projects that can function individually, but also be combined into a single stack.\r\n\r\nThe main issue with the current implementation (as I see it), is that it completely ignores any project configuration contained within, and is by extension not much more useful than simply using git submodules or subtrees. In fact, the latter (despite their own UX flaws) are probably preferable since those are known and standard ways of nesting repositories.\r\n\r\nAnother issue is that different projects will need to be aware of each other to some degree, because we currently only have a single namespace for module names, and another for services and tasks combined. This is kinda workable by applying str"
+    },
+    {
+      "source": "github-issues",
+      "title": "Adding Glide Typing To Heliboard Without libjni_latinimegoogle.so",
+      "url": "https://github.com/HeliBorg/HeliBoard/issues/668",
+      "repo": "HeliBorg/HeliBoard",
+      "reactions": 12,
+      "comments": 31,
+      "created": "2024-04-10T07:34:32Z",
+      "body_snippet": "I finally have a little bit of time to write down what I have been doing on this front, so I wanted to open an issue here to keep track of the progress I have made, just in case anyone wants to give me a hand, as my time is super limited at the moment and I blow chunks at juggling tasks. Also, it should mean my work here doesn't go to waste if I fall off the edge of the world or something, haha!\r\n\r\nSo, first off, I will put a list of things I have yet to figure out, so I can get moving on this. Unfortunately, most of these have nothing to do with the algorithm that needs to be implemented, but rather my unfamiliarity with the Heliboard code base and the JNI overall. If I already knew about these things, I might have already made a working implementation to build on.\r\n\r\nStuff I know I still need to do before I could bring gesture typing to Heliboard without the google library as a hack:\r\n\r\n- learn how to work with whatever form the pointer data for the gesture takes.\r\n- learn how to iterate over words in the dictionary data structure, in order to compare the input gesture against expected gestures for each word. This just is going to involve me reading a lot of code, because I can't"
+    },
+    {
+      "source": "github-issues",
+      "title": "The new roadmap to v1.0.0",
+      "url": "https://github.com/db-migrate/node-db-migrate/issues/627",
+      "repo": "db-migrate/node-db-migrate",
+      "reactions": 12,
+      "comments": 20,
+      "created": "2019-06-01T13:15:13Z",
+      "body_snippet": "# Foreword\r\n\r\nThis year is special to me, since I am finally able to provide more of my time to open source. First of all due to the commitment https://github.com/db-migrate/node-db-migrate/issues/605 of sponsoring time and money from my own company (which currently means effectively plan in whole days/weeks of time that I do not spend on paid projects and invest those into open source instead). This is important, since nothing is free in this world and this is my new way, to give something back to the open source community, since a lot changed for me and I do not have as much free time as I wish I would have.\r\n\r\nFurther I added opencollective and sponsoring slots, from which funds also solely progress and work on db-migrate will be paid. So this way also people that are not able to contribute to the project in terms of providing PRs and their workpower, can contribute to the success and further development by providing resources otherwise.\r\n\r\nThat being said, i am very grateful for all the contributors of the past and of the future of any kind. All support matters!\r\n\r\n# The roadmap to v1.0.0\r\n\r\nThat being said, the new roadmap which we try to achieve over the next few month consis"
+    }
+  ]
+}
