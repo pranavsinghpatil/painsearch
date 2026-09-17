@@ -1,0 +1,156 @@
+{
+  "query": "tedious manual",
+  "count": 15,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "Upgrade dependencies in `pyproject.toml` (`uv upgrade`)",
+      "url": "https://github.com/astral-sh/uv/issues/6794",
+      "repo": "astral-sh/uv",
+      "reactions": 691,
+      "comments": 87,
+      "created": "2024-08-29T06:28:27Z",
+      "body_snippet": "# this will update the version pins in the pyproject.toml file\n\nprior art:\n- deno: https://deno.com/blog/v2.2#dependency-management\n- poetry: https://github.com/MousaZeidBaker/poetry-plugin-up\n- npm: https://docs.npmjs.com/cli/v10/commands/npm-update\n  - npm-check-updates: https://www.npmjs.com/package/npm-check-updates\n\n```py\n> uv upgrade\nupgraded 10 dependencies in 0.001 seconds 🚀\n```\n\nwhy? when i want to update all the dependencies in a project, it can be tedious to manually search for and update each and every dependency. additionally, for application projects (not libraries), i like to be able to squizz the pyproject file for an easy overview of which dependencies are actually installed, not just some possible range"
+    },
+    {
+      "source": "github-issues",
+      "title": "Auto-discover models from OpenAI-compatible provider endpoints",
+      "url": "https://github.com/anomalyco/opencode/issues/6231",
+      "repo": "anomalyco/opencode",
+      "reactions": 246,
+      "comments": 57,
+      "created": "2025-12-27T03:52:26Z",
+      "body_snippet": "### Description\n\nFor OpenAI-compatible local providers (LM Studio, Ollama, llama.cpp, etc.), users currently need to manually list all available models in their `opencode.json` configuration. This is tedious and error-prone, especially for local providers where models change frequently as they are loaded/unloaded.\n\nMost OpenAI-compatible providers expose a standard `/v1/models` endpoint that lists all available models. OpenCode should automatically query this endpoint and discover available models, eliminating the need for manual configuration.\n\n### Proposed Solution\n\nWhen a provider uses `@ai-sdk/openai-compatible`, OpenCode should:\n\n1. Make a `GET` request to `{baseURL}/models` (e.g., `http://localhost:1234/v1/models`)\n2. Parse the response to extract available models\n3. Automatically populate the model list, merging with any manually configured models\n4. Optionally refresh this list periodically or on-demand\n\n### Benefits\n\n- **Better UX**: No manual model configuration needed\n- **Dynamic updates**: Automatically reflects models as they're loaded/unloaded in local servers\n- **Fewer errors**: Eliminates misconfiguration issues\n- **Consistency**: Works the same way across all OpenA"
+    },
+    {
+      "source": "github-issues",
+      "title": "Better support for modern C++",
+      "url": "https://github.com/travis-ci/travis-ci/issues/6300",
+      "repo": "travis-ci/travis-ci",
+      "reactions": 174,
+      "comments": 108,
+      "created": "2016-07-13T02:57:32Z",
+      "body_snippet": "Many C++ projects on github now use travis-CI. It is integrated very easily with\ngithub, and in the past, it was relatively easy to get started.\n\nEspecially, it was easy if you started a few years\nago and your project did not require C++11. Then, the compilers which were\navailable in ubuntu-precise were good enough, so your .travis.yml was only a few\nlines.\n\nAt some point you might have done something that needs gcc-4.8 or 4.9, and there\nwas an easy way to get these:\n\n```\n   sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y;\n   sudo apt-get update -qq\n   sudo apt-get install g++-4.9\n```\n\nand you would be good to go.\n\nOver the last two years or so as I have transitioned to modern C++, I have\nwatched it just become slowly and steadily more difficult to use travis, and\nwatched the scripts of all of my projects grow vastly in complexity.\n- Travis-CI main linux distribution is still ubuntu precise. This means that\n  the compilers and libraries that you can download by default are all five\n  years old. While understandable, it doesn't change the fact that those\n  compilers are not usable.\n- Travis-CI has for more than a year supported a \"trusty beta\" environment,\n  which improves th"
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal: CSS Variable Groups (as a solution to several design systems pain points)",
+      "url": "https://github.com/w3c/csswg-drafts/issues/9992",
+      "repo": "w3c/csswg-drafts",
+      "reactions": 170,
+      "comments": 49,
+      "created": "2024-02-24T02:20:33Z",
+      "body_snippet": "The [whole proposal is here](https://lea.verou.me/docs/var-groups/), I have included a summary below.\r\n\r\n## Pain points (summary)\r\n\r\nThe main pain point is **aliasing**. Currently, design systems are specified as a long series of variables, e.g. `--color-green-100`, `--color-crimson-950` etc.\r\nAliasing them to other names (e.g. semantic names such as `--color-primary` or simply shorter/simpler names) is currently author hostile, as it requires manually [aliasing every single one](https://www.radix-ui.com/themes/docs/theme/color#aliasing-colors), i.e. hundreds of declarations. Not only is this painful to do for the whole page, it makes it very hard to theme areas on the page with a different color, or pass design tokens to components.\r\n\r\nAdditionally, tints and shades for each color are generated manually, even if some of them could be inferred via interpolation. Theoretically that can already be done via a series of `color-mix()` values, but it is very tedious and repetitive, especially if you want to tweak the endpoints by adding more manual values where the interpolated ones don't work well.\r\n\r\n## Other ideas explored\r\n\r\nThe following are useful in their own right, but I don’t th"
+    },
+    {
+      "source": "github-issues",
+      "title": "Share conversation context from Claude.ai to Claude Code",
+      "url": "https://github.com/anthropics/claude-code/issues/13843",
+      "repo": "anthropics/claude-code",
+      "reactions": 160,
+      "comments": 27,
+      "created": "2025-12-12T22:20:16Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\nWhen planning a project or feature in Claude.ai (web/desktop), I often go through multiple iterations of brainstorming, architecture decisions, and technical planning. Once I'm ready to implement, I have to manually copy-paste context or re-explain everything when I switch to Claude Code. This breaks the flow between planning and building, and Claude Code loses all the nuanced context from the planning conversation.\n\n\n### Proposed Solution\n\nAdd a \"Send to Claude Code\" button or export option in Claude.ai conversations. This would package the conversation context (or a summary of it) into a format Claude Code can import. Ideally:\n\nOne-click export from Claude.ai\nImport command in Claude Code like /import-context or a flag like claude --from-chat <chat-id>\nClaude Code would then have full awareness of the planning discussion and can pick up where the conversation left off\n\n\n\n### Alternative Solutions\n\nCurre"
+    },
+    {
+      "source": "github-issues",
+      "title": "First-class multi-account auth via '--auth-profile'",
+      "url": "https://github.com/openai/codex/issues/4432",
+      "repo": "openai/codex",
+      "reactions": 147,
+      "comments": 19,
+      "created": "2025-09-29T07:48:32Z",
+      "body_snippet": "### What feature would you like to see?\n\nToday Codex CLI assumes a single account, with state stored under ~/.codex/. Users who need to juggle multiple ChatGPT/API accounts (for example, those with multiple accounts, multiple API keys, or who work for different clients) must manually swap CODEX_HOME, copy auth files, or repeatedly log in and out. This is tedious, time-consuming, and not user-friendly.\n\nI would like to see first-class multi-account support:\n\n- A global `--auth-profile <name>` flag that routes all config, auth, and session state into `~/.codex/profiles/<name>/`.\n\n- A default profile can be set via `CODEX_PROFILE` env var, so bare `codex …` still works as expected.\n\n- Profile names are normalized/validated (safe slugs, no `..`, etc).\n\n- Interactive hints (`login`, `exec`, `resume`) include the active profile name so it’s clear which account you’re in.\n\n- Backwards compatibility: if no flag/env is set, Codex continues to use `~/.codex` exactly as before.\n\nThis matches common CLI conventions (like `aws --profile`) and makes it trivial to keep personal/work accounts isolated without shell hacks.\n\n### Are you interested in implementing this feature?\n\nYes. I have already i"
+    },
+    {
+      "source": "github-issues",
+      "title": "Multiplatform tooling: A way to store and update app properties, like name, descriptions, icons, permission and apply them to all platform runners/embedders",
+      "url": "https://github.com/flutter/flutter/issues/79952",
+      "repo": "flutter/flutter",
+      "reactions": 135,
+      "comments": 5,
+      "created": "2021-04-07T16:05:55Z",
+      "body_snippet": "## Use case\r\n\r\nThe increased amount of target platforms that Flutter supports makes it challenging to maintain and update all the information each platform runner/embedder needs in order to be able to show the right application name, description and icons in a platform correct manner. \r\n\r\nIt is very difficult to keep up with what info goes where for each platform's runner/embedder, and it is tedious to maintain when it needs to be changed.\r\n\r\nSometimes the Flutter tooling moves forward and requires that the runners/embedders must be upgraded for some platform in order to support new features or work correctly. To apply such an upgrade you can today delete the runner/embedder and recreate it with \r\n\r\n`flutter create .`\r\n\r\nWhile this works, it results in that all carefully and manually applied configurations for the application on the platform in question are lost, and must be re-applied. Sometimes the updated runner/embedder might even have changed to the degree that past info on how to apply the properties might have changed, thus further complicating the situation.\r\n\r\n## Proposal\r\n\r\nAdd a Flutter multiplatform application info tooling UI, and a central maintenance point of all thi"
+    },
+    {
+      "source": "github-issues",
+      "title": "Implement virtualized geometry rendering",
+      "url": "https://github.com/godotengine/godot-proposals/issues/2793",
+      "repo": "godotengine/godot-proposals",
+      "reactions": 121,
+      "comments": 40,
+      "created": "2021-05-27T13:31:49Z",
+      "body_snippet": "- *Production edit: Related to https://github.com/godotengine/godot-proposals/issues/6822.*\n\n### Describe the project you are working on\nnone specific, but would be relevant for any 3d project\n\n### Describe the problem or limitation you are having in your project\n\nProducing high quality game-ready 3D assets is generally a very labour-intensive task for any engine, requiring many specialized steps (sculpting/high-poly modeling/photogrammetry, retopology, baking/creating texture maps, optimizing/tweaking poly count etc.)\n\n### Describe the feature / enhancement and how it helps to overcome the problem or limitation\n\nSo I guess most people have already taken a look at UE5's impressive new features by now. Now, I know that UE has a very different focus (and a amount of resources) than Godot.\n\nNevertheless, it is never a bad idea to draw some inspiration from other technology for Godot's long-term future. So maybe this is a good place for discussion, even if implementing similar features in Godot is not realistic at this point.\n\nOne of the big new  advertised features of UE5 is Virtualized Geometry (called Nanite)\n\nhttps://docs.unrealengine.com/5.0/en-US/RenderingFeatures/Nanite/\n\nThese "
+    },
+    {
+      "source": "github-issues",
+      "title": "Need 'fix-all' for naming style violations.",
+      "url": "https://github.com/dotnet/roslyn/issues/14983",
+      "repo": "dotnet/roslyn",
+      "reactions": 123,
+      "comments": 50,
+      "created": "2016-11-04T19:06:47Z",
+      "body_snippet": "It's just too tedious to have to manually fix up every violation one at a time."
+    },
+    {
+      "source": "github-issues",
+      "title": "Add Quota Information Access to Claude Code CLI",
+      "url": "https://github.com/anthropics/claude-code/issues/13585",
+      "repo": "anthropics/claude-code",
+      "reactions": 123,
+      "comments": 27,
+      "created": "2025-12-10T18:54:33Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\n## Description\n\n### Problem\nClaude Desktop displays quota information (session %, weekly %) in the UI, but this data is not accessible to Claude Code CLI users or automation scripts. This forces users to manually check the desktop app and record values, preventing automated monitoring and workflow optimization.\n\n### Request\nExpose quota information via Claude Code CLI through one of these methods:\n1. **New `claude quota` command** (recommended)\n2. API endpoint that CLI can query\n3. Environment variables set by Claude Code\n4. Local configuration file that gets updated\n\n### Example Use Cases\n```bash\n# Get current quota\n$ claude quota\nSession: 78%\nWeekly (All): 17%\nWeekly (Sonnet): 5%\n\n# JSON for scripting\n$ claude quota --json\n{\"session\": 78, \"weekly_all\": 17, \"weekly_sonnet\": 5}\n\n# Enable/disable features based on quota\nif [ $(claude quota --session) -gt 80 ]; then\n  export ALWAYS_THINKING=false\nelse\n  exp"
+    },
+    {
+      "source": "github-issues",
+      "title": "[ECR] [Cross region replication of existing images]: Feature that allows automatic replication of existing images without update",
+      "url": "https://github.com/aws/containers-roadmap/issues/1289",
+      "repo": "aws/containers-roadmap",
+      "reactions": 122,
+      "comments": 9,
+      "created": "2021-02-25T11:12:29Z",
+      "body_snippet": "<!-- Please keep this note for the community -->\r\n\r\n### Community Note\r\n\r\n* Please vote on this issue by adding a 👍 [reaction](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) to the original issue to help the community and maintainers prioritize this request\r\n* Please do not leave \"+1\" or \"me too\" comments, they generate extra noise for issue followers and do not help prioritize the request\r\n* If you are interested in working on this issue or have submitted a pull request, please leave a comment\r\n\r\n<!-- Thank you for keeping this note for the community -->\r\n\r\n<!--\r\n\r\n**Security disclosures**\r\n\r\nIf you think you’ve found a potential security issue, please do not post it in the Issues.  Instead, please follow the instructions [here](https://aws.amazon.com/security/vulnerability-reporting/) or [email AWS security directly](mailto:aws-security@amazon.com).\r\n\r\n-->\r\n\r\n**Tell us about your request**\r\nWhat do you want us to build?\r\nCurrently the ECR cross region replication (CRR) feature only replicates images and repositories when an update is made after enabling CRR. This means that images that do not get updated will never be replicated, even if t"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add level streaming and stitching tools for creating large open worlds",
+      "url": "https://github.com/godotengine/godot-proposals/issues/1197",
+      "repo": "godotengine/godot-proposals",
+      "reactions": 116,
+      "comments": 8,
+      "created": "2020-07-15T06:19:42Z",
+      "body_snippet": "<!--\r\nPlease fill in *all* the questions below and don't remove any of them.\r\nProposals not following the template below will be closed immediately.\r\n-->\r\n\r\n**Describe the project you are working on:**\r\nOnline multiplayer games with large open worlds\r\n\r\n**Describe the problem or limitation you are having in your project:**\r\nWe build online multiplayer games and some of these games use large open worlds. Large open worlds are not unique to online games however. Creating large worlds, regardless of whether they are online or offline, pose a lot of challenging problems, not only from the game's perspective, but also from the content creation/editing perspective. A lot of the solutions to these problems are fairly game specific and thus, easier to address as either published add-ons or project one-offs. Two of the biggest problems are better solved by core engine however, as they are fundamental ton working with large open worlds:\r\n\r\n1. Level/Asset streaming\r\n2. Level creation/stitching\r\n\r\n**Describe the feature / enhancement and how it helps to overcome the problem or limitation:**\r\n \r\n## Level/Asset streaming \r\n\r\nLevel streaming is where the content of a \"level\" is streamed from disk"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add explicit tracking and ignoring of metrics and sub-metrics",
+      "url": "https://github.com/grafana/k6/issues/1321",
+      "repo": "grafana/k6",
+      "reactions": 95,
+      "comments": 28,
+      "created": "2020-01-28T21:19:21Z",
+      "body_snippet": "k6 measures a lot of things, and it can and can generate quite a lot of data points for a variety of different metrics. Not everything we measure is important to everyone, and we want to measure even more things - https://github.com/loadimpact/k6/issues/877, https://github.com/loadimpact/k6/issues/880, https://github.com/loadimpact/k6/issues/888, https://github.com/loadimpact/k6/issues/921, https://github.com/loadimpact/k6/issues/1311, and all of the non-HTTP protocols we want to add...\r\n\r\nUnfortunately, currently there's no way for a user to tell k6 that they're not interested in some of the things it measures (https://github.com/loadimpact/k6/issues/570). That's a problem, because measuring and reporting useless things adds a significant overhead both to k6 (https://github.com/loadimpact/k6/issues/764), and to any custom outputs that users pipe the metrics data to (https://github.com/loadimpact/k6/issues/1060).\r\n\r\nOn top of that, some of the current default metrics just add clutter and confusion to the end-of-test summary report (https://github.com/loadimpact/k6/issues/1319), without a lot of benefit to most users. All of the `http_req_*` \"minor\" metrics probably shouldn't be ena"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] - Add Setting to Disable Automatic IDE Selection Context",
+      "url": "https://github.com/anthropics/claude-code/issues/20944",
+      "repo": "anthropics/claude-code",
+      "reactions": 90,
+      "comments": 25,
+      "created": "2026-01-26T08:52:25Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\n<h2 style=\"color: rgba(228, 228, 228, 0.92); font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(20, 20, 20); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">Feature Request: Add Setting to Disable Automatic IDE Selection Context</h2><h3 style=\"color: rgba(228, 228, 228, 0.92); font-family: -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none;"
+    },
+    {
+      "source": "github-issues",
+      "title": "Git - Support git subtree",
+      "url": "https://github.com/microsoft/vscode/issues/39152",
+      "repo": "microsoft/vscode",
+      "reactions": 88,
+      "comments": 22,
+      "created": "2017-11-26T13:50:21Z",
+      "body_snippet": "- VSCode Version: Code - Insiders 1.19.0-insider (89b158e11cb1c3fe94a3876222478ed2d0549fc8, 2017-11-24T05:14:03.606Z)\r\n- OS Version: Windows_NT x64 10.0.15063\r\n- Extensions: \r\n\r\nExtension|Author (truncated)|Version\r\n---|---|---\r\nmarkdown-mermaid|bie|0.1.1\r\nteam|ms-|1.122.0\r\ndebugger-for-chrome|msj|3.5.0\r\n\r\n\r\n\r\n---\r\n\r\nSteps to Reproduce:\r\n\r\n1. Ctrl-shift-P\r\n2. type \"Git:\"\r\n\r\n<!-- Launch with `code --disable-extensions` to check. -->\r\nReproduces without extensions: Yes\r\n\r\nGit [git subtree](http://alistra.ghost.io/2014/11/30/git-subtree-a-better-alternative-to-git-submodule/) commands is currently missing in the git command list and wasn't included in the git sync button.\r\n\r\nSubtree is great for maintaining a monorepo for large projects where there is a single source of truth for all the code. \r\n\r\nCurrently this issue impacts developers experience as it is tedious to do manual sync of all the changes in the subtree with the original git repo of the project for the subtree. \r\n\r\nProposal:\r\n1. Add all the git subtree command (add, push, pull) "
+    }
+  ]
+}

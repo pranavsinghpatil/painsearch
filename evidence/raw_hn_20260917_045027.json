@@ -1,0 +1,226 @@
+{
+  "query": "takes me hours to",
+  "count": 20,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Tell HN: Thank you",
+      "url": "https://news.ycombinator.com/item?id=1188046",
+      "hn_id": "1188046",
+      "points": 178,
+      "comments": 64,
+      "author": "AndrewWarner",
+      "created": "2010-03-12T23:11:26Z",
+      "text_snippet": "I hope it doesn't come across at too corny, but I have to say, \"thank you\" because you guys on HN improved my work @ Mixergy tremendously.<p>In the early days, if my posts got on HN at all, they'd often have negative comments. I emailed the HN'ers who wrote those comments and I asked them how I could improve. Almost every single one gave me meaningful, useful feedback.<p>(That feedback is why I don't shout my intro, for example.)<p>Then, as I started improving, you guys voted up my work more often and helped me get real traffic, which led to some sponsorships.<p>Recently, I noticed that I have access to more of the entrepreneurs and investors that I want to interview because they tell me that they know my work from HN.<p>It takes me hours to research and put together an interview. The people on HN make it worth the work. Thank you."
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you learn your way around a new codebase?",
+      "url": "https://news.ycombinator.com/item?id=2623037",
+      "hn_id": "2623037",
+      "points": 12,
+      "comments": 11,
+      "author": "nmb",
+      "created": "2011-06-05T22:56:48Z",
+      "text_snippet": "I've been spending the past few weeks learning about various new technologies/libraries that interest me. While it's been fun, I find that my ignorance and lack of a systematic way of exploring new codebases lead to simple mistakes that take me hours to track down. Also, when a class spans multiple source code files, it can be difficult to contain it all in my head. In principle abstraction barriers should mitigate this, but in practice this isn't always the case and sometimes I need (or, perhaps, want) to go to the lower level to see what's going on. As of late I've been drawing inheritance and call stack diagrams to help with my understanding.<p>Do these problems sound familiar? Are there any general strategies that you use when you want to quickly understand how a codebase works?"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: where to ask trivial programming questions",
+      "url": "https://news.ycombinator.com/item?id=824757",
+      "hn_id": "824757",
+      "points": 8,
+      "comments": 8,
+      "author": "rhr",
+      "created": "2009-09-15T21:06:54Z",
+      "text_snippet": "Greeting<p>I am trying to learn programming on my own but find myself getting stuck a lot. For example, I just wrote the simple maxLine program from K&#38;R as an exercise, the compiler, gcc, gives me the following error when I define a symbolic constant MAXLINE=1000 in the code, but happily compiles the code when I use int 1000 directly:<p>maxLine.c:21: error: expected expression before ‘=’ token<p>so my question is, is there a good website/mail group where I can get help on these kind of issues, something very trivial to experts but could take me hours to figure it out.<p>thanks"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: What technologies do you wish your non-technical cofounder understood?",
+      "url": "https://news.ycombinator.com/item?id=2765462",
+      "hn_id": "2765462",
+      "points": 7,
+      "comments": 8,
+      "author": "nixterrimus",
+      "created": "2011-07-14T22:35:37Z",
+      "text_snippet": "I'm writing a pamphlet about the web for a non-technical cofounder.  I'm walking through HTML, CSS, Javascript, Rails, MVC, Servers and things like that.  The goal is not for them to be able to create something but rather to understand what I'm talking about when I say there's a problem in the controller on our rails app and it's going to take me an hour to sort it out.<p>What do you think should be covered in the pamphlet.  If it works out well, I'll let you know where you can download it in the future."
+    },
+    {
+      "source": "hn",
+      "title": "Toxic client or temporary pain?",
+      "url": "https://news.ycombinator.com/item?id=7936884",
+      "hn_id": "7936884",
+      "points": 3,
+      "comments": 0,
+      "author": "sam_dz",
+      "created": "2014-06-24T09:56:27Z",
+      "text_snippet": "I switched to freelancing(consulting) fulltime recently. I had been doing it on the side for 8  months... and it was a great experience so far. I had great clients and I absolutely loved working with them.<p>But things changed soon couple of weeks back when I happened to look for another contract where I could put in 20-25 hours weekly - I had that slot empty after leaving a job. I landed up one with a decent hourly rate.<p>Firstly, it was not a typical job that I took up earlier - it is a &quot;developer&quot; job and less of consulting. In the test assignment - which was supposed to take just couple of hours, I had spent 3-4 hours. Around 1 hour was setup time and a very small bit of learning was required on that task. I also mentioned that clearly to the client.<p>Now, my workdays with the client are miserable. This client has been pushing me on timelines - Example: I have 7 hours of work-slot spread in 3 alternate days and he would call me on the non-working hours. Additionally the"
+    },
+    {
+      "source": "hn",
+      "title": "How to hire a programming mentor?",
+      "url": "https://news.ycombinator.com/item?id=6131668",
+      "hn_id": "6131668",
+      "points": 2,
+      "comments": 2,
+      "author": "nbn234",
+      "created": "2013-07-31T03:02:57Z",
+      "text_snippet": "I&#x27;d like to hire a programming mentor. Too often I am stuck in &quot;How do I...&quot; questions - I guess you&#x27;d call it &quot;know-how&quot;. :)<p>I&#x27;d like to pay someone to essentially be available a certain number of hours a week and be available by phone, email, chat, etc. and I can shoot over questions that to the mentor might be very simple but would take me hours to (if ever) solve.<p>I&#x27;d also have the mentor solve a problem and record a screencast so that I could go back and use his method if I have the problem again.<p>Any ideas where I could find people to do this? My technologies are Angular-JS for the front end and Rack for the back end.<p>Thanks guys! :)"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Convenient self-education through books. Is it possible?. LearnBay",
+      "url": "https://news.ycombinator.com/item?id=24112586",
+      "hn_id": "24112586",
+      "points": 2,
+      "comments": 2,
+      "author": "TroyHarder",
+      "created": "2020-08-10T18:44:26Z",
+      "text_snippet": "Every time when I am trying to learn any topic through books, I am looking for books’ selections that can help me to handle a topic and every time I encounter the same problems:<p>1)The majority of books’ selections is subjective<p>2) In order to make them objective, I should spend a bunch of time on analyzing a lot of selections, on searching the best books on the selections, on understanding why should I read the book and where I can apply what I read, and finally - reading a huge number of reviews - all these steps take me several hours to complete.<p>3) If I do not make them objective, I often waste money and time on shitty books.<p>I asked my friends, and do you know what? Of course, you know what, they have the same problems.<p>Therefore, I decided to create an app that can help me, my friends, and other people, who want to get structured and modern knowledge using the books.<p>The app brings together the best books. They are all organized by topics. Also, each book has a structu"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Is there some Wiki or database for book translations you know of?",
+      "url": "https://news.ycombinator.com/item?id=38623751",
+      "hn_id": "38623751",
+      "points": 2,
+      "comments": 1,
+      "author": "pheymann",
+      "created": "2023-12-13T07:24:15Z",
+      "text_snippet": "I am a fan of old books, for example, Plato&#x27;s &quot;The Republic&quot;, or books where the author speaks none of the two languages I can read like Camu or Lem. That means every time I am on the lookout for a book it takes me sometimes hours to find the &quot;right&quot; translation. Usually, it comes down to finding the right Reddit post.<p>Is someone aware of some kind of Wiki or database that collects translation references for books and also has some categorization? With that I mean things like &quot;easy to read&quot;, &quot;faithful translation&quot;, &quot;for studying&quot;, .etc."
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Is there a service that provides quick hit technical help?",
+      "url": "https://news.ycombinator.com/item?id=6324848",
+      "hn_id": "6324848",
+      "points": 1,
+      "comments": 1,
+      "author": "j_shi",
+      "created": "2013-09-04T00:41:09Z",
+      "text_snippet": "I am a single non-technical founder and -- while i&#x27;m learning a ton of frontend coding due to my startup -- I often wish there were a service I could go to when I&#x27;m in a pinch or when I know the thing it&#x27;d take me an hour to figure out could be done in a minute by someone who knows what they&#x27;re doing.<p>Stackexchange is great, but sometimes I&#x27;d rather just pay someone $50 for the simple css&#x2F;javascript fix.<p>Is there a marketplace for these types of small tasks composed of programmers looking to earn some extra cash in their downtime? Something cheaper and more democratic than tweaky, but more curated than odesk."
+    },
+    {
+      "source": "hn",
+      "title": "Surfing, NYC, and the Beginning of Infinity [video]",
+      "url": "https://news.ycombinator.com/item?id=37833020",
+      "hn_id": "37833020",
+      "points": 1,
+      "comments": 1,
+      "author": "jsmedmar",
+      "created": "2023-10-10T15:06:12Z",
+      "text_snippet": "We are lucky we can surf in NYC.\nIt takes me one hour get to the ocean, and since there is no signal in the subway, it&#x27;s a great opportunity to read.<p>I made a video about optimism, based on &quot;The Beginning of Infinity,&quot; by David Deutsch (https:&#x2F;&#x2F;youtu.be&#x2F;PiKU6Nm1p8E). The book dives into the endless potential of explanatory knowledge, describing how problems are inevitable but soluble.<p>As a YC founder, this book has inspired me to keep pushing my startup forward and I strongly recommend it to anyone interested in progress.<p>I&#x27;m posting the video here because there is probably no other place in the internet where someone would spend 5 minutes watching a video about NYC, surfing, and The Beginning of Infinity."
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How to find a copywriter/copyeditor?",
+      "url": "https://news.ycombinator.com/item?id=7984392",
+      "hn_id": "7984392",
+      "points": 1,
+      "comments": 0,
+      "author": "thomaaas",
+      "created": "2014-07-03T17:21:13Z",
+      "text_snippet": "Hi HNers!<p>I&#x27;ve started blogging a few months ago, and it&#x27;s working out pretty well for me. I&#x27;m planning to invest more time and energy into my blog for the coming months.<p>However, writing is really hard for me. I&#x27;m not a native english speaker, so it takes me hours to write a short blog post and I probably make a lot of mistakes.<p>I think both of these problems could be fixed by working with a copywriter&#x2F;copyeditor. What is the safest and cheapest way to find a good copywriter&#x2F;copyeditor? Should I look into websites like odesk.com?<p>Thanks!"
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Claude Code skills for network engineering and homelabs",
+      "url": "https://github.com/arsallls/claude-network-skills",
+      "hn_id": "47756639",
+      "points": 1,
+      "comments": 0,
+      "author": "arsalsajjad",
+      "created": "2026-04-13T19:15:46Z",
+      "text_snippet": "Hey HN,<p>So I&#x27;m currently taking a lot of enterprise network engineering courses where my professor&#x27;s course layout is very much figure it out yourselves, go through old forums and guides, and ask AI to help explain information or protocols you don&#x27;t understand. In the last course I took, I used a lot of the popular LLMs out there, and they genuinely sucked at anything related to network engineering. I would ask something and just receive incorrect, false, or completely unrelated responses over and over, to the point where it wasn’t even speeding up my learning or labs; it would still take me hours to troubleshoot. I&#x27;ve been using Claude code a lot recently, and I made these skills for my friends and me to help us. So far, I&#x27;ve been playing around with it using the old labs and work I did, and it&#x27;s giving me much better, more insightful outputs. I made some homelab skills just for fun too, because I&#x27;m trying to get into that area to expand my learnin"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Why we estimate software products?",
+      "url": "https://news.ycombinator.com/item?id=3699747",
+      "hn_id": "3699747",
+      "points": 1,
+      "comments": 0,
+      "author": "TMK",
+      "created": "2012-03-13T18:41:31Z",
+      "text_snippet": "I don't understand why we estimate how long software product takes to be ready. Other than for clients who want to know how long their cash will last. Software developers will of course add features to the product as long as you have cash to pay them.<p>Building software is not like building house. When you build a house you can easily calculate how many wooden blanks, bricks etc go into the house. From that you can calculate how long it will take to finish.<p>For simplified example I want to build a house 170 square meters in size. 3 meters high. I want the outer wall to be from planks and the indoor wall plasterboard and 100 millimeters of wool between them.<p>Lets say the 170 square meter area is divided to 5 rooms, kitchen, living room, large bathroom with sauna, two bedrooms. The kitchen is 30 squaremeters, the living room is 55 squaremeters, the bathroom is 25 squaremeters, both of the bedrooms are 40 squaremeters.<p>The wooden planks are 3 meters long, 10 centimeters wide and 22"
+    },
+    {
+      "source": "hn",
+      "title": "Convenient self-education through books. Is it possible?",
+      "url": "https://news.ycombinator.com/item?id=24112331",
+      "hn_id": "24112331",
+      "points": 1,
+      "comments": 0,
+      "author": "TroyHarder",
+      "created": "2020-08-10T18:20:54Z",
+      "text_snippet": "Every time when I am trying to learn any topic through books, I am looking for books’ selections that can help me to handle a topic and every time I encounter the same problems:<p>The majority of books’ selections is subjective<p>In order to make them objective, I should spend a bunch of time on analyzing a lot of selections, on searching the best books on the selections, on understanding why should I read the book and where I can apply what I read, and finally - reading a huge number of reviews - all these steps take me several hours to complete.<p>If I do not make them objective, I often waste money and time on shitty books.<p>I asked my friends, and do you know what? Of course, you know what, they have the same problems.<p>Therefore, I decided to create an app that can help me, my friends, and other people, who want to get structured and modern knowledge using the books.<p>The app brings together the best books. They are all organized by topics. Also, each book has a structured desc"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How can I get better at using AI for programming?",
+      "url": "https://news.ycombinator.com/item?id=46255285",
+      "hn_id": "46255285",
+      "points": 471,
+      "comments": 469,
+      "author": "lemonlime227",
+      "created": "2025-12-13T15:37:16Z",
+      "text_snippet": "I&#x27;ve been working on a personal project recently, rewriting an old jQuery + Django project into SvelteKit. The main work is translating the UI templates into idiomatic SvelteKit while maintaining the original styling. This includes things like using semantic HTML instead of div-spamming, not wrapping divs in divs in divs, and replacing bootstrap with minimal tailwind. It also includes some logic refactors, to maintain the original functionality but rewritten to avoid years of code debt. Things like replacing templates using boolean flags for multiple views with composable Svelte components.<p>I&#x27;ve had a fairly steady process for doing this: look at each route defined in Django, build out my `+page.server.ts`, and then split each major section of the page into a Svelte component with a matching Storybook story. It takes a lot of time to do this, since I have to ensure I&#x27;m not just copying the template but rather recreating it in a more idiomatic style.<p>This kind of work"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How to build a desktop app in 2022",
+      "url": "https://news.ycombinator.com/item?id=31298827",
+      "hn_id": "31298827",
+      "points": 50,
+      "comments": 36,
+      "author": "picture_view",
+      "created": "2022-05-07T21:35:04Z",
+      "text_snippet": "I have a personal project I’ve been working on that is a desktop app with a UI that has some fairly complex data visualizations.<p>I’ve been using Electron because I know JS well and can leverage D3.<p>The problem I’m facing is that I sometimes go for months without working on it, and it feels like everyone I start up I’m running into some dumb JS&#x2F;TS&#x2F;Electron ecosystem issue that takes me a few hours to debug (if I don’t just give up first.)<p>What are some good modern tools&#x2F;frameworks for building native Desktop apps? Bonus points for cross-platform support."
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Vite or NextJS?",
+      "url": "https://news.ycombinator.com/item?id=38716696",
+      "hn_id": "38716696",
+      "points": 6,
+      "comments": 16,
+      "author": "chadash",
+      "created": "2023-12-21T03:31:07Z",
+      "text_snippet": "I am building a new project from scratch. I have a backend already written in Python&#x2F;FastAPI. I have React&#x2F;Typescript experience with CRA and Vite (and I prefer the latter). I haven&#x27;t used NextJS before, but I&#x27;m interested in learning more about it. I&#x27;m thinking of using it and figuring it out as I go along, but I&#x27;m wondering how much time I should expect this to set me back? If I&#x27;m already familiar with React, will NextJS take me a few hours to pickup? A few days? Weeks? I understand that this is a broad question and everyone has different capacity to learn, but I&#x27;m trying to get a rough sense since I don&#x27;t want to push off deadlines too much."
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: First client, how not to undersell myself?",
+      "url": "https://news.ycombinator.com/item?id=32244670",
+      "hn_id": "32244670",
+      "points": 4,
+      "comments": 7,
+      "author": "yscodes",
+      "created": "2022-07-26T22:04:16Z",
+      "text_snippet": "So as it turns I am about to get my first client as a freelancer. Nothing too big, it&#x27;s a small but successful business who want a new website (their current one looks like your average 90s family business site). My family and I have been long-term customers of theirs so that&#x27;s how this came about.<p>Now it seems like a very, very common theme among freelancers - I&#x27;ve read this over and over again in many different places and from people of various fields - that thinking back to their first customer they believe they massively undersold their services.<p>The naive fool that I am I would like to try and avoid that &quot;mistake&quot; while also not wanting to appear like I&#x27;m only out for the money (which I&#x27;m not). My focus is obviously first and foremost to deliver a top-notch service but I would also like to get the pricing right. So how do I go about doing that? I am in Germany if it matters.<p>My own idea so far is to say my work is worth 40€&#x2F;hour and it"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How to Automate iPhone Setup?",
+      "url": "https://news.ycombinator.com/item?id=39583199",
+      "hn_id": "39583199",
+      "points": 2,
+      "comments": 1,
+      "author": "bartekpacia",
+      "created": "2024-03-03T18:46:56Z",
+      "text_snippet": "I configure a new machine quite often. Because of that, I have a dotfiles repo that uses strap [0]. Wherever I have to set up my Mac from the scratch, I simple clone that repo and run script, and after a few hours all software (specified in Brewfile) is downloaded and configuration applied. Is there any way I can come close to this on iOS?\nCurrently, every time I have a new iPhone (or do a hard reset), it takes me a few hours to download all the apps I use and sign into them, and apply my Settings.<p>PS I know about iCloud backup, but that’s not exactly what I want.<p>[0]: https:&#x2F;&#x2F;github.com&#x2F;MikeMcQuaid&#x2F;strap"
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you cope with getting slow/stupid?",
+      "url": "https://news.ycombinator.com/item?id=25216223",
+      "hn_id": "25216223",
+      "points": 1,
+      "comments": 8,
+      "author": "behnamoh",
+      "created": "2020-11-26T02:04:18Z",
+      "text_snippet": "I&#x27;ve noticed that everything I do these days takes way more than it did a few years ago. I&#x27;m a graduate student and this realization has crushed all hope I had to succeed in my field. Either I&#x27;ve become dumber, or somehow every task - even simple house chores - has gotten way more time consuming and hard. I used to study difficult courses with lots of math and I would learn them easily. Now? I spend a whole day trying to read a couple sample questions and even without solving them, it takes me hours and hours to just read the solutions which are already there. Or for example, I used to read a text&#x2F;paper&#x2F;article and be able to retain what I read. Now I get lost in the sentences and can&#x27;t find my way through the text. I&#x27;m 29 and this shouldn&#x27;t be happening to me. Honestly, this situation, along with the pressure I feel from the faculty and the PhD program, has made me seriously reconsider dropping out. But I know even in the industry I need to be s"
+    }
+  ]
+}

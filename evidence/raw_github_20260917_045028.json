@@ -1,0 +1,206 @@
+{
+  "query": "manual workaround",
+  "count": 20,
+  "results": [
+    {
+      "source": "github-issues",
+      "title": "Add support for Visual Studio 2026 Integration",
+      "url": "https://github.com/anthropics/claude-code/issues/15942",
+      "repo": "anthropics/claude-code",
+      "reactions": 550,
+      "comments": 153,
+      "created": "2026-01-01T02:42:34Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\n\nI rely on **Visual Studio 2026** for C++ and Win32 system-level development (e.g., global hooks, drivers) because its debugger and toolchain are superior to VS Code/JetBrains for this specific stack.\n\nCurrently, `claude-code` only offers native plugins for VS Code and JetBrains. To use Claude Code with Visual Studio 2026, I am forced to run it in a detached terminal window. This creates significant friction:\n\n1. **No Integrated Diff:** I have to review complex code changes in the terminal text stream instead of Visual Studio's native Diff/Merge GUI.\n2. **No Context Awareness:** Claude cannot automatically see my open files, selected code, or compiler diagnostics (error list). I have to manually copy-paste errors or file contents.\n3. **Context Switching:** Constant Alt-Tab between the IDE and the terminal breaks flow.\n\n### Proposed Solution\n\nCreate a native VSIX extension for Visual Studio 2026 that provi"
+    },
+    {
+      "source": "github-issues",
+      "title": "RFC: Plan for custom element attributes/properties in React 19",
+      "url": "https://github.com/react/react/issues/11347",
+      "repo": "react/react",
+      "reactions": 507,
+      "comments": 286,
+      "created": "2017-10-24T05:28:49Z",
+      "body_snippet": "This is meant to address #7249. The doc outlines the pros and cons of various approaches React could use to handle attributes and properties on custom elements.\r\n\r\n# TOC/Summary\r\n\r\n- Background\r\n- Proposals\r\n  * Option 1: Only set properties\r\n    + Pros\r\n      - Easy to understand/implement\r\n      - Avoids conflict with future global attributes\r\n      - Takes advantage of custom element \"upgrade\"\r\n      - Custom elements treated like any other React component\r\n    + Cons\r\n      - Possibly a breaking change\r\n      - Need ref to set attribute\r\n      - Not clear how server-side rendering would work\r\n  * Option 2: Properties-if-available\r\n    + Pros\r\n      - Non-breaking change\r\n    + Cons\r\n      - Developers need to understand the heuristic\r\n      - Falling back to attributes may conflict with future globals\r\n  * Option 3: Differentiate properties with a sigil\r\n    + Pros\r\n      - Non-breaking change that developers can opt-in to\r\n      - Similar to how other libraries handle attributes/properties\r\n      - The system is explicit\r\n    + Cons\r\n      - It’s new syntax\r\n      - Not clear how server-side rendering would work\r\n  * Option 4: Add an attributes object\r\n    + Pros\r\n      - The "
+    },
+    {
+      "source": "github-issues",
+      "title": "Codex Desktop for macOS repeatedly triggers `syspolicyd` / `trustd` CPU and memory runaway",
+      "url": "https://github.com/openai/codex/issues/25719",
+      "repo": "openai/codex",
+      "reactions": 453,
+      "comments": 90,
+      "created": "2026-06-01T23:59:29Z",
+      "body_snippet": "### What version of the Codex App are you using (From “About Codex” dialog)?\n\nCodex Desktop: 26.527.60818 Codex build: 3437\n\n### What subscription do you have?\n\nplus\n\n### What platform is your computer?\n\nDarwin 25.5.0 arm64 arm\n\n### What issue are you seeing?\n\nCodex Desktop for macOS triggers a persistent macOS Gatekeeper/SystemPolicy loop after launch. With Codex closed, the system is quiet. As soon as Codex Desktop is opened, `/usr/libexec/syspolicyd` rises to very high CPU usage and grows to multiple GB of RAM. This happens even after replacing Codex with a freshly downloaded DMG build.\n\nThis appears related to Codex Desktop launching or validating its bundled/helper components, including `Codex Computer Use`, but the problem also reproduces after user-facing Browser/hotkey/notify settings were disabled.\n\n\n### What steps can reproduce the bug?\n\n## Reproduction steps\n\n1. Boot macOS normally.\n2. Ensure Codex Desktop is closed.\n3. Observe Activity Monitor: CPU is normal.\n4. Run:\n\n   ```bash\n   sudo killall -9 syspolicyd trustd\n   ```\n\n5. Confirm CPU is still normal.\n6. Open Codex Desktop.\n7. Observe `syspolicyd` rising to very high CPU and memory usage.\n\nThe same pattern was observ"
+    },
+    {
+      "source": "github-issues",
+      "title": "Dynamic provider configuration assignment",
+      "url": "https://github.com/hashicorp/terraform/issues/25244",
+      "repo": "hashicorp/terraform",
+      "reactions": 415,
+      "comments": 40,
+      "created": "2020-06-15T03:27:45Z",
+      "body_snippet": "<!--\r\nHi there,\r\n\r\nThank you for opening an issue. Please note that we try to keep the Terraform issue tracker reserved for bug reports and feature requests. For general usage questions, please see: https://www.terraform.io/community.html.\r\n\r\nIf your issue relates to a specific Terraform provider, please open it in the provider's own repository. The index of providers is at https://github.com/terraform-providers .\r\n-->\r\n\r\n### Current Terraform Version\r\n<!---\r\nRun `terraform -v` to show the version, and paste the result between the ``` marks below. This will record which version was current at the time of your feature request, to help manage the request backlog.\r\n\r\nIf you're not using the latest version, please check to see if something related to your request has already been implemented in a later version.\r\n-->\r\n\r\n```\r\nTerraform v0.13.0-beta1\r\n```\r\n\r\n### Use-cases\r\n<!---\r\nIn order to properly evaluate a feature request, it is necessary to understand the use-cases for it.\r\n\r\nPlease describe below the _end goal_ you are trying to achieve that has led you to request this feature.\r\n\r\nPlease keep this section focused on the problem and not on the suggested solution. We'll get to that i"
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature Request] Extension Permissions, Security Sandboxing & Update Management Proposal",
+      "url": "https://github.com/microsoft/vscode/issues/52116",
+      "repo": "microsoft/vscode",
+      "reactions": 399,
+      "comments": 86,
+      "created": "2018-06-17T02:11:29Z",
+      "body_snippet": "I believe that Visual Studio Code should support some kind of \"Extension Permission Management\", complete with prompts, warnings, opt-in, and opt-out, similar to what has been supported for some time now with Chrome, Firefox, and other browsers. \r\n\r\n# Reference Screenshot\r\n\r\nI've provided, for reference, some screenshots showing Extension Permission and update prompts and management UIs in the below screenshot, as well as others torwards the end of this proposal.\r\n\r\n#### Chrome prompting to approve additional permissions when updating an extension:\r\n\r\n![image](https://user-images.githubusercontent.com/4053734/41503578-cfbf9ee4-718c-11e8-82c8-8a97fb8b61a7.png)\r\n\r\n_(See additional screenshots at the very bottom.)_\r\n\r\n# Scope and Benefits\r\n\r\nI have proposed, in detail here, how Extension Permissions management could function and be exposed to users, including descriptions of dialogs for prompting users to allow/deny permissions on extension install vs. updating, changes to Extensions Sidebar and Extension Details Marketplace pages, grouping/managing extensions by Category/Collection in VSCode, specific warnings and when to show them, types of permissions could define (and whether may "
+    },
+    {
+      "source": "github-issues",
+      "title": "`signin` disabled on macOS 10.13+",
+      "url": "https://github.com/mas-cli/mas/issues/164",
+      "repo": "mas-cli/mas",
+      "reactions": 396,
+      "comments": 62,
+      "created": "2018-08-12T20:47:30Z",
+      "body_snippet": "As of version **1.4.2** the `signin` command has been disabled on newer versions of macOS. This is an interim workaround to the crasher first identified in #107.\r\n\r\n> mas 1.4.2 was [never released](https://github.com/Homebrew/homebrew-core/pull/31058) through Homebrew, so it must besownloaded and installed manually from the [1.4.2 release](https://github.com/mas-cli/mas/releases/tag/v1.4.2) or built from source using Xcode.\r\n\r\n## 😞  Situation\r\n\r\nIn macOS High Sierra (10.13) Apple removed the `-[ISAccountService signInWithContext:replyBlock:]` method from the StoreFoundation private Apple framework which this app relies on to authenticate users through the `signin` command. I have done a lot of digging and debugging but have not found another API that works to authenticate a user with the Mac App Store.\r\n\r\nUsers running older macOS versions (10.9-10.12) are unaffected.\r\n\r\n## 👉🏻⌨️ Workaround\r\n\r\nSign into the Mac App Store GUI app manually. Once signed in MAS app, the mas command should work fine.\r\n\r\nI know this is not an ideal scenario, especially for script automation. Hopefully, I'll find a real solution to this soon.\r\n\r\nPlease 👍 this issue if you are affected by it.\r\n\r\nRelated: #1"
+    },
+    {
+      "source": "github-issues",
+      "title": "Auto-discover models from OpenAI-compatible provider endpoints",
+      "url": "https://github.com/anomalyco/opencode/issues/6231",
+      "repo": "anomalyco/opencode",
+      "reactions": 246,
+      "comments": 57,
+      "created": "2025-12-27T03:52:26Z",
+      "body_snippet": "### Description\n\nFor OpenAI-compatible local providers (LM Studio, Ollama, llama.cpp, etc.), users currently need to manually list all available models in their `opencode.json` configuration. This is tedious and error-prone, especially for local providers where models change frequently as they are loaded/unloaded.\n\nMost OpenAI-compatible providers expose a standard `/v1/models` endpoint that lists all available models. OpenCode should automatically query this endpoint and discover available models, eliminating the need for manual configuration.\n\n### Proposed Solution\n\nWhen a provider uses `@ai-sdk/openai-compatible`, OpenCode should:\n\n1. Make a `GET` request to `{baseURL}/models` (e.g., `http://localhost:1234/v1/models`)\n2. Parse the response to extract available models\n3. Automatically populate the model list, merging with any manually configured models\n4. Optionally refresh this list periodically or on-demand\n\n### Benefits\n\n- **Better UX**: No manual model configuration needed\n- **Dynamic updates**: Automatically reflects models as they're loaded/unloaded in local servers\n- **Fewer errors**: Eliminates misconfiguration issues\n- **Consistency**: Works the same way across all OpenA"
+    },
+    {
+      "source": "github-issues",
+      "title": "CLI: Add /rewind checkpoint restore that reverts both chat context and Codex-applied code edits",
+      "url": "https://github.com/openai/codex/issues/11626",
+      "repo": "openai/codex",
+      "reactions": 222,
+      "comments": 42,
+      "created": "2026-02-12T19:05:17Z",
+      "body_snippet": "### What variant of Codex are you using?\n\nCLI\n\n### What feature would you like to see?\n\n  Add a native `/rewind` checkpoint flow that restores both:\n\n  - conversation state\n  - Codex-applied workspace edits\n\n  from the same selected checkpoint.\n\n **Current behavior**: Esc rewind only rewinds conversation/history (fork point), but does not revert code changes made after that point.\n\n  **Requested behavior**:\n  - `/rewind` shows recent checkpoints with:\n      - timestamp\n      - prompt snippet\n      - files changed\n  - Selecting a checkpoint rewinds chat and reverts Codex-made edits after that checkpoint.\n  - Provide a pre-apply preview of file changes to be reverted.\n  - Allow editing the restored prompt before resubmitting.\n\n  Safety requirements:\n\n  - Only revert Codex-created edits after the selected checkpoint.\n  - Do not touch unrelated local changes that existed before checkpoint creation.\n  - If any file cannot be cleanly restored, show conflicts and require explicit confirmation before partial apply.\n\n### Additional information\n\n  Repro for current gap:\n\n  1. Ask Codex CLI to modify files.\n  2. Press Esc twice to rewind a prior user message and fork.\n  3. Conversation rewind"
+    },
+    {
+      "source": "github-issues",
+      "title": "Manually trigger an update for a specific dependency",
+      "url": "https://github.com/dependabot/dependabot-core/issues/2980",
+      "repo": "dependabot/dependabot-core",
+      "reactions": 217,
+      "comments": 28,
+      "created": "2021-01-14T00:51:31Z",
+      "body_snippet": "Currently dependabot runs on a schedule, and by 'some magic' decides which of the outdated dependencies it will open a PR to update next. We tend to keep this limit to a relatively small number of PR's (2), and often need to take some extra time to ensure dependency changes don't affect our codebase's stability (not nearly enough test coverage to trust that in an automated way yet)\r\n\r\nWhile obviously we can update dependencies manually when needed (which is our current workaround), we've grown quite fond of the way dependabot captures all of the relevant changelog/etc information into the PR when it opens one.\r\n\r\nIt would be great if we were able to 'trigger' dependabot in some way to automatically bump a specific outdated dependency (probably with the ability to bypass the 'max open PRs' limit for these 'manual bumps'). The only 'difference' here would be getting triggered manually, it would still open the PR and do everything else in the same way as it currently does."
+    },
+    {
+      "source": "github-issues",
+      "title": "Add ability to simulate physics manually/multiple times at once",
+      "url": "https://github.com/godotengine/godot-proposals/issues/2821",
+      "repo": "godotengine/godot-proposals",
+      "reactions": 174,
+      "comments": 34,
+      "created": "2021-06-03T15:09:17Z",
+      "body_snippet": "<!--\r\nPlease fill in *all* the questions below and don't remove any of them.\r\nProposals not following the template below will be closed immediately.\r\n-->\r\n\r\n### Describe the project you are working on\r\n\r\nNetworked player movement with client-side prediction\r\n\r\n### Describe the problem or limitation you are having in your project\r\n\r\nQuick summary of client-side prediction:\r\n\r\n1. Client moves player and stores inputs in an array of pending (un-acknowledged by server) inputs\r\n1. Simultaneously, client sends those inputs to server\r\n2. Server uses client inputs to run it's own simulation\r\n3. Server sends resulting position of player back to the client\r\n4. Client receives the authoratative position of the player at a time which is now in the past\r\n5. To calculate where the client should be in the current moment, the client needs to roll back to the moment of the server's position packet, and then re-simulate all pending / un-acknowledged inputs since that time\r\n\r\nIn Godot currently, there is no way to re-simulate these pending inputs at a single moment in time\r\n\r\n### Describe the feature / enhancement and how it helps to overcome the problem or limitation\r\n\r\nAllowing Godot users to manua"
+    },
+    {
+      "source": "github-issues",
+      "title": "ListView: Poor performance with many variable-extent items + jumpTo (scroll bar, trackpad, mouse wheels)",
+      "url": "https://github.com/flutter/flutter/issues/52207",
+      "repo": "flutter/flutter",
+      "reactions": 173,
+      "comments": 128,
+      "created": "2020-03-08T18:30:23Z",
+      "body_snippet": "Related: https://github.com/flutter/flutter/issues/153085\r\n\r\n---\r\n\r\nUpdate September 2023: \r\n* New SliverVariedExtentList, ListView.extentBuilder for dynamic child sizing on demand\r\n  * https://github.com/flutter/flutter/pull/131393\r\n* New caching proposal, follow for updates:\r\n  * https://github.com/flutter/flutter/pull/134864 \r\n\r\n---\r\n\r\n**_Update from July 2023:_** https://github.com/flutter/flutter/issues/52207#issuecomment-1648672384\r\n\r\n---\r\n\r\n**_Update from September 2021:_** After much discussion, this https://github.com/flutter/flutter/issues/52207#issuecomment-782708343 suggestion emerged as a pretty good proposal. Basically, SliverList could short-circuit actually instantiating and laying out children if, once built, they are discovered to implement the PreferredHeight protocol. The next step is to implement this. -@Hixie\r\n\r\n----\r\n[√] Flutter (Channel master, v1.15.4-pre.241, on Microsoft Windows [Version 10.0.18362.657], locale en-US)\r\n\r\nHere is an example (~80 lines) of a 10,000 item ListView, which attempts to uses a simple scrollbar to drive scroll position:\r\nhttps://gist.github.com/esDotDev/792425c2cdfef947ce514b8ab70511e6\r\n\r\nThe performance is very poor on all platfo"
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] Sync Skills between Claude Desktop and Claude Code CLI",
+      "url": "https://github.com/anthropics/claude-code/issues/20697",
+      "repo": "anthropics/claude-code",
+      "reactions": 164,
+      "comments": 44,
+      "created": "2026-01-25T00:55:24Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\n**Problem**\nSkills added in the Claude Desktop app (under Settings → Features → Skills) are stored in a different location than skills for Claude Code CLI (~/.claude/skills/).\n\n**This means:**\n\nSkills created in Desktop are not available in CLI\nSkills created in CLI are not available in Desktop\nUsers have to add the same skill twice\nExpected Behavior\nSkills should be stored in a shared location (~/.claude/skills/) so they work in both:\n\nClaude Desktop (with integrated Claude Code)\nClaude Code CLI\nCurrent Workaround\nManually copy skills to both locations.\n\nWhy This Matters\nClaude Desktop now includes Claude Code functionality. Having a unified skill storage would provide a seamless experience across both interfaces.\n\n### Proposed Solution\n\nProposed Solution\nIdeal User Experience:\n\nSingle storage location for all skills: ~/.claude/skills/\n\nBoth Claude Desktop and Claude Code CLI read from this location\nSkil"
+    },
+    {
+      "source": "github-issues",
+      "title": "proposal: spec: reduce noise in return statements that contain mostly zero values",
+      "url": "https://github.com/golang/go/issues/21182",
+      "repo": "golang/go",
+      "reactions": 161,
+      "comments": 79,
+      "created": "2017-07-26T21:36:48Z",
+      "body_snippet": "Update: the current proposal is to permit `return ..., v` to return the zero value for all but the last result, and to return `v` as the last result.  The most common use will be `return ..., err`. \r\n\r\nA variant under discussion include `return ..., v1, v2` to return zeroes for all but the last N.\r\n\r\nAnother variant is to permit `return ...` to return zeroes for all.\r\n\r\nIn general `...` is only permitted if it omits one or more values--`func F() err { return ..., errors.New(\"\") }` is not permitted.\r\n\r\n---\r\n\r\n# Proposal\r\n\r\nIn return statements, allow `...` to signify, roughly, \"and everything else is the zero value\". It can replace one or more zero values.\r\n\r\nThis is best described by example:\r\n\r\nGiven the function signature `func() (int, string, *T, Struct, error)`:\r\n\r\n`return 0, \"\", nil, Struct{}, nil` may be written `return ...`\r\n\r\n`return 0, \"\", nil, Struct{}, err` may be written `return ..., err`\r\n\r\n`return 0, \"\", nil, Struct{X: Y}, nil` may be written `return ..., Struct{X: Y}, nil`\r\n\r\n`return 1, \"\", nil, Struct{}, nil` may be written `return 1, ...`\r\n\r\n`return 1, \"a\", nil, Struct{}, nil` may be written `return 1, \"a\", ...`\r\n\r\n`return 1, \"\", nil, Struct{}, err` may be written "
+    },
+    {
+      "source": "github-issues",
+      "title": "User-created public and private Lists to curate user experience as well as help build community",
+      "url": "https://github.com/bluesky-social/social-app/issues/1056",
+      "repo": "bluesky-social/social-app",
+      "reactions": 161,
+      "comments": 44,
+      "created": "2023-07-25T14:53:58Z",
+      "body_snippet": "**Is your feature request related to a problem? Please describe.**\r\n\r\nAs Bluesky grows and especially when it goes public, many of us will likely be following more users. The more users we follow, the more our home feeds will be a firehose of posts, difficult to keep up with. The \"My Feeds\" section helps, but access is unwieldy if we want to quickly browse a custom feed that isn't necessarily the one at the top. This isn't a problem for those who just want to post/announce, but for those of us who actually want to keep up with those we follow and interact with the community, a better solution would be appreciated.\r\n\r\nAnother challenge: Trying to help promote Bluesky to different communities. I am hoping to get more of the kidlit community moved to Bluesky, for instance, and being able to say \"Here's a list of children's book agents I've found so far on Bluesky\" along with a public link to Bluesky List of users would help motivate more kidlit creators to move to Bluesky. \r\n\r\n**Describe the solution you'd like**\r\n\r\nUser-created private and public Lists, similar to what is currently available on Twitter. I'm baffled by why Twitter is the only social media platform thus far with privat"
+    },
+    {
+      "source": "github-issues",
+      "title": "Plugins could avoid warnings by installing UIApplicationDelegate methods dynamically",
+      "url": "https://github.com/flutter/flutter/issues/9984",
+      "repo": "flutter/flutter",
+      "reactions": 160,
+      "comments": 110,
+      "created": "2017-05-11T01:28:15Z",
+      "body_snippet": "### Issue about warning message on console\r\nhttps://github.com/flutter/engine/pull/8843\r\n\r\nRight now iOS apps have the following in their logs:\r\n\r\n> You've implemented -[ application:didReceiveRemoteNotification:fetchCompletionHandler:], but you still need to add \"remote-notification\" to the list of your supported UIBackgroundModes in your Info.plist.\r\n\r\nA possible improvement would be to avoid implementing that method directly, and instead only add an implementation using `class_addMethod` if we detect that it's needed for registered plugins. If no plugin implements `application:didReceiveRemoteNotification:fetchCompletionHandler:` then `FlutterAppDelegate` wouldn't implement it either, and thus would avoid the warning.\r\n\r\nThe same could be done for other `UIApplicationDelegate` methods as well.\r\n\r\n/cc @mravn-google @szakarias @jakobr-google @mit-mit @Hixie @goderbauer \r\n\r\n------------------------------------------------------------------------------------------------------------------------\r\n\r\nEdited by cyanglaz:\r\n\r\n_The original issue mentioned above has been fixed with https://github.com/flutter/engine/pull/8843. However, there is a related but different issue regarding receivi"
+    },
+    {
+      "source": "github-issues",
+      "title": "Vulkan-based GPU emulation implementation",
+      "url": "https://github.com/xenia-project/xenia/issues/2028",
+      "repo": "xenia-project/xenia",
+      "reactions": 159,
+      "comments": 10,
+      "created": "2022-05-30T20:03:53Z",
+      "body_snippet": "For GPU emulation on GNU/Linux and Android, as well as Windows 8, and Windows 7 until 12on7 is integrated into Xenia, it's necessary to use either OpenGL or Vulkan.\r\n\r\nOpenGL and OpenGL ES can be considered out of the question for various reasons, such as long GLSL compilation times, difficulties in caching and restoring combinations of shaders and states (state application may be deferred until a draw call) to prevent stuttering, extremely hacky multithreading making decoupling of GPU emulation and UI thread presentation nearly impossible. So, a Vulkan-based GPU emulation implementation is needed.\r\n\r\nThe quick route, running the Direct3D 12 backend on VKD3D, currently isn't functional due to what appears to be bugs in VKD3D (such as geometry stage linkage errors) and because of certain unimplemented features (like 32x32=64 integer multiplication in shaders that we use for integer division by a constant, in EDRAM tile addressing). We most definitely must not be trying to work around those issues in our code, as that will harm both Xenia (as hacks will be added to the code) and VKD3D, which will lose a test case for certain relatively obscure parts of Direct3D 12. At some point, tho"
+    },
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres"
+    },
+    {
+      "source": "github-issues",
+      "title": "Can't download videos from YouTube on cobalt.tools",
+      "url": "https://github.com/imputnet/cobalt/issues/1356",
+      "repo": "imputnet/cobalt",
+      "reactions": 144,
+      "comments": 49,
+      "created": "2025-06-19T17:45:00Z",
+      "body_snippet": "cobalt's main instance is currently unable to download anything from youtube due to harsh network limitation from youtube's side. our requests get blocked, and previous network-related workarounds no longer work.\n\ncobalt will show this error as long as this issue is present:\n\n<img width=\"449\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/26b8aa7d-3e7f-4506-8ed7-2eb221f27d1f\" />\n\n**please don't make duplicate issues and don't reply with anything off-topic. all complaints and nags will be hidden as off-topic.** this issue affects everyone, including you.\n\nupdate (15.08.2025): strict network limits on youtube's side are still present, we can't go around them at our scale. we will have to come up with a completely different way of interacting with innertube that doesn't involve a centralized \"proxy\" server. using google accounts is not an option, they get restricted faster than we can replace them, and it's an insane amount of manual labor nearing slavery.\n\nrelated threads: #1375"
+    },
+    {
+      "source": "github-issues",
+      "title": "Add form validation to make form fields required",
+      "url": "https://github.com/streamlit/streamlit/issues/7165",
+      "repo": "streamlit/streamlit",
+      "reactions": 144,
+      "comments": 8,
+      "created": "2023-08-12T18:42:29Z",
+      "body_snippet": "### Checklist\n\n- [X] I have searched the [existing issues](https://github.com/streamlit/streamlit/issues) for similar feature requests.\n- [X] I added a descriptive title and summary to this issue.\n\n### Summary\n\nStreamlit currently has no built-in form validation to prevent a form from being submitted when one or more of he required fields is not populated or has invalid data. Adding a manual check that gets executed on form submit button click is not ideal from a user experience point of view, because this means either the entire form will be cleared even when a required field is not correctly populated when the form's clear_on_submit property is set as True, or the form fields will still carry the entered values even when the form is successfully submitted if the form's clear_on_submit property is set as False.\n\n### Why?\n\nIf a form is submitted with all necessary fields populated, ideally I would want the form to be cleared upon submission and hence would want clear_on_submit set to True. When, however, a necessary field is left empty I would indeed want the already populated fields to retain the provided input rather than being cleared.\r\n\r\nI could not make things work with a form"
+    },
+    {
+      "source": "github-issues",
+      "title": "Fully static Haskell executables - overview issue",
+      "url": "https://github.com/NixOS/nixpkgs/issues/43795",
+      "repo": "NixOS/nixpkgs",
+      "reactions": 131,
+      "comments": 205,
+      "created": "2018-07-19T01:29:07Z",
+      "body_snippet": "**If you just want to build static Haskell executables right now, follow [these instructions](https://github.com/nh2/static-haskell-nix).**\r\n\r\nThis issue collects/links all issues and ongoing work to make fully-static building of Haskell executables an excellently-working feature in nixpkgs.\r\n\r\nI will update here regularly the progress we are making, and sub-goals we encounter on the way that need to be fulfilled to tick off the parent goal.\r\n\r\nObviously contributions to this list are welcome.\r\n\r\n* [ ] **Fully static builds of Haskell exes should be trivial** (end goal)\r\n  * [ ] Document in the nixpkgs manual how to make fully static Haskell builds\r\n  * [x] Building `stack` based projects with their own `resolver` should be really easy\r\n    * Done since https://github.com/NixOS/nixpkgs/issues/43795#issuecomment-495035217\r\n    * [x] A minimal `stack` based example should be added ([here](https://github.com/nh2/static-haskell-nix/tree/b06f8979bfaa27dc4ce76cbeaa393e0c28b5baef/static-stack2nix-builder-example))\r\n  * [x] ~All~ Most Haskell executables in nixpkgs succeed to build statically\r\n    * This is being worked on in the `survey` directory of https://github.com/nh2/static-haskell-"
+    }
+  ]
+}
