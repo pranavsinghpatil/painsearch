@@ -1,0 +1,576 @@
+{
+  "query": "invoices manual",
+  "count": 30,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Launch HN: Kable (YC W22) – All-in-one platform for API products",
+      "url": "https://news.ycombinator.com/item?id=30627558",
+      "hn_id": "30627558",
+      "points": 193,
+      "comments": 79,
+      "author": "asommer12",
+      "created": "2022-03-10T14:52:39Z",
+      "text_snippet": "Hi HN! I’m Adam from Kable (<a href=\"https:&#x2F;&#x2F;kable.io\" rel=\"nofollow\">https:&#x2F;&#x2F;kable.io</a>). We make it easy to build great API products.<p>Kable takes care of all of the things that pull you away from your core business – API keys and authentication, usage-metering and billing, invoicing your customers, dashboards for tracking key metrics, evolving pricing to optimize revenue, surfacing usage dashboards to your customers – so you can focus on what’s most important.<p>Every API developer has to deal with important but unsexy responsibilities like “How will I securely manage API keys?” “How am I going to track which customers are using which parts of my product?” “How am I going to monitor usage of my API, and how can I make that information available to customers?” “Billing is complicated, invoicing is time-consuming, when am I going to find time to automate that?” This is the stuff we take care of.<p>I led the billing team at Hulu for five years and got a full educ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "30627558",
+        "published_at": "2022-03-10T14:52:39Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=30627558",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you handle clients who don't pay on time?",
+      "url": "https://news.ycombinator.com/item?id=47638685",
+      "hn_id": "47638685",
+      "points": 39,
+      "comments": 50,
+      "author": "Hustlr786",
+      "created": "2026-04-04T12:58:45Z",
+      "text_snippet": "I run a supply role at a company during the day and I&#x27;m building a B2B tool on the side. The problem I keep running into — both at work and in my family&#x27;s business — is that chasing overdue invoices is manual, awkward, and nobody has a good system for it.<p>Most small businesses I&#x27;ve talked to do one of three things: send the QB&#x2F;Xero auto-reminder and hope for the best, send a WhatsApp message themselves when the reminder doesn&#x27;t work, or just let it slide because the relationship feels more important than the cash.<p>The second one is interesting to me. WhatsApp works — it gets read, it gets replies — but it&#x27;s completely manual and people do it inconsistently.<p>Curious what founders and operators here actually do. Are there tools that work? Have you found a workflow that doesn&#x27;t feel like you&#x27;re begging for your own money?",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47638685",
+        "published_at": "2026-04-04T12:58:45Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=47638685",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Are Yearly Subscriptions Hard?",
+      "url": "https://news.ycombinator.com/item?id=35647871",
+      "hn_id": "35647871",
+      "points": 10,
+      "comments": 7,
+      "author": "gregsadetsky",
+      "created": "2023-04-20T23:22:10Z",
+      "text_snippet": "I&#x27;m currently working with a large SaaS that wants to implement yearly subscriptions well. We have overages (think: you have N users as part of your subscription, but if you go over, we bill them at $X&#x2F;user).<p>Monthly plans are &quot;easy&quot; as they map to Stripe&#x27;s model. Stripe has &quot;usage records&quot;. Plan changes are all handled with prorations, etc. It&#x27;s great.<p>Yearly seems a lot more complicated. There doesn&#x27;t seem to be a Stripe-native way to have invoices for overages being sent at the month end. We have to do a ton of billing date&#x2F;math, keep track of the overages, of when we billed for them, and create invoices manually. It&#x27;s a mess. We&#x27;re trying to write valid, tested, solid code for this... but it feels like we&#x27;re slowly rebuilding parts of Stripe :-)<p>Has anyone else gone through this? What&#x27;s stopping Stripe from handling yearly subscriptions with monthly overage invoices? Are we an edge case [0]? Cheers<p>[0] I&",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "35647871",
+        "published_at": "2023-04-20T23:22:10Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=35647871",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: ParsePoint – AI OCR that pipes any invoice straight into Excel",
+      "url": "https://parsepoint.app",
+      "hn_id": "44480818",
+      "points": 9,
+      "comments": 1,
+      "author": "marcinczubala",
+      "created": "2025-07-06T13:50:59Z",
+      "text_snippet": "Hi HN,<p>I run a small ecommerce shop and, until recently, spent way too many evenings copy-pasting supplier invoices into Excel so my books stayed clean and my expense tracking was granular. It finally hit me that I’d rather invest that time in code than in Ctrl-C&#x2F;Ctrl-V, so I built ParsePoint.app.<p>Why I built it\n • Manual invoice entry was swallowing 4 hours every month.\n • Accounting software APIs felt heavyweight for my use-case; I really just wanted clean rows in a spreadsheet.\n • I love tinkering with AI models and needed an excuse to spin one up in production.<p>What it does\n 1. Upload a PDF (or forward an email).\n 2. ParsePoint’s AI OCR extracts line-items, amounts, tax, dates, etc.\n 3. Download a ready-to-pivot Excel&#x2F;CSV file or hit the API to drop the data wherever you like.<p>Under the hood\n • Frontend: React\n • API: .NET 8, PostgreSQL\n • AI layer: an open-source VLLM model fine-tuned for document layouts<p>Outcome so far\n • My own workload: from 4 hours&#x2F;mon",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "44480818",
+        "published_at": "2025-07-06T13:50:59Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://parsepoint.app",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How Would You Charge for an MVP of a B2B SaaS?",
+      "url": "https://news.ycombinator.com/item?id=19081511",
+      "hn_id": "19081511",
+      "points": 4,
+      "comments": 5,
+      "author": "timarg",
+      "created": "2019-02-04T22:56:03Z",
+      "text_snippet": "Imagine you&#x27;re building a B2B SaaS and you&#x27;ve come up with an MVP - and you&#x27;ve just got your first customer after a great demo.<p>- How would you charge them, assuming that&#x27;s a company and you don&#x27;t have one?<p>- Would you use your personal bank&#x2F;PayPal account or you&#x27;d better ask a friend to process via his LLC?<p>- Would you invoice them manually every month if you don&#x27;t have recurring payments implemented yet?<p>Thanks!",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "19081511",
+        "published_at": "2019-02-04T22:56:03Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=19081511",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Checkout Flow for credit-based billing",
+      "url": "https://flexprice.io/",
+      "hn_id": "46723702",
+      "points": 4,
+      "comments": 0,
+      "author": "ShreyaChaurasia",
+      "created": "2026-01-22T19:04:29Z",
+      "text_snippet": "Hi HN,<p>We’ve been working on credit-based billing systems, and one recurring issue we kept running into was how messy credit purchases become once real payments are involved.<p>Credits are easy when they’re manual or promotional. Things get complicated when customers need to: \n- buy credits through a proper checkout, \n- receive an invoice, \n- complete payment asynchronously,\nand only then have credits become usable.<p>Most teams end up stitching this together manually:\nInvoices in one system, payment links in another, wallet balances updated via scripts or cron jobs, and reconciliation handled later.<p>We built a checkout flow where credit top-ups, invoices, payment links, and wallet state transitions are part of a single workflow:\n- an invoice is generated,\n- a payment link is created automatically,\n- credits stay on hold until payment succeeds,\nand are applied immediately once the payment clears.<p>Docs here if you want to see how the flow works end-to-end: <a href=\"https:&#x2F;&#x",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "46723702",
+        "published_at": "2026-01-22T19:04:29Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://flexprice.io/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: GmailGenius – an open-source AI aided invoice management tool",
+      "url": "https://github.com/abhishekpatil4/GmailGenius",
+      "hn_id": "41433486",
+      "points": 4,
+      "comments": 0,
+      "author": "sunilkumardash9",
+      "created": "2024-09-03T10:49:27Z",
+      "text_snippet": "Hey HN,<p>I am excited to share GmailGenius, a tool that automatically processes new emails, extracts data from attachments, and organizes everything in a spreadsheet!<p>I made this because I was having difficulty managing all the invoices manually. It can easily be a time-sink.<p>This is the tech stack I have used:<p>1. Composio for Gmail and Google Sheets integration.<p>2. Nanonets for data extraction from invoice PDFs<p>3. CrewAI for agent orchestration<p>4. React + Vite for a simple frontend.<p>How it works:<p>1. Add a few keywords to find potential emails with invoices. Also, specify the key attributes you want to extract from invoices using a simple front-end interface.<p>2. Set up an event listener to poll new emails from Gmail.<p>3. The AI agent uses Nanonet to extract pre-defined attributes from invoice PDFs.<p>4. The agent automatically updates data in a Google Sheets spreadsheet.<p>I would love your feedback!",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "41433486",
+        "published_at": "2024-09-03T10:49:27Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/abhishekpatil4/GmailGenius",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Pass in data to Visa and cut your credit card fee by 50%",
+      "url": "https://demo.runtrellis.com/projects/sec-filings/assets",
+      "hn_id": "40815042",
+      "points": 3,
+      "comments": 2,
+      "author": "jackylin",
+      "created": "2024-06-27T21:00:13Z",
+      "text_snippet": "Here&#x27;s how your business can save up to 50% on credit card fees.<p>Credit card interchange fees are expensive. These fees are what the credit card networks like Visa and Mastercard charge the merchant (you) whenever your customer swipes their card. Stripe or your payment processor passes these fees onto you.<p>To incentivize data collection, Visa and Mastercard lower your fees whenever you pass in transaction data like zipcode, sales tax amount, invoice amount, customer address, itemized purchased services or goods, and the list goes on.<p>This is called L2 and L3 data, and you can pass this into Stripe (or your payment processor) to lower your credit card fees.<p>Parsing invoices manually to provide L2&#x2F;L3 data to Visa is a pain. But with Trellis, you can do this automatically within seconds for any invoice. Watch how we do it here: <a href=\"https:&#x2F;&#x2F;runtrellis.com&#x2F;blog&#x2F;how-passing-in-data-to-visa-can-save-you-50-on-credit-card-fees\">https:&#x2F;&#x2F;runtr",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "40815042",
+        "published_at": "2024-06-27T21:00:13Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://demo.runtrellis.com/projects/sec-filings/assets",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How to do a private beta right?",
+      "url": "https://news.ycombinator.com/item?id=15452706",
+      "hn_id": "15452706",
+      "points": 2,
+      "comments": 2,
+      "author": "_xnmw",
+      "created": "2017-10-11T19:34:38Z",
+      "text_snippet": "So I&#x27;ve built a SaaS MVP (B2B enterprise). I guess the next step is private beta, because we&#x27;re not ready to open the floodgates to the public. How are private betas usually managed? Would really appreciate anyone&#x27;s experience with this matter. What does the funnel usually look like? Is it ok if we don&#x27;t have automatic credit card subscriptions yet, and I manually invoice our private beta customers? What are the expectations at this stage in terms of customer experience?",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "15452706",
+        "published_at": "2017-10-11T19:34:38Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=15452706",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: ApeiroCraft – Proposals that track views, e-sign and invoice",
+      "url": "https://news.ycombinator.com/item?id=49158160",
+      "hn_id": "49158160",
+      "points": 2,
+      "comments": 0,
+      "author": "lolllll",
+      "created": "2026-08-03T16:43:13Z",
+      "text_snippet": "Hi HN,<p>I built ApeiroCraft after getting tired of sending proposals and having zero visibility into what happened next.\nClients would sometimes ignore them, sometimes open them multiple times without replying, or accept them — and I’d still have to turn everything into an invoice manually.\nI wanted one simple flow instead of juggling PDFs, e-signature tools, and invoicing software:<p>Create and send a proposal\nGet notified when it’s opened (and how many times)\nLet the client review and sign online\nTurn the accepted proposal into an invoice with one click<p>Why not just use a PDF?\nOnce a PDF leaves your inbox, you lose visibility. I wanted proposals to remain interactive rather than become static attachments.\nWhy not stitch existing tools together?\nYou can, and a lot of people do. I just got tired of maintaining the same client and pricing info across multiple apps.\nWho it’s for\nFreelancers, agencies, and consultants who send proposals regularly and want a cleaner path from “here’s my",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "49158160",
+        "published_at": "2026-08-03T16:43:13Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=49158160",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Client hosting billing web app",
+      "url": "https://news.ycombinator.com/item?id=3188615",
+      "hn_id": "3188615",
+      "points": 1,
+      "comments": 5,
+      "author": "ollierattue",
+      "created": "2011-11-02T19:45:29Z",
+      "text_snippet": "Hey everyone,<p>I feeling itchy and want to build another SAS web app. Instead of going for the build it and they will come approach, I have decided to get some early validation of my idea.<p>I worked at web agency which always had problems with client hosting billing. I often found clients on the server who hadn't paid anything for years. Now most invoicing web applications have recurring invoices but with lots of clients and websites it becomes a faff to track the payments. So I'm wondering if there is space for a a super simple client hosting billing web app for web agencies.<p>1. Enter you client name, domain name, monthly / yearly price.<p>2. Client gets an email and sets up recurring payment via PayPal.<p>3. If payment fails you get a notification and can manually take action.<p>I also run a web app called Flaregun (http://getflaregun.com) which monitors domain name expiry and SSL certificate expiry. It's like an insurance policy for web agencies. These features would be included",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "3188615",
+        "published_at": "2011-11-02T19:45:29Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=3188615",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you deal with the need to download receipts and invoices?",
+      "url": "https://news.ycombinator.com/item?id=16763608",
+      "hn_id": "16763608",
+      "points": 1,
+      "comments": 0,
+      "author": "wlj",
+      "created": "2018-04-05T10:52:48Z",
+      "text_snippet": "Where services don&#x27;t automatically email out a PDF invoice, I&#x27;m interested to know how people are dealing with the need to download receipts &amp; invoices manually from each site.<p>Are there any tools &#x2F; processes to help with this?",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "16763608",
+        "published_at": "2018-04-05T10:52:48Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=16763608",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Swipe (YC S21) – Simple Billing and Accounting for India",
+      "url": "https://news.ycombinator.com/item?id=27981659",
+      "hn_id": "27981659",
+      "points": 75,
+      "comments": 41,
+      "author": "sri-teja",
+      "created": "2021-07-28T08:50:52Z",
+      "text_snippet": "Hi HN, we’re Aditya and Sri Teja, founders of Swipe (<a href=\"https:&#x2F;&#x2F;getswipe.in\" rel=\"nofollow\">https:&#x2F;&#x2F;getswipe.in</a>). We make it easy for local businesses in India to invoice their customers over WhatsApp. Instead of giving a paper invoice to their customer, Swipe users send a WhatsApp message with a link that allows them to pay instantly with a variety of payment methods.<p>We were building software and IoT for industrial automation before we started working on this. We dealt with a lot of invoices, purchase orders and estimates for different customers&#x2F;vendors on a daily basis. We used to manually make invoices on spreadsheets and store them locally on our computers. Initially, it was working fine but as we got more sales it started to get difficult to manage. On top of that, we had to file monthly tax returns where we would manually consolidate our sales on spreadsheets and send them to our accountant for filing. The whole process is tedious and the exi",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "27981659",
+        "published_at": "2021-07-28T08:50:52Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=27981659",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you handle direct ad sales?",
+      "url": "https://news.ycombinator.com/item?id=1253187",
+      "hn_id": "1253187",
+      "points": 13,
+      "comments": 6,
+      "author": "kadavy",
+      "created": "2010-04-09T16:56:59Z",
+      "text_snippet": "I recently discovered that, on some properties, the money that can be made from direct advertising relationships far exceeds that of AdSense. So, do you have experience with this, and any advice?<p>Specific questions: please answer one, all, or just offer advice. Thanks so much.<p>* How do you craft your agreements? Is there a specific contract you like to use, or do you just keep it informal?<p>* What level of reporting do you offer to your advertisers?<p>* How do you handle raising rates on advertisers?<p>* How do you bill? Do you just manually send invoices, or is there a tool that you use?<p>* Any other good-to-know's?<p>[UPDATE] One more question: any good marketplaces for finding advertisers?",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "1253187",
+        "published_at": "2010-04-09T16:56:59Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=1253187",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: I built a tool to create custom OCR APIs in minutes, no training needed",
+      "url": "https://struxs.com",
+      "hn_id": "45887602",
+      "points": 3,
+      "comments": 2,
+      "author": "great_domino",
+      "created": "2025-11-11T14:24:55Z",
+      "text_snippet": "Hey HN,<p>So, I wanted to share something I&#x27;ve been building called Struxs.<p>The whole idea for this came from my old job as a consultant. I was building systems for all sorts of clients, and it felt like every other project involved scraping data from images—passports, receipts, driver&#x27;s licenses, you name it. It was always a huge pain. I&#x27;d either be hunting for some super-specific OCR API for one document type, or I&#x27;d be stuck using generic OCR and then trying to duct-tape it together with a mountain of fragile regex. It was a maintenance nightmare and I was juggling a dozen different API subscriptions.<p>The final straw, funny enough, came from my wife. She&#x27;s an accountant and was complaining about having to manually check invoice numbers from PDFs to see if they&#x27;d already been paid. She just needed one field, the invoice number. All the existing solutions were crazy expensive enterprise tools that did way too much.<p>It just clicked. Why isn&#x27;t th",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "45887602",
+        "published_at": "2025-11-11T14:24:55Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://struxs.com",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "💡 [Feature Request] - Offline POS and Sync with ERPNext",
+      "url": "https://github.com/frappe/books/issues/1174",
+      "repo": "frappe/books",
+      "issue_number": 1174,
+      "reactions": 19,
+      "comments": 1,
+      "created": "2025-04-04T14:12:10Z",
+      "body_snippet": "### Summary\n\nWe propose adding the ability for **Frappe Books POS and Inventory** to seamlessly connect with and sync back data to the **ERPNext** master instance. This would allow users to perform sales transactions, manage inventory, and track customers in an offline mode within the POS system, with data syncing back to the ERPNext server once the internet connection is restored.\n\n#### Features:\n1. **Offline POS Functionality**: \n   - The ability to process sales transactions (invoices, payments, etc.) in offline mode.\n   - Offline management of products, stock levels, and pricing.\n   - Keep track of customers and sales history locally.\n\n2. **Data Syncing**:\n   - Automatically sync sales, customer data, inventory updates, and other relevant information back to the master **ERPNext** instance when the connection is restored.\n   - Syncing should be done in the background, with error handling for conflicts (e.g., duplicate entries or stock mismatches).\n\n3. **Inventory Sync**:\n   - Sync stock levels and movements between the POS and ERPNext to ensure consistency in real-time.\n   - Ability to perform stock adjustments offline, which will sync back once online.\n\n4. **Customer Data**:\n ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2972508939",
+        "published_at": "2025-04-04T14:12:10Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/frappe/books/issues/1174",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Insufficient Invoice Support",
+      "url": "https://github.com/stripe-ruby-mock/stripe-ruby-mock/issues/670",
+      "repo": "stripe-ruby-mock/stripe-ruby-mock",
+      "issue_number": 670,
+      "reactions": 13,
+      "comments": 2,
+      "created": "2019-11-20T17:41:28Z",
+      "body_snippet": "I'm using Stripe to create Subscriptions and capture the Invoice ID created along with it.\r\n\r\nI'm currently using Stripe API version `2018-09-24`, [stripe gem](https://github.com/stripe/stripe-ruby) version `3.7.0`, and stripe-ruby-mock gem version `2.5.8`. In my console, if I fetch a subscription from my test stripe data, I get \r\n\r\n```\r\nService.first.stripe_subscription\r\nService Load (0.5ms)  SELECT  \"services\".* FROM \"services\" ORDER BY \"services\".\"id\" ASC LIMIT $1  [[\"LIMIT\", 1]]\r\n=> #<Stripe::Subscription:0x3fdb823d0318 id=sub_GDLarq7Z4qg33L> JSON: {\r\n  \"id\": \"sub_GDLarq7Z4qg33L\",\r\n  \"object\": \"subscription\",\r\n  ..\r\n  \"latest_invoice\": \"in_1Fgut1H8qyL4uf2oGUNCjjnP\",\r\n  ..\r\n}\r\n```\r\n\r\nWhen I load a mock subscription inside one of my tests I get a mock subscription but there is no `latest_invoice`\r\n\r\n```\r\n#<Stripe::Subscription:0x3ffb4628fb78 id=test_su_2> JSON: {\r\n  \"id\": \"test_su_2\",\r\n  \"created\": 1574268576,\r\n  ...\r\n}\r\n```\r\n\r\nI was also curious and wanted to see if any invoice was being created when a subscription is created when testing. \r\n\r\nTurns out there was no invoice being made.\r\n\r\nI then checked to see if I manually created the invoice, would the Subscription have `lates",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "525964396",
+        "published_at": "2019-11-20T17:41:28Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/stripe-ruby-mock/stripe-ruby-mock/issues/670",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Automatic invoice creation on payments with: invoice_creation: {enabled: true}",
+      "url": "https://github.com/invertase/stripe-firebase-extensions/issues/489",
+      "repo": "invertase/stripe-firebase-extensions",
+      "issue_number": 489,
+      "reactions": 8,
+      "comments": 5,
+      "created": "2023-01-10T11:22:30Z",
+      "body_snippet": "# Feature request\r\n\r\nExtension name: `firestore-stripe-payments`\r\n\r\nEnable automatic invoice creation for payments: _invoice_creation: {enabled: true},_\r\n\r\n## Is your feature request related to a problem? Please describe.\r\n\r\nStripe recently [enabled invoice creation for payments](https://stripe.com/docs/payments/checkout/post-payment-invoices), this is done automatically for subscriptions, but has to be done manually for payments. A lot of my customer support requests relate to creating invoices for payments, so enabling this API feature would be very much appreciated. \r\n\r\n```\r\nconst session = await stripe.checkout.sessions.create({\r\n  mode: 'payment',\r\n  invoice_creation: {enabled: true},\r\n  line_items: [{price: '{{ONE_TIME_PRICE_ID}}', quantity: 1}],\r\n  success_url: 'https://example.com',\r\n  cancel_url: 'https://example.com',\r\n});\r\n```\r\n\r\n## Describe the solution you'd like\r\n\r\nCopy the value of _invoice_creation: {enabled: true},_ to the Stripe API call\r\n\r\n## Describe alternatives you've considered\r\n\r\nNow I have to create it manually. \r\n",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "1527219883",
+        "published_at": "2023-01-10T11:22:30Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/invertase/stripe-firebase-extensions/issues/489",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Multicurrency & cryptocurrency support",
+      "url": "https://github.com/hql287/Manta/issues/78",
+      "repo": "hql287/Manta",
+      "issue_number": 78,
+      "reactions": 7,
+      "comments": 2,
+      "created": "2017-12-11T12:14:57Z",
+      "body_snippet": "Please answer these question so I can help you faster.\r\n\r\n**Is it a bug or a feature request?**\r\n\r\n- [ ] It's a bug.\r\n- [X] I'm requesting a new feature.\r\n\r\n**Describe your feature**\r\n\r\nI think adding multi-currency & cryptocurrency support to this particular app makes it absolutely killer for me and many people I work with. Would it be possible to add such features? I'd be happy to promote the application to my community and create a video about it on our youtube channel.\r\n\r\nI'm also happy to give some guidelines on how to do multi-currency invoicing & crypto invoicing and give you some example invoices.\r\n\r\nI've not found a single application online that does support cryptocurrencies, while it is relatively easy to pull the price data, it just comes with a few small nuances which I'd happily explain (e.g. you need to specify the base currency, for example USD, as you pay taxes in those).\r\n\r\nI'm currently creating manual invoices as xero, intuit, etc can't support this. I'm in dire need, haha!",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "280995609",
+        "published_at": "2017-12-11T12:14:57Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/hql287/Manta/issues/78",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Feedback, Setup Recommendation & Feature Requests for the Roadmap (RAG, OCR, Storage Paths, Custom Fields)",
+      "url": "https://github.com/admonstrator/zettelrobbe/issues/118",
+      "repo": "admonstrator/zettelrobbe",
+      "issue_number": 118,
+      "reactions": 7,
+      "comments": 2,
+      "created": "2026-04-06T12:29:16Z",
+      "body_snippet": "## Thank You & My Current Setup\n\nFirst of all, a sincere thank you for forking Paperless AI and actively continuing its development as Paperless AI Next. The original project was abandoned – and you didn't just keep it alive, you built on top of it. That's not something to be taken for granted.\n\nI've been running Paperless AI Next in production and I'm very happy with it. It works reliably and does exactly what it's supposed to do.\n\nI'd like to share my setup with you – maybe you can benefit from it directly or use it as a reference for future integrations:\n\n**My Setup:**\n- Hardware: NVIDIA RTX 3070 (8 GB VRAM)\n- Ollama as inference host\n- Paperless-NGX + Paperless AI Next + PaperlessGPT\n- PaperlessGPT for OCR using `glm-ocr:bf16` (model size: ~2.2 GB)\n- Paperless AI Next for classification using `gemma4:e4b` (model size: ~9.6 GB – yes, it runs extremely fast on the RTX 3070 8 GB, ~5–10 seconds per document)\n\n**Strong Recommendation: GLM-OCR**\nGLM-OCR achieves what feels like 99.8% recognition accuracy on both German and English documents – noticeably better than other models I've tested. Anyone looking to improve OCR quality should definitely give it a try.\n\n> ⚠️ **Note:** The fol",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4211624613",
+        "published_at": "2026-04-06T12:29:16Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/admonstrator/zettelrobbe/issues/118",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Unmet expectations give way too much output",
+      "url": "https://github.com/phpspec/prophecy/issues/393",
+      "repo": "phpspec/prophecy",
+      "issue_number": 393,
+      "reactions": 7,
+      "comments": 5,
+      "created": "2018-02-13T07:58:15Z",
+      "body_snippet": "Whenever an expectation is not matched, the arguments are dumped, but they are dumped with so much information, that the error is nearly unreadable. I love prophecy, but the more I work with this, the more I dislike it because I can't properly see the differences.\r\n\r\nNow I'm not sure if the outputting is done by PHPUnit or Prophecy, so if I'm at the wrong place here, I'll reopen this issue in the PHPUnit repo.\r\n\r\nExample _(Yes, I'm making you scroll down for the rest)_:\r\n\r\n```\r\nThere was 1 error:\r\n\r\n1) Hostnet\\App\\Form\\Contract\\Handler\\EmailDeleteHandlerTypeTest::testOnSuccess\r\nProphecy\\Exception\\Call\\UnexpectedCallException: Method call:\r\n  - process(Hostnet\\App\\Component\\ActionLog\\Hosting\\MailboxDeletedActionLog:000000002ea1f917000000000b229436 Object (\r\n    'contract' => Hostnet\\Contract\\Entity\\HostingContract:000000002ea1f9e2000000000b229436 Object (\r\n        'id' => null\r\n        'client' => Hostnet\\Client\\Entity\\Client:000000002ea1f9d2000000000b229436 Object (\r\n            'id' => null\r\n            'contact_persons' => Doctrine\\Common\\Collections\\ArrayCollection:000000002ea1f9d1000000000b229436 Object (\r\n                'elements' => Array &0 (\r\n                    0 => Hostn",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "296643925",
+        "published_at": "2018-02-13T07:58:15Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/phpspec/prophecy/issues/393",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Critical Feature Request] Unified, Automated Sales Pipeline Between Frappe CRM and ERPNext",
+      "url": "https://github.com/frappe/crm/issues/2143",
+      "repo": "frappe/crm",
+      "issue_number": 2143,
+      "reactions": 6,
+      "comments": 4,
+      "created": "2026-05-07T13:46:58Z",
+      "body_snippet": "Is your feature request related to a problem?\nYes — this is a fundamental sales workflow issue that \naffects every business using Frappe CRM with ERPNext.\n\nWe are a mid-sized B2B services company currently \nimplementing Frappe CRM + ERPNext. After weeks of \ntesting, the lack of an automated, linear sales \npipeline between the two products is the single \nbiggest blocker for adoption.\n\nSales is a sequential process. Every business follows \nthe same logical steps:\n\n1. Cold Data — untouched target data (company name, \n   phone, info email for B2B)\n2. Lead — you contacted them (call, email, meeting)\n3. Opportunity / Deal — they showed interest, you \n   prepared a quotation\n4. Quotation Sent — proposal delivered\n5. Won — quotation accepted → becomes Customer\n6. Project — service delivery begins\n7. Invoice — triggered by project milestones, \n   subscription cycle, or completion\n\nThis is not unique to any industry. Every B2B sales \nprocess in the world follows this pattern.\n\nCurrent reality in Frappe CRM + ERPNext:\n- Lead, Contact, Organization and Deal feel like \n  disconnected silos instead of stages of one process\n- Quotations live in ERPNext but are invisible in \n  CRM Deal view\n- Deal",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4399244124",
+        "published_at": "2026-05-07T13:46:58Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/frappe/crm/issues/2143",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Folders and Grouping for Tables in Data Editor (Match Action Editor Organization)",
+      "url": "https://github.com/glideapps/expert-issues/issues/74",
+      "repo": "glideapps/expert-issues",
+      "issue_number": 74,
+      "reactions": 6,
+      "comments": 0,
+      "created": "2025-12-06T10:58:23Z",
+      "body_snippet": "**Summary**\nFirst of all, huge thanks for adding Folders to the Action Editor! It was a life-saver for our development workflow.\n**We now urgently request the same functionality for the Data Editor.** As apps grow, the flat list of Tables on the left sidebar becomes unmanageable. We need the ability to group Tables into Folders (e.g., \"Users\", \"Inventory\", \"System Logs\") to keep the backend organized, just like we now can with Actions.\n\n**Current Problem**\n*   **The \"Flat List\" Chaos:** Complex apps often have 50+ tables (Glide Tables, Big Tables, connected Google Sheets). Currently, they are listed in one long, flat sequence. finding a specific table takes too much scrolling and mental energy.\n*   **Ineffective Naming Hacks:** We try to organize tables by naming them using prefixes or slashes (e.g., `Users / Profiles`, `Users / Logs`, `System / Settings`). However, unlike in the Layout editor, these slashes do **not** create visual folders or collapsible groups in the Data Editor. It remains a messy text list.\n*   **Cognitive Load:** When working on a specific module (e.g., \"Invoicing\"), developers want to see only the 4 tables related to invoicing, not the other 40 unrelated tabl",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3701458267",
+        "published_at": "2025-12-06T10:58:23Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/glideapps/expert-issues/issues/74",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Deposit / Retainer Invoice Type — Payment Auto-Converts to Unapplied Client Credit",
+      "url": "https://github.com/invoiceninja/invoiceninja/issues/12188",
+      "repo": "invoiceninja/invoiceninja",
+      "issue_number": 12188,
+      "reactions": 5,
+      "comments": 4,
+      "created": "2026-08-13T22:27:09Z",
+      "body_snippet": "### What environment are you running?\n\nSelf Hosted\n\n### Have you searched existing issues and requests?\n\n- [x] I have searched existing issues and requests.\n\n### **Request Description**\nFor professional-services and trades businesses, clients often prepay deposits or retainers. InvoiceNinja’s **Pre-Payment** tab solves this cleanly for self-serve clients, but many AP departments require a formal invoice document (invoice number, due date, PDF) before they will issue payment. The current workaround is a standard invoice, which closes as a receivable when paid and cannot be drawn down against future progress invoices without manual credit notes or refunds.\n\n### **Requested behavior**\nAdd a new document type (or invoice subtype) — e.g., **“Deposit Invoice”** or **“Retainer Request”** — that:\n\n1. **Looks and behaves like an invoice for AP validation:** \n   - Has its own invoice number and due date.\n   - Appears in the client’s portal **Invoices** tab (or a new **Deposits** tab).\n   - Generates a PDF with company branding.\n\n2. **Treats payment as an unapplied credit, not closed income:**\n   - When the client pays, the document status changes to **Paid**, but the funds become an **unappl",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "5146360578",
+        "published_at": "2026-08-13T22:27:09Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/invoiceninja/invoiceninja/issues/12188",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature Request: Native Cash Discount (Skonto / Early Payment Discount) Support",
+      "url": "https://github.com/invoiceninja/invoiceninja/issues/12027",
+      "repo": "invoiceninja/invoiceninja",
+      "issue_number": 12027,
+      "reactions": 5,
+      "comments": 11,
+      "created": "2026-06-10T15:16:36Z",
+      "body_snippet": "## Feature Request: Native Cash Discount (Early Payment Discount / Skonto) Support\n\n### Summary\nInvoiceNinja currently has no native way to handle cash discounts (known as \"Skonto\" in German-speaking countries). This is a very common payment term in Switzerland, Germany, and Austria, where clients pay a reduced amount if they settle the invoice within a defined period (e.g. 2% discount if paid within 10 days).\n\n### Current Workaround\nUsers currently have to:\n1. Record the reduced payment manually\n2. Create a credit note for the discount amount\n3. Apply the credit to close the remaining balance\n\nThis is cumbersome, not intuitive, and the \"Apply Credit\" option is difficult to find in the UI (especially in v5.13.x). The workaround also does not produce clean reporting or clear audit trails.\n\n### Proposed Solution\nAdd a **Cash Discount** field to invoices with the following options:\n\n- **Discount percentage** (e.g. 2%)\n- **Discount period** (e.g. 10 days)\n- Display the discount terms on the invoice PDF (e.g. \"2% discount if paid by 16.06.2026\")\n- When a payment is recorded and the discount period is still active, offer to **automatically apply the discount**\n- Book the discount amount ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4632557704",
+        "published_at": "2026-06-10T15:16:36Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/invoiceninja/invoiceninja/issues/12027",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature request: date-aware historical exchange rates (not just a single global \"current\" rate)",
+      "url": "https://github.com/invoiceninja/invoiceninja/issues/12085",
+      "repo": "invoiceninja/invoiceninja",
+      "issue_number": 12085,
+      "reactions": 5,
+      "comments": 0,
+      "created": "2026-07-12T19:04:49Z",
+      "body_snippet": "## Problem\n\nThe `currencies` table stores a single `exchange_rate` value per currency, refreshed by the daily `UpdateExchangeRates` job (or manually via API/DB). This value is used to pre-fill the `exchange_rate` field when creating an Invoice, Expense, or Payment in a foreign currency.\n\nThis works fine for same-day data entry, but breaks down for a very common real-world workflow: **batch entry of documents dated across a past period** (e.g. entering a month's worth of invoices and expenses at month-end, each with its own historical date).\n\nSince the table holds only *one* rate per currency at a time, there is no way for the auto-fill to reflect \"the rate on the date the document is dated\" — it always reflects \"whatever the rate happened to be the last time the table was updated.\" Users doing month-end batch entry either:\n\n- have to manually look up and type in the correct historical rate for every single document, or\n- unknowingly save documents with an incorrect (today's) rate instead of the rate on the invoice/expense date.\n\nThis directly affects accounting/tax accuracy — for example, foreign-currency expenses need to be converted using the official rate on the expense date for",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4868360816",
+        "published_at": "2026-07-12T19:04:49Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/invoiceninja/invoiceninja/issues/12085",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Add Starting Sequence Number to Invoice Number Format",
+      "url": "https://github.com/InvoiceShelf/InvoiceShelf/issues/295",
+      "repo": "InvoiceShelf/InvoiceShelf",
+      "issue_number": 295,
+      "reactions": 5,
+      "comments": 17,
+      "created": "2025-01-29T17:59:02Z",
+      "body_snippet": "### What feature or improvement do you think would benefit InvoiceShelf?\n\nI would like to be able to provide a starting sequence number.\nIn a particular scenario that I have, InvoiceShelf is generating invoice numbers that are duplicates of invoices that I already sent the customer before I implemented InvoiceShelf.\nWhen InvoiceShelf generates a new sequence number, I'd like it to consider a starting number first so I don't have to manually look-up the last invoice number each time.\n\n\n### Requirements\n\nIn the Invoice Number Format, add a new \"component\" to the list for Starting Sequence # (and probably Customer Starting Sequence #).\nWhen auto-generating a new invoice number, it should be greater than the starting sequence number.\n\n\n\n### App Version\n\n2.1.0-RC1\n\n### Comments\n\n_No response_",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2818881000",
+        "published_at": "2025-01-29T17:59:02Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/InvoiceShelf/InvoiceShelf/issues/295",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Concerns about performance scalability in ERPNext when handling high-volume production data",
+      "url": "https://github.com/frappe/frappe/issues/33525",
+      "repo": "frappe/frappe",
+      "issue_number": 33525,
+      "reactions": 5,
+      "comments": 0,
+      "created": "2025-08-04T10:20:04Z",
+      "body_snippet": "<!--\nWelcome to the Frappe Framework issue tracker! Before creating an issue, please heed the following:\n\n1. This tracker should only be used to report bugs and request features / enhancements to Frappe\n    - For questions and general support, refer to https://stackoverflow.com/questions/tagged/frappe\n    - For documentation issues, use https://frappeframework.com/docs/user/en or the developer cheetsheet https://frappeframework.com/docs/user/en/bench/resources/bench-commands-cheatsheet\n2. Use the search function before creating a new issue. Duplicates will be closed and directed to\n   the original discussion.\n3. When making a feature request, make sure to be as verbose as possible. The better you convey your message, the     greater the drive to make it happen.\n-->\n\n**Is your feature request related to a problem? Please describe.**\nYes. We are concerned about the performance scalability of ERPNext when dealing with high-volume production data, specifically when processing up to 10,000 quotations per day. As data grows over time, we're uncertain how well ERPNext and the Frappe Framework can maintain stable performance without constant infrastructure scaling.\n\n**Describe the solution",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3288850705",
+        "published_at": "2025-08-04T10:20:04Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/frappe/frappe/issues/33525",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature Request: Rule-based email archiving, folder structure and backups",
+      "url": "https://github.com/LogicLabs-OU/OpenArchiver/issues/277",
+      "repo": "LogicLabs-OU/OpenArchiver",
+      "issue_number": 277,
+      "reactions": 5,
+      "comments": 2,
+      "created": "2026-01-17T12:24:24Z",
+      "body_snippet": "### **Is your feature request related to a problem? Please describe.**\nOpenArchiver is a great idea to archive emails while keeping full data ownership, without the need to run a full mail server.\nHowever, at the moment there is no way to control which emails are archived and which are not.\n\nAll emails are treated equally, although in practice some emails are far more important than others (e.g. invoices vs. spam or notifications).\nAdditionally, archived emails cannot be organized in a meaningful folder structure, and there is no integrated way to back up archived data and configuration.\n\nThis limits OpenArchiver’s usefulness as a long-term email archive.\n\n### **Describe the solution you'd like**\n**1. Rule-based archiving**\n\nIntroduce a dedicated Rules section, separate from Mail Accounts.\n\nMail Accounts -> Used to configure IMAP access and load the folder structure of the mailbox.\nRules -> Define which emails should be archived.\n\nWhen creating a rule, OpenArchiver could load the folder structure of the selected mailbox to allow easy selection.\n\nExample:\nA mail account called “Private Mails” contains the folders:\n\n- Inbox\n- Sent\n- Spam\n- Trash\n- Amazon (automatically sorted emails ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3825065943",
+        "published_at": "2026-01-17T12:24:24Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/LogicLabs-OU/OpenArchiver/issues/277",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Button to email Accounts Receivable per customer manually",
+      "url": "https://github.com/frappe/erpnext/issues/14922",
+      "repo": "frappe/erpnext",
+      "issue_number": 14922,
+      "reactions": 4,
+      "comments": 0,
+      "created": "2018-07-16T18:02:06Z",
+      "body_snippet": "### Actual behavior\r\nAccounts receivable report can be structured to filter by customer to show their outstanding invoices.\r\nYou can setup auto email report to send them a copy of the report on a periodic basis, which is great for consistency, and provides the desired functionality, with the only problem that it is periodic and does not apply to spontaneous or individual cases.\r\n\r\n### Issue\r\nHowever, you cannot send one on the fly spontaneously if desired. \r\n\r\n### Expected Behavior\r\nThe solution would be to add a menu item that configures, then sends an email to the customer, based on the report configuration and print format.  This communication is registered in the Customer's timeline, so that a clear record exists of attempts to collect past due items.",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "341616652",
+        "published_at": "2018-07-16T18:02:06Z",
+        "collected_at": "2026-09-17T05:26:31+00:00",
+        "lineage_key": "https://github.com/frappe/erpnext/issues/14922",
+        "lineage_basis": "canonical_url"
+      }
+    }
+  ]
+}

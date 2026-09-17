@@ -1,0 +1,576 @@
+{
+  "query": "logs manual review",
+  "count": 30,
+  "results": [
+    {
+      "source": "hn",
+      "title": "An Autonomous AI Control Plane for Governing Agent Behavior at Runtime",
+      "url": "https://news.ycombinator.com/item?id=46278481",
+      "hn_id": "46278481",
+      "points": 1,
+      "comments": 2,
+      "author": "dakshaneja",
+      "created": "2025-12-15T18:38:01Z",
+      "text_snippet": "I built a working autonomous control plane designed to govern how AI-driven\nworkflows and agents behave at runtime. Instead of relying on post-incident\nlogs or manual reviews, the system enforces policies before actions occur,\nsimulates changes safely, and proposes corrective actions when violations\nhappen.<p>The platform converts high-level human intent into structured, executable\nworkflows using event-driven orchestration. It combines policy-first\nenforcement, asynchronous agent coordination, and a simulation layer so\nchanges can be evaluated before being deployed into a real environment. The\ngoal is to make autonomy safer and more controllable, not just more capable.<p>This is a real, end-to-end system (not a concept or chatbot), built as a\nhorizontal control plane rather than a domain-specific application. I’m\nsharing it here to get technical feedback from others thinking about agentic\nsystems, governance, and runtime control.",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "46278481",
+        "published_at": "2025-12-15T18:38:01Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=46278481",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Fast.io, Simple Enterprise File Hosting Alternative to S3",
+      "url": "https://news.ycombinator.com/item?id=21585050",
+      "hn_id": "21585050",
+      "points": 14,
+      "comments": 3,
+      "author": "redm",
+      "created": "2019-11-20T16:06:12Z",
+      "text_snippet": "The Fast.io team is excited to be officially launching today!<p>Our platform is a solution for designers, developers, and marketers looking to automate everything needed to host and track files and static websites at an enterprise scale.<p>We developed Fast.io because we recognized that the process of deploying static content today is complicated and time-consuming. Solutions like S3 require uploading, a separate CDN configuration, a manual review of raw data logs, and tedious cache flushing each time you make an update.<p>We want to get content online quickly with the simplicity and ease of use of cloud storage without sacrificing the reliable scalability and performance of a CDN.<p>Fast.io tightly integrates with your current workflows and preferred cloud storage service (Google Drive, Dropbox, OneDrive, MediaFire, Box, and GitHub) to manage files. It includes an integrated CDN, using Cloudflare and Akamai for lightning-fast global deploys, a visual dashboard, and detailed, accurate ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "21585050",
+        "published_at": "2019-11-20T16:06:12Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=21585050",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Stacksi (YC W21) – Doing Security Questionnaires, So Your Team Isn't",
+      "url": "https://news.ycombinator.com/item?id=26513040",
+      "hn_id": "26513040",
+      "points": 134,
+      "comments": 89,
+      "author": "emremm",
+      "created": "2021-03-19T13:28:17Z",
+      "text_snippet": "Hi HN, We’re Emre and JJ, the co-founders of Stacksi (<a href=\"https:&#x2F;&#x2F;www.stacksi.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.stacksi.com</a>), a product that helps fill out security questionnaires so smart people can focus on higher-value tasks (like actually managing security, or engineering or selling, or really anything but filling out forms).<p>At our last company, we were the ones who filled these things out. We hated doing it, but got them done because we had to in order to close deals that could meaningfully impact the trajectory of the company.<p>If you’ve had to deal with these, you understand that they’re the worst way of broadly assessing a company’s security with a reasonable time &#x2F; cost tradeoff…except for every other method that we currently have at our disposal.<p>Problem is, that they’re often 200+ questions sent to salespeople and forwarded ASAP to some other poor soul (often some sort of engineer). The questions asked (e.g. what is your company’s encryp",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "26513040",
+        "published_at": "2021-03-19T13:28:17Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=26513040",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Jazzberry (YC X25) – AI agent for finding bugs",
+      "url": "https://news.ycombinator.com/item?id=43985994",
+      "hn_id": "43985994",
+      "points": 46,
+      "comments": 34,
+      "author": "MarcoDewey",
+      "created": "2025-05-14T15:52:21Z",
+      "text_snippet": "Hey HN! We are building Jazzberry (<a href=\"https:&#x2F;&#x2F;jazzberry.ai\">https:&#x2F;&#x2F;jazzberry.ai</a>), an AI bug finder that automatically tests your code when a pull request occurs to find and flag real bugs before they are merged.<p>Here’s a demo video: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=L6ZTu86qK8U#t=7\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=L6ZTu86qK8U#t=7</a><p>We are building Jazzberry to help you find bugs in your code base. Here’s how it works:<p>When a PR is made, Jazzberry clones the repo into a secure sandbox. The diff from the PR is provided to the AI agent in its context window. In order to interact with the rest of the code base, the AI agent has the ability to execute bash commands within the sandbox. The output from those commands is fed back into the agent. This means that the agent can do things like read&#x2F;write files, search, install packages, run interpreters, execute code, and so on. It observes the outcomes",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "43985994",
+        "published_at": "2025-05-14T15:52:21Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=43985994",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Dbmask – Discover, mask, and verify sensitive data in SQL databases",
+      "url": "https://github.com/sealandseacat/dbmask",
+      "hn_id": "49645189",
+      "points": 5,
+      "comments": 0,
+      "author": "SiyuanFeng",
+      "created": "2026-09-10T15:15:16Z",
+      "text_snippet": "Hi HN<p>I developed *dbmask*, an open-source Python tool designed to discover sensitive columns in SQL databases, masking them with deterministic fake values, and validate the masking results.<p>The motivation behind this tool stems from a common issue I encountered when handling test data: existing masking tools often assume the user already knows exactly which columns contain sensitive information. Furthermore, the successful completion of a masking task does not guarantee that <i>all</i> sensitive values   have actually been replaced.<p>dbmask aims to integrate these steps into a unified workflow rather than treating them as three separate tasks.<p>During the detection phase, the tool makes determinations by combining column names, sampled values, database type&#x2F;context, historical decisions, and optionally LLMs. While LLM functionality is disabled by default, it supports local execution via Ollama or other services compatible with the OpenAI API. If the tool cannot determine a ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "49645189",
+        "published_at": "2026-09-10T15:15:16Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/sealandseacat/dbmask",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Heroku still hasn't reinstated GitHub integration",
+      "url": "https://news.ycombinator.com/item?id=31079957",
+      "hn_id": "31079957",
+      "points": 4,
+      "comments": 0,
+      "author": "henryaj",
+      "created": "2022-04-19T05:20:38Z",
+      "text_snippet": "Update: Heroku Security Notification.<p>We are continuing to investigate this incident and have addressed our customers’ most common questions below.<p>*How can I get additional guidance for investigating GitHub logs for evidence of exfiltration or malicious activity?*<p>For specific questions about GitHub, we recommend that you contact them directly.<p>&lt;snip&gt;<p>*What code deployment methods are available while we’re unable to reconnect to GitHub via the Heroku dashboard?*<p>* [Integrating with Version Control Providers Besides GitHub](https:&#x2F;&#x2F;devcenter.heroku.com&#x2F;articles&#x2F;integrating-with-version-control-providers-besides-github)<p>* [Deploying with Git](https:&#x2F;&#x2F;devcenter.heroku.com&#x2F;categories&#x2F;deploying-with-git)<p>*Which Heroku features have become non-operative due to the removal of the Heroku-GitHub integration?*<p>* Enabling review apps<p>* Creating (automatic and manual) review apps<p>* Deploying (automatic and manual) review apps<p>*",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "31079957",
+        "published_at": "2022-04-19T05:20:38Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=31079957",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Scout QA – AI that finds small bugs people often overlook",
+      "url": "https://scoutqa.ai",
+      "hn_id": "45887738",
+      "points": 1,
+      "comments": 1,
+      "author": "htieu",
+      "created": "2025-11-11T14:39:07Z",
+      "text_snippet": "We’ve been working on Scout QA, a tool that uses AI to catch subtle bugs that usually slip past manual testing and reviews.<p>Instead of focusing on test automation, Scout analyzes your app’s UI, flows, and logs to surface tiny inconsistencies — things like broken states, unclear error messages, or small regressions that humans might ignore because “it still works.”<p>The goal isn’t to replace testers but to act like an extra pair of curious eyes — pointing out issues that affect real users’ experience.<p>We’re exploring questions like:\n- How can an AI develop an intuition for “something feels off”?\n- What kind of feedback loop helps it learn from real user bugs?<p>Would love feedback from developers, QA engineers, and indie makers:\nwhat small-but-painful bugs do you wish tools could catch automatically?",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "45887738",
+        "published_at": "2025-11-11T14:39:07Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://scoutqa.ai",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Google VRP: Closed case Re-opened after Terminal Log proof, then re-closed",
+      "url": "https://news.ycombinator.com/item?id=47003173",
+      "hn_id": "47003173",
+      "points": 1,
+      "comments": 0,
+      "author": "CorporationHit",
+      "created": "2026-02-13T14:31:57Z",
+      "text_snippet": "[DISCLAIMER]: This is shared strictly for educational purposes and as a case study for the security community. My goal is to discuss the logic of security response systems, not to target any individual or proprietary data.\n  The Case: Dismissing Manual Terminal Logs Without Logic\n The Core Issue: How can a report be marked as &quot;Closed (Informative)&quot; when a manual Terminal Log clearly shows an HTTP&#x2F;2 200 OK bypass? The case was closed without any technical justification, ignoring direct evidence of a security flaw.\n The Timeline &amp; Logic Gap:\n The Report: I reported a logic flaw in a payments-related sub-domain. Initially, it was reviewed and marked as &quot;Triaged&quot;.\n The Sudden Closure: Without any explanation or patch, the report was shifted to &quot;Closed&quot;. No logic was provided for this reversal.\n The Manual Proof (The Terminal Log): I provided a manual bypass using an Admin-Token: true header, which resulted in a successful HTTP&#x2F;2 200 OK response. ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47003173",
+        "published_at": "2026-02-13T14:31:57Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=47003173",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Tell HN: Be careful when using Upwork for consulting work",
+      "url": "https://news.ycombinator.com/item?id=30944640",
+      "hn_id": "30944640",
+      "points": 12,
+      "comments": 2,
+      "author": "msadowski",
+      "created": "2022-04-07T14:10:59Z",
+      "text_snippet": "Hi HN,<p>I thought I would warn some of you that might be using Upwork for consulting&#x2F;freelancing about the first issue with payment protection I came across (I have logged 3k hours on the platform and received a top-rated plus badge, whatever it means).<p>To me, the 5-20% fee Upwork was taking for projects was fair, given their hourly protection programme, where if you use their tracking app that logs screenshots, keyboard and mouse activity then your payment for work was guaranteed.<p>The app has a feature where it will not log time if your keyboard and mouse are not active enough, what I did not know up until yesterday is that even if the app logs the work Upwork can decide that the activity was not enough and they will reimburse the client at their discretion.<p>In case anyone is interested how the process looks in detail: you get two e-mails:<p>---<p>1st one:<p>Refund Notification<p>Hi Mateusz,\nYou refunded $X to CLIENT_NAME.<p>2nd one:<p>Upwork Help: Reversal Notification: U",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "30944640",
+        "published_at": "2022-04-07T14:10:59Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=30944640",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Ito – Code reviews that run code",
+      "url": "https://www.ito.ai",
+      "hn_id": "48558949",
+      "points": 10,
+      "comments": 8,
+      "author": "evanmarshall",
+      "created": "2026-06-16T17:40:38Z",
+      "text_snippet": "I&#x27;m Evan and I made Ito.ai<p>It&#x27;s code review that actually runs your code. The result is that it finds more bugs with a smaller false positive rate. You get screenshots, videos, and run logs. I built Ito because manual verification sucks and I thought I could automate it. I&#x27;ve been a professional developer for 15 years and now more than ever, I&#x27;m just spending time making sure things work.<p>I looked into all of the other agentic testing tools that click around a url you give them and frankly, they sucked. They just didn&#x27;t work. I figured to be able to actually testing things you need to run the full environment so you can seed data, bypass gates, mock external dependencies. They also can&#x27;t get runtime evidence about changes that aren&#x27;t frontend. Ito does.<p>Under the hood, Ito is creating a devcontainer for your application. All of your services are wired up and then a team of agents goes and tests your PR. We rolled out our own sandboxes and our ow",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "48558949",
+        "published_at": "2026-06-16T17:40:38Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://www.ito.ai",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: InsForge – Open-source Heroku for coding agents",
+      "url": "https://github.com/InsForge/InsForge",
+      "hn_id": "48181342",
+      "points": 62,
+      "comments": 7,
+      "author": "mrcoldbrew",
+      "created": "2026-05-18T15:40:42Z",
+      "text_snippet": "Hi HN, I&#x27;m Hang, cofounder of InsForge (YC P26). InsForge is an open-source Heroku for AI coding agents: a backend platform designed for coding agents to deploy, operate, and debug end-to-end. Open source under Apache 2.0 (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;InsForge&#x2F;InsForge\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;InsForge&#x2F;InsForge</a>). Quick demo here (<a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;7Bax5qz0IfM\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;7Bax5qz0IfM</a>).<p>We started InsForge because we just wanted our Claude Code to handle all the backend &#x2F; infra stuff for us, instead of us jumping between dashboards doing manual config, or copy paste logs and docs back to agents.<p>We first tried creating a folder with bunch of .MD files, and installing MCPs like Supabase, Vercel, GitHub, Context7. But soon we found MCPs have their own problems: (a) Tools get pre-loaded into context, before agents even do anything (b) bad design, payloads are ret",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "48181342",
+        "published_at": "2026-05-18T15:40:42Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/InsForge/InsForge",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Dayflow – A git log for your day",
+      "url": "https://github.com/JerryZLiu/Dayflow",
+      "hn_id": "45361268",
+      "points": 480,
+      "comments": 130,
+      "author": "jerryliu12",
+      "created": "2025-09-24T14:53:57Z",
+      "text_snippet": "Hi HN! I&#x27;ve been building Dayflow, a macOS app that automatically tracks what you&#x27;re actually working on (not just which apps you have open).<p>Here&#x27;s what it does:<p>- It creates a semantic timeline of your day;<p>- It does it by understanding the content on your screen (with local or cloud VLMs);<p>- This allows you to see exactly where your time went without any manual logging.<p>Traditional time trackers tell you &quot;3 hours in Chrome&quot; which is not very helpful. Dayflow actually understands if you&#x27;re reading documentation, debugging code, or scrolling HN. Instead of &quot;Chrome: 3 hours&quot;, you get &quot;Reviewed PR comments: 45min&quot;, &quot;Read HN thread about Rust: 20min&quot;, &quot;Debugged auth flow: 1.5hr&quot;.<p>I was an early Rewind user but rarely used the retrieval feature. I built Dayflow because I saw other interesting uses for screen data. I find that it helps me stay on track while working - I check it every few hours and make sure ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "45361268",
+        "published_at": "2025-09-24T14:53:57Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/JerryZLiu/Dayflow",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: EdgeGhost – Reconstruct futures trading sessions from execution logs",
+      "url": "https://edgeghost.com",
+      "hn_id": "47309188",
+      "points": 2,
+      "comments": 1,
+      "author": "AdamPayne238",
+      "created": "2026-03-09T14:01:30Z",
+      "text_snippet": "I built EdgeGhost because journaling my own futures trades was incredibly tedious.<p>Most trading journals require manual entry or a lot of spreadsheet work. I wanted something that could reconstruct what actually happened during a trading session directly from executions.<p>EdgeGhost imports NinjaTrader or Tradovate execution CSVs and stitches fills back into complete trades, then groups those trades into sessions so you can review how the day unfolded. The goal is to make session review frictionless for active futures traders.<p>Some things it currently does:\n- reconstruct trades automatically from execution logs\n- group trades into sessions by day\n- calculate performance stats and streaks\n- allow tagging and review of trades that need work\n- track prop firm rules like daily loss and trailing drawdown<p>Right now I&#x27;m focused on improving tagging, filtering, and automation so traders can analyze patterns in their execution and behavior.<p>I built it because I trade futures myself",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47309188",
+        "published_at": "2026-03-09T14:01:30Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://edgeghost.com",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Experience automating E2E manual testing with AI",
+      "url": "https://news.ycombinator.com/item?id=45165168",
+      "hn_id": "45165168",
+      "points": 1,
+      "comments": 0,
+      "author": "rudderdev",
+      "created": "2025-09-08T06:22:19Z",
+      "text_snippet": "I see lots of discussions around using AI in testing. Let&#x27;s make this discussion more objective and useful by sharing our experiences, here&#x27;s my experience of using AI to automate e2e manual testing (especially where user interaction is required):<p>What I’m testing: RudderStack iOS SDK, it is used to track customer event data and send it to various product, marketing, and business tools.<p>The problem in my current testing workflow: Manual testing is important for quality assurance. In the case of testing RudderStack SDK, it requires multiple time-consuming and error-prone steps such as - plan specific steps for the test, perform interactions, review lengthy amounts of log text, and then verify logs which includes comparing long IDs.<p>The solution I experimented with: I leveraged LLM to plan test steps, used mobile-mcp to simulate user interactions (clicking some buttons such as track, reset, track, etc.), review logs using LLM (verify the event ID changes sent to the serve",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "45165168",
+        "published_at": "2025-09-08T06:22:19Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=45165168",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Delve (YC W24) – HIPAA compliance as a service",
+      "url": "https://news.ycombinator.com/item?id=39513054",
+      "hn_id": "39513054",
+      "points": 111,
+      "comments": 111,
+      "author": "selinkocalar",
+      "created": "2024-02-26T16:17:54Z",
+      "text_snippet": "Hey, HN! We&#x27;re Karun and Selin, co-founders of Delve (<a href=\"https:&#x2F;&#x2F;getdelve.com\">https:&#x2F;&#x2F;getdelve.com</a>). We help companies get HIPAA compliant fast, with 1-click infrastructure, streamlined legal policies, and real-time monitoring. Here’s a quick demo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;mQbb5mprsUA\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;mQbb5mprsUA</a>.<p>HIPAA is a US federal law passed back in 1996 that sets standards for protecting sensitive health information. Here’s an article that breaks it down pretty simply: <a href=\"https:&#x2F;&#x2F;www.getdelve.com&#x2F;blog&#x2F;quick-guide-to-hipaa\">https:&#x2F;&#x2F;www.getdelve.com&#x2F;blog&#x2F;quick-guide-to-hipaa</a>.<p>Most companies that process health information in the US need to become HIPAA compliant, a process that can be long and expensive. At our previous health tech company, we spent 6 weeks (and tens of thousands of dollars) on getting compliant. We had to complete a lot of ma",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "39513054",
+        "published_at": "2024-02-26T16:17:54Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=39513054",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Engine UX/UI redesign (Mock-up)",
+      "url": "https://github.com/godotengine/godot-proposals/issues/8264",
+      "repo": "godotengine/godot-proposals",
+      "issue_number": 8264,
+      "reactions": 155,
+      "comments": 32,
+      "created": "2023-10-26T13:09:22Z",
+      "body_snippet": "### Describe the project you are working on\n\nThis feature is a general-purpose feature that will be helpful to all developers.\n\n### Describe the problem or limitation you are having in your project\n\nI've been working on a project in Godot for a little while now and as I've gotten more used to the engine, some UX problems have begun to stand out to me. To be clear I really like Godot and its UI is not bad, especially compared to some other game engines out there, but there's also a lot of room for improvement in both the UX and UI departments. There's a very informative [post](https://github.com/godotengine/godot-proposals/discussions/4582) in the Godot discussions repository detailing some people's complaints with inconsistencies in the UX/UI of Godot. I've also seen others discussing their frustration with the UX on reddit or other places online, so I'm confident this is something that's applicable to a sizeable portion of the community.\r\n\r\nI know I could make an individual proposal for each change that I'm about to bring up but there are a lot of changes that are related to each other and if each had its own proposal, some might get lost in the crowd so to speak. More importantly",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "1963534405",
+        "published_at": "2023-10-26T13:09:22Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/godotengine/godot-proposals/issues/8264",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] Allow Claude to Write/Update Project Files",
+      "url": "https://github.com/anthropics/claude-code/issues/16550",
+      "repo": "anthropics/claude-code",
+      "issue_number": 16550,
+      "reactions": 80,
+      "comments": 38,
+      "created": "2026-01-07T02:46:12Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\n\n## Summary\n\nClaude can **read** project files but **cannot write, create, or update** them. This creates unnecessary friction in workflows where Claude is actively collaborating on a project. Users must manually download files Claude generates and re-upload them to the project — a tedious workaround that breaks flow and defeats the purpose of having persistent project context.\n\n---\n\n## The Problem\n\n### Current Behavior\n\n| Action | Supported? |\n|--------|------------|\n| Read project files | ✅ Yes |\n| Create new project files | ❌ No |\n| Update existing project files | ❌ No |\n| Delete project files | ❌ No |\n\n### User Impact\n\nWhen collaborating with Claude on a multi-session project:\n\n1. **Session continuity is broken** — Claude cannot maintain its own memory/checkpoint files in the project\n2. **Manual file juggling required** — Every file Claude generates must be downloaded and manually re-uploaded\n3. **Con",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3787156194",
+        "published_at": "2026-01-07T02:46:12Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/anthropics/claude-code/issues/16550",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Support `for_each` and `count` meta-parameters for dependencies, stacks, and units",
+      "url": "https://github.com/gruntwork-io/terragrunt/issues/4504",
+      "repo": "gruntwork-io/terragrunt",
+      "issue_number": 4504,
+      "reactions": 74,
+      "comments": 21,
+      "created": "2025-07-03T18:08:42Z",
+      "body_snippet": "### Summary\n\nThis RFC proposes adding support for for_each and count meta-arguments to dependency blocks, stack blocks, and unit blocks in Terragrunt configurations. This feature would allow users to dynamically create multiple instances of these blocks based on iterable data (sets, map of strings), similar to how Terraform handles resource iteration.\n\n### Motivation\n\nCurrently, Terragrunt users must manually duplicate dependency, stack, and unit blocks when they need multiple similar configurations. This leads to:\n\n1. **Code duplication** - Repeated blocks with minor variations\n2. **Maintenance overhead** - Changes must be applied to multiple blocks\n3. **Error-prone configuration** - Inconsistencies between duplicated blocks\n4. **Scalability issues** - Managing dozens or hundreds of similar blocks becomes unwieldy\n\nThe problem becomes particularly acute in enterprise environments where:\n\n* Multiple services require similar infrastructure patterns (databases, caches, etc.)\n* Cross-service dependencies require connections to multiple similar resources\n* Infrastructure must scale across multiple environments, regions, or teams\n* Configuration drift occurs when manually maintaining do",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3200221069",
+        "published_at": "2025-07-03T18:08:42Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/gruntwork-io/terragrunt/issues/4504",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Proposal: Introduce a \"--progressive\" mode",
+      "url": "https://github.com/gradle/gradle/issues/16344",
+      "repo": "gradle/gradle",
+      "issue_number": 16344,
+      "reactions": 61,
+      "comments": 3,
+      "created": "2021-02-28T07:46:21Z",
+      "body_snippet": "Gradle's APIs have _significantly_ improved over the past few years, ranging from lazy task configuration to the upcoming configuration caching features.\r\n\r\nHowever, there is a _lot_ legacy API cruft that remains today, many even are still the default.\r\n\r\nA classic example is `.all` vs `.configureEach`. A plugin author or gradle user today may find themselves writing something like this:\r\n\r\n```groovy\r\ntasks.all {\r\n  // Stuff\r\n}\r\n```\r\n\r\nThere is _no_ warning that this eagerly configures all tasks! Not in code, not in logs, not in consumer builds.\r\n\r\nEven worse - this is the _default_ when invoked without a function.\r\n\r\n```groovy\r\ntasks {\r\n    // More eager configuration!\r\n}\r\n```\r\n\r\nThe correct thing to do here is use `configure` or `configureEach`\r\n\r\n```groovy\r\ntasks.configureEach {\r\n\r\n}\r\n```\r\n\r\nThere are numerous other common APIs like this: getters vs provider, properties missing input/output annotations, manual task dependencies rather than property dependencies, etc.\r\n\r\nI'd like to propose that Gradle adopt the notion of a `--progressive` mode, inspired by Kotlin's [feature of the same functionality](https://kotlinlang.org/docs/whatsnew13.html#progressive-mode).\r\n\r\n> We believe ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "818147191",
+        "published_at": "2021-02-28T07:46:21Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/gradle/gradle/issues/16344",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] Display message timestamps in Claude Code CLI interface",
+      "url": "https://github.com/anthropics/claude-code/issues/21051",
+      "repo": "anthropics/claude-code",
+      "issue_number": 21051,
+      "reactions": 53,
+      "comments": 17,
+      "created": "2026-01-26T19:14:28Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\n## Summary\nAdd visible timestamps to all messages in the Claude Code CLI interface to help users track conversation chronology, debug issues, measure performance, and create timestamped documentation.\n\n## Environment\n- **OS**: WSL2 Ubuntu 24.04 on Windows 11 (applicable to all platforms)\n- **Claude Code Version**: Current as of 2026-01-26\n- **Use Case**: Professional development workflows requiring session tracking, debugging, documentation, and multi-day collaboration\n\n## Current Behavior\n\n### What Users See Now\nMessages appear in the Claude Code CLI with **no timestamp information**:\n\n```\nUser: Run the backup script\n\n[Assistant response appears with no visible time]\n\nUser: Check the logs\n[Assistant response appears with no visible time]\n\nUser: What time did that error occur?\n[No way to know without checking external logs or exporting session]\n```\n\n### Hidden Timestamp Data\nTimestamps **already exist** i",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3857294311",
+        "published_at": "2026-01-26T19:14:28Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/anthropics/claude-code/issues/21051",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "azurerm_function_app_flex_consumption re-injects AzureWebJobsStorage into app_settings",
+      "url": "https://github.com/hashicorp/terraform-provider-azurerm/issues/29149",
+      "repo": "hashicorp/terraform-provider-azurerm",
+      "issue_number": 29149,
+      "reactions": 47,
+      "comments": 14,
+      "created": "2025-03-21T22:34:31Z",
+      "body_snippet": "### Is there an existing issue for this?\n\n- [x] I have searched the existing issues\n\n### Community Note\n\n<!--- Please keep this note for the community --->\n\n* Please vote on this issue by adding a :thumbsup: [reaction](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) to the original issue to help the community and maintainers prioritize this request\n* Please do not leave comments along the lines of \"+1\", \"me too\" or \"any updates\", they generate extra noise for issue followers and do not help prioritize the request\n* If you are interested in working on this issue or have submitted a pull request, please leave a comment and review the [contribution guide](https://github.com/hashicorp/terraform-provider-azurerm/blob/main/contributing/README.md) to help.\n\n<!--- Thank you for keeping this note for the community --->\n\n\n### Terraform Version\n\n1.11.2\n\n### AzureRM Provider Version\n\n4.23.0\n\n### Affected Resource(s)/Data Source(s)\n\nazurerm_function_app_flex_consumption\n\n### Terraform Configuration Files\n\n```hcl\nresource \"azurerm_function_app_flex_consumption\" \"this\" {\n  name                = \"example-func\"\n  resource_group_name = var.resource_group.name\n",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2939659052",
+        "published_at": "2025-03-21T22:34:31Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/hashicorp/terraform-provider-azurerm/issues/29149",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Consider replacing ofborg with builds in GitHub Actions?",
+      "url": "https://github.com/NixOS/nixpkgs/issues/506749",
+      "repo": "NixOS/nixpkgs",
+      "issue_number": 506749,
+      "reactions": 38,
+      "comments": 6,
+      "created": "2026-04-04T20:49:41Z",
+      "body_snippet": "We currently have a situation where:\n\n1. The ofborg queue is famously overloaded for Darwin to the point of being widely ignored, and IIRC we’ve had recent situations where the Linux capacity was unavailable too.\n2. [`nixpkgs-review`](https://github.com/Mic92/nixpkgs-review) checks more thoroughly than ofborg by building reverse dependencies, doesn’t rely on commit message parsing, integrates with the GitHub Actions eval, and is very commonly used, listed in our pull request checklist, and often run in GitHub Actions in a fully automated manner using [`nixpkgs-review-gha`](https://github.com/Defelo/nixpkgs-review-gha).\n\nPreviously, we were limited by how much we could use GitHub Actions compute by the [concurrency limits](https://docs.github.com/en/actions/reference/limits#job-concurrency-limits-for-github-hosted-runners); running actual builds in GitHub Actions was not an option, at least without using hacks like running builds inside user forks, which seemed like the kind of thing GitHub might not be happy about.\n\nHowever, now that our sponsored plan has been upgraded from Teams to Enterprise, these limits are much higher: 500 simultaneous jobs for Linux, and 50 for macOS (admitt",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4205784960",
+        "published_at": "2026-04-04T20:49:41Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/NixOS/nixpkgs/issues/506749",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[BUG] Claude Code Web Cannot Use gh CLI Commands (Permission Denied)",
+      "url": "https://github.com/anthropics/claude-code/issues/11139",
+      "repo": "anthropics/claude-code",
+      "issue_number": 11139,
+      "reactions": 35,
+      "comments": 28,
+      "created": "2025-11-06T18:42:20Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet\n- [x] This is a single bug report (please file separate reports for different bugs)\n- [x] I am using the latest version of Claude Code\n\n### What's Wrong?\n\n**Summary:** Strategic Claude (consultant mode) receives \"Permission denied\" errors when attempting to use GitHub CLI (`gh`) commands, while Code Claude (implementation mode) can successfully execute the same commands using the same PAT authentication.\n\n**Impact:** Prevents Strategic Claude from accessing GitHub projects, issues, and PRs for roadmap planning and strategic analysis, requiring manual workarounds.\n\n### What Should Happen?\n\n## Environment\n\n**Claude Code Version:** 2.0.31 (Claude Code)\n\n**Operating System:** Linux 4.4.0\n\n**GitHub CLI Version:** [Unknown - couldn't check due to permission error]\n\n**Repository:** --redacted--\n\n**Branch:** `--redacted--`\n\n**Session Type:** Strategic Claude (Consultant/Analyst)\n\n**Authentication:** Personal Access Token (PAT) configured via git remote URL\n\n## Expected Behavior\n\nStrategic Claude should",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3597097127",
+        "published_at": "2025-11-06T18:42:20Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/anthropics/claude-code/issues/11139",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[FEATURE] VSCode extension auto-includes opened files as context — should be opt-in by default",
+      "url": "https://github.com/anthropics/claude-code/issues/40869",
+      "repo": "anthropics/claude-code",
+      "issue_number": 40869,
+      "reactions": 34,
+      "comments": 9,
+      "created": "2026-03-30T08:30:53Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet\n- [x] This is a single feature request (not multiple features)\n\n### Problem Statement\n\nThe VSCode extension automatically includes every file I open or switch to as conversation context for Claude. As a developer, I constantly open, browse, and switch between 20+ files for various reasons — reviewing code, checking references, reading logs, comparing implementations. The vast majority of these have nothing to do with my current Claude conversation.\n\nThis auto-inclusion pollutes the conversation context with irrelevant files, which misleads Claude's responses and wastes context window tokens. The current workaround is clicking the eye icon to hide each unwanted file, but this resets per message — making it impractical.\n\nThe fundamental issue: VSCode's primary purpose is editing and managing files. Claude is a plugin, not the host. A plugin should not assume all host-level file operations are intended as input for itself.\n\n### Proposed Solution\n\n- **Default behavior: do NOT auto-include opene",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4168695591",
+        "published_at": "2026-03-30T08:30:53Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/anthropics/claude-code/issues/40869",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[BUG] SendMessage tool referenced but not available — agent continuation broken since resume parameter removal",
+      "url": "https://github.com/anthropics/claude-code/issues/38183",
+      "repo": "anthropics/claude-code",
+      "issue_number": 38183,
+      "reactions": 32,
+      "comments": 24,
+      "created": "2026-03-24T10:41:41Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet\n- [x] This is a single bug report (please file separate reports for different bugs)\n- [x] I am using the latest version of Claude Code\n\n### What's Wrong?\n\nThe Agent tool's `resume` parameter was removed (around v2.1.77). The documented replacement is `SendMessage`, but this tool does not exist at runtime. This breaks multi-round sub-agent conversations — there is no working mechanism to continue a previously spawned agent with its context preserved.\n\nThe system actively tells you to use SendMessage:\n- The Agent tool description says: *\"To continue a previously spawned agent, use SendMessage with the agent's ID or name as the `to` field.\"*\n- Every agent result prints: `\"use SendMessage with to: 'agentId' to continue this agent\"`\n- The `claude-code-guide` agent type description references it: *\"check if there is already a running or recently completed claude-code-guide agent that you can continue via SendMessage\"*\n\nBut `SendMessage` is not a built-in tool, not a deferred tool (ToolSearch returns ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4126891024",
+        "published_at": "2026-03-24T10:41:41Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/anthropics/claude-code/issues/38183",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Git Reward Hacking in SWEBench Pro OSS",
+      "url": "https://github.com/scaleapi/SWE-bench_Pro-os/issues/93",
+      "repo": "scaleapi/SWE-bench_Pro-os",
+      "issue_number": 93,
+      "reactions": 30,
+      "comments": 1,
+      "created": "2026-04-29T01:26:28Z",
+      "body_snippet": "# Summary\n\nHello! I'm on the evals team at Poolside AI and we've been heavily using SWE-Bench Pro internally for benchmarking our model development, lately we have been deeply reviewing model performance on the benchmark. While reviewing recent model runs on SWE-Bench Pro, I found a reward hacking exploit in the SWE-Bench Pro Open Source dataset via future git history mining. \n\nThis exploit is very similar in shape to the problem reported in SWE-Bench Verified last year: https://github.com/SWE-bench/SWE-bench/issues/465. \n\nSpecifically, the public OSS Docker images on DockerHub (and any subsequent builds from the Dockerfiles in the SWE-Bench Pro repo):\n1. Do not sufficiently remove future commit history on the main branch which can leak the solution\n2. Feature branches, such as `origin/dev`, contain future commits and are discoverable by agents with sufficient exploration. \n   - Looks like this concern was raised in #7 but not clearly proven to be exploited (example below)\n3. Git tags are also available that leak the same content (although I didn't see this come up in review, I was able to manually confirm it in images)\n\nThis means all a model really needs to do is `git show <fix>`",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4347273597",
+        "published_at": "2026-04-29T01:26:28Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/scaleapi/SWE-bench_Pro-os/issues/93",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "EISGIT for unrelated package",
+      "url": "https://github.com/npm/npm/issues/17475",
+      "repo": "npm/npm",
+      "issue_number": 17475,
+      "reactions": 29,
+      "comments": 0,
+      "created": "2017-06-27T19:19:56Z",
+      "body_snippet": "#### I'm opening this issue because:\r\n\r\n  - [x] npm is crashing.\r\n  - [ ] npm is producing an incorrect install.\r\n  - [ ] npm is doing something I don't understand.\r\n  - [ ] Other (_see below for feature requests_):\r\n\r\n#### What's going wrong?\r\n\r\nWhen installing a package, if a *different* package contains a `.git` directory, the install fails\r\nwith `EISGIT`. Note, there is as far as I can tell no need to do anything with the directory containing the `.git` directory; I do not know why it’s checked or touched at all. If there *is* some reason why it must be changed, `EISGIT` is a very confusing error message.\r\n\r\n\r\n\r\n```\r\n$ ls node_modules/@client/base/.git -ld\r\nlrwxrwxrwx 1 petter petter 57 Jun 27 12:02 node_modules/@client/base/.git -> /mnt/scratch/shared/petter/witkit-devenv/client/base/.git\r\n$ npm i fs-extra\r\nnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):\r\nnpm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.2: wanted {\"os\":\"darwin\",\"arch\":\"any\"} (current: {\"os\":\"linux\",\"arch\":\"x64\"})\r\n\r\nnpm ERR! path /mnt/scratch/shared/petter/witkit-devenv/client/root/node_modules/@client/base\r\nnpm E",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "238954810",
+        "published_at": "2017-06-27T19:19:56Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/npm/npm/issues/17475",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[BUG] Account email (PII) is injected into the model's system prompt without consent, disclosure,",
+      "url": "https://github.com/anthropics/claude-code/issues/81138",
+      "repo": "anthropics/claude-code",
+      "issue_number": 81138,
+      "reactions": 28,
+      "comments": 12,
+      "created": "2026-07-25T13:43:29Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet\n- [x] This is a single bug report (please file separate reports for different bugs)\n- [x] I am using the latest version of Claude Code\n\n### What's Wrong?\n\n**Claude Code takes personal data I gave Anthropic in order to authenticate, and injects it into the model's system prompt on every session — automatically, without my consent, without disclosing that it does so, and with no supported way to stop it.**\n\nThat is the whole complaint. Everything below is evidence for it.\n\nThe injected block:\n\n```\n# userEmail\nThe user's email address is <account email>.\n```\n\nFrom the v2.1.220 bundle, the user-context builder:\n\n```js\nlet n = process.env.ANTHROPIC_UNIX_SOCKET ? void 0 : dc()?.emailAddress\n// ...\nreturn {\n  ...(r && { claudeMd: r }),\n  ...(n && { userEmail: `The user's email address is ${n}.` }),\n  ...(o && { attachedProject: o }),\n  currentDate: `Today's date is ${LVe()}.`\n}\n```\n\nThe value is read from `~/.claude.json` → `oauthAccount.emailAddress`.\n\n**Without knowledge.** This behavior is document",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4975997565",
+        "published_at": "2026-07-25T13:43:29Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/anthropics/claude-code/issues/81138",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[MODEL] Complex engineering behavior regression across sessions; request RCA and auditability guarantees",
+      "url": "https://github.com/anthropics/claude-code/issues/50513",
+      "repo": "anthropics/claude-code",
+      "issue_number": 50513,
+      "reactions": 28,
+      "comments": 9,
+      "created": "2026-04-18T20:07:42Z",
+      "body_snippet": "### Preflight Checklist\n\n- [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Amodel) for similar behavior reports\n- [x] This report does NOT contain sensitive information (API keys, passwords, etc.)\n\n### Type of Behavior Issue\n\nOther unexpected behavior\n\n### What You Asked Claude to Do\n\nThis is an aggregate model-behavior report, not a single proprietary-session bug report.\n\nThe representative task class is complex engineering work in an existing codebase: investigate a bug or implementation issue, preserve the actual engineering objective, read the relevant code before editing, identify the likely root cause, make a causally justified fix, and provide evidence before claiming completion.\n\nA representative sanitized version of the task shape is:\n\n> Investigate and fix the root cause of a non-trivial bug in an existing codebase. Do not patch only the visible symptom. Before editing, read the relevant call path, tests, configuration, and surrounding code. Preserve existing behavior unless explicitly asked to change it. After the fix, explain the likely root cause, what mechanism changed, what checks were run, a",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4289056857",
+        "published_at": "2026-04-18T20:07:42Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/anthropics/claude-code/issues/50513",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Ruby LSP does not work when using different versions of Ruby",
+      "url": "https://github.com/mason-org/mason.nvim/issues/1777",
+      "repo": "mason-org/mason.nvim",
+      "issue_number": 1777,
+      "reactions": 28,
+      "comments": 14,
+      "created": "2024-08-26T11:05:21Z",
+      "body_snippet": "### I've searched open issues for similar requests\r\n\r\n- [X] Yes\r\n\r\n### I've manually reviewed logs to find potential errors\r\n\r\n- [X] Yes\r\n\r\n### I've recently downloaded the latest plugin version of mason.nvim\r\n\r\n- [X] Yes\r\n\r\n### Problem description\r\n\r\nFirst, I use `rbenv` to manage my ruby versions.\r\n\r\nMy system ruby is set to 3.3.4 (most current), and then in my project specific folders I am using different ruby versions using the `.ruby-version` file. When I install the `ruby-lsp` package using mason, it is installed with the system ruby version, that includes compiling the [`prism`](https://github.com/ruby/prism) gem that is a natively built C extension that is being linked against the specific ruby version it was built with (so in this case 3.3.4)\r\n\r\nWhen I now start neovim in one of my project folders that has a `.ruby-version` file, nvim tries to run `ruby-lsp` with the project specific ruby (i.e. 3.3.1), but since the installed version in `~/.local/share/nvim/mason/ruby-lsp` was built against the system ruby (3.3.4 here). Log file shows:\r\n\r\n```\r\n~/.rbenv/versions/3.3.1/lib/ruby/3.3.0/bundled_gems.rb:74:in `require': linked to incompatible ~/.rbenv/versions/3.3.4/lib/libruby.",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2486588542",
+        "published_at": "2024-08-26T11:05:21Z",
+        "collected_at": "2026-09-17T05:26:25+00:00",
+        "lineage_key": "https://github.com/mason-org/mason.nvim/issues/1777",
+        "lineage_basis": "canonical_url"
+      }
+    }
+  ]
+}

@@ -1,0 +1,576 @@
+{
+  "query": "code review missed bug",
+  "count": 30,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Show HN: Multi-Agent Code Review",
+      "url": "https://news.ycombinator.com/item?id=45814767",
+      "hn_id": "45814767",
+      "points": 5,
+      "comments": 0,
+      "author": "OliverGilan",
+      "created": "2025-11-04T19:11:01Z",
+      "text_snippet": "Hey HN! We’re Oliver Gilan &amp; Ben Warren and today we’re launching Mesa (<a href=\"https:&#x2F;&#x2F;mesa.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;mesa.dev</a>) into public beta to help large engineering teams review code more effectively.<p>There are <i>plenty</i> of code review agents that exist but we found that they fall short in a number of ways. They don’t…<p>- Let you tailor the reviews with enough fidelity<p>- Give you control over the models used. If a new foundation model is released I might want to try it!<p>- Align the costs effectively<p>Mesa solves these problems with a multi-agent architecture where you define custom review agents that specialize in reviewing certain dimensions of your codebase.  This allows you to finely control the review quality and receive reviews that are aware of specific dependencies, business logic, a specific domain in your codebase, or anything else you care about.<p>You can control the model a specialist uses which is great for trying newly rel",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "45814767",
+        "published_at": "2025-11-04T19:11:01Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=45814767",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Flowchart AI – Write English, get a flowchart",
+      "url": "https://flowchartai.org",
+      "hn_id": "44615231",
+      "points": 2,
+      "comments": 0,
+      "author": "tanchaowen84",
+      "created": "2025-07-19T13:14:41Z",
+      "text_snippet": "Hi HN,<p>I’m an indie developer who kept running into the same bottleneck during code reviews and product planning:  \nSomeone would describe a process—“A → B if success else C”—and I’d stop everything to sketch it out.  \nSo I built a tool to turn plain English into editable flowcharts.<p>### What it does<p>- You can describe a process in natural language, and get a fully editable flowchart rendered on the page.\n- No login required for a one-time free run.\n- Logging in with Google (via BetterAuth) gives you one diagram per day.\n- It uses Gemini 2.5 Flash under the hood.\n- For now, exporting is only supported in `.excalidraw` format—but SVG&#x2F;PDF are coming soon.<p>### Tech stack<p>- Frontend: Next.js 15 + TypeScript + Excalidraw\n- Backend: Vercel Serverless Functions\n- Auth: BetterAuth\n- Database: Supabase\n- Storage: Cloudflare R2 Bucket (S3-compatible)<p>### Try it<p>- Live demo: <a href=\"https:&#x2F;&#x2F;flowchartai.org\" rel=\"nofollow\">https:&#x2F;&#x2F;flowchartai.org</a>  \n  The",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "44615231",
+        "published_at": "2025-07-19T13:14:41Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://flowchartai.org",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "The Missed Reality: Code Review Wasn't Built for the AI Era",
+      "url": "https://news.ycombinator.com/item?id=48931713",
+      "hn_id": "48931713",
+      "points": 2,
+      "comments": 5,
+      "author": "axsdrizz",
+      "created": "2026-07-16T08:22:39Z",
+      "text_snippet": "The Bottleneck Isn&#x27;t Writing Code Anymore. It&#x27;s Trusting It.<p>The speed at which AI generates code has officially surpassed our capacity to review it. For decades, the bottleneck in software engineering was writing the code. Today, the bottleneck has shifted entirely to trusting that the code can run effectively in production and actually solve the business problem.<p>But let&#x27;s be honest: humans never truly scaled code review anyway.<p>Throughout my career, I have observed developers approving PRs or MRs that contain critical bugs. When they do engage in the review process, they often focus on stylistic issues. Why does this happen? Because reviewers are overloaded with their own backlogs to manage, and often choose the path of least resistance by saying, &quot;Looks good to me.&quot;<p>Now, we are trying to solve this by throwing AI at the problem!<p>The Missed Reality: Code Review Wasn&#x27;t Built for the AI Era<p>Code review - whether conducted by a human or an LLM ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "48931713",
+        "published_at": "2026-07-16T08:22:39Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=48931713",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How to deal with spellcheck code reviews?",
+      "url": "https://news.ycombinator.com/item?id=22872363",
+      "hn_id": "22872363",
+      "points": 1,
+      "comments": 1,
+      "author": "not_a_splchk",
+      "created": "2020-04-14T22:40:20Z",
+      "text_snippet": "It&#x27;s really hard writing code on my team. Some of the other devs get hung up on code style (naming things, formatting, and other important, but superficial things). These things literally don&#x27;t matter to me, a name is a name that just becomes a reference in the computer and so long as it&#x27;s readable and makes sense in context, I&#x27;m cool with it.<p>What usually happens though, is that no one actually reviews the architecture, finds edge cases, or actually thinks about what the code is doing or will do with invalid input. This means that when I review code, I&#x27;m having to duck and weave around comments about whether a variable name should be plural or not and point out logical issues with the code. This means I have to self-review my own code and find potential logical issues as well as deal with whether a variable name should be plural.<p>It&#x27;s nice that the code is super readable with consistent naming though, until it breaks. For example, I had a review and h",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "22872363",
+        "published_at": "2020-04-14T22:40:20Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=22872363",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: GuidedReview, a Chrome extension that helps review AI generated PRs",
+      "url": "https://guidedreview.dev",
+      "hn_id": "49179546",
+      "points": 2,
+      "comments": 0,
+      "author": "nshntarora",
+      "created": "2026-08-05T07:09:39Z",
+      "text_snippet": "Every company I see has an automated code review agent set up in their repository. It doesn&#x27;t solve the code review problem. The automated review agents cannot be trusted the same way coding agents cannot be trusted.<p>They&#x27;re very useful for finding bugs and edge cases you&#x27;ve missed, but they lack something only you have — &quot;taste.&quot;<p>You have more context. You know the people, the business, and the product better than any coding agent. You know when an abstraction is unnecessary. You know what needs a comment. You know where to break the rules.<p>And, for that...<p>Nothing beats &quot;reading&quot; the code.<p>Problem is, reading code is not easy. It&#x27;s even harder if your tools are designed for storing code rather than reading it.<p>That&#x27;s why I built Guided Review. It&#x27;s a chrome extension that converts your Github PR into a guided walkthrough so you can actually read code in clustered changes (not just big scrollable list of file changes in alp",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "49179546",
+        "published_at": "2026-08-05T07:09:39Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://guidedreview.dev",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: DeepSource (YC W20) – Find and fix issues during code reviews",
+      "url": "https://news.ycombinator.com/item?id=22547183",
+      "hn_id": "22547183",
+      "points": 105,
+      "comments": 27,
+      "author": "dolftax",
+      "created": "2020-03-11T16:38:02Z",
+      "text_snippet": "Hi HN! We&#x27;re Jai and Sanket — founders of DeepSource (<a href=\"https:&#x2F;&#x2F;deepsource.io\" rel=\"nofollow\">https:&#x2F;&#x2F;deepsource.io</a>). We’re automating objective parts of code review using static analysis to ensure the code is free of common issues (anti-patterns, bug risks, performance bottlenecks, and security flaws) before a reviewer looks at it. This prevents the reviewer from having to manually point out objective issues and ensures they don’t make it to production.<p>After college, Sanket co-founded DoSelect where I joined as the first engineer. Both of us have been contributing to open-source projects for a few years then. In the beginning, we didn’t have any processes setup around code reviews. We had some IDE plugins to run the linters, and some team members used them as pre-commit hooks. We didn’t have any tests back then and used to spend too much time on some pull requests pointing out improvements and if the pull request was very large, we never reviewed",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "22547183",
+        "published_at": "2020-03-11T16:38:02Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=22547183",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Reviewd – A free, local alternative to Claude Code Review(no API costs)",
+      "url": "https://github.com/simion/reviewd",
+      "hn_id": "47337920",
+      "points": 4,
+      "comments": 0,
+      "author": "skykery",
+      "created": "2026-03-11T16:43:53Z",
+      "text_snippet": "Anthropic just launched their official Claude Code Review tool, pricing it at $15–$25 per PR. If your team is shipping 10+ PRs a day, that model scales terribly.<p>Even before their launch, I was running a custom local Claude agent for my team to review PRs. The feedback was great and it caught real bugs, but the workflow was a massive time sink. I was manually invoking &quot;claude --agent .. branch_name&quot;, grab the output, filter it and post the relevant comments.<p>So I built reviewd to automate the local execution: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;simion&#x2F;reviewd\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;simion&#x2F;reviewd</a><p>It is a Python-based background daemon that runs on your machine or a VPS.<p>How it works:\n1. It polls GitHub&#x2F;BitBucket for open PRs.\n2. Creates a near-instant git worktree (no re-cloning).\n3. Optionally runs your actual local test&#x2F;lint commands (the AI gets the stdout&#x2F;stderr).\n4. Pipes the context into the Claude, ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47337920",
+        "published_at": "2026-03-11T16:43:53Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/simion/reviewd",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Any AI code review tools for GitHub PRs?",
+      "url": "https://news.ycombinator.com/item?id=42112643",
+      "hn_id": "42112643",
+      "points": 1,
+      "comments": 4,
+      "author": "jerrygoyal",
+      "created": "2024-11-12T03:52:16Z",
+      "text_snippet": "I&#x27;m already using Cursor, which has improved my productivity. Now, I&#x27;m on the hunt for an AI tool that can review open GitHub PRs and comment on potential bugs or issues. I&#x27;m not expecting anything groundbreaking – even if it can catch basic issues that might get missed in a PR, that would be super helpful.<p>We&#x27;ve all been there, right? Making those silly mistakes...<p>I&#x27;m totally open to paid services if they&#x27;re worth it.",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "42112643",
+        "published_at": "2024-11-12T03:52:16Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=42112643",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: DevScreen Recruit – a better software engineering interview",
+      "url": "https://devscreen.io",
+      "hn_id": "35247513",
+      "points": 7,
+      "comments": 1,
+      "author": "dmkirwan",
+      "created": "2023-03-21T15:22:04Z",
+      "text_snippet": "Hello HN!<p>I want to share DevScreen (<a href=\"https:&#x2F;&#x2F;devscreen.io&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;devscreen.io&#x2F;</a>). We’ve been iterating on DevScreen for a few years now with the goal of delivering an awesome interview process for both candidates and the company. We achieve this by using realistic job-based tests and allowing the candidate to use their own editor - not a whiteboard or unfamiliar online code editor.<p>Many of the existing products in this space just bring the same old whiteboard coding puzzles to the web, without solving the core problem: those tests are not a good indicator of performance. This is a waste of time for the candidate and a missed opportunity for the company. All it tests is the candidate’s ability to read ‘Cracking the Coding Interview’ and work well under the pressure of being watched. Neither are particularly important attributes of an engineer and result in companies often missing great candidates or hiring sub-par engineers",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "35247513",
+        "published_at": "2023-03-21T15:22:04Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://devscreen.io",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Devscreen.io – realistic tests for software engineering interviews",
+      "url": "https://devscreen.io/",
+      "hn_id": "32662259",
+      "points": 5,
+      "comments": 2,
+      "author": "dmkirwan",
+      "created": "2022-08-31T14:11:31Z",
+      "text_snippet": "Hi HN!<p>I wanted to share a project that I’ve been working on for the past year: DevScreen (<a href=\"https:&#x2F;&#x2F;devscreen.io\" rel=\"nofollow\">https:&#x2F;&#x2F;devscreen.io</a>). I built DevScreen to give companies a way to use more realistic interview assessments to software engineers in a way that works for both the company and the candidate.<p>I created this because of my own experiences as both an interviewer and candidate. Many companies don’t assess relevant skills during an interview. This is a waste of time for the candidate and a missed opportunity for the company. At the extreme end of the scale, you have companies asking candidates to invert a binary search tree on a whiteboard. All that this assesses is the candidate’s ability to read ‘Cracking the Coding Interview’ and work well under the pressure of being watched. Neither are particularly important attributes of an engineer and result in companies often missing great candidates or hiring sub-par engineers.<p>Today,",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "32662259",
+        "published_at": "2022-08-31T14:11:31Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://devscreen.io/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How to be a more diligent programmer",
+      "url": "https://news.ycombinator.com/item?id=15777147",
+      "hn_id": "15777147",
+      "points": 2,
+      "comments": 4,
+      "author": "lonesword",
+      "created": "2017-11-25T18:31:03Z",
+      "text_snippet": "After 2 spending 2 years in an enterprise software firm, I left for a startup. The new gig is an eye opener. I get a LOT of code review comments. While some were about styling and conventions and I no longer make those mistakes, others are more about design&#x2F;bugs. I&#x27;m glad that I have someone who reviews them and gives me constructive feedback. What concerns me is that I repeat some mistakes and I often get the feeling that I&#x27;m not careful&#x2F;diligent enough and let things slip through - this is after my &#x27;careful&#x27; self review of my pull request.\nSome of the issues I struggle with:<p>1. Missed use cases. Goal was to do X when Y is the input. But I forgot that Z also could be an input.<p>2. Passing around entire objects between methods instead of just their id in the db<p>3. Not using existing util function. I either forget that there&#x27;s a util function for this, or I&#x27;m not aware that there&#x27;s a util function for this.<p>4. General lousiness. Missin",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "15777147",
+        "published_at": "2017-11-25T18:31:03Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=15777147",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "6 Practices that turned AI from prototyper to workhorse (106 PRs in 14 days)",
+      "url": "https://news.ycombinator.com/item?id=47208471",
+      "hn_id": "47208471",
+      "points": 15,
+      "comments": 12,
+      "author": "waleedk",
+      "created": "2026-03-01T17:02:15Z",
+      "text_snippet": "1. <i>Specs and plans are source code</i>: Specs and plans live in git alongside source code, not in chat history. A new agent reads arch.md for the big picture, then its specific spec. You always know why something was built.<p>2. <i>Three models review every phase</i>: Claude, Gemini, and Codex catch almost entirely different bugs. No single model found more than 55% of issues. If you only review with the model that wrote the code, you&#x27;re missing half the bugs. 20 bugs caught before shipping. Claude Code found 5 bugs, Gemini and Codex caught another 15, including a severe security issue Claude missed.<p>3. <i>Enforce the process, don&#x27;t suggest it</i>. A state machine forces Spec → Plan → Implement → Review → PR. The AI can&#x27;t skip steps. Tests must pass before advancing. AIs don&#x27;t stick to the plan by themselves, you need rails.<p>4. <i>Annotate, don&#x27;t edit</i>. Most of the work is writing specs and reviews that guide the code, not hacking at files in an open-",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47208471",
+        "published_at": "2026-03-01T17:02:15Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=47208471",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Aether – Run Claude Code, Codex, or OpenCode in devboxes you can watch",
+      "url": "https://www.runaether.dev/",
+      "hn_id": "48872847",
+      "points": 3,
+      "comments": 3,
+      "author": "pranav100000",
+      "created": "2026-07-11T15:25:00Z",
+      "text_snippet": "Since coding agents like Claude Code and Codex came out, I&#x27;ve been pretty obsessed with them. It&#x27;s hard not to when you&#x27;re getting a 20x discount on inference. I&#x27;ve also been frustrated by them a lot. I hated walking around with my laptop lid open while connected to a hotspot on my phone, having to tediously accept commands so I don&#x27;t lose my root directory, and running out of RAM when running multiple agents that were spinning up dev servers in different worktrees at once.<p>A lot of people would say existing cloud agents are the solution to this, as none of the above problems apply to any cloud agent, but all the cloud agent products I tried had problems worse than local agents. Waiting for the VM to get set up when responding to a task made them feel like they were only for fire and forget workflows, and I missed going back and forth with the agent and using plan mode. On top of that, the whole VM was a black box and I had no way of verifying the agent&#x27;",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "48872847",
+        "published_at": "2026-07-11T15:25:00Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://www.runaether.dev/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Harden – 5 AI models audit your code, then debate each other's findings",
+      "url": "https://harden.center/",
+      "hn_id": "47298521",
+      "points": 1,
+      "comments": 0,
+      "author": "greatrat000",
+      "created": "2026-03-08T16:17:35Z",
+      "text_snippet": "I built harden because I kept copy-pasting code between ChatGPT, Claude, and Gemini trying to cross-check their reviews. Each one found things the others missed, but synthesizing their outputs manually was painful.<p>harden runs 5 frontier models (Claude, GPT-4o, Gemini, Mistral, DeepSeek) in parallel on the same input. They analyze independently, then cross-examine each other&#x27;s findings. A coordinator synthesizes the debate into consensus findings and produces a fixed version.<p>The key insight: no single model finds more than ~72% of issues. The union of all five hits ~94%. After cross-examination (where models must defend findings against skeptical peers), accuracy rises to ~97% and false positives drop ~60%.<p><pre><code>  How it works:\n  - Round 1: All 5 models audit independently (no groupthink)\n  - Debate: Each model reviews others&#x27; findings, provides evidence for&#x2F;against\n  - Consolidation: Only findings that survive cross-examination make the report\n  - Fix: Coor",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47298521",
+        "published_at": "2026-03-08T16:17:35Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://harden.center/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "A three-layer memory architecture for long-running agents",
+      "url": "https://news.ycombinator.com/item?id=46097759",
+      "hn_id": "46097759",
+      "points": 1,
+      "comments": 0,
+      "author": "mvyshnyvetska",
+      "created": "2025-11-30T16:05:52Z",
+      "text_snippet": "Anthropic&#x27;s recent piece on effective harnesses for long-running agents hit close to home. We&#x27;ve been wrestling with the same problems — agents that try to one-shot everything, declare victory prematurely, and leave chaos for the next session to clean up. But we solved some of these problems differently. Here&#x27;s what&#x27;s working for us, what isn&#x27;t yet, and where we respectfully disagree with the proposed solutions.<p>The Memory Problem: Three Layers Beat One \nAnthropic&#x27;s solution is a progress.txt file plus git history. It works, but it&#x27;s flat. \nWe use three layers instead:\nLayer 1: Model actualization. A semantic memory system that helps the orchestrating agent understand &quot;what are we building and why.&quot; This is the soft layer.\nLayer 2: Think Jira meets Git, but for AI agents. Structured storage of tasks with metadata: blockers, decision paths, dependencies, progress state. The agent doesn&#x27;t just know what to do next — it understands the l",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "46097759",
+        "published_at": "2025-11-30T16:05:52Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=46097759",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Allow to provide compile-time variables for native platforms from a file",
+      "url": "https://github.com/flutter/flutter/issues/139289",
+      "repo": "flutter/flutter",
+      "issue_number": 139289,
+      "reactions": 193,
+      "comments": 20,
+      "created": "2023-11-30T08:51:53Z",
+      "body_snippet": "An **update** from @christopherfujino, tech lead for the Flutter CLI tool:\r\n\r\nI recognize that there were many users who started using variables provided via `--dart-define-from-file` in their native build configurations who were then broken with the Flutter 3.16 release when this behavior was removed. I take personal responsibility for this, as I both reviewed the PR which introduced this behavior and the follow-up that removed it. I sincerely apologize both that your builds were broken and that we failed to communicate this change in behavior in the release notes. I am taking a personal action item after this to be more cognizant in how changes to tool behavior may affect users' builds and--if we decide it is worth making these breaking changes, to ensure they're communicated in official Flutter release notes.\r\n\r\nAs for how to move forward, I see that there is a lot of interest in this feature from the community, which is great. In order for this feature to be merged, someone will need to write a design document. Please see https://github.com/flutter/flutter/wiki/Design-Documents for the process of writing and sharing a design document. In particular, I have the following questio",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2018163948",
+        "published_at": "2023-11-30T08:51:53Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/flutter/flutter/issues/139289",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis",
+      "url": "https://github.com/OfficeDev/office-js/issues/6513",
+      "repo": "OfficeDev/office-js",
+      "issue_number": 6513,
+      "reactions": 154,
+      "comments": 46,
+      "created": "2026-02-12T14:52:02Z",
+      "body_snippet": "# 233 Developers Discussed Abandoning the Office Add-in Platform — An Open Letter on the Office.js Stability, Security & Trust Crisis\n\n## An Open Letter from the Office Add-in Developer Community\n\n**To:** Microsoft Office Extensibility Team, Microsoft 365 Platform Team, Microsoft Developer Relations  \n**From:** The Office Add-in Developer Community  \n**Date:** February 2026  \n**Subject:** Critical Platform Stability, Security & Trust Issues Requiring Immediate Action\n\n---\n\n## Executive Summary\n\nWe are writing to formally raise our deep concerns about the **stability, reliability, security, and long-term viability** of the Office.js add-in platform.\n\nThis letter is informed by a comprehensive analysis of **every issue filed in the OfficeDev/office-js GitHub repository** — over **6,200 issues** spanning 7+ years. The full evidence base is published in the accompanying[01-DETAILED-FINDINGS.md](https://github.com/user-attachments/files/25265671/01-DETAILED-FINDINGS.md)  (842 lines, every issue cited)\n### The Numbers\n\n| Metric | Value |\n|--------|-------|\n| Total issues filed | ~6,219 |\n| Currently open | ~1,092 |\n| Issues describing \"no longer works\" | 736 |\n| Officially labeled regres",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3932289952",
+        "published_at": "2026-02-12T14:52:02Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/OfficeDev/office-js/issues/6513",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "C&C Generals ZH: A call from the future (EA Released the Source Code, what now?)",
+      "url": "https://github.com/TheAssemblyArmada/Thyme/issues/1168",
+      "repo": "TheAssemblyArmada/Thyme",
+      "issue_number": 1168,
+      "reactions": 58,
+      "comments": 5,
+      "created": "2025-02-28T17:25:00Z",
+      "body_snippet": "\n# Unite the C&C Generals: Zero Hour Community Around Open Source\n\n**Command & Conquer: Generals – Zero Hour** has just been given a new lease on life. EA’s unprecedented release of the **full Zero Hour source code** [under GPLv3](https://hardforum.com/threads/source-code-for-various-command-conquer-titles-released.2040026/#:~:text=The%20source%20code%20for%20Tiberian,support%20uploading%20directly%20to%20Steam) is a historic opportunity. For years, our community has kept this classic alive through mods, patches, and reverse-engineering. Now, with the actual source code in our hands, we stand at a crossroads: **will we splinter into hundreds of separate forks, or unite to build something amazing together?** This is a call to **unite our efforts** into a single collaborative project that benefits *all* Generals fans.\n\n## Call to Action: One Community, [One Repository](https://github.com/TheSuperHackers/GeneralsGameCode)\n\nIt’s inspiring (and a little overwhelming) to see over **400 forks** of the [EA repository](https://github.com/electronicarts/CnC_Generals_Zero_Hour) pop up within days. Enthusiasm is sky-high – but if each fork works in isolation, we risk duplicating work and fragm",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2887709228",
+        "published_at": "2025-02-28T17:25:00Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/TheAssemblyArmada/Thyme/issues/1168",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "CoreCLR PowerPC port (experiment write up)",
+      "url": "https://github.com/dotnet/runtime/issues/128783",
+      "repo": "dotnet/runtime",
+      "issue_number": 128783,
+      "reactions": 27,
+      "comments": 7,
+      "created": "2026-05-29T21:27:40Z",
+      "body_snippet": "# Introduction\n\nWith the news about MonoVM removal in .NET 12 I was pondering what is the future of community supported platforms that are currently not supported by the CoreCLR and NativeAOT runtime. This mainly concerns the PowerPC and S390X platforms at this point.\n\nIn the interest of learning something new I decided to embark on an experiment to steer an AI agent to make a PowerPC port, from start to finish. The goal was to evaluate the feasibility of such a complex task and also to see if we can learn some lessons in making AI agents working more effectively in debugging the .NET runtime code base.\n\nIf you are not interested in the lessons learned, you can just skip to the end (or read the TL;DR version from AI itself in comment below). This is supposed to read more like an experiment report than an actual issue or request for the PowerPC port to be merged or developed. I have no personal interest in long term maintenance of this port but if anyone feels like picking it up it's available in my fork.\n\n# AI model and harness\n\nWithout further ado, let's get to the details. For the AI agent I used predominantly Codex harness with GPT-5.5 model. Various reasoning levels were used t",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4551726361",
+        "published_at": "2026-05-29T21:27:40Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/dotnet/runtime/issues/128783",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature Request: Session Handoff / Continuity Support",
+      "url": "https://github.com/anthropics/claude-code/issues/11455",
+      "repo": "anthropics/claude-code",
+      "issue_number": 11455,
+      "reactions": 25,
+      "comments": 34,
+      "created": "2025-11-12T02:00:56Z",
+      "body_snippet": "# Feature Request: Session Handoff / Continuity Support\n\n**For**: Claude Code CLI (https://github.com/anthropics/claude-code)\n**Proposed By**: Patrick Hardiman (systems integrator, MeritWorks platform development)\n**Date**: 2025-11-11\n\n---\n\n## Problem Statement\n\n**Current Limitation**: Claude CLI sessions are stateless. When a session ends, context and pending tasks are lost unless manually documented by the user.\n\n**Real-World Impact**:\n- Multi-day workflows require users to manually brief Claude at session start (\"we were working on X, next step is Y\")\n- Complex projects lose momentum between sessions\n- Users must maintain external task lists or rely on memory\n- No built-in way to track project progression over time\n- Onboarding new team members requires explaining full project history\n\n**Example Scenario**:\n```\nDay 1 Session: Set up infrastructure, configure integrations (80% complete)\n           End: User exits session with pending tasks\nDay 2 Session: User starts fresh, must re-explain context\n           Problem: Wasted time, potential missed tasks\n```\n\n---\n\n## Proposed Solution\n\nAdd **built-in session handoff support** to Claude Code CLI via a standardized continuity file.\n\n#",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3614558755",
+        "published_at": "2025-11-12T02:00:56Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/anthropics/claude-code/issues/11455",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Accessibility: AXVisibleCharacterRange returns wrong data; AXRangeForPosition, AXBoundsForRange missed",
+      "url": "https://github.com/ghostty-org/ghostty/issues/9932",
+      "repo": "ghostty-org/ghostty",
+      "issue_number": 9932,
+      "reactions": 19,
+      "comments": 24,
+      "created": "2025-12-16T17:38:55Z",
+      "body_snippet": "\n### Discussed in https://github.com/ghostty-org/ghostty/discussions/9930\n\n<div type='discussions-op-text'>\n\n<sup>Originally posted by **grishy** December 16, 2025</sup>\n### Issue Description\r\n\r\nGhostty’s accessibility implementation is missing attributes needed by assistive SW and third-party tools to query text at the cursor position, for example and more problematic, implement some API in wrong way.\r\n\r\nI found this during debugging of my translation app when clicked on Ghostty app, which works across the system and has text access and fast tracking. Usually, it takes 10–20 ms in other apps, like Chrome or others, but here it took 3 seconds.\r\n  \r\nI used `log show --last 1m` to get a lot of text below in tests\r\nThis prevents screen readers and accessibility tools from efficiently working with Ghostty. \r\n\r\nThe main issue is that it returns the whole terminal blob in both cases: `AXVisibleCharacterRange` and `AXValue` .\r\nAlso, `AXValue` would be better if it did not return the full terminal context, if possible, only from the latest command run. For example, browsers return just a paragraph, not a whole page also for `AXValue`.\r\n\r\nNOTE: For debug I suggest to use macOS buildin tool ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3735719996",
+        "published_at": "2025-12-16T17:38:55Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/ghostty-org/ghostty/issues/9932",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Future of this project and discussion about `objc2`",
+      "url": "https://github.com/servo/core-foundation-rs/issues/729",
+      "repo": "servo/core-foundation-rs",
+      "issue_number": 729,
+      "reactions": 12,
+      "comments": 9,
+      "created": "2025-04-20T09:18:05Z",
+      "body_snippet": "Hey @waywardmonkeys, @jrmuizel, @mrobinson and @wusyong (and CC @tmandry and @simlay).\n\nOver the past few years, I've been working on replacements for the crates in this repo in [the `objc2` project](https://github.com/madsmtm/objc2), see https://github.com/servo/core-foundation-rs/pull/513 and https://github.com/servo/core-foundation-rs/pull/628 for some previous discussion. To rehash the benefits of the `objc2-*` crates:\n- Code generation from headers, which means that basically every upstream API is available (only a few explicitly skipped APIs aren't), and this will remain true even as Apple releases new SDK versions over time (since we only need to rerun the generator).\n- Automatic memory management, all objects are wrapped by the code generator in either `objc2::rc::Retained` or `objc2_core_foundation::CFRetained`, which will release the object on `Drop`. The generator knows about the \"create rule\" and about opt-outs like `CF_RETURNS_NOT_RETAINED` etc. (so it will do this correctly with a much higher probability than if a human did it).\n- Type-safety, especially compared to `cocoa` and `cocoa-foundation` where everything is just an extension trait on the `id` pointer.\n\nI'm mo",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3006908921",
+        "published_at": "2025-04-20T09:18:05Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/servo/core-foundation-rs/issues/729",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Gatsby Adapters causes regressions & issues with headers & redirects for NETLIFY builds on >=5.12.0",
+      "url": "https://github.com/gatsbyjs/gatsby/issues/38542",
+      "repo": "gatsbyjs/gatsby",
+      "issue_number": 38542,
+      "reactions": 11,
+      "comments": 9,
+      "created": "2023-09-12T12:18:07Z",
+      "body_snippet": "### Preliminary Checks\r\n\r\n- [X] This issue is not a duplicate. Before opening a new issue, please search existing issues: https://github.com/gatsbyjs/gatsby/issues\r\n- [X] This issue is not a question, feature request, RFC, or anything other than a bug report directly related to Gatsby. Please post those things in GitHub Discussions: https://github.com/gatsbyjs/gatsby/discussions\r\n\r\n### Description\r\n\r\nThe forced usage of Gatsby Adapters has caused several regressions and issues related to headers & redirects for builds running on NETLIFY.  As of v5.12.0, Gatsby will detect that the build is running on [NETLIFY](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/adapters.js#L17) and add the [gatsby-adapter-netlify](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/utils/adapter/init.ts#L34) adapter to the build and remove the `gatsby-plugin-netlify` plugin without any `stock` way to \"opt-out\" of the behavior.\r\n\r\nUnfortunately, the `gatsby-adapter-netlify` does not have feature parity with `gatsby-plugin-netlify` and also contains a few bugs.  The combination of these two things results in build output being different for anyone building on NETLIFY.\r\n\r\nA c",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "1892395786",
+        "published_at": "2023-09-12T12:18:07Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/gatsbyjs/gatsby/issues/38542",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Template] Code Review Style Guide",
+      "url": "https://github.com/zhaochenyang20/sglang-diffusion-routing/issues/32",
+      "repo": "zhaochenyang20/sglang-diffusion-routing",
+      "issue_number": 32,
+      "reactions": 10,
+      "comments": 7,
+      "created": "2026-02-24T04:03:36Z",
+      "body_snippet": "## Review Structure\n\nFor every PR you review, you must address the following four dimensions in order:\n\n### 1. PR Summary & Technical Background (PR 总结与技术背景)\nExplain what this PR does. Go beyond surface-level description — explain the underlying technical principles at play (e.g., gradient flow, memory layout, synchronization barriers, CUDA kernel behavior, distributed communication patterns, attention mechanisms, KV cache management, speculative decoding, tensor parallelism). Assess whether the change is **necessary and justified**, or if it's solving a non-problem, re-implementing something that already exists, or introducing unnecessary complexity.\n\n### 2. Code Quality & Correctness (代码质量与正确性)\nConduct a strict, line-by-line review of the code changes. You are demanding: code must be mature, well-structured, and production-grade. Apply the **full P0-P4 style guide** (detailed below) as your evaluation framework. Specifically flag:\n- **[P0] Correctness**: Latent bugs — race conditions, off-by-one errors, incorrect tensor shapes, dtype mismatches, resource leaks, over-catching, over-protecting, missing guard clauses\n- **[P1] Performance**: Unnecessary host-device syncs, non-vectori",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3981379078",
+        "published_at": "2026-02-24T04:03:36Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/zhaochenyang20/sglang-diffusion-routing/issues/32",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Redesign template from ground up, with new framework",
+      "url": "https://github.com/greenelab/lab-website-template/issues/278",
+      "repo": "greenelab/lab-website-template",
+      "issue_number": 278,
+      "reactions": 8,
+      "comments": 0,
+      "created": "2024-09-03T21:26:31Z",
+      "body_snippet": "**It's uncertain when or if we will have time for this redesign**, but this issue attempts to document and discuss the motivations and ideas involved. **Please leave a 👍** if you would like to see this redesign happen, or a 👎 if you are not interested and don't think it's worth the effort.\n\n---\n\n# Introduction\n\nLab Website Template (LWT) was originally built upon [Jekyll](https://jekyllrb.com/), a tool for generating static websites. This was chosen at the time due to its ubiquity and its [convenient \"automatic\" integration with GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll). Otherwise, Jekyll is quite old and limited, and has many other shortcomings discussed below. With the release of v1.0.0, the template moved to a \"manual\" GitHub Pages integration, which, while opening up many new possibilities, essentially removed one of the main benefits of using Jekyll. This would've been an ideal time to switch to a completely different tool, but the opportunity was missed. Though, now we have the benefit of more lessons-learned that we can incorporate into a new design from the start.\n\nThe goal of a redesign would be",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2503817867",
+        "published_at": "2024-09-03T21:26:31Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/greenelab/lab-website-template/issues/278",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Simplifying exchanging contacts ",
+      "url": "https://github.com/nextcloud/server/issues/48324",
+      "repo": "nextcloud/server",
+      "issue_number": 48324,
+      "reactions": 7,
+      "comments": 1,
+      "created": "2024-09-24T16:09:13Z",
+      "body_snippet": "<!--\r\nThanks for reporting issues back to Nextcloud!\r\n\r\nNote: This is the **issue tracker of Nextcloud**, please do NOT use this to get answers to your questions or get help for fixing your installation. This is a place to report bugs to developers, after your server has been debugged. You can find help debugging your system on our home user forums: https://help.nextcloud.com or, if you use Nextcloud in a large organization, ask our engineers on https://portal.nextcloud.com. See also  https://nextcloud.com/support for support options.\r\n\r\nNextcloud is an open source project backed by Nextcloud GmbH. Most of our volunteers are home users and thus primarily care about issues that affect home users. Our paid engineers prioritize issues of our customers. If you are neither a home user nor a customer, consider paying somebody to fix your issue, do it yourself or become a customer.\r\n\r\nGuidelines for submitting issues:\r\n\r\n* Please search the existing issues first, it's likely that your issue was already reported or even fixed.\r\n    - Go to https://github.com/nextcloud and type any word in the top search/command bar. You probably see something like \"We couldn’t find any repositories matchin",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2545819110",
+        "published_at": "2024-09-24T16:09:13Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/nextcloud/server/issues/48324",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "RFC: ROS 2 integration strategy (ecosystem survey and proposed direction)",
+      "url": "https://github.com/huggingface/lerobot/issues/4368",
+      "repo": "huggingface/lerobot",
+      "issue_number": 4368,
+      "reactions": 7,
+      "comments": 17,
+      "created": "2026-08-07T11:07:31Z",
+      "body_snippet": "## tldr\n \nThe [release proposal (#3832)](https://github.com/huggingface/lerobot/issues/3832) lists \"ROS2 integration exploration\" as a community-open item. Six community projects already connect LeRobot and ROS 2, each covering a different piece, with incompatible approaches and only two of them listed in the official docs. This issue surveys them, names the gaps, and proposes five deliverables. React 👍 if this is worth pursuing, and comment with which deliverables you'd use and what your setup is (see **Community participation**).\n \n## Why now\n \n- The [release proposal (#3832)](https://github.com/huggingface/lerobot/issues/3832) leaves ROS 2 integration open to the community, and the team has signaled openness to the direction being driven by what people actually find useful.\n- The plugin system (`lerobot_robot_*`, `lerobot_teleoperator_*`, `lerobot_camera_*`) provides a clean extension point, and the README already mentions community ROS 2 bridges without listing them.\n- ROS 2 is where most deployed robots, lab setups and sim stacks live. A lab with a ROS 2 robot that wants to try ACT, pi0, SmolVLA, etc. today has to pick between incompatible community bridges or write their own.",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "5089554410",
+        "published_at": "2026-08-07T11:07:31Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/huggingface/lerobot/issues/4368",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Static v. dynamic languages",
+      "url": "https://github.com/guevara/read-it-later/issues/4997",
+      "repo": "guevara/read-it-later",
+      "issue_number": 4997,
+      "reactions": 0,
+      "comments": 0,
+      "created": "2019-08-02T03:57:02Z",
+      "body_snippet": "Static v. dynamic languages<br>\n<br>\nhttps://ift.tt/2j1zGUB<br>\n<br>\n<br>\n<br>\n<div>\n<strong>Static v. dynamic languages</strong>\n<hr>\n<p>There are some pretty strong statements about types floating around out there. The claims range from the oft-repeated phrase that when you get the types to line up, everything just works, to &ldquo;not relying on type safety is unethical (if you have an SLA)&rdquo;, and \"<a href=\"https://news.ycombinator.com/item?id=4369359\">It boils down to cost vs benefit, actual studies, and mathematical axioms, not aesthetics or feelings</a>\". There are probably plenty of strong claims about dynamic languages that I'd be skeptical of if I heard them, but I'm not in the right communities to hear the stronger claims about dynamically typed languages. Either way, it's rare to see people cite actual evidence.</p>\n<p>Let's take a look at the empirical evidence that backs up these claims.</p>\n<p><a href=\"#wat_summary\">Click here</a> if you just want to see the summary without having to wade through all the studies. The summary of the summary is that most studies find very small effects, if any. However, the studies probably don't cover contexts you're actually inte",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "475984692",
+        "published_at": "2019-08-02T03:57:02Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/guevara/read-it-later/issues/4997",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Spaced Repetition - Gwern.net",
+      "url": "https://github.com/guevara/read-it-later/issues/1763",
+      "repo": "guevara/read-it-later",
+      "issue_number": 1763,
+      "reactions": 0,
+      "comments": 0,
+      "created": "2018-12-13T16:15:17Z",
+      "body_snippet": "Spaced Repetition - Gwern.net<br>\n<br>\nhttps://ift.tt/2yBeFKP<br>\n<br>\ngwern<br>\n<br>\n<div><div>\n<blockquote>\n<p>Spaced repetition is a technique for efficient memorization &amp; practice of skills where instead of doing a lot of work quickly, each item’s practices are automatically spread out over time, with increasing durations as one learns the item. I review what this technique is useful for, some of the large research literature on it and the testing effect (up to ~2013, primarily), the available software tools and use patterns, and miscellaneous ideas &amp; observations on it.</p>\n</blockquote>\n<p>One of the most fruitful areas of computing is making up for human frailties. They do arithmetic perfectly because we can’t<a href=\"#fn1\"><sup>1</sup></a>. They remember terabytes because we’d forget. They make the best calendars, because they always check what there is to do today.</p>\n<p>We use any number of such <a title=\"Wikipedia: neuroprosthetic\" href=\"https://en.wikipedia.org/wiki/neuroprosthetic\">neuroprosthetic</a>s<a href=\"#fn2\"><sup>2</sup></a>, but there are always more to be discovered. They’re worth looking for because they are so valuable: a shovel is much more effect",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "390751820",
+        "published_at": "2018-12-13T16:15:17Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/guevara/read-it-later/issues/1763",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "TECH GUIDE NEWS TIMELINE 2018",
+      "url": "https://github.com/FGF-College-Work/Noticias/issues/206",
+      "repo": "FGF-College-Work/Noticias",
+      "issue_number": 206,
+      "reactions": 0,
+      "comments": 0,
+      "created": "2018-11-03T06:22:43Z",
+      "body_snippet": "\r\n## Contents ##\r\n\r\n* [JANEIRO](#janeiro) \r\n* [FEVEREIRO](#fevereiro) \r\n\r\n## JANEIRO ##\r\n\r\n *JANEIRO 01* \r\n\r\n- Apple’s iPhone is the best-selling tech product of 2017\r\n\r\n- LG shows off the world’s first 88-inch 8K OLED display\r\n\r\n- Xiaomi Mi A1 is receiving its Android 8.0 Oreo update\r\n\r\n- WhatsApp Crashed For 1 Hour, Restored as India Welcomed 2018\r\n\r\n- Google takes down Chrome extension that was secretly mining for cryptocurrency\r\n\r\n- You’ll be able to use Android Auto without any wires this year\r\n\r\n- Elon Musk starts 2018 with $1M for tunneling plan after ‘boring’ caps sell out\r\n\r\n- Smartphones with removable batteries are never coming back\r\n\r\n- Google Maps No Longer Lets You Post Negative Reviews About Your Crappy Job\r\n\r\n- Iran reportedly blocks Telegram, Instagram amid protests\r\n\r\n- Telegram for Android now supports multiple accounts\r\n\r\n- [CEO de NiceHash renuncia a su cargo tras robo de 4.700 bitcoins por parte de hackers](https://www.criptonoticias.com/sucesos/ceo-nicehash-renuncia-cargo-robo-bitcoins-hackers/)\r\n\r\n-  [Casas de cambio de criptomonedas representan el 80% de los ataques DDoS del tercer trimestre de 2017](https://www.criptonoticias.com/seguridad/casas-cambio-cri",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "377028093",
+        "published_at": "2018-11-03T06:22:43Z",
+        "collected_at": "2026-09-17T05:26:41+00:00",
+        "lineage_key": "https://github.com/FGF-College-Work/Noticias/issues/206",
+        "lineage_basis": "canonical_url"
+      }
+    }
+  ]
+}

@@ -1,0 +1,576 @@
+{
+  "query": "research papers manually",
+  "count": 30,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Ask HN: What is the most effective way to unblur a QR code?",
+      "url": "https://news.ycombinator.com/item?id=44946420",
+      "hn_id": "44946420",
+      "points": 1,
+      "comments": 2,
+      "author": "np1810",
+      "created": "2025-08-18T23:24:39Z",
+      "text_snippet": "In 2025, what is the best approach to unblur a QR code? And, how others would approach it — any new tools or AI workflows specifically good at structured unblurring like below?<p>I encountered a video with a QR code blurred out with the caption “blurred to prevent intruders” [1]. Since I had watched a Veritasium&#x27;s video [2] I had some idea about its working. So with an ethical hacker spirit, I tried to recover the QR. First step failed, where I checked HuggingFace for any QR unblurring models because that is what roughly most AI ImageGen models inherently do - keep unblurring until the desired result, but found no models, though I found some relevant research papers [3].<p>In the end, I manually identified the QR module size (81×81) and hoped for high error correction (H) so that 30% incorrect QR will still be valid. Since the blur varied across regions, I processed it in two parts: Adobe Photoshop&#x27;s Smart Sharpen worked well on the outer section, while a PS script added blac",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "44946420",
+        "published_at": "2025-08-18T23:24:39Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=44946420",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: SciCrumb – 3-minute podcasts from the latest research papers",
+      "url": "https://www.scicrumb.com/",
+      "hn_id": "44560974",
+      "points": 2,
+      "comments": 0,
+      "author": "hugoib",
+      "created": "2025-07-14T14:54:27Z",
+      "text_snippet": "Hi HN!<p>I’ve been exploring how to make scientific research more accessible.<p>Academic papers are powerful but hard for non-specialists (or even busy specialists!) to digest.<p>So I built SciCrumb — a tiny site where I convert new research papers into short ~3-minute podcast-style audio summaries.<p>The idea is:<p>Bridge the gap between research and curiosity\nSave time for people who’d rather listen\nMake science less intimidating<p>Right now, I’ve manually curated and narrated 4 papers across:\nMedicine\nComputer Science\nEconomics\nEnvironment<p>It’s early days. I’d love feedback on:\nWhether this is useful\nTopics people care about<p>I would love to scale it to a full blown app and bring science to regular people.<p>Demo: <a href=\"http:&#x2F;&#x2F;scicrumb.com\" rel=\"nofollow\">http:&#x2F;&#x2F;scicrumb.com</a><p>Thanks for checking it out!",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "44560974",
+        "published_at": "2025-07-14T14:54:27Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://www.scicrumb.com/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Undermind (YC S24) – AI agent for discovering scientific papers",
+      "url": "https://news.ycombinator.com/item?id=41069909",
+      "hn_id": "41069909",
+      "points": 292,
+      "comments": 126,
+      "author": "jramette",
+      "created": "2024-07-25T15:36:57Z",
+      "text_snippet": "Hey HN! We’re Josh and Tom from Undermind (<a href=\"https:&#x2F;&#x2F;www.undermind.ai&#x2F;\">https:&#x2F;&#x2F;www.undermind.ai&#x2F;</a>). We’re building a search engine for complex scientific research. There&#x27;s a demo video at <a href=\"https:&#x2F;&#x2F;www.loom.com&#x2F;share&#x2F;10067c49e4424b949a4b8c9fd8f3b12c?sid=5ee3cd96-2b05-4768-8856-cb1b83e40a70\" rel=\"nofollow\">https:&#x2F;&#x2F;www.loom.com&#x2F;share&#x2F;10067c49e4424b949a4b8c9fd8f3b12c?...</a>, as well as example search results on our homepage.<p>We’re both physicists, and one of our biggest frustrations during grad school was finding research — There were a lot of times when we had to sit down to scope out new ideas for a project and quickly become a deep expert, or we had to find solutions to really complex technical problems, but the only way to do that was manually dig through papers on Google Scholar for hours. It was very tedious, to the point where we would often just skip the careful research and hope for th",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "41069909",
+        "published_at": "2024-07-25T15:36:57Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=41069909",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you stay on top of advances in AI?",
+      "url": "https://news.ycombinator.com/item?id=36317746",
+      "hn_id": "36317746",
+      "points": 51,
+      "comments": 41,
+      "author": "mbm",
+      "created": "2023-06-13T21:31:57Z",
+      "text_snippet": "The rate of change in the AI space is super fast. What are some of the best ways to stay on top on what&#x27;s going on in AI (let&#x27;s say on a weekly or bi-weekly basis) without having to be glued to social media or compile a bunch of different sources together from across the Internet manually?<p>Let&#x27;s say for example that I&#x27;m a founder in the space, and want to be abreast of what the major new things are this week.<p>I&#x27;m thinking, at the least:<p>* Press releases from relevant companies<p>* Relevant new research papers<p>* News articles<p>* Blogs<p>* Open-source library updates<p>* Videos<p>* Tweets",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "36317746",
+        "published_at": "2023-06-13T21:31:57Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=36317746",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Superb AI (YC W19) – AI-Powered Training Data",
+      "url": "https://news.ycombinator.com/item?id=19380813",
+      "hn_id": "19380813",
+      "points": 47,
+      "comments": 22,
+      "author": "hyunsoo90",
+      "created": "2019-03-13T17:04:44Z",
+      "text_snippet": "Hi HN,<p>I’m Hyun, one of the co-founders of Superb AI (<a href=\"https:&#x2F;&#x2F;www.superb-ai.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.superb-ai.com</a>) in the YC W19 batch. We use AI to semi-automatically collect and label training data for tech companies, and help them implement machine-learning based features faster.<p>Almost all the magical AI features that we see are actually built using training data powered by humans. Companies build software tools and farm out to a bunch of people to click and type things repeatedly to label the raw data. That&#x27;s how training data is made, and that’s a very large portion of what an AI is, up to this point. It has worked well up to now, but the process is not very fast and often prone to error. Moreover, the size of training datasets has increased exponentially over the past few years, as it almost guarantees a higher AI performance. AI engineers are now handling datasets as large as tens of millions of images, and thus there is a great",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "19380813",
+        "published_at": "2019-03-13T17:04:44Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=19380813",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Is there any decent API to download a paper given its name?",
+      "url": "https://news.ycombinator.com/item?id=32724895",
+      "hn_id": "32724895",
+      "points": 18,
+      "comments": 13,
+      "author": "hexomancer",
+      "created": "2022-09-05T14:47:04Z",
+      "text_snippet": "I am developing a PDF viewer designed for reading research papers[1]. One very useful feature that I would like to add is the ability to directly download and open a paper just by clicking on its name in the PDF file. I have implemented a version of this using PyPaperBot [2] which is not bad, but it is not as fast as I would like it to be (it uses scihub which doesn&#x27;t have the best servers).<p>By parsing the html from google scholar, I wrote a python script that does this which was very fast and was working perfectly, however, after using it for a couple of minutes (maybe about 10-15 requests), I can no longer query google scholar using python requests (the returned html is a request for captcha). It appears that google disallows any programmatic use of google scholar (even though this was not spammy at all, the user has to manually click on a paper to send a request to google scholar).<p>Anyway I was wondering if there is any decent and free API to get the url of a paper given it",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "32724895",
+        "published_at": "2022-09-05T14:47:04Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=32724895",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: How do you organize scientific literature?",
+      "url": "https://news.ycombinator.com/item?id=10488028",
+      "hn_id": "10488028",
+      "points": 6,
+      "comments": 6,
+      "author": "ayu",
+      "created": "2015-11-01T20:20:37Z",
+      "text_snippet": "I look for research papers frequently and it&#x27;s becoming difficult to manage them all.<p>My current system is a local directory synced between computers. There are subdirectories for fields of study, and each field has further subdirectories for topics of interest. Right now this is adequate. Problems it has:\n1. Difficult to browse through topic directories\n2. Need to manually rename papers to a common filename format (e.g. Author Year Title.pdf)\n3. Can&#x27;t annotate papers<p>I&#x27;ve tried PaperPile, a web-based literature manager, and it generally works pretty well. However I dislike that it requires Google Apps login, and it costs money which feels contrary to the principle that knowledge should be free and open.<p>Calibre is a software usually used for ebooks that also seems promising for research papers. It&#x27;s licensed under GPL v3 and supports tags, search and metadata download (via plugin with some configuration). It doesn&#x27;t seem to have good annotation support.<",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "10488028",
+        "published_at": "2015-11-01T20:20:37Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=10488028",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "API or library to grade “music quality”?",
+      "url": "https://news.ycombinator.com/item?id=37562807",
+      "hn_id": "37562807",
+      "points": 3,
+      "comments": 0,
+      "author": "IceMetalPunk",
+      "created": "2023-09-18T22:11:26Z",
+      "text_snippet": "I&#x27;m working on a framework that connects multiple publicly available AIs (GPT-4, Suno Chirp, several Sentence Transformer models, etc.) in an effort to create a fully autonomous singer&#x2F;songwriter. The idea is that a script can run, and when it&#x27;s done, the result is an original song, complete with title, genre, lyrics, and full audio.<p>Currently, it&#x27;s about 90% automated. It does all the topic brainstorming, genre choice, and lyric writing on its own, including building up a memory bank of imagined (but self-consistent) personal experiences it can draw upon for future songwriting inspiration (using a handful of semantic search techniques). And then Suno Chirp generates the audio.<p>The only part that&#x27;s not automated right now is the connection between the lyrics&#x2F;genre and the audio. I&#x27;m currently manually copying the generated lyrics into Suno Chirp and curating the best generations from each 30-second chunk to produce the final song.<p>I&#x27;d like ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "37562807",
+        "published_at": "2023-09-18T22:11:26Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=37562807",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: What's the best way to automate testing for microservices?",
+      "url": "https://news.ycombinator.com/item?id=38197260",
+      "hn_id": "38197260",
+      "points": 2,
+      "comments": 2,
+      "author": "verifprof",
+      "created": "2023-11-08T21:23:18Z",
+      "text_snippet": "I am a professor at the University of Michigan, and I have been looking into how developers typically do end-to-end testing for microservices, especially involving mocking third-party dependencies and other services. I am requesting your feedback to best design our experiments; in the long run, we hope to publish a research paper and may include some of your quotes.<p>To me, the testing process seems quite cumbersome, as it consists in many steps, typically:\n1. Creating an external cluster (say in Docker or Kubernetes) from a CLI (or maybe a web interface);\n2. Setting up external implemented microservices, using a separate tool (e.g. Kubernetes manifests &#x2F; helm charts, or docker-compose file);\n3. Implementing and building mock containers and explicitly setting up all possible input&#x2F;output requests;\n4. Deploying the containers created in steps 2 and 3;\n5. Setting up routing and networking between the main programs and the containers;\n6. Running the tests manually or in a test ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "38197260",
+        "published_at": "2023-11-08T21:23:18Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=38197260",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Dorkly – automated Google dorking that somehow survives captchas",
+      "url": "https://dorkly.stanl.ink/download/",
+      "hn_id": "47384546",
+      "points": 2,
+      "comments": 0,
+      "author": "sir_stanley_",
+      "created": "2026-03-15T05:10:53Z",
+      "text_snippet": "Hi HN,\n‎\n‎I built Dorkly, an app (mobile and desktop) for discovering public documents across the web.\n‎\n‎It’s basically automated Google dorking. Instead of manually running queries like:\n‎\n‎filetype:pdf machine learning\n‎site:edu cybersecurity pdf\n‎intitle:&quot;research paper&quot; filetype:pdf\n‎\n‎Dorkly generates and explores them automatically and returns a feed of PDFs, DOCs, PPTs, manuals and research papers.\n‎\n‎The fun part: it does this at scale and still manages to avoid the usual captcha challenges that tends to happen when you try this sort of thing.\n‎\n‎So far no captcha, and we already have 200+ people using it.\n‎\n‎Try it here:\n‎<a href=\"https:&#x2F;&#x2F;dorkly.stanl.ink\" rel=\"nofollow\">https:&#x2F;&#x2F;dorkly.stanl.ink</a>\n‎\n‎Lemme know what you think about it.",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47384546",
+        "published_at": "2026-03-15T05:10:53Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://dorkly.stanl.ink/download/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "AI tool to extract and cite important information from medical research",
+      "url": "https://news.ycombinator.com/item?id=34294223",
+      "hn_id": "34294223",
+      "points": 1,
+      "comments": 0,
+      "author": "Hamdiii",
+      "created": "2023-01-07T23:33:13Z",
+      "text_snippet": "MyFirstDraft tool is particularly useful for researchers and healthcare professionals who need to keep up with the latest developments in their field. With the vast amount of research being published on a daily basis, it can be overwhelming to try to stay on top of everything. AI can help by automatically extracting key information from research papers and organizing it in a way that is easy to access and understand.<p>One of the benefits of using an AI tool for information extraction is that it can save a lot of time and effort. Rather than manually sifting through papers to find relevant information, an AI tool can do this quickly and accurately. This leaves researchers with more time to focus on analyzing the information and drawing insights from it.",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "34294223",
+        "published_at": "2023-01-07T23:33:13Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=34294223",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: HyperFlow – A self-improving agent framework built on LangGraph",
+      "url": "https://news.ycombinator.com/item?id=47727255",
+      "hn_id": "47727255",
+      "points": 8,
+      "comments": 1,
+      "author": "lablnet",
+      "created": "2026-04-11T04:01:03Z",
+      "text_snippet": "Hi HN, I am Umer. I recently built an experimental framework called HyperFlow to explore the idea of self-improving AI agents.<p>Usually, when an agent fails a task, we developers step in to manually tweak the prompt or adjust the code logic. I wanted to see if an agent could automate its own improvement loop.<p>Built on LangChain and LangGraph, HyperFlow uses two agents: \n- A TaskAgent that solves the domain problem.\n- A MetaAgent that acts as the improver.<p>The MetaAgent looks at the TaskAgent&#x27;s evaluation logs, rewrites the underlying Python code, tools, and prompt files, and then tests the new version in an isolated sandbox (like Docker). Over several generations, it saves the versions that achieve the highest scores to an archive.<p>It is highly experimental right now, but the architecture is heavily inspired by the recent HyperAgents paper (Meta Research, 2026).<p>I would love to hear your feedback on the architecture, your thoughts on self-referential agents, or answer any",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47727255",
+        "published_at": "2026-04-11T04:01:03Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=47727255",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: BBRv3 for gVisor's netstack, visualized in the browser using WASM",
+      "url": "https://ccsim.apoxy.dev",
+      "hn_id": "49008138",
+      "points": 3,
+      "comments": 0,
+      "author": "dilyevsky",
+      "created": "2026-07-22T15:15:04Z",
+      "text_snippet": "Hello HN,<p>We’ve built a BBRv3 congestion control implementation for gVisor’s netstack (userspace Linux TCP&#x2F;IP stack implementation in Go). As part of testing it I realized we can actually compile the whole thing into WASM and run it from the browser to get some cool visualizations from the original BBR paper: <a href=\"https:&#x2F;&#x2F;research.google&#x2F;pubs&#x2F;bbr-congestion-based-congestion-control-2&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;research.google&#x2F;pubs&#x2F;bbr-congestion-based-congestion...</a><p>The project is built using Fable 5 and GPT-5.6 Sol. I’ve manually reviewed actual BBRv3 implementation line-by-line, fixed bugs and made it to conform to -03 draft spec (well, mostly). The react&#x2F;wasm bindings code was only lightly skimmed and obvious UI issues were chased out - there was a lot.<p>If you’d like learn more, there’s an accompanying (no pun intended) blog explaining CC basics and BBR insights: <a href=\"https:&#x2F;&#x2F;apoxy.dev&#x2F;blog&#x2F;net",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "49008138",
+        "published_at": "2026-07-22T15:15:04Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://ccsim.apoxy.dev",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "AI-powered OP-tools, anyone has done it?",
+      "url": "https://news.ycombinator.com/item?id=45387159",
+      "hn_id": "45387159",
+      "points": 2,
+      "comments": 0,
+      "author": "birudeghi",
+      "created": "2025-09-26T14:49:20Z",
+      "text_snippet": "Part of my work at Standard Form (https:&#x2F;&#x2F;heystandard.com) is to build physician schedules that resemble the classic &quot;Nurse Scheduling Problem&quot; in operations research (OP). We could implement this without AI at all with many open-source algorithms like OP-Tools and Gurobi, but our customers are physicians who cannot code and neither do we have time coding each solution for each customer. So, we&#x27;re venturing into having LLMs program such optimizers from human natural language.<p>The state-of-the-art has been to do fine-tuning on OP-tool datasets. The problem is that very, very few datasets cover scheduling problems and a slither of those that exist don&#x27;t realistically represent actual scheduling constraints.<p>Another method is to do multiple prompting strategies, like OptiMUS, which is the one I&#x27;ve been prototyping with. It&#x27;s inconsistent with GPT-5, and any lesser models will fail to model the problem correctly at all and produce solvers that ar",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "45387159",
+        "published_at": "2025-09-26T14:49:20Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=45387159",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Webhound (YC S23) – Research agent that builds datasets from the web",
+      "url": "https://news.ycombinator.com/item?id=45373008",
+      "hn_id": "45373008",
+      "points": 112,
+      "comments": 80,
+      "author": "mfkhalil",
+      "created": "2025-09-25T14:28:24Z",
+      "text_snippet": "We&#x27;re the team behind Webhound (<a href=\"https:&#x2F;&#x2F;webhound.ai\">https:&#x2F;&#x2F;webhound.ai</a>), an AI agent that builds datasets from the web based on natural language prompts. You describe what you&#x27;re trying to find. The agent figures out how to structure the data and where to look, then searches, extracts the results, and outputs everything in a CSV you can export.<p>We&#x27;ve set up a special no-signup version for the HN community at <a href=\"https:&#x2F;&#x2F;hn.webhound.ai\">https:&#x2F;&#x2F;hn.webhound.ai</a> - just click &quot;Continue as Guest&quot; to try it without signing up.<p>Here&#x27;s a demo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;fGaRfPdK1Sk\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;fGaRfPdK1Sk</a><p>We started building it after getting tired of doing this kind of research manually. Open 50 tabs, copy everything into a spreadsheet, realize it&#x27;s inconsistent, start over. It felt like something an LLM should be able to handle.<p>Some e",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "45373008",
+        "published_at": "2025-09-25T14:28:24Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=45373008",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature Request]: Remember last page read position for PDF documents",
+      "url": "https://github.com/Stirling-Tools/Stirling-PDF/issues/5520",
+      "repo": "Stirling-Tools/Stirling-PDF",
+      "issue_number": 5520,
+      "reactions": 12,
+      "comments": 1,
+      "created": "2026-01-20T15:45:20Z",
+      "body_snippet": "### Feature Description\n\nI would like the PDF reader to automatically remember and restore the last page position for each PDF document. When reopening a previously viewed PDF file, the reader should automatically navigate to the exact page where I left off, rather than always starting from page 1.\n\nThis feature should:\n- Track the last viewed page for each unique PDF file\n- Automatically jump to the saved position when reopening a document\n- Persist this information across application restarts\n- Handle multiple PDFs independently (each file maintains its own position)\n\n### Why is this feature valuable?\n\nThis feature significantly improves the user experience for anyone working with long PDF documents, including:\n\n- **Technical documentation readers:** Engineers and developers frequently reference lengthy manuals, specifications, and API documentation. Manually navigating back to the relevant section wastes valuable time during active development.\n- **Research and academic users:** Students and researchers working through papers, textbooks, or thesis documents benefit from seamless continuation of their reading sessions.\n- **Professional workflows:** Legal professionals, analysts, ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3834307087",
+        "published_at": "2026-01-20T15:45:20Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/Stirling-Tools/Stirling-PDF/issues/5520",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "AI-Assisted Curation Assistant Tool for cBioPortal",
+      "url": "https://github.com/cBioPortal/GSoC/issues/138",
+      "repo": "cBioPortal/GSoC",
+      "issue_number": 138,
+      "reactions": 11,
+      "comments": 31,
+      "created": "2026-02-03T14:54:42Z",
+      "body_snippet": "**Background:**\n\ncBioPortal relies on a structured curation workflow to transform heterogeneous cancer study datasets into standardized formats for ingestion into the portal. However, a significant portion of the curation process still depends on manual interpretation of file format specifications and Standard Operating Procedures (SOPs).\n\nSupplemental data files, including clinical attributes, timeline events, mutation, and other genomic events, often arrive in inconsistent formats and require extensive manual reformatting by curators before they can be validated and loaded into cBioPortal. New curators face a steep learning curve, often taking weeks to months to become proficient, while experienced curators frequently consult prior studies and documentation to resolve formatting inconsistencies and edge cases.\n \nTo help streamline the early stages of the curation process, a prototype tool called cBioAbstractor has been developed. This tool analyzes research papers and their supplemental materials to generate a report that summarizes which data files are available and which datasets may be curatable for cBioPortal.\n\nWhile this prototype helps curators quickly understand what data ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3891678632",
+        "published_at": "2026-02-03T14:54:42Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/cBioPortal/GSoC/issues/138",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Native Code-Switching Support for Mixed languages",
+      "url": "https://github.com/resemble-ai/chatterbox/issues/346",
+      "repo": "resemble-ai/chatterbox",
+      "issue_number": 346,
+      "reactions": 10,
+      "comments": 3,
+      "created": "2025-11-07T20:49:26Z",
+      "body_snippet": "## 🌟 Feature Request: Native Code-Switching Support\n\n### **Summary**\nAdd native support for **code-switching** (mixing multiple languages within a single sentence) in Chatterbox TTS. Currently, the model requires specifying a single `language_id`, which limits its ability to handle the natural way multilingual speakers communicate.\n\n---\n\n### **Problem Statement**\n\nChatterbox currently operates in a **single-language mode**, requiring users to specify one `language_id` per generation:\n\n```python\nmodel.generate(text, language_id=\"ar\")  # Only Arabic phonetics\nmodel.generate(text, language_id=\"en\")  # Only English phonetics\nThis creates issues when the input text contains multiple languages, which is extremely common in real-world multilingual communication.\nCurrent Limitations:\nForced single-language processing: Words from secondary languages are processed using the primary language's phonetics\nUnnatural pronunciation: Foreign words/phrases inherit the accent and phonetic rules of the specified language\nManual workaround required: Users must manually segment text by language, generate separately, and concatenate audio\nPoor user experience: The manual approach produces inconsistent pr",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3601975428",
+        "published_at": "2025-11-07T20:49:26Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/resemble-ai/chatterbox/issues/346",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Static v. dynamic languages",
+      "url": "https://github.com/guevara/read-it-later/issues/4997",
+      "repo": "guevara/read-it-later",
+      "issue_number": 4997,
+      "reactions": 0,
+      "comments": 0,
+      "created": "2019-08-02T03:57:02Z",
+      "body_snippet": "Static v. dynamic languages<br>\n<br>\nhttps://ift.tt/2j1zGUB<br>\n<br>\n<br>\n<br>\n<div>\n<strong>Static v. dynamic languages</strong>\n<hr>\n<p>There are some pretty strong statements about types floating around out there. The claims range from the oft-repeated phrase that when you get the types to line up, everything just works, to &ldquo;not relying on type safety is unethical (if you have an SLA)&rdquo;, and \"<a href=\"https://news.ycombinator.com/item?id=4369359\">It boils down to cost vs benefit, actual studies, and mathematical axioms, not aesthetics or feelings</a>\". There are probably plenty of strong claims about dynamic languages that I'd be skeptical of if I heard them, but I'm not in the right communities to hear the stronger claims about dynamically typed languages. Either way, it's rare to see people cite actual evidence.</p>\n<p>Let's take a look at the empirical evidence that backs up these claims.</p>\n<p><a href=\"#wat_summary\">Click here</a> if you just want to see the summary without having to wade through all the studies. The summary of the summary is that most studies find very small effects, if any. However, the studies probably don't cover contexts you're actually inte",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "475984692",
+        "published_at": "2019-08-02T03:57:02Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/guevara/read-it-later/issues/4997",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Release dataset on HF (with gating)",
+      "url": "https://github.com/ZhengdiYu/SignAvatars/issues/3",
+      "repo": "ZhengdiYu/SignAvatars",
+      "issue_number": 3,
+      "reactions": 5,
+      "comments": 0,
+      "created": "2024-09-23T18:25:03Z",
+      "body_snippet": "Hi @ZhengdiYu,\r\n\r\nNiels here from the open-source team at Hugging Face. I discovered your work through ECCV, indexed it here: https://huggingface.co/papers/2310.20436 (feel free to claim it). I work together with [AK](https://x.com/_akhaliq) on improving the visibility of researchers' work on the hub.\r\n\r\nIt'd be great to make the dataset available on the 🤗 hub, we can add tags so that people find them when filtering https://huggingface.co/datasets, so that people can do:\r\n\r\n```python\r\nfrom datasets import load_dataset\r\n\r\ndataset = load_dataset(\"your-hf-username-or-organization/signavatars\")\r\n```\r\n\r\nSee here for a guide: https://huggingface.co/docs/datasets/loading.\r\n\r\nThere's then also the dataset viewer which allows people to see the first few rows in the browser: https://huggingface.co/docs/hub/en/datasets-viewer.\r\n\r\nThis would make the dataset easier accessible, and also discoverable. We can then also link the dataset to the paper page.\r\n\r\n## Gating mechanism\r\n\r\nWe support gating (similar to how this works for llama/mistral models), so that you can manually review who can access the dataset: https://huggingface.co/docs/hub/en/datasets-gated. See FineVideo (a video dataset create",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2543347616",
+        "published_at": "2024-09-23T18:25:03Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/ZhengdiYu/SignAvatars/issues/3",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature enhancement] Find and Replace Text",
+      "url": "https://github.com/Stirling-Tools/Stirling-PDF/issues/1855",
+      "repo": "Stirling-Tools/Stirling-PDF",
+      "issue_number": 1855,
+      "reactions": 5,
+      "comments": 8,
+      "created": "2024-09-09T13:49:03Z",
+      "body_snippet": "### Feature Description\n\n\r\n**Finding and Replacing Text** in a PDF is a feature that allows users to search for specific text within a PDF document and replace it with new text. This can be particularly useful for editing documents, correcting errors, updating information, or making consistent changes throughout a document. Here's a detailed description of how this feature typically works:\r\n\r\n\r\n\r\n**1. Using the Find Function**\r\nEnter Search Term: Type the text you want to find in the search box. This could be a word, phrase, or specific string of characters.\r\nSearch Options: Some editors allow you to refine your search by distinguishing between case-sensitive matches, whole words only, or searching within specific sections of the document.\r\n\r\n**2. Reviewing Search Results**\r\nHighlighting: The software will highlight all instances of the text you’re searching for throughout the document.\r\nNavigation: Use navigation buttons or arrows to move between occurrences of the found text.\r\n\r\n**3. Replacing Text**\r\nAccess Replace Option: If available, switch to the \"**Replace**\" tab or option within the search tool.\r\nEnter Replacement Text: Type the new text you want to replace the old text wi",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2514030494",
+        "published_at": "2024-09-09T13:49:03Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/Stirling-Tools/Stirling-PDF/issues/1855",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature: Per-topic/per-group system prompt (or SOUL.md) binding for Telegram",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/5195",
+      "repo": "NousResearch/hermes-agent",
+      "issue_number": 5195,
+      "reactions": 4,
+      "comments": 0,
+      "created": "2026-04-05T08:34:12Z",
+      "body_snippet": "## Summary\n\nAllow binding a custom `system_prompt` (or `soul` override) to individual Telegram DM topics and group forum topics, so each topic can have its own agent personality/instructions without affecting other topics.\n\n## Current Behavior\n\n- `SOUL.md` is global — all chats share the same identity\n- `agent.system_prompt` in `config.yaml` is global\n- `AGENTS.md` is based on filesystem `TERMINAL_CWD`, not per-chat\n- `/personality` is session-level and must be manually switched\n- Topics can only bind a `skill` as a workaround, but that's a hack — skills are injected into the user message, not the system prompt, and only on new sessions\n\n## Proposed Behavior\n\nAdd an optional `system_prompt` field to `dm_topics` and `group_topics` config:\n\n```yaml\nplatforms:\n  telegram:\n    extra:\n      dm_topics:\n      - chat_id: 123456789\n        topics:\n        - name: Code Review\n          system_prompt: |\n            You are a senior code reviewer. Be concise, focus on bugs and security issues.\n          # skill can coexist\n          skill: code-review\n      - chat_id: -1001234567890\n        group_topics:\n        topics:\n        - thread_id: 5\n          system_prompt: \"你是代码审查专家，用中文回复\"\n        -",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4206971138",
+        "published_at": "2026-04-05T08:34:12Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/NousResearch/hermes-agent/issues/5195",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature Request: Projects / Workspace with Persistent Context, Cross-Chat Memory, and Static File Management",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1384",
+      "repo": "deepseek-ai/DeepSeek-V3",
+      "issue_number": 1384,
+      "reactions": 4,
+      "comments": 20,
+      "created": "2026-06-01T16:59:41Z",
+      "body_snippet": "**Is your feature request related to a problem? Please describe.**\nYes, a significant problem affects users who rely on DeepSeek for serious, long-term work.\n\nCurrently, DeepSeek has no way to retain user preferences, uploaded files, project-specific prompts, or conversation history across different chat sessions. Each new chat starts from absolute zero—the model doesn't remember my name, my ongoing projects, the documents I uploaded yesterday, or the context we built over multiple sessions.\n\nThis creates serious friction for several use cases:\n\n    - Job application workflow: I maintain a CV (constantly evolving), track applications to multiple companies, and need tailored cover letters for each. Every new chat requires re-uploading documents and re-explaining my background, wasting ~10-15 minutes per session just on context setup.\n\n    - Software development projects: Long-term coding projects need persistent context across days or weeks—project structure, design decisions, APIs, file relationships. Starting over each time interrupts the flow and leads to inconsistent responses.\n\n    - Research & writing: Longer research projects with multiple source documents, evolving drafts, a",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4564892025",
+        "published_at": "2026-06-01T16:59:41Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1384",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Academic Lexicon & Feature expansion",
+      "url": "https://github.com/singi-labs/sifa-workspace/issues/119",
+      "repo": "singi-labs/sifa-workspace",
+      "issue_number": 119,
+      "reactions": 4,
+      "comments": 4,
+      "created": "2026-04-19T11:28:10Z",
+      "body_snippet": "\n## Summary\n\nTogether with #ATScience, we see a huge opportunity for academics to use open AT protocol to collaborate, protect and show their work. Sifa could help our by providing the functionality that helps scientists get all their relevant career data into their PDS (step 1, the lexicon) and show it to the world (step 2, their Sifa ID profile page).\n\nSifa's current lexicons cover a LinkedIn-shaped professional profile. These fall short for academics. Researchers maintain 5-10 parallel profiles (ORCID, ResearchGate, Google Scholar, INSPIRE, DBLP, university page, LinkedIn, CV PDF) because no single platform captures talks, grants, supervision, peer review, research software, hyperauthorship, or the narrative CVs that EU/UK/NL/CH/CA funders increasingly require.\n\nThis epic expands Sifa into a decentralised identity that serves academics worldwide, without inhibiting it's usefulness to general industry knowledge workers. It's informed by research into ORCID 3.0, Europass + CERIF 1.6, schema.org + DataCite 4.5 + CRediT, and CV conventions across the world.\n\nAll lexicon changes are alpha-stage: data migration required, but breaking wire-format changes are acceptable.\n\n## Why this ma",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4290695809",
+        "published_at": "2026-04-19T11:28:10Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/singi-labs/sifa-workspace/issues/119",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "cleanBibImpact: Evaluating the impact of citation diversity statements",
+      "url": "https://github.com/ohbm/hackathon2021/issues/26",
+      "repo": "ohbm/hackathon2021",
+      "issue_number": 26,
+      "reactions": 3,
+      "comments": 1,
+      "created": "2021-06-15T21:30:42Z",
+      "body_snippet": "## Project info\r\n<!-- *Please fill this in first and then submit the issue* -->\r\n\r\n**Title**: \r\ncleanBibImpact: Evaluating the impact of citation diversity statements  \r\n\r\n\r\n**Project leads**:\r\n- Kendra Oudyk (GitHub: koudyk | Mattermost: kendra.oudyk)\r\n- Isil Bilgin (GitHub: complexbrains | Mattermost: isil)\r\n\r\n**[Timezone](https://github.com/ohbm/hackathon2021/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#timezone)**:\r\nWe'll be working primarily in the **2PM-7PM UTC timeslot (Atlantis)**. \r\n\r\nProject leads' time zones:\r\n- Kendra: Montreal UTC-4\r\n- Isil: London UTC+1\r\n\r\n**Description**:\r\nGender imbalance is a big problem in academic research, and it is even reflected in our citation behavior. Our goal is to assess the 'impact' of the [cleanBib](https://github.com/dalejn/cleanBib) tool, which was created to make researchers more aware of this problem. This tool can be used to assess the gender balance of authors in a reference list. Specifically, we want to find papers that cite the cleanBib [code](https://doi.org/10.5281/zenodo.3672109)/[paper](https://doi.org/10.1038/s41593-020-0658-y)/[preprint](https://doi.org/10.1101/2020.01.03.894378), and see whether those citing ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "921818437",
+        "published_at": "2021-06-15T21:30:42Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/ohbm/hackathon2021/issues/26",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature request: batch processing support for Systematic Literature Reviews (SLRs)",
+      "url": "https://github.com/54yyyu/zotero-mcp/issues/46",
+      "repo": "54yyyu/zotero-mcp",
+      "issue_number": 46,
+      "reactions": 2,
+      "comments": 3,
+      "created": "2025-08-11T09:16:41Z",
+      "body_snippet": "### Problem\n\nZotero MCP works great for analyzing individual papers interactively, but systematic literature reviews require applying the same analysis to dozens or even hunderds of papers. Currently, this means either:\n\n1. Manually asking the same question about each paper through conversation\n2. Building external scripts that lose Zotero MCP's benefits\n\n### Proposed Solution\nAdd basic batch processing to apply the same query to multiple papers:\n\n```javascript\nzotero_batch_query({\n  query: \"Extract methodology, key findings, and limitations from this paper\",\n  collection: \"Climate Policy Papers\",\n  max_concurrent: 3\n})\n// Returns: batch_id\n```\n\n```javascript\nzotero_get_batch_results(batch_id)\n// Returns: [\n//   {\n//     item_id: \"ABC123\",\n//     title: \"Paper Title\", \n//     response: \"Methodology: Survey of 500 participants...\",\n//     error: null\n//   }\n// ]\n```\n\n### Template/Structured Output\nFor systematic reviews, researchers need consistent data extraction. Two approaches:\n\n#### Option 1: Structured Prompts (User Handles)\nUsers create their own templates and validation:\n```python\ntemplate = \"\"\"\nExtract and format as JSON:\n{\n  \"methodology\": \"brief description\",\n  \"sample_siz",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3309160978",
+        "published_at": "2025-08-11T09:16:41Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/54yyyu/zotero-mcp/issues/46",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Resources, Recommendations or Standards for Producing Audio Versions of Research Papers",
+      "url": "https://github.com/the-turing-way/the-turing-way/issues/3517",
+      "repo": "the-turing-way/the-turing-way",
+      "issue_number": 3517,
+      "reactions": 2,
+      "comments": 3,
+      "created": "2024-02-06T10:26:36Z",
+      "body_snippet": "### Summary\r\n\r\nThe experience of attempting consume most research papers in audio form with screen readers, especially technical disciplines, is woeful. Not only this but even if one had the time and resources to commission an audio production of a research paper there are a larger number of decisions about the best way to translate to the audio medium that need to be made. What conventions can be adopted to make this a more consistent experience when done manually and to make future manuscript adaptation to audio form easier for both humans and machines?\r\n\r\nI'm thinking beyond the screen reader experience, more of how to produce an audio version of a research paper that's a first class experience of consuming the contents of the work.\r\n\r\nSomething with advice on points like the following:\r\n\r\n- Dealing with numerous and lengthy references and parentheticals that make sentences borderline incomprehensible when read aloud verbatim.\r\n- Better handling of where figures' and individual figure panels' alt-text appear in the audio, so that it is in context with the relevant text from the body of the paper. Rather than batched up into lengthy blocks of dense description that's somewhat out",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2120437036",
+        "published_at": "2024-02-06T10:26:36Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/the-turing-way/the-turing-way/issues/3517",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Do research on automatically detecting and correcting Bangla spelling mistakes",
+      "url": "https://github.com/mir-abir-hossain/real-history-of-Bangladesh/issues/40",
+      "repo": "mir-abir-hossain/real-history-of-Bangladesh",
+      "issue_number": 40,
+      "reactions": 2,
+      "comments": 20,
+      "created": "2024-09-09T10:54:12Z",
+      "body_snippet": "We need to figure out if any work and/or research has been done on automatically detecting and correcting Bangla spelling mistakes. Technically speaking, are there papers, notebooks, or packages that does this job? After we finish this review, we can determine if we need to figure out our own method to automatically clean Bangla text.\r\n\r\nAn example is the [Avro online keyboard](https://www.banglaconverter.co/avro-keyboard-online/). It autocorrects as you write Bangla. I believe it is using some kind of dictionary and an autocorrection package as a backend. I don't know if anyone has open sourced it or something similar. Finding something like this that we can use for our project would cut down our work by a lot.\r\n\r\nOur main focus is fixing spelling mistakes but finding resources on fixing grammatical mistakes is also welcome.\r\n\r\nWe need to invest some time and effort into this R&D work because manually cleaning up extracted texts 200+ books and maybe newspaper articles in future doesn't look feasible. It took 9 volunteers more than 3 weeks to clean up a single book. We can croudsource it but it requires funding and additional efforts which are not within the scope of our project at",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2513620944",
+        "published_at": "2024-09-09T10:54:12Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/mir-abir-hossain/real-history-of-Bangladesh/issues/40",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Persistent User Profile with Dialog Compilation and Cross-Session Memory",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1458",
+      "repo": "deepseek-ai/DeepSeek-V3",
+      "issue_number": 1458,
+      "reactions": 2,
+      "comments": 13,
+      "created": "2026-06-25T08:56:29Z",
+      "body_snippet": "This request overlaps with the broader vision in #1384 (Projects/Workspace with persistent context), but I'd like to focus specifically on a lighter, more immediate feature: a persistent user profile for personalization and a set of slash commands to manage dialog context. While #1384 proposes full project workspaces with file management and isolation, my proposal is about giving the user a simple, editable \"memory\" that travels across all chats, plus tools to compile and reuse context without manual copy-pasting.\n\nIs your feature request related to a problem? Please describe.\n\nYes. Currently, DeepSeek has no way to retain user preferences, project context, or conversation history across different chat sessions. Each new chat starts from absolute zero — the model doesn't remember who I am, my ongoing projects, or the context we built over multiple sessions. For users who rely on DeepSeek for serious, long-term work, this creates significant friction. Complex development or research tasks require multiple sessions. When the conversation reaches the context window limit, the system forces a new chat, but the new session has no memory of the old one. I have to manually paste all previ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4742271419",
+        "published_at": "2026-06-25T08:56:29Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1458",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Synchronize validation and test logging",
+      "url": "https://github.com/Lightning-AI/pytorch-lightning/issues/20492",
+      "repo": "Lightning-AI/pytorch-lightning",
+      "issue_number": 20492,
+      "reactions": 2,
+      "comments": 0,
+      "created": "2024-12-12T02:12:43Z",
+      "body_snippet": "### Outline & Motivation\n\nIn the VALIDATION STEP after performing the distributed training process, [two ways](https://lightning.ai/docs/pytorch/stable/accelerators/accelerator_prepare.html#synchronize-validation-and-test-logging) are given here, one is to continue with the distributed validation process and the other is to do it separately on rank0. But in the [previous tutorial](https://lightning.ai/docs/pytorch/stable/common/lightning_module.html#validation-loop), it was hinted that the validation process should be carried out using rank0 in ddp, so I am wondering which one should be used? thanks!!!\r\n\r\n## Synchronize validation and test logging\r\nWhen running in distributed mode, we have to ensure that the validation and test step logging calls are synchronized across processes. This is done by adding sync_dist=True to all self.log calls in the validation and test step. This ensures that each GPU worker has the same behaviour when tracking model checkpoints, which is important for later downstream tasks such as testing the best checkpoint across all workers. The sync_dist option can also be used in logging calls during the step methods, but be aware that this can lead to signific",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2734520813",
+        "published_at": "2024-12-12T02:12:43Z",
+        "collected_at": "2026-09-17T05:26:46+00:00",
+        "lineage_key": "https://github.com/Lightning-AI/pytorch-lightning/issues/20492",
+        "lineage_basis": "canonical_url"
+      }
+    }
+  ]
+}

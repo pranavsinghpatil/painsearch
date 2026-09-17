@@ -1,0 +1,481 @@
+{
+  "query": "sensor data anomaly",
+  "count": 25,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Launch HN: Synnax (YC S24) – Unified hardware control and sensor data streaming",
+      "url": "https://news.ycombinator.com/item?id=41227369",
+      "hn_id": "41227369",
+      "points": 38,
+      "comments": 31,
+      "author": "embonilla",
+      "created": "2024-08-12T17:55:07Z",
+      "text_snippet": "Hi Hacker News! We’re Emiliano, Elham, and Patrick, co-founders of Synnax (<a href=\"https:&#x2F;&#x2F;www.synnaxlabs.com\">https:&#x2F;&#x2F;www.synnaxlabs.com</a>). With Synnax, engineers connect to their sensors and actuators, stream telemetry for control and post-processing, and query historical data for analysis. Hardware teams use our platform in areas ranging from firing rocket engines to operating manufacturing lines. Here’s a video: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;OJtVBfRwooA\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;OJtVBfRwooA</a>.<p>Software developers on hardware teams don’t usually have infrastructure to build their custom software on. They have to work with dozens of data acquisition devices to get data into a single database. Oftentimes, they have to use several different solutions to communicate with different devices: LabVIEW for National Instruments hardware, ROS for robotics, and SCADA software for PLCs.<p>There’s no good “glue” that lets you coordinate",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "41227369",
+        "published_at": "2024-08-12T17:55:07Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=41227369",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Sample Sensor Data Generator for Your Testing",
+      "url": "https://github.com/bacalhau-project/sensor-log-generator/pkgs/container/sensor-log-generator",
+      "hn_id": "44946941",
+      "points": 1,
+      "comments": 0,
+      "author": "TheIronYuppie",
+      "created": "2025-08-19T00:29:04Z",
+      "text_snippet": "Hey!<p>Just the latest version of my sensor log generator - I kept having problems where i needed to demo building many thousands of sensors with anomalies and variations, and so i built a really simple way to create one.<p>Have fun! (Completely Apache2&#x2F;MIT)<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;bacalhau-project&#x2F;sensor-log-generator&#x2F;pkgs&#x2F;container&#x2F;sensor-log-generator\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;bacalhau-project&#x2F;sensor-log-generator&#x2F;pkg...</a>",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "44946941",
+        "published_at": "2025-08-19T00:29:04Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/bacalhau-project/sensor-log-generator/pkgs/container/sensor-log-generator",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: OTAware, airgapped AI for monitoring critical infrastructure [video]",
+      "url": "https://www.youtube.com/watch?v=8XiP2-DPo6g",
+      "hn_id": "41033829",
+      "points": 1,
+      "comments": 0,
+      "author": "montereynack",
+      "created": "2024-07-22T12:56:14Z",
+      "text_snippet": "Hey HN,<p>Video here: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=8XiP2-DPo6g\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=8XiP2-DPo6g</a><p>This is what I’ve been working on full-time as a solo founder in my startup, Sentinel Devices, for just over four years. High-level: we collect data from the “digital brains” of industrial equipment, then use this data to build a baseline model of equipment behavior and monitor for anomalies – signs in the digital data indicating maybe that a sensor or valve is failing, or that some kind of cyber-physical attack is ongoing. The unique part about our approach is that we are laser-focused on doing everything totally offline – that means all data collection, storage, processing, AI training, and decision-making happen exclusively on embedded industrial hardware. There are no external servers, data is never sent anywhere, and our models are not even pre-trained – our devices self-train and self-develop models in the field",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "41033829",
+        "published_at": "2024-07-22T12:56:14Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://www.youtube.com/watch?v=8XiP2-DPo6g",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: I was tired to check my mums WhatsApp last online, to see if she is ok",
+      "url": "https://github.com/janrakete/healthcore-bulp.io",
+      "hn_id": "49602794",
+      "points": 2,
+      "comments": 0,
+      "author": "janrakete",
+      "created": "2026-09-07T20:43:56Z",
+      "text_snippet": "Ever since my father passed away, my mother has been living alone in our family home. She’s now over 70 years old. I live in another city, and so does my sister. Of course, we call her regularly, but at the same time, she doesn’t want to feel like she’s being watched. She’s still too “young” for that. So our best way to check on her is to see when she was last online on WhatsApp. But in the long run, that’s too imprecise and, above all, too much of a hassle.<p>A while back, I set up a few smart home features in the house. But they&#x27;re mostly things like turning down the thermostats when a window is open or using a motion sensor to turn on the lights.<p>Then I had the following idea: Why not use this data to identify behavioral patterns? In other words, if a door isn’t opened the way it usually is, that could mean something. My mom now has a FitBit Air, too, which provides data. That would be great as well. But to do that, all the data with its different connection types (Zigbee, Bl",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "49602794",
+        "published_at": "2026-09-07T20:43:56Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/janrakete/healthcore-bulp.io",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Hyperspectra – Desktop tool for exploring AVIRIS-3 hyperspectral images",
+      "url": "https://github.com/christophernagel/hyperspectra",
+      "hn_id": "46963707",
+      "points": 3,
+      "comments": 0,
+      "author": "chrisnagel",
+      "created": "2026-02-10T17:42:13Z",
+      "text_snippet": "I&#x27;ve been working in GIS&#x2F;mapping for a few years and found myself increasingly adjacent to machine learning and computer vision, which got me thinking about what I&#x27;ve been calling &quot;broad spectrum&quot; computer vision, object and anomaly identification beyond the visible range of light.<p>This is my first pass at building a tool to understand the physics involved, from electromagnetic absorption and reflectance of sunlight through to corrected sensor observation. I&#x27;ve been focused on building out and validating existing spectral indices to understand the fundamentals before exploring my own based on molecular properties of materials from first principles.<p>So far the tool includes:<p>-An atmospheric correction processor with three methods: empirical band-ratio, Py6S radiative transfer, and ISOFIT optimal estimation<p>-An interactive viewer for both radiance and reflectance data with RGB composites, 23 spectral indices, and ROI-based spectral signature extracti",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "46963707",
+        "published_at": "2026-02-10T17:42:13Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/christophernagel/hyperspectra",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: SentryRF – A private, local-first Android app to detect hidden trackers",
+      "url": "https://sentryrf.com/",
+      "hn_id": "47058600",
+      "points": 2,
+      "comments": 5,
+      "author": "vidoluc",
+      "created": "2026-02-18T08:22:25Z",
+      "text_snippet": "Hi HN,<p>I built SentryRF because I was frustrated by the lack of granular control on Android for identifying unwanted tracking devices. While Google&#x27;s native &quot;Unknown Tracker Alerts&quot; are a good start, they often feel like a black box with limited diagnostic tools.<p>The Tech:<p>Signal Analysis: Instead of just listing every BLE&#x2F;wifi device, SentryRF uses signal strength (RSSI) and temporal patterns to distinguish between a &quot;passing&quot; device (someone walking by with an AirTag) and a &quot;following&quot; device (a tracker on your vehicle), even peeping-toms.<p>Hardware Sensors: I’ve integrated the magnetometer and ambient light sensors to help find non-broadcasting devices (like &quot;dead&quot; GPS units or wired pinhole cameras) by detecting magnetic anomalies and infrared emissions.<p>Sound Locator: I implemented an audio-guided proximity algorithm that increases beep frequency as you approach the source. It’s essentially a Geiger counter for Bluetooth a",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47058600",
+        "published_at": "2026-02-18T08:22:25Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://sentryrf.com/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Tooliz – An offline-first mobile toolkit built with Flutter (Radial UI)",
+      "url": "https://play.google.com/store/apps/details?id=com.quentinrg.tooliz&hl=en",
+      "hn_id": "46569911",
+      "points": 1,
+      "comments": 0,
+      "author": "quentinrgdev",
+      "created": "2026-01-10T21:04:17Z",
+      "text_snippet": "Hello HN,<p>I’m the developer behind Tooliz. I built this because I was frustrated with the current state of utility apps on the Play Store—most are either 100MB+ bloatware, require unnecessary permissions (like contacts&#x2F;location for a flashlight), or force full-screen video ads just to use a simple ruler.<p>I wanted to build a single, lightweight app that respects the user and focuses on UI&#x2F;UX efficiency.<p>The Tech Stack: It’s built with Flutter. I chose it to handle the custom painting required for the tools smoothly at 60fps+ on both Android and iOS.<p>Interesting Technical Challenges:<p>The Radial Menu: I didn&#x27;t want a standard grid or drawer. I implemented a custom Radial Menu using CustomPainter and heavy trigonometry to handle the touch hit-testing and animations. It feels much faster for thumb navigation than reaching for a top-left hamburger menu.<p>Sensor Fusion &amp; Hardware:<p>Metal Detector: Accesses the raw magnetometer stream (sensors_plus package). I ha",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "46569911",
+        "published_at": "2026-01-10T21:04:17Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://play.google.com/store/apps/details?id=com.quentinrg.tooliz&hl=en",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Civora Nexus – AI SaaS for Smart Cities and Governance",
+      "url": "https://civoranexus.com/",
+      "hn_id": "45582575",
+      "points": 1,
+      "comments": 0,
+      "author": "Shubham412",
+      "created": "2025-10-14T17:22:04Z",
+      "text_snippet": "Hi HN,<p>I’m excited to share Civora Nexus, a civic-tech and AI SaaS company building tools for smart city governance and healthcare systems.<p>We provide:<p>Modules for municipal services to optimize resource allocation<p>AI tools for data analysis, forecasting, and decision support for civic bodies<p>Healthcare SaaS features to support public health initiatives (integration, dashboards, alerts)<p>Why this matters<p>Many local governments and civic bodies struggle with fragmented data, legacy systems, and limited AI tooling. We want to enable them with affordable, scalable, intelligent infrastructure.<p>How it works (technical side)<p>We integrate city &#x2F; civic data feeds (e.g. public services, infrastructure sensors, health metrics)<p>AI &#x2F; ML models analyze patterns, detect anomalies, make predictions<p>Dashboard &amp; APIs expose insights for decision-makers<p>Multi-tenant SaaS architecture to serve different cities or gov bodies securely<p>What’s next<p>Expanding to 5+ cit",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "45582575",
+        "published_at": "2025-10-14T17:22:04Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://civoranexus.com/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Letters From the Earth – daily climate data turned into narrative",
+      "url": "https://m-verse.com/playground/letters-from-the-earth/",
+      "hn_id": "46151153",
+      "points": 3,
+      "comments": 0,
+      "author": "manishg2022",
+      "created": "2025-12-04T18:38:23Z",
+      "text_snippet": "Hi HN,<p>I’m sharing a small experiment called Letters From The Earth. The idea is simple: instead of presenting climate and environmental data as charts or stats, the system converts daily signals into expressive, first-person prose — “letters” from regions on Earth describing how they feel.<p>What it does<p>- There is an interactive globe covering 103 locations worldwide.<p>- Every day the engine collects signals like temperature, humidity&#x2F;moisture, wind, air clarity, and anomaly deviations.<p>- These raw values are normalized, compressed into a feature vector, then passed through a biome-specific, emotionally aware translation layer. Based on that it produces a “letter” written in the voice of the biome (forest, tundra, desert, mangrove, etc). No jargon, no statistics — just sensory, atmospheric narrative.<p>- On the site you pick a location, read that day’s letter, and if you want compare with the raw data. There are filters by biome type, severity (anomaly), region and date s",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "46151153",
+        "published_at": "2025-12-04T18:38:23Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://m-verse.com/playground/letters-from-the-earth/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Ask HN: Encountering implicit and explicit bias during job hunt and interviews",
+      "url": "https://news.ycombinator.com/item?id=23163283",
+      "hn_id": "23163283",
+      "points": 3,
+      "comments": 4,
+      "author": "throwaway_dcnt",
+      "created": "2020-05-13T03:46:55Z",
+      "text_snippet": "This is a very sensitive topic (hence the throwaway) and one I wish I did not have any first hand experience with but here we are. I recently started looking for a new job and in the process started talking to an acquaintance that happens to be a very senior person at a well known company about possibly working for them. What transpired has me in awe and disgust. This person openly admitted to hiring only from their racial and cultural background (a background I share and undoubtedly why they felt comfortable sharing this nugget with me). I should admit that my anecdotal evidence may not amount to any real indication of widespread prevalence of such behavior but this led me to wonder, are there stories like this that should come to light so that people like this can be held to account and hiring anomalies and clusters of university (opposite of diversity?) flagged&#x2F;monitored by their managers or hr departments?<p>What I am asking is, can you could share data regarding preferential ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "23163283",
+        "published_at": "2020-05-13T03:46:55Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=23163283",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Automatically add template variable as annotation tags",
+      "url": "https://github.com/grafana/grafana/issues/24674",
+      "repo": "grafana/grafana",
+      "issue_number": 24674,
+      "reactions": 28,
+      "comments": 28,
+      "created": "2020-05-14T09:55:57Z",
+      "body_snippet": "<!-- Please only use this template for submitting feature requests -->\r\n\r\n**What would you like to be added**: These are the steps that I want to be able to do:\r\n- Select a specific panel in my dashboard. This panel has multiple time series of different objects (ca 80 - 200), all of the same type, a sort of swarm. I have a template variable to select (with checkbox) which object (via a name identifier) that I want to visualise.\r\n- I select only one (or a subset) of those objects, because I want to add an annotation for them only. This annotation is representing an anomaly, it is an interval anomaly. \r\n- I want to be automatically add in the annotation's tags the identifier names of the objects. \r\n- Later I want to query all the anomalies on the specific object and see them in another dashboard.\r\n\r\n**Why is this needed**: it is useful because it can help  in the very general task of annotating a time series dataset for the application of machine learning algorithms.\r\n\r\nThis is a very crucial task in all the major industrial setting in which data are collected through sensor on many machine ( monitoring of health of train track, power plant, servers).\r\n\r\nIn the use case I am working,",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "618093369",
+        "published_at": "2020-05-14T09:55:57Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/grafana/grafana/issues/24674",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature]: Simplified pivoting without crosstab",
+      "url": "https://github.com/timescale/timescaledb/issues/6584",
+      "repo": "timescale/timescaledb",
+      "issue_number": 6584,
+      "reactions": 11,
+      "comments": 3,
+      "created": "2024-01-31T17:09:33Z",
+      "body_snippet": "### What problem does the new feature solve?\n\nIn IoT/IIoT space, it is often important to have the data storage be dynamic to the addition of new devices and sensors.  For this reason, it's often preferable to use a narrow time series table structure like:\r\n\r\n  | time | parameterId | value |\r\n\r\nbut for many data analytics it's desirable to pivot that table into a wide format.  When you do that, you will generally do some kind of time bucket based resampling often with a gapfill() and different interpolation strategies depending on the signal.  For example, in the same query I might want the max(temp) and avg(power).\r\n\r\nDoing this with crosstab() is not very friendly.  The biggest problem is you have to be explicit about the resulting schema.  In practice, this means that when you add one parameter you have to touch your query in at least one, usually two places.\r\n\r\nI would like to propose adding some kind of pivot() function to TimescaleDB to make this easier and more dynamic.\r\n\r\nI have two main reasons for wanting this:\r\n\r\n* To make it easier to do these kinds of things in Grafana\r\n* For many data science and machine learning analytics the first thing you have to do is resample to",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2110578545",
+        "published_at": "2024-01-31T17:09:33Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/timescale/timescaledb/issues/6584",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "ESP32-S3 with 32MB Flash fails OTA due to `OTA app partition slot 1 is not bootable`",
+      "url": "https://github.com/esphome/issues/issues/5824",
+      "repo": "esphome/issues",
+      "issue_number": 5824,
+      "reactions": 6,
+      "comments": 1,
+      "created": "2024-05-20T01:35:45Z",
+      "body_snippet": "### The problem\r\n\r\nUsing a ESP32-S3-DevKitC-1-N32R8V, that uses a ESP32-S3-WROOM-2-N32R8V module, that is a ESP32-S3R8V, 32MB Octal SPI Flash, 8MB Octal SPI PSRAM, 1.8V SPI.\r\n\r\nProgramming a Flash size of 32MB results in `esp_image: Segment 3 0x3fce3810-0x3fce4f9c invalid: overlaps bootloader stack` and `OTA app partition slot 1 is not bootable`.\r\n\r\nThere is no specific board type for ESP32-S3-WROOM-2-N32R8V / ESP32-S3-DevKitC-1-N32R8V, the closest is `esp32-s3-devkitc-1` but that is for 8MB flash and no PSRAM.\r\n\r\nTo my knowledge there is no way to use custom board layouts from ESPHome ([ref](https://github.com/esphome/feature-requests/issues/2370), [ref](https://github.com/esphome/esphome/discussions/4302)), and I modified the `esp32-s3-devkitc-1` board configuration via `platformio_options` and `sdkconfig_options` to account for 32MB Octal Flash and 8MB Octal PSRAM.\r\n\r\nI also had to use the ESP-IDF framework, not Arduino, and change the espressif32 and esp-idf versions to the latest released versions, else even setting 32MB size would not compile and / or create a boot loop.\r\n\r\nIt appears that using ESP-IDF the Arduino partition table layout is ignored (I was not sure if any Ardu",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "2304902950",
+        "published_at": "2024-05-20T01:35:45Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/esphome/issues/issues/5824",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Add ability to stop the learning phase for the detector",
+      "url": "https://github.com/opendistro-for-elasticsearch/anomaly-detection/issues/388",
+      "repo": "opendistro-for-elasticsearch/anomaly-detection",
+      "issue_number": 388,
+      "reactions": 4,
+      "comments": 2,
+      "created": "2021-02-17T12:06:16Z",
+      "body_snippet": "**Is your feature request related to a problem? Please describe.**\r\nCurrently, the detector continues learning from new data - even if this is anomalous. This results in unexpected behaviour such as abnormal data being normalised if a failure condition persists. This is often the case with e.g. industrial sensors. \r\n\r\nImagine a temperature sensor in a process with normal temperatures between 30C-80C. In a failure, the sensor detects 100C and the failure persists. In such a case the anomaly detector will initially detect the anomaly and gradually lower its grade until 100C is no longer considered anomalous by the detector.\r\n\r\n![anomaly_detection_results](https://user-images.githubusercontent.com/9004891/108201777-438e9800-7146-11eb-8251-7cd9d5b7c6bb.png)\r\n\r\n\r\n**Describe the solution you'd like**\r\nGive users the ability to pause or stop training of the detector so that new data, anomalous or otherwise, is not used for training.\r\n\r\n**Describe alternatives you've considered**\r\nRule based detectors can catch these use cases but are cumbersome. \r\n\r\n**Additional context**\r\nI have written a [blog article](https://iotready.co/blog/iot-anomaly-detection-open-distro-elasticsearch/) describing",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "810125517",
+        "published_at": "2021-02-17T12:06:16Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/opendistro-for-elasticsearch/anomaly-detection/issues/388",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "AirWatch Pro – Air Quality Intelligence Dashboard",
+      "url": "https://github.com/UniprJRC/DSwithMATLAB/issues/205",
+      "repo": "UniprJRC/DSwithMATLAB",
+      "issue_number": 205,
+      "reactions": 3,
+      "comments": 0,
+      "created": "2026-05-28T14:35:35Z",
+      "body_snippet": "Dear Professors,\n\nI would like to share our project AirWatch Pro, developed using MATLAB, Raspberry Pi, and a Nova SDS011 PM Sensor, as part of our academic and practical learning activities in IoT, environmental monitoring, and real-time data analytics.\n\nGitHub Repository:\nhttps://github.com/akashlanke/AirWatch-Pro-Air-Quality-Intelligence-Dashboard.git\n\nProjects Slides\n\n[airpro project-compressed.pdf](https://github.com/user-attachments/files/28350931/airpro.project-compressed.pdf)\n\nProject Overview\n\nThe primary objective of this project was to design and implement an IoT-based environmental monitoring system capable of continuously measuring and analyzing air quality parameters in real time. The system acquires PM2.5 and PM10 particulate matter data using a Nova SDS011 sensor connected to a Raspberry Pi, while MATLAB is used for data acquisition, processing, visualization, and ML model training. Additionally, a React-based web dashboard provides a cross-platform interface for real-time monitoring and AI insights. The project demonstrates the integration of embedded hardware systems with software-based analytical tools to create a real-time AQI monitoring platform.\n\nImplemented F",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4541256954",
+        "published_at": "2026-05-28T14:35:35Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/UniprJRC/DSwithMATLAB/issues/205",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Autoencoder Algorithm",
+      "url": "https://github.com/KDD-OpenSource/DeepADoTS/issues/198",
+      "repo": "KDD-OpenSource/DeepADoTS",
+      "issue_number": 198,
+      "reactions": 2,
+      "comments": 0,
+      "created": "2019-12-09T03:05:10Z",
+      "body_snippet": "Dear  @WGierke and team,\r\nAccording to your reference \"Outlier Detection Using Replicator Neural Networks\" , DaWaK 2002, I see that in the paper, they implemented the RNN with 5 layers. But in your code \"src/algorithms/autoencoder.py\", you implement a simple auto-encoder, that mean it contains only 4 layers. Then, I think you should to correct the reference in \"readme\" file. On other hand, to detect the anomalies, you use the multivariate normal random variable, it is nearly the same ideal of \"LSTM-based Encoder-Decoder for Multi-sensor Anomaly Detection\", but I'm not clear why you rolling the data by using the \"sequence_length\" variable and calculate the \"mean\" of the score according to the rolling data. Anyway, this is a good repos to anyone to learning and testing deep learning.",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "534662610",
+        "published_at": "2019-12-09T03:05:10Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/KDD-OpenSource/DeepADoTS/issues/198",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[EPIC] Predictive ML automation — presence prediction, energy optimization, anomaly detection",
+      "url": "https://github.com/destaben/homeassistant/issues/17",
+      "repo": "destaben/homeassistant",
+      "issue_number": 17,
+      "reactions": 1,
+      "comments": 0,
+      "created": "2026-03-22T08:26:22Z",
+      "body_snippet": "## Epic: Predictive Home Automation with Machine Learning\n\n### Overview\n\nThe home generates a rich stream of data — presence patterns, light usage, temperature fluctuations, energy consumption (`edata`), vacuum cycles, and more. This epic uses that data to build predictive models that proactively adapt the home before the user needs to act.\n\n---\n\n## Milestone 1 — Data Collection and Observability (Week 1)\n\n**Goal:** Ensure all relevant data is being persisted and queryable.\n\n### Steps\n- [ ] Verify HA's built-in `recorder` is persisting all relevant entities (default 10-day window is too short)\n- [ ] Extend recorder retention for key entities:\n  ```yaml\n  # homeassistant/configuration.yaml\n  recorder:\n    purge_keep_days: 90\n    include:\n      entities:\n        - sensor.temperature\n        - sensor.humidity\n        - binary_sensor.door_1_contact\n        - binary_sensor.motion_1\n        - binary_sensor.motion_2\n        - person.destaben\n        - person.carolmontaes\n        - switch.light\n        - sensor.electricity_*\n  ```\n- [ ] Set up InfluxDB + Grafana (or use HA's built-in Statistics) for long-term data visualization\n- [ ] Create a daily stats automation that logs key metrics to",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4115332023",
+        "published_at": "2026-03-22T08:26:22Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/destaben/homeassistant/issues/17",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Change a scanner's sensor type?",
+      "url": "https://github.com/KSPModStewards/SCANsat/issues/255",
+      "repo": "KSPModStewards/SCANsat",
+      "issue_number": 255,
+      "reactions": 1,
+      "comments": 0,
+      "created": "2017-02-06T10:53:23Z",
+      "body_snippet": "Hi,\r\n\r\nI want to change the multispectral scanner to scan only for biomes, and not detect anomalies. \r\n\r\nI've tried setting\r\n```\r\nsensorType = 8  //2^3\r\n```\r\nin MULTI.cfg, as I saw in SCANType.cs that\r\n```\r\npublic enum SCANtype : int\r\n\t{\r\n\t\t...\r\n\t\tBiome = 1 << 3,\t\t    // biome data\r\n\t\tAnomaly = 1 << 4,\t\t    // anomalies (position of anomaly)\r\n\t\tAnomalyDetail = 1 << 5,\t// anomaly detail (name of anomaly, etc.)\r\n```\r\n\r\nBut it doesn't seem to affect the part performance ingame (anomalies are still detected and shown on the big map).\r\nOf course, I've cleared the data for the body I've tested this in (Mun). \r\n\r\nReasoning for the change:\r\nThe stock KerbNet + unmanned modules do detect anomalies, but have less than 100% detection rate, whereas the multi scanner does it instantly. The multi scanner is also available earlier in the tech tree than the stock parts that are better at detecting anomalies, thus making finding them way easier - this feels \"cheaty\", as finding anomalies is a kind of mini game per se.\r\n\r\nI know I can just toggle anomalies off on the map, but I'd still like to show anomalies I've actually found and visited (those scanned in detail by using the BTDT). \r\n\r\nAs a sugges",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "205547892",
+        "published_at": "2017-02-06T10:53:23Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/KSPModStewards/SCANsat/issues/255",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Bare Metal Chassis & Hardware Data",
+      "url": "https://github.com/elastic/ecs/issues/1029",
+      "repo": "elastic/ecs",
+      "issue_number": 1029,
+      "reactions": 1,
+      "comments": 1,
+      "created": "2020-10-15T12:25:05Z",
+      "body_snippet": "**Summary**\r\n\r\nLooking for a way to collect chassis and hardware metrics on Bare Metal servers.  Ideally, this solution would integrate with the Elastic Stack by using an existing beat, so the data is as heterogeneous as possible.\r\n\r\n**Motivation**:\r\n\r\nMy team is currently experimenting with Metricbeat to monitor bare metal servers in our private cloud.  The \"add_host_metadata\" processor adds some useful information about the OS, kernel, ip address, and MAC address.   What we're looking for next are some metrics about the underlying chassis and hardware.  More specifically: manufacturer, model, HBA WWN, power supply health, fan speed, temperature, etc.   We would really like a solution that uses beats, so the data is easily meshed with our other host metadata.\r\n\r\n**Detailed Design**:\r\n\r\nOur goal is to collect the following:\r\n\r\nsystem.manufacturer : \"Dell Inc.\"\r\nsystem.model: \"PowerEdge R740\"\r\nsystem.serialnumber: \"AB12345\"\r\nbios.version: \"2.2.11\"\r\n\r\n_The above metrics can be retrieved from within the OS by decoding the DMI table (SMBIOS) using dmidecode, or something similar.  When a problem is detected, identifying the hardware type and serial number are critical to responding qui",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "722287701",
+        "published_at": "2020-10-15T12:25:05Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/elastic/ecs/issues/1029",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "GAIA + Arduino: Local AI-Powered Hardware Control",
+      "url": "https://github.com/amd/gaia/issues/323",
+      "repo": "amd/gaia",
+      "issue_number": 323,
+      "reactions": 1,
+      "comments": 1,
+      "created": "2026-02-07T20:21:00Z",
+      "body_snippet": "## Summary\n\nScope and build an example demonstrating GAIA agents interfacing with Arduino microcontrollers over serial (USB), enabling local, private AI control of physical hardware — no cloud required.\n\n## Motivation\n\nArduino is the most popular microcontroller platform in the world with tens of millions of boards sold. Connecting GAIA to Arduino unlocks a massive new surface area for local AI agents — bridging the gap between software intelligence and physical-world actuation. This is a natural extension of GAIA’s “Stop Renting AI, Start Owning It” philosophy into the hardware/IoT space, where cloud-dependent solutions like AWS IoT or Google Home create privacy, latency, and cost concerns.\n\nAn Arduino example would:\n\n- Showcase GAIA’s extensibility beyond pure software workflows\n- Appeal to the massive maker/hobbyist community (~30M+ Arduino users)\n- Demonstrate a compelling AI PC differentiator (local LLM → real-time hardware control)\n- Provide a template for more advanced edge AI + embedded integrations\n\n## Proposed Architecture\n\n```\n┌─────────────────────────────────────────────────┐\n│  AMD Ryzen AI PC                                │\n│                                         ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3911139680",
+        "published_at": "2026-02-07T20:21:00Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/amd/gaia/issues/323",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[BBS02] Speed sensor loses tracking",
+      "url": "https://github.com/danielnilsson9/bbs-fw/issues/114",
+      "repo": "danielnilsson9/bbs-fw",
+      "issue_number": 114,
+      "reactions": 1,
+      "comments": 93,
+      "created": "2023-04-23T18:38:00Z",
+      "body_snippet": "Recently rode the bike with the latest 1.3.1 version for a long run, I noticed around every 10-15 minutes the speed sensor data is not shown properly for a few seconds. \r\nFor example cruising at constant 35 km/h and sor a few moments firstly a lower speed is shown like 15-20 km/h and then a spike up to the 50s, then it is back to normal. \r\nMight be a sensor pulse filtering issue, but I'm just guessing at this point, I have no more information about his anomaly. \r\n\r\nThe speed sensor and the magnet is located perfectly to each other, and working (and so blinking) perfectly fine.\r\nThis is with a BBS02B.\r\n\r\nThanks in advance!",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "1680124224",
+        "published_at": "2023-04-23T18:38:00Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/danielnilsson9/bbs-fw/issues/114",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature]:",
+      "url": "https://github.com/troutman-dev/Container-Security-Theater/issues/5",
+      "repo": "troutman-dev/Container-Security-Theater",
+      "issue_number": 5,
+      "reactions": 1,
+      "comments": 0,
+      "created": "2026-05-05T23:48:31Z",
+      "body_snippet": "### Problem Statement\n\nThe platform currently models a single attack vector: network probes (port scan, connection sweep, service probe, HTTP fuzz). Every event flows through the same behavioral family and the orchestrator treats all of them as generic \"alerts.\" This means:\n\n- `PROCESS_ANOMALY` and `FILESYSTEM_EVENT` are already defined in `telemetry.proto` and referenced in `orchestrator/main.py`'s `BEHAVIOR_NAMES` table, but nothing emits them — they are dead schema.\n- There is no way to represent a multi-stage intrusion chain (recon → process anomaly → file access → persistence).\n- The at-a-glance dashboard is network/defender-centric and has no concept of event families.\n- A future \"AI-actor\" attacker simulation would have nothing meaningful to generate without host telemetry underneath it.\n\nWithout richer telemetry, the repo cannot demonstrate the kind of contextual, multi-signal detection that real endpoint observability platforms (and the roles this project is practicing for) require.\n\n### Proposed Solution\n\nDeliver a focused vertical slice across four areas:\n\n**1. New Rust crate: `host-sensor/`**\n\nA dedicated Rust binary (separate from `defender/`) that:\n- Loads a **scenari",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4387776897",
+        "published_at": "2026-05-05T23:48:31Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/troutman-dev/Container-Security-Theater/issues/5",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Automation design] KFM hourly Atmosphere domain builder",
+      "url": "https://github.com/bartytime4life/Kansas-Frontier-Matrix/issues/3673",
+      "repo": "bartytime4life/Kansas-Frontier-Matrix",
+      "issue_number": 3673,
+      "reactions": 1,
+      "comments": 1,
+      "created": "2026-08-28T01:37:21Z",
+      "body_snippet": "<!-- KFM_SECURITY_CURRENTNESS_20260916 -->\n## Security repair currentness — 2026-09-16 UTC\n\n**CONFIRMED base:** [main5bbfae05970acd4357a08135ff340284585039f4](https://github.com/bartytime4life/Kansas-Frontier-Matrix/commit/5bbfae05970acd4357a08135ff340284585039f4), tree227aaad711daa8042d2887e03b55eead543d54bd. This block supersedes current claims in older preserved checkpoints.\n\n**BLOCKED / NAMED_HOLD — ATMOSPHERE_SCHEDULER_ADOPTION_HOLD.** V5 Atmosphere task disabled, last run September 7; no accepted V1→V5 supersession established.\n\n**Evidence:** https://github.com/bartytime4life/Kansas-Frontier-Matrix/issues/3673 ; https://github.com/bartytime4life/Kansas-Frontier-Matrix/blob/5bbfae05970acd4357a08135ff340284585039f4/contracts/governance/automation_pr_proposal.md ; https://github.com/bartytime4life/Kansas-Frontier-Matrix/blob/5bbfae05970acd4357a08135ff340284585039f4/.github/workflows/automation-pr-proposal-guard.yml ; https://github.com/bartytime4life/Kansas-Frontier-Matrix/commit/05c5e5bdae3609255c62f95bb8ab66bd98ce9ba3\n\n**Next authority:** @bartytime4life + scheduler/control owner; relevant domain sensitivity/rights steward (role, not verified individual) **Dependencies:** #402",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "5273784506",
+        "published_at": "2026-08-28T01:37:21Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/bartytime4life/Kansas-Frontier-Matrix/issues/3673",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[BUG] Frequent total_energy_consumption resets reported in the logs",
+      "url": "https://github.com/fustom/ariston-remotethermo-home-assistant-v3/issues/439",
+      "repo": "fustom/ariston-remotethermo-home-assistant-v3",
+      "issue_number": 439,
+      "reactions": 1,
+      "comments": 0,
+      "created": "2026-01-19T12:26:33Z",
+      "body_snippet": "**Describe the bug**\nI see this entires frequently in the logs:\n\n```\n2026-01-19 11:40:11.738 INFO (Recorder) [homeassistant.components.sensor.recorder] Detected new cycle for sensor.ariston_central_heating_total_energy_consumption, last_reset set to 1970-01-01T00:00:00+00:00 (old last_reset 2026-01-19T09:28:29.623982+00:00)\n2026-01-19 11:40:11.739 INFO (Recorder) [homeassistant.components.sensor.recorder] Detected new cycle for sensor.ariston_domestic_hot_water_total_energy_consumption, last_reset set to 1970-01-01T00:00:00+00:00 (old last_reset 2026-01-19T09:28:29.623982+00:00)\n2026-01-19 11:40:11.739 INFO (Recorder) [homeassistant.components.sensor.recorder] Detected new cycle for sensor.ariston_central_heating_gas_consumption, last_reset set to 1970-01-01T00:00:00+00:00 (old last_reset 2026-01-19T09:28:29.623982+00:00)\n2026-01-19 11:40:11.739 INFO (Recorder) [homeassistant.components.sensor.recorder] Detected new cycle for sensor.ariston_domestic_hot_water_gas_consumption, last_reset set to 1970-01-01T00:00:00+00:00 (old last_reset 2026-01-19T09:28:29.623982+00:00)\n2026-01-19 11:40:11.740 INFO (Recorder) [homeassistant.components.sensor.recorder] Detected new cycle for sensor.ar",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3829497226",
+        "published_at": "2026-01-19T12:26:33Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/fustom/ariston-remotethermo-home-assistant-v3/issues/439",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Android App (Sensor Node)",
+      "url": "https://github.com/uclgsr/hellobellohellobello/issues/6",
+      "repo": "uclgsr/hellobellohellobello",
+      "issue_number": 6,
+      "reactions": 1,
+      "comments": 0,
+      "created": "2025-09-18T17:07:24Z",
+      "body_snippet": "To address the above gaps, the following implementation tasks are organized by system module. The focus is on high-priority fixes and features needed to complete the multi-modal system; tasks are roughly ordered by priority within each module:\n\n### Android App (Sensor Node)\n\n#### Shimmer GSR Module:\n\n- [ ] **Implement BLE Scanning & Pairing:** Enable active BLE device discovery for Shimmer sensors. Use the `BluetoothLeScanner` APIs to scan for nearby Shimmer devices (advertising the correct service) and present them in the UI for the user to select and pair. Ensure the app requests the required `BLUETOOTH_SCAN`/`CONNECT` and location permissions before scanning (see Permissions tasks). This will allow users to connect a new Shimmer without manual OS pairing.\n- [ ] **Robust Connection Handling:** Use `ShimmerBluetoothManagerAndroid` (from the Shimmer SDK) to manage the BLE connection. After initiating connection (e.g., via `connectDevice()`), listen for status callbacks. On success, update the UI state (e.g., show “GSR Connected”) and on failure, notify the user and perhaps allow retry. If the Shimmer disconnects unexpectedly, implement an auto-reconnect loop: attempt to reconnect u",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3431242928",
+        "published_at": "2025-09-18T17:07:24Z",
+        "collected_at": "2026-09-17T05:26:36+00:00",
+        "lineage_key": "https://github.com/uclgsr/hellobellohellobello/issues/6",
+        "lineage_basis": "canonical_url"
+      }
+    }
+  ]
+}

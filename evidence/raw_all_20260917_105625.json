@@ -1,0 +1,481 @@
+{
+  "query": "document reconciliation",
+  "count": 25,
+  "results": [
+    {
+      "source": "hn",
+      "title": "Show HN: Collab Word in Web - A collaborative DOCX Editor with MS Word Parity",
+      "url": "https://collab.word-in-web.com/",
+      "hn_id": "49128186",
+      "points": 3,
+      "comments": 0,
+      "author": "theRealestAEP",
+      "created": "2026-07-31T20:28:47Z",
+      "text_snippet": "TLDR: Collab WIW is a DOCX editor with MS Word parity that supports real-time collaborative editing. The collab layer is end to end encrypted and uses ephemeral rooms with stable share URLs. Ever collab room lives in only memory. Collaborator saved copies can bring the room back online at the same URL and reconcile offline edits.<p>The MS Word parity DOCX editor: I made a previous HN post about the editor itself. It is a pure JS DOCX editor that renders and edits the original document directly in the DOM instead of converting it into some other format.<p>I benchmarked it pretty heavily against thousands of pages to push for pixel and feature parity, including equations, tables, 3D objects, headers, footnotes, etc... I am not going to get too deep into that because I already posted a ShowHN earlier. The parity report has all of the fixtures I tested and the actual results.<p>Edit: Link to previous HN <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48995304\">https:&#x2F;&#x2",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "49128186",
+        "published_at": "2026-07-31T20:28:47Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://collab.word-in-web.com/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Collab Word in Web – Collaborative Near MS Word Parity Docx Editor",
+      "url": "https://collab.word-in-web.com/",
+      "hn_id": "49175985",
+      "points": 2,
+      "comments": 0,
+      "author": "theRealestAEP",
+      "created": "2026-08-04T22:17:28Z",
+      "text_snippet": "TLDR: Collab WIW is a DOCX editor with MS Word parity that supports real-time collaborative editing between humans and BYO Agents.<p>The collab layer is end to end encrypted and uses ephemeral rooms with stable share URLs. Ever collab room lives in only memory. Collaborator saved copies can bring the room back online at the same URL and reconcile offline edits.<p>For BYO Agents, you generate an invite link into Codex or Claude. The AI runs the linked WordInWeb agent package, connects to the document, and opens up a private chat in the browser with the user who invited the agent. Everyone sees its document activity, but only the inviter can chat with and direct it.<p>The MS Word parity DOCX editor: I made a previous HN post about the editor itself. It is a pure JS DOCX editor that renders and edits the original document directly in the DOM instead of converting it into some other format.<p>I benchmarked it pretty heavily against thousands of pages to push for pixel and feature parity, i",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "49175985",
+        "published_at": "2026-08-04T22:17:28Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://collab.word-in-web.com/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Compare Data Between Two Stacks of Documents Using Regex",
+      "url": "https://patterns.voidrab.com/",
+      "hn_id": "46675975",
+      "points": 1,
+      "comments": 0,
+      "author": "sudostar",
+      "created": "2026-01-19T07:37:01Z",
+      "text_snippet": "This PDF Pattern Matcher is a local web app that allows you to compare Regex matches in two stacks of documents. This is useful for e.g. document reconciliation.<p>I initially created a Python NiceGUI app for my parent&#x27;s small business so that they can verify that all delivery notes are included in a freight credit note.<p>I re-implemented it as a browser-based Nuxt app.<p>I use PDF.js to extract text from PDFs and also experiment with Tesseract.js for OCR. Papaparse is used to generate simple CVS reports of the results.",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "46675975",
+        "published_at": "2026-01-19T07:37:01Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://patterns.voidrab.com/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Tile.run – Extract structured data from any document via API",
+      "url": "https://www.tile.run/",
+      "hn_id": "42075186",
+      "points": 11,
+      "comments": 6,
+      "author": "ntkris",
+      "created": "2024-11-07T09:44:07Z",
+      "text_snippet": "Hey HN,<p>Today, we’re launching tile.run, an API that extracts structured data from unstructured documents (PDF, images, text) with support for custom schemas.<p>The Problem: Extracting data out of unstructured documents is surprisingly hard. We built tile.run while solving this for our product Kili (automation for invoicing&#x2F;reconciliation). We found that getting to accuracy that is reliable enough for automation is challenging. Dense documents (e.g., lots of tables or line items) are even harder, and these are the most valuable to automate. After talking to other teams and developers, we found many other teams were after similar solutions.<p>Key Features:<p>- Multiple formats: PDF, JPEG, PNG, TIFF, plain text<p>- Custom schema support with nested objects&#x2F;arrays<p>- Specialized in dense documents with tables<p>- Self-serve API - start extracting in minutes<p>Technical Details:<p>- REST API with simple JSON responses<p>- Robust error handling and validation<p>Coming Soon:<p>-",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "42075186",
+        "published_at": "2024-11-07T09:44:07Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://www.tile.run/",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "View Reconciliation Patterns in Declarative UI Toolkits",
+      "url": "https://docs.google.com/document/d/1Wu-z3tf_NBogpTjL4ImT14bE8Jw_uSgPlkI7u8zNKcI/edit",
+      "hn_id": "36272662",
+      "points": 3,
+      "comments": 0,
+      "author": "krptos",
+      "created": "2023-06-10T17:34:55Z",
+      "text_snippet": "",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "36272662",
+        "published_at": "2023-06-10T17:34:55Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://docs.google.com/document/d/1Wu-z3tf_NBogpTjL4ImT14bE8Jw_uSgPlkI7u8zNKcI/edit",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Launch HN: Decentro (YC S20) – APIs for Banking Integrations in India",
+      "url": "https://news.ycombinator.com/item?id=24905977",
+      "hn_id": "24905977",
+      "points": 143,
+      "comments": 44,
+      "author": "rohittaneja",
+      "created": "2020-10-27T10:19:06Z",
+      "text_snippet": "Hola HackerNews!<p>Super stoked to share Decentro (<a href=\"http:&#x2F;&#x2F;bit.ly&#x2F;decentro-hn\" rel=\"nofollow\">http:&#x2F;&#x2F;bit.ly&#x2F;decentro-hn</a>) with all of you today.<p>Decentro is an easy-to-use API platform for banking integrations in India &amp; Asia. We do the hard work of tying up with legacy financial institutions so that developers can integrate their desired APIs and launch.<p>Think of us like Plaid+Synapse for the Asian subcontinent where the regulatory complexity, financial intricacies, and local knowledge inhibit the foreign infrastructure players from operating.<p>This is my second fintech venture, and I started Decentro out of my own pain point. In 2015, we had launched a fintech venture called &#x27;Mypoolin&#x27; in the domain of social payments, ran it for three years, and then sold it to a global payments company that eventually got acquired by PayU in 2019.<p>Throughout those five years across the organizations, we saw it first hand that integration",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "24905977",
+        "published_at": "2020-10-27T10:19:06Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=24905977",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Graphiti – LLM-Powered Temporal Knowledge Graphs",
+      "url": "https://github.com/getzep/graphiti",
+      "hn_id": "41445445",
+      "points": 142,
+      "comments": 21,
+      "author": "roseway4",
+      "created": "2024-09-04T13:21:19Z",
+      "text_snippet": "Hey HN! We&#x27;re Paul, Preston, and Daniel from Zep. We&#x27;ve just open-sourced Graphiti, a Python library for building temporal Knowledge Graphs using LLMs.<p>Graphiti helps you create and query graphs that evolve over time. Knowledge Graphs have been explored extensively for information retrieval. What makes Graphiti unique is its ability to build a knowledge graph while handling changing relationships and maintaining historical context.<p>At Zep, we build a memory layer for LLM applications. Developers use Zep to recall relevant user information from past conversations without including the entire chat history in a prompt.  Accurate context is crucial for LLM applications. If an AI agent doesn&#x27;t remember that you&#x27;ve changed jobs or confuses the chronology of events, its responses can be jarring or irrelevant, or worse, inaccurate.<p>Before Graphiti, our approach to storing and retrieving user “memory” was, in effect, a specialized RAG pipeline. An LLM extracted “facts”",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "41445445",
+        "published_at": "2024-09-04T13:21:19Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/getzep/graphiti",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: YourFinanceWORKS – Open-source financial management with AI",
+      "url": "https://www.yourfinanceworks.com",
+      "hn_id": "47212707",
+      "points": 1,
+      "comments": 0,
+      "author": "snowsky",
+      "created": "2026-03-02T01:17:57Z",
+      "text_snippet": "Hey HN,<p>I&#x27;ve been building YourFinanceWORKS, a comprehensive open-source financial management platform that combines enterprise-grade features with AI-powered automation. Think of it as a self-hosted alternative to QuickBooks&#x2F;Xero with advanced capabilities.<p>## What makes this interesting for HN:<p>*Technical Architecture:*\n- Multi-tenant design with database-per-tenant isolation\n- FastAPI + PostgreSQL + Redis + Kafka stack\n- AI-powered OCR using vision models (95%+ accuracy)\n- Event-driven architecture with background processing\n- Plugin system for extensibility\n- Docker deployment with production-ready configuration<p>*AI Integration:*\n- Receipt&#x2F;invoice OCR with structured data extraction\n- Natural language queries (&quot;Show me overdue invoices&quot;)\n- Fraud detection and anomaly analysis\n- Risk scoring for financial documents\n- Configurable prompt management with versioning<p>*Key Features:*\n- Professional invoicing with AI templates\n- Automated bank reconcilia",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "47212707",
+        "published_at": "2026-03-02T01:17:57Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://www.yourfinanceworks.com",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "Show HN: Fyno – Automate repetitive bookkeeping tasks",
+      "url": "https://www.meetfyno.com",
+      "hn_id": "46970843",
+      "points": 1,
+      "comments": 0,
+      "author": "alicele27",
+      "created": "2026-02-11T04:31:41Z",
+      "text_snippet": "Hey HN,<p>We spend a lot of time mapping cryptic bank transaction descriptions (AMZN MKTP US*2X4Y9Z) to a Chart of Accounts. It’s a repetitive task that currently relies heavily on manual data entry or fragile, rules-based automation.<p>We built Fyno to automate this using LLMs to understand the context behind financial documents, not just the text.<p>The Engineering Challenge: The main hurdle in automated bookkeeping isn&#x27;t just OCR; it&#x27;s contextual reconciliation. A bank statement provides a amount and a cryptic vendor string. A receipt provides a detailed breakdown of line items, tax, and a potentially handwritten tip.<p>Fyno solves this by bridging the gap between bank feeds and documents:<p>Multimodal Document Parsing: We use vision models to interpret handwriting, messy scans, and skew. We don&#x27;t just extract text; we understand that a handwritten note on a restaurant slip is a tip, not a second transaction.<p>Contextual Mapping: We take raw receipt data (line items)",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "46970843",
+        "published_at": "2026-02-11T04:31:41Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://www.meetfyno.com",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "hn",
+      "title": "IT Operations Engineer",
+      "url": "https://news.ycombinator.com/item?id=3081409",
+      "hn_id": "3081409",
+      "points": 1,
+      "comments": 0,
+      "author": "enova",
+      "created": "2011-10-06T20:01:55Z",
+      "text_snippet": "Title: IT Operations Engineer\n(2nd Shift, Sunday – Thursday, 5pm – 2am)\nReports To: Manager of Operations Support&#60;p&#62;About Us:\nEnova Financial is a web-based consumer lending company located in downtown Chicago.  The company was founded in 2004 and currently operates in more than 30 states.  We launched operations in the United Kingdom in 2007, in Australia in 2009, and in Canada in 2009.&#60;p&#62;Why work for Enova?\nHere at Enova Financial, we’re anything but conventional. We have fun meeting our customers' individualized needs not only through our extensive marketing relationships, but also our state-of-the-art technology.&#60;p&#62;Our flexible hours, stocked break rooms and freedom to wear jeans, in addition to the foosball and ping-pong tables, are just a few of the many perks that help promote our expressive culture. Want to institute a new idea? Speak up! Want to take on a new challenge? Tackle it! Our open door policy ensures that anybody can become a leader as long as ",
+      "provenance": {
+        "source": "hn",
+        "source_record_id": "3081409",
+        "published_at": "2011-10-06T20:01:55Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://news.ycombinator.com/item?id=3081409",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Path-Relevant Revision History for Monorepo Applications",
+      "url": "https://github.com/argoproj/argo-cd/issues/27102",
+      "repo": "argoproj/argo-cd",
+      "issue_number": 27102,
+      "reactions": 103,
+      "comments": 4,
+      "created": "2026-04-01T05:23:43Z",
+      "body_snippet": "# Path-Relevant Revision History for Monorepo Applications\n\nFilter Application revision history and sync status to only reflect commits that actually changed files relevant to the Application, using `argocd.argoproj.io/manifest-generate-paths` (or the proposed per-source `manifestGeneratePaths` field from #26869).\n\n**Related Issues:**\n- [Accurate reporting of last commits (#23366)](https://github.com/argoproj/argo-cd/issues/23366)\n- [ArgoCD generates irrelevant history records in monorepo setups during manual sync (#17280)](https://github.com/argoproj/argo-cd/issues/17280)\n- [Show info about the last commit(s) which actually affects a given application (#20592)](https://github.com/argoproj/argo-cd/issues/20592)\n- [Hide author and comment for PRs under Sync Status and Last Sync (#20586)](https://github.com/argoproj/argo-cd/issues/20586)\n- [Notifications should only be sent for apps that have actually changed (#12169)](https://github.com/argoproj/argo-cd/issues/12169)\n- [auto-sync on monorepo effectively equals to self-heal (#10679)](https://github.com/argoproj/argo-cd/issues/10679)\n- [Rollback via UI is slow where it doesn't have to be? (#22898)](https://github.com/argoproj/argo-cd/",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4184205728",
+        "published_at": "2026-04-01T05:23:43Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/argoproj/argo-cd/issues/27102",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Discrepancy between \"current sync status\" and \"last sync status\"",
+      "url": "https://github.com/argoproj/argo-cd/issues/7629",
+      "repo": "argoproj/argo-cd",
+      "issue_number": 7629,
+      "reactions": 74,
+      "comments": 34,
+      "created": "2021-11-05T14:35:30Z",
+      "body_snippet": "# Summary\r\n\r\nAn ArgoCD Application has a \"current sync status\" and a \"last sync result\" which display commit SHAs that can differ.\r\n\r\nIt is not obvious why there would be a difference between these two SHAs (see below).\r\n\r\n<img width=\"757\" alt=\"Inconsistency between current sync status and last sync result\" src=\"https://user-images.githubusercontent.com/8124374/140523592-ba864b0d-1fb1-4ce4-a4e0-4e6a79abb7e4.png\">\r\n\r\n@jannfis explained that \"current sync status\" shows the “current desired state” (i.e. the latest commit to the target revision) from the last reconciliation operation, while \"last sync result\" shows the last sync operation where manifests were changed and applied to the cluster.\r\n\r\n# Motivation\r\n\r\nThe term \"sync\" seems to be overloaded in the UI labels, which makes it harder to understand whether the live configuration is in sync with the desired configuration.\r\n\r\nAdditionally, after the desired and live manifests are reconciled the \"last sync result\" is not updated to match the \"current sync status\" when the reconciliation operation finds that no difference between the live and desired state.\r\n\r\n# Proposal\r\n\r\nI would suggest that the text \"last sync result\" in the UI c",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "1045917002",
+        "published_at": "2021-11-05T14:35:30Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/argoproj/argo-cd/issues/7629",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Geometric consistency across depth, ray, and camera outputs: clarification needed for metric applications",
+      "url": "https://github.com/ByteDance-Seed/Depth-Anything-3/issues/124",
+      "repo": "ByteDance-Seed/Depth-Anything-3",
+      "issue_number": 124,
+      "reactions": 29,
+      "comments": 3,
+      "created": "2025-12-02T17:20:31Z",
+      "body_snippet": "## Summary\n\nFirst, congratulations on DA3 - the perceptual depth quality is excellent, and the unified depth-ray representation is an elegant concept. I'm investigating DA3 for metrological applications (3D reconstruction with known accuracy bounds) and have encountered several inconsistencies between outputs that prevent reliable metric use.\n\nI've done a thorough code review to understand the implementation before raising these questions. I'd appreciate clarification on whether these are intended behaviors, documentation gaps, or areas where my understanding is incomplete.\n\n---\n\n## Core Issue: The outputs don't live in a consistent geometric reference frame\n\nFor metric applications, I need to be able to:\n\n1. Unproject depth to 3D points using intrinsics\n2. Use ray origins/directions to define the same 3D points\n3. Have camera poses that are consistent with both\n\nThese three paths should converge to the same world-space geometry. Currently, they don't.\n\n---\n\n## Observations with Code Evidence\n\n### 1. Ray origins are not constant per frame\n\nFor a pinhole camera, all rays originate from the camera center. The ray origin channels should be constant (or very nearly so) across all pixel",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3686822043",
+        "published_at": "2025-12-02T17:20:31Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/ByteDance-Seed/Depth-Anything-3/issues/124",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Meta] Abnormal Codex usage/quota depletion and usage-accounting inconsistencies — cross-report tracker",
+      "url": "https://github.com/openai/codex/issues/41220",
+      "repo": "openai/codex",
+      "issue_number": 41220,
+      "reactions": 22,
+      "comments": 46,
+      "created": "2026-08-27T23:24:40Z",
+      "body_snippet": "## Summary\n\nThere are now many open Codex reports describing a common **user-visible symptom family**:\n\n> Codex subscription quota or purchased credits are depleted materially faster than the user's prior baseline or local/token evidence would predict, sometimes with abrupt changes during an unchanged usage window, passive/background consumption, or usage records that do not reconcile with the meter.\n\nThis meta issue is intended to **link and compare those reports in one place**.\n\n**This does not assume they all have one root cause.** The evidence already points to several potentially independent mechanisms: entitlement/provisioning, server-side weighting/accounting, background activity, retries/polling, context replay, analytics/ledger gaps, and client-side workflow amplification. The purpose is to stop treating each report as an isolated anecdote and give maintainers a single place to correlate timelines, fixes, regressions, and account-side reconciliation.\n\n## Why a tracker is warranted\n\nSeveral reports contain controlled or unusually strong evidence rather than only subjective impressions:\n\n| Issue | Evidence / symptom | Why it matters |\n|---|---|---|\n| #28879 | Same GPT-5.5 pl",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "5273031773",
+        "published_at": "2026-08-27T23:24:40Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/openai/codex/issues/41220",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Feature: Handling Unit (License Plate) management for pallet/package tracking across the stock lifecycle",
+      "url": "https://github.com/frappe/erpnext/issues/55521",
+      "repo": "frappe/erpnext",
+      "issue_number": 55521,
+      "reactions": 20,
+      "comments": 0,
+      "created": "2026-06-01T16:18:40Z",
+      "body_snippet": "## Before submitting\n\n- [x] I searched existing issues and confirmed this is not a duplicate.\n- [x] This is a feature request / design proposal, not a bug or support question.\n\n> Note on contribution norms: ERPNext routes general Q&A and open-ended discussion to the [community forum](https://discuss.frappe.io/c/erpnext/6), and the GitHub issue forms are bug-focused. This is filed as a structured **feature request** (`feature-request`) because it proposes a concrete new domain object with data-model implications, and because it is easier to reference specific DocTypes, fields, and source paths here. Happy to move the discussion to the forum if maintainers prefer — pointers welcome.\n\n## Is your feature request related to a problem? Please describe.\n\n<img width=\"820\" height=\"440\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/89be441c-6548-409b-9053-06149d54f164\" />\n\n**As a manufacturing/warehouse operator, I need to pack varying quantities of goods onto a pallet (or into a carton/container), give that physical load a single scannable identity, and then track and move it as one unit — from the moment it is built in production, through storage and internal transfers, all t",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4564641842",
+        "published_at": "2026-06-01T16:18:40Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/frappe/erpnext/issues/55521",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Roadmap",
+      "url": "https://github.com/elsa-workflows/elsa-core/issues/3232",
+      "repo": "elsa-workflows/elsa-core",
+      "issue_number": 3232,
+      "reactions": 18,
+      "comments": 51,
+      "created": "2022-08-01T11:39:38Z",
+      "body_snippet": "# Elsa Roadmap\n\nLast refreshed: 2026-09-16 (post-3.8.2 operational patches and BPMN authoring status)\n\nThis roadmap is a product direction document, not a fixed release calendar. Elsa is developed through a mix of core maintainer work, customer-funded work, and community contributions, so sequencing can change when real-world demand changes. The intent is stable: make Elsa the most productive, dependable, and extensible workflow platform for the .NET ecosystem.\n\nThis version is grounded in the current `elsa-core`, `elsa-studio`, and `elsa-extensions` repositories, including source code, open issues, open pull requests, releases, and discussions where available.\n\n## North Star\n\nElsa should feel like the natural workflow engine for .NET teams:\n\n- productive enough for application developers to model real business processes quickly\n- dependable enough for production operations, rolling deploys, multi-tenant systems, and distributed workloads\n- open enough to embed, customize, extend, and automate without fighting the framework\n- powerful enough to connect systems, run long-lived processes, expose human tasks, and observe what is happening\n\n## Capability Checklist\n\nLegend: `[x]` shippe",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "1324281312",
+        "published_at": "2022-08-01T11:39:38Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/elsa-workflows/elsa-core/issues/3232",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Longer-term plans for the Prometheus x-fork?",
+      "url": "https://github.com/free/prometheus/issues/2",
+      "repo": "free/prometheus",
+      "issue_number": 2,
+      "reactions": 17,
+      "comments": 10,
+      "created": "2018-04-25T20:10:31Z",
+      "body_snippet": "Hey Alin,\r\n\r\nI've been following your posts on the Prometheus Google Group, and comments in the Grafana issue tracker for some time now.  \r\n\r\nI wanted to start off by offering my gratitude for [the time you've taken](https://github.com/prometheus/prometheus/issues/3806) to carefully and clearly outline the limitations of the Prometheus `rate`, `increase`, and `delta` functions, and for [rolling up your sleeves](https://github.com/prometheus/prometheus/pull/3760) and creating the code to solve these issues.  \r\n\r\nI was [one of the many confused Prometheus/Grafana users](https://github.com/prometheus/prometheus/issues/2364) who saw my graphs jumping around between refreshes.  I'm tracking many slow-moving counters where the exact values of occasional (but rare) spikes are significant and meaningful.  Yet, I haven't been able to use them reliably due to these limitations.\r\n\r\nThe [experiments you published](https://free.github.io/xrate/) really made things click for me.  Only when I saw [your screenshots](https://free.github.io/xrate/Grafana%20-%20xrate%20-%20only%20adjust%20fully%20covered%20range%2C%20smooth%20counter%2C%20series%20start.png) of the rate of a slowly-incrementing count",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "317776202",
+        "published_at": "2018-04-25T20:10:31Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/free/prometheus/issues/2",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "深入 React 生命周期",
+      "url": "https://github.com/sisterAn/blog/issues/34",
+      "repo": "sisterAn/blog",
+      "issue_number": 34,
+      "reactions": 17,
+      "comments": 2,
+      "created": "2019-03-04T14:17:59Z",
+      "body_snippet": "## 你真的了解 React 生命周期吗？\r\n\r\nReact 生命周期很多人都了解，但通常我们所了解的都是 **单个组件** 的生命周期，但针对 **Hooks 组件、多个关联组件**（父子组件和兄弟组件） 的生命周期又是怎么样的喃？你有思考和了解过吗，接下来我们将完整的了解 React 生命周期。\r\n\r\n关于 **组件** ，我们这里指的是 `React.Component` 以及 `React.PureComponent` ，但是否包括 Hooks 组件喃？\r\n\r\n### 一、Hooks 组件\r\n\r\n**函数组件** 的本质是函数，没有 state 的概念的，因此**不存在生命周期**一说，仅仅是一个 **render 函数**而已。\r\n\r\n但是引入 **Hooks** 之后就变得不同了，它能让组件在不使用 class 的情况下使用 state 以及其他的 React特性，相比与 class 的生命周期概念来说，它更接近于实现状态同步，而不是响应生命周期事件。但我们可以利用 `useState`、 `useEffect()` 和 `useLayoutEffect()` 来模拟实现生命周期。\r\n\r\n即：**Hooks 组件更接近于实现状态同步，而不是响应生命周期事件**。\r\n\r\n下面，是具体的 生命周期 与 Hooks 的**对应关系**：\r\n\r\n- `constructor`：函数组件不需要构造函数，我们可以通过调用 **`useState` 来初始化 state**。如果计算的代价比较昂贵，也可以传一个函数给 `useState`。\r\n\r\n  ```js\r\n  const [num, UpdateNum] = useState(0)\r\n  ```\r\n\r\n  \r\n\r\n- `getDerivedStateFromProps`：一般情况下，我们不需要使用它，我们可以在**渲染过程中更新 state**，以达到实现 `getDerivedStateFromProps` 的目的。\r\n\r\n  ```js\r\n  function ScrollView({row}) {\r\n    let [isScrollingDown, setIsScrollingDown] = useState(false);\r\n    let [prevRow, setPrevRow] = useState(null);\r\n  \r\n    if (row !== prevRow) {\r\n      // Row 自上次渲染以来发生过改变。更新 isScrollingDown。\r\n      setIsScrollingDown(prevRow !== null && row > prevRow);\r\n      setPrevRow(row);\r\n    }\r\n  \r\n    return `",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "416822145",
+        "published_at": "2019-03-04T14:17:59Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/sisterAn/blog/issues/34",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "前端性能量化标准",
+      "url": "https://github.com/frontend9/fe9-library/issues/7",
+      "repo": "frontend9/fe9-library",
+      "issue_number": 7,
+      "reactions": 16,
+      "comments": 5,
+      "created": "2018-08-01T07:19:41Z",
+      "body_snippet": "# 前端性能量化标准\r\n\r\n我们经常能看到大量介绍前端如何进行性能优化的文章。然而很多文章只介绍了如何优化性能，却未能给出一个可计算，可采集的性能量化标准。甚至看到一些文章，在介绍自己做了优化后的性能时，提到页面加载速度提升了多少多少，但是当你去问他你怎么测量性能的时，却不能给出一个科学的、通用的方法。  \r\n其实，在进行性能优化前，首先需要确定性能衡量标准。前端性能大致分为两块，页面加载性能和页面渲染性能。页面加载性能指的是我们通常所说的首屏加载性能。页面渲染性能指的是用户在操作页面时页面是否能流畅运行。滚动应与手指的滑动一样快，并且动画和交互应如丝般顺滑。这两种页面性能，都需要有可量化的衡量标准。  \r\n本文参考了谷歌提出的性能衡量方式。首先确定以用户体验为中心的性能衡量标准。然后，针对这些性能标准，制定采集性能数据的方法，以及性能数据分析方法。最后，结合性能量化标准，提出优化性能的方法。\r\n\r\n## 页面加载性能\r\n\r\n- 工具：[Lighthouse](https://developers.google.com/web/tools/lighthouse/)  \r\n- 以用户为中心的性能度量：<https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics>  \r\n\r\n### 性能度量标准\r\n\r\n下表是与页面加载性能相关的用户体验。\r\n\r\n 用户体验 | 描述\r\n------------- | -------------\r\n它在发生吗？  | 网页浏览顺利开始了吗？服务端有响应吗？\r\n它是否有用？  | 用户是否能看到足够的内容？\r\n它是否可用？  | 用户是否可以和页面交互，还是页面仍在忙于加载？\r\n它是否令人愉快的？ | 交互是否流程和自然，没有卡段或闪烁？\r\n\r\n与用户体验相关，制定以下度量标准：\r\n\r\n- **First paint and first contentful paint  (它在发生吗？)**    \r\n    FP 和 FCP 分别是页面首次绘制和首次内容绘制。首次绘制包括了任何用户自定义的背景绘制，它是首先将像素绘制到屏幕的时刻。首次内容绘制是浏览器将第一个 DOM 渲染到屏幕的时间。该指标报告了浏览器首次呈现任何文本、图像、画布或者 SVG 的时间。这两个指标其实指示了我们通常所说的白屏时间。    \r\n    参考 api: <https://w3c.github.io/paint-timing/>  \r\n    在控制台查看 paint 性能：  \r\n    \r\n    ```js\r\n    window.performance.getEntriesByType('paint')\r\n    ```  ",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "346477569",
+        "published_at": "2018-08-01T07:19:41Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/frontend9/fe9-library/issues/7",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature]: Automatic PVC Resizing with WAL-Aware Safety",
+      "url": "https://github.com/cloudnative-pg/cloudnative-pg/issues/9928",
+      "repo": "cloudnative-pg/cloudnative-pg",
+      "issue_number": 9928,
+      "reactions": 15,
+      "comments": 9,
+      "created": "2026-02-06T18:39:58Z",
+      "body_snippet": "### Is there an existing issue already for this feature request/idea?\n\n- [x] I have searched for an existing issue, and could not find anything. I believe this is a new feature request to be evaluated.\n\n### What problem is this feature going to solve? Why should it be added?\n\n## ⚠️ For discussion please see the companion discussion: https://github.com/cloudnative-pg/cloudnative-pg/discussions/9929 \n\n## Problem Statement\n\nPostgreSQL storage requirements are inherently difficult to predict. Databases grow over time, and running out of disk space causes PostgreSQL crashes, WAL archiving failures, replication breakage, and service outages. Today, CNPG supports manual PVC resizing by updating `spec.storage.size`, but this requires external monitoring, manual intervention, and carries risk of human error or delayed response.\n\nThis is a **recurring pain point** across the CNPG community:\n\n- Clusters entering unrecoverable states when disk fills (#9927, #1808)\n- Operators stuck in reconciliation loops due to storage pressure (#9885, #9301)\n- PVC resize deadlocks when combined with pod spec changes (#9786, #7997)\n- WAL volumes filling due to archive failures with no automatic safeguards (#6",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "3907981370",
+        "published_at": "2026-02-06T18:39:58Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/cloudnative-pg/cloudnative-pg/issues/9928",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "RFC: `ensure`-style options in NixOS modules",
+      "url": "https://github.com/NixOS/nixpkgs/issues/206467",
+      "repo": "NixOS/nixpkgs",
+      "issue_number": 206467,
+      "reactions": 15,
+      "comments": 26,
+      "created": "2022-12-16T23:19:41Z",
+      "body_snippet": "## Context & motivation\r\n\r\nIn NixOS, a desirable property is that the **current** state of the system **configuration** is a *pure* function of the Nix expression evaluated.\r\n\r\nFor example, NGINX virtual hosts are directly a *pure* function of the Nix expressions describing them.\r\n\r\nAnother example would be that, under `users.mutableUsers = false;`, UNIX users are directly a *pure* a function of the Nix expressions describing them, including their attributes. (please correct me if this is wrong.)\r\n\r\nA non-example of this is `services.postgresql.ensureUsers`, it is possible to *manually* remove a PostgreSQL user and perform multiple rebuild switch without reviving the user in question, therefore, creating a drift between NixOS expression and the actual PostgreSQL configuration.\r\nSame thing for `hardware.ensurePrinters` too (which attempt to reconcile the expression with the reality, without removing any printer though.)\r\n\r\nThis can be generalized into all kind of options that \"prefill\" data or state which could also be seen as \"static configuration state\" (e.g. what are my users, what are their permissions, etc.) but could also have been dynamic.\r\n\r\nRecently, there have been some ac",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "1500993445",
+        "published_at": "2022-12-16T23:19:41Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/NixOS/nixpkgs/issues/206467",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Windows: Next Steps",
+      "url": "https://github.com/esy/esy/issues/428",
+      "repo": "esy/esy",
+      "issue_number": 428,
+      "reactions": 14,
+      "comments": 0,
+      "created": "2018-09-01T18:41:05Z",
+      "body_snippet": "With the work done over the last couple months, we've gotten a Windows build of `esy` that can install / run with a generated lockfile! This is a huge milestone, and a step closer to having `esy` 'just-work' across all platforms - bringing Reason & OCaml to a larger audience. \r\n\r\nHowever, there is still lots of work left:\r\n\r\n## Build: Remove the bootstrapping\r\n\r\nFor Windows, because we initially didn't have a working `esy` binary, we couldn't leverage existing build scripts... so we had to install OPAM, install dependencies via OPAM, and then build `esy` in that global OPAM environment. An important next step is to remove that, and build `esy` with `esy` on Windows.\r\n\r\n__Tracking Work:__\r\n- [x] Remove bootstrapping - https://github.com/esy/esy/pull/415\r\n\r\n## Testing / Maintainability\r\n\r\nThere are several `e2e` tests that are not enabled yet - we need to get these working. These are marked by the `skipSuiteOnWindows` in the test file. Enabling these incrementally will be huge for the stability of Windows - and a great place to start contributing to the Windows work!\r\n\r\nIn addition, several packages have needed Windows-specific patches. We should look at automating this process, as m",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "356224140",
+        "published_at": "2018-09-01T18:41:05Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/esy/esy/issues/428",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "Rethinking Oscar's architecture: extensibility, modularity, and a path forward",
+      "url": "https://github.com/django-oscar/django-oscar/issues/4562",
+      "repo": "django-oscar/django-oscar",
+      "issue_number": 4562,
+      "reactions": 13,
+      "comments": 0,
+      "created": "2026-03-04T20:16:11Z",
+      "body_snippet": "This builds on discussions from #2972 (2019) about splitting Oscar into core/storefront/dashboard and extracting business logic from views. Those ideas were never fully realized. This issue goes further and proposes rethinking Oscar's fundamental extensibility model.\n\nSee also #4540 for related discussion about modernizing Oscar's communication layer using Django's new tasks API.\n\nOscar describes itself as \"an e-commerce framework for building domain-driven applications\" — not a turnkey shop, but a framework you build on top of. Its [customisation docs](https://django-oscar.readthedocs.io/en/stable/topics/customisation.html) promise that \"the behaviour of all Oscar apps can heavily be altered by injecting your own code.\" In practice, that injection mechanism is forking apps and subclassing classes — which works for individual projects but doesn't support an ecosystem of composable modules. If Oscar wants to truly be a framework that others build on, the extensibility model needs to match that ambition.\n\nThe more modular Oscar becomes, the easier it is for third parties to build and distribute extensions — payment providers, shipping integrations, tax engines, marketplace features —",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4023932488",
+        "published_at": "2026-03-04T20:16:11Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/django-oscar/django-oscar/issues/4562",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Feature] Per-pane auto git worktree + branch isolation (dmux-style agent isolation)",
+      "url": "https://github.com/manaflow-ai/cmux/issues/3414",
+      "repo": "manaflow-ai/cmux",
+      "issue_number": 3414,
+      "reactions": 12,
+      "comments": 2,
+      "created": "2026-05-01T20:16:14Z",
+      "body_snippet": "## Summary\n\nAdd a first-class, built-in option where **opening a new pane (or workspace) automatically creates a dedicated git worktree on a fresh branch**, so each agent (Claude / Codex / etc.) runs in a fully isolated checkout. Closing the pane reclaims the worktree (with a safe snapshot path for recovery).\n\nThis is the UX [dmux](https://github.com/standardagents/dmux) ships out of the box: *\"every pane gets its own git worktree and branch, and agents work in complete isolation.\"*\n\n## Motivation\n\nRunning N agents in parallel against the same checkout is the core value-prop of cmux's claude-teams / multi-agent flow, but today the user has to wire worktrees themselves. Concretely:\n\n- The currently documented path is the [`worktree-agents` custom command](https://github.com/manaflow-ai/cmux/blob/main/web/app/%5Blocale%5D/docs/custom-commands/page.tsx) — a shell snippet the user pastes into `cmux.json`. It works but:\n  - Not discoverable (you have to know the docs page exists).\n  - No lifecycle: nothing cleans the worktree on close, nothing snapshots on crash, nothing tracks which pane owns which worktree.\n  - Sidebar / tab UI doesn't know it's a worktree, so branch metadata, GC, and",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "4366472125",
+        "published_at": "2026-05-01T20:16:14Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/manaflow-ai/cmux/issues/3414",
+        "lineage_basis": "canonical_url"
+      }
+    },
+    {
+      "source": "github-issues",
+      "title": "[Pro 20x][Windows] GPT-6 Astra weekly quota depletion appears disproportionate to local token telemetry in same-day Astra→Sol run",
+      "url": "https://github.com/openai/codex/issues/43222",
+      "repo": "openai/codex",
+      "issue_number": 43222,
+      "reactions": 11,
+      "comments": 9,
+      "created": "2026-09-06T13:01:20Z",
+      "body_snippet": "### What version of the Codex App are you using?\n\nCurrent Windows package during evidence collection: **OpenAI.Codex 26.901.5003.0**.\n\nThe affected work includes long-lived threads whose rollout `session_meta.cli_version` values span older versions (including `0.146.0-alpha.3.1` and `0.152.1`), so I am **not** claiming this is isolated to one CLI build. The current installed Desktop package is the version above.\n\n### What subscription do you have?\n\n**ChatGPT Pro — $200 / 20x tier.**\n\n### What platform is your computer?\n\nWindows x64, `Microsoft Windows NT 10.0.26200.0`.\n\n### What issue are you seeing?\n\nGPT-6 Astra appears to consume the shared weekly Codex allowance disproportionately quickly compared with GPT-5.6 Sol on the same account and same machine.\n\nOn Sep 5, 2026 (America/Los_Angeles), I observed the weekly allowance UI fall from approximately **45% remaining to 5% remaining** over the broader work session. I confirm that **no other device/client was running Codex**; all Codex activity was on this Windows machine and is represented by the local Desktop/Work rollouts.\n\nI switched away from GPT-6 Astra to GPT-5.6 Sol because the allowance was falling too quickly. From the UI I",
+      "provenance": {
+        "source": "github-issues",
+        "source_record_id": "5365104773",
+        "published_at": "2026-09-06T13:01:20Z",
+        "collected_at": "2026-09-17T05:26:20+00:00",
+        "lineage_key": "https://github.com/openai/codex/issues/43222",
+        "lineage_basis": "canonical_url"
+      }
+    }
+  ]
+}
