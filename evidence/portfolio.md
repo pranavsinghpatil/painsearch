@@ -16,20 +16,31 @@ Status as of 2026-09-17. Broad collection PAUSED at 120 raw hits. No winner yet.
 - Existing: ShutUp10 / Tripwire / Intune baselines.
 - Next falsifiable Q: find 3+ independent post-24H2 revert reports with KB id + key path, or park stays.
 
-## P4 — Scattered engineering knowledge [NEW, from mining — needs cards]
-- Evidence: Engineering.fyi 470pts/126c "manually checking individual blogs"; "How do you stay up to date with scientific papers" 5pts/3c; "RSS Reader that doesn't suck" 9pts/22c; "I looked at 1000s of RAG queries to figure out the problem with semantic search" 6pts/3c.
-- Why distinct: task = reconcile conflicting/evolving records across sources, not moderate or verify backups.
-- Next falsifiable Q: do 3+ independent reports show semantic search failing on the *same* narrow task (e.g. version-sensitive API answers)? Pull the RAG-queries thread + Engineering.fyi comments for concrete failure quotes.
+## P4 — Scattered/evolving engineering knowledge [WEAK; needs narrower task]
+- Evidence: Engineering.fyi is a functioning aggregator with weekly digest; the 2013 paper thread has only 5 points/3 comments and a bookmark/search workaround; the RAG thread has concrete failures (negation, multi-hop, fuzzy filtering) but is about retrieval quality, not merely discovery.
+- Why distinct: task = answer a constrained question across changing sources, not moderate or verify backups.
+- Current finding: evidence supports *failure modes*, not recurring user pain or a missing product. Do not promote yet.
+- Next falsifiable Q: find 3+ independent current reports for one narrow failure (e.g. version-sensitive API answer across docs), then compare search/RAG/reranking baselines.
 
-## P5 — Long-video event detection [NEW, from mining — needs cards]
-- Evidence: "How I OCR hundreds of hours of video" 125pts/17c; "Processing 24h of video in ten minutes" 77pts/37c; seal-camera hours of video; "Moderator who watched hours of traumatic videos sues TikTok".
-- Why distinct: input constraint = continuous footage, output = precise timestamps + evidence. Matches promising-direction example.
-- Next falsifiable Q: find 3+ reports where people need a *specific* event timestamped (not summary/montage) and existing tools (Premiere scene detect, Rekognition Video, Whisper+OCR) fail. Quote them.
+## P5 — Long-video event detection [UNVALIDATED]
+- Evidence: OCR of hundreds of hours (125pts/17c) and 24h processing (77pts/37c) demonstrate technical demand/solutions, but are not independent complaint reports. Search hits are mostly showcases, not unmet pain.
+- Why distinct: input constraint = continuous footage; possible output = precise timestamps + evidence.
+- Current finding: insufficient pain evidence. Do not treat popularity or compute volume as validation.
+- Next falsifiable Q: find 3+ reports from a defined operator group needing one specific event timestamped, with current-tool failures and consequence.
 
-## P6 — Agent-output verification [NEW, from mining — needs cards]
-- Evidence: "qckfx – Stop manually checking if your AI agent broke your iOS app" 2pts; "AI hallucinate. Do you ever double check the output?" 8pts/21c; "OmoiOS – 190K lines to stop babysitting AI agents"; "Claude Code frequently loses track of directory" 86r/50c.
-- Why distinct: task = catch specific failure ordinary tests/review miss. Matches promising-direction example. Risk: crowded, easy to become agent-layerisation — gate hard.
-- Next falsifiable Q: find 3+ independent cases naming the *same* missed failure class (e.g. agent breaks build silently passing tests). If failures differ each time, no micro-problem.
+## P6 — Agent-output verification [REJECT CURRENT FORMULATION]
+- Evidence: qckfx explicitly ships local record/replay + visual diffs and states "No AI in the loop at runtime"; other hits mix unrelated agent failures (hallucination, directory drift, babysitting).
+- Why distinct: task = catch one specific failure ordinary tests/review miss.
+- Current finding: exact iOS visual-regression pain already has a direct conventional solution; evidence does not establish one shared missed-failure class.
+- Next falsifiable Q: only reopen if 3+ independent reports identify the same failure that qckfx/Playwright/Appium/XCUITest cannot detect.
+
+## Decision after inspection
+- P1 remains a rejected pain reference.
+- P2 remains a candidate, but should not be run as the default next step.
+- P3 remains parked pending independent evidence.
+- P4/P5 are research leads, not candidates yet.
+- P6 is rejected in its current broad form.
+- **Next research action:** choose one narrow falsifiable question (P2, P3, P4, or P5), gather independent reports, then map existing tools. No more broad collection and no prototype yet.
 
 ## Rule
 No candidate becomes default winner. Advance only on answered falsifiable Q + measured residual gap. NVIDIA/Nebius feasibility is step 6, never a reason to preserve a weak problem.
