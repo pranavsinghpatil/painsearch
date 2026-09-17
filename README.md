@@ -14,8 +14,12 @@ Built for Nebius x NVIDIA Global AI Hackathon prep. The system enforces:
 - `discovery_test.md` — kill-fast gate
 - `evidence_card_template.md` — evidence schema
 - `src/collect.py` — permitted-APIs collector (HN Algolia, Lobsters, GitHub). No Reddit mass-scrape.
+- `src/registry.py` — validate and inspect the reusable problem registry
+- `registry/schema/problem-registry-v1.json` — versioned registry contract
+- `registry/registry.json` — structured problems, evidence, counter-evidence, investigations, and history
 - `evidence/raw_*.json` — raw hits with source URLs
-- `evidence/cards/` — one file per complaint
+- `evidence/cards/` — human-readable evidence cards
+- `evidence/portfolio.md` — candidate comparison without a default winner
 
 ## Quickstart
 ```bash

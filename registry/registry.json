@@ -1,0 +1,64 @@
+{
+  "registry_version": "1.0",
+  "updated_at": "2026-09-17",
+  "problems": [
+    {
+      "id": "P0001",
+      "title": "Backblaze backup integrity cannot be verified",
+      "status": "rejected",
+      "tags": ["backup", "verification", "deterministic"],
+      "statement": {
+        "user": "Home-computer backup users",
+        "task": "Verify that a remote backup contains the expected files",
+        "failure": "The provider reports an inconsistency but does not expose a local-vs-remote hash comparison",
+        "consequence": "Millions of files may require manual checking or an expensive full restore without identifying the discrepancy"
+      },
+      "evidence": [
+        {"id": "E0001", "kind": "report", "source_url": "https://news.ycombinator.com/item?id=29533753", "observed_at": "2026-09-17", "quote": "The only official solution is to manually check all files (millions in my case).", "supports": "Manual verification does not scale", "independence_group": "backblaze-hn-thread"},
+        {"id": "E0002", "kind": "workaround", "source_url": "https://news.ycombinator.com/item?id=29533753", "observed_at": "2026-09-17", "quote": "There wouldn't be a way to compare hashes the way you describe in this case as that mechanism is simply not implemented", "supports": "Provider lacks the requested deterministic comparison", "independence_group": "backblaze-hn-thread"},
+        {"id": "E0003", "kind": "solution", "source_url": "https://rclone.org/commands/rclone_check/", "observed_at": "2026-09-17", "quote": "Checks the files in the source and destination match.", "supports": "Conventional tools already implement this class of verification", "independence_group": "rclone-docs"}
+      ],
+      "counter_evidence": ["rclone, restic, Kopia, Arq, and Borg already provide deterministic verification patterns."],
+      "investigations": [{"id": "I0001", "question": "Does this require a model capability?", "status": "answered", "method": "Compared the card against deterministic manifest/hash tools.", "finding": "No central model capability is evident.", "next_action": "Keep as rejected hackathon reference."}],
+      "history": [{"at": "2026-09-17", "event": "status_changed", "note": "Rejected for hackathon feasibility; retained as a supported pain and negative control."}]
+    },
+    {
+      "id": "P0002",
+      "title": "Small-host UGC moderation misses advanced abuse",
+      "status": "investigating",
+      "tags": ["trust-safety", "static-hosting", "phishing", "ugc"],
+      "statement": {
+        "user": "Operators of small user-generated static-site hosting platforms",
+        "task": "Review each uploaded site for prohibited or harmful content",
+        "failure": "A simple phishing script misses advanced phishing and unsupported visual content, forcing manual review",
+        "consequence": "Review effort grows with uploads and missed abuse creates platform, legal, and user-safety risk"
+      },
+      "evidence": [
+        {"id": "E0010", "kind": "report", "source_url": "https://news.ycombinator.com/item?id=42830018", "observed_at": "2026-09-17", "quote": "this simple script does not catch some of the more advance phishing sites and it doesn't catch other types of content that we can't support on our platform like porn.", "supports": "Basic automation misses multiple abuse classes", "independence_group": "small-host-hn-thread"},
+        {"id": "E0011", "kind": "workaround", "source_url": "https://news.ycombinator.com/item?id=42830018", "observed_at": "2026-09-17", "quote": "We're still going to be manually reviewing sites because we haven't reached a scale that makes that impossible.", "supports": "Manual review is the current fallback", "independence_group": "small-host-hn-thread"}
+      ],
+      "counter_evidence": ["Safe Browsing, PhishTank, Spamhaus, and commercial NSFW classifiers may cover most common cases; baseline has not been run."],
+      "investigations": [{"id": "I0010", "question": "What does Safe Browsing plus NSFW detection miss on small static sites?", "status": "open", "method": "Run a labeled 20 phishing / 20 clean-site baseline and record false negatives, false positives, evidence quality, and cost.", "next_action": "Build the evaluation set before considering any new model."}],
+      "history": [{"at": "2026-09-17", "event": "status_changed", "note": "Advanced from candidate to investigating; residual gap is unmeasured."}]
+    },
+    {
+      "id": "P0003",
+      "title": "Windows privacy settings may drift after updates",
+      "status": "unresolved",
+      "tags": ["windows", "configuration-drift", "privacy", "deterministic"],
+      "statement": {
+        "user": "Privacy-conscious Windows users and administrators",
+        "task": "Keep a desired privacy configuration across OS updates",
+        "failure": "Reports claim settings can revert, but frequency and causal attribution are disputed",
+        "consequence": "Users may repeatedly inspect settings or rely on scripts that become stale"
+      },
+      "evidence": [
+        {"id": "E0020", "kind": "report", "source_url": "https://news.ycombinator.com/item?id=45485986", "observed_at": "2026-09-17", "quote": "Many users find that after disabling certain settings, these settings are mysteriously re-enabled after updates or without apparent reason.", "supports": "A reported settings-drift problem", "independence_group": "didmysettingschange-hn-thread"},
+        {"id": "E0021", "kind": "counter_report", "source_url": "https://news.ycombinator.com/item?id=45485986", "observed_at": "2026-09-17", "quote": "I've read so much FUD about Windows undoing settings with updates but in 3+ years it hasn't happened to me.", "supports": "The frequency of the problem is disputed", "independence_group": "didmysettingschange-hn-thread"}
+      ],
+      "counter_evidence": ["ShutUp10, W10Privacy, Tripwire-style monitoring, and MDM baselines already address parts of the workflow."],
+      "investigations": [{"id": "I0020", "question": "Are there three independent post-24H2 reports with a KB, setting path, and reproducible revert?", "status": "open", "method": "Search issue trackers and Windows forums for reproducible reports.", "next_action": "Park unless independent evidence supports a specific residual gap."}],
+      "history": [{"at": "2026-09-17", "event": "status_changed", "note": "Marked unresolved because supporting and counter evidence conflict."}]
+    }
+  ]
+}

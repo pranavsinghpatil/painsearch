@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pranavsinghpatil/painsearch/schema/problem-registry-v1.json",
+  "title": "PainSearch Problem Registry",
+  "type": "object",
+  "required": ["registry_version", "problems"],
+  "properties": {
+    "registry_version": {"const": "1.0"},
+    "updated_at": {"type": "string", "format": "date"},
+    "problems": {"type": "array", "items": {"$ref": "#/$defs/problem"}}
+  },
+  "$defs": {
+    "problem": {
+      "type": "object",
+      "required": ["id", "title", "status", "statement", "evidence", "investigations", "history"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^P[0-9]{4}$"},
+        "title": {"type": "string", "minLength": 1},
+        "status": {"enum": ["candidate", "investigating", "validated", "rejected", "unresolved"]},
+        "statement": {
+          "type": "object",
+          "required": ["user", "task", "failure", "consequence"],
+          "properties": {
+            "user": {"type": "string"},
+            "task": {"type": "string"},
+            "failure": {"type": "string"},
+            "consequence": {"type": "string"}
+          }
+        },
+        "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+        "counter_evidence": {"type": "array", "items": {"type": "string"}},
+        "investigations": {"type": "array", "items": {"$ref": "#/$defs/investigation"}},
+        "history": {"type": "array", "items": {"$ref": "#/$defs/history"}},
+        "tags": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["id", "kind", "source_url", "observed_at", "quote", "supports"],
+      "properties": {
+        "id": {"type": "string"},
+        "kind": {"enum": ["report", "workaround", "consequence", "counter_report", "solution"]},
+        "source_url": {"type": "string", "format": "uri"},
+        "observed_at": {"type": "string"},
+        "quote": {"type": "string", "minLength": 1},
+        "supports": {"type": "string"},
+        "independence_group": {"type": "string"}
+      }
+    },
+    "investigation": {
+      "type": "object",
+      "required": ["id", "question", "status", "next_action"],
+      "properties": {
+        "id": {"type": "string"},
+        "question": {"type": "string"},
+        "status": {"enum": ["open", "answered", "blocked"]},
+        "method": {"type": "string"},
+        "finding": {"type": "string"},
+        "next_action": {"type": "string"}
+      }
+    },
+    "history": {
+      "type": "object",
+      "required": ["at", "event", "note"],
+      "properties": {
+        "at": {"type": "string"},
+        "event": {"type": "string"},
+        "note": {"type": "string"}
+      }
+    }
+  }
+}
