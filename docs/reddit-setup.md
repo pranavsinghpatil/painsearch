@@ -1,8 +1,10 @@
 # Reddit adapter setup
 
-> **Paused:** Reddit collection is currently disabled in the CLI while API access is unresolved. This guide is retained for later re-enablement. Do not bypass Reddit access rules.
+> **Paused / access blocked:** Reddit collection is currently disabled in the CLI. Reddit has moved self-serve API access behind its Responsible Builder Policy and approval process; inability to obtain credentials is not a local setup mistake. Devvit is not a workaround: it is for apps that run inside Reddit communities. Do not retry credentials, use unofficial scrapers, or bypass access controls.
+>
+> The rest of PainSearch continues with HN, GitHub Issues, and Lobsters. This document is retained only for a future approved access path.
 
-PainSearch uses Reddit's OAuth **application-only** flow for read-only collection. It does not need your Reddit password or a refresh token.
+PainSearch would use Reddit's OAuth **application-only** flow for read-only collection if access is approved. It does not need your Reddit password or a refresh token.
 
 ## 1. Create an application
 

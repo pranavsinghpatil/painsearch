@@ -79,6 +79,26 @@
       "counter_evidence": ["Lockfiles, contract tests, semantic versioning, provider changelogs, synthetic integration tests, Pact, and Schemathesis may already address the residual gap."],
       "investigations": [{"id": "I0030", "question": "Can a reproducible silent API change evade pinning, contract tests, and changelog monitoring?", "status": "open", "method": "Construct or collect one changed API fixture and run the conventional baselines before considering any model.", "next_action": "Measure which baseline detects the change, detection lead time, and maintenance cost."}],
       "history": [{"at": "2026-09-17T08:39:54+05:30", "actor": "researcher", "event": "status_changed", "from_status": "candidate", "to_status": "investigating", "reason": "Concrete first-person report plus independent downstream breakage evidence; residual gap remains unmeasured."}]
+    },
+    {
+      "id": "P0005",
+      "title": "Systematic-review screening misses buried eligibility evidence and requires repetitive extraction",
+      "status": "investigating",
+      "tags": ["research", "systematic-review", "evidence", "reproducibility"],
+      "statement": {
+        "user": "Researchers conducting systematic reviews and meta-analyses",
+        "task": "Find eligible studies and extract consistent fields across many papers",
+        "failure": "Relevant eligibility facts can be buried in full text or missed by search, while repeated extraction requires manual conversations or external scripts",
+        "consequence": "False exclusions, incomplete literature coverage, inconsistent extraction, and high reviewer time"
+      },
+      "evidence": [
+        {"id": "E0040", "kind": "report", "source_url": "https://news.ycombinator.com/item?id=41071406", "quote": "The sixth study was entirely new to me ... it's still something that my existing search processes missed", "supports": "A researcher reports missed relevant evidence during a meta-analysis search", "provenance": {"source_published_at": "2024-07-25T17:53:41+00:00", "collected_at": "2026-09-18T01:20:19+05:30", "verified_at": "2026-09-18T01:20:19+05:30", "independence_group": "undermind-hn-thread", "corroboration_status": "unassessed"}},
+        {"id": "E0041", "kind": "workaround", "source_url": "https://github.com/54yyyu/zotero-mcp/issues/46", "quote": "systematic literature reviews require applying the same analysis to dozens or even hunderds of papers", "supports": "Repeated analysis at review scale is a stated workflow burden", "provenance": {"source_published_at": "2025-08-11T09:16:41+00:00", "collected_at": "2026-09-18T01:20:19+05:30", "verified_at": "2026-09-18T01:20:19+05:30", "independence_group": "zotero-mcp-issue-46", "corroboration_status": "independent"}},
+        {"id": "E0042", "kind": "report", "source_url": "https://news.ycombinator.com/item?id=10488028", "quote": "It's becoming difficult to manage them all.", "supports": "A separate researcher reports literature-management difficulty", "provenance": {"source_published_at": "2015-11-01T20:20:37+00:00", "collected_at": "2026-09-18T01:20:19+05:30", "verified_at": "2026-09-18T01:20:19+05:30", "independence_group": "literature-management-hn-thread", "corroboration_status": "independent"}}
+      ],
+      "counter_evidence": ["Undermind, semantic scholarly search, Zotero, Rayyan, Covidence, ASReview, DistillerSR, and conventional database queries already address parts of discovery, screening, or extraction."],
+      "investigations": [{"id": "I0040", "question": "Do existing search and screening tools miss the same eligibility facts buried in full text, or is the gap only workflow inconvenience?", "status": "open", "method": "Use one published review protocol and labeled papers; compare conventional search, screening tools, and structured extraction against adjudicated decisions.", "next_action": "Measure recall, false exclusions, extraction agreement, citation traceability, and reviewer time before considering any model."}],
+      "history": [{"at": "2026-09-18T01:20:19+05:30", "actor": "researcher", "event": "status_changed", "from_status": "candidate", "to_status": "investigating", "reason": "Three independent reports describe literature-screening or management burden; residual gap and model necessity remain unmeasured."}]
     }
   ]
 }

@@ -34,13 +34,19 @@ Status as of 2026-09-17. Broad collection PAUSED at 120 raw hits. No winner yet.
 - Current finding: exact iOS visual-regression pain already has a direct conventional solution; evidence does not establish one shared missed-failure class.
 - Next falsifiable Q: only reopen if 3+ independent reports identify the same failure that qckfx/Playwright/Appium/XCUITest cannot detect.
 
+## P7 — Systematic-review screening misses buried eligibility evidence [INVESTIGATING]
+- Evidence: independent HN meta-analysis researcher reports a relevant study missed by existing search and eligibility facts buried deep in text; separate Zotero issue reports repeating analysis across dozens/hundreds of papers manually; older literature-management report describes growing management burden.
+- Status: strongest new research lead, but existing tools and model necessity are untested. High risk of becoming a generic paper-analysis wrapper.
+- Next falsifiable Q: on one published review protocol, do conventional search + Rayyan/Covidence/ASReview/Zotero workflows miss the same eligible studies or buried criteria? Measure recall, false exclusions, extraction agreement, citation traceability, and time.
+
 ## Decision after inspection
 - P1 remains a rejected pain reference.
-- P2 remains a candidate, but should not be run as the default next step.
+- P2 remains a candidate, but should not be run as the default winner.
 - P3 remains parked pending independent evidence.
-- P4/P5 are research leads, not candidates yet.
+- P4/P5 are research leads, not opportunities yet.
 - P6 is rejected in its current broad form.
-- **Next research action:** choose one narrow falsifiable question (P2, P3, P4, or P5), gather independent reports, then map existing tools. No more broad collection and no prototype yet.
+- P7 is investigating, not validated and not yet an idea.
+- **Next research action:** validate P0004 and P0005 against conventional baselines. Generate a hackathon concept only after one residual gap is reproducible.
 
 ## Rule
 No candidate becomes default winner. Advance only on answered falsifiable Q + measured residual gap. NVIDIA/Nebius feasibility is step 6, never a reason to preserve a weak problem.
