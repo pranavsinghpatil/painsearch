@@ -19,8 +19,8 @@ Status as of 2026-09-17. Broad collection PAUSED at 120 raw hits. No winner yet.
 ## P4 — Scattered/evolving engineering knowledge [WEAK; needs narrower task]
 - Evidence: Engineering.fyi is a functioning aggregator with weekly digest; the 2013 paper thread has only 5 points/3 comments and a bookmark/search workaround; the RAG thread has concrete failures (negation, multi-hop, fuzzy filtering) but is about retrieval quality, not merely discovery.
 - Why distinct: task = answer a constrained question across changing sources, not moderate or verify backups.
-- Current finding: evidence supports *failure modes*, not recurring user pain or a missing product. Do not promote yet.
-- Next falsifiable Q: find 3+ independent current reports for one narrow failure (e.g. version-sensitive API answer across docs), then compare search/RAG/reranking baselines.
+- Current finding: one practitioner reports production failure modes (negation, multi-hop, fuzzy filtering), but the paper-discovery thread is only 5pts/3c and Engineering.fyi is an existing aggregator. Evidence supports failure modes, not recurring unmet pain. Do not promote yet.
+- Next falsifiable Q: find 3+ independent current reports for one narrow failure (e.g. version-sensitive API answer across docs), then compare keyword, hybrid-search, and reranking baselines. See `evidence/verification-pass-20260917.md`.
 
 ## P5 — Long-video event detection [UNVALIDATED]
 - Evidence: OCR of hundreds of hours (125pts/17c) and 24h processing (77pts/37c) demonstrate technical demand/solutions, but are not independent complaint reports. Search hits are mostly showcases, not unmet pain.
