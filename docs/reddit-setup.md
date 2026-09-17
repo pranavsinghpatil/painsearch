@@ -1,5 +1,7 @@
 # Reddit adapter setup
 
+> **Paused:** Reddit collection is currently disabled in the CLI while API access is unresolved. This guide is retained for later re-enablement. Do not bypass Reddit access rules.
+
 PainSearch uses Reddit's OAuth **application-only** flow for read-only collection. It does not need your Reddit password or a refresh token.
 
 ## 1. Create an application

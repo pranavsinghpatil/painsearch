@@ -1,16 +1,13 @@
 """Bounded pain-signal collection through permitted public APIs.
 
-Sources: HN Algolia, Lobsters JSON feeds, GitHub Issues API, and Reddit's
-OAuth API. Reddit collection is intentionally narrow: provide one or more
-subreddits and preserve post/comment context. No bulk subreddit scraping.
+Sources: HN Algolia, Lobsters JSON feeds, and GitHub Issues API. Reddit's OAuth adapter is retained but paused and is not exposed by the CLI.
 
 Usage:
   python src/collect.py --source hn --query "tedious workflow" --limit 20
   python src/collect.py --source lobsters --query "debugging" --limit 20
-  python src/collect.py --source reddit --subreddit sysadmin --query "manual" --limit 10
-  python src/collect.py --source all --subreddit devops --query "takes hours" --limit 10
+  python src/collect.py --source github --query "manual workaround" --limit 20
 
-Reddit requires REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, and REDDIT_USER_AGENT.
+Reddit is paused pending access approval; do not bypass Reddit API rules.
 """
 import argparse
 import base64
@@ -200,15 +197,11 @@ def collect_reddit(subreddits, query, limit, comment_limit=5, collected_at=None)
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--source", choices=["hn", "lobsters", "github", "reddit", "all"], default="hn")
+    parser.add_argument("--source", choices=["hn", "lobsters", "github", "all"], default="hn")
     parser.add_argument("--query", default="tedious workflow")
     parser.add_argument("--limit", type=int, default=20)
-    parser.add_argument("--subreddit", action="append", default=[], help="Reddit community; repeat for multiple communities")
-    parser.add_argument("--comment-limit", type=int, default=5)
-    parser.add_argument("--lobsters-feeds", default="hottest,newest,active,recent")
+    parser.add_argument("--lobsters-feeds", default="hottest,newest,active")
     args = parser.parse_args()
-    if args.source in {"reddit", "all"} and not args.subreddit:
-        parser.error("--subreddit is required for Reddit collection")
     os.makedirs(OUT, exist_ok=True)
     os.makedirs(os.path.join(OUT, "cards"), exist_ok=True)
     collected_at = now_iso()
@@ -219,8 +212,6 @@ def main():
         output["lobsters"] = collect_lobsters(args.query, args.limit, args.lobsters_feeds.split(","), collected_at)
     if args.source in ("github", "all"):
         output["github"] = collect_github(args.query, args.limit, collected_at)
-    if args.source in ("reddit", "all"):
-        output["reddit"] = collect_reddit(args.subreddit, args.query, args.limit, args.comment_limit, collected_at)
     flat = [row for rows in output.values() for row in rows]
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     path = os.path.join(OUT, f"raw_{args.source}_{timestamp}.json")

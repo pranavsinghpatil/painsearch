@@ -18,7 +18,7 @@ No invented ideas. Evidence first. Revised flow 2026-09-17: portfolio over pipel
 Technological Implementation / Design / Potential Impact / Quality of Idea
 
 ## Revised flow (7 steps, 2026-09-17)
-1. **Collect raw** — PAUSED at 120 hits. Preserve links + context. No more broad queries until portfolio gaps demand them.
+1. **Collect raw** — Reddit paused. Continue only with HN, GitHub Issues, and Lobsters (`hottest`, `newest`, `active`). Preserve links + context.
 2. **Extract patterns** — cluster by user x task x failure x consequence, not keywords. See `evidence/portfolio.md` P1-P6.
 3. **Verify pain** — independent reports, workarounds, frequency, consequence. Mark weak/disputed evidence (P3).
 4. **Map existing solutions** — test conventional tools first. Record exact residual gap.
@@ -33,7 +33,7 @@ python src/collect.py --source hn --query "takes me hours to" --limit 20
 ```
 
 ## Rules
-- Respect ToS: official APIs only (HN Algolia, GitHub API, Lobsters). No Reddit mass-scrape.
+- Respect ToS: use HN Algolia, GitHub API, and Lobsters feeds. Reddit adapter code is retained but paused; no Reddit mass-scrape.
 - Save source URL + quote + date for every card. No paraphrase-only.
 - Deliverable is NOT an idea. It's the portfolio with answered falsifiable Qs.
 
